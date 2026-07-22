@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "clat-prep-studio",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
