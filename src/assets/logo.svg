@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 130" width="420" height="130">
+  <g transform="translate(8 12)">
+    <path d="M90 15C70 0 41 1 22 17C0 35-4 69 13 92C31 115 67 120 91 101C98 96 103 90 108 83L88 66C82 74 73 79 63 80C46 81 31 69 29 52C27 36 39 22 55 20C67 18 78 22 87 30L90 15Z" fill="#6C4CF1"/>
+    <path d="M54 31H99C109 31 117 39 117 49V75L101 62H54C44 62 36 54 36 44C36 37 44 31 54 31Z" fill="#FF6B5E"/>
+    <path d="M57 47L68 58L94 32" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="145" y="58" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="36" font-weight="800" fill="currentColor">CLAT Prep</text>
+  <text x="145" y="98" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="36" font-weight="800" fill="#6C4CF1">Studio</text>
+</svg>

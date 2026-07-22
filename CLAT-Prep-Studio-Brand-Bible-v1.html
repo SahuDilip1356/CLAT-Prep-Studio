@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLAT Prep Studio — Brand Bible v1.0</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+--ink:#101828;--purple:#6C4CF1;--coral:#FF6B5E;--mint:#35C7A5;
+--amber:#F5B942;--slate:#475467;--cloud:#F7F7FB;--white:#fff;--muted:#98A2B3;
+}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--cloud);color:var(--slate);font-size:13px;line-height:1.5}
+.page{max-width:1080px;margin:32px auto;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 50px rgba(16,24,40,.12)}
+.header{background:var(--ink);padding:38px 46px 32px;display:flex;justify-content:space-between;gap:24px;border-bottom:3px solid var(--purple)}
+.logo-lockup{display:flex;align-items:center;gap:16px}
+.logo-mark{width:66px;height:66px}
+.brand-name{font-size:36px;font-weight:800;color:#fff;letter-spacing:-1.1px}
+.brand-name span{color:#A99BFF}
+.tagline{margin-top:5px;font-size:14px;color:#D0D5DD}
+.promise-pill{margin-top:14px;display:inline-block;background:rgba(108,76,241,.18);border:1px solid #8871F7;color:#C5BBFF;font-weight:700;padding:5px 12px;border-radius:999px;text-transform:uppercase;letter-spacing:.7px;font-size:10px}
+.header-right{text-align:right}.version-label{font-size:10px;color:#98A2B3;text-transform:uppercase;letter-spacing:1px}.version-num{font-size:19px;font-weight:800;color:var(--amber);margin-top:5px}.domain{font-size:11px;color:#667085;margin-top:7px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr)}.grid-2{grid-template-columns:repeat(2,1fr)}
+.section{padding:27px 31px;border-right:1px solid #EAECF0;border-bottom:1px solid #EAECF0}.section:nth-child(3n){border-right:none}.full{grid-column:1/-1;border-right:none}.no-right{border-right:none}
+.label{font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);margin-bottom:14px}
+table{width:100%;border-collapse:collapse;font-size:11px}td{padding:7px 0;border-bottom:1px solid #F2F4F7;vertical-align:top}td:first-child{font-weight:700;color:var(--ink);width:125px}
+.color-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.color-card{border:1px solid #EAECF0;border-radius:9px;overflow:hidden}.swatch{height:46px}.color-info{padding:7px;background:#fff}.color-name{font-size:10px;font-weight:700;color:var(--ink)}.hex{font-size:9px;color:var(--muted)}.pct{font-size:9px;font-weight:700;color:var(--purple)}
+.type-row,.voice-row,.rule,.cta-row{display:flex;gap:10px;padding:7px 0;border-bottom:1px solid #F2F4F7;align-items:flex-start}.key{font-size:10px;font-weight:800;color:var(--ink);width:88px;flex-shrink:0}.desc{font-size:11px}.h1{font-size:22px;font-weight:800;color:var(--ink)}.h2{font-size:17px;font-weight:800;color:var(--ink)}.body{font-size:12px}
+.brand-line{padding:7px 10px;border-left:3px solid var(--purple);margin-bottom:7px;background:#F8F7FF;border-radius:0 5px 5px 0;color:var(--ink);font-weight:650}
+.logo-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}.logo-large{background:#F8F7FF;border:1px solid #E8E4FF;border-radius:16px;padding:30px;display:flex;justify-content:center}
+.logo-notes h3{font-size:18px;color:var(--ink);margin-bottom:9px}.bullets{font-size:11px;line-height:1.8}
+.card{border-left:3px solid var(--purple);background:#F8F7FF;padding:11px 12px;border-radius:7px;margin-bottom:9px}.card h4{font-size:11px;color:var(--ink);margin-bottom:2px}
+.copy{font-size:11px;line-height:1.65}.copy strong{color:var(--ink)}
+.platform-row{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.platform{background:var(--cloud);padding:10px 7px;border-radius:7px;text-align:center}.platform strong{display:block;color:var(--ink);font-size:10px;margin-bottom:2px}.platform span{font-size:9px;color:var(--purple)}
+.footer{background:var(--ink);padding:17px 46px;display:flex;justify-content:space-between;color:#98A2B3;font-size:10px}.footer strong{color:#fff}.footer em{color:#A99BFF;font-style:normal}
+@media(max-width:800px){.grid,.grid-2,.logo-panel{grid-template-columns:1fr}.section{border-right:none}.header{padding:28px 24px}.header-right{display:none}.brand-name{font-size:28px}.page{margin:0;border-radius:0}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="header">
+<div>
+<div class="logo-lockup">
+<svg class="logo-mark" viewBox="0 0 100 100" aria-label="CLAT Prep Studio logo">
+<path d="M76 22C65 12 48 9 33 15C14 23 6 45 14 64C22 83 45 92 64 83C70 80 76 76 80 70L67 59C63 64 58 67 52 68C42 70 32 64 29 54C26 44 31 34 41 30C49 27 58 29 64 35L76 22Z" fill="#6C4CF1"/>
+<path d="M43 37H71C77 37 82 42 82 48V64L72 56H43C37 56 32 51 32 45C32 41 37 37 43 37Z" fill="#FF6B5E"/>
+<path d="M45 47L52 54L68 39" fill="none" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<div><div class="brand-name">CLAT Prep <span>Studio</span></div><div class="tagline">Think clearly. Argue sharply. Rank higher.</div></div>
+</div>
+<div class="promise-pill">Where legal minds are made</div>
+</div>
+<div class="header-right"><div class="version-label">Brand Bible</div><div class="version-num">v1.0</div><div class="domain">clat-prep-studio.vercel.app</div></div>
+</header>
+
+<div class="grid">
+<section class="section full">
+<div class="label">00 · Brand foundation</div>
+<table>
+<tr><td>Positioning</td><td>A smart, practice-first CLAT preparation studio that turns confusing legal aptitude into clear thinking, sharper arguments and measurable score improvement.</td></tr>
+<tr><td>Category</td><td>CLAT learning and practice studio — not another coaching factory or content dump.</td></tr>
+<tr><td>Archetype</td><td>Sharp Mentor — intellectually serious, student-friendly, witty and relentlessly clear.</td></tr>
+<tr><td>Emotional outcome</td><td>Clarity · confidence · momentum · competitive edge.</td></tr>
+<tr><td>Anti-persona</td><td>Stuffed-shirt legal academia, fear-driven coaching, rank guarantees, noisy “AIR-1” marketing and childish edtech visuals.</td></tr>
+</table>
+</section>
+</div>
+
+<div class="grid grid-2">
+<section class="section">
+<div class="label">01 · Recommended logo</div>
+<div class="logo-panel">
+<div class="logo-large">
+<svg width="220" viewBox="0 0 420 130">
+<g transform="translate(8 12)">
+<path d="M90 15C70 0 41 1 22 17C0 35-4 69 13 92C31 115 67 120 91 101C98 96 103 90 108 83L88 66C82 74 73 79 63 80C46 81 31 69 29 52C27 36 39 22 55 20C67 18 78 22 87 30L90 15Z" fill="#6C4CF1"/>
+<path d="M54 31H99C109 31 117 39 117 49V75L101 62H54C44 62 36 54 36 44C36 37 44 31 54 31Z" fill="#FF6B5E"/>
+<path d="M57 47L68 58L94 32" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="145" y="58" font-family="Inter,Arial" font-size="36" font-weight="800" fill="#101828">CLAT Prep</text>
+<text x="145" y="98" font-family="Inter,Arial" font-size="36" font-weight="800" fill="#6C4CF1">Studio</text>
+</svg>
+</div>
+<div class="logo-notes">
+<h3>The Argument Mark</h3>
+<div class="bullets">• Outer <strong>C</strong>: CLAT + clarity<br>• Speech bubble: argument and comprehension<br>• Tick: progress and correct reasoning<br>• Open shape: curiosity, not rote learning<br>• Asymmetric form: youthful, quick, memorable</div>
+</div>
+</div>
+</section>
+<section class="section no-right">
+<div class="label">02 · Logo rules</div>
+<div class="rule"><div class="key">Clear space</div><div class="desc">Keep one check-mark width around every side.</div></div>
+<div class="rule"><div class="key">Minimum</div><div class="desc">Mark: 24px digital / 8mm print. Full lockup: 140px digital.</div></div>
+<div class="rule"><div class="key">Primary</div><div class="desc">Purple C + coral bubble + white tick on white or cloud.</div></div>
+<div class="rule"><div class="key">Dark mode</div><div class="desc">Use white wordmark; retain purple and coral mark.</div></div>
+<div class="rule"><div class="key">One colour</div><div class="desc">Use solid Ink or solid white only.</div></div>
+<div class="rule"><div class="key">Never</div><div class="desc">No scales of justice, gavels, law books, gradients, shadows or stretched marks.</div></div>
+</section>
+</div>
+
+<div class="grid">
+<section class="section">
+<div class="label">03 · Colour system</div>
+<div class="color-grid">
+<div class="color-card"><div class="swatch" style="background:#101828"></div><div class="color-info"><div class="color-name">Argument Ink</div><div class="hex">#101828</div><div class="pct">40%</div></div></div>
+<div class="color-card"><div class="swatch" style="background:#6C4CF1"></div><div class="color-info"><div class="color-name">Studio Purple</div><div class="hex">#6C4CF1</div><div class="pct">25%</div></div></div>
+<div class="color-card"><div class="swatch" style="background:#FF6B5E"></div><div class="color-info"><div class="color-name">Objection Coral</div><div class="hex">#FF6B5E</div><div class="pct">10%</div></div></div>
+<div class="color-card"><div class="swatch" style="background:#35C7A5"></div><div class="color-info"><div class="color-name">Correct Mint</div><div class="hex">#35C7A5</div><div class="pct">8%</div></div></div>
+<div class="color-card"><div class="swatch" style="background:#F5B942"></div><div class="color-info"><div class="color-name">Rank Amber</div><div class="hex">#F5B942</div><div class="pct">5%</div></div></div>
+<div class="color-card"><div class="swatch" style="background:#F7F7FB"></div><div class="color-info"><div class="color-name">Notebook Cloud</div><div class="hex">#F7F7FB</div><div class="pct">12%</div></div></div>
+</div>
+</section>
+
+<section class="section">
+<div class="label">04 · Typography</div>
+<div class="type-row"><div class="key">Display</div><div><div class="h1">Read less. Reason better.</div><div class="desc">Manrope ExtraBold · 48–64px</div></div></div>
+<div class="type-row"><div class="key">Heading</div><div><div class="h2">Your next mock has evidence.</div><div class="desc">Manrope Bold · 28–36px</div></div></div>
+<div class="type-row"><div class="key">Body</div><div><div class="body">Clear explanations, precise feedback and zero coaching theatre.</div><div class="desc">Inter Regular · 16–18px</div></div></div>
+<div class="type-row"><div class="key">Data</div><div><div class="body"><strong>82 → 96</strong> in four mocks</div><div class="desc">JetBrains Mono Semibold</div></div></div>
+</section>
+
+<section class="section no-right">
+<div class="label">05 · Voice & tone · 7/10</div>
+<div class="voice-row"><div class="key">Clear</div><div class="desc">Explain the logic. Never hide behind academic vocabulary.</div></div>
+<div class="voice-row"><div class="key">Witty</div><div class="desc">One intelligent twist, not five jokes.</div></div>
+<div class="voice-row"><div class="key">Sharp</div><div class="desc">State what is wrong and show the better move.</div></div>
+<div class="voice-row"><div class="key">Supportive</div><div class="desc">Challenge the answer, never belittle the student.</div></div>
+<div class="voice-row"><div class="key">Evidence-led</div><div class="desc">Prefer score movement, error patterns and proof over hype.</div></div>
+</section>
+</div>
+
+<div class="grid">
+<section class="section">
+<div class="label">06 · Approved brand lines</div>
+<div class="brand-line">Think clearly. Argue sharply. Rank higher.</div>
+<div class="brand-line">Where legal minds are made.</div>
+<div class="brand-line">Your answer is not wrong. Your reasoning is unfinished.</div>
+<div class="brand-line">Less coaching. More thinking.</div>
+<div class="brand-line">Read the passage. Spot the trap. Own the answer.</div>
+</section>
+<section class="section">
+<div class="label">07 · Copy formula</div>
+<div class="card"><h4>1 · The trap</h4>Show the mistake the student keeps making.</div>
+<div class="card"><h4>2 · The reasoning</h4>Explain why the tempting answer fails.</div>
+<div class="card"><h4>3 · The move</h4>Give one practical technique to use next time.</div>
+<div class="card"><h4>4 · The proof</h4>Show the score, accuracy or time improvement.</div>
+<div class="card"><h4>CTA</h4>Try a free diagnostic →</div>
+</section>
+<section class="section no-right">
+<div class="label">08 · CTA hierarchy</div>
+<div class="cta-row"><div class="key">Primary</div><div class="desc"><strong>Take a free diagnostic</strong><br>Hero and high-intent pages</div></div>
+<div class="cta-row"><div class="key">Secondary</div><div class="desc"><strong>Try today’s challenge</strong><br>Practice and engagement</div></div>
+<div class="cta-row"><div class="key">Proof</div><div class="desc"><strong>See how the method works</strong><br>Product explanation</div></div>
+<div class="cta-row"><div class="key">Retention</div><div class="desc"><strong>Save this reasoning trick</strong><br>Social content</div></div>
+</section>
+</div>
+
+<div class="grid grid-2">
+<section class="section">
+<div class="label">09 · Brand do / don’t</div>
+<div class="copy"><strong>Do:</strong> Use passage snippets, scorecards, annotations, mock analytics, crisp diagrams and real student work.<br><br>
+<strong>Don’t:</strong> Use gavels, courthouse columns, Lady Justice, black-and-gold luxury styling, fake rank claims, red urgency banners or cartoon children.</div>
+</section>
+<section class="section no-right">
+<div class="label">10 · Imagery direction</div>
+<div class="copy"><strong>Photography:</strong> Indian students in focused, realistic study environments; daylight; notes and laptops; no staged cheering.<br><br>
+<strong>Illustration:</strong> Margin notes, underlines, argument maps, evidence arrows and exam-timer motifs.<br><br>
+<strong>Motion:</strong> Highlight → eliminate → verify. The interface should visibly “reason.”</div>
+</section>
+</div>
+
+<section class="section full">
+<div class="label">11 · Platform rules</div>
+<div class="platform-row">
+<div class="platform"><strong>Website</strong><span>One promise + diagnostic CTA</span></div>
+<div class="platform"><strong>Mock screen</strong><span>Reasoning before score</span></div>
+<div class="platform"><strong>Instagram</strong><span>Trap → logic → answer</span></div>
+<div class="platform"><strong>YouTube</strong><span>Question-first thumbnails</span></div>
+<div class="platform"><strong>WhatsApp</strong><span>Daily one-minute challenge</span></div>
+</div>
+</section>
+
+<div class="grid grid-2">
+<section class="section">
+<div class="label">12 · Pre-publish QA</div>
+<div class="copy">□ Value clear in five seconds?<br>□ Exactly one primary CTA?<br>□ Does the copy teach a reasoning move?<br>□ Is the wit intelligent, not silly?<br>□ Is every score or claim provable?<br>□ Sentence case used?<br>□ No generic legal symbols?<br>□ Purple leads; coral interrupts; mint confirms?</div>
+</section>
+<section class="section no-right">
+<div class="label">13 · AI prompt block</div>
+<div class="copy"><strong>You are writing for CLAT Prep Studio.</strong><br><br>
+Audience: ambitious Indian CLAT aspirants who need clearer reasoning, better mock analysis and measurable improvement.<br><br>
+Voice: clear, sharp, witty, supportive and evidence-led. Use plain English. Start with the student’s mistake or trap, explain the reasoning, give one practical move, and finish with one CTA.<br><br>
+Never use coaching hype, guaranteed ranks, fear, childish slang, legal clichés or jargon theatre.</div>
+</section>
+</div>
+
+<footer class="footer"><div><strong>CLAT Prep <em>Studio</em></strong></div><div>Brand Bible v1.0 · July 2026</div><div>Think clearly. Argue sharply. Rank higher.</div></footer>
+</div>
+</body>
+</html>
