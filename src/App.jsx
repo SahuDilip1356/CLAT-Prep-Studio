@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import questionsData from './data/question_bank.json';
 import gkQuestionsData from './data/gk_question_bank.json';
+import graphData from './data/ca_knowledge_graph.json';
 import { qcards } from './qcards';
 import Dashboard from './components/Dashboard';
 import GKDashboard from './components/GKDashboard';
@@ -42,6 +43,7 @@ const defaultProgress = {
   caDossierProgress: {},
   bookmarkedIds: {},
   bookmarkedQCardIds: {},
+  bookmarkedDossierIds: {},
   streak: 1
 };
 
@@ -375,10 +377,24 @@ export default function App() {
     });
   };
 
+  const handleToggleDossierBookmark = (dossierKey) => {
+    setUserProgress(prev => {
+      const base = prev || defaultProgress;
+      const newBookmarks = { ...(base.bookmarkedDossierIds || {}) };
+      if (newBookmarks[dossierKey]) {
+        delete newBookmarks[dossierKey];
+      } else {
+        newBookmarks[dossierKey] = true;
+      }
+      return { ...base, bookmarkedDossierIds: newBookmarks };
+    });
+  };
+
   const safeProgress = userProgress || defaultProgress;
   const questionBookmarkCount = Object.keys(safeProgress.bookmarkedIds || {}).length;
   const qCardBookmarkCount = Object.keys(safeProgress.bookmarkedQCardIds || {}).length;
-  const totalBookmarkCount = questionBookmarkCount + qCardBookmarkCount;
+  const dossierBookmarkCount = Object.keys(safeProgress.bookmarkedDossierIds || {}).length;
+  const totalBookmarkCount = questionBookmarkCount + qCardBookmarkCount + dossierBookmarkCount;
 
   return (
     <div className="app-container">
@@ -540,6 +556,8 @@ export default function App() {
               onStartTopicPractice={handleStartTopicPractice}
               bookmarkedCardIds={safeProgress.bookmarkedQCardIds}
               onToggleQCardBookmark={handleToggleQCardBookmark}
+              bookmarkedDossierIds={safeProgress.bookmarkedDossierIds}
+              onToggleDossierBookmark={handleToggleDossierBookmark}
             />
           </ModuleErrorBoundary>
         )}
@@ -556,6 +574,8 @@ export default function App() {
               onDossierProgress={handleCADossierProgress}
               bookmarkedCardIds={safeProgress.bookmarkedQCardIds}
               onToggleQCardBookmark={handleToggleQCardBookmark}
+              bookmarkedDossierIds={safeProgress.bookmarkedDossierIds}
+              onToggleDossierBookmark={handleToggleDossierBookmark}
             />
           </ModuleErrorBoundary>
         )}
@@ -592,6 +612,32 @@ export default function App() {
               </div>
             ) : (
               <>
+                {dossierBookmarkCount > 0 && (
+                  <section style={{ marginBottom: (qCardBookmarkCount + questionBookmarkCount) > 0 ? '26px' : 0 }}>
+                    <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '12px' }}>Saved Issue Dossiers</h3>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                      {Object.keys(safeProgress.bookmarkedDossierIds).map(dossierKey => {
+                        const dossier = graphData.find(item => `${item.folderOrder || item.month}/${item.title}` === dossierKey);
+                        if (!dossier) return null;
+                        return (
+                          <div key={dossierKey} className="glass-card" style={{ padding: '18px' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '16px', alignItems: 'flex-start' }}>
+                              <div>
+                                <div style={{ fontWeight: 800, color: 'var(--brand-purple)', marginBottom: '5px' }}>{dossier.title}</div>
+                                <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                                  {dossier.month} • {dossier.category} • {dossier.priority || 'P3'}
+                                </div>
+                              </div>
+                              <button className="btn btn-secondary" onClick={() => handleToggleDossierBookmark(dossierKey)}>
+                                Remove
+                              </button>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </section>
+                )}
                 {qCardBookmarkCount > 0 && (
                   <section style={{ marginBottom: questionBookmarkCount > 0 ? '26px' : 0 }}>
                     <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '12px' }}>Saved Q-Cards</h3>

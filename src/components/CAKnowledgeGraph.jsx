@@ -12,7 +12,9 @@ export default function CAKnowledgeGraph({
   setExternalSelectedNodeIndex,
   externalActiveLens,
   setExternalActiveLens,
-  onDossierProgress
+  onDossierProgress,
+  bookmarkedDossierIds = {},
+  onToggleDossierBookmark
 } = {}) {
   const [internalSelectedNodeIndex, setInternalSelectedNodeIndex] = useState(0);
   const selectedNodeIndex = externalSelectedNodeIndex !== undefined ? externalSelectedNodeIndex : internalSelectedNodeIndex;
@@ -86,6 +88,8 @@ export default function CAKnowledgeGraph({
 
   const activeNode = graphData[selectedNodeIndex] || graphData[0];
   const getDossierKey = (dossier) => `${dossier.folderOrder || dossier.month}/${dossier.title}`;
+  const activeDossierKey = getDossierKey(activeNode);
+  const isDossierBookmarked = Boolean(bookmarkedDossierIds[activeDossierKey]);
   const recordDossierProgress = (dossier, status, attemptedDelta = 0, correctDelta = 0) => {
     onDossierProgress?.({
       dossierKey: getDossierKey(dossier),
@@ -569,8 +573,17 @@ export default function CAKnowledgeGraph({
                 </div>
 
                 <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  <button className="btn btn-secondary" style={{ padding: '6px 12px', fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                    <BookMarked size={14} /> Bookmark
+                  <button
+                    className="btn btn-secondary"
+                    onClick={() => onToggleDossierBookmark?.(activeDossierKey)}
+                    aria-pressed={isDossierBookmarked}
+                    style={{
+                      padding: '6px 12px', fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '4px',
+                      color: isDossierBookmarked ? 'var(--accent-amber)' : undefined
+                    }}
+                  >
+                    <BookMarked size={14} fill={isDossierBookmarked ? 'var(--accent-amber)' : 'none'} />
+                    {isDossierBookmarked ? 'Bookmarked' : 'Bookmark'}
                   </button>
                   <button className="btn btn-secondary" style={{ padding: '6px 12px', fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--brand-coral)' }}>
                     <AlertCircle size={14} /> Confusing

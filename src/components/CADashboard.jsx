@@ -12,7 +12,8 @@ import GKQCardStudio from './GKQCardStudio';
 export default function CADashboard({ 
   questions, userProgress, onStartDayDrill, onStartTopicPractice, 
   initialDossierTopic, clearInitialDossierTopic, onDossierProgress,
-  bookmarkedCardIds, onToggleQCardBookmark
+  bookmarkedCardIds, onToggleQCardBookmark,
+  bookmarkedDossierIds, onToggleDossierBookmark
 }) {
   const [caTab, setCaTab] = useState('HOME'); // 'HOME' vs 'GRAPH' vs 'ONE_PAGERS' vs 'QCARDS'
   
@@ -509,6 +510,8 @@ export default function CADashboard({
           externalActiveLens={activeLens}
           setExternalActiveLens={setActiveLens}
           onDossierProgress={onDossierProgress}
+          bookmarkedDossierIds={bookmarkedDossierIds}
+          onToggleDossierBookmark={onToggleDossierBookmark}
         />
       )}
       {caTab === 'ONE_PAGERS' && <GKDailyOnePagers onStartTopicPractice={onStartTopicPractice} />}

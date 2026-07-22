@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import qcardsData from '../data/gk_qcards_data.json';
+import React, { useEffect, useState } from 'react';
+import { qcards } from '../qcards';
 import { 
   BookMarked, Sparkles, Landmark, Scale, Globe, Rocket, Award, 
   ChevronLeft, ChevronRight, AlertTriangle, Lightbulb, Printer, LayoutGrid, PlayCircle, Eye
@@ -9,21 +9,32 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
   const [viewMode, setViewMode] = useState('CAROUSEL'); // 'CAROUSEL' vs 'GRID'
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [completedList, setCompletedList] = useState({});
+  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
 
   // Topic of the day based on the day of the year to rotate through all 340+ Q-Cards
   const startOfYear = new Date(new Date().getFullYear(), 0, 0);
   const diff = new Date() - startOfYear;
   const oneDay = 1000 * 60 * 60 * 24;
   const dayOfYear = Math.floor(diff / oneDay);
-  const dailyFocusIndex = Math.max(0, (dayOfYear - 1) % qcardsData.length);
-  const dailyFocusTopic = qcardsData[dailyFocusIndex] || qcardsData[0];
+  const dailyFocusIndex = Math.max(0, (dayOfYear - 1) % qcards.length);
+  const dailyFocusTopic = qcards[dailyFocusIndex] || qcards[0];
+
+  useEffect(() => {
+    if (viewMode !== 'CAROUSEL' || !isAutoPlaying) return undefined;
+
+    const interval = window.setInterval(() => {
+      setCarouselIndex(prev => (prev + 1) % qcards.length);
+    }, 2 * 60 * 1000);
+
+    return () => window.clearInterval(interval);
+  }, [viewMode, isAutoPlaying]);
 
   const handleNext = () => {
-    setCarouselIndex((prev) => (prev + 1) % qcardsData.length);
+    setCarouselIndex((prev) => (prev + 1) % qcards.length);
   };
 
   const handlePrev = () => {
-    setCarouselIndex((prev) => (prev - 1 + qcardsData.length) % qcardsData.length);
+    setCarouselIndex((prev) => (prev - 1 + qcards.length) % qcards.length);
   };
 
   const markTopicAsReviewed = (id) => {
@@ -42,8 +53,22 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
     window.print();
   };
 
-  const activeTopic = qcardsData[carouselIndex];
+  const activeTopic = qcards[carouselIndex];
   const totalReviewed = Object.values(completedList).filter(Boolean).length;
+
+  const toggleCarouselPlayback = () => {
+    if (viewMode !== 'CAROUSEL') {
+      setViewMode('CAROUSEL');
+      setIsAutoPlaying(true);
+      return;
+    }
+    setIsAutoPlaying(prev => !prev);
+  };
+
+  const showGrid = () => {
+    setViewMode('GRID');
+    setIsAutoPlaying(false);
+  };
 
   return (
     <div className="daily-onepagers-hub" style={{ marginTop: '10px' }}>
@@ -86,15 +111,16 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
           <div style={{ display: 'flex', gap: '10px' }} className="no-print">
             <button 
               className={`btn ${viewMode === 'CAROUSEL' ? '' : 'btn-secondary'}`}
-              onClick={() => setViewMode('CAROUSEL')}
+              onClick={toggleCarouselPlayback}
+              aria-pressed={isAutoPlaying}
               style={{ padding: '8px 16px', fontSize: '0.85rem' }}
             >
-              <PlayCircle size={16} /> 2-Min Slide Carousel
+              <PlayCircle size={16} /> {isAutoPlaying ? 'Pause 2-Min Carousel' : 'Start 2-Min Carousel'}
             </button>
 
             <button 
               className={`btn ${viewMode === 'GRID' ? '' : 'btn-secondary'}`}
-              onClick={() => setViewMode('GRID')}
+              onClick={showGrid}
               style={{ padding: '8px 16px', fontSize: '0.85rem' }}
             >
               <LayoutGrid size={16} /> High-Density List
@@ -143,10 +169,10 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
           {/* Progress Bar */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
             <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
-              Progress: {carouselIndex + 1} of {qcardsData.length} topics reviewed
+              Progress: {carouselIndex + 1} of {qcards.length} topics reviewed
             </span>
             <span style={{ fontSize: '0.825rem', color: 'var(--brand-mint)', fontWeight: 700 }}>
-              Reviewed Today: {totalReviewed} / {qcardsData.length}
+              {isAutoPlaying ? 'Auto-playing • advances every 2 minutes' : `Reviewed Today: ${totalReviewed} / ${qcards.length}`}
             </span>
           </div>
 
@@ -154,7 +180,7 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
             <div 
               style={{ 
                 height: '100%', 
-                width: `${((carouselIndex + 1) / qcardsData.length) * 100}%`,
+                width: `${((carouselIndex + 1) / qcards.length) * 100}%`,
                 background: 'var(--brand-purple)', transition: 'width 0.3s ease'
               }} 
             />
@@ -174,15 +200,15 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
               </div>
 
               <button
-                onClick={() => markTopicAsReviewed(activeTopic.id)}
+                onClick={() => markTopicAsReviewed(activeTopic.cardKey)}
                 style={{
                   padding: '8px 16px', borderRadius: '20px', border: '1px solid var(--border-color)',
-                  background: completedList[activeTopic.id] ? 'var(--accent-success-bg)' : 'transparent',
-                  color: completedList[activeTopic.id] ? 'var(--brand-mint)' : 'var(--text-secondary)',
+                  background: completedList[activeTopic.cardKey] ? 'var(--accent-success-bg)' : 'transparent',
+                  color: completedList[activeTopic.cardKey] ? 'var(--brand-mint)' : 'var(--text-secondary)',
                   fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer'
                 }}
               >
-                {completedList[activeTopic.id] ? '✓ Reviewed' : 'Mark Reviewed'}
+                {completedList[activeTopic.cardKey] ? '✓ Reviewed' : 'Mark Reviewed'}
               </button>
             </div>
 
@@ -270,9 +296,9 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
       {(viewMode === 'GRID' || viewMode === 'CAROUSEL') && (
         <div className={`print-section ${viewMode === 'CAROUSEL' ? 'no-print' : ''}`}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            {qcardsData.map((topicItem, idx) => (
+            {qcards.map((topicItem, idx) => (
               <div 
-                key={`${topicItem.id}-${idx}`}
+                key={topicItem.cardKey}
                 className="glass-panel print-card" 
                 style={{ 
                   padding: '20px', borderLeft: `5px solid ${topicItem.color}`,

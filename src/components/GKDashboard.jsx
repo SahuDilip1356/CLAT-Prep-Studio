@@ -13,7 +13,9 @@ export default function GKDashboard({
   onStartDayDrill,
   onStartTopicPractice,
   bookmarkedCardIds,
-  onToggleQCardBookmark
+  onToggleQCardBookmark,
+  bookmarkedDossierIds,
+  onToggleDossierBookmark
 }) {
   const [gkTab, setGkTab] = useState('GRAPH'); // Default to Exam-Relevant Knowledge Graph
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -225,7 +227,10 @@ export default function GKDashboard({
 
       {/* TAB 3: CURRENT AFFAIRS KNOWLEDGE GRAPH & SPACED REPETITION */}
       {gkTab === 'GRAPH' && (
-        <CAKnowledgeGraph />
+        <CAKnowledgeGraph
+          bookmarkedDossierIds={bookmarkedDossierIds}
+          onToggleDossierBookmark={onToggleDossierBookmark}
+        />
       )}
 
       {/* TAB 2: 125-DAY MOCK DRILL MATRIX & TOPICS */}
