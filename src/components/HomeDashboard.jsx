@@ -1,37 +1,36 @@
 import React, { useState } from 'react';
-import { ArrowRight, Check, Flame, Menu, X } from 'lucide-react';
+import {
+  ArrowRight,
+  BarChart3,
+  BookOpen,
+  BrainCircuit,
+  Check,
+  Flame,
+  Menu,
+  Newspaper,
+  RefreshCw,
+  Target,
+  X
+} from 'lucide-react';
 import graphData from '../data/ca_knowledge_graph.json';
 import './HomeDashboard.css';
 
-const FLOW_STEPS = [
-  ['01', 'Learn', 'Understand the concept or issue.'],
-  ['02', 'Practise', 'Attempt passages, drills and questions.'],
-  ['03', 'Analyse', 'Review accuracy, speed and mistakes.'],
-  ['04', 'Revise', 'Use Q-cards and spaced repetition.']
+const PREP_LOOP = [
+  { number: '01', title: 'Learn / Understand', description: 'Dossiers, concepts, legal background and static GK.', color: '#5D20FB', icon: BookOpen },
+  { number: '02', title: 'Practise / Apply', description: 'CLAT passages, MCQs, timed drills and answer reasoning.', color: '#FD493B', icon: BrainCircuit },
+  { number: '03', title: 'Revise / Retain', description: 'Q-cards, one-page notes and spaced repetition.', color: '#2457D6', icon: RefreshCw },
+  { number: '04', title: 'Progress / Diagnose', description: 'Readiness, trends, gaps and your next best action.', color: '#272C40', icon: BarChart3 }
 ];
 
-const PIPELINE_STEPS = [
-  'News Event',
-  'Background',
-  'Legal Significance',
-  'Connected Facts',
-  'CLAT Passage',
-  'AILET Questions',
-  'Q-Cards',
-  'One-Page Revision',
-  'Spaced Repetition'
-];
+const PIPELINE_STEPS = ['News event', 'Legal context', 'Connected facts', 'Exam passage', 'Q-cards', 'Spaced revision'];
 
 const PROGRESS_METRICS = [
-  'Accuracy',
-  'Average time per question',
-  'Attempt rate',
-  'Difficulty-wise performance',
-  'Topic mastery',
-  'Revision retention',
-  'Mistake recurrence',
-  'Weekly consistency',
-  'Predicted readiness band'
+  ['Accuracy', 'Are your answers becoming more reliable?'],
+  ['Speed', 'Can you solve under exam pressure?'],
+  ['Topic mastery', 'Which concepts are ready and which need work?'],
+  ['Retention', 'What can you still recall after revision?'],
+  ['Consistency', 'Is your preparation building momentum?'],
+  ['Next action', 'What should you study now?']
 ];
 
 const getDossierKey = (dossier) => `${dossier.folderOrder || dossier.month}/${dossier.title}`;
@@ -100,7 +99,7 @@ export default function HomeDashboard({
     : readinessScore >= 75 ? 'Exam ready'
       : readinessScore >= 60 ? 'Progressing'
         : readinessScore >= 40 ? 'Developing'
-          : 'Foundation';
+          : 'Building your baseline';
 
   const enterModule = (module) => {
     setActiveModule(module);
@@ -119,38 +118,46 @@ export default function HomeDashboard({
     window.location.search = `?topic=${slug}`;
   };
 
-  const navItems = [
-    ['How It Works', '#how-it-works'],
-    ['Modules', '#modules'],
-    ['Current Affairs', '#current-affairs'],
-    ['Progress System', '#progress-system'],
-    ['About', '#footer-about']
-  ];
+  const studentName = currentUser?.displayName || userProgress?.studentProfile?.name;
+  const hasPreparationData = answeredQuestions > 0 || completedQuantDays > 0 || completedGkDays > 0 || completedCaDossiers > 0;
+  const primaryActionLabel = hasPreparationData ? 'Continue preparation' : 'Start today’s plan';
 
   const moduleCards = [
     {
-      id: 'quant', number: '01', title: 'Quant Drills', color: '#ea580b', soft: '#fff1e8',
-      description: 'Build speed, calculation accuracy and question selection.',
-      progress: `${completedQuantDays} of 31 days`, pct: quantPct, stat: `${quantAccuracy}% accuracy`,
-      time: '15 min / day', activity: `Day ${nextQuantDay} ready`, cta: 'Continue Quant', module: 'QUANT'
+      id: 'quant', eyebrow: 'Practise / Apply', title: 'Quant & Logical Reasoning', icon: BrainCircuit,
+      color: '#FD493B', soft: '#FFF0EE', module: 'QUANT',
+      description: 'A structured 31-day drill plan for calculation speed, caselets, puzzles and reasoning under time pressure.',
+      progress: `${completedQuantDays} of 31 days`, pct: quantPct, stat: quantAttempted ? `${quantAccuracy}% accuracy` : 'Baseline not started',
+      action: `Open Day ${nextQuantDay}`
     },
     {
-      id: 'gk', number: '02', title: 'General Knowledge', color: '#4f46e5', soft: '#eef0fd',
-      description: 'Master 1,565 static GK questions with daily one-pagers and active-recall Q-cards.',
-      progress: `${completedGkDays} of 125 days`, pct: gkPct, stat: `${gkAccuracy}% accuracy`,
-      time: '20 min / day', activity: `Day ${nextGkDay} ready`, cta: 'Continue GK', module: 'GK'
+      id: 'gk', eyebrow: 'Learn / Understand', title: 'Static General Knowledge', icon: BookOpen,
+      color: '#5D20FB', soft: '#F2EDFF', module: 'GK',
+      description: 'Daily one-pagers and 1,565 active-recall questions across polity, history, geography and economics.',
+      progress: `${completedGkDays} of 125 days`, pct: gkPct, stat: gkAttempted ? `${gkAccuracy}% accuracy` : 'Baseline not started',
+      action: `Open Day ${nextGkDay}`
     },
     {
-      id: 'ca', number: '03', title: 'Current Affairs Knowledge Graph', color: '#059669', soft: '#e8f7f1',
-      description: 'Understand issues deeply. Connect legal significance, static facts and exam-ready revision.',
-      progress: `${completedCaDossiers} of ${totalDossiers} dossiers`, pct: caPct, stat: `${caAccuracy}% accuracy`,
-      time: `${totalDossiers} live dossiers`, activity: 'Spaced revision included', cta: 'Revise Now', module: 'CA'
+      id: 'ca', eyebrow: 'Learn → Apply → Retain', title: 'Current Affairs Studio', icon: Newspaper,
+      color: '#2457D6', soft: '#EEF3FF', module: 'CA',
+      description: 'Issue dossiers connect news, law and static facts to CLAT passages, AILET MCQs and spaced revision.',
+      progress: `${completedCaDossiers} of ${totalDossiers} dossiers`, pct: caPct, stat: caAttempted ? `${caAccuracy}% accuracy` : 'Next dossier selected',
+      action: 'Open Current Affairs'
     }
   ];
 
   const dossierTimeline = nextDossier?.dossier?.timeline || [];
-  const dossierCards = (nextDossier?.qcards || []).slice(0, 5);
-  const studentName = currentUser?.displayName || userProgress?.studentProfile?.name;
+  const dossierCards = (nextDossier?.qcards || []).slice(0, 4);
+  const verifiedDate = nextDossier?.lastVerifiedDate
+    ? new Date(`${nextDossier.lastVerifiedDate}T00:00:00`).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
+    : 'Verification pending';
+
+  const navItems = [
+    ['Modules', '#modules'],
+    ['How it works', '#how-it-works'],
+    ['Current Affairs', '#current-affairs'],
+    ['Progress', '#progress-system']
+  ];
 
   return (
     <div className="marketing-home">
@@ -165,8 +172,12 @@ export default function HomeDashboard({
           </nav>
 
           <div className="marketing-nav-actions">
-            <button className="marketing-login" onClick={studentName ? () => enterModule('QUANT') : onOpenAuth}>{studentName ? `Hi, ${studentName.split(' ')[0]}` : 'Log in'}</button>
-            <button className="marketing-primary-button marketing-small-button" onClick={() => enterModule('QUANT')}>Start The Prep</button>
+            <button className="marketing-login" onClick={studentName ? () => enterModule('QUANT') : onOpenAuth}>
+              {studentName ? `Dashboard · ${studentName.split(' ')[0]}` : 'Log in'}
+            </button>
+            <button className="marketing-primary-button marketing-small-button" onClick={() => startDrill(nextQuantDay, 'QUANT')}>
+              {primaryActionLabel}
+            </button>
           </div>
 
           <button
@@ -181,80 +192,88 @@ export default function HomeDashboard({
 
         {mobileNavOpen && (
           <nav className="marketing-mobile-nav" aria-label="Mobile homepage navigation">
-            {navItems.map(([label, href]) => (
-              <a key={href} href={href} onClick={() => setMobileNavOpen(false)}>{label}</a>
-            ))}
-            <button onClick={studentName ? () => enterModule('QUANT') : onOpenAuth}>{studentName ? `Continue as ${studentName.split(' ')[0]}` : 'Log in'}</button>
-            <button className="marketing-primary-button" onClick={() => enterModule('QUANT')}>Start The Prep</button>
+            {navItems.map(([label, href]) => <a key={href} href={href} onClick={() => setMobileNavOpen(false)}>{label}</a>)}
+            <button onClick={studentName ? () => enterModule('QUANT') : onOpenAuth}>{studentName ? `Open ${studentName.split(' ')[0]}’s dashboard` : 'Log in'}</button>
+            <button className="marketing-primary-button" onClick={() => startDrill(nextQuantDay, 'QUANT')}>{primaryActionLabel}</button>
           </nav>
         )}
       </header>
 
       <main>
-        <section className="marketing-shell marketing-hero" id="top">
-          <div className="marketing-hero-copy">
-            <div className="marketing-eyebrow"><span /> Built for CLAT &amp; AILET 2027/2028</div>
-            <h1>Quant &amp; GK sprint. A Current Affairs graph that never stops growing.</h1>
-            <p>Run the structured 31-day Quant and GK syllabus while you build a living Current Affairs knowledge graph — issue dossiers, revision cards and progress analytics, all in one daily practice.</p>
-            <div className="marketing-button-row">
-              <button className="marketing-primary-button" onClick={() => enterModule('QUANT')}>Start The Prep</button>
-              <a className="marketing-secondary-button" href="#modules">Explore the 3 Modules</a>
-            </div>
-          </div>
-
-          <div className="marketing-dashboard-preview" aria-label="Live preparation dashboard preview">
-            <span className="marketing-preview-label">Live dashboard preview</span>
-            <div className="marketing-preview-heading">
-              <div>
-                <strong>Quant + GK · Day {Math.min(nextQuantDay, 31)} <small>of 31</small></strong>
-                <span>{answeredQuestions} questions attempted · CA: {completedCaDossiers} topics covered</span>
+        <section className="marketing-hero" id="top">
+          <div className="marketing-shell marketing-hero-grid">
+            <div className="marketing-hero-copy">
+              <div className="marketing-eyebrow"><span /> CLAT preparation operating system</div>
+              <h1>Think clearly. Practise the reasoning. <em>Revise before you forget.</em></h1>
+              <p>One focused plan connects Quant, Static GK and Current Affairs—so you always know what to learn, practise and revise next.</p>
+              <div className="marketing-button-row">
+                <button className="marketing-primary-button" onClick={() => startDrill(nextQuantDay, 'QUANT')}>
+                  {primaryActionLabel} <ArrowRight size={17} />
+                </button>
+                <a className="marketing-text-link" href="#modules">See the three modules <ArrowRight size={15} /></a>
               </div>
-              <div className="marketing-streak"><Flame size={16} /> {userProgress?.streak || 1}-day streak</div>
+              <div className="marketing-hero-note"><Check size={16} /> Built for CLAT &amp; AILET 2027/2028 · Progress stays connected across modules</div>
             </div>
-            <div className="marketing-task-preview">
-              <b>Today&apos;s three tasks</b>
-              <span><i className="is-done"><Check size={12} /></i> Quant Drill {String(nextQuantDay).padStart(2, '0')} · 15 min</span>
-              <span><i className="is-quant" /> GK Daily One-Pager {String(nextGkDay).padStart(2, '0')} · 20 min</span>
-              <span><i className="is-ca" /> Revise Current Affairs Q-Cards · 10 min</span>
-            </div>
-            <div className="marketing-preview-stats">
-              <div><span>Quant accuracy</span><strong>{quantAccuracy}%</strong></div>
-              <div><span>GK accuracy</span><strong>{gkAccuracy}%</strong></div>
-            </div>
+
+            <article className="marketing-next-action" aria-label="Your next best preparation action">
+              <div className="marketing-next-topline"><span>Your next best action</span><b><Target size={15} /> Personalised</b></div>
+              <div className="marketing-next-title">
+                <div className="marketing-next-icon"><BrainCircuit size={24} /></div>
+                <div><small>Practise / Apply</small><h2>Quant Drill · Day {nextQuantDay}</h2><p>Build your first measurable signal in 15 minutes.</p></div>
+              </div>
+              <div className="marketing-next-tasks">
+                <button onClick={() => startDrill(nextQuantDay, 'QUANT')}><span><i className="is-coral">01</i><b>Quant drill</b></span><small>15 min <ArrowRight size={14} /></small></button>
+                <button onClick={() => enterModule('GK')}><span><i className="is-purple">02</i><b>GK one-pager · Day {nextGkDay}</b></span><small>20 min <ArrowRight size={14} /></small></button>
+                <button onClick={openDossier}><span><i className="is-blue">03</i><b>Issue dossier</b></span><small>15 min <ArrowRight size={14} /></small></button>
+              </div>
+              <div className="marketing-next-footer">
+                <span><Flame size={15} /> {userProgress?.streak || 1}-day momentum</span>
+                <span>{readinessScore > 0 ? `${readinessScore}% readiness` : 'First signal after Day 1'}</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section className="marketing-proof-strip" aria-label="Platform coverage">
+          <div className="marketing-shell">
+            <div><strong>31 days</strong><span>Quant &amp; reasoning plan</span></div>
+            <div><strong>1,565</strong><span>Static GK questions</span></div>
+            <div><strong>{totalDossiers}</strong><span>Current Affairs dossiers</span></div>
+            <div><strong>1 system</strong><span>Progress across every module</span></div>
           </div>
         </section>
 
         <section className="marketing-shell marketing-section" id="modules">
-          <div className="marketing-section-kicker is-orange">Three preparation engines</div>
-          <h2>Not a question bank. A daily operating system for CLAT &amp; AILET.</h2>
+          <div className="marketing-section-heading">
+            <div><span className="marketing-section-kicker">The three core modules</span><h2>Different subjects. One preparation rhythm.</h2></div>
+            <p>Each module opens into the same clean workspace you already use—daily action, visible progress and a clear route back home.</p>
+          </div>
           <div className="marketing-module-grid">
-            {moduleCards.map((module) => (
-              <article className={`marketing-module-card is-${module.id}`} key={module.id}>
-                <div className="marketing-card-number" style={{ color: module.color }}><span>{module.number}</span><i style={{ background: module.color }} /></div>
-                <div>
+            {moduleCards.map((module) => {
+              const ModuleIcon = module.icon;
+              return (
+                <article className={`marketing-module-card is-${module.id}`} key={module.id} style={{ '--module-color': module.color, '--module-soft': module.soft }}>
+                  <div className="marketing-module-top"><div className="marketing-module-icon"><ModuleIcon size={22} /></div><span>{module.eyebrow}</span></div>
                   <h3>{module.title}</h3>
                   <p>{module.description}</p>
-                </div>
-                <div className="marketing-module-progress">
-                  <div><i style={{ width: `${module.pct}%`, background: module.color }} /></div>
-                  <span>{module.progress}<b style={{ color: module.color }}>{module.stat}</b></span>
-                </div>
-                <div className="marketing-module-meta" style={{ background: module.soft }}><span>{module.time}</span><span>{module.activity}</span></div>
-                <button style={{ background: module.color }} onClick={() => enterModule(module.module)}>{module.cta} <ArrowRight size={16} /></button>
-              </article>
-            ))}
+                  <div className="marketing-module-progress"><span>{module.progress}<b>{module.stat}</b></span><div><i style={{ width: `${module.pct}%` }} /></div></div>
+                  <button onClick={() => enterModule(module.module)}>{module.action} <ArrowRight size={16} /></button>
+                </article>
+              );
+            })}
           </div>
         </section>
 
-        <section className="marketing-white-section" id="how-it-works">
+        <section className="marketing-system-section" id="how-it-works">
           <div className="marketing-shell marketing-section">
-            <div className="marketing-section-kicker is-purple">How the system works</div>
-            <h2>Every topic runs the same loop, every day.</h2>
-            <div className="marketing-flow-grid">
-              {FLOW_STEPS.map(([number, title, description], index) => (
-                <article key={number}>
-                  <span>{number}</span><h3>{title}</h3><p>{description}</p>
-                  {index < FLOW_STEPS.length - 1 && <i>→</i>}
+            <div className="marketing-section-heading is-light">
+              <div><span className="marketing-section-kicker">How the product works</span><h2>One loop, repeated with purpose.</h2></div>
+              <p>News becomes knowledge. Knowledge becomes marks. Progress decides what comes next.</p>
+            </div>
+            <div className="marketing-loop-grid">
+              {PREP_LOOP.map(({ number, title, description, color, icon: LoopIcon }) => (
+                <article key={number} style={{ '--loop-color': color }}>
+                  <div><span>{number}</span><LoopIcon size={20} /></div><h3>{title}</h3><p>{description}</p>
                 </article>
               ))}
             </div>
@@ -262,71 +281,58 @@ export default function HomeDashboard({
         </section>
 
         <section className="marketing-shell marketing-section" id="current-affairs">
-          <div className="marketing-section-kicker is-green">Current Affairs knowledge graph</div>
-          <h2>One news event becomes eight ways to remember it.</h2>
-          <p className="marketing-section-intro">Every dossier moves through the same pipeline — from raw event to a fact you&apos;ll still recall on exam day.</p>
-          <div className="marketing-pipeline">
-            {PIPELINE_STEPS.map((step, index) => (
-              <React.Fragment key={step}><span>{step}</span>{index < PIPELINE_STEPS.length - 1 && <i>→</i>}</React.Fragment>
-            ))}
-          </div>
-
-          <article className="marketing-dossier-card">
-            <div className="marketing-dossier-heading">
-              <div><span>Next recommended dossier</span><h3>{nextDossier?.title}</h3></div>
-              <button onClick={() => setDossierOpen((open) => !open)}>{dossierOpen ? 'Collapse dossier ↑' : 'Expand full dossier ↓'}</button>
-            </div>
-            {!dossierOpen && <p>{nextDossier?.whyThisMayBeAsked || nextDossier?.dossier?.whatHappened}</p>}
-            {dossierOpen && (
-              <div className="marketing-dossier-grid">
-                <div><b>What happened</b><p>{nextDossier?.dossier?.whatHappened}</p></div>
-                <div><b>Why it matters</b><p>{nextDossier?.dossier?.legalSignificance}</p></div>
-                <div><b>Timeline</b>{dossierTimeline.slice(0, 3).map((item) => <p className="marketing-timeline" key={`${item.date}-${item.event}`}><strong>{item.date}</strong>{item.event}</p>)}</div>
-                <div><b>Commonly confused</b><p>{nextDossier?.confusionTraps?.frequentlyConfusedWith}</p><p>{nextDossier?.confusionTraps?.whyTheyDiffer}</p></div>
-                {dossierCards.length > 0 && <div className="marketing-qcards"><b>{dossierCards.length} Q-cards generated</b><div>{dossierCards.map((card) => <span key={card.id}>{cleanCardText(card.front)}</span>)}</div></div>}
-                <button className="marketing-inline-dossier-button" onClick={openDossier}>Study this dossier <ArrowRight size={16} /></button>
+          <div className="marketing-ca-layout">
+            <div className="marketing-ca-copy">
+              <span className="marketing-section-kicker">Current Affairs Studio</span>
+              <h2>Do not just read current affairs. Connect them.</h2>
+              <p>A news event becomes legal context, connected static GK, an exam passage and a revision schedule.</p>
+              <div className="marketing-pipeline">
+                {PIPELINE_STEPS.map((step, index) => <React.Fragment key={step}><span>{step}</span>{index < PIPELINE_STEPS.length - 1 && <i>→</i>}</React.Fragment>)}
               </div>
-            )}
-          </article>
-        </section>
+              <button className="marketing-secondary-button" onClick={() => enterModule('CA')}>Open Current Affairs Studio <ArrowRight size={16} /></button>
+            </div>
 
-        <section className="marketing-white-section" id="plan">
-          <div className="marketing-shell marketing-plan-section">
-            <div>
-              <div className="marketing-section-kicker is-orange">Personalised daily plan</div>
-              <h2>Never ask, “What should I study today?”</h2>
-              <p>Built each morning from what&apos;s incomplete, what&apos;s due for revision and where you&apos;re weakest.</p>
-            </div>
-            <div className="marketing-plan-table">
-              <div className="marketing-plan-head"><span>Task</span><span>Time</span><span>Status</span></div>
-              <button onClick={() => startDrill(nextQuantDay, 'QUANT')}><strong>Quant Drill {String(nextQuantDay).padStart(2, '0')}</strong><span>15 min</span><i className="is-orange">Start</i></button>
-              <button onClick={() => enterModule('GK')}><strong>GK Daily One-Pager {String(nextGkDay).padStart(2, '0')}</strong><span>20 min</span><i className="is-purple">Continue</i></button>
-              <button onClick={() => enterModule('CA')}><strong>Revise Current Affairs Q-Cards</strong><span>10 min</span><i className="is-amber">Due</i></button>
-              <button onClick={openDossier}><strong>Today&apos;s Issue Dossier</strong><span>15 min</span><i className="is-green">New</i></button>
-            </div>
+            <article className="marketing-dossier-card">
+              <div className="marketing-dossier-meta"><span>{nextDossier?.priority || 'P2'} · {nextDossier?.category}</span><b>Verified {verifiedDate}</b></div>
+              <h3>{nextDossier?.title}</h3>
+              <p>{nextDossier?.whyThisMayBeAsked || nextDossier?.dossier?.whatHappened}</p>
+              <div className="marketing-source-line"><BookOpen size={15} /><span>Catalogue source: CLAT &amp; AILET 2027 Current Affairs Master Catalogue</span></div>
+              <button className="marketing-dossier-toggle" onClick={() => setDossierOpen((open) => !open)}>{dossierOpen ? 'Hide dossier preview' : 'Preview the dossier'} <ArrowRight size={15} /></button>
+              {dossierOpen && (
+                <div className="marketing-dossier-preview">
+                  <div><b>What happened</b><p>{nextDossier?.dossier?.whatHappened}</p></div>
+                  <div><b>Legal significance</b><p>{nextDossier?.dossier?.legalSignificance}</p></div>
+                  {dossierTimeline.length > 0 && <div><b>Timeline</b>{dossierTimeline.slice(0, 2).map((item) => <p className="marketing-timeline" key={`${item.date}-${item.event}`}><strong>{item.date}</strong>{item.event}</p>)}</div>}
+                  {dossierCards.length > 0 && <div className="marketing-qcards"><b>Revision questions</b>{dossierCards.map((card) => <span key={card.id}>{cleanCardText(card.front)}</span>)}</div>}
+                  <button className="marketing-primary-button" onClick={openDossier}>Study this dossier <ArrowRight size={16} /></button>
+                </div>
+              )}
+            </article>
           </div>
         </section>
 
-        <section className="marketing-shell marketing-section" id="progress-system">
-          <div className="marketing-section-kicker is-purple">Progress that means something</div>
-          <h2>Not “120 questions completed.” What&apos;s actually working.</h2>
-          <div className="marketing-progress-layout">
-            <article className="marketing-readiness-card">
-              <span>Overall readiness</span>
-              <strong>{readinessScore}</strong>
-              <b>{readinessLabel}</b>
-              <div><i style={{ width: `${readinessScore}%` }} /></div>
-              <p>Accuracy, completion, retention and consistency combine into one useful preparation signal.</p>
-            </article>
-            <div className="marketing-metric-grid">{PROGRESS_METRICS.map((metric) => <span key={metric}>{metric}</span>)}</div>
+        <section className="marketing-progress-section" id="progress-system">
+          <div className="marketing-shell marketing-progress-layout">
+            <div className="marketing-progress-copy">
+              <span className="marketing-section-kicker">Progress / Diagnose</span>
+              <h2>Progress should explain what remains—and what to do now.</h2>
+              <p>Completion alone is not readiness. The Studio combines accuracy, speed, retention and consistency into a useful next action.</p>
+              <article className="marketing-readiness-card">
+                <div><span>Overall readiness</span><b>{readinessLabel}</b></div>
+                <strong>{readinessScore}<small>%</small></strong>
+                <div className="marketing-readiness-bar"><i style={{ width: `${readinessScore}%` }} /></div>
+                <p>{readinessScore > 0 ? 'Your score updates as practice evidence grows.' : 'Complete your first drill to establish a meaningful baseline.'}</p>
+              </article>
+            </div>
+            <div className="marketing-metric-grid">{PROGRESS_METRICS.map(([title, description]) => <article key={title}><b>{title}</b><span>{description}</span></article>)}</div>
           </div>
         </section>
 
         <section className="marketing-final-cta">
-          <h2>Your CLAT preparation should tell you what comes next.</h2>
-          <div className="marketing-button-row">
-            <button className="marketing-primary-button" onClick={() => enterModule('QUANT')}>Create My Study Plan</button>
-            <button className="marketing-dark-secondary" onClick={() => startDrill(nextQuantDay, 'QUANT')}>Try a Sample Drill</button>
+          <div className="marketing-shell">
+            <span>Clarity · momentum · confidence · control</span>
+            <h2>Your preparation should always tell you what comes next.</h2>
+            <button className="marketing-primary-button" onClick={() => startDrill(nextQuantDay, 'QUANT')}>{primaryActionLabel} <ArrowRight size={17} /></button>
           </div>
         </section>
       </main>
@@ -334,13 +340,13 @@ export default function HomeDashboard({
       <footer className="marketing-footer" id="footer-about">
         <div className="marketing-shell">
           <div className="marketing-footer-main">
-            <div className="marketing-footer-brand"><img src="/logo.svg" alt="CLAT Prep Studio" /><p>Built for CLAT &amp; AILET 2027/2028 aspirants. Think clearly. Argue sharply. Rank higher.</p></div>
+            <div className="marketing-footer-brand"><img src="/logo.svg" alt="CLAT Prep Studio" /><p>Think clearly. Argue sharply. Rank higher.</p></div>
             <div className="marketing-footer-links">
-              <div><b>Product</b><button onClick={() => enterModule('QUANT')}>Quant Drills</button><button onClick={() => enterModule('GK')}>General Knowledge</button><button onClick={() => enterModule('CA')}>Current Affairs</button></div>
-              <div><b>Company</b><a href="#how-it-works">How It Works</a><a href="#progress-system">Progress System</a><button onClick={onOpenAuth}>Log in</button></div>
+              <div><b>Modules</b><button onClick={() => enterModule('QUANT')}>Quant &amp; LR</button><button onClick={() => enterModule('GK')}>Static GK</button><button onClick={() => enterModule('CA')}>Current Affairs</button></div>
+              <div><b>System</b><a href="#how-it-works">How it works</a><a href="#progress-system">Progress</a><button onClick={onOpenAuth}>Log in</button></div>
             </div>
           </div>
-          <div className="marketing-copyright">© 2026 CLAT Prep Studio. All rights reserved.</div>
+          <div className="marketing-copyright"><span>© 2026 CLAT Prep Studio.</span><span>The Sharp Mentor · Academic Energy</span></div>
         </div>
       </footer>
     </div>
