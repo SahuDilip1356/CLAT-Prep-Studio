@@ -159,11 +159,11 @@ export default function App() {
 
   // Open profile modal if no profile registered yet
   useEffect(() => {
-    if (!userProgress?.studentProfile) {
+    if (!userProgress?.studentProfile && activeModule !== 'HOME') {
       const timer = setTimeout(() => setIsProfileModalOpen(true), 800);
       return () => clearTimeout(timer);
     }
-  }, [userProgress]);
+  }, [userProgress, activeModule]);
 
   const handleSaveProfile = (profileData) => {
     setUserProgress(prev => ({ ...(prev || defaultProgress), studentProfile: profileData }));
@@ -409,7 +409,7 @@ export default function App() {
 
   return (
     <div className="app-container">
-      {viewState !== 'MOCK_TEST' && (
+      {viewState !== 'MOCK_TEST' && activeModule !== 'HOME' && (
         <header className="glass-panel header-nav">
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
             <div
@@ -567,6 +567,8 @@ export default function App() {
               userProgress={safeProgress}
               setActiveModule={setActiveModule}
               onStartDayDrill={handleStartDayDrill}
+              onOpenAuth={() => setIsAuthModalOpen(true)}
+              currentUser={currentUser}
             />
           </ModuleErrorBoundary>
         )}
