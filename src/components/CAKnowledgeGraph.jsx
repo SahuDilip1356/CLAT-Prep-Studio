@@ -4,14 +4,15 @@ import {
   Network, BookOpen, Clock, Play, Award, HelpCircle, Check, AlertTriangle, 
   ArrowRight, ShieldCheck, RotateCcw, BrainCircuit, CheckSquare,
   Globe, Landmark, MapPin, MessageSquare, AlertCircle, Compass, Star, Filter,
-  ChevronDown, ChevronUp
+  ChevronDown, ChevronUp, BookMarked
 } from 'lucide-react';
 
 export default function CAKnowledgeGraph({
   externalSelectedNodeIndex,
   setExternalSelectedNodeIndex,
   externalActiveLens,
-  setExternalActiveLens
+  setExternalActiveLens,
+  onDossierProgress
 } = {}) {
   const [internalSelectedNodeIndex, setInternalSelectedNodeIndex] = useState(0);
   const selectedNodeIndex = externalSelectedNodeIndex !== undefined ? externalSelectedNodeIndex : internalSelectedNodeIndex;
@@ -84,6 +85,26 @@ export default function CAKnowledgeGraph({
   });
 
   const activeNode = graphData[selectedNodeIndex] || graphData[0];
+  const getDossierKey = (dossier) => `${dossier.folderOrder || dossier.month}/${dossier.title}`;
+  const recordDossierProgress = (dossier, status, attemptedDelta = 0, correctDelta = 0) => {
+    onDossierProgress?.({
+      dossierKey: getDossierKey(dossier),
+      dossierId: dossier.id,
+      title: dossier.title,
+      status,
+      attemptedDelta,
+      correctDelta
+    });
+  };
+  const selectDossier = (node) => {
+    setSelectedNodeIndex(node.index);
+    setActiveLens('EVENT');
+    setSelectedAnswers({});
+    setSubmittedQuestions({});
+    recordDossierProgress(node, 'UNDERSTOOD');
+  };
+  const verifiedFacts = activeNode?.facts || [];
+  const verifiedSourceCount = new Set(verifiedFacts.map(fact => fact.source).filter(Boolean)).size;
 
   // Directory Groupings
   const dossiersByMonth = {};
@@ -177,6 +198,7 @@ export default function CAKnowledgeGraph({
 
     updatedBoxes[newBox].push(cardId);
     saveLeitnerState(updatedBoxes);
+    recordDossierProgress(activeNode, 'PRACTISED');
     
     setShowAnswer(false);
     setActiveCardIndex((prev) => (prev + 1) % flashcards.length);
@@ -187,20 +209,22 @@ export default function CAKnowledgeGraph({
   };
 
   const handleSubmitQuestion = (qId) => {
+    if (submittedQuestions[qId]) return;
+    const question = [
+      ...(activeNode.clatPassage?.questions || []),
+      ...(activeNode.ailetMcqs || [])
+    ].find(item => item.id === qId);
+    const correctDelta = question && selectedAnswers[qId] === question.correctAnswer ? 1 : 0;
     setSubmittedQuestions(prev => ({ ...prev, [qId]: true }));
+    recordDossierProgress(activeNode, 'PRACTISED', 1, correctDelta);
   };
 
   const renderNodeButton = (node) => {
     const isSelected = selectedNodeIndex === node.index;
     return (
       <button
-        key={node.id}
-        onClick={() => {
-          setSelectedNodeIndex(node.index);
-          setActiveLens('EVENT');
-          setSelectedAnswers({});
-          setSubmittedQuestions({});
-        }}
+        key={`${node.id}-${node.index}`}
+        onClick={() => selectDossier(node)}
         style={{
           width: '100%', padding: '8px 10px', borderRadius: '6px', textAlign: 'left',
           border: isSelected ? '2px solid var(--brand-purple)' : '1px solid var(--border-color)',
@@ -386,13 +410,8 @@ export default function CAKnowledgeGraph({
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '12px' }}>
                         {list.map(node => (
                           <button
-                            key={node.id}
-                            onClick={() => {
-                              setSelectedNodeIndex(node.index);
-                              setActiveLens('EVENT');
-                              setSelectedAnswers({});
-                              setSubmittedQuestions({});
-                            }}
+                            key={`${node.id}-${node.index}`}
+                            onClick={() => selectDossier(node)}
                             style={{
                               width: '100%', padding: '10px 12px', borderRadius: '6px', textAlign: 'left',
                               border: selectedNodeIndex === node.index ? '2px solid var(--brand-purple)' : '1px solid var(--border-color)',
@@ -420,13 +439,8 @@ export default function CAKnowledgeGraph({
               </div>
               {continuingDossiers.map(node => (
                 <button
-                  key={node.id}
-                  onClick={() => {
-                    setSelectedNodeIndex(node.index);
-                    setActiveLens('EVENT');
-                    setSelectedAnswers({});
-                    setSubmittedQuestions({});
-                  }}
+                  key={`${node.id}-${node.index}`}
+                  onClick={() => selectDossier(node)}
                   style={{
                     width: '100%', padding: '10px 12px', borderRadius: '6px', textAlign: 'left',
                     border: selectedNodeIndex === node.index ? '2px solid var(--brand-mint)' : '1px solid var(--border-color)',
@@ -571,13 +585,21 @@ export default function CAKnowledgeGraph({
               }}>
                 <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <ShieldCheck size={16} color="var(--brand-mint)" />
-                  <span>Verified facts from <strong>{activeNode.facts?.length || 4} credibility layers</strong> (Supreme Court judgments, gazettes, primary official releases)</span>
+                  <span>
+                    {verifiedSourceCount > 0
+                      ? <>Verified against <strong>{verifiedSourceCount} documented source {verifiedSourceCount === 1 ? 'layer' : 'layers'}</strong></>
+                      : <><strong>Source citations pending</strong> for this generated dossier</>}
+                  </span>
                 </div>
-                <div style={{ display: 'flex', gap: '6px' }}>
-                  <span style={{ fontSize: '0.65rem', fontWeight: 800, padding: '2px 8px', borderRadius: '4px', background: 'rgba(53, 199, 165, 0.12)', color: 'var(--brand-mint)' }}>Court Judgment</span>
-                  <span style={{ fontSize: '0.65rem', fontWeight: 800, padding: '2px 8px', borderRadius: '4px', background: 'rgba(108, 76, 241, 0.12)', color: 'var(--brand-purple)' }}>Primary Official</span>
-                  <span style={{ fontSize: '0.65rem', fontWeight: 800, padding: '2px 8px', borderRadius: '4px', background: 'rgba(255, 107, 94, 0.12)', color: 'var(--brand-coral)' }}>Tier-1 News Agency</span>
-                </div>
+                {verifiedSourceCount > 0 && (
+                  <div style={{ display: 'flex', gap: '6px' }}>
+                    {[...new Set(verifiedFacts.map(fact => fact.sourceType).filter(Boolean))].map(sourceType => (
+                      <span key={sourceType} style={{ fontSize: '0.65rem', fontWeight: 800, padding: '2px 8px', borderRadius: '4px', background: 'rgba(108, 76, 241, 0.12)', color: 'var(--brand-purple)' }}>
+                        {sourceType}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
 
@@ -641,7 +663,7 @@ export default function CAKnowledgeGraph({
                         Immediate Outcome & Impact:
                       </strong>
                       <p style={{ margin: 0, fontSize: '0.875rem', lineHeight: 1.6, color: 'var(--text-primary)' }}>
-                        {activeNode.dossier.whyItInNews}
+                        {activeNode.dossier.whyItInNews || activeNode.whyThisMayBeAsked}
                       </p>
                     </div>
                   </div>

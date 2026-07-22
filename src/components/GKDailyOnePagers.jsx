@@ -128,8 +128,7 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
           <button 
             className="btn" 
             onClick={() => {
-              const idx = qcardsData.findIndex(t => t.id === dailyFocusTopic.id);
-              if (idx !== -1) setCarouselIndex(idx);
+              setCarouselIndex(dailyFocusIndex);
             }}
             style={{ padding: '6px 14px', fontSize: '0.8rem', background: 'var(--brand-amber)', color: 'var(--brand-ink)', border: 'none' }}
           >
@@ -273,7 +272,7 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             {qcardsData.map((topicItem, idx) => (
               <div 
-                key={topicItem.id} 
+                key={`${topicItem.id}-${idx}`}
                 className="glass-panel print-card" 
                 style={{ 
                   padding: '20px', borderLeft: `5px solid ${topicItem.color}`,

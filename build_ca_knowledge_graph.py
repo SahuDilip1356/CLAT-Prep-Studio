@@ -34,6 +34,7 @@ def parse_dossier_markdown(file_path):
     dossier = {
       "id": frontmatter.get("id", "topic-unknown"),
       "title": frontmatter.get("title", "Untitled Event"),
+      "priority": frontmatter.get("priority", "P2"),
       "category": frontmatter.get("category", "General"),
       "subcategory": frontmatter.get("subcategory", "General"),
       "importanceScore": frontmatter.get("importanceScore", 70),
@@ -318,6 +319,22 @@ def main():
                         dossier["folderOrder"] = relative_path
                     graph_nodes.append(dossier)
                     print(f"Successfully compiled {filename} ({dossier['month']}) into Knowledge Graph node.")
+
+    # Normalize catalogue tiers per month. The source inventory was generated with
+    # almost every topic marked P1, which made the student dashboard show hundreds
+    # of "Must Master" items. Keep the highest-yield 18 as P1, the next 23 as P2,
+    # and the remainder as P3 awareness briefs for each monthly collection.
+    nodes_by_month = {}
+    for dossier in graph_nodes:
+        nodes_by_month.setdefault(dossier["month"], []).append(dossier)
+
+    for month_nodes in nodes_by_month.values():
+        ranked_nodes = sorted(
+            month_nodes,
+            key=lambda item: (-item.get("importanceScore", 0), item.get("title", ""))
+        )
+        for rank, dossier in enumerate(ranked_nodes):
+            dossier["priority"] = "P1" if rank < 18 else "P2" if rank < 41 else "P3"
 
     # 1. Save ca_knowledge_graph.json
     os.makedirs(os.path.dirname(output_file), exist_ok=True)

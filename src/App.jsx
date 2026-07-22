@@ -10,6 +10,7 @@ import StudentProfileModal from './components/StudentProfileModal';
 import StudentDataAdmin from './components/StudentDataAdmin';
 import AdminPortal from './components/AdminPortal';
 import AuthModal from './components/AuthModal';
+import ModuleErrorBoundary from './components/ModuleErrorBoundary';
 import { auth, signInWithGoogle, logOutUser, syncUserProgressToCloud, fetchCloudUserProgress } from './firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 import { 
@@ -31,6 +32,13 @@ const defaultProgress = {
   gkTopicCorrect: {},
   gkTotalAttempted: 0,
   gkTotalCorrect: 0,
+  caCompletedDays: {},
+  caDayScores: {},
+  caTopicAttempted: {},
+  caTopicCorrect: {},
+  caTotalAttempted: 0,
+  caTotalCorrect: 0,
+  caDossierProgress: {},
   bookmarkedIds: {},
   streak: 1
 };
@@ -224,14 +232,12 @@ export default function App() {
 
     setUserProgress(prev => {
       const base = prev || defaultProgress;
-      const isGk = activeModule === 'GK';
-
-      const keyCompletedDays = isGk ? 'gkCompletedDays' : 'completedDays';
-      const keyDayScores = isGk ? 'gkDayScores' : 'dayScores';
-      const keyTopicAttempted = isGk ? 'gkTopicAttempted' : 'topicAttempted';
-      const keyTopicCorrect = isGk ? 'gkTopicCorrect' : 'topicCorrect';
-      const keyTotalAttempted = isGk ? 'gkTotalAttempted' : 'totalAttempted';
-      const keyTotalCorrect = isGk ? 'gkTotalCorrect' : 'totalCorrect';
+      const moduleKeys = activeModule === 'GK'
+        ? ['gkCompletedDays', 'gkDayScores', 'gkTopicAttempted', 'gkTopicCorrect', 'gkTotalAttempted', 'gkTotalCorrect']
+        : activeModule === 'CA'
+          ? ['caCompletedDays', 'caDayScores', 'caTopicAttempted', 'caTopicCorrect', 'caTotalAttempted', 'caTotalCorrect']
+          : ['completedDays', 'dayScores', 'topicAttempted', 'topicCorrect', 'totalAttempted', 'totalCorrect'];
+      const [keyCompletedDays, keyDayScores, keyTopicAttempted, keyTopicCorrect, keyTotalAttempted, keyTotalCorrect] = moduleKeys;
 
       const newCompletedDays = { ...(base[keyCompletedDays] || {}) };
       const newDayScores = { ...(base[keyDayScores] || {}) };
@@ -272,6 +278,44 @@ export default function App() {
 
     setLastTestResult(resultData);
     setViewState('RESULTS');
+  };
+
+  const handleCADossierProgress = ({ dossierKey, dossierId, title, status, attemptedDelta = 0, correctDelta = 0 }) => {
+    if (!dossierKey) return;
+
+    setUserProgress(prev => {
+      const base = prev || defaultProgress;
+      const existing = (base.caDossierProgress || {})[dossierKey] || {};
+      const statusRank = { NOT_STARTED: 0, UNDERSTOOD: 1, PRACTISED: 2, RETAINED: 3 };
+      const nextStatus = (statusRank[status] || 0) >= (statusRank[existing.status] || 0) ? status : existing.status;
+      const caTopicAttempted = { ...(base.caTopicAttempted || {}) };
+      const caTopicCorrect = { ...(base.caTopicCorrect || {}) };
+
+      if (attemptedDelta > 0 && title) {
+        caTopicAttempted[title] = (caTopicAttempted[title] || 0) + attemptedDelta;
+        caTopicCorrect[title] = (caTopicCorrect[title] || 0) + correctDelta;
+      }
+
+      return {
+        ...base,
+        caDossierProgress: {
+          ...(base.caDossierProgress || {}),
+          [dossierKey]: {
+            ...existing,
+            dossierId,
+            title,
+            status: nextStatus,
+            attempted: (existing.attempted || 0) + attemptedDelta,
+            correct: (existing.correct || 0) + correctDelta,
+            lastStudiedAt: new Date().toISOString()
+          }
+        },
+        caTopicAttempted,
+        caTopicCorrect,
+        caTotalAttempted: (base.caTotalAttempted || 0) + attemptedDelta,
+        caTotalCorrect: (base.caTotalCorrect || 0) + correctDelta
+      };
+    });
   };
 
   const handleToggleBookmark = (qId) => {
@@ -430,32 +474,39 @@ export default function App() {
 
       <main>
         {viewState === 'DASHBOARD' && activeModule === 'QUANT' && (
-          <Dashboard 
-            questions={questionsData}
-            userProgress={safeProgress}
-            onStartDayDrill={handleStartDayDrill}
-            onStartTopicPractice={handleStartTopicPractice}
-          />
+          <ModuleErrorBoundary key="QUANT" moduleName="Quant">
+            <Dashboard
+              questions={questionsData}
+              userProgress={safeProgress}
+              onStartDayDrill={handleStartDayDrill}
+              onStartTopicPractice={handleStartTopicPractice}
+            />
+          </ModuleErrorBoundary>
         )}
 
         {viewState === 'DASHBOARD' && activeModule === 'GK' && (
-          <GKDashboard 
-            questions={gkQuestionsData}
-            userProgress={safeProgress}
-            onStartDayDrill={handleStartDayDrill}
-            onStartTopicPractice={handleStartTopicPractice}
-          />
+          <ModuleErrorBoundary key="GK" moduleName="Static GK">
+            <GKDashboard
+              questions={gkQuestionsData}
+              userProgress={safeProgress}
+              onStartDayDrill={handleStartDayDrill}
+              onStartTopicPractice={handleStartTopicPractice}
+            />
+          </ModuleErrorBoundary>
         )}
 
         {viewState === 'DASHBOARD' && activeModule === 'CA' && (
-          <CADashboard 
-            questions={gkQuestionsData}
-            userProgress={safeProgress}
-            onStartDayDrill={handleStartDayDrill}
-            onStartTopicPractice={handleStartTopicPractice}
-            initialDossierTopic={initialDossierTopic}
-            clearInitialDossierTopic={() => setInitialDossierTopic(null)}
-          />
+          <ModuleErrorBoundary key="CA" moduleName="Current Affairs">
+            <CADashboard
+              questions={gkQuestionsData}
+              userProgress={safeProgress}
+              onStartDayDrill={handleStartDayDrill}
+              onStartTopicPractice={handleStartTopicPractice}
+              initialDossierTopic={initialDossierTopic}
+              clearInitialDossierTopic={() => setInitialDossierTopic(null)}
+              onDossierProgress={handleCADossierProgress}
+            />
+          </ModuleErrorBoundary>
         )}
 
         {viewState === 'MOCK_TEST' && (

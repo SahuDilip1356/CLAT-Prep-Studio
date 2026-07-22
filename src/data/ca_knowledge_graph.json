@@ -2,6 +2,7 @@
   {
     "id": "CONT-17",
     "title": "Artificial Intelligence Regulation",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "tech governance & AI safety",
     "importanceScore": 93,
@@ -98,6 +99,7 @@
   {
     "id": "CONT-12",
     "title": "Census and Caste Enumeration",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "demographics & public policy",
     "importanceScore": 93,
@@ -194,6 +196,7 @@
   {
     "id": "CONT-18",
     "title": "Climate Negotiations after COP30",
+    "priority": "P1",
     "category": "Environment and ecology",
     "subcategory": "international climate treaties",
     "importanceScore": 94,
@@ -290,6 +293,7 @@
   {
     "id": "CONT-11",
     "title": "Delimitation after 2026",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "electoral boundaries & federalism",
     "importanceScore": 94,
@@ -386,6 +390,7 @@
   {
     "id": "CONT-16",
     "title": "Digital Personal Data Protection Framework",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "data privacy & fundamental rights",
     "importanceScore": 95,
@@ -482,6 +487,7 @@
   {
     "id": "CONT-21",
     "title": "Election Commission and Electoral Reforms",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "electoral integrity & Article 324",
     "importanceScore": 94,
@@ -578,6 +584,7 @@
   {
     "id": "CONT-23",
     "title": "Freedom of Speech and Digital Regulation",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Article 19(1)(a) & IT Rules",
     "importanceScore": 94,
@@ -674,6 +681,7 @@
   {
     "id": "CONT-09",
     "title": "Governor's Power Over State Bills & Constitutional Timeframes",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "constitutional law",
     "importanceScore": 96,
@@ -775,6 +783,7 @@
   {
     "id": "CONT-09",
     "title": "Governor\u2019s Power over State Bills",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "constitutional federalism",
     "importanceScore": 96,
@@ -876,6 +885,7 @@
   {
     "id": "CONT-01",
     "title": "India\u2013Pakistan Relations, Line of Control & Indus Waters Treaty",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "bilateral relations",
     "importanceScore": 96,
@@ -977,6 +987,7 @@
   {
     "id": "CONT-06",
     "title": "India\u2013Bangladesh Relations",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "neighbourhood diplomacy",
     "importanceScore": 91,
@@ -1073,6 +1084,7 @@
   {
     "id": "CONT-05",
     "title": "India\u2013Canada Relations",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "diplomatic relations & sovereignty",
     "importanceScore": 90,
@@ -1169,6 +1181,7 @@
   {
     "id": "CONT-10",
     "title": "India\u2013China Relations",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "LAC standoff & border security",
     "importanceScore": 96,
@@ -1265,6 +1278,7 @@
   {
     "id": "CONT-07",
     "title": "India\u2013Nepal Relations",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "border agreements & treaties",
     "importanceScore": 89,
@@ -1361,6 +1375,7 @@
   {
     "id": "CONT-01",
     "title": "India\u2013Pakistan Relations and Operation Sindoor",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "bilateral relations & border conflict",
     "importanceScore": 96,
@@ -1462,6 +1477,7 @@
   {
     "id": "CONT-01B",
     "title": "Indus Waters Treaty",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "water treaties & international law",
     "importanceScore": 96,
@@ -1558,6 +1574,7 @@
   {
     "id": "CONT-03",
     "title": "Iran\u2013Israel\u2013United States Conflict, JCPOA & Strait of Hormuz",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "geopolitics & nuclear treaties",
     "importanceScore": 94,
@@ -1654,6 +1671,7 @@
   {
     "id": "CONT-03B",
     "title": "Iran Nuclear Programme and JCPOA",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "nuclear non-proliferation & IAEA",
     "importanceScore": 94,
@@ -1750,6 +1768,7 @@
   {
     "id": "CONT-03",
     "title": "Iran\u2013Israel\u2013United States Conflict",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "geopolitics & Middle East conflict",
     "importanceScore": 94,
@@ -1846,6 +1865,7 @@
   {
     "id": "CONT-02",
     "title": "Israel\u2013Palestine Conflict, ICJ Rulings & Two-State Solution",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "international law",
     "importanceScore": 97,
@@ -1947,6 +1967,7 @@
   {
     "id": "CONT-02",
     "title": "Israel\u2013Palestine Conflict",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "international law & ICJ rulings",
     "importanceScore": 97,
@@ -2048,6 +2069,7 @@
   {
     "id": "CONT-19",
     "title": "Judicial Appointments and Collegium System",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "judicial independence & constitutional law",
     "importanceScore": 96,
@@ -2144,6 +2166,7 @@
   {
     "id": "CONT-15",
     "title": "Ladakh and Sixth Schedule Demands",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "tribal governance & constitutional schedules",
     "importanceScore": 92,
@@ -2240,6 +2263,7 @@
   {
     "id": "CONT-20",
     "title": "New Criminal Laws Implementation",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "BNS, BNSS & BSB codification",
     "importanceScore": 95,
@@ -2336,6 +2360,7 @@
   {
     "id": "CONT-04",
     "title": "Russia\u2013Ukraine War, NATO Expansion & Strategic Autonomy",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "global conflicts",
     "importanceScore": 95,
@@ -2432,6 +2457,7 @@
   {
     "id": "CONT-04",
     "title": "Russia\u2013Ukraine War",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "global conflicts & NATO",
     "importanceScore": 95,
@@ -2528,6 +2554,7 @@
   {
     "id": "CONT-14",
     "title": "SC/ST Sub-classification",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "affirmative action & Supreme Court judgments",
     "importanceScore": 94,
@@ -2624,6 +2651,7 @@
   {
     "id": "CONT-22",
     "title": "Student Protests and Examination Integrity",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "public exams & fundamental rights",
     "importanceScore": 92,
@@ -2720,6 +2748,7 @@
   {
     "id": "CONT-08",
     "title": "Waqf Law and Constitutional Litigation",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "constitutional property litigation",
     "importanceScore": 93,
@@ -2816,6 +2845,7 @@
   {
     "id": "CONT-08",
     "title": "Waqf Law Amendment & Constitutional Property Litigation",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "constitutional law",
     "importanceScore": 93,
@@ -2912,6 +2942,7 @@
   {
     "id": "CONT-13",
     "title": "Women\u2019s Reservation and Delimitation",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "gender justice & constitutional amendments",
     "importanceScore": 95,
@@ -3008,6 +3039,7 @@
   {
     "id": "JAN-27",
     "title": "Army Day and Indian Military Commands",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "defence forces",
     "importanceScore": 86,
@@ -3104,6 +3136,7 @@
   {
     "id": "JAN-24",
     "title": "Australian Open 2026",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "grand slam tennis",
     "importanceScore": 88,
@@ -3200,6 +3233,7 @@
   {
     "id": "JAN-22",
     "title": "Bulgaria\u2019s Adoption of the Euro",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "international finance",
     "importanceScore": 85,
@@ -3296,6 +3330,7 @@
   {
     "id": "JAN-18",
     "title": "China\u2019s Economic Transition",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "global economics",
     "importanceScore": 86,
@@ -3392,6 +3427,7 @@
   {
     "id": "JAN-05",
     "title": "Consolidated Fund, Contingency Fund and Public Account",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "constitutional funds",
     "importanceScore": 92,
@@ -3488,6 +3524,7 @@
   {
     "id": "JAN-19",
     "title": "Digital Divide and Internet Access in India",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "digital governance",
     "importanceScore": 87,
@@ -3584,6 +3621,7 @@
   {
     "id": "JAN-02",
     "title": "Economic Survey 2025\u201326",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "national budget & indicators",
     "importanceScore": 94,
@@ -3680,6 +3718,7 @@
   {
     "id": "JAN-02",
     "title": "Economic Survey 2025\u201326 & Macroeconomic Outlook",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "national budget & indicators",
     "importanceScore": 94,
@@ -3776,6 +3815,7 @@
   {
     "id": "JAN-09",
     "title": "Election Commission and Model Code of Conduct",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "electoral management",
     "importanceScore": 92,
@@ -3872,6 +3912,7 @@
   {
     "id": "JAN-10",
     "title": "Enforcement Directorate and Writ Jurisdiction",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "constitutional remedies",
     "importanceScore": 94,
@@ -3968,6 +4009,7 @@
   {
     "id": "JAN-01D",
     "title": "EU Carbon Border Adjustment Mechanism",
+    "priority": "P1",
     "category": "Environment and ecology",
     "subcategory": "carbon tariffs & WTO law",
     "importanceScore": 93,
@@ -4064,6 +4106,7 @@
   {
     "id": "JAN-01C",
     "title": "European Union Institutions and Membership",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "international organisations",
     "importanceScore": 91,
@@ -4160,6 +4203,7 @@
   {
     "id": "JAN-23",
     "title": "Eurozone and European Central Bank",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "central banking",
     "importanceScore": 86,
@@ -4256,6 +4300,7 @@
   {
     "id": "JAN-04",
     "title": "Finance Bill and Appropriation Bill",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "parliamentary budget procedure",
     "importanceScore": 94,
@@ -4352,6 +4397,7 @@
   {
     "id": "JAN-06",
     "title": "Fiscal Deficit and Capital Expenditure",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "macroeconomic policy",
     "importanceScore": 91,
@@ -4448,6 +4494,7 @@
   {
     "id": "JAN-01",
     "title": "India\u2013EU Free Trade Agreement Negotiations & Strategic Partnership",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "trade agreements",
     "importanceScore": 92,
@@ -4544,6 +4591,7 @@
   {
     "id": "JAN-21",
     "title": "India Semiconductor Mission",
+    "priority": "P1",
     "category": "Environment and science",
     "subcategory": "technology infrastructure",
     "importanceScore": 94,
@@ -4640,6 +4688,7 @@
   {
     "id": "JAN-13",
     "title": "India\u2013Bhutan Judicial Cooperation",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "judicial bilateral ties",
     "importanceScore": 85,
@@ -4736,6 +4785,7 @@
   {
     "id": "JAN-01",
     "title": "India\u2013EU Free Trade Agreement",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "trade agreements",
     "importanceScore": 92,
@@ -4832,6 +4882,7 @@
   {
     "id": "JAN-01B",
     "title": "India\u2013EU Strategic Partnership",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "bilateral strategic ties",
     "importanceScore": 90,
@@ -4928,6 +4979,7 @@
   {
     "id": "JAN-17",
     "title": "India\u2019s Neighbourhood Diplomacy",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "Neighbourhood First policy",
     "importanceScore": 91,
@@ -5024,6 +5076,7 @@
   {
     "id": "JAN-12",
     "title": "Menstrual Hygiene as a Fundamental Right",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Article 21 & health rights",
     "importanceScore": 92,
@@ -5120,6 +5173,7 @@
   {
     "id": "JAN-20",
     "title": "National Green Hydrogen Mission",
+    "priority": "P1",
     "category": "Environment and science",
     "subcategory": "clean energy policy",
     "importanceScore": 93,
@@ -5216,6 +5270,7 @@
   {
     "id": "JAN-25",
     "title": "National Startup Day and Startup India",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "entrepreneurship policy",
     "importanceScore": 85,
@@ -5312,6 +5367,7 @@
   {
     "id": "JAN-16",
     "title": "National Voters\u2019 Day",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "electoral awareness",
     "importanceScore": 84,
@@ -5408,6 +5464,7 @@
   {
     "id": "JAN-26",
     "title": "National Youth Day and Swami Vivekananda",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "history & philosophy",
     "importanceScore": 84,
@@ -5504,6 +5561,7 @@
   {
     "id": "JAN-07",
     "title": "New Ramsar Sites in India",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "wetland conservation",
     "importanceScore": 91,
@@ -5600,6 +5658,7 @@
   {
     "id": "JAN-15",
     "title": "Padma Awards 2026",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "civilian honours",
     "importanceScore": 90,
@@ -5696,6 +5755,7 @@
   {
     "id": "JAN-11",
     "title": "PMLA and FEMA",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "financial crime legislation",
     "importanceScore": 93,
@@ -5792,6 +5852,7 @@
   {
     "id": "JAN-07B",
     "title": "Ramsar Convention and Montreux Record",
+    "priority": "P1",
     "category": "Environment and ecology",
     "subcategory": "international treaties",
     "importanceScore": 92,
@@ -5888,6 +5949,7 @@
   {
     "id": "JAN-07",
     "title": "New Ramsar Sites Recognition & Wetland Conservation Rules",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "conservation treaties",
     "importanceScore": 91,
@@ -5984,6 +6046,7 @@
   {
     "id": "JAN-14",
     "title": "Republic Day 2026",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "national events & constitutional history",
     "importanceScore": 89,
@@ -6080,6 +6143,7 @@
   {
     "id": "JAN-08",
     "title": "Supreme Court and Electoral Freebies",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "electoral law & public finance",
     "importanceScore": 93,
@@ -6176,6 +6240,7 @@
   {
     "id": "JAN-03",
     "title": "Union Budget 2026\u201327",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "annual financial statement",
     "importanceScore": 96,
@@ -6272,6 +6337,7 @@
   {
     "id": "FEB-15",
     "title": "Article 371A and Nagaland",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "special constitutional provisions",
     "importanceScore": 92,
@@ -6368,6 +6434,7 @@
   {
     "id": "FEB-24",
     "title": "Bharat Taxi and Cooperative Economy",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "digital cooperatives",
     "importanceScore": 84,
@@ -6464,6 +6531,7 @@
   {
     "id": "FEB-25",
     "title": "BHASHINI and Indian-Language AI",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "indigenous AI innovation",
     "importanceScore": 90,
@@ -6560,6 +6628,7 @@
   {
     "id": "FEB-01",
     "title": "Parliamentary Procedure on Finance Bill & Union Budget Passage",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "Parliament",
     "importanceScore": 94,
@@ -6656,6 +6725,7 @@
   {
     "id": "FEB-03",
     "title": "Collegium System and NJAC",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "constitutional law & judicial appointments",
     "importanceScore": 96,
@@ -6752,6 +6822,7 @@
   {
     "id": "FEB-13",
     "title": "Competition Commission of India",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "regulatory bodies",
     "importanceScore": 91,
@@ -6848,6 +6919,7 @@
   {
     "id": "FEB-16",
     "title": "Death Penalty Sentencing Framework",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "capital punishment",
     "importanceScore": 93,
@@ -6944,6 +7016,7 @@
   {
     "id": "FEB-09",
     "title": "Deepfakes and Synthetic Media",
+    "priority": "P1",
     "category": "Environment and science",
     "subcategory": "AI threats & law",
     "importanceScore": 93,
@@ -7040,6 +7113,7 @@
   {
     "id": "FEB-07",
     "title": "Digital Media Ethics",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "media regulation",
     "importanceScore": 86,
@@ -7136,6 +7210,7 @@
   {
     "id": "FEB-01",
     "title": "Finance Bill 2026",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "Parliament & legislation",
     "importanceScore": 94,
@@ -7232,6 +7307,7 @@
   {
     "id": "FEB-14",
     "title": "Frontier Nagaland Territorial Authority",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "regional autonomy",
     "importanceScore": 87,
@@ -7328,6 +7404,7 @@
   {
     "id": "event-002",
     "title": "India-AI Impact Summit 2026 & Responsible AI",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "emerging technology and artificial intelligence",
     "importanceScore": 88,
@@ -7424,6 +7501,7 @@
   {
     "id": "FEB-21",
     "title": "India Energy Stack",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "energy digitalization",
     "importanceScore": 86,
@@ -7520,6 +7598,7 @@
   {
     "id": "FEB-23",
     "title": "India\u2019s Energy Security",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "strategic petroleum reserves",
     "importanceScore": 91,
@@ -7616,6 +7695,7 @@
   {
     "id": "FEB-19",
     "title": "India\u2013UK Offshore Wind Cooperation",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "renewable energy",
     "importanceScore": 85,
@@ -7712,6 +7792,7 @@
   {
     "id": "FEB-26",
     "title": "India\u2013US Subsea Cable Connectivity",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "digital infrastructure",
     "importanceScore": 87,
@@ -7808,6 +7889,7 @@
   {
     "id": "FEB-27",
     "title": "India\u2013World Food Programme Cooperation",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "humanitarian aid",
     "importanceScore": 86,
@@ -7904,6 +7986,7 @@
   {
     "id": "FEB-10",
     "title": "Information Technology Act and IT Rules",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "cyber law",
     "importanceScore": 94,
@@ -8000,6 +8083,7 @@
   {
     "id": "FEB-11",
     "title": "Intermediary Liability and Safe Harbour",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Section 79 IT Act",
     "importanceScore": 93,
@@ -8096,6 +8180,7 @@
   {
     "id": "FEB-31",
     "title": "International Big Cat Alliance",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "wildlife diplomacy",
     "importanceScore": 91,
@@ -8192,6 +8277,7 @@
   {
     "id": "FEB-20",
     "title": "International Solar Alliance",
+    "priority": "P1",
     "category": "Environment and ecology",
     "subcategory": "multilateral institutions",
     "importanceScore": 92,
@@ -8288,6 +8374,7 @@
   {
     "id": "FEB-02",
     "title": "Judicial Diversity in Higher Judiciary",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "judiciary representation",
     "importanceScore": 92,
@@ -8384,6 +8471,7 @@
   {
     "id": "FEB-18",
     "title": "Mercy Petitions under Articles 72 and 161",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "presidential & gubernatorial pardons",
     "importanceScore": 95,
@@ -8480,6 +8568,7 @@
   {
     "id": "FEB-12",
     "title": "Meta, Consent and Data Market Dominance",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "antitrust & digital markets",
     "importanceScore": 88,
@@ -8576,6 +8665,7 @@
   {
     "id": "FEB-30",
     "title": "Milano Cortina 2026",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "Olympic venues",
     "importanceScore": 87,
@@ -8672,6 +8762,7 @@
   {
     "id": "FEB-32",
     "title": "Monetary Policy, Repo Rate and Inflation",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "RBI monetary framework",
     "importanceScore": 93,
@@ -8768,6 +8859,7 @@
   {
     "id": "FEB-06",
     "title": "National Court of Appeal Debate",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "judicial reforms",
     "importanceScore": 87,
@@ -8864,6 +8956,7 @@
   {
     "id": "FEB-08",
     "title": "New START Treaty Expiry & Nuclear Arms Control Geopolitics",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "disarmament treaties",
     "importanceScore": 93,
@@ -8960,6 +9053,7 @@
   {
     "id": "FEB-08",
     "title": "New START Treaty Expiry",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "nuclear arms control",
     "importanceScore": 93,
@@ -9056,6 +9150,7 @@
   {
     "id": "FEB-08C",
     "title": "NPT, CTBT and Nuclear Deterrence",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "nuclear non-proliferation",
     "importanceScore": 94,
@@ -9152,6 +9247,7 @@
   {
     "id": "FEB-08B",
     "title": "Nuclear Arms Control",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "disarmament treaties",
     "importanceScore": 92,
@@ -9248,6 +9344,7 @@
   {
     "id": "FEB-17",
     "title": "\u201cRarest of Rare\u201d Doctrine",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Bachan Singh precedent",
     "importanceScore": 94,
@@ -9344,6 +9441,7 @@
   {
     "id": "FEB-05",
     "title": "Regional Benches of the Supreme Court",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "Article 130 & court access",
     "importanceScore": 89,
@@ -9440,6 +9538,7 @@
   {
     "id": "FEB-22",
     "title": "Strait of Hormuz and Global Oil Chokepoints",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "maritime chokepoints",
     "importanceScore": 94,
@@ -9536,6 +9635,7 @@
   {
     "id": "FEB-04",
     "title": "Supreme Court Pendency",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "judicial administration",
     "importanceScore": 88,
@@ -9632,6 +9732,7 @@
   {
     "id": "FEB-01B",
     "title": "Union Budget Follow-through",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "fiscal policy execution",
     "importanceScore": 91,
@@ -9728,6 +9829,7 @@
   {
     "id": "FEB-29",
     "title": "Winter Olympics 2026",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "international sports",
     "importanceScore": 88,
@@ -9824,6 +9926,7 @@
   {
     "id": "FEB-28",
     "title": "World Food Programme",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "UN specialised agencies",
     "importanceScore": 91,
@@ -9920,6 +10023,7 @@
   {
     "id": "MAR-33",
     "title": "AFSPA and Disturbed Areas",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "special security laws",
     "importanceScore": 93,
@@ -10016,6 +10120,7 @@
   {
     "id": "MAR-27",
     "title": "AI Infrastructure and GPU Policy",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "compute infrastructure",
     "importanceScore": 88,
@@ -10112,6 +10217,7 @@
   {
     "id": "MAR-05",
     "title": "Article 142 and Complete Justice",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "plenary judicial powers",
     "importanceScore": 96,
@@ -10208,6 +10314,7 @@
   {
     "id": "MAR-17",
     "title": "Articles 105 and 194",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "legislative immunity",
     "importanceScore": 94,
@@ -10304,6 +10411,7 @@
   {
     "id": "MAR-04",
     "title": "Aruna Shanbaug and Common Cause Judgments",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "landmark constitutional cases",
     "importanceScore": 96,
@@ -10400,6 +10508,7 @@
   {
     "id": "MAR-29",
     "title": "Carbon Markets and Carbon Credits",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "carbon trading rules",
     "importanceScore": 91,
@@ -10496,6 +10605,7 @@
   {
     "id": "MAR-13",
     "title": "Chabahar Port",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "strategic ports & INSTC",
     "importanceScore": 93,
@@ -10592,6 +10702,7 @@
   {
     "id": "MAR-15",
     "title": "Copyright and Creator Economy",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "intellectual property",
     "importanceScore": 90,
@@ -10688,6 +10799,7 @@
   {
     "id": "MAR-09",
     "title": "Decriminalisation of Regulatory Offences",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "ease of doing business",
     "importanceScore": 88,
@@ -10784,6 +10896,7 @@
   {
     "id": "MAR-08",
     "title": "Demands for Grants and Cut Motions",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "parliamentary control over finance",
     "importanceScore": 92,
@@ -10880,6 +10993,7 @@
   {
     "id": "MAR-34",
     "title": "ED Powers under PMLA",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "PMLA Vijay Madanlal Choudhary verdict",
     "importanceScore": 95,
@@ -10976,6 +11090,7 @@
   {
     "id": "MAR-28",
     "title": "Greenwashing",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "consumer protection & ESG",
     "importanceScore": 89,
@@ -11072,6 +11187,7 @@
   {
     "id": "MAR-14",
     "title": "India\u2019s Creative Economy",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "cultural industries",
     "importanceScore": 85,
@@ -11168,6 +11284,7 @@
   {
     "id": "MAR-36",
     "title": "India\u2019s Digital Economy",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "digital public infrastructure",
     "importanceScore": 89,
@@ -11264,6 +11381,7 @@
   {
     "id": "MAR-30",
     "title": "India\u2019s Exposure to Foreign Sanctions",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "unilateral sanctions & secondary sanctions",
     "importanceScore": 92,
@@ -11360,6 +11478,7 @@
   {
     "id": "MAR-35",
     "title": "India\u2019s TB Elimination Programme",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "public health targets",
     "importanceScore": 88,
@@ -11456,6 +11575,7 @@
   {
     "id": "MAR-38",
     "title": "International Booker Developments",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "literary honours",
     "importanceScore": 87,
@@ -11552,6 +11672,7 @@
   {
     "id": "MAR-25",
     "title": "International Women\u2019s Day and Gender Justice",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "gender equality & rights",
     "importanceScore": 89,
@@ -11648,6 +11769,7 @@
   {
     "id": "MAR-11",
     "title": "Iran Conflict and Impact on India",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "geopolitical fallout",
     "importanceScore": 93,
@@ -11744,6 +11866,7 @@
   {
     "id": "MAR-10",
     "title": "Jan Vishwas Framework",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "legislative simplification",
     "importanceScore": 87,
@@ -11840,6 +11963,7 @@
   {
     "id": "MAR-06",
     "title": "Judicial Activism versus Judicial Restraint",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "constitutional jurisprudence",
     "importanceScore": 93,
@@ -11936,6 +12060,7 @@
   {
     "id": "MAR-18",
     "title": "Legislators and Criminal Liability",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Sita Soren judgment & bribery exception",
     "importanceScore": 95,
@@ -12032,6 +12157,7 @@
   {
     "id": "MAR-03",
     "title": "Living Will and Advance Medical Directive",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "medical law & SC guidelines",
     "importanceScore": 93,
@@ -12128,6 +12254,7 @@
   {
     "id": "MAR-22",
     "title": "National Green Tribunal",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "statutory tribunals",
     "importanceScore": 92,
@@ -12224,6 +12351,7 @@
   {
     "id": "MAR-31",
     "title": "New Criminal Laws Implementation Review",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "BNS codification review",
     "importanceScore": 94,
@@ -12320,6 +12448,7 @@
   {
     "id": "MAR-37",
     "title": "Oscars 2026",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "cinema & cultural awards",
     "importanceScore": 88,
@@ -12416,6 +12545,7 @@
   {
     "id": "MAR-16",
     "title": "Parliamentary Privileges",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "Articles 105 & 194",
     "importanceScore": 95,
@@ -12512,6 +12642,7 @@
   {
     "id": "MAR-07",
     "title": "Parliament\u2019s Guillotine Procedure",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "budgetary voting rules",
     "importanceScore": 94,
@@ -12608,6 +12739,7 @@
   {
     "id": "MAR-01",
     "title": "Passive Euthanasia",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "right to die & bioethics",
     "importanceScore": 94,
@@ -12704,6 +12836,7 @@
   {
     "id": "MAR-20",
     "title": "Polluter Pays Principle",
+    "priority": "P1",
     "category": "Environment and ecology",
     "subcategory": "environmental law principles",
     "importanceScore": 94,
@@ -12800,6 +12933,7 @@
   {
     "id": "MAR-21",
     "title": "Precautionary Principle",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "sustainable development law",
     "importanceScore": 93,
@@ -12896,6 +13030,7 @@
   {
     "id": "MAR-02",
     "title": "Right to Die with Dignity",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Article 21 interpretation",
     "importanceScore": 95,
@@ -12992,6 +13127,7 @@
   {
     "id": "MAR-24",
     "title": "Rights of Persons with Disabilities",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "RPwD Act 2016",
     "importanceScore": 91,
@@ -13088,6 +13224,7 @@
   {
     "id": "MAR-12",
     "title": "Strait of Hormuz and Oil Security",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "maritime energy security",
     "importanceScore": 94,
@@ -13184,6 +13321,7 @@
   {
     "id": "MAR-19",
     "title": "Supreme Court and Environmental Regulation",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "environmental jurisprudence",
     "importanceScore": 93,
@@ -13280,6 +13418,7 @@
   {
     "id": "MAR-32",
     "title": "UAPA and Civil Liberties",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "anti-terror laws & bail standards",
     "importanceScore": 95,
@@ -13376,6 +13515,7 @@
   {
     "id": "MAR-23",
     "title": "Winter Paralympics 2026",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "para-sports governance",
     "importanceScore": 87,
@@ -13472,6 +13612,7 @@
   {
     "id": "MAR-26",
     "title": "Women\u2019s Representation in Judiciary",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "judicial diversity",
     "importanceScore": 91,
@@ -13568,6 +13709,7 @@
   {
     "id": "APR-23",
     "title": "Ambedkar and Constitutionalism",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "constitutional history & drafting",
     "importanceScore": 94,
@@ -13664,6 +13806,7 @@
   {
     "id": "APR-33",
     "title": "Artemis Accords",
+    "priority": "P1",
     "category": "Environment and science",
     "subcategory": "outer space law & treaties",
     "importanceScore": 94,
@@ -13760,6 +13903,7 @@
   {
     "id": "APR-32",
     "title": "Artemis II",
+    "priority": "P1",
     "category": "Environment and science",
     "subcategory": "NASA lunar missions",
     "importanceScore": 93,
@@ -13856,6 +14000,7 @@
   {
     "id": "APR-10",
     "title": "Birthright Citizenship in the United States",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "14th Amendment US",
     "importanceScore": 88,
@@ -13952,6 +14097,7 @@
   {
     "id": "APR-05",
     "title": "Census Linkage to Delimitation",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "84th Amendment Act",
     "importanceScore": 93,
@@ -14048,6 +14194,7 @@
   {
     "id": "APR-18",
     "title": "Climate Change and Labour Protection",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "occupational safety",
     "importanceScore": 87,
@@ -14144,6 +14291,7 @@
   {
     "id": "APR-24",
     "title": "Constituent Assembly and Drafting Committee",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "making of the Constitution",
     "importanceScore": 95,
@@ -14240,6 +14388,7 @@
   {
     "id": "APR-25",
     "title": "Constitutional Morality",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Navtej Johar & Sabarimala jurisprudence",
     "importanceScore": 95,
@@ -14336,6 +14485,7 @@
   {
     "id": "APR-41",
     "title": "Cybersecurity and Critical Infrastructure",
+    "priority": "P1",
     "category": "Environment and science",
     "subcategory": "CERT-In & cyber law",
     "importanceScore": 92,
@@ -14432,6 +14582,7 @@
   {
     "id": "APR-22",
     "title": "Defamation and National Security",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "Section 499 IPC / BNS provisions",
     "importanceScore": 92,
@@ -14528,6 +14679,7 @@
   {
     "id": "APR-04",
     "title": "Delimitation and Parliamentary Representation",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "Articles 81 & 82",
     "importanceScore": 94,
@@ -14624,6 +14776,7 @@
   {
     "id": "APR-14",
     "title": "Digital Trade and Agricultural Market Access",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "agricultural protectionism",
     "importanceScore": 88,
@@ -14720,6 +14873,7 @@
   {
     "id": "APR-17",
     "title": "Disaster Management Act",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "NDMA & SDMA powers",
     "importanceScore": 93,
@@ -14816,6 +14970,7 @@
   {
     "id": "APR-28",
     "title": "Earth Day and Climate Commitments",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "global environmental awareness",
     "importanceScore": 89,
@@ -14912,6 +15067,7 @@
   {
     "id": "APR-20",
     "title": "Freedom of Speech under Article 19",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Article 19(1)(a) & 19(2) restrictions",
     "importanceScore": 96,
@@ -15008,6 +15164,7 @@
   {
     "id": "APR-34",
     "title": "Gaganyaan Programme",
+    "priority": "P1",
     "category": "Environment and science",
     "subcategory": "ISRO human spaceflight",
     "importanceScore": 95,
@@ -15104,6 +15261,7 @@
   {
     "id": "APR-01",
     "title": "Governor\u2019s Assent to State Bills",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "Article 200 & gubernatorial timelines",
     "importanceScore": 96,
@@ -15200,6 +15358,7 @@
   {
     "id": "APR-16",
     "title": "Heat Action Plans",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "urban resilience",
     "importanceScore": 90,
@@ -15296,6 +15455,7 @@
   {
     "id": "APR-15",
     "title": "Heatwave Governance",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "climate disaster management",
     "importanceScore": 92,
@@ -15392,6 +15552,7 @@
   {
     "id": "APR-29",
     "title": "IMF\u2013World Bank Spring Meetings",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "multilateral finance",
     "importanceScore": 91,
@@ -15488,6 +15649,7 @@
   {
     "id": "APR-06",
     "title": "Increase in Lok Sabha and Assembly Seats",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "parliamentary expansion",
     "importanceScore": 92,
@@ -15584,6 +15746,7 @@
   {
     "id": "APR-35",
     "title": "India\u2019s Space Station Plans",
+    "priority": "P1",
     "category": "Environment and science",
     "subcategory": "Bharatiya Antariksha Station",
     "importanceScore": 93,
@@ -15680,6 +15843,7 @@
   {
     "id": "APR-13",
     "title": "India\u2013US Trade Negotiations",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "bilateral trade pacts",
     "importanceScore": 92,
@@ -15776,6 +15940,7 @@
   {
     "id": "APR-40",
     "title": "IPL Governance and Sports Law",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "BCCI & sports contracts",
     "importanceScore": 88,
@@ -15872,6 +16037,7 @@
   {
     "id": "APR-07",
     "title": "North\u2013South Federal Representation Debate",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "fiscal & political federalism",
     "importanceScore": 94,
@@ -15968,6 +16134,7 @@
   {
     "id": "APR-03",
     "title": "Presidential Reference under Article 143",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "advisory jurisdiction of Supreme Court",
     "importanceScore": 94,
@@ -16064,6 +16231,7 @@
   {
     "id": "APR-21",
     "title": "Press Council of India",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "statutory media bodies",
     "importanceScore": 87,
@@ -16160,6 +16328,7 @@
   {
     "id": "APR-39",
     "title": "Pulitzer Prizes 2026",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "journalism honours",
     "importanceScore": 87,
@@ -16256,6 +16425,7 @@
   {
     "id": "APR-31",
     "title": "RBI Monetary Policy",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "MPC decisions",
     "importanceScore": 92,
@@ -16352,6 +16522,7 @@
   {
     "id": "APR-38",
     "title": "Supreme Court Constitutional Bench Cases",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Article 145(3) benches",
     "importanceScore": 95,
@@ -16448,6 +16619,7 @@
   {
     "id": "APR-02",
     "title": "Timelines for Gubernatorial Assent",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "judicial review of delay",
     "importanceScore": 95,
@@ -16544,6 +16716,7 @@
   {
     "id": "APR-27",
     "title": "UNESCO World Heritage Convention",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "1972 World Heritage treaty",
     "importanceScore": 91,
@@ -16640,6 +16813,7 @@
   {
     "id": "APR-08",
     "title": "United States Executive Power",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "US constitutional law",
     "importanceScore": 87,
@@ -16736,6 +16910,7 @@
   {
     "id": "APR-11",
     "title": "US Presidential Tariff Powers",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "international trade policy",
     "importanceScore": 91,
@@ -16832,6 +17007,7 @@
   {
     "id": "APR-09",
     "title": "US Supreme Court and Executive Orders",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "judicial review in US",
     "importanceScore": 86,
@@ -16928,6 +17104,7 @@
   {
     "id": "APR-37",
     "title": "WHO Reforms and Pandemic Governance",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "Pandemic Accord negotiations",
     "importanceScore": 92,
@@ -17024,6 +17201,7 @@
   {
     "id": "APR-30",
     "title": "World Economic Outlook",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "IMF global growth reports",
     "importanceScore": 92,
@@ -17120,6 +17298,7 @@
   {
     "id": "APR-36",
     "title": "World Health Day",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "WHO public health focus",
     "importanceScore": 86,
@@ -17216,6 +17395,7 @@
   {
     "id": "APR-26",
     "title": "World Heritage Day",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "heritage conservation",
     "importanceScore": 86,
@@ -17312,6 +17492,7 @@
   {
     "id": "APR-19",
     "title": "World Press Freedom",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "press freedom index",
     "importanceScore": 90,
@@ -17408,6 +17589,7 @@
   {
     "id": "APR-12",
     "title": "WTO and Most-Favoured-Nation Principle",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "GATT Article I",
     "importanceScore": 93,
@@ -17504,6 +17686,7 @@
   {
     "id": "MAY-24",
     "title": "AI Training Data and Fair Dealing",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "Section 52 Copyright Act",
     "importanceScore": 92,
@@ -17600,6 +17783,7 @@
   {
     "id": "MAY-23",
     "title": "Artificial Intelligence and Copyright",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "AI training data & fair deal",
     "importanceScore": 93,
@@ -17696,6 +17880,7 @@
   {
     "id": "MAY-30",
     "title": "Bihar Special Intensive Revision",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "state electoral management",
     "importanceScore": 86,
@@ -17792,6 +17977,7 @@
   {
     "id": "MAY-16",
     "title": "Booker Prize versus International Booker Prize",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "literary prize distinctions",
     "importanceScore": 87,
@@ -17888,6 +18074,7 @@
   {
     "id": "MAY-17",
     "title": "BRICS Developments",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "BRICS expanded format",
     "importanceScore": 93,
@@ -17984,6 +18171,7 @@
   {
     "id": "MAY-40",
     "title": "Cannes Film Festival",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "Palme d'Or & Indian cinema",
     "importanceScore": 88,
@@ -18080,6 +18268,7 @@
   {
     "id": "MAY-12",
     "title": "Caste Enumeration",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "Socio-Economic Caste Census debate",
     "importanceScore": 94,
@@ -18176,6 +18365,7 @@
   {
     "id": "MAY-13",
     "title": "Census Act and Registrar General",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "RGI mandate",
     "importanceScore": 91,
@@ -18272,6 +18462,7 @@
   {
     "id": "MAY-11",
     "title": "Census Preparation",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "Census Act 1948",
     "importanceScore": 92,
@@ -18368,6 +18559,7 @@
   {
     "id": "MAY-14",
     "title": "Census, Privacy and Data Governance",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Puttaswamy test & digital census",
     "importanceScore": 93,
@@ -18464,6 +18656,7 @@
   {
     "id": "MAY-42",
     "title": "Central Bank Independence",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "monetary vs fiscal authority",
     "importanceScore": 92,
@@ -18560,6 +18753,7 @@
   {
     "id": "MAY-36",
     "title": "Chip Geopolitics",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "Taiwan Straits & tech supply chain",
     "importanceScore": 93,
@@ -18656,6 +18850,7 @@
   {
     "id": "MAY-33",
     "title": "CITES and Endangered Species",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "Washington Convention 1973",
     "importanceScore": 92,
@@ -18752,6 +18947,7 @@
   {
     "id": "MAY-29",
     "title": "Electoral Roll Revision",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "voter list registration",
     "importanceScore": 91,
@@ -18848,6 +19044,7 @@
   {
     "id": "MAY-05",
     "title": "Examination Paper Leaks",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "exam security",
     "importanceScore": 93,
@@ -18944,6 +19141,7 @@
   {
     "id": "MAY-09",
     "title": "Fair Criticism of the Judiciary",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "scandalizing the court exception",
     "importanceScore": 92,
@@ -19040,6 +19238,7 @@
   {
     "id": "MAY-03",
     "title": "FATF and Anti-Terror Mechanisms",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "FATF grey/black lists",
     "importanceScore": 93,
@@ -19136,6 +19335,7 @@
   {
     "id": "MAY-08",
     "title": "Free Speech and Contempt of Court",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Contempt of Courts Act 1971 & Art 129",
     "importanceScore": 94,
@@ -19232,6 +19432,7 @@
   {
     "id": "MAY-21",
     "title": "Global South and De-dollarisation",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "local currency trade",
     "importanceScore": 93,
@@ -19328,6 +19529,7 @@
   {
     "id": "MAY-37",
     "title": "IndiaAI Mission",
+    "priority": "P1",
     "category": "Environment and science",
     "subcategory": "Rs 10,372 crore outlay",
     "importanceScore": 94,
@@ -19424,6 +19626,7 @@
   {
     "id": "MAY-01",
     "title": "India\u2013Pakistan Security Developments",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "border security & counter-terror",
     "importanceScore": 94,
@@ -19520,6 +19723,7 @@
   {
     "id": "MAY-34",
     "title": "India\u2019s Big Cat Conservation Diplomacy",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "IBCB alliance",
     "importanceScore": 91,
@@ -19616,6 +19820,7 @@
   {
     "id": "MAY-02",
     "title": "Indus Waters Treaty Developments",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "water diplomacy",
     "importanceScore": 93,
@@ -19712,6 +19917,7 @@
   {
     "id": "MAY-15",
     "title": "International Booker Prize 2026",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "translated fiction award",
     "importanceScore": 89,
@@ -19808,6 +20014,7 @@
   {
     "id": "MAY-32",
     "title": "International Day for Biological Diversity",
+    "priority": "P3",
     "category": "Environment and ecology",
     "subcategory": "May 22 UN day",
     "importanceScore": 85,
@@ -19904,6 +20111,7 @@
   {
     "id": "MAY-22",
     "title": "Major Global Elections",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "electoral geopolitics",
     "importanceScore": 88,
@@ -20000,6 +20208,7 @@
   {
     "id": "MAY-38",
     "title": "National Quantum Mission",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "quantum tech outlay",
     "importanceScore": 92,
@@ -20096,6 +20305,7 @@
   {
     "id": "MAY-19",
     "title": "New Development Bank",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "BRICS bank HQ Shanghai",
     "importanceScore": 92,
@@ -20192,6 +20402,7 @@
   {
     "id": "MAY-25",
     "title": "Personality Rights and Deepfakes",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "publicity rights & Art 21",
     "importanceScore": 93,
@@ -20288,6 +20499,7 @@
   {
     "id": "MAY-06",
     "title": "Public Examinations Act",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Public Examinations (Prevention of Unfair Means) Act 2024",
     "importanceScore": 95,
@@ -20384,6 +20596,7 @@
   {
     "id": "MAY-41",
     "title": "RBI Surplus Transfer",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "Section 47 RBI Act & Bimal Jalan Committee",
     "importanceScore": 94,
@@ -20480,6 +20693,7 @@
   {
     "id": "MAY-20",
     "title": "Regional Anti-Terrorist Structure",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "SCO RATS Tashkent",
     "importanceScore": 91,
@@ -20576,6 +20790,7 @@
   {
     "id": "MAY-07",
     "title": "Right to Protest",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Article 19(1)(b) & reasonable restrictions",
     "importanceScore": 94,
@@ -20672,6 +20887,7 @@
   {
     "id": "MAY-18",
     "title": "SCO Developments",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "Shanghai Cooperation Organisation",
     "importanceScore": 92,
@@ -20768,6 +20984,7 @@
   {
     "id": "MAY-35",
     "title": "Semiconductor Manufacturing",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "fab plants in India",
     "importanceScore": 93,
@@ -20864,6 +21081,7 @@
   {
     "id": "MAY-10",
     "title": "Social Media and Contempt",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "digital contempt",
     "importanceScore": 88,
@@ -20960,6 +21178,7 @@
   {
     "id": "MAY-27",
     "title": "Supreme Court Collegium Appointments",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Three Judges cases",
     "importanceScore": 95,
@@ -21056,6 +21275,7 @@
   {
     "id": "MAY-31",
     "title": "Voter Registration and Article 324",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "ECI superintendence powers",
     "importanceScore": 94,
@@ -21152,6 +21372,7 @@
   {
     "id": "MAY-39",
     "title": "WHO World Health Assembly",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "WHA Geneva annual meeting",
     "importanceScore": 91,
@@ -21248,6 +21469,7 @@
   {
     "id": "MAY-28",
     "title": "Women in the Supreme Court",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "Justice M. Fathima Beevi legacy",
     "importanceScore": 92,
@@ -21344,6 +21566,7 @@
   {
     "id": "MAY-26",
     "title": "World Intellectual Property Organization",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "WIPO Geneva",
     "importanceScore": 91,
@@ -21440,6 +21663,7 @@
   {
     "id": "MAY-04",
     "title": "Youth Protests and Public Accountability",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "civic engagement & protests",
     "importanceScore": 90,
@@ -21536,6 +21760,7 @@
   {
     "id": "JUN-08",
     "title": "BRICS Expanded Membership",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "Egypt, Ethiopia, Iran, UAE expansion",
     "importanceScore": 93,
@@ -21632,6 +21857,7 @@
   {
     "id": "JUN-07",
     "title": "BRICS Summit",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "annual BRICS summit",
     "importanceScore": 94,
@@ -21728,6 +21954,7 @@
   {
     "id": "JUN-23",
     "title": "Carbon Border Adjustment Mechanism",
+    "priority": "P1",
     "category": "Environment and ecology",
     "subcategory": "EU CBAM carbon tax",
     "importanceScore": 94,
@@ -21824,6 +22051,7 @@
   {
     "id": "JUN-13",
     "title": "Climate Litigation",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "M.K. Ranjitsinh v. Union of India verdict",
     "importanceScore": 95,
@@ -21920,6 +22148,7 @@
   {
     "id": "JUN-20",
     "title": "Disaster Early-Warning Systems",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "INCOIS & NDMA early warning",
     "importanceScore": 90,
@@ -22016,6 +22245,7 @@
   {
     "id": "JUN-18",
     "title": "El Ni\u00f1o and La Ni\u00f1a",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "ENSO cycle",
     "importanceScore": 93,
@@ -22112,6 +22342,7 @@
   {
     "id": "JUN-24",
     "title": "Examination Reforms",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "NTA restructuring",
     "importanceScore": 94,
@@ -22208,6 +22439,7 @@
   {
     "id": "JUN-03",
     "title": "Expanded FIFA World Cup Format",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "48 teams format",
     "importanceScore": 90,
@@ -22304,6 +22536,7 @@
   {
     "id": "JUN-02",
     "title": "FIFA Governance",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "Zurich HQ & sports law",
     "importanceScore": 91,
@@ -22400,6 +22633,7 @@
   {
     "id": "JUN-01",
     "title": "FIFA World Cup 2026",
+    "priority": "P1",
     "category": "Awards, sports and culture",
     "subcategory": "USA, Canada, Mexico joint host",
     "importanceScore": 94,
@@ -22496,6 +22730,7 @@
   {
     "id": "JUN-49",
     "title": "French Open 2026",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "Roland Garros clay court",
     "importanceScore": 88,
@@ -22592,6 +22827,7 @@
   {
     "id": "JUN-05",
     "title": "G7 Summit",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "group of 7 summit",
     "importanceScore": 93,
@@ -22688,6 +22924,7 @@
   {
     "id": "JUN-06",
     "title": "G7 versus G20",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "advanced economies vs global south",
     "importanceScore": 92,
@@ -22784,6 +23021,7 @@
   {
     "id": "JUN-45",
     "title": "Gaganyaan",
+    "priority": "P1",
     "category": "Environment and science",
     "subcategory": "ISRO crewed module tests",
     "importanceScore": 94,
@@ -22880,6 +23118,7 @@
   {
     "id": "JUN-43",
     "title": "High Seas Treaty",
+    "priority": "P1",
     "category": "Environment and ecology",
     "subcategory": "BBNJ Treaty 2023",
     "importanceScore": 94,
@@ -22976,6 +23215,7 @@
   {
     "id": "JUN-34",
     "title": "India and Refugee Law",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Non-signatory status & Foreigners Act 1946",
     "importanceScore": 94,
@@ -23072,6 +23312,7 @@
   {
     "id": "JUN-17",
     "title": "India Meteorological Department",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "IMD 150 years legacy",
     "importanceScore": 90,
@@ -23168,6 +23409,7 @@
   {
     "id": "JUN-22",
     "title": "India\u2013Europe Trade Tensions",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "CBAM friction",
     "importanceScore": 92,
@@ -23264,6 +23506,7 @@
   {
     "id": "JUN-16",
     "title": "Indian Monsoon System",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "South-West Monsoon physics",
     "importanceScore": 92,
@@ -23360,6 +23603,7 @@
   {
     "id": "JUN-21",
     "title": "India\u2013US Trade Tensions",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "tariff friction",
     "importanceScore": 91,
@@ -23456,6 +23700,7 @@
   {
     "id": "JUN-29",
     "title": "International Cricket Council",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "ICC Dubai HQ",
     "importanceScore": 90,
@@ -23552,6 +23797,7 @@
   {
     "id": "JUN-37",
     "title": "International Labour Organization",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "Geneva HQ & 1919 Treaty of Versailles",
     "importanceScore": 92,
@@ -23648,6 +23894,7 @@
   {
     "id": "JUN-30",
     "title": "International Yoga Day",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "June 21 UN day",
     "importanceScore": 86,
@@ -23744,6 +23991,7 @@
   {
     "id": "JUN-38",
     "title": "LGBTQ+ Rights Jurisprudence",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Navtej Johar & Supriyo v. UOI verdicts",
     "importanceScore": 95,
@@ -23840,6 +24088,7 @@
   {
     "id": "JUN-48",
     "title": "Major Military Exercises involving India",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "Malabar, Yudh Abhyas, Samudra Laksamana",
     "importanceScore": 91,
@@ -23936,6 +24185,7 @@
   {
     "id": "JUN-44",
     "title": "Maritime Boundaries and Exclusive Economic Zones",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "200 nautical miles EEZ rule",
     "importanceScore": 94,
@@ -24032,6 +24282,7 @@
   {
     "id": "JUN-40",
     "title": "Marriage Equality Developments",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Same-sex marriage bench ruling",
     "importanceScore": 94,
@@ -24128,6 +24379,7 @@
   {
     "id": "JUN-25",
     "title": "National Testing Agency",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "society registered under 1860 Act",
     "importanceScore": 93,
@@ -24224,6 +24476,7 @@
   {
     "id": "JUN-39",
     "title": "Navtej Singh Johar Judgment",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Decriminalisation of Sec 377 IPC",
     "importanceScore": 96,
@@ -24320,6 +24573,7 @@
   {
     "id": "JUN-09",
     "title": "New Development Bank",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "NDB multilateral lending",
     "importanceScore": 91,
@@ -24416,6 +24670,7 @@
   {
     "id": "JUN-46",
     "title": "NISAR Mission",
+    "priority": "P2",
     "category": "Environment and science",
     "subcategory": "NASA-ISRO Synthetic Aperture Radar",
     "importanceScore": 93,
@@ -24512,6 +24767,7 @@
   {
     "id": "JUN-15",
     "title": "Paris Agreement and India\u2019s Climate Targets",
+    "priority": "P1",
     "category": "Environment and ecology",
     "subcategory": "Panchamrit targets",
     "importanceScore": 94,
@@ -24608,6 +24864,7 @@
   {
     "id": "JUN-26",
     "title": "Public Examinations Act",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "2024 Act penalties",
     "importanceScore": 94,
@@ -24704,6 +24961,7 @@
   {
     "id": "JUN-33",
     "title": "Refugee Convention",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "1951 Geneva Refugee Convention & 1967 Protocol",
     "importanceScore": 93,
@@ -24800,6 +25058,7 @@
   {
     "id": "JUN-14",
     "title": "Right against Adverse Climate Effects",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Articles 14 & 21 climate right",
     "importanceScore": 96,
@@ -24896,6 +25155,7 @@
   {
     "id": "JUN-11",
     "title": "SCO Membership and RATS",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "Belarus 10th member",
     "importanceScore": 91,
@@ -24992,6 +25252,7 @@
   {
     "id": "JUN-10",
     "title": "SCO Summit",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "Eurasian security summit",
     "importanceScore": 92,
@@ -25088,6 +25349,7 @@
   {
     "id": "JUN-04",
     "title": "Sports Diplomacy and Commercialisation",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "soft power",
     "importanceScore": 87,
@@ -25184,6 +25446,7 @@
   {
     "id": "JUN-27",
     "title": "Student Protests and Internet Shutdowns",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Anuradha Bhasin test",
     "importanceScore": 95,
@@ -25280,6 +25543,7 @@
   {
     "id": "JUN-47",
     "title": "UN Security Council Reform",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "G4 nations & veto power debate",
     "importanceScore": 94,
@@ -25376,6 +25640,7 @@
   {
     "id": "JUN-35",
     "title": "UNHCR",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "Geneva HQ & High Commissioner",
     "importanceScore": 91,
@@ -25472,6 +25737,7 @@
   {
     "id": "JUN-42",
     "title": "United Nations Convention on the Law of the Sea",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "UNCLOS 1982 Montego Bay treaty",
     "importanceScore": 95,
@@ -25568,6 +25834,7 @@
   {
     "id": "JUN-19",
     "title": "Urban Flooding",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "disaster management",
     "importanceScore": 91,
@@ -25664,6 +25931,7 @@
   {
     "id": "JUN-36",
     "title": "World Day against Child Labour",
+    "priority": "P3",
     "category": "Law and justice",
     "subcategory": "June 12 ILO day",
     "importanceScore": 85,
@@ -25760,6 +26028,7 @@
   {
     "id": "JUN-12",
     "title": "World Environment Day",
+    "priority": "P3",
     "category": "Environment and ecology",
     "subcategory": "June 5 UNEP theme",
     "importanceScore": 87,
@@ -25856,6 +26125,7 @@
   {
     "id": "JUN-41",
     "title": "World Oceans Day",
+    "priority": "P3",
     "category": "Environment and ecology",
     "subcategory": "June 8 UN day",
     "importanceScore": 85,
@@ -25952,6 +26222,7 @@
   {
     "id": "JUN-32",
     "title": "World Refugee Day",
+    "priority": "P3",
     "category": "International relations",
     "subcategory": "June 20 UNHCR day",
     "importanceScore": 86,
@@ -26048,6 +26319,7 @@
   {
     "id": "JUN-28",
     "title": "World Test Championship",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "ICC Test Championship final",
     "importanceScore": 88,
@@ -26144,6 +26416,7 @@
   {
     "id": "JUN-31",
     "title": "Yoga and UNESCO",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "Intangible Cultural Heritage list 2016",
     "importanceScore": 88,
@@ -26240,6 +26513,7 @@
   {
     "id": "JUL-34",
     "title": "Anuradha Bhasin Judgment",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Proportionality test for internet suspension",
     "importanceScore": 96,
@@ -26336,6 +26610,7 @@
   {
     "id": "JUL-02",
     "title": "Article 85 and Summoning Parliament",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "presidential summoning & 6-month gap rule",
     "importanceScore": 94,
@@ -26432,6 +26707,7 @@
   {
     "id": "JUL-07",
     "title": "Articles 19(1)(a), 19(1)(b) and 19(1)(c)",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "fundamental freedoms cluster",
     "importanceScore": 95,
@@ -26528,6 +26804,7 @@
   {
     "id": "JUL-36",
     "title": "Banking Sector Developments",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "NPA recovery & IBC Act",
     "importanceScore": 91,
@@ -26624,6 +26901,7 @@
   {
     "id": "JUL-23",
     "title": "Bills Introduced during the Monsoon Session",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "monsoon legislative business",
     "importanceScore": 92,
@@ -26720,6 +26998,7 @@
   {
     "id": "JUL-30",
     "title": "Central Board of Film Certification",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "Cinematograph Act 1952 statutory body",
     "importanceScore": 91,
@@ -26816,6 +27095,7 @@
   {
     "id": "JUL-31",
     "title": "Cinematograph Law",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "Cinematograph Amendment Act 2023 anti-piracy",
     "importanceScore": 92,
@@ -26912,6 +27192,7 @@
   {
     "id": "JUL-08",
     "title": "Commonwealth Games 2026",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "Glasgow games",
     "importanceScore": 88,
@@ -27008,6 +27289,7 @@
   {
     "id": "JUL-08C",
     "title": "Commonwealth Games Federation",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "CGF London HQ",
     "importanceScore": 89,
@@ -27104,6 +27386,7 @@
   {
     "id": "JUL-37",
     "title": "Consumer Credit",
+    "priority": "P3",
     "category": "Economy and business",
     "subcategory": "unsecured retail lending growth",
     "importanceScore": 86,
@@ -27200,6 +27483,7 @@
   {
     "id": "JUL-13",
     "title": "Delimitation Constitutional Amendment Debate",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "Articles 81 & 82 constitutional freeze",
     "importanceScore": 95,
@@ -27296,6 +27580,7 @@
   {
     "id": "JUL-25",
     "title": "FCRA and NGO Regulation",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Foreign Contribution Regulation Act rules",
     "importanceScore": 94,
@@ -27392,6 +27677,7 @@
   {
     "id": "JUL-22",
     "title": "FIFA Awards and Records",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "tournament records",
     "importanceScore": 88,
@@ -27488,6 +27774,7 @@
   {
     "id": "JUL-21",
     "title": "FIFA World Cup 2026 Results",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "World Cup champion & golden boot",
     "importanceScore": 92,
@@ -27584,6 +27871,7 @@
   {
     "id": "JUL-38",
     "title": "Fintech Lending and RBI Regulation",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "digital lending guidelines",
     "importanceScore": 92,
@@ -27680,6 +27968,7 @@
   {
     "id": "JUL-29",
     "title": "Freedom of Expression and Film Certification",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "CBFC powers & KA Abbas precedent",
     "importanceScore": 92,
@@ -27776,6 +28065,7 @@
   {
     "id": "JUL-47",
     "title": "Geographical Indication Recognitions",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "GI Registry Chennai additions",
     "importanceScore": 90,
@@ -27872,6 +28162,7 @@
   {
     "id": "JUL-08B",
     "title": "Glasgow Commonwealth Games",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "Scotland host city",
     "importanceScore": 88,
@@ -27968,6 +28259,7 @@
   {
     "id": "JUL-08",
     "title": "Glasgow 2026 Commonwealth Games & International Sports Law",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "international games",
     "importanceScore": 88,
@@ -28064,6 +28356,7 @@
   {
     "id": "event-001",
     "title": "Supreme Court Ruling on Governor Assent to Bills",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "important Supreme Court judgments",
     "importanceScore": 95,
@@ -28160,6 +28453,7 @@
   {
     "id": "JUL-10",
     "title": "Hunger Strikes and State Intervention",
+    "priority": "P3",
     "category": "Law and justice",
     "subcategory": "force-feeding jurisprudence",
     "importanceScore": 88,
@@ -28256,6 +28550,7 @@
   {
     "id": "JUL-24",
     "title": "Income Tax Reform Legislation",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "Direct Tax Code proposals",
     "importanceScore": 93,
@@ -28352,6 +28647,7 @@
   {
     "id": "JUL-14",
     "title": "Increase in Parliamentary Seats",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "New Parliament seating capacity",
     "importanceScore": 92,
@@ -28448,6 +28744,7 @@
   {
     "id": "JUL-39",
     "title": "India\u2013EU Trade Developments",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "EU FTA negotiations progress",
     "importanceScore": 91,
@@ -28544,6 +28841,7 @@
   {
     "id": "JUL-08D",
     "title": "India\u2019s Commonwealth Games Performance",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "medal tally & sports",
     "importanceScore": 89,
@@ -28640,6 +28938,7 @@
   {
     "id": "JUL-40",
     "title": "India\u2013UK Trade Developments",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "India-UK CETA negotiations",
     "importanceScore": 92,
@@ -28736,6 +29035,7 @@
   {
     "id": "JUL-16",
     "title": "India\u2013US Trade Engagement",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "bilateral trade dialogue",
     "importanceScore": 91,
@@ -28832,6 +29132,7 @@
   {
     "id": "JUL-44",
     "title": "International Court Developments",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "ICJ advisory orders",
     "importanceScore": 93,
@@ -28928,6 +29229,7 @@
   {
     "id": "JUL-33",
     "title": "Internet Shutdown Law",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Telecom Suspension Rules 2017",
     "importanceScore": 95,
@@ -29024,6 +29326,7 @@
   {
     "id": "JUL-19",
     "title": "Iran Conflict and India\u2019s Economy",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "oil shock macroeconomic impact",
     "importanceScore": 93,
@@ -29120,6 +29423,7 @@
   {
     "id": "JUL-32",
     "title": "Medical Entrance Examination Integrity",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "NEET-UG oversight & SC directions",
     "importanceScore": 94,
@@ -29216,6 +29520,7 @@
   {
     "id": "JUL-01",
     "title": "Monsoon Session of Parliament 2026",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "parliamentary session",
     "importanceScore": 93,
@@ -29312,6 +29617,7 @@
   {
     "id": "JUL-28",
     "title": "National Anthem and National Song",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "Jana Gana Mana vs Vande Mataram history",
     "importanceScore": 88,
@@ -29408,6 +29714,7 @@
   {
     "id": "JUL-27",
     "title": "National Symbols",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "Emblem, Flag Code & Anthem Act",
     "importanceScore": 89,
@@ -29504,6 +29811,7 @@
   {
     "id": "JUL-45",
     "title": "New Ramsar Recognitions",
+    "priority": "P2",
     "category": "Environment and ecology",
     "subcategory": "additional wetland additions",
     "importanceScore": 90,
@@ -29600,6 +29908,7 @@
   {
     "id": "JUL-35",
     "title": "Oil Price Shocks and Monetary Policy",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "imported inflation & MPC stance",
     "importanceScore": 92,
@@ -29696,6 +30005,7 @@
   {
     "id": "JUL-20",
     "title": "Oil Prices, Inflation and Remittances",
+    "priority": "P1",
     "category": "Economy and business",
     "subcategory": "Gulf remittances & current account deficit",
     "importanceScore": 93,
@@ -29792,6 +30102,7 @@
   {
     "id": "JUL-11",
     "title": "Parens Patriae Doctrine",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "state protective jurisdiction",
     "importanceScore": 93,
@@ -29888,6 +30199,7 @@
   {
     "id": "JUL-04",
     "title": "Parliamentary Committees",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "Standing & Select committees",
     "importanceScore": 93,
@@ -29984,6 +30296,7 @@
   {
     "id": "JUL-12",
     "title": "Personal Liberty under Article 21",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Maneka Gandhi & Puttaswamy test",
     "importanceScore": 97,
@@ -30080,6 +30393,7 @@
   {
     "id": "JUL-15",
     "title": "Population and Federal Representation",
+    "priority": "P1",
     "category": "Indian polity and governance",
     "subcategory": "Southern states representation concern",
     "importanceScore": 94,
@@ -30176,6 +30490,7 @@
   {
     "id": "JUL-09",
     "title": "Public Order and Police Powers",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "Seventh Schedule State List Item 1",
     "importanceScore": 93,
@@ -30272,6 +30587,7 @@
   {
     "id": "JUL-03",
     "title": "Question Hour and Zero Hour",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "parliamentary proceedings",
     "importanceScore": 92,
@@ -30368,6 +30684,7 @@
   {
     "id": "JUL-06",
     "title": "Right to Peaceful Assembly",
+    "priority": "P1",
     "category": "Law and justice",
     "subcategory": "Article 19(1)(b) & public order limits",
     "importanceScore": 94,
@@ -30464,6 +30781,7 @@
   {
     "id": "JUL-05",
     "title": "Student Protest Movement",
+    "priority": "P2",
     "category": "Indian polity and governance",
     "subcategory": "civic rights",
     "importanceScore": 90,
@@ -30560,6 +30878,7 @@
   {
     "id": "JUL-26",
     "title": "Supreme Court Reform Proposals",
+    "priority": "P2",
     "category": "Law and justice",
     "subcategory": "dividing SC into Constitutional & Appellate divisions",
     "importanceScore": 93,
@@ -30656,6 +30975,7 @@
   {
     "id": "JUL-17",
     "title": "Tariffs and Market Access",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "protectionism vs free trade",
     "importanceScore": 90,
@@ -30752,6 +31072,7 @@
   {
     "id": "JUL-42",
     "title": "Tour de France 2026",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "cycling grand tour",
     "importanceScore": 85,
@@ -30848,6 +31169,7 @@
   {
     "id": "JUL-46",
     "title": "UNESCO Recognitions",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "new World Heritage sites",
     "importanceScore": 91,
@@ -30944,6 +31266,7 @@
   {
     "id": "JUL-43",
     "title": "United Nations Developments",
+    "priority": "P2",
     "category": "International relations",
     "subcategory": "UNGA 81st session preparations",
     "importanceScore": 91,
@@ -31040,6 +31363,7 @@
   {
     "id": "JUL-41",
     "title": "Wimbledon 2026",
+    "priority": "P3",
     "category": "Awards, sports and culture",
     "subcategory": "grass court grand slam",
     "importanceScore": 88,
@@ -31136,6 +31460,7 @@
   {
     "id": "JUL-18",
     "title": "WTO and Digital Trade",
+    "priority": "P2",
     "category": "Economy and business",
     "subcategory": "E-commerce moratorium",
     "importanceScore": 92,
@@ -31232,6 +31557,7 @@
   {
     "id": "AUG-WATCH-01",
     "title": "August 2026 Watchlist: Commonwealth Games & Independence Day",
+    "priority": "P1",
     "category": "Awards, sports and culture",
     "subcategory": "national events & sports tally",
     "importanceScore": 90,
@@ -31328,6 +31654,7 @@
   {
     "id": "NOV-WATCH-01",
     "title": "November 2026 Watchlist: COP31 Climate Summit & US Midterms",
+    "priority": "P1",
     "category": "Environment and ecology",
     "subcategory": "climate negotiations & US elections",
     "importanceScore": 93,
@@ -31424,6 +31751,7 @@
   {
     "id": "OCT-WATCH-01",
     "title": "October 2026 Watchlist: Nobel Prizes 2026 & IMF Meetings",
+    "priority": "P1",
     "category": "Awards, sports and culture",
     "subcategory": "nobel laureates & global finance",
     "importanceScore": 94,
@@ -31520,6 +31848,7 @@
   {
     "id": "SEP-WATCH-01",
     "title": "September 2026 Watchlist: UNGA 81st Session & G20 Summit",
+    "priority": "P1",
     "category": "International relations",
     "subcategory": "multilateral summits",
     "importanceScore": 92,

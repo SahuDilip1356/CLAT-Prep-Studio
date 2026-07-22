@@ -11,7 +11,7 @@ import GKQCardStudio from './GKQCardStudio';
 
 export default function CADashboard({ 
   questions, userProgress, onStartDayDrill, onStartTopicPractice, 
-  initialDossierTopic, clearInitialDossierTopic 
+  initialDossierTopic, clearInitialDossierTopic, onDossierProgress
 }) {
   const [caTab, setCaTab] = useState('HOME'); // 'HOME' vs 'GRAPH' vs 'ONE_PAGERS' vs 'QCARDS'
   
@@ -36,10 +36,18 @@ export default function CADashboard({
 
   const profile = userProgress?.studentProfile || {};
   const studentName = profile.name || 'CLAT Aspirant';
+  const indexedGraphData = graphData.map((dossier, index) => ({ ...dossier, index }));
+  const getDossierKey = (dossier) => `${dossier.folderOrder || dossier.month}/${dossier.title}`;
+  const currentMonthLabel = new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' }).format(new Date());
+  const catalogueMonths = [...new Set(indexedGraphData.map(dossier => dossier.month))];
+  const activeStudyMonth = catalogueMonths.includes(currentMonthLabel) ? currentMonthLabel : 'Jul 2026';
 
   // 1. Calculate P1 Must-Master Stats
-  const p1Dossiers = graphData.filter(d => d.priority === 'P1');
-  const completedP1s = p1Dossiers.filter(d => ((userProgress?.gkTopicAttempted || {})[d.title] || 0) > 0);
+  const p1Dossiers = indexedGraphData.filter(d => d.priority === 'P1' && d.month === activeStudyMonth);
+  const completedP1s = p1Dossiers.filter(d => {
+    const progress = (userProgress?.caDossierProgress || {})[getDossierKey(d)];
+    return Boolean(progress?.status && progress.status !== 'NOT_STARTED') || ((userProgress?.caTopicAttempted || {})[d.title] || 0) > 0;
+  });
   const pendingP1Count = p1Dossiers.length - completedP1s.length;
 
   // 2. Calculate Revision Due (Leitner Box 1)
@@ -56,28 +64,35 @@ export default function CADashboard({
   }
 
   // 3. Current Affairs Accuracy
-  const totalAttempted = userProgress?.gkTotalAttempted || 0;
-  const totalCorrect = userProgress?.gkTotalCorrect || 0;
+  const totalAttempted = userProgress?.caTotalAttempted || 0;
+  const totalCorrect = userProgress?.caTotalCorrect || 0;
   const caAccuracy = totalAttempted > 0 ? Math.round((totalCorrect / totalAttempted) * 100) : 0;
 
   // 4. Today's Focus Dossier Selection
   // Find first incomplete P1 dossier
-  const todayFocusDossier = p1Dossiers.find(d => !((userProgress?.gkTopicAttempted || {})[d.title] || 0)) || p1Dossiers[0] || graphData[0];
-  const todayFocusIndex = graphData.findIndex(d => d.id === todayFocusDossier.id);
-
+  const todayFocusDossier = p1Dossiers.find(d => {
+    const progress = (userProgress?.caDossierProgress || {})[getDossierKey(d)];
+    return !progress?.status && !((userProgress?.caTopicAttempted || {})[d.title] || 0);
+  }) || p1Dossiers[0] || indexedGraphData[0];
   // 5. Living Issues
-  const livingIssues = graphData.filter(d => d.continuingIssue || d.month === 'Continuing Issues');
+  const livingIssues = indexedGraphData.filter(d => d.continuingIssue || d.month === 'Continuing Issues');
 
   // 6. Recently Updated Dossiers (e.g. last few elements or high importance)
-  const recentlyUpdated = [...graphData].slice(-5).reverse();
+  const recentlyUpdated = [...indexedGraphData].slice(-5).reverse();
 
   // Helper to open specific dossier in the graph
-  const handleOpenDossier = (dossierId, targetLens = 'EVENT') => {
-    const idx = graphData.findIndex(d => d.id === dossierId);
-    if (idx !== -1) {
-      setSelectedDossierIndex(idx);
+  const handleOpenDossier = (dossierIndex, targetLens = 'EVENT') => {
+    const dossier = graphData[dossierIndex];
+    if (dossier) {
+      setSelectedDossierIndex(dossierIndex);
       setActiveLens(targetLens);
       setCaTab('GRAPH');
+      onDossierProgress?.({
+        dossierKey: getDossierKey(dossier),
+        dossierId: dossier.id,
+        title: dossier.title,
+        status: 'UNDERSTOOD'
+      });
       // Scroll to top of content
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -216,7 +231,7 @@ export default function CADashboard({
               </div>
               <button 
                 className="btn" 
-                onClick={() => handleOpenDossier(todayFocusDossier.id, 'EVENT')}
+                onClick={() => handleOpenDossier(todayFocusDossier.index, 'EVENT')}
                 style={{ alignSelf: 'flex-start', marginTop: '14px', padding: '6px 12px', fontSize: '0.775rem', background: 'var(--brand-purple)', color: 'white', border: 'none' }}
               >
                 Study Now <ArrowRight size={12} />
@@ -278,7 +293,7 @@ export default function CADashboard({
               </div>
               <button 
                 className="btn btn-secondary" 
-                onClick={() => handleOpenDossier(todayFocusDossier.id, 'CLAT_PASSAGE')}
+                onClick={() => handleOpenDossier(todayFocusDossier.index, 'CLAT_PASSAGE')}
                 style={{ alignSelf: 'flex-start', marginTop: '14px', padding: '6px 12px', fontSize: '0.775rem' }}
               >
                 Passage Drill <BookMarked size={12} />
@@ -305,7 +320,7 @@ export default function CADashboard({
               </p>
               <button 
                 className="btn" 
-                onClick={() => handleOpenDossier(todayFocusDossier.id, 'CLAT_PASSAGE')}
+                onClick={() => handleOpenDossier(todayFocusDossier.index, 'CLAT_PASSAGE')}
                 style={{ background: 'var(--brand-purple)', color: 'white', border: 'none', padding: '8px 16px', fontSize: '0.85rem' }}
               >
                 Open CLAT Passage Practice →
@@ -327,7 +342,7 @@ export default function CADashboard({
               </p>
               <button 
                 className="btn" 
-                onClick={() => handleOpenDossier(todayFocusDossier.id, 'AILET_MCQS')}
+                onClick={() => handleOpenDossier(todayFocusDossier.index, 'AILET_MCQS')}
                 style={{ background: 'var(--brand-coral)', color: 'white', border: 'none', padding: '8px 16px', fontSize: '0.85rem' }}
               >
                 Start Rapid GK Quiz →
@@ -346,7 +361,7 @@ export default function CADashboard({
                   <div>
                     <h3 style={{ fontSize: '1.15rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <Star size={18} color="var(--brand-amber)" fill="var(--brand-amber)" />
-                      P1 Must-Master Issue Dossiers
+                      {activeStudyMonth} P1 Must-Master Issue Dossiers
                     </h3>
                     <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', margin: 0 }}>
                       Non-negotiable topics for CLAT & AILET 2027. Consists of deep timeline, connected Static GK, and legal implications.
@@ -356,12 +371,13 @@ export default function CADashboard({
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {p1Dossiers.slice(0, 15).map(d => {
-                    const isPracticed = ((userProgress?.gkTopicAttempted || {})[d.title] || 0) > 0;
+                    const dossierProgress = (userProgress?.caDossierProgress || {})[getDossierKey(d)];
+                    const isPracticed = dossierProgress?.status === 'PRACTISED' || dossierProgress?.status === 'RETAINED' || ((userProgress?.caTopicAttempted || {})[d.title] || 0) > 0;
                     return (
                       <div 
-                        key={d.id} 
+                        key={`${d.id}-${d.index}`}
                         className="glass-card" 
-                        onClick={() => handleOpenDossier(d.id, 'EVENT')}
+                        onClick={() => handleOpenDossier(d.index, 'EVENT')}
                         style={{ 
                           padding: '14px 18px', 
                           display: 'flex', 
@@ -415,8 +431,8 @@ export default function CADashboard({
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   {livingIssues.slice(0, 8).map(d => (
                     <div 
-                      key={d.id}
-                      onClick={() => handleOpenDossier(d.id, 'EVENT')}
+                      key={`${d.id}-${d.index}`}
+                      onClick={() => handleOpenDossier(d.index, 'EVENT')}
                       style={{ 
                         padding: '10px 14px', 
                         borderRadius: '8px', 
@@ -450,8 +466,8 @@ export default function CADashboard({
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   {recentlyUpdated.slice(0, 5).map(d => (
                     <div 
-                      key={d.id}
-                      onClick={() => handleOpenDossier(d.id, 'EVENT')}
+                      key={`${d.id}-${d.index}`}
+                      onClick={() => handleOpenDossier(d.index, 'EVENT')}
                       style={{ 
                         padding: '10px 14px', 
                         borderRadius: '8px', 
@@ -491,6 +507,7 @@ export default function CADashboard({
           setExternalSelectedNodeIndex={setSelectedDossierIndex}
           externalActiveLens={activeLens}
           setExternalActiveLens={setActiveLens}
+          onDossierProgress={onDossierProgress}
         />
       )}
       {caTab === 'ONE_PAGERS' && <GKDailyOnePagers />}

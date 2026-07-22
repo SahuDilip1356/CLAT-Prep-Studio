@@ -1,5 +1,6 @@
 ---
 id: event-002
+priority: P2
 title: India-AI Impact Summit 2026 & Responsible AI
 category: Environment and science
 subcategory: emerging technology and artificial intelligence

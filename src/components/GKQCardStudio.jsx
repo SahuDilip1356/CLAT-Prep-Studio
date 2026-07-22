@@ -5,8 +5,10 @@ import {
   ChevronDown, ChevronUp, AlertTriangle, Lightbulb, Play, ArrowRight, Search, CheckCircle2
 } from 'lucide-react';
 
+const qcards = qcardsData.map((card, index) => ({ ...card, cardKey: `${card.id}-${index}` }));
+
 export default function GKQCardStudio({ onStartTopicPractice }) {
-  const [selectedTopicId, setSelectedTopicId] = useState(qcardsData[0].id);
+  const [selectedCardKey, setSelectedCardKey] = useState(qcards[0].cardKey);
   const [bookmarkedCards, setBookmarkedCards] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -14,9 +16,9 @@ export default function GKQCardStudio({ onStartTopicPractice }) {
     setBookmarkedCards(prev => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const activeCard = qcardsData.find(c => c.id === selectedTopicId) || qcardsData[0];
+  const activeCard = qcards.find(card => card.cardKey === selectedCardKey) || qcards[0];
 
-  const filteredCards = qcardsData.filter(card => 
+  const filteredCards = qcards.filter(card =>
     card.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
     card.topic.toLowerCase().includes(searchQuery.toLowerCase()) ||
     card.summary.toLowerCase().includes(searchQuery.toLowerCase())
@@ -84,13 +86,13 @@ export default function GKQCardStudio({ onStartTopicPractice }) {
           </h3>
 
           {filteredCards.map(card => {
-            const isSelected = card.id === selectedTopicId;
-            const isBookmarked = bookmarkedCards[card.id];
+            const isSelected = card.cardKey === selectedCardKey;
+            const isBookmarked = bookmarkedCards[card.cardKey];
 
             return (
               <div
-                key={card.id}
-                onClick={() => setSelectedTopicId(card.id)}
+                key={card.cardKey}
+                onClick={() => setSelectedCardKey(card.cardKey)}
                 className="glass-card"
                 style={{
                   padding: '16px', cursor: 'pointer',
@@ -107,7 +109,7 @@ export default function GKQCardStudio({ onStartTopicPractice }) {
                     {card.badge}
                   </span>
                   <button
-                    onClick={(e) => { e.stopPropagation(); toggleBookmark(card.id); }}
+                    onClick={(e) => { e.stopPropagation(); toggleBookmark(card.cardKey); }}
                     style={{ background: 'none', border: 'none', cursor: 'pointer', color: isBookmarked ? '#f59e0b' : 'var(--text-muted)' }}
                   >
                     <BookMarked size={16} fill={isBookmarked ? '#f59e0b' : 'none'} />
@@ -164,11 +166,11 @@ export default function GKQCardStudio({ onStartTopicPractice }) {
                 <div style={{ display: 'flex', gap: '10px' }}>
                   <button
                     className="btn btn-secondary"
-                    onClick={() => toggleBookmark(activeCard.id)}
+                    onClick={() => toggleBookmark(activeCard.cardKey)}
                     style={{ padding: '8px 14px', fontSize: '0.85rem' }}
                   >
-                    <BookMarked size={16} fill={bookmarkedCards[activeCard.id] ? '#f59e0b' : 'none'} color={bookmarkedCards[activeCard.id] ? '#f59e0b' : 'currentColor'} />
-                    {bookmarkedCards[activeCard.id] ? 'Bookmarked' : 'Bookmark'}
+                    <BookMarked size={16} fill={bookmarkedCards[activeCard.cardKey] ? '#f59e0b' : 'none'} color={bookmarkedCards[activeCard.cardKey] ? '#f59e0b' : 'currentColor'} />
+                    {bookmarkedCards[activeCard.cardKey] ? 'Bookmarked' : 'Bookmark'}
                   </button>
 
                   <button

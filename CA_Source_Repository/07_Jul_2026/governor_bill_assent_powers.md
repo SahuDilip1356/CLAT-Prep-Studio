@@ -1,5 +1,6 @@
 ---
 id: event-001
+priority: P1
 title: Supreme Court Ruling on Governor Assent to Bills
 category: Law and justice
 subcategory: important Supreme Court judgments
