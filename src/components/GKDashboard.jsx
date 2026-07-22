@@ -7,7 +7,14 @@ import GKQCardStudio from './GKQCardStudio';
 import GKDailyOnePagers from './GKDailyOnePagers';
 import CAKnowledgeGraph from './CAKnowledgeGraph';
 
-export default function GKDashboard({ questions, userProgress, onStartDayDrill, onStartTopicPractice }) {
+export default function GKDashboard({
+  questions,
+  userProgress,
+  onStartDayDrill,
+  onStartTopicPractice,
+  bookmarkedCardIds,
+  onToggleQCardBookmark
+}) {
   const [gkTab, setGkTab] = useState('GRAPH'); // Default to Exam-Relevant Knowledge Graph
   const [selectedCategory, setSelectedCategory] = useState('All');
 
@@ -204,7 +211,11 @@ export default function GKDashboard({ questions, userProgress, onStartDayDrill, 
 
       {/* TAB 1: SMART ONE-PAGERS (Q-CARDS) */}
       {gkTab === 'QCARDS' && (
-        <GKQCardStudio onStartTopicPractice={onStartTopicPractice} />
+        <GKQCardStudio
+          onStartTopicPractice={onStartTopicPractice}
+          bookmarkedCardIds={bookmarkedCardIds}
+          onToggleBookmark={onToggleQCardBookmark}
+        />
       )}
 
       {/* TAB 2: DAILY ONE-PAGERS (REVISION HUB & CAROUSEL) */}

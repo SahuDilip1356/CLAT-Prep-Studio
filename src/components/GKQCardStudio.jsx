@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
-import qcardsData from '../data/gk_qcards_data.json';
+import { qcards } from '../qcards';
 import { 
   BookMarked, Sparkles, Landmark, Scale, Globe, Rocket, Award, 
   ChevronDown, ChevronUp, AlertTriangle, Lightbulb, Play, ArrowRight, Search, CheckCircle2
 } from 'lucide-react';
 
-const qcards = qcardsData.map((card, index) => ({ ...card, cardKey: `${card.id}-${index}` }));
-
-export default function GKQCardStudio({ onStartTopicPractice }) {
+export default function GKQCardStudio({
+  onStartTopicPractice,
+  bookmarkedCardIds = {},
+  onToggleBookmark
+}) {
   const [selectedCardKey, setSelectedCardKey] = useState(qcards[0].cardKey);
-  const [bookmarkedCards, setBookmarkedCards] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
 
-  const toggleBookmark = (id) => {
-    setBookmarkedCards(prev => ({ ...prev, [id]: !prev[id] }));
-  };
+  const toggleBookmark = (cardKey) => onToggleBookmark?.(cardKey);
 
   const activeCard = qcards.find(card => card.cardKey === selectedCardKey) || qcards[0];
 
@@ -87,7 +86,7 @@ export default function GKQCardStudio({ onStartTopicPractice }) {
 
           {filteredCards.map(card => {
             const isSelected = card.cardKey === selectedCardKey;
-            const isBookmarked = bookmarkedCards[card.cardKey];
+            const isBookmarked = bookmarkedCardIds[card.cardKey];
 
             return (
               <div
@@ -110,6 +109,8 @@ export default function GKQCardStudio({ onStartTopicPractice }) {
                   </span>
                   <button
                     onClick={(e) => { e.stopPropagation(); toggleBookmark(card.cardKey); }}
+                    aria-label={`${isBookmarked ? 'Remove bookmark for' : 'Bookmark'} ${card.title}`}
+                    title={`${isBookmarked ? 'Remove bookmark for' : 'Bookmark'} ${card.title}`}
                     style={{ background: 'none', border: 'none', cursor: 'pointer', color: isBookmarked ? '#f59e0b' : 'var(--text-muted)' }}
                   >
                     <BookMarked size={16} fill={isBookmarked ? '#f59e0b' : 'none'} />
@@ -169,13 +170,13 @@ export default function GKQCardStudio({ onStartTopicPractice }) {
                     onClick={() => toggleBookmark(activeCard.cardKey)}
                     style={{ padding: '8px 14px', fontSize: '0.85rem' }}
                   >
-                    <BookMarked size={16} fill={bookmarkedCards[activeCard.cardKey] ? '#f59e0b' : 'none'} color={bookmarkedCards[activeCard.cardKey] ? '#f59e0b' : 'currentColor'} />
-                    {bookmarkedCards[activeCard.cardKey] ? 'Bookmarked' : 'Bookmark'}
+                    <BookMarked size={16} fill={bookmarkedCardIds[activeCard.cardKey] ? '#f59e0b' : 'none'} color={bookmarkedCardIds[activeCard.cardKey] ? '#f59e0b' : 'currentColor'} />
+                    {bookmarkedCardIds[activeCard.cardKey] ? 'Bookmarked' : 'Bookmark'}
                   </button>
 
                   <button
                     className="btn"
-                    onClick={() => onStartTopicPractice && onStartTopicPractice(activeCard.topic)}
+                    onClick={() => onStartTopicPractice?.(activeCard)}
                     style={{
                       padding: '8px 18px', fontSize: '0.85rem', fontWeight: 800,
                       background: activeCard.color, color: 'white', border: 'none',

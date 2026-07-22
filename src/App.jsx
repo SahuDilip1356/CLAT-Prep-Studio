@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import questionsData from './data/question_bank.json';
 import gkQuestionsData from './data/gk_question_bank.json';
+import { qcards } from './qcards';
 import Dashboard from './components/Dashboard';
 import GKDashboard from './components/GKDashboard';
 import CADashboard from './components/CADashboard';
@@ -40,6 +41,7 @@ const defaultProgress = {
   caTotalCorrect: 0,
   caDossierProgress: {},
   bookmarkedIds: {},
+  bookmarkedQCardIds: {},
   streak: 1
 };
 
@@ -173,8 +175,37 @@ export default function App() {
     setViewState('MOCK_TEST');
   };
 
-  const handleStartTopicPractice = (topicName) => {
-    const topicQs = currentModuleQuestions.filter(q => q.topic === topicName);
+  const handleStartTopicPractice = (topicInput) => {
+    const isQCard = typeof topicInput === 'object' && topicInput !== null;
+    const topicName = isQCard ? topicInput.title : topicInput;
+    let topicQs = currentModuleQuestions.filter(q => q.topic === topicName);
+
+    if (isQCard && topicQs.length === 0) {
+      const stopWords = new Set(['and', 'the', 'with', 'from', 'into', 'versus', 'under', 'for', 'its', '2026', 'india']);
+      const tokens = `${topicInput.title} ${topicInput.topic} ${topicInput.category}`
+        .toLowerCase()
+        .replace(/\bsc\b/g, 'supreme court')
+        .match(/[a-z0-9]+/g)
+        ?.filter(token => token.length > 2 && !stopWords.has(token)) || [];
+
+      const rankedTopics = [...new Set(currentModuleQuestions.map(q => q.topic))]
+        .map(topic => {
+          const searchableTopic = topic.toLowerCase();
+          return {
+            topic,
+            score: tokens.reduce((score, token) => score + (searchableTopic.includes(token) ? 1 : 0), 0)
+          };
+        })
+        .filter(candidate => candidate.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 3)
+        .map(candidate => candidate.topic);
+
+      topicQs = rankedTopics
+        .flatMap(topic => currentModuleQuestions.filter(q => q.topic === topic))
+        .slice(0, 10);
+    }
+
     setActiveDrillTitle(`${topicName} Topic Practice Drill`);
     setActiveQuestions(topicQs.length > 0 ? topicQs : currentModuleQuestions.slice(0, 10));
     setViewState('MOCK_TEST');
@@ -331,7 +362,23 @@ export default function App() {
     });
   };
 
+  const handleToggleQCardBookmark = (cardKey) => {
+    setUserProgress(prev => {
+      const base = prev || defaultProgress;
+      const newBookmarks = { ...(base.bookmarkedQCardIds || {}) };
+      if (newBookmarks[cardKey]) {
+        delete newBookmarks[cardKey];
+      } else {
+        newBookmarks[cardKey] = true;
+      }
+      return { ...base, bookmarkedQCardIds: newBookmarks };
+    });
+  };
+
   const safeProgress = userProgress || defaultProgress;
+  const questionBookmarkCount = Object.keys(safeProgress.bookmarkedIds || {}).length;
+  const qCardBookmarkCount = Object.keys(safeProgress.bookmarkedQCardIds || {}).length;
+  const totalBookmarkCount = questionBookmarkCount + qCardBookmarkCount;
 
   return (
     <div className="app-container">
@@ -415,7 +462,7 @@ export default function App() {
               className={`nav-tab-btn ${activeTab === 'BOOKMARKS' ? 'active' : ''}`}
               onClick={() => { setActiveTab('BOOKMARKS'); setViewState('BOOKMARKS'); }}
             >
-              <BookMarked size={16} /> Bookmarks ({Object.keys(safeProgress.bookmarkedIds || {}).length})
+              <BookMarked size={16} /> Bookmarks ({totalBookmarkCount})
             </button>
 
             <button 
@@ -491,6 +538,8 @@ export default function App() {
               userProgress={safeProgress}
               onStartDayDrill={handleStartDayDrill}
               onStartTopicPractice={handleStartTopicPractice}
+              bookmarkedCardIds={safeProgress.bookmarkedQCardIds}
+              onToggleQCardBookmark={handleToggleQCardBookmark}
             />
           </ModuleErrorBoundary>
         )}
@@ -505,6 +554,8 @@ export default function App() {
               initialDossierTopic={initialDossierTopic}
               clearInitialDossierTopic={() => setInitialDossierTopic(null)}
               onDossierProgress={handleCADossierProgress}
+              bookmarkedCardIds={safeProgress.bookmarkedQCardIds}
+              onToggleQCardBookmark={handleToggleQCardBookmark}
             />
           </ModuleErrorBoundary>
         )}
@@ -532,35 +583,66 @@ export default function App() {
           <div className="glass-panel" style={{ padding: '28px' }}>
             <h2 style={{ fontSize: '1.3rem', fontWeight: 800, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '10px' }}>
               <BookMarked size={22} color="var(--accent-amber)" />
-              Bookmarked Questions for Revision
+              My Bookmark Library
             </h2>
 
-            {Object.keys(safeProgress.bookmarkedIds || {}).length === 0 ? (
+            {totalBookmarkCount === 0 ? (
               <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-secondary)' }}>
-                No questions bookmarked yet. Click the bookmark icon on any question during drill review to save it here!
+                No bookmarks yet. Save a Q-card here or bookmark a question during drill review.
               </div>
             ) : (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                {Object.keys(safeProgress.bookmarkedIds).map(idStr => {
-                  const allCombined = [...questionsData, ...gkQuestionsData];
-                  const q = allCombined.find(item => item.id === parseInt(idStr, 10));
-                  if (!q) return null;
-                  return (
-                    <div key={q.id} className="glass-card" style={{ padding: '18px' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                        <span style={{ fontWeight: 700, color: 'var(--accent-primary)' }}>
-                          Day {q.day} • {q.topic}
-                        </span>
-                        <span className={`diff-badge diff-${q.difficultyLevel}`}>{q.difficultyLabel}</span>
-                      </div>
-                      <div style={{ fontWeight: 600, marginBottom: '10px' }}>{q.questionText}</div>
-                      <div style={{ fontSize: '0.85rem', color: 'var(--accent-success)', background: 'var(--accent-success-bg)', padding: '10px', borderRadius: '6px' }}>
-                        <strong>Correct Answer ({q.correctOption}):</strong> {q.options[q.correctOption.charCodeAt(0) - 65]}
-                      </div>
+              <>
+                {qCardBookmarkCount > 0 && (
+                  <section style={{ marginBottom: questionBookmarkCount > 0 ? '26px' : 0 }}>
+                    <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '12px' }}>Saved Q-Cards</h3>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                      {Object.keys(safeProgress.bookmarkedQCardIds).map(cardKey => {
+                        const card = qcards.find(item => item.cardKey === cardKey);
+                        if (!card) return null;
+                        return (
+                          <div key={card.cardKey} className="glass-card" style={{ padding: '18px' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '16px', alignItems: 'flex-start' }}>
+                              <div>
+                                <div style={{ fontWeight: 800, color: card.color, marginBottom: '5px' }}>{card.title}</div>
+                                <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{card.subtitle}</div>
+                              </div>
+                              <button className="btn btn-secondary" onClick={() => handleToggleQCardBookmark(card.cardKey)}>
+                                Remove
+                              </button>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
-                  );
-                })}
-              </div>
+                  </section>
+                )}
+                {questionBookmarkCount > 0 && (
+                  <section>
+                    <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '12px' }}>Saved Practice Questions</h3>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                      {Object.keys(safeProgress.bookmarkedIds).map(idStr => {
+                        const allCombined = [...questionsData, ...gkQuestionsData];
+                        const q = allCombined.find(item => item.id === parseInt(idStr, 10));
+                        if (!q) return null;
+                        return (
+                          <div key={q.id} className="glass-card" style={{ padding: '18px' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                              <span style={{ fontWeight: 700, color: 'var(--accent-primary)' }}>
+                                Day {q.day} • {q.topic}
+                              </span>
+                              <span className={`diff-badge diff-${q.difficultyLevel}`}>{q.difficultyLabel}</span>
+                            </div>
+                            <div style={{ fontWeight: 600, marginBottom: '10px' }}>{q.questionText}</div>
+                            <div style={{ fontSize: '0.85rem', color: 'var(--accent-success)', background: 'var(--accent-success-bg)', padding: '10px', borderRadius: '6px' }}>
+                              <strong>Correct Answer ({q.correctOption}):</strong> {q.options[q.correctOption.charCodeAt(0) - 65]}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </section>
+                )}
+              </>
             )}
           </div>
         )}
