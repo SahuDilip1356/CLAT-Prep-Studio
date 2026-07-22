@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@600;700;800&family=Source+Serif+4:ital,wght@0,500;1,600&display=swap');
 
+html:has(.marketing-home),
+body:has(.marketing-home) { overflow-x: clip; }
+
 .marketing-home {
   --home-ink: #272c40;
   --home-purple: #5d20fb;
