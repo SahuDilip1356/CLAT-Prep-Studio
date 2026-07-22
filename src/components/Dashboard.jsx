@@ -204,7 +204,7 @@ export default function Dashboard({ questions, userProgress, onStartDayDrill, on
           <div className="glass-panel" style={{ padding: '24px' }}>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               {isQuant ? <BrainCircuit size={20} color="var(--accent-primary)" /> : <Globe size={20} color="var(--accent-success)" />}
-              {isQuant ? '14 Topic Dimensions' : 'GK Subject Dimensions'}
+              {isQuant ? `${Object.keys(topicStats).length} Topic Dimensions` : 'GK Subject Dimensions'}
             </h3>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', maxHeight: '700px', overflowY: 'auto', paddingRight: '4px' }}>

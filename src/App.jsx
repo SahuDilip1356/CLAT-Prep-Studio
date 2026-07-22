@@ -6,6 +6,7 @@ import { qcards } from './qcards';
 import Dashboard from './components/Dashboard';
 import GKDashboard from './components/GKDashboard';
 import CADashboard from './components/CADashboard';
+import HomeDashboard from './components/HomeDashboard';
 import MockTestEngine from './components/MockTestEngine';
 import TestResults from './components/TestResults';
 import StudentProfileModal from './components/StudentProfileModal';
@@ -48,7 +49,7 @@ const defaultProgress = {
 };
 
 export default function App() {
-  const [activeModule, setActiveModule] = useState('QUANT'); // 'QUANT' vs 'GK'
+  const [activeModule, setActiveModule] = useState('HOME'); // 'HOME' vs 'QUANT' vs 'GK' vs 'CA'
   const [activeTab, setActiveTab] = useState('DASHBOARD');
   const [viewState, setViewState] = useState('DASHBOARD');
   const [initialDossierTopic, setInitialDossierTopic] = useState(null);
@@ -169,18 +170,28 @@ export default function App() {
     setIsProfileModalOpen(false);
   };
 
-  const handleStartDayDrill = (dayNum) => {
-    const dayQs = currentModuleQuestions.filter(q => q.day === dayNum);
-    const modulePrefix = activeModule === 'QUANT' ? 'Quant & LR' : 'GK & Current Affairs';
+  const handleStartDayDrill = (dayNum, moduleName) => {
+    const targetModule = moduleName || activeModule;
+    if (targetModule !== activeModule) {
+      setActiveModule(targetModule);
+    }
+    const questionsList = targetModule === 'QUANT' ? questionsData : gkQuestionsData;
+    const dayQs = questionsList.filter(q => q.day === dayNum);
+    const modulePrefix = targetModule === 'QUANT' ? 'Quant & LR' : 'GK & Current Affairs';
     setActiveDrillTitle(`Day ${dayNum} ${modulePrefix} Mock Drill`);
-    setActiveQuestions(dayQs.length > 0 ? dayQs : currentModuleQuestions.slice(0, 10));
+    setActiveQuestions(dayQs.length > 0 ? dayQs : questionsList.slice(0, 10));
     setViewState('MOCK_TEST');
   };
 
-  const handleStartTopicPractice = (topicInput) => {
+  const handleStartTopicPractice = (topicInput, moduleName) => {
+    const targetModule = moduleName || activeModule;
+    if (targetModule !== activeModule) {
+      setActiveModule(targetModule);
+    }
+    const questionsList = targetModule === 'QUANT' ? questionsData : gkQuestionsData;
     const isQCard = typeof topicInput === 'object' && topicInput !== null;
     const topicName = isQCard ? topicInput.title : topicInput;
-    let topicQs = currentModuleQuestions.filter(q => q.topic === topicName);
+    let topicQs = questionsList.filter(q => q.topic === topicName);
 
     if (isQCard && topicQs.length === 0) {
       const stopWords = new Set(['and', 'the', 'with', 'from', 'into', 'versus', 'under', 'for', 'its', '2026', 'india']);
@@ -190,7 +201,7 @@ export default function App() {
         .match(/[a-z0-9]+/g)
         ?.filter(token => token.length > 2 && !stopWords.has(token)) || [];
 
-      const rankedTopics = [...new Set(currentModuleQuestions.map(q => q.topic))]
+      const rankedTopics = [...new Set(questionsList.map(q => q.topic))]
         .map(topic => {
           const searchableTopic = topic.toLowerCase();
           return {
@@ -204,12 +215,12 @@ export default function App() {
         .map(candidate => candidate.topic);
 
       topicQs = rankedTopics
-        .flatMap(topic => currentModuleQuestions.filter(q => q.topic === topic))
+        .flatMap(topic => questionsList.filter(q => q.topic === topic))
         .slice(0, 10);
     }
 
     setActiveDrillTitle(`${topicName} Topic Practice Drill`);
-    setActiveQuestions(topicQs.length > 0 ? topicQs : currentModuleQuestions.slice(0, 10));
+    setActiveQuestions(topicQs.length > 0 ? topicQs : questionsList.slice(0, 10));
     setViewState('MOCK_TEST');
   };
 
@@ -401,7 +412,21 @@ export default function App() {
       {viewState !== 'MOCK_TEST' && (
         <header className="glass-panel header-nav">
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <div className="logo-brand" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div
+              className="logo-brand"
+              onClick={() => { setActiveModule('HOME'); setViewState('DASHBOARD'); }}
+              onKeyDown={(event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  setActiveModule('HOME');
+                  setViewState('DASHBOARD');
+                }
+              }}
+              role="button"
+              tabIndex={0}
+              aria-label="Open home dashboard"
+              style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}
+            >
               <svg viewBox="0 0 100 100" style={{ width: '42px', height: '42px' }} aria-label="CLAT Prep Studio logo">
                 <path d="M76 22C65 12 48 9 33 15C14 23 6 45 14 64C22 83 45 92 64 83C70 80 76 76 80 70L67 59C63 64 58 67 52 68C42 70 32 64 29 54C26 44 31 34 41 30C49 27 58 29 64 35L76 22Z" fill="#6C4CF1"/>
                 <path d="M43 37H71C77 37 82 42 82 48V64L72 56H43C37 56 32 51 32 45C32 41 37 37 43 37Z" fill="#FF6B5E"/>
@@ -536,6 +561,16 @@ export default function App() {
       )}
 
       <main>
+        {viewState === 'DASHBOARD' && activeModule === 'HOME' && (
+          <ModuleErrorBoundary key="HOME" moduleName="Home Dashboard">
+            <HomeDashboard
+              userProgress={safeProgress}
+              setActiveModule={setActiveModule}
+              onStartDayDrill={handleStartDayDrill}
+            />
+          </ModuleErrorBoundary>
+        )}
+
         {viewState === 'DASHBOARD' && activeModule === 'QUANT' && (
           <ModuleErrorBoundary key="QUANT" moduleName="Quant">
             <Dashboard
@@ -672,11 +707,21 @@ export default function App() {
                         if (!q) return null;
                         return (
                           <div key={q.id} className="glass-card" style={{ padding: '18px' }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', marginBottom: '8px', alignItems: 'center' }}>
                               <span style={{ fontWeight: 700, color: 'var(--accent-primary)' }}>
                                 Day {q.day} • {q.topic}
                               </span>
-                              <span className={`diff-badge diff-${q.difficultyLevel}`}>{q.difficultyLabel}</span>
+                              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                                <span className={`diff-badge diff-${q.difficultyLevel}`}>{q.difficultyLabel}</span>
+                                <button
+                                  className="btn btn-secondary"
+                                  onClick={() => handleToggleBookmark(q.id)}
+                                  aria-label={`Remove bookmark for ${q.questionText}`}
+                                  style={{ padding: '5px 9px', fontSize: '0.75rem' }}
+                                >
+                                  Remove
+                                </button>
+                              </div>
                             </div>
                             <div style={{ fontWeight: 600, marginBottom: '10px' }}>{q.questionText}</div>
                             <div style={{ fontSize: '0.85rem', color: 'var(--accent-success)', background: 'var(--accent-success-bg)', padding: '10px', borderRadius: '6px' }}>

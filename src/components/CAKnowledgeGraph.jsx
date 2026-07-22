@@ -59,6 +59,13 @@ export default function CAKnowledgeGraph({
 
   const [directoryMode, setDirectoryMode] = useState('MONTH'); // 'MONTH' vs 'PRIORITY' vs 'CONTINUING'
   const [hideAwareness, setHideAwareness] = useState(false);
+  const [confusingDossierIds, setConfusingDossierIds] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem('clat_confusing_dossiers') || '{}');
+    } catch {
+      return {};
+    }
+  });
   
   // Collapsible months and priority categories
   const [expandedMonths, setExpandedMonths] = useState({ 'Continuing Issues': true });
@@ -90,6 +97,17 @@ export default function CAKnowledgeGraph({
   const getDossierKey = (dossier) => `${dossier.folderOrder || dossier.month}/${dossier.title}`;
   const activeDossierKey = getDossierKey(activeNode);
   const isDossierBookmarked = Boolean(bookmarkedDossierIds[activeDossierKey]);
+  const isDossierConfusing = Boolean(confusingDossierIds[activeDossierKey]);
+  const toggleConfusingDossier = () => {
+    const updatedDossiers = { ...confusingDossierIds };
+    if (updatedDossiers[activeDossierKey]) {
+      delete updatedDossiers[activeDossierKey];
+    } else {
+      updatedDossiers[activeDossierKey] = true;
+    }
+    setConfusingDossierIds(updatedDossiers);
+    localStorage.setItem('clat_confusing_dossiers', JSON.stringify(updatedDossiers));
+  };
   const recordDossierProgress = (dossier, status, attemptedDelta = 0, correctDelta = 0) => {
     onDossierProgress?.({
       dossierKey: getDossierKey(dossier),
@@ -109,6 +127,9 @@ export default function CAKnowledgeGraph({
   };
   const verifiedFacts = activeNode?.facts || [];
   const verifiedSourceCount = new Set(verifiedFacts.map(fact => fact.source).filter(Boolean)).size;
+  const cleanFlashcardText = (value) => String(value || '')
+    .replace(/^\s*-?\s*\*\*(?:Front|Back)\*\*:\s*/i, '')
+    .replace(/\*\*/g, '');
 
   // Directory Groupings
   const dossiersByMonth = {};
@@ -474,12 +495,12 @@ export default function CAKnowledgeGraph({
               </span>
               
               <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: '6px 0 14px 0', lineHeight: 1.4 }}>
-                {flashcards[activeCardIndex]?.front}
+                {cleanFlashcardText(flashcards[activeCardIndex]?.front)}
               </h4>
 
               {showAnswer ? (
                 <div style={{ borderTop: '1px dotted var(--border-color)', paddingTop: '10px', fontSize: '0.85rem', color: 'var(--brand-purple)', fontWeight: 600 }}>
-                  {flashcards[activeCardIndex]?.back}
+                  {cleanFlashcardText(flashcards[activeCardIndex]?.back)}
                 </div>
               ) : (
                 <button 
@@ -585,8 +606,13 @@ export default function CAKnowledgeGraph({
                     <BookMarked size={14} fill={isDossierBookmarked ? 'var(--accent-amber)' : 'none'} />
                     {isDossierBookmarked ? 'Bookmarked' : 'Bookmark'}
                   </button>
-                  <button className="btn btn-secondary" style={{ padding: '6px 12px', fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--brand-coral)' }}>
-                    <AlertCircle size={14} /> Confusing
+                  <button
+                    className="btn btn-secondary"
+                    onClick={toggleConfusingDossier}
+                    aria-pressed={isDossierConfusing}
+                    style={{ padding: '6px 12px', fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--brand-coral)' }}
+                  >
+                    <AlertCircle size={14} /> {isDossierConfusing ? 'Marked Confusing' : 'Confusing'}
                   </button>
                 </div>
               </div>

@@ -16,6 +16,9 @@ export default function GKQCardStudio({
   const toggleBookmark = (cardKey) => onToggleBookmark?.(cardKey);
 
   const activeCard = qcards.find(card => card.cardKey === selectedCardKey) || qcards[0];
+  const milestoneYear = (milestone) => milestone.year || milestone.date || 'Key point';
+  const milestoneTitle = (milestone) => milestone.case || milestone.title || '';
+  const milestoneDetail = (milestone) => milestone.ruling || milestone.event || milestone.detail || '';
 
   const filteredCards = qcards.filter(card =>
     card.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -92,6 +95,15 @@ export default function GKQCardStudio({
               <div
                 key={card.cardKey}
                 onClick={() => setSelectedCardKey(card.cardKey)}
+                onKeyDown={(event) => {
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    setSelectedCardKey(card.cardKey);
+                  }
+                }}
+                role="button"
+                tabIndex={0}
+                aria-label={`Open Q-Card ${card.title}`}
                 className="glass-card"
                 style={{
                   padding: '16px', cursor: 'pointer',
@@ -212,7 +224,7 @@ export default function GKQCardStudio({
                 </h3>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  {activeCard.keyMilestones.map((m, idx) => (
+                  {(activeCard.keyMilestones || []).map((m, idx) => (
                     <div 
                       key={idx} 
                       className="glass-card" 
@@ -226,14 +238,14 @@ export default function GKQCardStudio({
                           fontSize: '0.75rem', fontWeight: 800, padding: '4px 10px', 
                           borderRadius: '12px', background: `${activeCard.color}18`, color: activeCard.color 
                         }}>
-                          {m.year}
+                          {milestoneYear(m)}
                         </span>
                         <div style={{ fontWeight: 800, fontSize: '0.85rem', marginTop: '6px', color: 'var(--text-primary)' }}>
-                          {m.case}
+                          {milestoneTitle(m)}
                         </div>
                       </div>
                       <div style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                        {m.ruling}
+                        {milestoneDetail(m)}
                       </div>
                     </div>
                   ))}
@@ -258,6 +270,11 @@ export default function GKQCardStudio({
                       </div>
                     </div>
                   ))}
+                  {activeCard.keyArticles.length === 0 && (
+                    <div className="glass-card" style={{ padding: '16px', background: 'var(--bg-card)', color: 'var(--text-secondary)', fontSize: '0.825rem' }}>
+                      No linked constitutional provision is required for this topic.
+                    </div>
+                  )}
                 </div>
               </div>
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { qcards } from '../qcards';
 import { 
   BookMarked, Sparkles, Landmark, Scale, Globe, Rocket, Award, 
@@ -8,8 +8,15 @@ import {
 export default function GKDailyOnePagers({ onStartTopicPractice }) {
   const [viewMode, setViewMode] = useState('CAROUSEL'); // 'CAROUSEL' vs 'GRID'
   const [carouselIndex, setCarouselIndex] = useState(0);
-  const [completedList, setCompletedList] = useState({});
+  const [completedList, setCompletedList] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem('clat_daily_onepager_reviewed') || '{}');
+    } catch {
+      return {};
+    }
+  });
   const [isAutoPlaying, setIsAutoPlaying] = useState(false);
+  const carouselCardRef = useRef(null);
 
   // Topic of the day based on the day of the year to rotate through all 340+ Q-Cards
   const startOfYear = new Date(new Date().getFullYear(), 0, 0);
@@ -28,6 +35,10 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
 
     return () => window.clearInterval(interval);
   }, [viewMode, isAutoPlaying]);
+
+  useEffect(() => {
+    localStorage.setItem('clat_daily_onepager_reviewed', JSON.stringify(completedList));
+  }, [completedList]);
 
   const handleNext = () => {
     setCarouselIndex((prev) => (prev + 1) % qcards.length);
@@ -53,6 +64,10 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
     window.print();
   };
 
+  const milestoneYear = (milestone) => milestone.year || milestone.date || 'Key point';
+  const milestoneTitle = (milestone) => milestone.case || milestone.title || '';
+  const milestoneDetail = (milestone) => milestone.ruling || milestone.event || milestone.detail || '';
+
   const activeTopic = qcards[carouselIndex];
   const totalReviewed = Object.values(completedList).filter(Boolean).length;
 
@@ -68,6 +83,16 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
   const showGrid = () => {
     setViewMode('GRID');
     setIsAutoPlaying(false);
+  };
+
+  const reviewDailyFocus = () => {
+    setViewMode('CAROUSEL');
+    setIsAutoPlaying(false);
+    setCarouselIndex(dailyFocusIndex);
+
+    window.requestAnimationFrame(() => {
+      carouselCardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   };
 
   return (
@@ -153,9 +178,7 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
           </div>
           <button 
             className="btn" 
-            onClick={() => {
-              setCarouselIndex(dailyFocusIndex);
-            }}
+            onClick={reviewDailyFocus}
             style={{ padding: '6px 14px', fontSize: '0.8rem', background: 'var(--brand-amber)', color: 'var(--brand-ink)', border: 'none' }}
           >
             Review Now
@@ -168,8 +191,8 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
         <div className="no-print">
           {/* Progress Bar */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-            <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
-              Progress: {carouselIndex + 1} of {qcards.length} topics reviewed
+            <span aria-live="polite" style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
+              Viewing topic {carouselIndex + 1} of {qcards.length}
             </span>
             <span style={{ fontSize: '0.825rem', color: 'var(--brand-mint)', fontWeight: 700 }}>
               {isAutoPlaying ? 'Auto-playing • advances every 2 minutes' : `Reviewed Today: ${totalReviewed} / ${qcards.length}`}
@@ -187,7 +210,12 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
           </div>
 
           {/* Carousel Slide Card */}
-          <div className="glass-panel" style={{ padding: '28px', borderTop: `5px solid ${activeTopic.color}`, position: 'relative' }}>
+          <div
+            ref={carouselCardRef}
+            data-testid="daily-one-pager-slide"
+            className="glass-panel"
+            style={{ padding: '28px', borderTop: `5px solid ${activeTopic.color}`, position: 'relative', scrollMarginTop: '20px' }}
+          >
             
             {/* Header info */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '18px' }}>
@@ -227,14 +255,18 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
                 </h4>
                 <table style={{ width: '100%', fontSize: '0.8rem' }}>
                   <tbody>
-                    {activeTopic.keyMilestones.slice(0, 3).map((m, idx) => (
+                    {(activeTopic.keyMilestones || []).slice(0, 3).map((m, idx) => {
+                      const detail = milestoneDetail(m);
+                      return (
                       <tr key={idx}>
-                        <td style={{ fontWeight: 800, width: '70px', padding: '6px 0' }}>{m.year}</td>
+                        <td style={{ fontWeight: 800, width: '92px', padding: '6px 0' }}>{milestoneYear(m)}</td>
                         <td style={{ padding: '6px 0' }}>
-                          <strong style={{ color: 'var(--text-primary)' }}>{m.case}</strong>: {m.ruling.length > 90 ? m.ruling.slice(0, 90) + '...' : m.ruling}
+                          {milestoneTitle(m) && <strong style={{ color: 'var(--text-primary)' }}>{milestoneTitle(m)}: </strong>}
+                          {detail.length > 90 ? `${detail.slice(0, 90)}...` : detail}
                         </td>
                       </tr>
-                    ))}
+                      );
+                    })}
                   </tbody>
                 </table>
               </div>
@@ -251,6 +283,11 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
                       <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>{a.desc}</div>
                     </div>
                   ))}
+                  {activeTopic.keyArticles.length === 0 && (
+                    <div style={{ padding: '8px', background: 'var(--bg-primary)', borderRadius: '6px', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                      No linked constitutional provision is required for this topic.
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -262,7 +299,7 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
                 <div style={{ fontSize: '0.8rem', fontWeight: 800, color: 'var(--accent-danger)', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <AlertTriangle size={14} /> CLAT TRAP ALERT
                 </div>
-                <div style={{ fontSize: '0.8rem', lineHeight: 1.4 }}>{activeTopic.examTraps[0]}</div>
+                <div style={{ fontSize: '0.8rem', lineHeight: 1.4 }}>{activeTopic.examTraps?.[0] || 'No specific exam trap recorded.'}</div>
               </div>
 
               <div style={{ padding: '12px 16px', background: 'rgba(53, 199, 165, 0.08)', borderRadius: 'var(--radius-md)' }}>
@@ -324,9 +361,9 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
                 <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '16px', fontSize: '0.775rem', marginBottom: '12px' }}>
                   <div>
                     <strong style={{ display: 'block', marginBottom: '6px' }}>🔑 Timelines & Precedents:</strong>
-                    {topicItem.keyMilestones.map((m, i) => (
+                    {(topicItem.keyMilestones || []).map((m, i) => (
                       <div key={i} style={{ marginBottom: '4px' }}>
-                        • <strong>{m.year} {m.case}</strong>: {m.ruling}
+                        • <strong>{milestoneYear(m)}{milestoneTitle(m) ? ` ${milestoneTitle(m)}` : ''}</strong>: {milestoneDetail(m)}
                       </div>
                     ))}
                   </div>
@@ -337,13 +374,16 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
                         • <strong>{a.article}</strong>: {a.desc}
                       </div>
                     ))}
+                    {topicItem.keyArticles.length === 0 && (
+                      <div style={{ color: 'var(--text-secondary)' }}>• No linked constitutional provision required.</div>
+                    )}
                   </div>
                 </div>
 
                 {/* Traps & Tips */}
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', fontSize: '0.775rem', marginTop: '10px', borderTop: '1px dotted var(--border-color)', paddingTop: '10px' }}>
                   <div style={{ color: 'var(--accent-danger)', fontWeight: 500 }}>
-                    <strong>⚠️ CLAT Trap:</strong> {topicItem.examTraps[0]}
+                    <strong>⚠️ CLAT Trap:</strong> {topicItem.examTraps?.[0] || 'No specific exam trap recorded.'}
                   </div>
                   <div style={{ color: 'var(--brand-purple)', fontWeight: 600 }}>
                     <strong>💡 Mnemonic:</strong> {topicItem.memoryTip}

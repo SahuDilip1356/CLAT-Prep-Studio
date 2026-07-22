@@ -76,6 +76,8 @@ export default function TestResults({ testData, onBackToDashboard, onRetakeDrill
                 <span className="q-number-pill">Q{idx + 1}</span>
                 <button 
                   onClick={() => onToggleBookmark(q.id)}
+                  aria-label={isBm ? `Remove question ${idx + 1} bookmark` : `Bookmark question ${idx + 1}`}
+                  aria-pressed={isBm}
                   style={{ background: 'none', border: 'none', color: isBm ? 'var(--accent-amber)' : 'var(--text-muted)', cursor: 'pointer' }}
                 >
                   <Bookmark size={18} fill={isBm ? 'var(--accent-amber)' : 'none'} />

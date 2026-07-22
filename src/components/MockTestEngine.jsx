@@ -129,6 +129,7 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
             <span className="timer-display" style={{ fontSize: '1.1rem' }}>{formatTime(timeLeft)}</span>
             <button 
               onClick={() => setIsTimerPaused(!isTimerPaused)}
+              aria-label={isTimerPaused ? 'Resume timer' : 'Pause timer'}
               style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', marginLeft: '6px' }}
             >
               {isTimerPaused ? <Play size={16} /> : <Pause size={16} />}

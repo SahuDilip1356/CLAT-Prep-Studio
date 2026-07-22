@@ -12,25 +12,24 @@ export default function StudentDataAdmin({ studentProfile, attemptHistory = [], 
   const totalAttempts = attemptHistory.length;
   
   // 1. Passage Accuracy (Current Affairs & CA drills)
-  const passageAtts = attemptHistory.filter(h => h.module === 'CA' || h.drillTitle.toLowerCase().includes('passage'));
+  const passageAtts = attemptHistory.filter(h => h.drillTitle.toLowerCase().includes('passage') || h.drillTitle.toLowerCase().includes('clat'));
   const passageAcc = passageAtts.length > 0 
     ? Math.round(passageAtts.reduce((sum, h) => sum + h.accuracyPct, 0) / passageAtts.length) 
-    : 70; // High-quality baseline fallback
+    : null;
 
   // 2. GK / AILET Accuracy
-  const gkAtts = attemptHistory.filter(h => h.module === 'GK' || h.drillTitle.toLowerCase().includes('rapid') || h.drillTitle.toLowerCase().includes('ailet'));
+  const gkAtts = attemptHistory.filter(h => h.drillTitle.toLowerCase().includes('rapid') || h.drillTitle.toLowerCase().includes('ailet'));
   const gkAcc = gkAtts.length > 0 
     ? Math.round(gkAtts.reduce((sum, h) => sum + h.accuracyPct, 0) / gkAtts.length) 
-    : 65; // Baseline fallback
+    : null;
 
   // 3. Must-Master Completed count (Unique topics attempted in history)
   const uniqueCompletedTopics = new Set(attemptHistory.filter(h => h.module === 'CA').map(h => h.drillTitle)).size;
-  const targetMustMasterCount = Math.max(5, uniqueCompletedTopics + 2);
 
   // 4. Collect Weakest Areas
   const allWeakTopics = attemptHistory.flatMap(h => h.weakTopics || []);
   const uniqueWeak = [...new Set(allWeakTopics)].slice(0, 3);
-  const weakDisplay = uniqueWeak.length > 0 ? uniqueWeak.join(', ') : 'International organizations, Constitutional polity articles';
+  const weakDisplay = uniqueWeak.length > 0 ? uniqueWeak.join(', ') : 'No weak area detected yet';
 
   // 5. Revision stats from local Leitner boxes
   const savedBoxes = localStorage.getItem('clat_leitner_boxes');
@@ -41,9 +40,9 @@ export default function StudentDataAdmin({ studentProfile, attemptHistory = [], 
       const boxes = JSON.parse(savedBoxes);
       masteredCount = (boxes[3] || []).length;
       totalCards = (boxes[1] || []).length + (boxes[2] || []).length + masteredCount;
-    } catch (e) {}
+    } catch {}
   }
-  const revisionCompletionPct = totalCards > 0 ? Math.round((masteredCount / totalCards) * 100) : 78;
+  const revisionCompletionPct = totalCards > 0 ? Math.round((masteredCount / totalCards) * 100) : null;
 
   return (
     <div className="student-admin-view">
@@ -161,25 +160,25 @@ export default function StudentDataAdmin({ studentProfile, attemptHistory = [], 
               
               <div className="glass-card" style={{ padding: '18px', borderLeft: '4px solid var(--brand-purple)' }}>
                 <span style={{ fontSize: '0.725rem', fontWeight: 800, color: 'var(--text-muted)', textTransform: 'uppercase' }}>Must-Master Completed</span>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, margin: '6px 0 2px 0' }}>{uniqueCompletedTopics} / {targetMustMasterCount}</h3>
-                <span style={{ fontSize: '0.725rem', color: 'var(--text-secondary)' }}>dossiers compiled this week</span>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, margin: '6px 0 2px 0' }}>{uniqueCompletedTopics}</h3>
+                <span style={{ fontSize: '0.725rem', color: 'var(--text-secondary)' }}>current-affairs topics practised</span>
               </div>
 
               <div className="glass-card" style={{ padding: '18px', borderLeft: '4px solid var(--brand-mint)' }}>
                 <span style={{ fontSize: '0.725rem', fontWeight: 800, color: 'var(--text-muted)', textTransform: 'uppercase' }}>Spaced Repetition Retention</span>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, margin: '6px 0 2px 0' }}>{revisionCompletionPct}%</h3>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, margin: '6px 0 2px 0' }}>{revisionCompletionPct === null ? 'No data' : `${revisionCompletionPct}%`}</h3>
                 <span style={{ fontSize: '0.725rem', color: 'var(--text-secondary)' }}>revision cards mastered</span>
               </div>
 
               <div className="glass-card" style={{ padding: '18px', borderLeft: '4px solid var(--brand-coral)' }}>
                 <span style={{ fontSize: '0.725rem', fontWeight: 800, color: 'var(--text-muted)', textTransform: 'uppercase' }}>CLAT Passage Accuracy</span>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, margin: '6px 0 2px 0' }}>{passageAcc}%</h3>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, margin: '6px 0 2px 0' }}>{passageAcc === null ? 'No data' : `${passageAcc}%`}</h3>
                 <span style={{ fontSize: '0.725rem', color: 'var(--text-secondary)' }}>comprehension accuracy</span>
               </div>
 
               <div className="glass-card" style={{ padding: '18px', borderLeft: '4px solid var(--brand-amber)' }}>
                 <span style={{ fontSize: '0.725rem', fontWeight: 800, color: 'var(--text-muted)', textTransform: 'uppercase' }}>AILET GK Accuracy</span>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, margin: '6px 0 2px 0' }}>{gkAcc}%</h3>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, margin: '6px 0 2px 0' }}>{gkAcc === null ? 'No data' : `${gkAcc}%`}</h3>
                 <span style={{ fontSize: '0.725rem', color: 'var(--text-secondary)' }}>direct recall speed drills</span>
               </div>
 
@@ -193,7 +192,7 @@ export default function StudentDataAdmin({ studentProfile, attemptHistory = [], 
                   <AlertTriangle size={16} /> Weakest Knowledge Areas
                 </h4>
                 <p style={{ fontSize: '0.85rem', lineHeight: 1.5, margin: 0 }}>
-                  Practice results indicate support or extra revision is recommended in: <br />
+                  {uniqueWeak.length > 0 ? 'Practice results indicate support or extra revision is recommended in:' : 'More answered questions are needed before a weak area can be identified.'} <br />
                   <strong style={{ color: 'var(--brand-coral)', display: 'block', marginTop: '6px' }}>{weakDisplay}</strong>
                 </p>
               </div>
@@ -203,7 +202,14 @@ export default function StudentDataAdmin({ studentProfile, attemptHistory = [], 
                   <ShieldCheck size={16} /> Is Active Learning Happening?
                 </h4>
                 <p style={{ fontSize: '0.85rem', lineHeight: 1.5, margin: 0, color: 'var(--text-primary)' }}>
-                  <strong>Yes.</strong> {profile.name || 'Your child'} is actively studying. They completed <strong>{totalAttempts} mock drills</strong> and structured sessions. Spaced Leitner flashcards are being reviewed consistently to prevent memory decay.
+                  {totalAttempts > 0 || totalCards > 0 ? (
+                    <>
+                      <strong>Yes.</strong> {profile.name || 'Your child'} has completed <strong>{totalAttempts} mock {totalAttempts === 1 ? 'drill' : 'drills'}</strong>.
+                      {totalCards > 0 ? ` ${masteredCount} of ${totalCards} spaced-repetition cards are mastered.` : ' No spaced-repetition activity is recorded yet.'}
+                    </>
+                  ) : (
+                    <><strong>Not enough data yet.</strong> Complete a drill or a spaced-repetition session to establish an activity signal.</>
+                  )}
                 </p>
               </div>
 
