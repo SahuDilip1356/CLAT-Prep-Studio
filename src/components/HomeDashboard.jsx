@@ -13,6 +13,7 @@ import {
   X
 } from 'lucide-react';
 import graphData from '../data/ca_knowledge_graph.json';
+import BrandLockup from './BrandLockup';
 import './HomeDashboard.css';
 
 const PREP_LOOP = [
@@ -164,7 +165,7 @@ export default function HomeDashboard({
       <header className="marketing-header">
         <div className="marketing-shell marketing-nav-wrap">
           <button className="marketing-logo-button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="CLAT Prep Studio home">
-            <img src="/logo.svg" alt="CLAT Prep Studio" />
+            <BrandLockup className="marketing-brand-lockup" />
           </button>
 
           <nav className="marketing-desktop-nav" aria-label="Homepage navigation">

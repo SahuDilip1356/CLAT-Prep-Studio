@@ -14,6 +14,7 @@ import StudentDataAdmin from './components/StudentDataAdmin';
 import AdminPortal from './components/AdminPortal';
 import AuthModal from './components/AuthModal';
 import ModuleErrorBoundary from './components/ModuleErrorBoundary';
+import BrandLockup from './components/BrandLockup';
 import { auth, signInWithGoogle, logOutUser, syncUserProgressToCloud, fetchCloudUserProgress } from './firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 import { 
@@ -427,19 +428,7 @@ export default function App() {
               aria-label="Open home dashboard"
               style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}
             >
-              <svg viewBox="0 0 100 100" style={{ width: '42px', height: '42px' }} aria-label="CLAT Prep Studio logo">
-                <path d="M76 22C65 12 48 9 33 15C14 23 6 45 14 64C22 83 45 92 64 83C70 80 76 76 80 70L67 59C63 64 58 67 52 68C42 70 32 64 29 54C26 44 31 34 41 30C49 27 58 29 64 35L76 22Z" fill="#6C4CF1"/>
-                <path d="M43 37H71C77 37 82 42 82 48V64L72 56H43C37 56 32 51 32 45C32 41 37 37 43 37Z" fill="#FF6B5E"/>
-                <path d="M45 47L52 54L68 39" fill="none" stroke="#FFFFFF" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              <div>
-                <div style={{ fontWeight: 800, fontSize: '1.25rem', letterSpacing: '-0.5px', color: 'var(--text-primary)', lineHeight: 1.1 }}>
-                  CLAT <span style={{ background: '#FF6B5E', color: 'white', fontSize: '0.8rem', padding: '2px 8px', borderRadius: '6px', margin: '0 4px', verticalAlign: 'middle' }}>Prep</span> <span style={{ color: '#6C4CF1' }}>Studio</span>
-                </div>
-                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: 600, marginTop: '3px' }}>
-                  Think clearly. Argue sharply. Rank higher.
-                </div>
-              </div>
+              <BrandLockup />
             </div>
 
             {/* THREE MODULE SWITCHER */}

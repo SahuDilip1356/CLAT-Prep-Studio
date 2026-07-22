@@ -42,8 +42,9 @@ body:has(.marketing-home) { overflow-x: clip; }
   backdrop-filter: blur(14px);
 }
 .marketing-nav-wrap { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.marketing-logo-button { width: 164px; height: 48px; padding: 0; border: 0; background: transparent; }
-.marketing-logo-button img { display: block; width: 164px; height: 48px; object-fit: contain; object-position: left center; }
+.marketing-logo-button { width: auto; min-height: 48px; padding: 0; border: 0; background: transparent; }
+.marketing-logo-button .brand-lockup-title { color: var(--home-ink); }
+.marketing-logo-button .brand-lockup-tagline { color: var(--home-muted); }
 .marketing-desktop-nav { display: flex; align-items: center; gap: 28px; }
 .marketing-desktop-nav a,
 .marketing-login { color: var(--home-slate); font-size: 13px; font-weight: 700; text-decoration: none; background: none; border: 0; transition: color 150ms ease; }
@@ -263,8 +264,6 @@ body:has(.marketing-home) { overflow-x: clip; }
 }
 
 @media (max-width: 480px) {
-  .marketing-logo-button,
-  .marketing-logo-button img { width: 145px; }
   .marketing-button-row { align-items: stretch; flex-direction: column; }
   .marketing-button-row > * { width: 100%; }
   .marketing-hero-note { align-items: flex-start; }
