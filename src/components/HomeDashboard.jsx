@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   ArrowRight,
   BookOpen,
   BrainCircuit,
   Check,
   CheckCircle2,
+  ChevronDown,
   Clock,
   ExternalLink,
   Flame,
@@ -127,12 +128,35 @@ export default function HomeDashboard({
 }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [dossierOpen, setDossierOpen] = useState(false);
+  const [moduleMenuOpen, setModuleMenuOpen] = useState(false);
   const [tickerNow, setTickerNow] = useState(() => new Date());
+  const moduleLauncherRef = useRef(null);
+  const mobileNavRef = useRef(null);
 
   useEffect(() => {
     const timer = window.setInterval(() => setTickerNow(new Date()), 1000);
     return () => window.clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    if (!moduleMenuOpen) return undefined;
+
+    const closeOnOutsideClick = (event) => {
+      const clickedDesktopLauncher = moduleLauncherRef.current?.contains(event.target);
+      const clickedMobileNavigation = mobileNavRef.current?.contains(event.target);
+      if (!clickedDesktopLauncher && !clickedMobileNavigation) setModuleMenuOpen(false);
+    };
+    const closeOnEscape = (event) => {
+      if (event.key === 'Escape') setModuleMenuOpen(false);
+    };
+
+    document.addEventListener('pointerdown', closeOnOutsideClick);
+    document.addEventListener('keydown', closeOnEscape);
+    return () => {
+      document.removeEventListener('pointerdown', closeOnOutsideClick);
+      document.removeEventListener('keydown', closeOnEscape);
+    };
+  }, [moduleMenuOpen]);
 
   const completedQuantDays = Object.keys(userProgress?.completedDays || {}).length;
   const quantAttempted = userProgress?.totalAttempted || 0;
@@ -183,6 +207,8 @@ export default function HomeDashboard({
           : 'Building your baseline';
 
   const enterModule = (module) => {
+    setModuleMenuOpen(false);
+    setMobileNavOpen(false);
     setActiveModule(module);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -257,9 +283,36 @@ export default function HomeDashboard({
             <button className="marketing-login" onClick={studentName ? onOpenStudentDashboard : onOpenAuth}>
               {studentName ? `Dashboard · ${studentName.split(' ')[0]}` : 'Log in'}
             </button>
-            <button className="marketing-primary-button marketing-small-button" onClick={() => startDrill(nextQuantDay, 'QUANT')}>
-              {primaryActionLabel}
-            </button>
+            <div className="marketing-module-launcher" ref={moduleLauncherRef}>
+              <button
+                className="marketing-primary-button marketing-small-button"
+                onClick={() => setModuleMenuOpen((open) => !open)}
+                aria-haspopup="menu"
+                aria-expanded={moduleMenuOpen}
+              >
+                Start my day <ChevronDown size={15} className={moduleMenuOpen ? 'is-open' : ''} />
+              </button>
+              {moduleMenuOpen && (
+                <div className="marketing-module-menu" role="menu" aria-label="Choose a CLAT preparation module">
+                  <span>CHOOSE TODAY’S MODULE</span>
+                  <button role="menuitem" onClick={() => enterModule('QUANT')}>
+                    <i className="is-quant"><BrainCircuit size={17} /></i>
+                    <b>Quant &amp; Logical Reasoning<small>31-day drill studio</small></b>
+                    <ArrowRight size={15} />
+                  </button>
+                  <button role="menuitem" onClick={() => enterModule('GK')}>
+                    <i className="is-gk"><BookOpen size={17} /></i>
+                    <b>Static General Knowledge<small>One-pagers and recall</small></b>
+                    <ArrowRight size={15} />
+                  </button>
+                  <button role="menuitem" onClick={() => enterModule('CA')}>
+                    <i className="is-ca"><Newspaper size={17} /></i>
+                    <b>Current Affairs Studio<small>Dossiers, Q-cards and revision</small></b>
+                    <ArrowRight size={15} />
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
 
           <button
@@ -273,17 +326,30 @@ export default function HomeDashboard({
         </div>
 
         {mobileNavOpen && (
-          <nav className="marketing-mobile-nav" aria-label="Mobile homepage navigation">
+          <nav className="marketing-mobile-nav" aria-label="Mobile homepage navigation" ref={mobileNavRef}>
             {navItems.map(([label, href]) => <a key={href} href={href} onClick={() => setMobileNavOpen(false)}>{label}</a>)}
             <button onClick={studentName ? onOpenStudentDashboard : onOpenAuth}>{studentName ? `Open ${studentName.split(' ')[0]}’s dashboard` : 'Log in'}</button>
-            <button className="marketing-primary-button" onClick={() => startDrill(nextQuantDay, 'QUANT')}>{primaryActionLabel}</button>
+            <button
+              className="marketing-primary-button marketing-mobile-module-toggle"
+              onClick={() => setModuleMenuOpen((open) => !open)}
+              aria-expanded={moduleMenuOpen}
+            >
+              Start my day <ChevronDown size={16} className={moduleMenuOpen ? 'is-open' : ''} />
+            </button>
+            {moduleMenuOpen && (
+              <div className="marketing-mobile-module-menu">
+                <button onClick={() => enterModule('QUANT')}><BrainCircuit size={17} /> Quant &amp; Logical Reasoning <ArrowRight size={14} /></button>
+                <button onClick={() => enterModule('GK')}><BookOpen size={17} /> Static General Knowledge <ArrowRight size={14} /></button>
+                <button onClick={() => enterModule('CA')}><Newspaper size={17} /> Current Affairs Studio <ArrowRight size={14} /></button>
+              </div>
+            )}
           </nav>
         )}
       </header>
 
       <main>
         <section className="marketing-hero" id="top">
-          <div className={`marketing-shell marketing-exam-ticker is-${clatTicker.urgency}`} aria-label="CLAT 2027 exam countdown">
+          <div className={`marketing-shell marketing-exam-ticker is-${clatTicker.state} is-${clatTicker.urgency}`} aria-label="CLAT 2027 exam countdown">
             <div className="marketing-ticker-title">
               <span>OFFICIAL EXAM CLOCK</span>
               <strong>CLAT 2027</strong>
@@ -298,7 +364,7 @@ export default function HomeDashboard({
                 <i>:</i>
                 <div><strong>{clatTicker.minutes}</strong><span>Mins</span></div>
                 <i>:</i>
-                <div className="marketing-ticker-seconds"><strong>{clatTicker.seconds}</strong><span>Secs</span></div>
+                <div className="marketing-ticker-seconds"><strong key={clatTicker.seconds}>{clatTicker.seconds}</strong><span>Secs</span></div>
               </div>
             ) : (
               <div className={`marketing-ticker-status is-${clatTicker.state}`}>
