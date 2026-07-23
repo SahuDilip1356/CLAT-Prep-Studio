@@ -86,6 +86,7 @@ export default function HomeDashboard({
   setActiveModule,
   onStartDayDrill,
   onOpenAuth,
+  onOpenStudentDashboard,
   currentUser
 }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -210,7 +211,7 @@ export default function HomeDashboard({
           </nav>
 
           <div className="marketing-nav-actions">
-            <button className="marketing-login" onClick={studentName ? () => enterModule('QUANT') : onOpenAuth}>
+            <button className="marketing-login" onClick={studentName ? onOpenStudentDashboard : onOpenAuth}>
               {studentName ? `Dashboard · ${studentName.split(' ')[0]}` : 'Log in'}
             </button>
             <button className="marketing-primary-button marketing-small-button" onClick={() => startDrill(nextQuantDay, 'QUANT')}>
@@ -231,7 +232,7 @@ export default function HomeDashboard({
         {mobileNavOpen && (
           <nav className="marketing-mobile-nav" aria-label="Mobile homepage navigation">
             {navItems.map(([label, href]) => <a key={href} href={href} onClick={() => setMobileNavOpen(false)}>{label}</a>)}
-            <button onClick={studentName ? () => enterModule('QUANT') : onOpenAuth}>{studentName ? `Open ${studentName.split(' ')[0]}’s dashboard` : 'Log in'}</button>
+            <button onClick={studentName ? onOpenStudentDashboard : onOpenAuth}>{studentName ? `Open ${studentName.split(' ')[0]}’s dashboard` : 'Log in'}</button>
             <button className="marketing-primary-button" onClick={() => startDrill(nextQuantDay, 'QUANT')}>{primaryActionLabel}</button>
           </nav>
         )}

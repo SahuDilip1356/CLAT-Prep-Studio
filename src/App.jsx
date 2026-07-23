@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard';
 import GKDashboard from './components/GKDashboard';
 import CADashboard from './components/CADashboard';
 import HomeDashboard from './components/HomeDashboard';
+import StudentDashboard from './components/StudentDashboard';
 import MockTestEngine from './components/MockTestEngine';
 import TestResults from './components/TestResults';
 import StudentProfileModal from './components/StudentProfileModal';
@@ -141,7 +142,12 @@ export default function App() {
   const handleGoogleSignIn = async () => {
     try {
       const user = await signInWithGoogle();
-      if (user) setIsAuthModalOpen(false);
+      if (user) {
+        setIsAuthModalOpen(false);
+        setActiveModule('STUDENT');
+        setActiveTab('DASHBOARD');
+        setViewState('DASHBOARD');
+      }
     } catch (err) {
       console.log('Google Auth Notice:', err);
     }
@@ -153,6 +159,9 @@ export default function App() {
       studentProfile: profileData
     }));
     setIsAuthModalOpen(false);
+    setActiveModule('STUDENT');
+    setActiveTab('DASHBOARD');
+    setViewState('DASHBOARD');
   };
 
   const handleSignOut = async () => {
@@ -438,7 +447,7 @@ export default function App() {
               padding: '4px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)'
             }}>
               <button
-                onClick={() => { setActiveModule('QUANT'); setViewState('DASHBOARD'); }}
+                onClick={() => { setActiveModule('QUANT'); setActiveTab('DASHBOARD'); setViewState('DASHBOARD'); }}
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '6px',
                   padding: '8px 16px', borderRadius: 'var(--radius-sm)', border: 'none',
@@ -452,7 +461,7 @@ export default function App() {
               </button>
 
               <button
-                onClick={() => { setActiveModule('GK'); setViewState('DASHBOARD'); }}
+                onClick={() => { setActiveModule('GK'); setActiveTab('DASHBOARD'); setViewState('DASHBOARD'); }}
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '6px',
                   padding: '8px 16px', borderRadius: 'var(--radius-sm)', border: 'none',
@@ -466,7 +475,7 @@ export default function App() {
               </button>
 
               <button
-                onClick={() => { setActiveModule('CA'); setViewState('DASHBOARD'); }}
+                onClick={() => { setActiveModule('CA'); setActiveTab('DASHBOARD'); setViewState('DASHBOARD'); }}
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '6px',
                   padding: '8px 16px', borderRadius: 'var(--radius-sm)', border: 'none',
@@ -483,10 +492,10 @@ export default function App() {
 
           <nav className="nav-tabs">
             <button 
-              className={`nav-tab-btn ${activeTab === 'DASHBOARD' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('DASHBOARD'); setViewState('DASHBOARD'); }}
+              className={`nav-tab-btn ${activeModule === 'STUDENT' && activeTab === 'DASHBOARD' ? 'active' : ''}`}
+              onClick={() => { setActiveModule('STUDENT'); setActiveTab('DASHBOARD'); setViewState('DASHBOARD'); }}
             >
-              <LayoutDashboard size={16} /> Dashboard
+              <LayoutDashboard size={16} /> My Dashboard
             </button>
             
             <button 
@@ -558,7 +567,47 @@ export default function App() {
               setActiveModule={setActiveModule}
               onStartDayDrill={handleStartDayDrill}
               onOpenAuth={() => setIsAuthModalOpen(true)}
+              onOpenStudentDashboard={() => {
+                setActiveModule('STUDENT');
+                setActiveTab('DASHBOARD');
+                setViewState('DASHBOARD');
+              }}
               currentUser={currentUser}
+            />
+          </ModuleErrorBoundary>
+        )}
+
+        {viewState === 'DASHBOARD' && activeModule === 'STUDENT' && (
+          <ModuleErrorBoundary key="STUDENT" moduleName="Student Dashboard">
+            <StudentDashboard
+              userProgress={safeProgress}
+              currentUser={currentUser}
+              onStartDayDrill={handleStartDayDrill}
+              onStartTopicPractice={handleStartTopicPractice}
+              onOpenModule={(module) => {
+                setActiveModule(module);
+                setActiveTab('DASHBOARD');
+                setViewState('DASHBOARD');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              onOpenDossier={(dossier) => {
+                const slug = dossier?.title
+                  ? dossier.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+                  : null;
+                setInitialDossierTopic(slug);
+                setActiveModule('CA');
+                setActiveTab('DASHBOARD');
+                setViewState('DASHBOARD');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              onOpenBookmarks={() => {
+                setActiveTab('BOOKMARKS');
+                setViewState('BOOKMARKS');
+              }}
+              onOpenRecords={() => {
+                setActiveTab('ADMIN');
+                setViewState('ADMIN');
+              }}
             />
           </ModuleErrorBoundary>
         )}

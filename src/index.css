@@ -162,6 +162,64 @@ body {
   color: white;
 }
 
+@media (max-width: 1100px) {
+  .header-nav {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 16px;
+  }
+
+  .header-nav > div:first-child {
+    justify-content: space-between;
+    min-width: 0;
+  }
+
+  .header-nav > div:first-child > div:last-child,
+  .nav-tabs {
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .header-nav > div:first-child > div:last-child::-webkit-scrollbar,
+  .nav-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-tabs {
+    padding-bottom: 2px;
+  }
+
+  .nav-tab-btn {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .header-nav {
+    margin-bottom: 16px;
+  }
+
+  .header-nav > div:first-child {
+    align-items: stretch !important;
+    flex-direction: column;
+  }
+
+  .logo-brand {
+    align-self: flex-start;
+  }
+
+  .header-nav > div:first-child > div:last-child {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
