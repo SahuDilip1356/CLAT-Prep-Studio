@@ -77,19 +77,35 @@ const CLAT_2027_START = new Date('2026-12-06T14:00:00+05:30');
 const CLAT_2027_END = new Date('2026-12-06T16:00:00+05:30');
 
 function getClatTicker(now) {
-  if (now >= CLAT_2027_END) return { state: 'complete', days: '00', hours: '00', minutes: '00' };
-  if (now >= CLAT_2027_START) return { state: 'live', days: '00', hours: '00', minutes: '00' };
+  if (now >= CLAT_2027_END) {
+    return { state: 'complete', urgency: 'complete', urgencyLabel: 'Exam completed', days: '00', hours: '00', minutes: '00', seconds: '00' };
+  }
+  if (now >= CLAT_2027_START) {
+    return { state: 'live', urgency: 'critical', urgencyLabel: 'Exam live now', days: '00', hours: '00', minutes: '00', seconds: '00' };
+  }
 
-  const totalMinutes = Math.max(0, Math.floor((CLAT_2027_START.getTime() - now.getTime()) / 60000));
-  const days = Math.floor(totalMinutes / 1440);
-  const hours = Math.floor((totalMinutes % 1440) / 60);
-  const minutes = totalMinutes % 60;
+  const totalSeconds = Math.max(0, Math.floor((CLAT_2027_START.getTime() - now.getTime()) / 1000));
+  const days = Math.floor(totalSeconds / 86400);
+  const hours = Math.floor((totalSeconds % 86400) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  const urgency = days <= 7 ? 'critical' : days <= 30 ? 'final' : days <= 90 ? 'accelerate' : 'steady';
+  const urgencyLabel = urgency === 'critical'
+    ? 'Exam week · every hour counts'
+    : urgency === 'final'
+      ? 'Final revision window'
+      : urgency === 'accelerate'
+        ? 'Time to accelerate'
+        : 'Build the base now';
 
   return {
     state: 'counting',
+    urgency,
+    urgencyLabel,
     days: String(days).padStart(2, '0'),
     hours: String(hours).padStart(2, '0'),
-    minutes: String(minutes).padStart(2, '0')
+    minutes: String(minutes).padStart(2, '0'),
+    seconds: String(seconds).padStart(2, '0')
   };
 }
 
@@ -114,7 +130,7 @@ export default function HomeDashboard({
   const [tickerNow, setTickerNow] = useState(() => new Date());
 
   useEffect(() => {
-    const timer = window.setInterval(() => setTickerNow(new Date()), 30000);
+    const timer = window.setInterval(() => setTickerNow(new Date()), 1000);
     return () => window.clearInterval(timer);
   }, []);
 
@@ -267,19 +283,22 @@ export default function HomeDashboard({
 
       <main>
         <section className="marketing-hero" id="top">
-          <div className="marketing-shell marketing-exam-ticker" aria-label="CLAT 2027 exam countdown">
+          <div className={`marketing-shell marketing-exam-ticker is-${clatTicker.urgency}`} aria-label="CLAT 2027 exam countdown">
             <div className="marketing-ticker-title">
               <span>OFFICIAL EXAM CLOCK</span>
               <strong>CLAT 2027</strong>
+              <em>{clatTicker.urgencyLabel}</em>
             </div>
 
             {clatTicker.state === 'counting' ? (
-              <div className="marketing-ticker-numbers" aria-label={`${clatTicker.days} days, ${clatTicker.hours} hours and ${clatTicker.minutes} minutes until CLAT 2027`}>
+              <div className="marketing-ticker-numbers" aria-label={`${clatTicker.days} days, ${clatTicker.hours} hours, ${clatTicker.minutes} minutes and ${clatTicker.seconds} seconds until CLAT 2027`}>
                 <div><strong>{clatTicker.days}</strong><span>Days</span></div>
                 <i>:</i>
                 <div><strong>{clatTicker.hours}</strong><span>Hours</span></div>
                 <i>:</i>
                 <div><strong>{clatTicker.minutes}</strong><span>Mins</span></div>
+                <i>:</i>
+                <div className="marketing-ticker-seconds"><strong>{clatTicker.seconds}</strong><span>Secs</span></div>
               </div>
             ) : (
               <div className={`marketing-ticker-status is-${clatTicker.state}`}>
