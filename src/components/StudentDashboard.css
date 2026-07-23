@@ -113,6 +113,123 @@
 .student-readiness-ring span { max-width: 90px; margin-top: 5px; color: #aeb8c8; font-size: .66rem; line-height: 1.2; }
 .student-readiness-card > p { color: #aeb8c8; font-size: .72rem; text-align: center; }
 
+.student-exam-clock {
+  display: grid;
+  grid-template-columns: minmax(250px, .72fr) minmax(0, 1.28fr);
+  gap: 24px;
+  margin-top: 24px;
+  padding: 26px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+}
+.student-exam-clock-intro {
+  align-self: center;
+  padding-right: 12px;
+}
+.student-exam-clock-intro > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--student-purple);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+.student-exam-clock-intro h2 {
+  max-width: 390px;
+  margin-top: 8px;
+  font-size: 1.42rem;
+  line-height: 1.15;
+  letter-spacing: -.03em;
+}
+.student-exam-clock-intro p {
+  max-width: 410px;
+  margin-top: 9px;
+  color: var(--text-muted);
+  font-size: .77rem;
+}
+.student-exam-countdowns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.student-exam-countdowns article {
+  padding: 18px;
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--exam-color);
+  border-radius: 15px;
+  background: var(--bg-primary);
+}
+.student-exam-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.student-exam-meta > span {
+  color: var(--exam-color);
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+.student-exam-meta b {
+  padding: 3px 7px;
+  border-radius: 999px;
+  font-size: .58rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.student-exam-meta b.is-official {
+  color: #087a61;
+  background: rgba(53, 199, 165, .15);
+}
+.student-exam-meta b.is-tentative {
+  color: #9a6300;
+  background: rgba(245, 185, 66, .18);
+}
+.student-exam-number {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 13px;
+}
+.student-exam-number strong {
+  color: var(--text-primary);
+  font-size: 2.35rem;
+  line-height: 1;
+  letter-spacing: -.06em;
+}
+.student-exam-number span {
+  color: var(--text-secondary);
+  font-size: .68rem;
+  font-weight: 700;
+}
+.student-exam-number.is-live strong,
+.student-exam-number.is-today strong {
+  color: var(--accent-danger);
+}
+.student-exam-countdowns h3 {
+  margin-top: 11px;
+  font-size: .75rem;
+}
+.student-exam-countdowns p {
+  margin-top: 3px;
+  color: var(--text-muted);
+  font-size: .67rem;
+}
+.student-exam-countdowns a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 12px;
+  color: var(--exam-color);
+  font-size: .66rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .student-dashboard-section {
   margin-top: 24px;
   padding: 26px;
@@ -222,6 +339,7 @@
   .student-readiness-card { display: grid; grid-template-columns: 1fr auto; align-items: center; }
   .student-readiness-ring { grid-row: span 2; width: 130px; height: 130px; margin: 0; }
   .student-readiness-card > p { text-align: left; }
+  .student-exam-clock { grid-template-columns: 1fr; }
   .student-mission-grid { grid-template-columns: 1fr; }
 }
 
@@ -235,6 +353,8 @@
   .student-readiness-card { display: block; }
   .student-readiness-ring { margin: 16px auto; }
   .student-readiness-card > p { text-align: center; }
+  .student-exam-clock { padding: 19px; border-radius: 16px; }
+  .student-exam-countdowns { grid-template-columns: 1fr; }
   .student-dashboard-section, .student-rail-card { padding: 19px; border-radius: 16px; }
   .student-section-heading { display: block; }
   .student-section-heading > p { margin-top: 6px; }

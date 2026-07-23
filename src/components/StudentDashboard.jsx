@@ -1,11 +1,14 @@
+import { useEffect, useState } from 'react';
 import {
   ArrowRight,
   BarChart3,
   BookMarked,
   BookOpen,
   BrainCircuit,
+  CalendarDays,
   CheckCircle2,
   Clock3,
+  ExternalLink,
   Flame,
   History,
   Newspaper,
@@ -27,6 +30,66 @@ const getNextDay = (completedDays, totalDays) => (
 );
 
 const getDossierKey = (dossier) => `${dossier.folderOrder || dossier.month}/${dossier.title}`;
+
+const EXAMS = [
+  {
+    id: 'clat',
+    name: 'CLAT 2027',
+    dateLabel: 'Sunday, 6 December 2026',
+    start: '2026-12-06T14:00:00+05:30',
+    end: '2026-12-06T16:00:00+05:30',
+    status: 'Official',
+    statusTone: 'official',
+    detail: '2:00 PM – 4:00 PM IST',
+    sourceLabel: 'Consortium notice',
+    sourceUrl: 'https://consortiumofnlus.ac.in/clat-2026/notifications/Press_Release_CLAT_2027.pdf',
+    color: '#FF6B5E'
+  },
+  {
+    id: 'ailet',
+    name: 'AILET 2027',
+    dateLabel: 'Expected Sunday, 13 December 2026',
+    start: '2026-12-13T14:00:00+05:30',
+    end: '2026-12-13T16:00:00+05:30',
+    status: 'Tentative',
+    statusTone: 'tentative',
+    detail: 'Expected 2:00 PM – 4:00 PM IST',
+    sourceLabel: 'Check NLU Delhi',
+    sourceUrl: 'https://nationallawuniversitydelhi.in/',
+    color: '#6C4CF1'
+  }
+];
+
+const getIndiaDateKey = (date) => (
+  new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Kolkata',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).format(date)
+);
+
+const getCalendarDayDifference = (fromDate, toDate) => {
+  const [fromYear, fromMonth, fromDay] = getIndiaDateKey(fromDate).split('-').map(Number);
+  const [toYear, toMonth, toDay] = getIndiaDateKey(toDate).split('-').map(Number);
+  return Math.round(
+    (Date.UTC(toYear, toMonth - 1, toDay) - Date.UTC(fromYear, fromMonth - 1, fromDay)) / 86400000
+  );
+};
+
+const getExamCountdown = (exam, now) => {
+  const start = new Date(exam.start);
+  const end = new Date(exam.end);
+
+  if (now >= end) return { value: 'Done', unit: 'exam completed', tone: 'complete' };
+  if (now >= start) return { value: 'Live', unit: 'exam underway', tone: 'live' };
+  if (getIndiaDateKey(now) === getIndiaDateKey(start)) {
+    return { value: 'Today', unit: 'report before 2:00 PM', tone: 'today' };
+  }
+
+  const days = getCalendarDayDifference(now, start);
+  return { value: days.toLocaleString('en-IN'), unit: days === 1 ? 'day remaining' : 'days remaining', tone: 'counting' };
+};
 
 const formatDuration = (seconds) => {
   if (!Number.isFinite(seconds) || seconds <= 0) return null;
@@ -62,6 +125,13 @@ export default function StudentDashboard({
   onOpenBookmarks,
   onOpenRecords
 }) {
+  const [countdownNow, setCountdownNow] = useState(() => new Date());
+
+  useEffect(() => {
+    const timer = window.setInterval(() => setCountdownNow(new Date()), 60000);
+    return () => window.clearInterval(timer);
+  }, []);
+
   const progress = userProgress || {};
   const profile = progress.studentProfile || {};
   const studentName = currentUser?.displayName || profile.name || 'CLAT Aspirant';
@@ -201,6 +271,36 @@ export default function StudentDashboard({
           </div>
           <p>{answeredQuestions ? 'Based on your completion and observed accuracy.' : 'Complete one drill to unlock a meaningful score.'}</p>
         </article>
+      </section>
+
+      <section className="student-exam-clock" aria-labelledby="student-exam-clock-title">
+        <div className="student-exam-clock-intro">
+          <span><CalendarDays size={15} /> PREPARATION RUNWAY</span>
+          <h2 id="student-exam-clock-title">The exam clock is already moving.</h2>
+          <p>Use the remaining days deliberately. Dates and times are shown in India Standard Time.</p>
+        </div>
+        <div className="student-exam-countdowns">
+          {EXAMS.map((exam) => {
+            const countdown = getExamCountdown(exam, countdownNow);
+            return (
+              <article key={exam.id} style={{ '--exam-color': exam.color }}>
+                <div className="student-exam-meta">
+                  <span>{exam.name}</span>
+                  <b className={`is-${exam.statusTone}`}>{exam.status}</b>
+                </div>
+                <div className={`student-exam-number is-${countdown.tone}`}>
+                  <strong>{countdown.value}</strong>
+                  <span>{countdown.unit}</span>
+                </div>
+                <h3>{exam.dateLabel}</h3>
+                <p>{exam.detail}</p>
+                <a href={exam.sourceUrl} target="_blank" rel="noreferrer">
+                  {exam.sourceLabel} <ExternalLink size={13} />
+                </a>
+              </article>
+            );
+          })}
+        </div>
       </section>
 
       <section className="student-dashboard-section">
