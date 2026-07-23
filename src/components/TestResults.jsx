@@ -1,6 +1,11 @@
 import React from 'react';
 import DiagramRenderer from './DiagramRenderer';
 import GKInfographicCard from './GKInfographicCard';
+import SourceStimulus from './SourceStimulus';
+import {
+  formatCorrectAnswer,
+  formatUserAnswer,
+} from '../utils/questionAnswers';
 import { 
   Trophy, CheckCircle2, XCircle, HelpCircle, ArrowLeft, RefreshCw, Bookmark, AlertTriangle, Lightbulb, Printer, Download 
 } from 'lucide-react';
@@ -86,13 +91,17 @@ export default function TestResults({ testData, onBackToDashboard, onRetakeDrill
 
               <div className="question-body" style={{ marginBottom: '14px' }}>{q.questionText}</div>
 
-              <GKInfographicCard topic={q.topic} />
+              <SourceStimulus question={q} showVisual={false} />
 
-              <DiagramRenderer topic={q.topic} sNo={q.id} day={q.day} imageUrl={q.imageUrl} isSolutionMode={true} />
+              {!q.pdfFile && <GKInfographicCard topic={q.topic} />}
+
+              {q.imageUrl && (
+                <DiagramRenderer topic={q.topic} sNo={q.id} day={q.day} imageUrl={q.imageUrl} isSolutionMode={true} />
+              )}
 
               <div style={{ fontSize: '0.9rem', marginBottom: '12px' }}>
-                <div>Your Answer: <strong>{res.userAnswer || 'Unattempted'}</strong></div>
-                <div style={{ color: 'var(--accent-success)' }}>Correct Answer: <strong>{q.correctOption}</strong></div>
+                <div>Your Answer: <strong>{formatUserAnswer(q, res.userAnswer)}</strong></div>
+                <div style={{ color: 'var(--accent-success)' }}>Correct Answer: <strong>{formatCorrectAnswer(q)}</strong></div>
               </div>
 
               {q.solution && (

@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import DiagramRenderer from './DiagramRenderer';
+import SourceStimulus from './SourceStimulus';
+import {
+  getQuestionType,
+  hasAnyAnswer,
+  isQuestionCorrect,
+} from '../utils/questionAnswers';
 import { 
   Clock, Flag, Bookmark, ArrowLeft, ArrowRight, CheckCircle2, 
   AlertCircle, HelpCircle, FileText, Sparkles, Send, Pause, Play
@@ -23,6 +29,7 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
   const [isTimerPaused, setIsTimerPaused] = useState(false);
 
   const currentQ = questions[currentIndex] || questions[0] || {};
+  const currentQuestionType = getQuestionType(currentQ);
 
   useEffect(() => {
     if (isTimerPaused || timeLeft <= 0) return;
@@ -53,6 +60,20 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
     }));
   };
 
+  const handleNumericAnswer = (value) => {
+    setSelectedAnswers(prev => ({ ...prev, [currentQ.id]: value }));
+  };
+
+  const handleSubAnswer = (partIndex, value) => {
+    setSelectedAnswers(prev => ({
+      ...prev,
+      [currentQ.id]: {
+        ...(prev[currentQ.id] || {}),
+        [partIndex]: value,
+      },
+    }));
+  };
+
   const handleToggleMark = () => {
     setMarkedForReview(prev => ({
       ...prev,
@@ -75,8 +96,9 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
 
     const detailedResponses = questions.map(q => {
       const userAns = selectedAnswers[q.id] || null;
-      const isCorrect = userAns === q.correctOption;
-      if (userAns === null) {
+      const attempted = hasAnyAnswer(q, userAns);
+      const isCorrect = attempted && isQuestionCorrect(q, userAns);
+      if (!attempted) {
         unattemptedCount++;
       } else if (isCorrect) {
         correctCount++;
@@ -90,7 +112,7 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
         question: q,
         userAnswer: userAns,
         isCorrect: isCorrect,
-        isUnattempted: userAns === null
+        isUnattempted: !attempted
       };
     });
 
@@ -153,48 +175,96 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
             </div>
           </div>
 
-          {currentQ.passageText && (
-            <div style={{ 
-              background: 'rgba(15, 23, 42, 0.05)', 
-              padding: '16px 20px', borderRadius: 'var(--radius-md)', 
-              borderLeft: '4px solid var(--accent-primary)', marginBottom: '20px',
-              fontSize: '0.925rem', lineHeight: 1.6
-            }}>
-              <div style={{ fontWeight: 700, fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '4px' }}>
-                CASE / SCENARIO PREMISE
-              </div>
-              {currentQ.passageText}
-            </div>
-          )}
+          <SourceStimulus question={currentQ} />
 
           <div className="question-body">
             {currentQ.questionText}
           </div>
 
-          <SafeDiagramRenderer 
-            topic={currentQ.topic} 
-            sNo={currentQ.id} 
-            day={currentQ.day} 
-            imageUrl={currentQ.imageUrl} 
-          />
+          {currentQ.imageUrl && (
+            <SafeDiagramRenderer
+              topic={currentQ.topic}
+              sNo={currentQ.id}
+              day={currentQ.day}
+              imageUrl={currentQ.imageUrl}
+            />
+          )}
 
-          <div className="options-list">
-            {(currentQ.options || []).map((optText, idx) => {
-              const letter = String.fromCharCode(65 + idx);
-              const isSelected = selectedAnswers[currentQ.id] === letter;
+          {currentQuestionType === 'MCQ' && (
+            <div className="options-list">
+              {(currentQ.options || []).map((optText, idx) => {
+                const letter = String.fromCharCode(65 + idx);
+                const isSelected = selectedAnswers[currentQ.id] === letter;
 
-              return (
-                <button
-                  key={idx}
-                  className={`option-button ${isSelected ? 'selected' : ''}`}
-                  onClick={() => handleSelectOption(letter)}
-                >
-                  <span className="option-letter">{letter}</span>
-                  <span style={{ flex: 1 }}>{optText}</span>
-                </button>
-              );
-            })}
-          </div>
+                return (
+                  <button
+                    key={idx}
+                    className={`option-button ${isSelected ? 'selected' : ''}`}
+                    onClick={() => handleSelectOption(letter)}
+                  >
+                    <span className="option-letter">{letter}</span>
+                    <span style={{ flex: 1 }}>{optText}</span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+
+          {currentQuestionType === 'NUMERIC' && (
+            <div style={{ margin: '20px 0' }}>
+              <label htmlFor={`numeric-answer-${currentQ.id}`} style={{ display: 'block', fontWeight: 800, marginBottom: '8px' }}>
+                Enter your numeric answer
+              </label>
+              <input
+                id={`numeric-answer-${currentQ.id}`}
+                type="text"
+                inputMode="decimal"
+                value={selectedAnswers[currentQ.id] || ''}
+                onChange={(event) => handleNumericAnswer(event.target.value)}
+                placeholder="Type the value shown by your calculation"
+                style={{ width: '100%', maxWidth: '420px', padding: '13px 14px', borderRadius: '10px', border: '1px solid var(--border-color)', background: 'var(--bg-primary)', color: 'var(--text-primary)', fontSize: '1rem' }}
+              />
+            </div>
+          )}
+
+          {currentQuestionType === 'MULTI_PART' && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '22px', margin: '20px 0' }}>
+              {(currentQ.subQuestions || []).map((part, partIndex) => (
+                <div key={part.label} style={{ padding: '16px', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)' }}>
+                  <div style={{ fontWeight: 800, marginBottom: '12px' }}>
+                    {part.label} {part.questionText}
+                  </div>
+                  {part.questionType === 'MCQ' ? (
+                    <div className="options-list">
+                      {(part.options || []).map((option, optionIndex) => {
+                        const letter = String.fromCharCode(65 + optionIndex);
+                        const selected = selectedAnswers[currentQ.id]?.[partIndex] === letter;
+                        return (
+                          <button
+                            key={letter}
+                            className={`option-button ${selected ? 'selected' : ''}`}
+                            onClick={() => handleSubAnswer(partIndex, letter)}
+                          >
+                            <span className="option-letter">{letter}</span>
+                            <span style={{ flex: 1 }}>{option}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <input
+                      type="text"
+                      inputMode="decimal"
+                      value={selectedAnswers[currentQ.id]?.[partIndex] || ''}
+                      onChange={(event) => handleSubAnswer(partIndex, event.target.value)}
+                      placeholder="Enter numeric answer"
+                      style={{ width: '100%', maxWidth: '420px', padding: '13px 14px', borderRadius: '10px', border: '1px solid var(--border-color)', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}
+                    />
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
 
           <div className="test-actions-bar">
             <div style={{ display: 'flex', gap: '10px' }}>
@@ -231,7 +301,7 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
           <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '14px' }}>Question Palette</h3>
           <div className="palette-grid">
             {questions.map((q, idx) => {
-              const isAns = !!selectedAnswers[q.id];
+              const isAns = hasAnyAnswer(q, selectedAnswers[q.id]);
               const isMrk = !!markedForReview[q.id];
               const isCurr = idx === currentIndex;
 

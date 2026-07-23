@@ -15,6 +15,7 @@ import AdminPortal from './components/AdminPortal';
 import AuthModal from './components/AuthModal';
 import ModuleErrorBoundary from './components/ModuleErrorBoundary';
 import BrandLockup from './components/BrandLockup';
+import { formatCorrectAnswer } from './utils/questionAnswers';
 import { auth, signInWithGoogle, logOutUser, syncUserProgressToCloud, fetchCloudUserProgress } from './firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 import { 
@@ -716,7 +717,7 @@ export default function App() {
                             </div>
                             <div style={{ fontWeight: 600, marginBottom: '10px' }}>{q.questionText}</div>
                             <div style={{ fontSize: '0.85rem', color: 'var(--accent-success)', background: 'var(--accent-success-bg)', padding: '10px', borderRadius: '6px' }}>
-                              <strong>Correct Answer ({q.correctOption}):</strong> {q.options[q.correctOption.charCodeAt(0) - 65]}
+                              <strong>Correct Answer:</strong> {formatCorrectAnswer(q)}
                             </div>
                           </div>
                         );

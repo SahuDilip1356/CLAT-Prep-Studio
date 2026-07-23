@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "digitize:quant": "python3 scripts/digitize_quant_bank.py",
+    "validate:quant": "node scripts/validate_quant_bank.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
