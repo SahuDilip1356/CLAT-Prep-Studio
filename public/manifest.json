@@ -1,21 +1,55 @@
 {
+  "id": "/",
   "short_name": "CLAT Studio",
-  "name": "CLAT Prep Studio - Quant & GK Drills",
+  "name": "CLAT Prep Studio",
+  "description": "Personalised Quant, Static GK and Current Affairs preparation for CLAT and AILET.",
+  "lang": "en-IN",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
+  "background_color": "#F7F7FB",
+  "theme_color": "#6C4CF1",
+  "categories": ["education", "productivity"],
   "icons": [
     {
       "src": "/pwa-192x192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any"
     },
     {
       "src": "/pwa-512x512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
-  "start_url": "/",
-  "background_color": "#0f172a",
-  "theme_color": "#10b981",
-  "display": "standalone",
-  "orientation": "portrait"
+  "shortcuts": [
+    {
+      "name": "Quant & Logical Reasoning",
+      "short_name": "Quant",
+      "url": "/?module=QUANT&source=pwa-shortcut",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Static General Knowledge",
+      "short_name": "Static GK",
+      "url": "/?module=GK&source=pwa-shortcut",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Current Affairs Studio",
+      "short_name": "Current Affairs",
+      "url": "/?module=CA&source=pwa-shortcut",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
 }

@@ -16,6 +16,7 @@ import AdminPortal from './components/AdminPortal';
 import AuthModal from './components/AuthModal';
 import ModuleErrorBoundary from './components/ModuleErrorBoundary';
 import BrandLockup from './components/BrandLockup';
+import PWAExperience from './components/PWAExperience';
 import { formatCorrectAnswer } from './utils/questionAnswers';
 import { auth, signInWithGoogle, logOutUser, syncUserProgressToCloud, fetchCloudUserProgress } from './firebase';
 import { onAuthStateChanged } from 'firebase/auth';
@@ -61,9 +62,12 @@ export default function App() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const topic = params.get('topic');
+    const requestedModule = params.get('module');
     if (topic) {
       setInitialDossierTopic(topic);
       setActiveModule('CA');
+    } else if (['QUANT', 'GK', 'CA'].includes(requestedModule)) {
+      setActiveModule(requestedModule);
     }
   }, []);
   
@@ -810,6 +814,7 @@ export default function App() {
           onClose={safeProgress.studentProfile ? () => setIsProfileModalOpen(false) : null}
         />
       </main>
+      <PWAExperience />
     </div>
   );
 }
