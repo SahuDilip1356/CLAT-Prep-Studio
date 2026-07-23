@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   ArrowRight,
   BookOpen,
@@ -6,6 +6,7 @@ import {
   Check,
   CheckCircle2,
   Clock,
+  ExternalLink,
   Flame,
   Menu,
   Newspaper,
@@ -72,6 +73,25 @@ const PROGRESS_METRICS = [
 ];
 
 const getDossierKey = (dossier) => `${dossier.folderOrder || dossier.month}/${dossier.title}`;
+const CLAT_2027_START = new Date('2026-12-06T14:00:00+05:30');
+const CLAT_2027_END = new Date('2026-12-06T16:00:00+05:30');
+
+function getClatTicker(now) {
+  if (now >= CLAT_2027_END) return { state: 'complete', days: '00', hours: '00', minutes: '00' };
+  if (now >= CLAT_2027_START) return { state: 'live', days: '00', hours: '00', minutes: '00' };
+
+  const totalMinutes = Math.max(0, Math.floor((CLAT_2027_START.getTime() - now.getTime()) / 60000));
+  const days = Math.floor(totalMinutes / 1440);
+  const hours = Math.floor((totalMinutes % 1440) / 60);
+  const minutes = totalMinutes % 60;
+
+  return {
+    state: 'counting',
+    days: String(days).padStart(2, '0'),
+    hours: String(hours).padStart(2, '0'),
+    minutes: String(minutes).padStart(2, '0')
+  };
+}
 
 function getAccuracy(attempted, correct) {
   return attempted > 0 ? Math.round((correct / attempted) * 100) : 0;
@@ -91,6 +111,12 @@ export default function HomeDashboard({
 }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [dossierOpen, setDossierOpen] = useState(false);
+  const [tickerNow, setTickerNow] = useState(() => new Date());
+
+  useEffect(() => {
+    const timer = window.setInterval(() => setTickerNow(new Date()), 30000);
+    return () => window.clearInterval(timer);
+  }, []);
 
   const completedQuantDays = Object.keys(userProgress?.completedDays || {}).length;
   const quantAttempted = userProgress?.totalAttempted || 0;
@@ -160,6 +186,7 @@ export default function HomeDashboard({
   const studentName = currentUser?.displayName || userProgress?.studentProfile?.name;
   const hasPreparationData = answeredQuestions > 0 || completedQuantDays > 0 || completedGkDays > 0 || completedCaDossiers > 0;
   const primaryActionLabel = hasPreparationData ? `Continue Day ${nextQuantDay}` : 'Start my Day 1 mission';
+  const clatTicker = getClatTicker(tickerNow);
 
   const moduleCards = [
     {
@@ -240,6 +267,43 @@ export default function HomeDashboard({
 
       <main>
         <section className="marketing-hero" id="top">
+          <div className="marketing-shell marketing-exam-ticker" aria-label="CLAT 2027 exam countdown">
+            <div className="marketing-ticker-title">
+              <span>OFFICIAL EXAM CLOCK</span>
+              <strong>CLAT 2027</strong>
+            </div>
+
+            {clatTicker.state === 'counting' ? (
+              <div className="marketing-ticker-numbers" aria-label={`${clatTicker.days} days, ${clatTicker.hours} hours and ${clatTicker.minutes} minutes until CLAT 2027`}>
+                <div><strong>{clatTicker.days}</strong><span>Days</span></div>
+                <i>:</i>
+                <div><strong>{clatTicker.hours}</strong><span>Hours</span></div>
+                <i>:</i>
+                <div><strong>{clatTicker.minutes}</strong><span>Mins</span></div>
+              </div>
+            ) : (
+              <div className={`marketing-ticker-status is-${clatTicker.state}`}>
+                {clatTicker.state === 'live' ? 'CLAT 2027 is live now' : 'CLAT 2027 completed'}
+              </div>
+            )}
+
+            <div className="marketing-ticker-deadline">
+              <span>EXAM STARTS</span>
+              <strong>6 Dec 2026 · 2:00 PM IST</strong>
+              <a
+                href="https://consortiumofnlus.ac.in/clat-2026/notifications/Press_Release_CLAT_2027.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Official notice <ExternalLink size={11} />
+              </a>
+            </div>
+
+            <button onClick={() => startDrill(nextQuantDay, 'QUANT')}>
+              Start today’s mission <ArrowRight size={15} />
+            </button>
+          </div>
+
           <div className="marketing-shell marketing-hero-grid">
             <div className="marketing-hero-copy">
               <div className="marketing-eyebrow"><Sparkles size={14} /> Your next win starts here</div>
