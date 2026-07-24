@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { User, Mail, Phone, Calendar, Target, CheckCircle2, ShieldCheck, X } from 'lucide-react';
+import { User, CheckCircle2, X } from 'lucide-react';
 
 export default function StudentProfileModal({ currentProfile, onSaveProfile, onClose, isOpen }) {
   const [formData, setFormData] = useState({
@@ -91,23 +91,6 @@ export default function StudentProfileModal({ currentProfile, onSaveProfile, onC
               style={{ width: '100%', padding: '10px 14px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}
               required
             />
-          </div>
-
-          <div style={{ textAlign: 'left', background: 'rgba(37, 99, 235, 0.05)', border: '1px solid rgba(37, 99, 235, 0.18)', borderRadius: 'var(--radius-md)', padding: '12px', fontSize: '0.775rem', color: 'var(--text-secondary)' }}>
-            <label style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', cursor: 'pointer', margin: 0 }}>
-              <input 
-                type="checkbox"
-                defaultChecked={false}
-                required
-                style={{ marginTop: '3px', accentColor: 'var(--accent-primary)', width: '15px', height: '15px' }}
-              />
-              <span style={{ lineHeight: 1.4 }}>
-                <strong style={{ color: 'var(--accent-primary)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                  <ShieldCheck size={13} /> DPDPA 2023 Compliance Notice:
-                </strong>{' '}
-                I consent to the collection & processing of my name, contact, and mock test scores for educational progress tracking under the Digital Personal Data Protection Act, 2023.
-              </span>
-            </label>
           </div>
 
           <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', padding: '12px', marginTop: '8px' }}>

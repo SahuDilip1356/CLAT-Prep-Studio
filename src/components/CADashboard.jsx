@@ -53,7 +53,7 @@ export default function CADashboard({
   const pendingP1Count = p1Dossiers.length - completedP1s.length;
 
   // 2. Calculate Revision Due (Leitner Box 1)
-  const savedBoxes = localStorage.getItem('clat_leitner_boxes');
+  const savedBoxes = sessionStorage.getItem('clat_leitner_boxes');
   let revisionDueCount = 0;
   if (savedBoxes) {
     try {

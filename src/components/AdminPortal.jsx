@@ -5,20 +5,12 @@ import {
 } from 'lucide-react';
 import { fetchAllStudentsFromCloud } from '../firebase';
 
-export default function AdminPortal({ localAttempts, localProfile, currentUserEmail }) {
+export default function AdminPortal({ localAttempts, localProfile, isPrivacyAdmin }) {
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedYear, setSelectedYear] = useState('ALL');
   const [selectedStudent, setSelectedStudent] = useState(null);
-
-  const activeEmail = (currentUserEmail || localProfile?.email || '').toLowerCase().trim();
-  const isAdmin = activeEmail === 'dilip.sahu@gmail.com';
-
-  const [webhookUrl, setWebhookUrl] = useState(() => {
-    return localStorage.getItem('clat_webhook_url') || import.meta.env.VITE_ZAPIER_WEBHOOK_URL || 'https://hooks.zapier.com/hooks/catch/23159946/446gdj5/';
-  });
-  const [webhookSaved, setWebhookSaved] = useState(false);
 
   const loadData = async () => {
     setLoading(true);
@@ -48,12 +40,6 @@ export default function AdminPortal({ localAttempts, localProfile, currentUserEm
   useEffect(() => {
     loadData();
   }, []);
-
-  const handleSaveWebhook = () => {
-    localStorage.setItem('clat_webhook_url', webhookUrl);
-    setWebhookSaved(true);
-    setTimeout(() => setWebhookSaved(false), 2000);
-  };
 
   const filteredStudents = students.filter(s => {
     const p = s.profile || {};
@@ -124,7 +110,7 @@ export default function AdminPortal({ localAttempts, localProfile, currentUserEm
     document.body.removeChild(link);
   };
 
-  if (!isAdmin) {
+  if (!isPrivacyAdmin) {
     return (
       <div className="glass-panel" style={{ padding: '60px 20px', textAlign: 'center', maxWidth: '560px', margin: '40px auto' }}>
         <div style={{
@@ -136,7 +122,7 @@ export default function AdminPortal({ localAttempts, localProfile, currentUserEm
         </div>
         <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '10px' }}>Admin Access Restricted</h2>
         <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '20px' }}>
-          This Admin Portal is strictly reserved for Administrator (<strong>dilip.sahu@gmail.com</strong>).
+          This portal requires the server-issued privacy administrator role.
         </p>
       </div>
     );

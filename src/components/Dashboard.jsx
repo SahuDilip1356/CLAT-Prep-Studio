@@ -262,7 +262,7 @@ export default function Dashboard({ questions, userProgress, onStartDayDrill, on
 
           <div style={{ marginTop: '16px', padding: '12px', textAlign: 'center', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
             <ShieldCheck size={14} style={{ verticalAlign: 'middle', marginRight: '4px', color: 'var(--accent-primary)' }} />
-            Encrypted Cloud Sync (`clat1-3bb23`) • DPDPA 2023 Compliant
+            Cloud sync is available only after the applicable privacy consent is recorded.
           </div>
         </div>
 

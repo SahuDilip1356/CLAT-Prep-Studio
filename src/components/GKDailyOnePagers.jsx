@@ -10,7 +10,7 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [completedList, setCompletedList] = useState(() => {
     try {
-      return JSON.parse(localStorage.getItem('clat_daily_onepager_reviewed') || '{}');
+      return JSON.parse(sessionStorage.getItem('clat_daily_onepager_reviewed') || '{}');
     } catch {
       return {};
     }
@@ -37,7 +37,7 @@ export default function GKDailyOnePagers({ onStartTopicPractice }) {
   }, [viewMode, isAutoPlaying]);
 
   useEffect(() => {
-    localStorage.setItem('clat_daily_onepager_reviewed', JSON.stringify(completedList));
+    sessionStorage.setItem('clat_daily_onepager_reviewed', JSON.stringify(completedList));
   }, [completedList]);
 
   const handleNext = () => {

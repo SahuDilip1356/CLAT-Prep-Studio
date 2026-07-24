@@ -1,0 +1,61 @@
+CLAT Prep Studio privacy implementation command results
+Date: 2026-07-23
+
+[PASS] Targeted ESLint
+Command:
+node node_modules/eslint/bin/eslint.js src/App.jsx src/firebase.js src/privacy.js src/components/AuthModal.jsx src/components/ParentConsentPage.jsx src/components/ParentRightsApprovalPage.jsx src/components/PrivacyCentre.jsx src/components/PrivacyNotice.jsx functions/index.js
+Exit: 0
+Output: none
+
+[PASS] Vite production build
+Command:
+node node_modules/vite/bin/vite.js build
+Exit: 0
+Key output:
+vite v5.4.21 building for production...
+1622 modules transformed.
+dist/index.html                     1.24 kB | gzip 0.56 kB
+dist/assets/index-j5xDbMYY.css     65.34 kB | gzip 12.31 kB
+dist/assets/index-CYpvKg8j.js   6,553.46 kB | gzip 670.56 kB
+built in 1.72s
+Observation: Vite emitted a non-blocking large-chunk performance warning.
+
+[PASS] Firebase Functions syntax
+Command:
+node --check functions/index.js
+Exit: 0
+
+[PASS] Firebase Functions import
+Exit: 0
+Exports: 13
+approveChildRightsRequest
+authenticateParentForConsent
+captureParentConsent
+claimChildConsent
+createParentConsentRequest
+deleteExpiredPrivacyArtifacts
+finalizeAdultConsent
+getChildRightsApproval
+getParentConsentRequest
+parentAdultVerificationWebhook
+processVerifiedRightsRequests
+startParentAdultVerification
+submitDataPrincipalRequest
+
+[PASS] Production compliance gate blocks incomplete configuration
+Command:
+node scripts/verify_privacy_config.mjs
+Exit: 1 (expected)
+Output:
+Compliance build blocked. Missing production variables:
+VITE_FIREBASE_API_KEY
+VITE_FIREBASE_AUTH_DOMAIN
+VITE_FIREBASE_PROJECT_ID
+VITE_FIREBASE_APP_ID
+VITE_FIREBASE_APP_CHECK_SITE_KEY
+VITE_PRIVACY_LEGAL_NAME
+VITE_PRIVACY_CONTACT_EMAIL
+
+[PASS] Fresh-page browser console
+Warnings: 0
+Errors: 0

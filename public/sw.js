@@ -60,6 +60,15 @@ self.addEventListener('fetch', (event) => {
   }
 
   if (request.mode === 'navigate') {
+    if (url.search) {
+      event.respondWith(
+        fetch(request).catch(async () => (
+          (await caches.match('/'))
+          || (await caches.match('/index.html'))
+        ))
+      );
+      return;
+    }
     event.respondWith(
       fetch(request)
         .then((response) => {

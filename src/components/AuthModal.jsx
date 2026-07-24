@@ -1,192 +1,304 @@
-import React, { useState } from 'react';
-import { LogIn, User, Mail, Sparkles, ShieldCheck, Smartphone, Globe, X, ArrowRight, CheckCircle2, Lock } from 'lucide-react';
+import { useState } from 'react';
+import {
+  ArrowLeft, ArrowRight, CheckCircle2, LockKeyhole, ShieldCheck, Users, X
+} from 'lucide-react';
+import PrivacyNotice from './PrivacyNotice';
+import {
+  createAdultConsentChoice, createParentInvitation, privacyErrorMessage
+} from '../privacy';
+import './Privacy.css';
 
-export default function AuthModal({ isOpen, onClose, onGoogleSignIn, onEmailLogin, onGuestContinue }) {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [dpdpaConsent, setDpdpaConsent] = useState(false);
-  const [loginMode, setLoginMode] = useState('QUICK');
+export default function AuthModal({
+  isOpen,
+  accountFeaturesEnabled = true,
+  onClose,
+  onAdultGoogleSignIn,
+  onChildGoogleSignIn,
+  onGuestContinue,
+  onParentConsentRequested
+}) {
+  const [step, setStep] = useState('AGE');
+  const [adultConsent, setAdultConsent] = useState(false);
+  const [parentEmail, setParentEmail] = useState('');
+  const [requestId, setRequestId] = useState('');
+  const [requestExpiresAt, setRequestExpiresAt] = useState('');
+  const [activationCode, setActivationCode] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState('');
 
   if (!isOpen) return null;
 
-  const handleQuickLoginSubmit = (e) => {
-    e.preventDefault();
-    if (!dpdpaConsent) {
-      alert('Please check the DPDPA 2023 consent box to proceed with sign in.');
-      return;
-    }
-    if (!name.trim() || !email.trim()) return;
-    onEmailLogin({
-      name: name.trim(),
-      email: email.trim(),
-      targetYear: 'CLAT 2027',
-      targetNlu: 'NLSIU Bengaluru',
-      dpdpaConsentedAt: new Date().toISOString()
-    });
+  const reset = () => {
+    setStep('AGE');
+    setAdultConsent(false);
+    setParentEmail('');
+    setRequestId('');
+    setRequestExpiresAt('');
+    setActivationCode('');
+    setBusy(false);
+    setError('');
   };
 
-  const handleGoogleClick = () => {
-    if (!dpdpaConsent) {
-      alert('Please check the DPDPA 2023 consent box to proceed with Google sign in.');
+  const closeAndReset = () => {
+    reset();
+    onClose?.();
+  };
+
+  const continuePrivateSession = () => {
+    onGuestContinue?.();
+    closeAndReset();
+  };
+
+  const completeAdult = async () => {
+    if (!adultConsent) {
+      setError('Please review the notice and confirm the required educational processing.');
       return;
     }
-    onGoogleSignIn();
+    setBusy(true);
+    setError('');
+    try {
+      await onAdultGoogleSignIn(createAdultConsentChoice());
+      closeAndReset();
+    } catch (err) {
+      setError(privacyErrorMessage(
+        err,
+        'We could not complete consent. No account access has been enabled.'
+      ));
+    } finally {
+      setBusy(false);
+    }
   };
+
+  const submitParentRequest = async (event) => {
+    event.preventDefault();
+    if (!parentEmail.trim()) {
+      setError('Please enter a parent or lawful guardian email address.');
+      return;
+    }
+    setBusy(true);
+    setError('');
+    try {
+      const result = await onParentConsentRequested(createParentInvitation(parentEmail));
+      setRequestId(result.requestId);
+      setRequestExpiresAt(result.expiresAt || '');
+      setStep('PENDING');
+    } catch (err) {
+      setError(privacyErrorMessage(
+        err,
+        'The invitation could not be sent. No student data has been stored.'
+      ));
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const claimChildConsent = async (event) => {
+    event.preventDefault();
+    if (!activationCode.trim()) {
+      setError('Enter the activation code provided to the verified parent or guardian.');
+      return;
+    }
+    setBusy(true);
+    setError('');
+    try {
+      await onChildGoogleSignIn({ activationCode: activationCode.trim().toUpperCase() });
+      closeAndReset();
+    } catch (err) {
+      setError(privacyErrorMessage(
+        err,
+        'The code could not be verified. Student processing remains disabled.'
+      ));
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  if (!accountFeaturesEnabled) {
+    return (
+      <div className="privacy-modal-backdrop" role="presentation">
+        <div className="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-onboarding-title">
+          {onClose && (
+            <button className="privacy-icon-button privacy-modal-close" onClick={closeAndReset} aria-label="Close">
+              <X size={20} />
+            </button>
+          )}
+          <div className="privacy-modal-title">
+            <ShieldCheck size={28} />
+            <div>
+              <h2 id="privacy-onboarding-title">Study mode is available</h2>
+              <p>Account sign-in and cloud sync are temporarily unavailable.</p>
+            </div>
+          </div>
+          <div className="privacy-safety-note">
+            <LockKeyhole size={18} />
+            Quant, GK and Current Affairs remain available. Practice stays in this browser
+            session and is not uploaded.
+          </div>
+          <button className="btn btn-primary privacy-full-button" onClick={continuePrivateSession}>
+            Continue private session
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div style={{
-      position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
-      backgroundColor: 'rgba(15, 23, 42, 0.78)', backdropFilter: 'blur(8px)',
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-      zIndex: 10000, padding: '20px'
-    }}>
-      <div className="glass-panel" style={{
-        maxWidth: '500px', width: '100%', padding: '32px',
-        borderRadius: 'var(--radius-lg)', textAlign: 'center',
-        background: 'var(--bg-card)', position: 'relative'
-      }}>
+    <div className="privacy-modal-backdrop" role="presentation">
+      <div className="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-onboarding-title">
         {onClose && (
-          <button 
-            onClick={onClose}
-            style={{
-              position: 'absolute', top: '16px', right: '16px',
-              background: 'none', border: 'none', color: 'var(--text-muted)',
-              cursor: 'pointer'
-            }}
-          >
+          <button className="privacy-icon-button privacy-modal-close" onClick={closeAndReset} aria-label="Close">
             <X size={20} />
           </button>
         )}
 
-        <div style={{
-          width: '56px', height: '56px', borderRadius: '50%',
-          background: 'rgba(37, 99, 235, 0.12)', color: 'var(--accent-primary)',
-          display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-          marginBottom: '14px'
-        }}>
-          <Globe size={28} />
+        <div className="privacy-stepper" aria-label="Onboarding progress">
+          <span className={step === 'AGE' ? 'active' : 'done'}>1. Age band</span>
+          <span className={step === 'ADULT' || step === 'PARENT' ? 'active' : step === 'PENDING' ? 'done' : ''}>2. Consent</span>
+          <span className={step === 'PENDING' ? 'active' : ''}>3. Access</span>
         </div>
 
-        <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '6px', color: 'var(--text-primary)' }}>
-          Student Sign In & Progress Sync
-        </h2>
+        {error && <div className="privacy-error" role="alert">{error}</div>}
 
-        <div style={{ display: 'flex', gap: '8px', marginBottom: '18px', background: 'var(--bg-primary)', padding: '4px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)' }}>
-          <button 
-            className={`nav-tab-btn ${loginMode === 'QUICK' ? 'active' : ''}`}
-            onClick={() => setLoginMode('QUICK')}
-            style={{ flex: 1, justifyContent: 'center' }}
-          >
-            <User size={16} /> Instant Sign In
-          </button>
-          <button 
-            className={`nav-tab-btn ${loginMode === 'GOOGLE' ? 'active' : ''}`}
-            onClick={() => setLoginMode('GOOGLE')}
-            style={{ flex: 1, justifyContent: 'center' }}
-          >
-            Google Sign In
-          </button>
-        </div>
-
-        {loginMode === 'QUICK' ? (
-          <form onSubmit={handleQuickLoginSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '16px' }}>
-            <div style={{ position: 'relative' }}>
-              <User size={18} style={{ position: 'absolute', left: '12px', top: '12px', color: 'var(--text-muted)' }} />
-              <input 
-                type="text" 
-                placeholder="Full Student Name"
-                value={name}
-                onChange={e => setName(e.target.value)}
-                style={{
-                  width: '100%', padding: '10px 14px 10px 40px',
-                  borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)',
-                  background: 'var(--bg-primary)', color: 'var(--text-primary)',
-                  fontSize: '0.9rem', outline: 'none'
-                }}
-                required
-              />
+        {step === 'AGE' && (
+          <div>
+            <div className="privacy-modal-title">
+              <ShieldCheck size={28} />
+              <div>
+                <h2 id="privacy-onboarding-title">Is the student 18 years or older?</h2>
+                <p>Google does not give us a verified age, so this choice is required before sign-in.</p>
+              </div>
             </div>
-
-            <div style={{ position: 'relative' }}>
-              <Mail size={18} style={{ position: 'absolute', left: '12px', top: '12px', color: 'var(--text-muted)' }} />
-              <input 
-                type="email" 
-                placeholder="Email Address (e.g. dilip@clatprep.com)"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                style={{
-                  width: '100%', padding: '10px 14px 10px 40px',
-                  borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)',
-                  background: 'var(--bg-primary)', color: 'var(--text-primary)',
-                  fontSize: '0.9rem', outline: 'none'
-                }}
-                required
-              />
+            <div className="privacy-action-row">
+              <button className="btn btn-primary" onClick={() => {
+                setError('');
+                setStep('ADULT');
+              }}>
+                Yes, 18 or older <ArrowRight size={16} />
+              </button>
+              <button className="btn btn-secondary" onClick={() => {
+                setError('');
+                setStep('PARENT');
+              }}>
+                No, under 18
+              </button>
             </div>
-
-            <div style={{ textAlign: 'left', background: 'rgba(37, 99, 235, 0.05)', border: '1px solid rgba(37, 99, 235, 0.18)', borderRadius: 'var(--radius-md)', padding: '12px', fontSize: '0.775rem', color: 'var(--text-secondary)' }}>
-              <label style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', cursor: 'pointer', margin: 0 }}>
-                <input 
-                  type="checkbox"
-                  checked={dpdpaConsent}
-                  onChange={e => setDpdpaConsent(e.target.checked)}
-                  style={{ marginTop: '3px', accentColor: 'var(--accent-primary)', width: '15px', height: '15px' }}
-                />
-                <span style={{ lineHeight: 1.4 }}>
-                  <strong style={{ color: 'var(--accent-primary)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                    <ShieldCheck size={13} /> DPDPA 2023 Data Privacy Notice:
-                  </strong>{' '}
-                  I consent to the collection & processing of my name, email, and mock test performance metrics for educational progress tracking under DPDPA 2023.
-                </span>
-              </label>
-            </div>
-
-            <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', padding: '12px' }}>
-              Sign In & Sync Progress <ArrowRight size={16} />
-            </button>
-          </form>
-        ) : (
-          <div style={{ marginBottom: '16px' }}>
-            <button 
-              onClick={handleGoogleClick}
-              className="btn"
-              style={{
-                width: '100%', padding: '12px', justifyContent: 'center',
-                background: 'var(--bg-primary)', border: '1px solid var(--border-color)',
-                color: 'var(--text-primary)', fontWeight: 700, fontSize: '0.95rem',
-                marginBottom: '14px', borderRadius: 'var(--radius-md)'
-              }}
-            >
-              Continue with Google Account
-            </button>
-
-            <div style={{ textAlign: 'left', background: 'rgba(37, 99, 235, 0.05)', border: '1px solid rgba(37, 99, 235, 0.18)', borderRadius: 'var(--radius-md)', padding: '12px', fontSize: '0.775rem', color: 'var(--text-secondary)' }}>
-              <label style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', cursor: 'pointer', margin: 0 }}>
-                <input 
-                  type="checkbox"
-                  checked={dpdpaConsent}
-                  onChange={e => setDpdpaConsent(e.target.checked)}
-                  style={{ marginTop: '3px', accentColor: 'var(--accent-primary)', width: '15px', height: '15px' }}
-                />
-                <span style={{ lineHeight: 1.4 }}>
-                  <strong style={{ color: 'var(--accent-primary)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                    <ShieldCheck size={13} /> DPDPA 2023 Data Privacy Notice:
-                  </strong>{' '}
-                  I consent to the collection & processing of my Google account details for educational progress tracking under DPDPA 2023.
-                </span>
-              </label>
+            <div className="privacy-safety-note">
+              <LockKeyhole size={18} />
+              No date-of-birth document or identity proof is required to use the learning platform.
             </div>
           </div>
         )}
 
-        <div style={{ marginTop: '16px', paddingTop: '12px', borderTop: '1px solid var(--border-color)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span style={{ fontSize: '0.725rem', color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-            <Lock size={12} /> Encrypted & DPDPA 2023 Compliant
-          </span>
-          <button onClick={onGuestContinue} style={{ background: 'none', border: 'none', color: 'var(--text-muted)', fontSize: '0.8rem', cursor: 'pointer', fontWeight: 600 }}>
-            Continue as Guest
-          </button>
-        </div>
+        {step === 'ADULT' && (
+          <div>
+            <button className="privacy-back-button" onClick={() => {
+              setError('');
+              setStep('AGE');
+            }}>
+              <ArrowLeft size={15} /> Change age band
+            </button>
+            <div className="privacy-modal-title">
+              <ShieldCheck size={28} />
+              <div>
+                <h2 id="privacy-onboarding-title">Your privacy choices</h2>
+                <p>You declared that you are 18 or older and can act for yourself.</p>
+              </div>
+            </div>
+            <PrivacyNotice />
+            <label className="privacy-consent-row">
+              <input type="checkbox" checked={adultConsent} onChange={(e) => setAdultConsent(e.target.checked)} />
+              <span>
+                I confirm I am 18 or older and consent to the required use of my account and practice
+                data to save progress and provide educational feedback. I can withdraw consent and
+                request correction or erasure.
+              </span>
+            </label>
+            <button className="btn btn-primary privacy-full-button" disabled={busy} onClick={completeAdult}>
+              {busy ? 'Creating verified consent…' : 'Consent and continue with Google'}
+            </button>
+          </div>
+        )}
+
+        {step === 'PARENT' && (
+          <form onSubmit={submitParentRequest}>
+            <button className="privacy-back-button" type="button" onClick={() => {
+              setError('');
+              setStep('AGE');
+            }}>
+              <ArrowLeft size={15} /> Change age band
+            </button>
+            <div className="privacy-modal-title">
+              <Users size={28} />
+              <div>
+                <h2 id="privacy-onboarding-title">Parent consent for saved progress</h2>
+                <p>
+                  The student can keep learning without an account. A parent’s consent is needed only
+                  to enable Google sign-in and save progress online.
+                </p>
+              </div>
+            </div>
+            <label className="privacy-field">
+              <span>Parent or lawful guardian email</span>
+              <input
+                type="email"
+                autoComplete="email"
+                value={parentEmail}
+                onChange={(event) => setParentEmail(event.target.value)}
+                required
+              />
+              <small>
+                Only the parent’s email is collected at this step. No student profile or learning
+                activity is created.
+              </small>
+            </label>
+            <button className="btn btn-primary privacy-full-button" disabled={busy} type="submit">
+              {busy ? 'Sending secure invitation…' : 'Email parent consent link'}
+            </button>
+            <button className="btn btn-secondary privacy-full-button" disabled={busy} type="button" onClick={continuePrivateSession}>
+              Continue learning without an account
+            </button>
+          </form>
+        )}
+
+        {step === 'PENDING' && (
+          <div className="privacy-pending">
+            <div className="privacy-success-icon"><CheckCircle2 size={30} /></div>
+            <h2 id="privacy-onboarding-title">Parent verification is pending</h2>
+            <p>
+              A secure link was sent to the parent or guardian. They must sign in, pass the configured
+              adult-verification check, review the notice and consent before a student account can be activated.
+            </p>
+            {requestId && <small>Request reference: {requestId}</small>}
+            <p>
+              The parent has 48 hours to complete consent. If they do not, this pending request
+              expires and its parent-contact record is deleted. No student account has been created.
+            </p>
+            {requestExpiresAt && (
+              <small>Consent link expires: {new Date(requestExpiresAt).toLocaleString('en-IN')}</small>
+            )}
+            <form onSubmit={claimChildConsent}>
+              <label className="privacy-field">
+                <span>Activation code from the verified parent</span>
+                <input
+                  value={activationCode}
+                  onChange={(event) => setActivationCode(event.target.value)}
+                  autoComplete="one-time-code"
+                  placeholder="Example: A7K9-P2QM"
+                />
+              </label>
+              <button className="btn btn-primary privacy-full-button" disabled={busy} type="submit">
+                {busy ? 'Verifying consent…' : 'Verify code and continue with Google'}
+              </button>
+            </form>
+            <div className="privacy-safety-note">
+              <LockKeyhole size={18} />
+              Google sign-in, cloud sync and identifiable analytics remain off until the code is verified.
+            </div>
+            <button className="btn btn-secondary privacy-full-button" onClick={continuePrivateSession}>
+              Continue learning while the parent responds
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
