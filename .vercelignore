@@ -1,0 +1,28 @@
+.git
+.firebaserc
+.env*
+functions
+docs
+firebase.json
+firestore.rules
+storage.rules
+/android
+/dist
+/GK
+/Quant
+/CA_Source_Repository
+/*.pdf
+/*.py
+/*.xlsx
+/CLAT-Prep-Studio-Brand-Bible-v1.html
+/testbook.com.*.md
+/gk_deep_parse_summary.json
+/gk_pdf_scan_results.json
+CLAT Prep Studio BG
+Quant Old
+/CLAT Prep Studio homepage.zip
+/CLAT Prep Studio.png
+/ClatPrep Studio.png
+/Gemini_Generated_Image_1hxvzo1hxvzo1hxv (1).png
+/Gemini_Generated_Image_1hxvzo1hxvzo1hxv.png
+/WhatsApp Image 2026-07-22 at 23.40.16.jpeg
