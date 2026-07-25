@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "clat1-3bb23-staging",
+    "staging": "clat1-3bb23-staging",
+    "production": "clat1-3bb23"
+  }
+}
