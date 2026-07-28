@@ -179,7 +179,11 @@ async function sendEmail({ to, subject, html }) {
       ...(replyTo ? { reply_to: replyTo } : {})
     })
   });
-  if (!response.ok) throw new Error(`Email provider rejected the request (${response.status}).`);
+  if (!response.ok) {
+    const errorBody = await response.json().catch(() => ({}));
+    const detail = errorBody.message || errorBody.error?.message || errorBody.error || `Email provider rejected the request (${response.status}).`;
+    throw new Error(detail);
+  }
 }
 
 export const finalizeAdultConsent = createCallable(callableOptions, async (request) => {
