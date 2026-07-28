@@ -53,7 +53,14 @@ export const getAuthenticatedApiHeaders = async () => {
     headers.Authorization = `Bearer ${await auth.currentUser.getIdToken()}`;
   }
   if (appCheck) {
-    headers['X-Firebase-AppCheck'] = (await getAppCheckToken(appCheck)).token;
+    try {
+      const appCheckResult = await getAppCheckToken(appCheck);
+      if (appCheckResult?.token) {
+        headers['X-Firebase-AppCheck'] = appCheckResult.token;
+      }
+    } catch (err) {
+      console.warn('AppCheck token retrieval notice:', err);
+    }
   }
   return headers;
 };
