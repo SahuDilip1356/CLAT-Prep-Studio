@@ -283,9 +283,10 @@ export const createParentConsentRequest = createCallable(
         deliveryAttempts: FieldValue.increment(1),
         sentAt: FieldValue.serverTimestamp()
       });
-    } catch {
+    } catch (error) {
+      console.error('Parent email delivery failure:', error);
       await requestRef.delete();
-      throw new HttpsError('failed-precondition', 'The secure invitation could not be delivered.');
+      throw new HttpsError('failed-precondition', error?.message || 'The secure invitation could not be delivered.');
     }
     return { requestId: requestRef.id, status: 'INVITATION_SENT', expiresAt: expiresAt.toDate().toISOString() };
   }
