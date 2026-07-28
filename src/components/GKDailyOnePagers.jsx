@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { qcards } from '../qcards';
+import { qcards as bundledQCards } from '../qcards';
 import { 
   BookMarked, Sparkles, Landmark, Scale, Globe, Rocket, Award, 
   ChevronLeft, ChevronRight, AlertTriangle, Lightbulb, Printer, LayoutGrid, PlayCircle, Eye
 } from 'lucide-react';
 
-export default function GKDailyOnePagers({ onStartTopicPractice }) {
+export default function GKDailyOnePagers({ onStartTopicPractice, qcards = bundledQCards }) {
   const [viewMode, setViewMode] = useState('CAROUSEL'); // 'CAROUSEL' vs 'GRID'
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [completedList, setCompletedList] = useState(() => {

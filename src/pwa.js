@@ -1,4 +1,5 @@
 export function registerPWA() {
+  if (import.meta.env.DEV) return;
   if (!('serviceWorker' in navigator)) return;
 
   let refreshing = false;

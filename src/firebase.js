@@ -6,9 +6,9 @@ import {
 import { 
   getFirestore, doc, getDoc, setDoc, collection, getDocs, serverTimestamp
 } from 'firebase/firestore';
-import { getStorage } from 'firebase/storage';
-import { getFunctions, httpsCallable } from 'firebase/functions';
-import { initializeAppCheck, ReCaptchaEnterpriseProvider } from 'firebase/app-check';
+import {
+  getToken as getAppCheckToken, initializeAppCheck, ReCaptchaEnterpriseProvider
+} from 'firebase/app-check';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyATTpRyLaH_BAGbLjz06-CFA-58rYzciUY",
@@ -20,17 +20,43 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+let appCheck = null;
 if (import.meta.env.VITE_FIREBASE_APP_CHECK_SITE_KEY) {
-  initializeAppCheck(app, {
+  appCheck = initializeAppCheck(app, {
     provider: new ReCaptchaEnterpriseProvider(import.meta.env.VITE_FIREBASE_APP_CHECK_SITE_KEY),
     isTokenAutoRefreshEnabled: true
   });
 }
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-export const storage = getStorage(app);
-export const functions = getFunctions(app, import.meta.env.VITE_FIREBASE_FUNCTIONS_REGION || 'asia-south1');
 export const googleProvider = new GoogleAuthProvider();
+
+const privacyApi = async (action, data = {}) => {
+  const headers = await getAuthenticatedApiHeaders();
+  const response = await fetch('/api/privacy', {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({ action, data })
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    const error = new Error(payload.error?.message || 'The privacy service could not complete the request.');
+    error.code = payload.error?.code || `http-${response.status}`;
+    throw error;
+  }
+  return payload.data;
+};
+
+export const getAuthenticatedApiHeaders = async () => {
+  const headers = { 'Content-Type': 'application/json' };
+  if (auth.currentUser) {
+    headers.Authorization = `Bearer ${await auth.currentUser.getIdToken()}`;
+  }
+  if (appCheck) {
+    headers['X-Firebase-AppCheck'] = (await getAppCheckToken(appCheck)).token;
+  }
+  return headers;
+};
 
 export const fetchAllStudentsFromCloud = async () => {
   try {
@@ -90,57 +116,39 @@ export const syncUserProgressToCloud = async (userId, progressData) => {
 };
 
 export const finalizeAdultConsent = async (consentChoice) => {
-  const callable = httpsCallable(functions, 'finalizeAdultConsent');
-  const result = await callable(consentChoice);
-  return result.data;
+  return privacyApi('finalizeAdultConsent', consentChoice);
 };
 
 export const createParentConsentRequest = async (invitation) => {
-  const callable = httpsCallable(functions, 'createParentConsentRequest');
-  const result = await callable(invitation);
-  return result.data;
+  return privacyApi('createParentConsentRequest', invitation);
 };
 
 export const authenticateParentForConsent = async (token) => {
-  const callable = httpsCallable(functions, 'authenticateParentForConsent');
-  const result = await callable({ token });
-  return result.data;
+  return privacyApi('authenticateParentForConsent', { token });
 };
 
 export const getParentConsentRequest = async (token) => {
-  const callable = httpsCallable(functions, 'getParentConsentRequest');
-  const result = await callable({ token });
-  return result.data;
+  return privacyApi('getParentConsentRequest', { token });
 };
 
 export const startParentAdultVerification = async (token) => {
-  const callable = httpsCallable(functions, 'startParentAdultVerification');
-  const result = await callable({ token });
-  return result.data;
+  return privacyApi('startParentAdultVerification', { token });
 };
 
 export const captureParentConsent = async (payload) => {
-  const callable = httpsCallable(functions, 'captureParentConsent');
-  const result = await callable(payload);
-  return result.data;
+  return privacyApi('captureParentConsent', payload);
 };
 
 export const claimChildConsent = async (activationCode) => {
-  const callable = httpsCallable(functions, 'claimChildConsent');
-  const result = await callable({ activationCode });
-  return result.data;
+  return privacyApi('claimChildConsent', { activationCode });
 };
 
 export const getChildRightsApproval = async (token) => {
-  const callable = httpsCallable(functions, 'getChildRightsApproval');
-  const result = await callable({ token });
-  return result.data;
+  return privacyApi('getChildRightsApproval', { token });
 };
 
 export const approveChildRightsRequest = async (token) => {
-  const callable = httpsCallable(functions, 'approveChildRightsRequest');
-  const result = await callable({ token });
-  return result.data;
+  return privacyApi('approveChildRightsRequest', { token });
 };
 
 export const getTrustedTokenClaims = async (user, forceRefresh = false) => {
@@ -151,15 +159,12 @@ export const getTrustedTokenClaims = async (user, forceRefresh = false) => {
 
 export const submitPrivacyRightsRequest = async (_userId, request) => {
   if (!request) return null;
-  const callable = httpsCallable(functions, 'submitDataPrincipalRequest');
-  const result = await callable(request);
-  return result.data;
+  return privacyApi('submitDataPrincipalRequest', request);
 };
 
 export const listPrivacyRightsRequests = async () => {
-  const callable = httpsCallable(functions, 'listDataPrincipalRequests');
-  const result = await callable();
-  return result.data?.requests || [];
+  const result = await privacyApi('listDataPrincipalRequests');
+  return result?.requests || [];
 };
 
 export const fetchCloudUserProgress = async (userId) => {

@@ -1,22 +1,107 @@
-import React, { useState, useEffect } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 import { 
   Users, Trophy, Target, AlertTriangle, Download, RefreshCw, Search, 
-  ChevronRight, Mail, Phone, Calendar, Award, CheckCircle, BarChart3, Cloud, Lock, Unlock, Eye, X
+  CheckCircle, Lock, Newspaper, Activity, CircleOff, ExternalLink, FileCheck2
 } from 'lucide-react';
 import { fetchAllStudentsFromCloud } from '../firebase';
+import { fetchCAOrchestrationRuns } from '../caContent';
 
-export default function AdminPortal({ localAttempts, localProfile, isPrivacyAdmin }) {
+const SCORE_LABELS = {
+  legalConstitutional: 'Legal / constitutional',
+  significance: 'Significance',
+  passagePotential: 'Passage potential',
+  staticGk: 'Static GK',
+  recency: 'Recency / novelty',
+  recencyNovelty: 'Recency / novelty',
+  sourceStrength: 'Source strength',
+  examSimilarity: 'Exam similarity',
+  examPatternSimilarity: 'Exam similarity',
+  continuingIssue: 'Continuing issue',
+  continuingIssueValue: 'Continuing issue'
+};
+
+const dossierTopic = (title) => String(title || '')
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/^-|-$/g, '');
+
+const downloadRunAudit = (run) => {
+  const blob = new Blob([JSON.stringify(run, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `${run.runId || run.id || 'ca-run-audit'}.json`;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+};
+
+const ScoreBreakdown = ({ breakdown = {} }) => {
+  const entries = Object.entries(breakdown).filter(([key]) => key !== 'total');
+  if (!entries.length) return null;
+  return (
+    <div style={{
+      display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(145px, 1fr))',
+      gap: '6px', marginTop: '8px'
+    }}>
+      {entries.map(([key, value]) => (
+        <div key={key} style={{
+          padding: '7px 9px', borderRadius: '8px', background: 'var(--bg-primary)',
+          display: 'flex', justifyContent: 'space-between', gap: '8px'
+        }}>
+          <span style={{ color: 'var(--text-muted)' }}>{SCORE_LABELS[key] || key}</span>
+          <strong>{value}</strong>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const SourceList = ({ sources = [] }) => {
+  if (!sources.length) return null;
+  return (
+    <div style={{ marginTop: '9px' }}>
+      <strong>Sources</strong>
+      <div style={{ display: 'grid', gap: '5px', marginTop: '5px' }}>
+        {sources.map((source, index) => (
+          <a
+            key={`${source.url}-${index}`}
+            href={source.url}
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: 'var(--accent-primary)', overflowWrap: 'anywhere' }}
+          >
+            {source.sourceType || source.type || 'SOURCE'} · {source.publisher || source.title || source.url}
+            <ExternalLink size={12} style={{ marginLeft: '5px', verticalAlign: 'middle' }} />
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default function AdminPortal({
+  localAttempts, localProfile, isPrivacyAdmin, isCAAdmin
+}) {
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedYear, setSelectedYear] = useState('ALL');
-  const [selectedStudent, setSelectedStudent] = useState(null);
+  const [caRuns, setCARuns] = useState([]);
+  const [caRunError, setCARunError] = useState('');
 
-  const loadData = async () => {
+  const loadData = useCallback(async () => {
     setLoading(true);
-    const cloudStudents = await fetchAllStudentsFromCloud();
+    const [cloudStudents, runResult] = await Promise.all([
+      isPrivacyAdmin ? fetchAllStudentsFromCloud() : Promise.resolve([]),
+      fetchCAOrchestrationRuns()
+        .then((runs) => ({ runs, error: '' }))
+        .catch((error) => ({ runs: [], error: error.message }))
+    ]);
+    setCARuns(runResult.runs);
+    setCARunError(runResult.error);
     
-    if (localProfile && localProfile.email) {
+    if (isPrivacyAdmin && localProfile && localProfile.email) {
       const exists = cloudStudents.find(s => s.profile?.email === localProfile.email);
       if (!exists) {
         cloudStudents.unshift({
@@ -35,11 +120,11 @@ export default function AdminPortal({ localAttempts, localProfile, isPrivacyAdmi
 
     setStudents(cloudStudents);
     setLoading(false);
-  };
+  }, [isPrivacyAdmin, localAttempts, localProfile]);
 
   useEffect(() => {
     loadData();
-  }, []);
+  }, [loadData]);
 
   const filteredStudents = students.filter(s => {
     const p = s.profile || {};
@@ -47,8 +132,7 @@ export default function AdminPortal({ localAttempts, localProfile, isPrivacyAdmi
       (p.name && p.name.toLowerCase().includes(searchTerm.toLowerCase())) ||
       (p.email && p.email.toLowerCase().includes(searchTerm.toLowerCase()));
     
-    const matchesYear = selectedYear === 'ALL' || p.targetYear === selectedYear;
-    return matchesSearch && matchesYear;
+    return matchesSearch;
   });
 
   const totalRegistered = students.length;
@@ -110,7 +194,7 @@ export default function AdminPortal({ localAttempts, localProfile, isPrivacyAdmi
     document.body.removeChild(link);
   };
 
-  if (!isPrivacyAdmin) {
+  if (!isCAAdmin) {
     return (
       <div className="glass-panel" style={{ padding: '60px 20px', textAlign: 'center', maxWidth: '560px', margin: '40px auto' }}>
         <div style={{
@@ -122,7 +206,7 @@ export default function AdminPortal({ localAttempts, localProfile, isPrivacyAdmi
         </div>
         <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '10px' }}>Admin Access Restricted</h2>
         <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '20px' }}>
-          This portal requires the server-issued privacy administrator role.
+          This portal requires the server-issued Current Affairs or privacy administrator role.
         </p>
       </div>
     );
@@ -130,6 +214,168 @@ export default function AdminPortal({ localAttempts, localProfile, isPrivacyAdmi
 
   return (
     <div className="admin-portal-view">
+      <div className="glass-panel" style={{ padding: '28px', marginBottom: '24px' }}>
+        <div style={{
+          display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between',
+          gap: '16px', flexWrap: 'wrap', marginBottom: '18px'
+        }}>
+          <div>
+            <div style={{
+              display: 'inline-flex', alignItems: 'center', gap: '7px',
+              color: 'var(--brand-purple)', fontWeight: 800, fontSize: '0.78rem',
+              marginBottom: '8px'
+            }}>
+              <Activity size={15} /> AGENTIC CURRENT AFFAIRS ORCHESTRATION
+            </div>
+            <h2 style={{ fontSize: '1.35rem', fontWeight: 800, marginBottom: '5px' }}>
+              Daily CA Publishing Log
+            </h2>
+            <p style={{ fontSize: '0.84rem', color: 'var(--text-secondary)' }}>
+              Runs daily at 6:00 AM IST. Only dossiers scoring 65+ with two trusted sources
+              and one official primary source are published.
+            </p>
+          </div>
+          <button className="btn btn-secondary" onClick={loadData}>
+            <RefreshCw size={16} /> Refresh CA Log
+          </button>
+        </div>
+
+        {caRunError ? (
+          <div style={{
+            padding: '12px', borderRadius: '10px', background: 'var(--accent-danger-bg)',
+            color: 'var(--accent-danger)', fontSize: '0.82rem'
+          }}>
+            <AlertTriangle size={15} style={{ verticalAlign: 'middle', marginRight: '7px' }} />
+            CA orchestration log is unavailable: {caRunError}
+          </div>
+        ) : caRuns.length === 0 ? (
+          <div style={{
+            padding: '20px', border: '1px dashed var(--border-color)',
+            borderRadius: '12px', color: 'var(--text-muted)', fontSize: '0.84rem'
+          }}>
+            The first scheduled run has not completed yet.
+          </div>
+        ) : (
+          <div style={{ display: 'grid', gap: '10px' }}>
+            {caRuns.slice(0, 10).map((run) => {
+              const failed = run.status === 'FAILED';
+              const noOp = run.status === 'COMPLETED' && Number(run.publishedCount || 0) === 0;
+              const newCount = Number(run.newCount || 0);
+              const updatedCount = Number(run.updatedCount || 0);
+              const acceptedLabel = updatedCount || newCount
+                ? `${updatedCount} UPDATED · ${newCount} NEW`
+                : `${run.publishedCount || 0} ACCEPTED`;
+              const Icon = failed ? AlertTriangle : noOp ? CircleOff : Newspaper;
+              const color = failed
+                ? 'var(--accent-danger)'
+                : noOp ? 'var(--text-muted)' : 'var(--accent-success)';
+              return (
+                <details key={run.id} style={{
+                  border: '1px solid var(--border-color)', borderRadius: '12px',
+                  padding: '13px 15px', background: 'var(--bg-card)'
+                }}>
+                  <summary style={{
+                    cursor: 'pointer', listStyle: 'none', display: 'flex',
+                    alignItems: 'center', gap: '10px'
+                  }}>
+                    <Icon size={18} color={color} />
+                    <span style={{ fontWeight: 800, minWidth: '110px' }}>{run.runDate}</span>
+                    <span style={{ color, fontWeight: 800, fontSize: '0.78rem' }}>
+                      {failed ? 'FAILED' : noOp ? 'NO RELEVANT DOSSIER' : acceptedLabel}
+                    </span>
+                    <span style={{ color: 'var(--text-muted)', fontSize: '0.76rem', marginLeft: 'auto' }}>
+                      {run.ignoredCount || 0} ignored · {run.auditSource || 'FIRESTORE'}
+                    </span>
+                  </summary>
+                  <div style={{
+                    marginTop: '12px', paddingTop: '12px',
+                    borderTop: '1px solid var(--border-color)', fontSize: '0.8rem'
+                  }}>
+                    {run.error && <p style={{ color: 'var(--accent-danger)' }}>{run.error}</p>}
+                    <div style={{
+                      display: 'flex', gap: '8px', flexWrap: 'wrap',
+                      color: 'var(--text-muted)', marginBottom: '10px'
+                    }}>
+                      <span>Trigger: {run.trigger || 'SCHEDULED'}</span>
+                      <span>·</span>
+                      <span>Candidates: {run.candidatesFound || 0}</span>
+                      {run.model && <><span>·</span><span>Model: {run.model}</span></>}
+                      {run.auditFileName && <><span>·</span><span>{run.auditFileName}</span></>}
+                    </div>
+                    {(run.published || []).map((item) => (
+                      <div key={item.id} style={{
+                        marginBottom: '10px', padding: '10px', borderRadius: '10px',
+                        border: '1px solid var(--border-color)'
+                      }}>
+                        <strong>{item.updateType}:</strong> {item.title}
+                        {item.priority ? ` · ${item.priority}` : ''} · {item.score}/100
+                        {item.reason && <p style={{ marginTop: '5px', color: 'var(--text-secondary)' }}>{item.reason}</p>}
+                        {item.conflictResolution && (
+                          <p style={{ marginTop: '5px', color: 'var(--accent-warning)' }}>
+                            <strong>Conflict resolved:</strong> {item.conflictResolution}
+                          </p>
+                        )}
+                        <a
+                          href={`?module=CA&topic=${dossierTopic(item.title)}`}
+                          style={{
+                            display: 'inline-flex', alignItems: 'center', gap: '5px',
+                            marginTop: '7px', color: 'var(--accent-primary)', fontWeight: 700
+                          }}
+                        >
+                          Open Issue Dossier <ExternalLink size={12} />
+                        </a>
+                        <ScoreBreakdown breakdown={item.scoreBreakdown} />
+                        <SourceList sources={item.sources} />
+                      </div>
+                    ))}
+                    {(run.ignored || []).map((item, index) => (
+                      <details key={`${item.title}-${index}`} style={{
+                        marginBottom: '8px', padding: '9px 10px', borderRadius: '10px',
+                        background: 'var(--bg-primary)', color: 'var(--text-secondary)'
+                      }}>
+                        <summary style={{ cursor: 'pointer' }}>
+                          <strong>Ignored:</strong> {item.title} · {item.score}/100 · {(item.reasons || []).join(', ')}
+                        </summary>
+                        <ScoreBreakdown breakdown={item.scoreBreakdown} />
+                        <SourceList sources={item.sources} />
+                      </details>
+                    ))}
+                    <SourceList sources={run.sourcesScanned} />
+                    {Array.isArray(run.validationResults) && run.validationResults.length > 0 && (
+                      <div style={{ marginTop: '12px' }}>
+                        <strong><FileCheck2 size={14} style={{ verticalAlign: 'middle', marginRight: '5px' }} />Validation</strong>
+                        {run.validationResults.map((validation, index) => (
+                          <p key={`${validation.command || 'validation'}-${index}`} style={{
+                            marginTop: '5px',
+                            color: Number(validation.exitCode || 0) === 0
+                              ? 'var(--accent-success)'
+                              : 'var(--accent-danger)'
+                          }}>
+                            {validation.command || validation.name}: {validation.result || validation.status}
+                          </p>
+                        ))}
+                      </div>
+                    )}
+                    {!run.error && !(run.published || []).length && !(run.ignored || []).length && (
+                      <p>No candidates were returned in the search window.</p>
+                    )}
+                    <button
+                      className="btn btn-secondary"
+                      onClick={() => downloadRunAudit(run)}
+                      style={{ marginTop: '12px' }}
+                    >
+                      <Download size={14} /> Download audit JSON
+                    </button>
+                  </div>
+                </details>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      {isPrivacyAdmin ? (
+        <>
       <div className="glass-panel" style={{ padding: '28px', marginBottom: '24px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', marginBottom: '20px' }}>
           <div>
@@ -246,6 +492,15 @@ export default function AdminPortal({ localAttempts, localProfile, isPrivacyAdmi
           </div>
         )}
       </div>
+        </>
+      ) : (
+        <div className="glass-panel" style={{
+          padding: '18px 22px', color: 'var(--text-secondary)', fontSize: '0.84rem'
+        }}>
+          Your CA administrator role is limited to Current Affairs run audits and dossier-pipeline
+          evidence. Student records remain restricted to privacy administrators.
+        </div>
+      )}
     </div>
   );
 }

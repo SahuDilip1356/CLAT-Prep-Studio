@@ -10,9 +10,9 @@ The learning product and the consent/account layer must be treated as two availa
 | --- | --- | --- | --- |
 | Quant, GK and Current Affairs content | Available | Available | Vercel static application only |
 | Private practice in the current browser session | Available | Available | None |
-| Google sign-in and cloud-saved progress | Unavailable | Available after trusted consent claim | Firebase Auth, Functions, Firestore and App Check |
+| Google sign-in and cloud-saved progress | Unavailable | Available after trusted consent claim | Firebase Auth, Firestore and App Check; Vercel Functions |
 | Child account activation | Existing parent links remain reachable; new student onboarding is unavailable | Available after verified parental consent | Email provider and Rule 10 adult-verification provider |
-| Data-principal rights processing | Existing approval links remain reachable | Available | Firebase Functions, email and operational queue |
+| Data-principal rights processing | Existing approval links remain reachable | Available | Vercel Functions, email and operational queue |
 
 Set `VITE_ACCOUNT_FEATURES_MODE=core_only` for the first production build and for privacy-service incidents. In this mode the sign-in entry point explains that study remains available, does not start Google sign-in, and does not upload student practice data.
 
@@ -42,25 +42,33 @@ The implementation expects:
 
 ## 3. Transactional email and public URL
 
-Configure Firebase Function parameters/secrets:
+Configure the following as encrypted Vercel Function environment variables:
 
 ```text
 APP_BASE_URL
 PARENT_CONSENT_FROM_EMAIL
+PARENT_CONSENT_REPLY_TO_EMAIL
 ADULT_VERIFICATION_START_URL
 RESEND_API_KEY
 PARENT_VERIFICATION_STATE_SECRET
 ADULT_VERIFICATION_WEBHOOK_SECRET
+FIREBASE_PROJECT_ID
+FIREBASE_SERVICE_ACCOUNT_JSON
+CRON_SECRET
 ```
 
-The sending domain must have SPF, DKIM and DMARC. Test invitation delivery, expiry, wrong-parent rejection, duplicate use, activation delivery, and child-rights approval.
+For this application, use a verified `theintello.com` sender such as
+`CLAT Prep Studio <consent@theintello.com>`. `PARENT_CONSENT_REPLY_TO_EMAIL`
+may be set to the monitored `theintellohelp@gmail.com` inbox. The sending domain
+must have SPF, DKIM and DMARC. Test invitation delivery, expiry, wrong-parent
+rejection, duplicate use, activation delivery, and child-rights approval.
 
 ## 4. Firebase security
 
-- Deploy `firestore.rules` and `storage.rules`.
+- Deploy `firestore.rules`. Firebase Storage is unused and does not need to be enabled.
 - Enable Google Authentication only for the documented routes.
 - Register the production web origin with reCAPTCHA Enterprise and configure `VITE_FIREBASE_APP_CHECK_SITE_KEY`.
-- Enforce App Check for callable functions and monitor rejection metrics.
+- Require and verify App Check tokens in the Vercel privacy API and monitor rejection metrics.
 - Assign `privacyAdmin` only through a privileged operational script with MFA and a change ticket. An email address never grants admin access.
 - Confirm browser clients cannot write consent receipts, parent requests, privacy status, or custom claims.
 
@@ -74,7 +82,7 @@ npm run build:compliance
 
 The normal `npm run build` is for local verification only. Production CI must call `build:compliance`.
 
-Deploy functions and rules only after secrets/parameters are present. A missing email or adult-verification integration is designed to fail closed.
+Deploy Vercel Functions and Firestore rules only after secrets/parameters are present. A missing email or adult-verification integration is designed to fail closed.
 
 ### 5.1 Legacy-user migration gate
 
@@ -91,23 +99,24 @@ Deploying the strict rules before this migration can interrupt existing users’
 ### 5.2 Staged production order
 
 1. Create a separate Firebase staging project and a Vercel Preview deployment. Never test consent emails, identity callbacks or erasure against production student records.
-2. In staging, configure Authentication, Firestore, Storage, Functions, billing, Secret Manager, scheduled functions, App Check, transactional email and the adult-verification provider.
+2. In staging, configure Firebase Authentication, Firestore and App Check; configure Vercel Functions, encrypted environment variables, the daily reconciliation cron, transactional email and the adult-verification provider. Firebase Storage and Firebase Functions remain unused.
 3. Deploy the App Check-enabled client and monitor valid-token metrics before enforcing App Check for student traffic.
 4. Pass every end-to-end test in section 6, including provider and email failure simulations.
-5. Archive the currently deployed Firestore and Storage rules. Rules deployed by the CLI replace the console rules and need a deliberately maintained rollback copy.
-6. Deploy the production Firebase functions first while the production frontend remains in `core_only`.
+5. Archive the currently deployed Firestore rules. Rules deployed by the CLI replace the console rules and need a deliberately maintained rollback copy.
+6. Deploy the Vercel privacy API first while the production frontend remains in `core_only`.
 7. Complete the legacy-user migration and verify trusted claims in production with test accounts.
-8. Deploy Firestore and Storage rules in a controlled release window and run read/write denial tests.
+8. Deploy Firestore rules in a controlled release window and run read/write denial tests.
 9. Deploy a Vercel Preview with `VITE_ACCOUNT_FEATURES_MODE=enabled`, run smoke tests, then promote that exact build to a small canary.
 10. Expand the canary only when sign-in, parental consent, rights processing, App Check rejection, email delivery and error metrics are healthy.
 
-Suggested Firebase CLI sequence after the project alias and configuration are reviewed:
+Suggested deployment sequence after the project alias and configuration are reviewed:
 
 ```bash
 firebase use --add
-firebase deploy --only functions --project clat1-3bb23
+# Deploy the Vercel Preview with the privacy API while core_only remains set.
+vercel
 # Complete the migration and production smoke tests before the rules:
-firebase deploy --only firestore,storage --project clat1-3bb23
+firebase deploy --only firestore --project clat1-3bb23
 ```
 
 The repository does not currently contain a `.firebaserc`, so an operator must explicitly bind and review the intended production project. Replace `clat1-3bb23` if it is not the approved production project.
@@ -120,10 +129,8 @@ Set these Vercel variables for both Preview and Production, using separate stagi
 VITE_FIREBASE_API_KEY
 VITE_FIREBASE_AUTH_DOMAIN
 VITE_FIREBASE_PROJECT_ID
-VITE_FIREBASE_STORAGE_BUCKET
 VITE_FIREBASE_MESSAGING_SENDER_ID
 VITE_FIREBASE_APP_ID
-VITE_FIREBASE_FUNCTIONS_REGION
 VITE_FIREBASE_APP_CHECK_SITE_KEY
 VITE_PRIVACY_LEGAL_NAME
 VITE_PRIVACY_CONTACT_EMAIL
@@ -132,19 +139,11 @@ VITE_ACCOUNT_FEATURES_MODE
 
 Use `npm run build:compliance` as the Vercel production build command. Start with `VITE_ACCOUNT_FEATURES_MODE=core_only`; change it to `enabled` only after steps 1–9 above are green.
 
-Set Firebase Function parameters in the project-specific Functions environment and store the three sensitive values with Firebase Secret Manager:
-
-```bash
-firebase functions:secrets:set RESEND_API_KEY --project clat1-3bb23
-firebase functions:secrets:set PARENT_VERIFICATION_STATE_SECRET --project clat1-3bb23
-firebase functions:secrets:set ADULT_VERIFICATION_WEBHOOK_SECRET --project clat1-3bb23
-```
-
-Do not put secrets in Vercel `VITE_*` variables; Vite exposes those values to the browser.
+Set the server-only values listed in section 3 as encrypted Vercel variables for the appropriate Preview/Production environment. Prefer Vercel OIDC with Google Workload Identity Federation; until that is configured, `FIREBASE_SERVICE_ACCOUNT_JSON` must contain a narrowly scoped Firebase Admin service-account credential. Never prefix secrets with `VITE_`, because Vite exposes those values to the browser.
 
 ### 5.4 Incident fallback and rollback
 
-If Firebase Functions, App Check, email or adult verification becomes unhealthy:
+If Vercel Functions, App Check, email or adult verification becomes unhealthy:
 
 1. Set the Vercel production variable `VITE_ACCOUNT_FEATURES_MODE=core_only`.
 2. Redeploy the current approved source commit.
@@ -160,7 +159,7 @@ Assign one on-call owner for the privacy service and one release decision-maker.
 2. An untrusted signed-in user without a privacy claim cannot read or write student progress.
 3. Child path retains only parent email, opaque request/token hashes and security/delivery timestamps before consent.
 4. Parent must use the invited Google email, then pass the Rule 10 provider, then affirm relationship and purposes.
-5. Parent invitations become unusable after 48 hours and are removed by the 15-minute cleanup cycle. Activation
+5. Parent invitations become unusable after 48 hours through timestamp validation and are removed by the daily reconciliation cycle. Activation
    codes are one-time, expire in 24 hours, and cannot be used before consent.
 6. Child Google account and progress are created only after code verification.
 7. Adult access/correction/erasure requests enter the server queue; destructive requests require recent reauthentication.

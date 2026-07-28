@@ -14,6 +14,11 @@ service cloud.firestore {
       return signedIn() && request.auth.token.privacyAdmin == true;
     }
 
+    function isCAAdmin() {
+      return signedIn()
+        && (request.auth.token.caAdmin == true || request.auth.token.privacyAdmin == true);
+    }
+
     function hasTrustedPrivacyPermission() {
       return signedIn()
         && request.auth.token.privacyStatus in ['ADULT_CONSENTED', 'PARENT_VERIFIED'];
@@ -39,6 +44,21 @@ service cloud.firestore {
 
     match /consentReceipts/{receiptId} {
       allow read: if isPrivacyAdmin();
+      allow write: if false;
+    }
+
+    match /caDossiers/{dossierId} {
+      allow read: if resource.data.status == 'PUBLISHED';
+      allow write: if false;
+    }
+
+    match /caOrchestrationRuns/{runId} {
+      allow read: if isCAAdmin();
+      allow write: if false;
+    }
+
+    match /adminNotifications/{notificationId} {
+      allow read: if isCAAdmin();
       allow write: if false;
     }
 

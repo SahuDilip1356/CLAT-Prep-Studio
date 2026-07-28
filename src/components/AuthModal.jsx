@@ -12,12 +12,13 @@ export default function AuthModal({
   isOpen,
   accountFeaturesEnabled = true,
   onClose,
+  onExistingGoogleSignIn,
   onAdultGoogleSignIn,
   onChildGoogleSignIn,
   onGuestContinue,
   onParentConsentRequested
 }) {
-  const [step, setStep] = useState('AGE');
+  const [step, setStep] = useState('ENTRY');
   const [adultConsent, setAdultConsent] = useState(false);
   const [parentEmail, setParentEmail] = useState('');
   const [requestId, setRequestId] = useState('');
@@ -29,7 +30,7 @@ export default function AuthModal({
   if (!isOpen) return null;
 
   const reset = () => {
-    setStep('AGE');
+    setStep('ENTRY');
     setAdultConsent(false);
     setParentEmail('');
     setRequestId('');
@@ -63,6 +64,22 @@ export default function AuthModal({
       setError(privacyErrorMessage(
         err,
         'We could not complete consent. No account access has been enabled.'
+      ));
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const signInExistingAccount = async () => {
+    setBusy(true);
+    setError('');
+    try {
+      await onExistingGoogleSignIn();
+      closeAndReset();
+    } catch (err) {
+      setError(privacyErrorMessage(
+        err,
+        'This account could not be signed in. No cloud processing has been enabled.'
       ));
     } finally {
       setBusy(false);
@@ -125,16 +142,24 @@ export default function AuthModal({
           <div className="privacy-modal-title">
             <ShieldCheck size={28} />
             <div>
-              <h2 id="privacy-onboarding-title">Study mode is available</h2>
-              <p>Account sign-in and cloud sync are temporarily unavailable.</p>
+              <h2 id="privacy-onboarding-title">Sign in to an existing account</h2>
+              <p>Administrators and privacy-activated students can continue with Google.</p>
             </div>
           </div>
+          {error && <div className="privacy-error" role="alert">{error}</div>}
+          <button
+            className="btn btn-primary privacy-full-button"
+            disabled={busy}
+            onClick={signInExistingAccount}
+          >
+            {busy ? 'Checking account…' : 'Sign in with Google'}
+          </button>
           <div className="privacy-safety-note">
             <LockKeyhole size={18} />
-            Quant, GK and Current Affairs remain available. Practice stays in this browser
-            session and is not uploaded.
+            New student registration is temporarily paused while the parent-email journey
+            is being activated. Quant, GK and Current Affairs remain available privately.
           </div>
-          <button className="btn btn-primary privacy-full-button" onClick={continuePrivateSession}>
+          <button className="btn btn-secondary privacy-full-button" onClick={continuePrivateSession}>
             Continue private session
           </button>
         </div>
@@ -152,15 +177,63 @@ export default function AuthModal({
         )}
 
         <div className="privacy-stepper" aria-label="Onboarding progress">
-          <span className={step === 'AGE' ? 'active' : 'done'}>1. Age band</span>
-          <span className={step === 'ADULT' || step === 'PARENT' ? 'active' : step === 'PENDING' ? 'done' : ''}>2. Consent</span>
-          <span className={step === 'PENDING' ? 'active' : ''}>3. Access</span>
+          <span className={step === 'ENTRY' ? 'active' : 'done'}>1. Account</span>
+          <span className={step === 'AGE' ? 'active' : ['ADULT', 'PARENT', 'PENDING'].includes(step) ? 'done' : ''}>2. Age band</span>
+          <span className={step === 'ADULT' || step === 'PARENT' ? 'active' : step === 'PENDING' ? 'done' : ''}>3. Consent</span>
+          <span className={step === 'PENDING' ? 'active' : ''}>4. Access</span>
         </div>
 
         {error && <div className="privacy-error" role="alert">{error}</div>}
 
+        {step === 'ENTRY' && (
+          <div>
+            <div className="privacy-modal-title">
+              <ShieldCheck size={28} />
+              <div>
+                <h2 id="privacy-onboarding-title">Save and continue your CLAT progress</h2>
+                <p>Sign in to an activated account or create one through the applicable privacy route.</p>
+              </div>
+            </div>
+            <button
+              className="btn btn-primary privacy-full-button"
+              disabled={busy}
+              onClick={signInExistingAccount}
+            >
+              {busy ? 'Checking account…' : 'Sign in to existing account'}
+            </button>
+            <button
+              className="btn btn-secondary privacy-full-button"
+              disabled={busy}
+              onClick={() => {
+                setError('');
+                setStep('AGE');
+              }}
+            >
+              Create account <ArrowRight size={16} />
+            </button>
+            <button
+              className="btn btn-secondary privacy-full-button"
+              disabled={busy}
+              onClick={continuePrivateSession}
+            >
+              Continue without an account
+            </button>
+            <div className="privacy-safety-note">
+              <LockKeyhole size={18} />
+              Only activated accounts can upload progress. Under-18 activation requires verified
+              parental consent before the student signs in.
+            </div>
+          </div>
+        )}
+
         {step === 'AGE' && (
           <div>
+            <button className="privacy-back-button" onClick={() => {
+              setError('');
+              setStep('ENTRY');
+            }}>
+              <ArrowLeft size={15} /> Back to account options
+            </button>
             <div className="privacy-modal-title">
               <ShieldCheck size={28} />
               <div>

@@ -1,7 +1,6 @@
 .git
 .firebaserc
 .env*
-functions
 docs
 firebase.json
 firestore.rules

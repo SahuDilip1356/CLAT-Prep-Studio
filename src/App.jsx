@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import questionsData from './data/question_bank.json';
 import gkQuestionsData from './data/gk_question_bank.json';
 import graphData from './data/ca_knowledge_graph.json';
@@ -35,6 +35,12 @@ import {
 
 const ACCOUNT_FEATURES_ENABLED =
   import.meta.env.DEV || import.meta.env.VITE_ACCOUNT_FEATURES_MODE === 'enabled';
+
+const hasAdminAccess = (claims) =>
+  claims?.privacyAdmin === true || claims?.caAdmin === true;
+
+const canUseAuthenticatedAccount = (claims) =>
+  canProcessInCloud(claims) || hasAdminAccess(claims);
 
 const defaultProgress = {
   studentProfile: null,
@@ -127,31 +133,40 @@ function StudentApp() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
   const [privacyRequests, setPrivacyRequests] = useState([]);
+  const authFlowInProgress = useRef(false);
 
   // Persistent user stats & history
   const [userProgress, setUserProgress] = useState(defaultProgress);
 
   // Firebase Auth Listener
   useEffect(() => {
-    if (!ACCOUNT_FEATURES_ENABLED) {
-      setCurrentUser(null);
-      setTrustedClaims(null);
-      setUserProgress(defaultProgress);
-      setAuthResolved(true);
-      return undefined;
-    }
-
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
       if (user) {
         try {
           const claims = await getTrustedTokenClaims(user);
-          setTrustedClaims(claims);
-          if (canProcessInCloud(claims)) {
-            const cloudProgress = await fetchCloudUserProgress(user.uid);
-            if (cloudProgress) setUserProgress({ ...defaultProgress, ...cloudProgress });
+          if (canUseAuthenticatedAccount(claims)) {
+            setTrustedClaims(claims);
+            if (canProcessInCloud(claims)) {
+              const cloudProgress = await fetchCloudUserProgress(user.uid);
+              if (cloudProgress) setUserProgress({ ...defaultProgress, ...cloudProgress });
+            } else {
+              setUserProgress(defaultProgress);
+            }
           } else {
+            setTrustedClaims(null);
             setUserProgress(defaultProgress);
+            if (!authFlowInProgress.current) {
+              await logOutUser();
+              setCurrentUser(null);
+            }
+          }
+        } catch {
+          setTrustedClaims(null);
+          setUserProgress(defaultProgress);
+          if (!authFlowInProgress.current) {
+            await logOutUser();
+            setCurrentUser(null);
           }
         } finally {
           setAuthResolved(true);
@@ -183,8 +198,47 @@ function StudentApp() {
     setViewState('DASHBOARD');
   };
 
+  const handleExistingGoogleSignIn = async () => {
+    authFlowInProgress.current = true;
+    try {
+      const signInResult = await signInWithGoogle();
+      const user = signInResult?.user;
+      if (!user) throw new Error('Google sign-in was not completed.');
+      const claims = await getTrustedTokenClaims(user, true);
+      if (!canUseAuthenticatedAccount(claims)) {
+        if (signInResult.isNewUser) {
+          await deleteUser(user).catch(() => logOutUser());
+        } else {
+          await logOutUser();
+        }
+        throw new Error(
+          'This Google account has not completed privacy activation. Choose “Create account” to finish the adult or parent-consent route.'
+        );
+      }
+      setCurrentUser(user);
+      setTrustedClaims(claims);
+      if (canProcessInCloud(claims)) {
+        const cloudProgress = await fetchCloudUserProgress(user.uid);
+        setUserProgress(cloudProgress ? { ...defaultProgress, ...cloudProgress } : defaultProgress);
+        enterStudentDashboard();
+      } else {
+        setUserProgress(defaultProgress);
+        setIsAuthModalOpen(false);
+        setActiveModule('STUDENT');
+        setActiveTab('TEACHER_ADMIN');
+        setViewState('TEACHER_ADMIN');
+      }
+    } catch (err) {
+      await logOutUser();
+      throw err;
+    } finally {
+      authFlowInProgress.current = false;
+    }
+  };
+
   const handleAdultGoogleSignIn = async (consentChoice) => {
     let signInResult;
+    authFlowInProgress.current = true;
     try {
       signInResult = await signInWithGoogle();
       const user = signInResult?.user;
@@ -212,11 +266,14 @@ function StudentApp() {
         await logOutUser();
       }
       throw err;
+    } finally {
+      authFlowInProgress.current = false;
     }
   };
 
   const handleChildGoogleSignIn = async ({ activationCode }) => {
     let signInResult;
+    authFlowInProgress.current = true;
     try {
       signInResult = await signInWithGoogle();
       const user = signInResult?.user;
@@ -246,6 +303,8 @@ function StudentApp() {
         await logOutUser();
       }
       throw err;
+    } finally {
+      authFlowInProgress.current = false;
     }
   };
 
@@ -624,8 +683,8 @@ function StudentApp() {
               <Database size={16} /> My Records ({safeProgress.attemptHistory?.length || 0})
             </button>
 
-            {/* Admin access is granted only by a trusted Firebase custom claim. */}
-            {trustedClaims?.privacyAdmin === true && (
+            {/* Admin access is granted only by trusted Firebase custom claims. */}
+            {(trustedClaims?.privacyAdmin === true || trustedClaims?.caAdmin === true) && (
               <button 
                 className={`nav-tab-btn ${activeTab === 'TEACHER_ADMIN' ? 'active' : ''}`}
                 onClick={() => { setActiveTab('TEACHER_ADMIN'); setViewState('TEACHER_ADMIN'); }}
@@ -655,7 +714,7 @@ function StudentApp() {
                 <User size={16} />
               )}
               <span>
-                {currentUser ? (currentUser.displayName ? currentUser.displayName.split(' ')[0] : 'Signed In') : (safeProgress.studentProfile?.name ? safeProgress.studentProfile.name.split(' ')[0] : 'Sign In')}
+                {currentUser ? 'Log out' : 'Sign in / Sign up'}
               </span>
             </button>
 
@@ -684,6 +743,7 @@ function StudentApp() {
                 setActiveTab('DASHBOARD');
                 setViewState('DASHBOARD');
               }}
+              onSignOut={handleSignOut}
               currentUser={currentUser}
             />
           </ModuleErrorBoundary>
@@ -904,6 +964,7 @@ function StudentApp() {
             localAttempts={safeProgress.attemptHistory || []}
             localProfile={safeProgress.studentProfile}
             isPrivacyAdmin={trustedClaims?.privacyAdmin === true}
+            isCAAdmin={trustedClaims?.privacyAdmin === true || trustedClaims?.caAdmin === true}
           />
         )}
 
@@ -924,6 +985,7 @@ function StudentApp() {
           isOpen={isAuthModalOpen}
           accountFeaturesEnabled={ACCOUNT_FEATURES_ENABLED}
           onClose={() => setIsAuthModalOpen(false)}
+          onExistingGoogleSignIn={handleExistingGoogleSignIn}
           onAdultGoogleSignIn={handleAdultGoogleSignIn}
           onChildGoogleSignIn={handleChildGoogleSignIn}
           onGuestContinue={() => setIsAuthModalOpen(false)}

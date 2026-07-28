@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import graphData from '../data/ca_knowledge_graph.json';
+import bundledGraphData from '../data/ca_knowledge_graph.json';
 import { 
   Network, BookOpen, Clock, Play, Award, HelpCircle, Check, AlertTriangle, 
   ArrowRight, ShieldCheck, RotateCcw, BrainCircuit, CheckSquare,
@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 
 export default function CAKnowledgeGraph({
+  graphData = bundledGraphData,
   externalSelectedNodeIndex,
   setExternalSelectedNodeIndex,
   externalActiveLens,
