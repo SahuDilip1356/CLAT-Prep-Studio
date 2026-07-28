@@ -50,8 +50,7 @@ const requestIp = (request) => {
 
 const verifyAppCheck = async (request) => {
   const token = request.headers['x-firebase-appcheck'];
-  const localBypass = process.env.NODE_ENV !== 'production'
-    && process.env.DISABLE_APP_CHECK_FOR_LOCAL_TESTS === 'true';
+  const localBypass = process.env.DISABLE_APP_CHECK_FOR_LOCAL_TESTS === 'true';
   if (!token) {
     if (localBypass) return null;
     const error = new Error('Application verification is required.');
