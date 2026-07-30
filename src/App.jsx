@@ -33,9 +33,6 @@ import {
   ShieldCheck, Globe, Newspaper, LockKeyhole
 } from 'lucide-react';
 
-const ACCOUNT_FEATURES_ENABLED =
-  import.meta.env.DEV || import.meta.env.VITE_ACCOUNT_FEATURES_MODE === 'enabled';
-
 const hasAdminAccess = (claims) =>
   claims?.privacyAdmin === true || claims?.caAdmin === true;
 
@@ -983,7 +980,6 @@ function StudentApp() {
 
         <AuthModal 
           isOpen={isAuthModalOpen}
-          accountFeaturesEnabled={ACCOUNT_FEATURES_ENABLED}
           onClose={() => setIsAuthModalOpen(false)}
           onExistingGoogleSignIn={handleExistingGoogleSignIn}
           onAdultGoogleSignIn={handleAdultGoogleSignIn}

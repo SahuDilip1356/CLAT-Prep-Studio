@@ -10,7 +10,6 @@ import './Privacy.css';
 
 export default function AuthModal({
   isOpen,
-  accountFeaturesEnabled = true,
   onClose,
   onExistingGoogleSignIn,
   onAdultGoogleSignIn,
@@ -129,43 +128,6 @@ export default function AuthModal({
       setBusy(false);
     }
   };
-
-  if (!accountFeaturesEnabled) {
-    return (
-      <div className="privacy-modal-backdrop" role="presentation">
-        <div className="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-onboarding-title">
-          {onClose && (
-            <button className="privacy-icon-button privacy-modal-close" onClick={closeAndReset} aria-label="Close">
-              <X size={20} />
-            </button>
-          )}
-          <div className="privacy-modal-title">
-            <ShieldCheck size={28} />
-            <div>
-              <h2 id="privacy-onboarding-title">Sign in to an existing account</h2>
-              <p>Administrators and privacy-activated students can continue with Google.</p>
-            </div>
-          </div>
-          {error && <div className="privacy-error" role="alert">{error}</div>}
-          <button
-            className="btn btn-primary privacy-full-button"
-            disabled={busy}
-            onClick={signInExistingAccount}
-          >
-            {busy ? 'Checking account…' : 'Sign in with Google'}
-          </button>
-          <div className="privacy-safety-note">
-            <LockKeyhole size={18} />
-            New student registration is temporarily paused while the parent-email journey
-            is being activated. Quant, GK and Current Affairs remain available privately.
-          </div>
-          <button className="btn btn-secondary privacy-full-button" onClick={continuePrivateSession}>
-            Continue private session
-          </button>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="privacy-modal-backdrop" role="presentation">
