@@ -13,7 +13,6 @@ export default function AuthModal({
   onClose,
   onExistingGoogleSignIn,
   onAdultGoogleSignIn,
-  onChildGoogleSignIn,
   onGuestContinue,
   onParentConsentRequested
 }) {
@@ -22,7 +21,6 @@ export default function AuthModal({
   const [parentEmail, setParentEmail] = useState('');
   const [requestId, setRequestId] = useState('');
   const [requestExpiresAt, setRequestExpiresAt] = useState('');
-  const [activationCode, setActivationCode] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
 
@@ -34,7 +32,6 @@ export default function AuthModal({
     setParentEmail('');
     setRequestId('');
     setRequestExpiresAt('');
-    setActivationCode('');
     setBusy(false);
     setError('');
   };
@@ -108,27 +105,6 @@ export default function AuthModal({
     }
   };
 
-  const claimChildConsent = async (event) => {
-    event.preventDefault();
-    if (!activationCode.trim()) {
-      setError('Enter the activation code provided to the verified parent or guardian.');
-      return;
-    }
-    setBusy(true);
-    setError('');
-    try {
-      await onChildGoogleSignIn({ activationCode: activationCode.trim().toUpperCase() });
-      closeAndReset();
-    } catch (err) {
-      setError(privacyErrorMessage(
-        err,
-        'The code could not be verified. Student processing remains disabled.'
-      ));
-    } finally {
-      setBusy(false);
-    }
-  };
-
   return (
     <div className="privacy-modal-backdrop" role="presentation">
       <div className="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-onboarding-title">
@@ -182,8 +158,8 @@ export default function AuthModal({
             </button>
             <div className="privacy-safety-note">
               <LockKeyhole size={18} />
-              Only activated accounts can upload progress. Under-18 activation requires verified
-              parental consent before the student signs in.
+              Only adults can activate cloud accounts. Students under 18 continue in a private
+              device session after their parent or guardian is notified.
             </div>
           </div>
         )}
@@ -265,10 +241,10 @@ export default function AuthModal({
             <div className="privacy-modal-title">
               <Users size={28} />
               <div>
-                <h2 id="privacy-onboarding-title">Parent consent for saved progress</h2>
+                <h2 id="privacy-onboarding-title">Notify a parent or guardian</h2>
                 <p>
-                  The student can keep learning without an account. A parent’s consent is needed only
-                  to enable Google sign-in and save progress online.
+                  The student can keep learning privately without an account. We will send an
+                  informational notice to the parent or lawful guardian address entered below.
                 </p>
               </div>
             </div>
@@ -282,12 +258,12 @@ export default function AuthModal({
                 required
               />
               <small>
-                Only the parent’s email is collected at this step. No student profile or learning
-                activity is created.
+                Only the parent’s email is collected. It is not treated as verified identity or
+                consent, and no student profile or learning activity is uploaded.
               </small>
             </label>
             <button className="btn btn-primary privacy-full-button" disabled={busy} type="submit">
-              {busy ? 'Sending secure invitation…' : 'Email parent consent link'}
+              {busy ? 'Sending notification…' : 'Notify parent or guardian'}
             </button>
             <button className="btn btn-secondary privacy-full-button" disabled={busy} type="button" onClick={continuePrivateSession}>
               Continue learning without an account
@@ -298,39 +274,25 @@ export default function AuthModal({
         {step === 'PENDING' && (
           <div className="privacy-pending">
             <div className="privacy-success-icon"><CheckCircle2 size={30} /></div>
-            <h2 id="privacy-onboarding-title">Parent verification is pending</h2>
+            <h2 id="privacy-onboarding-title">Parent notification sent</h2>
             <p>
-              A secure link was sent to the parent or guardian. They must sign in, pass the configured
-              adult-verification check, review the notice and consent before a student account can be activated.
+              An informational email was sent to the parent or guardian address. No verification,
+              consent, activation code, or cloud account is created through this email-only route.
             </p>
             {requestId && <small>Request reference: {requestId}</small>}
             <p>
-              The parent has 48 hours to complete consent. If they do not, this pending request
-              expires and its parent-contact record is deleted. No student account has been created.
+              The temporary parent-contact record expires after 48 hours. The student can continue
+              learning in a private device session.
             </p>
             {requestExpiresAt && (
-              <small>Consent link expires: {new Date(requestExpiresAt).toLocaleString('en-IN')}</small>
+              <small>Parent-contact record expires: {new Date(requestExpiresAt).toLocaleString('en-IN')}</small>
             )}
-            <form onSubmit={claimChildConsent}>
-              <label className="privacy-field">
-                <span>Activation code from the verified parent</span>
-                <input
-                  value={activationCode}
-                  onChange={(event) => setActivationCode(event.target.value)}
-                  autoComplete="one-time-code"
-                  placeholder="Example: A7K9-P2QM"
-                />
-              </label>
-              <button className="btn btn-primary privacy-full-button" disabled={busy} type="submit">
-                {busy ? 'Verifying consent…' : 'Verify code and continue with Google'}
-              </button>
-            </form>
             <div className="privacy-safety-note">
               <LockKeyhole size={18} />
-              Google sign-in, cloud sync and identifiable analytics remain off until the code is verified.
+              Google sign-in, cloud sync and identifiable analytics remain off for students under 18.
             </div>
             <button className="btn btn-secondary privacy-full-button" onClick={continuePrivateSession}>
-              Continue learning while the parent responds
+              Continue learning privately
             </button>
           </div>
         )}

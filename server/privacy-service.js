@@ -256,34 +256,30 @@ export const createParentConsentRequest = createCallable(
       });
     });
 
-    const invitationToken = randomBytes(32).toString('base64url');
     const requestRef = db.collection('parentConsentRequests').doc();
     const expiresAt = Timestamp.fromMillis(now + (INVITATION_TTL_HOURS * 60 * 60 * 1000));
     await requestRef.create({
       ageBand: 'CHILD',
       parentEmail,
-      invitationTokenHash: hash(invitationToken),
       noticeVersion: NOTICE_VERSION,
       consentVersion: CONSENT_VERSION,
-      status: 'INVITATION_CREATED',
+      status: 'PARENT_NOTIFICATION_CREATED',
       createdAt: FieldValue.serverTimestamp(),
       expiresAt,
       deliveryAttempts: 0
     });
 
-    const link = requireHttpsUrl(appBaseUrl.value(), 'Application base URL');
-    link.searchParams.set('parentConsent', invitationToken);
     try {
       await sendEmail({
         to: parentEmail,
-        subject: 'Review a CLAT Prep Studio parent consent request',
-        html: `<p>A student who is under 18 asked you to review a privacy consent request.</p>
-          <p><a href="${link.toString()}">Open the secure parent verification journey</a></p>
-          <p>This link expires in ${INVITATION_TTL_HOURS} hours. The student can continue learning privately while you decide.</p>
+        subject: 'CLAT Prep Studio under-18 account notification',
+        html: `<p>A student who identified as under 18 entered this address as their parent or lawful guardian contact.</p>
+          <p>No student account, cloud progress, or identifiable learning analytics have been enabled.</p>
+          <p>The student can continue using CLAT Prep Studio in a private device session.</p>
           <p>Ignore it if you did not expect this request.</p>`
       });
       await requestRef.update({
-        status: 'INVITATION_SENT',
+        status: 'PARENT_NOTIFICATION_SENT',
         deliveryAttempts: FieldValue.increment(1),
         sentAt: FieldValue.serverTimestamp()
       });
@@ -292,7 +288,11 @@ export const createParentConsentRequest = createCallable(
       await requestRef.delete();
       throw new HttpsError('failed-precondition', error?.message || 'The secure invitation could not be delivered.');
     }
-    return { requestId: requestRef.id, status: 'INVITATION_SENT', expiresAt: expiresAt.toDate().toISOString() };
+    return {
+      requestId: requestRef.id,
+      status: 'PARENT_NOTIFICATION_SENT',
+      expiresAt: expiresAt.toDate().toISOString()
+    };
   }
 );
 
