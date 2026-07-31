@@ -124,6 +124,7 @@ export default function HomeDashboard({
   onStartDayDrill,
   onOpenAuth,
   onOpenStudentDashboard,
+  onSignOut,
   currentUser
 }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -281,8 +282,11 @@ export default function HomeDashboard({
 
           <div className="marketing-nav-actions">
             <button className="marketing-login" onClick={studentName ? onOpenStudentDashboard : onOpenAuth}>
-              {studentName ? `Dashboard · ${studentName.split(' ')[0]}` : 'Log in'}
+              {studentName ? `Dashboard · ${studentName.split(' ')[0]}` : 'Sign in / Sign up'}
             </button>
+            {currentUser && (
+              <button className="marketing-login" onClick={onSignOut}>Log out</button>
+            )}
             <div className="marketing-module-launcher" ref={moduleLauncherRef}>
               <button
                 className="marketing-primary-button marketing-small-button"
@@ -328,7 +332,8 @@ export default function HomeDashboard({
         {mobileNavOpen && (
           <nav className="marketing-mobile-nav" aria-label="Mobile homepage navigation" ref={mobileNavRef}>
             {navItems.map(([label, href]) => <a key={href} href={href} onClick={() => setMobileNavOpen(false)}>{label}</a>)}
-            <button onClick={studentName ? onOpenStudentDashboard : onOpenAuth}>{studentName ? `Open ${studentName.split(' ')[0]}’s dashboard` : 'Log in'}</button>
+            <button onClick={studentName ? onOpenStudentDashboard : onOpenAuth}>{studentName ? `Open ${studentName.split(' ')[0]}’s dashboard` : 'Sign in / Sign up'}</button>
+            {currentUser && <button onClick={onSignOut}>Log out</button>}
             <button
               className="marketing-primary-button marketing-mobile-module-toggle"
               onClick={() => setModuleMenuOpen((open) => !open)}
@@ -582,7 +587,14 @@ export default function HomeDashboard({
             </div>
             <div className="marketing-footer-links">
               <div><b>Modules</b><button onClick={() => enterModule('QUANT')}>Quant &amp; LR</button><button onClick={() => enterModule('GK')}>Static GK</button><button onClick={() => enterModule('CA')}>Current Affairs</button></div>
-              <div><b>System</b><a href="#how-it-works">How it works</a><a href="#progress-system">Progress</a><button onClick={onOpenAuth}>Log in</button></div>
+              <div>
+                <b>System</b>
+                <a href="#how-it-works">How it works</a>
+                <a href="#progress-system">Progress</a>
+                <button onClick={currentUser ? onSignOut : onOpenAuth}>
+                  {currentUser ? 'Log out' : 'Sign in / Sign up'}
+                </button>
+              </div>
             </div>
           </div>
           <div className="marketing-copyright"><span>© 2026 CLAT Prep Studio.</span><span>The Sharp Mentor · Academic Energy</span></div>

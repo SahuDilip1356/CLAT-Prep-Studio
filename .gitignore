@@ -2,6 +2,7 @@
 
 # Dependencies and build output
 node_modules/
+.pnpm-store/
 dist/
 
 # Local environment and OS files

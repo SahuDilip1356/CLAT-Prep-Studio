@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import graphData from '../data/ca_knowledge_graph.json';
+import bundledGraphData from '../data/ca_knowledge_graph.json';
 import { 
   Network, BookOpen, Clock, Play, Award, HelpCircle, Check, AlertTriangle, 
   ArrowRight, ShieldCheck, RotateCcw, BrainCircuit, CheckSquare,
@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 
 export default function CAKnowledgeGraph({
+  graphData = bundledGraphData,
   externalSelectedNodeIndex,
   setExternalSelectedNodeIndex,
   externalActiveLens,
@@ -61,7 +62,7 @@ export default function CAKnowledgeGraph({
   const [hideAwareness, setHideAwareness] = useState(false);
   const [confusingDossierIds, setConfusingDossierIds] = useState(() => {
     try {
-      return JSON.parse(localStorage.getItem('clat_confusing_dossiers') || '{}');
+      return JSON.parse(sessionStorage.getItem('clat_confusing_dossiers') || '{}');
     } catch {
       return {};
     }
@@ -106,7 +107,7 @@ export default function CAKnowledgeGraph({
       updatedDossiers[activeDossierKey] = true;
     }
     setConfusingDossierIds(updatedDossiers);
-    localStorage.setItem('clat_confusing_dossiers', JSON.stringify(updatedDossiers));
+    sessionStorage.setItem('clat_confusing_dossiers', JSON.stringify(updatedDossiers));
   };
   const recordDossierProgress = (dossier, status, attemptedDelta = 0, correctDelta = 0) => {
     onDossierProgress?.({
@@ -166,7 +167,7 @@ export default function CAKnowledgeGraph({
       });
     });
 
-    const savedBoxes = localStorage.getItem('clat_leitner_boxes');
+    const savedBoxes = sessionStorage.getItem('clat_leitner_boxes');
     if (savedBoxes) {
       try {
         setLeitnerBoxes(JSON.parse(savedBoxes));
@@ -191,7 +192,7 @@ export default function CAKnowledgeGraph({
 
   const saveLeitnerState = (updatedBoxes) => {
     setLeitnerBoxes(updatedBoxes);
-    localStorage.setItem('clat_leitner_boxes', JSON.stringify(updatedBoxes));
+    sessionStorage.setItem('clat_leitner_boxes', JSON.stringify(updatedBoxes));
   };
 
   const handleLeitnerRating = (cardId, rating) => {

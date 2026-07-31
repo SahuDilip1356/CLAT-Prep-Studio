@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import questionsData from './data/question_bank.json';
 import gkQuestionsData from './data/gk_question_bank.json';
 import graphData from './data/ca_knowledge_graph.json';
@@ -14,15 +14,30 @@ import StudentProfileModal from './components/StudentProfileModal';
 import StudentDataAdmin from './components/StudentDataAdmin';
 import AdminPortal from './components/AdminPortal';
 import AuthModal from './components/AuthModal';
+import ParentConsentPage from './components/ParentConsentPage';
+import ParentRightsApprovalPage from './components/ParentRightsApprovalPage';
+import PrivacyCentre from './components/PrivacyCentre';
 import ModuleErrorBoundary from './components/ModuleErrorBoundary';
 import BrandLockup from './components/BrandLockup';
 import PWAExperience from './components/PWAExperience';
 import { formatCorrectAnswer } from './utils/questionAnswers';
-import { auth, signInWithGoogle, logOutUser, syncUserProgressToCloud, fetchCloudUserProgress } from './firebase';
-import { onAuthStateChanged } from 'firebase/auth';
+import {
+  auth, signInWithGoogle, logOutUser, syncUserProgressToCloud, fetchCloudUserProgress,
+  submitPrivacyRightsRequest, finalizeAdultConsent, createParentConsentRequest,
+  claimChildConsent, getTrustedTokenClaims, listPrivacyRightsRequests, reauthenticateCurrentUser
+} from './firebase';
+import { deleteUser, onAuthStateChanged } from 'firebase/auth';
+import { canProcessInCloud } from './privacy';
 import { 
-  Scale, LayoutDashboard, BrainCircuit, BookMarked, BarChart3, Sparkles, Trophy, Sun, Moon, User, Database, LogIn, LogOut, ShieldCheck, Globe, BookOpen, Newspaper
+  LayoutDashboard, BrainCircuit, BookMarked, Sun, Moon, User, Database,
+  ShieldCheck, Globe, Newspaper, LockKeyhole
 } from 'lucide-react';
+
+const hasAdminAccess = (claims) =>
+  claims?.privacyAdmin === true || claims?.caAdmin === true;
+
+const canUseAuthenticatedAccount = (claims) =>
+  canProcessInCloud(claims) || hasAdminAccess(claims);
 
 const defaultProgress = {
   studentProfile: null,
@@ -50,9 +65,30 @@ const defaultProgress = {
   bookmarkedQCardIds: {},
   bookmarkedDossierIds: {},
   streak: 1
+  ,
+  privacy: null,
+  privacyRequests: []
+};
+
+const clearSessionPracticeState = () => {
+  [
+    'clat_confusing_dossiers',
+    'clat_daily_onepager_reviewed',
+    'clat_leitner_boxes'
+  ].forEach((key) => sessionStorage.removeItem(key));
 };
 
 export default function App() {
+  const params = new URLSearchParams(window.location.search);
+  const queryToken = params.get('parentConsent');
+  const rightsApprovalToken = params.get('rightsApproval') || sessionStorage.getItem('rights_approval_token');
+  if (rightsApprovalToken) return <ParentRightsApprovalPage token={rightsApprovalToken} />;
+  const parentConsentToken = queryToken || sessionStorage.getItem('parent_consent_token');
+  if (parentConsentToken) return <ParentConsentPage token={parentConsentToken} />;
+  return <StudentApp />;
+}
+
+function StudentApp() {
   const [activeModule, setActiveModule] = useState('HOME'); // 'HOME' vs 'QUANT' vs 'GK' vs 'CA'
   const [activeTab, setActiveTab] = useState('DASHBOARD');
   const [viewState, setViewState] = useState('DASHBOARD');
@@ -89,44 +125,53 @@ export default function App() {
   const [lastTestResult, setLastTestResult] = useState(null);
 
   const [currentUser, setCurrentUser] = useState(null);
+  const [trustedClaims, setTrustedClaims] = useState(null);
+  const [authResolved, setAuthResolved] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
-
-  // Active dataset depending on selected module landing page
-  const currentModuleQuestions = activeModule === 'QUANT' ? questionsData : gkQuestionsData;
+  const [privacyRequests, setPrivacyRequests] = useState([]);
+  const authFlowInProgress = useRef(false);
 
   // Persistent user stats & history
-  const [userProgress, setUserProgress] = useState(() => {
-    const saved = localStorage.getItem('clat_quant_progress');
-    if (saved) {
-      try { 
-        const parsed = JSON.parse(saved);
-        return { ...defaultProgress, ...parsed };
-      } catch (e) {}
-    }
-    return defaultProgress;
-  });
+  const [userProgress, setUserProgress] = useState(defaultProgress);
 
   // Firebase Auth Listener
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
       if (user) {
-        const cloudProgress = await fetchCloudUserProgress(user.uid);
-        if (cloudProgress) {
-          setUserProgress({ ...defaultProgress, ...cloudProgress });
-        } else {
-          setUserProgress(prev => ({
-            ...(prev || defaultProgress),
-            studentProfile: {
-              name: user.displayName || 'CLAT Aspirant',
-              email: user.email || '',
-              phone: user.phoneNumber || prev?.studentProfile?.phone || '',
-              targetYear: prev?.studentProfile?.targetYear || 'CLAT 2027',
-              targetNlu: prev?.studentProfile?.targetNlu || 'NLSIU Bengaluru'
+        try {
+          const claims = await getTrustedTokenClaims(user);
+          if (canUseAuthenticatedAccount(claims)) {
+            setTrustedClaims(claims);
+            if (canProcessInCloud(claims)) {
+              const cloudProgress = await fetchCloudUserProgress(user.uid);
+              if (cloudProgress) setUserProgress({ ...defaultProgress, ...cloudProgress });
+            } else {
+              setUserProgress(defaultProgress);
             }
-          }));
+          } else {
+            setTrustedClaims(null);
+            setUserProgress(defaultProgress);
+            if (!authFlowInProgress.current) {
+              await logOutUser();
+              setCurrentUser(null);
+            }
+          }
+        } catch {
+          setTrustedClaims(null);
+          setUserProgress(defaultProgress);
+          if (!authFlowInProgress.current) {
+            await logOutUser();
+            setCurrentUser(null);
+          }
+        } finally {
+          setAuthResolved(true);
         }
+      } else {
+        setTrustedClaims(null);
+        setUserProgress(defaultProgress);
+        setAuthResolved(true);
       }
     });
 
@@ -135,50 +180,175 @@ export default function App() {
 
   // Sync userProgress to localStorage & Firestore
   useEffect(() => {
-    if (userProgress) {
+    if (userProgress && canProcessInCloud(trustedClaims)) {
       localStorage.setItem('clat_quant_progress', JSON.stringify(userProgress));
-      if (currentUser?.uid) {
-        syncUserProgressToCloud(currentUser.uid, userProgress);
-      }
+      if (currentUser?.uid) syncUserProgressToCloud(currentUser.uid, userProgress);
+    } else if (authResolved) {
+      localStorage.removeItem('clat_quant_progress');
     }
-  }, [userProgress, currentUser]);
+  }, [userProgress, currentUser, trustedClaims, authResolved]);
 
-  const handleGoogleSignIn = async () => {
-    try {
-      const user = await signInWithGoogle();
-      if (user) {
-        setIsAuthModalOpen(false);
-        setActiveModule('STUDENT');
-        setActiveTab('DASHBOARD');
-        setViewState('DASHBOARD');
-      }
-    } catch (err) {
-      console.log('Google Auth Notice:', err);
-    }
-  };
-
-  const handleEmailLogin = (profileData) => {
-    setUserProgress(prev => ({
-      ...(prev || defaultProgress),
-      studentProfile: profileData
-    }));
+  const enterStudentDashboard = () => {
     setIsAuthModalOpen(false);
     setActiveModule('STUDENT');
     setActiveTab('DASHBOARD');
     setViewState('DASHBOARD');
   };
 
+  const handleExistingGoogleSignIn = async () => {
+    authFlowInProgress.current = true;
+    try {
+      const signInResult = await signInWithGoogle();
+      const user = signInResult?.user;
+      if (!user) throw new Error('Google sign-in was not completed.');
+      const claims = await getTrustedTokenClaims(user, true);
+      if (!canUseAuthenticatedAccount(claims)) {
+        if (signInResult.isNewUser) {
+          await deleteUser(user).catch(() => logOutUser());
+        } else {
+          await logOutUser();
+        }
+        throw new Error(
+          'This Google account has not completed privacy activation. Choose “Create account” to finish the adult or parent-consent route.'
+        );
+      }
+      setCurrentUser(user);
+      setTrustedClaims(claims);
+      if (canProcessInCloud(claims)) {
+        const cloudProgress = await fetchCloudUserProgress(user.uid);
+        setUserProgress(cloudProgress ? { ...defaultProgress, ...cloudProgress } : defaultProgress);
+        enterStudentDashboard();
+      } else {
+        setUserProgress(defaultProgress);
+        setIsAuthModalOpen(false);
+        setActiveModule('STUDENT');
+        setActiveTab('TEACHER_ADMIN');
+        setViewState('TEACHER_ADMIN');
+      }
+    } catch (err) {
+      await logOutUser();
+      throw err;
+    } finally {
+      authFlowInProgress.current = false;
+    }
+  };
+
+  const handleAdultGoogleSignIn = async (consentChoice) => {
+    let signInResult;
+    authFlowInProgress.current = true;
+    try {
+      signInResult = await signInWithGoogle();
+      const user = signInResult?.user;
+      if (!user) throw new Error('Google sign-in was not completed.');
+      await finalizeAdultConsent(consentChoice);
+      const claims = await getTrustedTokenClaims(user, true);
+      if (!canProcessInCloud(claims)) throw new Error('The server did not authorize student processing.');
+      clearSessionPracticeState();
+      setTrustedClaims(claims);
+      setUserProgress(prev => ({
+        ...(prev || defaultProgress),
+        studentProfile: {
+          ...(prev?.studentProfile || {}),
+          name: user.displayName || prev?.studentProfile?.name || 'CLAT Aspirant',
+          email: user.email || '',
+          targetYear: prev?.studentProfile?.targetYear || 'CLAT 2027',
+          targetNlu: prev?.studentProfile?.targetNlu || 'NLSIU Bengaluru'
+        }
+      }));
+      enterStudentDashboard();
+    } catch (err) {
+      if (signInResult?.isNewUser && signInResult.user) {
+        await deleteUser(signInResult.user).catch(() => logOutUser());
+      } else {
+        await logOutUser();
+      }
+      throw err;
+    } finally {
+      authFlowInProgress.current = false;
+    }
+  };
+
+  const handleChildGoogleSignIn = async ({ activationCode }) => {
+    let signInResult;
+    authFlowInProgress.current = true;
+    try {
+      signInResult = await signInWithGoogle();
+      const user = signInResult?.user;
+      if (!user) throw new Error('Google sign-in was not completed.');
+      await claimChildConsent(activationCode);
+      const claims = await getTrustedTokenClaims(user, true);
+      if (claims?.privacyStatus !== 'PARENT_VERIFIED') {
+        throw new Error('Verified parent consent was not attached to this account.');
+      }
+      clearSessionPracticeState();
+      setTrustedClaims(claims);
+      setUserProgress(prev => ({
+        ...(prev || defaultProgress),
+        studentProfile: {
+          ...(prev?.studentProfile || {}),
+          name: user.displayName || 'CLAT Aspirant',
+          email: user.email || '',
+          targetYear: prev?.studentProfile?.targetYear || 'CLAT 2027',
+          targetNlu: prev?.studentProfile?.targetNlu || 'NLSIU Bengaluru'
+        }
+      }));
+      enterStudentDashboard();
+    } catch (err) {
+      if (signInResult?.isNewUser && signInResult.user) {
+        await deleteUser(signInResult.user).catch(() => logOutUser());
+      } else {
+        await logOutUser();
+      }
+      throw err;
+    } finally {
+      authFlowInProgress.current = false;
+    }
+  };
+
+  const handleParentConsentRequested = async (invitation) => {
+    return createParentConsentRequest(invitation);
+  };
+
+  const handlePrivacyRequest = async (request) => {
+    if (!currentUser?.uid || !canProcessInCloud(trustedClaims)) {
+      throw new Error('Sign in to the consent-authorized account before submitting a privacy request.');
+    }
+    if (['ERASURE', 'WITHDRAWAL'].includes(request.type) && trustedClaims.subjectType !== 'CHILD') {
+      await reauthenticateCurrentUser();
+    }
+    const result = await submitPrivacyRightsRequest(currentUser.uid, request);
+    const serverRequest = {
+      requestId: result.requestId,
+      type: request.type,
+      status: result.status,
+      submittedAt: request.submittedAt
+    };
+    setPrivacyRequests((current) => [serverRequest, ...current]);
+    return serverRequest;
+  };
+
+  const refreshPrivacyRequests = async () => {
+    if (!currentUser?.uid || !canProcessInCloud(trustedClaims)) return [];
+    const serverRequests = await listPrivacyRightsRequests();
+    setPrivacyRequests(serverRequests);
+    return serverRequests;
+  };
+
   const handleSignOut = async () => {
     await logOutUser();
+    clearSessionPracticeState();
+    setTrustedClaims(null);
+    setUserProgress(defaultProgress);
+    setPrivacyRequests([]);
   };
 
   // Open profile modal if no profile registered yet
   useEffect(() => {
-    if (!userProgress?.studentProfile && activeModule !== 'HOME') {
+    if (!userProgress?.studentProfile && activeModule !== 'HOME' && canProcessInCloud(trustedClaims)) {
       const timer = setTimeout(() => setIsProfileModalOpen(true), 800);
       return () => clearTimeout(timer);
     }
-  }, [userProgress, activeModule]);
+  }, [userProgress, activeModule, trustedClaims]);
 
   const handleSaveProfile = (profileData) => {
     setUserProgress(prev => ({ ...(prev || defaultProgress), studentProfile: profileData }));
@@ -274,20 +444,6 @@ export default function App() {
       totalTimeSpent: resultData.totalTimeSpent,
       weakTopics: weakTopics
     };
-
-    const webhookUrl = localStorage.getItem('clat_webhook_url') || import.meta.env.VITE_ZAPIER_WEBHOOK_URL || 'https://hooks.zapier.com/hooks/catch/23159946/446gdj5/';
-    if (webhookUrl) {
-      try {
-        fetch(webhookUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            studentProfile: userProgress?.studentProfile,
-            attempt: attemptRecord
-          })
-        }).catch(err => console.log('Zapier webhook notice:', err));
-      } catch (e) {}
-    }
 
     setUserProgress(prev => {
       const base = prev || defaultProgress;
@@ -501,6 +657,14 @@ export default function App() {
             >
               <LayoutDashboard size={16} /> My Dashboard
             </button>
+
+            <button
+              className={`nav-tab-btn ${activeTab === 'PRIVACY' ? 'active' : ''}`}
+              onClick={() => { setActiveTab('PRIVACY'); setViewState('PRIVACY'); }}
+              title="Open student and parent privacy choices"
+            >
+              <LockKeyhole size={16} /> Privacy
+            </button>
             
             <button 
               className={`nav-tab-btn ${activeTab === 'BOOKMARKS' ? 'active' : ''}`}
@@ -516,8 +680,8 @@ export default function App() {
               <Database size={16} /> My Records ({safeProgress.attemptHistory?.length || 0})
             </button>
 
-            {/* Admin Portal - STRICTLY ONLY for dilip.sahu@gmail.com */}
-            {((currentUser?.email || safeProgress.studentProfile?.email || '').trim().toLowerCase() === 'dilip.sahu@gmail.com') && (
+            {/* Admin access is granted only by trusted Firebase custom claims. */}
+            {(trustedClaims?.privacyAdmin === true || trustedClaims?.caAdmin === true) && (
               <button 
                 className={`nav-tab-btn ${activeTab === 'TEACHER_ADMIN' ? 'active' : ''}`}
                 onClick={() => { setActiveTab('TEACHER_ADMIN'); setViewState('TEACHER_ADMIN'); }}
@@ -547,7 +711,7 @@ export default function App() {
                 <User size={16} />
               )}
               <span>
-                {currentUser ? (currentUser.displayName ? currentUser.displayName.split(' ')[0] : 'Signed In') : (safeProgress.studentProfile?.name ? safeProgress.studentProfile.name.split(' ')[0] : 'Sign In')}
+                {currentUser ? 'Log out' : 'Sign in / Sign up'}
               </span>
             </button>
 
@@ -576,6 +740,7 @@ export default function App() {
                 setActiveTab('DASHBOARD');
                 setViewState('DASHBOARD');
               }}
+              onSignOut={handleSignOut}
               currentUser={currentUser}
             />
           </ModuleErrorBoundary>
@@ -795,16 +960,32 @@ export default function App() {
           <AdminPortal 
             localAttempts={safeProgress.attemptHistory || []}
             localProfile={safeProgress.studentProfile}
-            currentUserEmail={currentUser?.email || safeProgress.studentProfile?.email}
+            isPrivacyAdmin={trustedClaims?.privacyAdmin === true}
+            isCAAdmin={trustedClaims?.privacyAdmin === true || trustedClaims?.caAdmin === true}
+          />
+        )}
+
+        {viewState === 'PRIVACY' && (
+          <PrivacyCentre
+            privacyState={trustedClaims ? {
+              status: trustedClaims.privacyStatus,
+              ageBand: trustedClaims.subjectType === 'CHILD' ? 'CHILD' : 'ADULT'
+            } : null}
+            studentProfile={safeProgress.studentProfile}
+            requests={privacyRequests}
+            onSubmitRequest={handlePrivacyRequest}
+            onRefreshRequests={refreshPrivacyRequests}
           />
         )}
 
         <AuthModal 
           isOpen={isAuthModalOpen}
           onClose={() => setIsAuthModalOpen(false)}
-          onGoogleSignIn={handleGoogleSignIn}
-          onEmailLogin={handleEmailLogin}
+          onExistingGoogleSignIn={handleExistingGoogleSignIn}
+          onAdultGoogleSignIn={handleAdultGoogleSignIn}
+          onChildGoogleSignIn={handleChildGoogleSignIn}
           onGuestContinue={() => setIsAuthModalOpen(false)}
+          onParentConsentRequested={handleParentConsentRequested}
         />
 
         <StudentProfileModal 

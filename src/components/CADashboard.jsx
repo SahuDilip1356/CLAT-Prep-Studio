@@ -4,10 +4,10 @@ import {
   BookOpen, Clock, Zap, MapPin, ShieldCheck, Award, CheckCircle, HelpCircle, 
   AlertCircle, Compass, Target, BookMarked, RefreshCw, Star, ChevronRight
 } from 'lucide-react';
-import graphData from '../data/ca_knowledge_graph.json';
 import CAKnowledgeGraph from './CAKnowledgeGraph';
 import GKDailyOnePagers from './GKDailyOnePagers';
 import GKQCardStudio from './GKQCardStudio';
+import { useCAContent } from '../caContent';
 
 export default function CADashboard({ 
   questions, userProgress, onStartDayDrill, onStartTopicPractice, 
@@ -15,6 +15,7 @@ export default function CADashboard({
   bookmarkedCardIds, onToggleQCardBookmark,
   bookmarkedDossierIds, onToggleDossierBookmark
 }) {
+  const { dossiers: graphData, qcards } = useCAContent();
   const [caTab, setCaTab] = useState('HOME'); // 'HOME' vs 'GRAPH' vs 'ONE_PAGERS' vs 'QCARDS'
   
   // Controlled states passed down to CAKnowledgeGraph
@@ -53,7 +54,7 @@ export default function CADashboard({
   const pendingP1Count = p1Dossiers.length - completedP1s.length;
 
   // 2. Calculate Revision Due (Leitner Box 1)
-  const savedBoxes = localStorage.getItem('clat_leitner_boxes');
+  const savedBoxes = sessionStorage.getItem('clat_leitner_boxes');
   let revisionDueCount = 0;
   if (savedBoxes) {
     try {
@@ -505,6 +506,7 @@ export default function CADashboard({
       {/* Tab Content */}
       {caTab === 'GRAPH' && (
         <CAKnowledgeGraph 
+          graphData={graphData}
           externalSelectedNodeIndex={selectedDossierIndex}
           setExternalSelectedNodeIndex={setSelectedDossierIndex}
           externalActiveLens={activeLens}
@@ -514,9 +516,12 @@ export default function CADashboard({
           onToggleDossierBookmark={onToggleDossierBookmark}
         />
       )}
-      {caTab === 'ONE_PAGERS' && <GKDailyOnePagers onStartTopicPractice={onStartTopicPractice} />}
+      {caTab === 'ONE_PAGERS' && (
+        <GKDailyOnePagers qcards={qcards} onStartTopicPractice={onStartTopicPractice} />
+      )}
       {caTab === 'QCARDS' && (
         <GKQCardStudio
+          qcards={qcards}
           onStartTopicPractice={onStartTopicPractice}
           bookmarkedCardIds={bookmarkedCardIds}
           onToggleBookmark={onToggleQCardBookmark}

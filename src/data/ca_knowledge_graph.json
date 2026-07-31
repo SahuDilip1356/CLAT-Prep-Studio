@@ -489,51 +489,157 @@
     "title": "Election Commission and Electoral Reforms",
     "priority": "P1",
     "category": "Indian polity and governance",
-    "subcategory": "electoral integrity & Article 324",
+    "subcategory": "special intensive revision, Article 324 and electoral-roll safeguards",
     "importanceScore": 94,
     "status": "APPROVED",
     "continuingIssue": true,
     "examYear": "CLAT/AILET 2027",
-    "whyThisMayBeAsked": "High-yield topic included in official CLAT & AILET 2027 Current Affairs Master Catalogue.",
-    "lastVerifiedDate": "2026-07-22",
+    "whyThisMayBeAsked": "The continuing Special Intensive Revision combines Article 324, the Representation of the People Act, voter inclusion, claims and objections, appeals, and judicial review.",
+    "lastVerifiedDate": "2026-07-26",
     "month": "Continuing Issues",
     "dossier": {
-      "whatHappened": "The latest verified developments regarding Election Commission and Electoral Reforms highlight significant constitutional, policy, or international law changes relevant for CLAT and AILET 2027.",
-      "background": "Historical, legal, and institutional background explaining the evolution of Election Commission and Electoral Reforms in Indian polity and global governance.",
+      "whatHappened": "On 25 July 2026, the Union Law Ministry gave Parliament a consolidated account of the Election Commission of India\u2019s Special Intensive Revision of electoral rolls. The reply described phased revision across states and Union Territories and detailed inclusion safeguards: repeated Booth Level Officer visits, recorded reasons where enumeration forms are not collected, publication of draft rolls, claims and objections through prescribed forms, two levels of statutory appeal, participation by political parties through Booth Level Agents, and random supervisory audits. It also cited the Supreme Court\u2019s 27 May 2026 judgment upholding the Commission\u2019s power to conduct the exercise under Article 324 and the Representation of the People Act, 1950.",
+      "background": "Electoral rolls determine who may vote in a constituency. Article 324 vests superintendence, direction, and control of elections in the Election Commission, while the Representation of the People Act, 1950 and Registration of Electors Rules, 1960 supply the statutory machinery for preparation, revision, correction, inclusion, and deletion. A Special Intensive Revision is more extensive than a routine summary revision and requires field verification. The current exercise has proceeded in phases, with schedules adjusted in some states. Because erroneous exclusion directly affects electoral participation, notice, reasons, claims, objections, appeals, and transparent draft publication are central safeguards.",
       "timeline": [
         {
-          "date": "2024-2025",
-          "event": "Initial policy or judicial developments leading to Election Commission and Electoral Reforms."
+          "date": "27 October 2025",
+          "event": "The Election Commission announced a second phase of Special Intensive Revision across multiple states and Union Territories."
         },
         {
-          "date": "2026",
-          "event": "Official executive notifications, parliamentary actions, or judicial rulings regarding Election Commission and Electoral Reforms."
+          "date": "4 April 2026",
+          "event": "A further phase began in 12 states and Union Territories, including Karnataka, Haryana, and Andhra Pradesh."
+        },
+        {
+          "date": "27 May 2026",
+          "event": "The Supreme Court upheld the Election Commission\u2019s authority to conduct SIR under the 1950 Act and Article 324 in Association for Democratic Reforms v. Election Commission of India."
+        },
+        {
+          "date": "15 July 2026",
+          "event": "The Commission extended revision schedules in Karnataka and certain other states to permit further enumeration and verification."
+        },
+        {
+          "date": "25 July 2026",
+          "event": "The Law Ministry\u2019s parliamentary reply set out the phased exercise, inclusion safeguards, appellate remedies, and audit mechanisms."
         }
       ],
       "keyPeopleAndOrgs": [
-        "Entity: Governing Ministry / Body for Election Commission and Electoral Reforms",
-        "Entity: Supreme Court of India / International Authority",
-        "Entity: Executive & Statutory Authorities"
+        "Election Commission of India: Constitutional authority directing electoral-roll preparation and revision.",
+        "Electoral Registration Officer: Statutory officer responsible for the constituency roll and first-instance decisions on claims and objections.",
+        "Booth Level Officer: Field official who conducts household visits and assists with enumeration and verification.",
+        "Booth Level Agent: Political-party representative who participates in the roll-revision process and flags inclusion or deletion issues.",
+        "District Magistrate or designated appellate authority: Hears the first statutory appeal, followed by a second appeal to the Chief Electoral Officer.",
+        "Supreme Court of India: Reviewed and upheld the Commission\u2019s authority to undertake SIR while emphasising statutory safeguards."
       ],
-      "legalSignificance": "Relevant constitutional articles, statutory acts, and landmark judicial precedents governing Election Commission and Electoral Reforms.",
-      "staticGkConnection": "Core historical facts, geographic details, institutional headquarters, and foundational concepts connected to Election Commission and Electoral Reforms."
+      "legalSignificance": "Article 324 is broad but operates with parliamentary election law. The exercise therefore rests on both constitutional authority and the procedures prescribed by the 1950 Act and 1960 Rules.\n\n- **Article 324 of the Constitution**: vests superintendence, direction, and control of electoral rolls and elections in the Election Commission.\n- **Article 326 of the Constitution**: establishes adult suffrage for elections to the House of the People and State Legislative Assemblies, subject to constitutional and statutory qualifications.\n- **Representation of the People Act, 1950**: governs electoral rolls, qualification for registration, inclusion, correction, and related appeals.\n- **Registration of Electors Rules, 1960**: prescribe forms and procedures for draft publication, claims, objections, corrections, and inclusion.\n- **Judicial review**: remains available to test whether constitutional and statutory powers have been exercised lawfully, fairly, and without arbitrary exclusion.",
+      "staticGkConnection": "Candidates should distinguish the constitutional body from the field officers and understand that publication of a draft roll is not the end of the process.\n\n- **Election Commission of India**: is a constitutional body headquartered in New Delhi.\n- **Electoral roll**: is the official constituency-wise register of eligible electors.\n- **Form 6**: is used for new inclusion in the electoral roll.\n- **Form 7**: is used to object to a proposed inclusion or seek deletion of an existing entry.\n- **Form 8**: is used for correction, shifting of residence within a constituency, replacement EPIC, or marking a person with disability.\n- **EPIC**: means Elector Photo Identity Card and is evidence of registration, not the source of the right to be registered."
     },
-    "facts": [],
+    "facts": [
+      {
+        "id": "fact-1",
+        "factText": "Article 324 of the Constitution governs vests superintendence, direction, and control of electoral rolls and elections in the Election Commission.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-2",
+        "factText": "Article 326 of the Constitution governs establishes adult suffrage for elections to the House of the People and State Legislative Assemblies, subject to constitutional and statutory qualifications.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-3",
+        "factText": "Representation of the People Act, 1950 governs governs electoral rolls, qualification for registration, inclusion, correction, and related appeals.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-4",
+        "factText": "Registration of Electors Rules, 1960 governs prescribe forms and procedures for draft publication, claims, objections, corrections, and inclusion.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-5",
+        "factText": "Judicial review governs remains available to test whether constitutional and statutory powers have been exercised lawfully, fairly, and without arbitrary exclusion.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-6",
+        "factText": "Election Commission of India: is a constitutional body headquartered in New Delhi.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-7",
+        "factText": "Electoral roll: is the official constituency-wise register of eligible electors.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-8",
+        "factText": "Form 6: is used for new inclusion in the electoral roll.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-9",
+        "factText": "Form 7: is used to object to a proposed inclusion or seek deletion of an existing entry.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-10",
+        "factText": "Form 8: is used for correction, shifting of residence within a constituency, replacement EPIC, or marking a person with disability.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-11",
+        "factText": "EPIC: means Elector Photo Identity Card and is evidence of registration, not the source of the right to be registered.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      }
+    ],
     "clatPassage": {
-      "passageText": "The development concerning Election Commission and Electoral Reforms represents a vital aspect of contemporary legal and general awareness. Under the established framework of Indian constitutional law and international jurisprudence, actions taken by statutory authorities are continuously tested against fundamental rights, statutory mandates, and global treaty obligations. For CLAT and AILET aspirants, mastering the precise legal terms, historical context, and connected static GK of Election Commission and Electoral Reforms is essential for contextual reasoning and rapid factual recall.",
+      "passageText": "The Election Commission\u2019s Special Intensive Revision uses house-to-house verification to update electoral rolls. A parliamentary reply dated 25 July 2026 said Booth Level Officers must make two or three visits where needed and record reasons if an enumeration form cannot be collected. Draft rolls are then published, after which electors and political parties may file claims and objections using Forms 6, 7, and 8. Decisions of the Electoral Registration Officer may be appealed first to the District Magistrate or another designated authority and then to the Chief Electoral Officer. Booth Level Agents appointed by political parties may participate, and supervisors conduct random audits. The Supreme Court has upheld the Commission\u2019s authority to undertake SIR under Article 324 and the Representation of the People Act, 1950. This authority does not erase statutory procedure: field verification, notice, reasons, draft publication, remedies, and review help protect eligible electors from wrongful exclusion.",
       "questions": [
         {
           "id": "CONT-21-clat-q-1",
           "format": "PASSAGE_BASED",
-          "questionText": "What is the primary legal or constitutional principle underlying Election Commission and Electoral Reforms?",
+          "questionText": "Which proposition is best supported by the passage?",
           "options": [
-            "Compliance with statutory provisions and fundamental rights.",
-            "Automatic suspension of all prior constitutional precedents.",
-            "Exclusive delegation of sovereign power to private entities.",
-            "Exemption from judicial review under Article 32."
+            "Article 324 allows the Election Commission to disregard all election statutes.",
+            "Publication of a draft roll eliminates the need for claims and objections.",
+            "SIR authority coexists with statutory procedures designed to protect eligible electors.",
+            "A Booth Level Agent finally decides every registration dispute."
+          ],
+          "correctAnswer": "C",
+          "explanation": "The passage treats Article 324 and the statutory framework as complementary and identifies procedural safeguards against wrongful exclusion."
+        },
+        {
+          "id": "CONT-21-clat-q-2",
+          "format": "PASSAGE_BASED",
+          "questionText": "An elector aggrieved by the first appellate decision described in the passage may next approach:",
+          "options": [
+            "the Chief Electoral Officer",
+            "the Finance Commission",
+            "the Comptroller and Auditor General",
+            "the Inter-State Council"
           ],
           "correctAnswer": "A",
-          "explanation": "Option A reflects the established constitutional and statutory framework governing Election Commission and Electoral Reforms."
+          "explanation": "The reply identifies a first appeal to the District Magistrate or designated authority and a second appeal to the Chief Electoral Officer."
         }
       ]
     },
@@ -541,43 +647,84 @@
       {
         "id": "CONT-21-ailet-q-1",
         "format": "DIRECT",
-        "questionText": "Which constitutional Article, statute, or international body is directly linked to Election Commission and Electoral Reforms?",
+        "questionText": "Which constitutional Article vests control of electoral rolls and elections in the Election Commission?",
         "options": [
-          "Primary statutory authority or constitutional provision governing Election Commission and Electoral Reforms.",
-          "Article 368 procedural amendment clause only.",
-          "1864 Geneva Convention exclusively.",
-          "UNCLOS Annex I maritime court."
+          "Article 280",
+          "Article 324",
+          "Article 343",
+          "Article 368"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Article 324 is the constitutional source of the Election Commission\u2019s supervisory election authority."
+      },
+      {
+        "id": "CONT-21-ailet-q-2",
+        "format": "DIRECT",
+        "questionText": "Which form is ordinarily used for a new inclusion in an electoral roll?",
+        "options": [
+          "Form 6",
+          "Form 7",
+          "Form 8",
+          "Form 16"
         ],
         "correctAnswer": "A",
-        "explanation": "Election Commission and Electoral Reforms is directly governed by its primary statutory framework and constitutional mandate."
+        "explanation": "Form 6 is the prescribed application for inclusion of a new elector."
       }
     ],
     "qcards": [
       {
         "id": "CONT-21-card-1",
-        "front": "- **Front**: What is the core factual or legal point behind Election Commission and Electoral Reforms?",
-        "back": "Codified under relevant constitutional provisions and verified primary documents.",
+        "front": "- **Front**: What are the principal legal foundations for SIR?",
+        "back": "Article 324, the Representation of the People Act, 1950, and the Registration of Electors Rules, 1960.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "CONT-21-card-2",
+        "front": "What are Forms 6, 7, and 8 used for?",
+        "back": "Form 6 for inclusion, Form 7 for objection or deletion, and Form 8 for correction or specified changes.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "CONT-21-card-3",
+        "front": "What two statutory appellate levels did the 25 July reply identify?",
+        "back": "First the District Magistrate or designated authority, then the Chief Electoral Officer.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "CONT-21-card-4",
+        "front": "What field-level safeguards accompany enumeration?",
+        "back": "Repeated BLO visits, recorded reasons for non-collection, BLA participation, draft publication, and random supervisory audits.",
         "difficulty": "BOX-1",
         "nextReviewDate": "2026-07-22"
       }
     ],
     "onePager": {
-      "thirtySecondSummary": "Key 30-second summary of Election Commission and Electoral Reforms for CLAT/AILET 2027 revision.",
-      "fiveFactsToMemorize": [],
-      "examTraps": [
-        "Do not confuse Election Commission and Electoral Reforms with non-statutory policy guidelines."
+      "thirtySecondSummary": "The 25 July parliamentary reply explains how SIR combines ECI\u2019s Article 324 authority with field verification, draft publication, prescribed forms, two appeals, party participation, and audits.",
+      "fiveFactsToMemorize": [
+        "Constitutional base: Article 324; adult suffrage link: Article 326.",
+        "Statutory base: Representation of the People Act, 1950.",
+        "Procedure: Registration of Electors Rules, 1960.",
+        "Forms: 6 inclusion, 7 objection/deletion, 8 correction or shifting.",
+        "Appeals: designated district authority, then Chief Electoral Officer."
       ],
-      "mnemonic": "Remember: Election Commission and Electoral Reforms requires exact statutory authority and verified primary source backing."
+      "examTraps": [
+        "Article 324 does not place electoral-roll revision outside the 1950 Act and 1960 Rules.",
+        "A draft electoral roll is provisional and remains open to claims, objections, corrections, and appeals."
+      ],
+      "mnemonic": "\u201c324 directs; 1950 enables; 6-7-8 repairs.\u201d"
     },
     "geoCard": {
-      "location": "New Delhi / International Headquarters",
-      "capital": "New Delhi / Administrative Capital",
-      "significance": "Primary administrative, legal, or diplomatic center for Election Commission and Electoral Reforms."
+      "location": "Phased implementation across participating Indian states and Union Territories",
+      "capital": "Election Commission headquarters, New Delhi",
+      "significance": "Accurate rolls are the gateway to electoral participation and affect representation in every revised constituency."
     },
     "confusionTraps": {
-      "frequentlyConfusedWith": "Election Commission and Electoral Reforms vs Related Legal Provision",
-      "whyTheyDiffer": "Distinct statutory scope, constitutional jurisdiction, or treaty mandate.",
-      "memoryClue": "Key takeaway for Election Commission and Electoral Reforms: Verify exact statutory definition and authority."
+      "frequentlyConfusedWith": "Special Intensive Revision, summary revision, delimitation, and voter-ID issuance.",
+      "whyTheyDiffer": "Revision updates who is enrolled; delimitation changes constituency boundaries; an EPIC records identity but does not itself create eligibility.",
+      "memoryClue": "\u201cRoll decides the register; delimitation draws the map.\u201d"
     },
     "folderOrder": "00_Continuing_Issues"
   },
@@ -20499,53 +20646,151 @@
   {
     "id": "MAY-06",
     "title": "Public Examinations Act",
-    "priority": "P1",
+    "priority": "P2",
     "category": "Law and justice",
-    "subcategory": "Public Examinations (Prevention of Unfair Means) Act 2024",
-    "importanceScore": 95,
+    "subcategory": "anti-paper-leak law and proposed 2026 amendment",
+    "importanceScore": 91,
     "status": "APPROVED",
-    "continuingIssue": false,
+    "continuingIssue": true,
     "examYear": "CLAT/AILET 2027",
-    "whyThisMayBeAsked": "High-yield topic included in official CLAT & AILET 2027 Current Affairs Master Catalogue.",
-    "lastVerifiedDate": "2026-07-22",
+    "whyThisMayBeAsked": "The Cabinet-approved draft amendment connects criminal-law deterrence, special courts, appellate procedure, and the distinction between an enacted statute and a proposed Bill.",
+    "lastVerifiedDate": "2026-07-26",
     "month": "May 2026",
     "dossier": {
-      "whatHappened": "The latest verified developments regarding Public Examinations Act highlight significant constitutional, policy, or international law changes relevant for CLAT and AILET 2027.",
-      "background": "Historical, legal, and institutional background explaining the evolution of Public Examinations Act in Indian polity and global governance.",
+      "whatHappened": "On 24 July 2026, the Prime Minister\u2019s Office said the Union Cabinet had approved stricter action against examination paper leaks. A draft Public Examinations (Prevention of Unfair Means) Amendment Bill, 2026 was subsequently reported as having been circulated to Members of Parliament. The proposal would increase punishment for individual offenders and organised crime, create a Special Task Force for specified cases, and provide for fast-track trial by designated Sessions Courts. These are proposed changes: until Parliament passes the Bill and it receives presidential assent and commencement as required, the Public Examinations (Prevention of Unfair Means) Act, 2024 remains the governing central law in its existing form.",
+      "background": "The 2024 Act was enacted as Act 1 of 2024 and came into force on 21 June 2024. It targets unfair means in public examinations conducted by authorities listed in its Schedule, including leakage of question papers, unauthorised assistance, tampering with computer systems, and collusion by service providers. Candidates are not treated as offenders under this central Act and remain governed by the rules of the relevant examination authority. The current statute distinguishes ordinary offences from organised crime and permits investigation by an officer not below the rank of Deputy Superintendent of Police or Assistant Commissioner of Police. The 2026 draft seeks to strengthen that framework after recurring paper-leak controversies.",
       "timeline": [
         {
-          "date": "2024-2025",
-          "event": "Initial policy or judicial developments leading to Public Examinations Act."
+          "date": "12 February 2024",
+          "event": "The Public Examinations (Prevention of Unfair Means) Act, 2024 received presidential assent."
         },
         {
-          "date": "2026",
-          "event": "Official executive notifications, parliamentary actions, or judicial rulings regarding Public Examinations Act."
+          "date": "21 June 2024",
+          "event": "The central government brought the 2024 Act into force."
+        },
+        {
+          "date": "23 July 2026",
+          "event": "The Prime Minister announced that fast-track courts would hear paper-leak cases."
+        },
+        {
+          "date": "24 July 2026",
+          "event": "The PMO stated that the Union Cabinet had approved stricter legal action against paper leaks."
+        },
+        {
+          "date": "25 July 2026",
+          "event": "The Indian Express reported that the draft 2026 amendment had been circulated to MPs with enhanced punishments, a Special Task Force, and time-bound trials."
         }
       ],
       "keyPeopleAndOrgs": [
-        "Entity: Governing Ministry / Body for Public Examinations Act",
-        "Entity: Supreme Court of India / International Authority",
-        "Entity: Executive & Statutory Authorities"
+        "Union Cabinet: Approved the proposal for stricter legal action according to the PMO.",
+        "Parliament of India: Must consider and pass any amendment before it can alter the 2024 Act.",
+        "Public examination authorities: Bodies named in the Act\u2019s Schedule whose examinations receive statutory protection.",
+        "State governments and Union Territory administrations: Would designate fast-track Sessions Courts in consultation with the Chief Justice of the relevant High Court under the reported draft.",
+        "Special Task Force: The proposed investigating unit for specified organised paper-leak cases, with a reported two-month investigation target."
       ],
-      "legalSignificance": "Relevant constitutional articles, statutory acts, and landmark judicial precedents governing Public Examinations Act.",
-      "staticGkConnection": "Core historical facts, geographic details, institutional headquarters, and foundational concepts connected to Public Examinations Act."
+      "legalSignificance": "The development tests accurate legislative-status reading. Cabinet approval and circulation of a draft do not themselves amend an Act; the proposal must complete the parliamentary and constitutional process.\n\n- **Article 107 of the Constitution**: governs introduction and passage of ordinary Bills in Parliament.\n- **Article 111 of the Constitution**: concerns presidential assent to Bills passed by Parliament.\n- **Public Examinations Act, 2024**: currently provides three to five years\u2019 imprisonment and a fine up to \u20b910 lakh for ordinary offences, with a minimum five years and a fine of at least \u20b91 crore for organised crime.\n- **Reported 2026 draft**: proposes five to ten years and a fine up to \u20b950 lakh for ordinary offenders, and a minimum seven years with a fine of at least \u20b910 crore for organised crime.\n- **Fast-track Sessions Courts**: remain part of the ordinary judiciary; speed of trial does not displace fair-trial protections or High Court supervision.",
+      "staticGkConnection": "This issue connects the stages of legislation with criminal procedure and the institutional structure of public examinations.\n\n- **Ordinary Bill**: may originate in either House of Parliament and generally requires passage by both Houses and presidential assent.\n- **Sessions Court**: is the principal criminal court at the district level under the High Court\u2019s judicial supervision.\n- **Cognisable offence**: permits police arrest without warrant, subject to statutory safeguards.\n- **Non-bailable offence**: does not mean bail is impossible; it means bail is not available as an automatic right and depends on judicial discretion.\n- **Scheduled authority**: the central Act applies to examinations conducted by authorities specified in its Schedule, rather than every examination held in India."
     },
-    "facts": [],
+    "facts": [
+      {
+        "id": "fact-1",
+        "factText": "Article 107 of the Constitution governs governs introduction and passage of ordinary Bills in Parliament.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-2",
+        "factText": "Article 111 of the Constitution governs concerns presidential assent to Bills passed by Parliament.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-3",
+        "factText": "Public Examinations Act, 2024 governs currently provides three to five years\u2019 imprisonment and a fine up to \u20b910 lakh for ordinary offences, with a minimum five years and a fine of at least \u20b91 crore for organised crime.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-4",
+        "factText": "Reported 2026 draft governs proposes five to ten years and a fine up to \u20b950 lakh for ordinary offenders, and a minimum seven years with a fine of at least \u20b910 crore for organised crime.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-5",
+        "factText": "Fast-track Sessions Courts governs remain part of the ordinary judiciary; speed of trial does not displace fair-trial protections or High Court supervision.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-6",
+        "factText": "Ordinary Bill: may originate in either House of Parliament and generally requires passage by both Houses and presidential assent.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-7",
+        "factText": "Sessions Court: is the principal criminal court at the district level under the High Court\u2019s judicial supervision.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-8",
+        "factText": "Cognisable offence: permits police arrest without warrant, subject to statutory safeguards.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-9",
+        "factText": "Non-bailable offence: does not mean bail is impossible; it means bail is not available as an automatic right and depends on judicial discretion.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-10",
+        "factText": "Scheduled authority: the central Act applies to examinations conducted by authorities specified in its Schedule, rather than every examination held in India.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      }
+    ],
     "clatPassage": {
-      "passageText": "The development concerning Public Examinations Act represents a vital aspect of contemporary legal and general awareness. Under the established framework of Indian constitutional law and international jurisprudence, actions taken by statutory authorities are continuously tested against fundamental rights, statutory mandates, and global treaty obligations. For CLAT and AILET aspirants, mastering the precise legal terms, historical context, and connected static GK of Public Examinations Act is essential for contextual reasoning and rapid factual recall.",
+      "passageText": "The Public Examinations (Prevention of Unfair Means) Act, 2024 criminalises paper leakage, unauthorised assistance, tampering, and organised cheating in public examinations conducted by scheduled authorities. The Act presently provides three to five years\u2019 imprisonment and a fine up to \u20b910 lakh for ordinary offences. Organised crime attracts at least five years\u2019 imprisonment and a fine of at least \u20b91 crore. In July 2026, the Union Cabinet approved a proposal to strengthen the law. According to the draft reported as circulated to MPs, ordinary punishment would rise to five to ten years with a fine up to \u20b950 lakh, while organised crime would attract at least seven years and a fine of at least \u20b910 crore. The proposal also contemplates a Special Task Force, a two-month investigation target, designated Sessions Courts, trial within three months after filing of the charge sheet, and transfer of pending cases. Cabinet approval does not enact these changes. They become law only after the legislative process, presidential assent, and any required commencement step.",
       "questions": [
         {
           "id": "MAY-06-clat-q-1",
           "format": "PASSAGE_BASED",
-          "questionText": "What is the primary legal or constitutional principle underlying Public Examinations Act?",
+          "questionText": "Which statement most accurately describes the legal position on 26 July 2026?",
           "options": [
-            "Compliance with statutory provisions and fundamental rights.",
-            "Automatic suspension of all prior constitutional precedents.",
-            "Exclusive delegation of sovereign power to private entities.",
-            "Exemption from judicial review under Article 32."
+            "The enhanced punishments automatically came into force when the Cabinet approved them.",
+            "The reported draft has repealed the 2024 Act.",
+            "The 2024 Act remains operative in its existing form while the proposed amendment awaits the legislative process.",
+            "Circulation to MPs is legally identical to presidential assent."
           ],
-          "correctAnswer": "A",
-          "explanation": "Option A reflects the established constitutional and statutory framework governing Public Examinations Act."
+          "correctAnswer": "C",
+          "explanation": "Cabinet approval and circulation are pre-enactment stages; they do not by themselves amend the existing statute."
+        },
+        {
+          "id": "MAY-06-clat-q-2",
+          "format": "PASSAGE_BASED",
+          "questionText": "Which institutional arrangement is contemplated by the reported draft?",
+          "options": [
+            "Trial exclusively by the Supreme Court",
+            "Designated Sessions Courts and a Special Task Force for specified cases",
+            "Abolition of police investigation",
+            "Adjudication by examination candidates"
+          ],
+          "correctAnswer": "B",
+          "explanation": "The reported draft provides for a Special Task Force and fast-track trial in designated Sessions Courts."
         }
       ]
     },
@@ -20553,43 +20798,84 @@
       {
         "id": "MAY-06-ailet-q-1",
         "format": "DIRECT",
-        "questionText": "Which constitutional Article, statute, or international body is directly linked to Public Examinations Act?",
+        "questionText": "Which Article concerns presidential assent to a Bill passed by Parliament?",
         "options": [
-          "Primary statutory authority or constitutional provision governing Public Examinations Act.",
-          "Article 368 procedural amendment clause only.",
-          "1864 Geneva Convention exclusively.",
-          "UNCLOS Annex I maritime court."
+          "Article 32",
+          "Article 111",
+          "Article 148",
+          "Article 280"
         ],
-        "correctAnswer": "A",
-        "explanation": "Public Examinations Act is directly governed by its primary statutory framework and constitutional mandate."
+        "correctAnswer": "B",
+        "explanation": "Article 111 provides for the President\u2019s assent, withholding of assent, or return of a non-Money Bill for reconsideration."
+      },
+      {
+        "id": "MAY-06-ailet-q-2",
+        "format": "DIRECT",
+        "questionText": "The Public Examinations (Prevention of Unfair Means) Act, 2024 came into force on:",
+        "options": [
+          "26 January 2024",
+          "12 February 2024",
+          "21 June 2024",
+          "24 July 2026"
+        ],
+        "correctAnswer": "C",
+        "explanation": "India Code records 21 June 2024 as the enforcement date."
       }
     ],
     "qcards": [
       {
         "id": "MAY-06-card-1",
-        "front": "- **Front**: What is the core factual or legal point behind Public Examinations Act?",
-        "back": "Codified under relevant constitutional provisions and verified primary documents.",
+        "front": "- **Front**: Is the reported 2026 amendment already law?",
+        "back": "No. Cabinet approval and circulation of a draft do not amend the 2024 Act; parliamentary passage and presidential assent are still required.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "MAY-06-card-2",
+        "front": "What ordinary punishment does the 2024 Act currently prescribe?",
+        "back": "Three to five years\u2019 imprisonment and a fine up to \u20b910 lakh.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "MAY-06-card-3",
+        "front": "What organised-crime punishment does the reported draft propose?",
+        "back": "At least seven years\u2019 imprisonment and a fine of at least \u20b910 crore.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "MAY-06-card-4",
+        "front": "What time-bound institutions does the reported draft contemplate?",
+        "back": "A Special Task Force with a two-month investigation target and designated Sessions Courts aiming to finish trial within three months of the charge sheet.",
         "difficulty": "BOX-1",
         "nextReviewDate": "2026-07-22"
       }
     ],
     "onePager": {
-      "thirtySecondSummary": "Key 30-second summary of Public Examinations Act for CLAT/AILET 2027 revision.",
-      "fiveFactsToMemorize": [],
-      "examTraps": [
-        "Do not confuse Public Examinations Act with non-statutory policy guidelines."
+      "thirtySecondSummary": "The Cabinet-approved 2026 draft would sharply enhance anti-paper-leak penalties and create time-bound investigation and trial mechanisms, but the existing 2024 Act remains law until the amendment is enacted.",
+      "fiveFactsToMemorize": [
+        "Parent law: Public Examinations (Prevention of Unfair Means) Act, 2024.",
+        "Current ordinary punishment: three to five years and fine up to \u20b910 lakh.",
+        "Proposed ordinary punishment: five to ten years and fine up to \u20b950 lakh.",
+        "Proposed organisedcrime punishment: minimum seven years and fine of at least \u20b910 crore.",
+        "Proposed process: STF investigation target of two months and Sessions Court trial target of three months after charge sheet."
       ],
-      "mnemonic": "Remember: Public Examinations Act requires exact statutory authority and verified primary source backing."
+      "examTraps": [
+        "Do not describe Cabinet approval or circulation to MPs as enactment.",
+        "\u201cNon-bailable\u201d does not mean a court can never grant bail."
+      ],
+      "mnemonic": "\u201cDraft 5\u201310\u201350; gang 7\u201310\u201d: proposed ordinary term 5\u201310 years/\u20b950 lakh; organised minimum 7 years/\u20b910 crore."
     },
     "geoCard": {
-      "location": "New Delhi / International Headquarters",
-      "capital": "New Delhi / Administrative Capital",
-      "significance": "Primary administrative, legal, or diplomatic center for Public Examinations Act."
+      "location": "Parliament and Union government institutions, New Delhi, India",
+      "capital": "New Delhi",
+      "significance": "A uniform central framework addresses nationally conducted examinations while implementation depends on investigators, examination authorities, states, Union Territories, and courts."
     },
     "confusionTraps": {
-      "frequentlyConfusedWith": "Public Examinations Act vs Related Legal Provision",
-      "whyTheyDiffer": "Distinct statutory scope, constitutional jurisdiction, or treaty mandate.",
-      "memoryClue": "Key takeaway for Public Examinations Act: Verify exact statutory definition and authority."
+      "frequentlyConfusedWith": "Cabinet approval, introduction of a Bill, parliamentary passage, presidential assent, and statutory commencement.",
+      "whyTheyDiffer": "These are distinct constitutional and legislative stages; a proposal does not alter the statute merely because the Cabinet approved it.",
+      "memoryClue": "\u201cCabinet proposes; Parliament passes; President assents; notification may commence.\u201d"
     },
     "folderOrder": "05_May_2026"
   },
@@ -20984,7 +21270,7 @@
   {
     "id": "MAY-35",
     "title": "Semiconductor Manufacturing",
-    "priority": "P2",
+    "priority": "P1",
     "category": "Environment and science",
     "subcategory": "fab plants in India",
     "importanceScore": 93,
@@ -28841,7 +29127,7 @@
   {
     "id": "JUL-08D",
     "title": "India\u2019s Commonwealth Games Performance",
-    "priority": "P3",
+    "priority": "P2",
     "category": "Awards, sports and culture",
     "subcategory": "medal tally & sports",
     "importanceScore": 89,
@@ -29035,53 +29321,139 @@
   {
     "id": "JUL-16",
     "title": "India\u2013US Trade Engagement",
-    "priority": "P2",
+    "priority": "P3",
     "category": "Economy and business",
-    "subcategory": "bilateral trade dialogue",
-    "importanceScore": 91,
+    "subcategory": "bilateral trade, Section 301 and forced-labour tariffs",
+    "importanceScore": 85,
     "status": "APPROVED",
-    "continuingIssue": false,
+    "continuingIssue": true,
     "examYear": "CLAT/AILET 2027",
-    "whyThisMayBeAsked": "High-yield topic included in official CLAT & AILET 2027 Current Affairs Master Catalogue.",
-    "lastVerifiedDate": "2026-07-22",
+    "whyThisMayBeAsked": "The new US Section 301 tariff connects India\u2013US trade negotiations with forced-labour regulation, statutory tariff powers, exemptions, and most-favoured-nation duties.",
+    "lastVerifiedDate": "2026-07-26",
     "month": "Jul 2026",
     "dossier": {
-      "whatHappened": "The latest verified developments regarding India\u2013US Trade Engagement highlight significant constitutional, policy, or international law changes relevant for CLAT and AILET 2027.",
-      "background": "Historical, legal, and institutional background explaining the evolution of India\u2013US Trade Engagement in Indian polity and global governance.",
+      "whatHappened": "On 25 July 2026, India\u2019s Ministry of Commerce and Industry responded to final action by the United States Trade Representative under section 301 of the US Trade Act of 1974. The United States placed India in the lower 10% additional-duty tier after initially proposing 12.5%. The Indian statement estimated that exemptions leave about 45% of India\u2019s exports to the United States outside the additional duty, while the remaining 55% attract the new 10% levy. India said negotiations on the bilateral trade agreement and sector-specific questions, including textiles, would continue.",
+      "background": "Section 301 authorises the USTR to investigate and respond to foreign acts, policies, or practices considered unreasonable, discriminatory, or burdensome to US commerce. In March 2026, USTR began investigations covering 60 economies over the absence or enforcement of prohibitions on imports made with forced labour. The final action followed consultations, public comments, and hearings. India\u2019s placement in the 10% tier reflects USTR\u2019s categories for economies that have a forced-labour import prohibition, have committed to one through a reciprocal trade agreement, or operate a partial regime that prevents some forced-labour goods. This tariff is distinct from ordinary most-favoured-nation customs duties and from sectoral section 232 measures.",
       "timeline": [
         {
-          "date": "2024-2025",
-          "event": "Initial policy or judicial developments leading to India\u2013US Trade Engagement."
+          "date": "2 June 2026",
+          "event": "USTR proposed a 12.5% additional duty for India while seeking comments on responsive action in the forced-labour investigations."
         },
         {
-          "date": "2026",
-          "event": "Official executive notifications, parliamentary actions, or judicial rulings regarding India\u2013US Trade Engagement."
+          "date": "7\u20139 July 2026",
+          "event": "USTR held public hearings on the proposed action after receiving written submissions."
+        },
+        {
+          "date": "23 July 2026",
+          "event": "USTR announced final Section 301 action covering 60 economies and placed India in the 10% tier."
+        },
+        {
+          "date": "25 July 2026",
+          "event": "India\u2019s Commerce Ministry stated that roughly 45% of exports were exempt, 55% would face the additional levy, and bilateral trade negotiations would continue."
         }
       ],
       "keyPeopleAndOrgs": [
-        "Entity: Governing Ministry / Body for India\u2013US Trade Engagement",
-        "Entity: Supreme Court of India / International Authority",
-        "Entity: Executive & Statutory Authorities"
+        "Office of the United States Trade Representative: Conducted the Section 301 investigations and imposed the final responsive duties.",
+        "India\u2019s Ministry of Commerce and Industry: Represented India during consultations and issued the official Indian assessment on 25 July.",
+        "Section 301 Committee: Received comments, conducted hearings, and advised USTR on the action.",
+        "World Trade Organization: Supplies the wider rules-based trade framework, including the most-favoured-nation principle, though the challenged measure is US domestic trade action."
       ],
-      "legalSignificance": "Relevant constitutional articles, statutory acts, and landmark judicial precedents governing India\u2013US Trade Engagement.",
-      "staticGkConnection": "Core historical facts, geographic details, institutional headquarters, and foundational concepts connected to India\u2013US Trade Engagement."
+      "legalSignificance": "The issue is principally one of international economic regulation and US statutory trade power rather than a change in Indian constitutional law. It is nevertheless useful for distinguishing domestic tariff authority from treaty obligations and diplomatic negotiation.\n\n- **Section 301, US Trade Act of 1974**: authorises investigation of foreign practices considered unjustifiable, unreasonable, or discriminatory and permits responsive trade action.\n- **Section 232 measures**: are national-security-based sectoral duties; Indian steel, aluminium, and auto parts already covered by them are excluded from the additional Section 301 duty.\n- **Most-favoured-nation duty**: is the ordinary tariff treatment applied under the importing state\u2019s schedule; Reuters reported that the new levy applies in addition to standard US MFN tariffs.\n- **Article 253 of the Constitution of India**: gives Parliament power to legislate for implementing treaties and international agreements, while treaty negotiation remains an executive function.",
+      "staticGkConnection": "The candidate should connect the tariff news to the institutions and vocabulary of world trade rather than treating every customs measure as the same kind of duty.\n\n- **USTR**: is an executive office of the United States responsible for developing and coordinating US international trade policy.\n- **Ad valorem tariff**: is calculated as a percentage of the customs value of the imported product.\n- **MFN principle**: generally requires a WTO member to extend like tariff treatment to like products of other members, subject to recognised exceptions.\n- **Forced labour**: is also addressed by International Labour Organization conventions, linking labour rights with supply-chain and trade policy.\n- **Product exemptions**: mean the headline tariff rate does not automatically apply to every export line from the affected economy."
     },
-    "facts": [],
+    "facts": [
+      {
+        "id": "fact-1",
+        "factText": "Section 301, US Trade Act of 1974 governs authorises investigation of foreign practices considered unjustifiable, unreasonable, or discriminatory and permits responsive trade action.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-2",
+        "factText": "Section 232 measures governs are national-security-based sectoral duties; Indian steel, aluminium, and auto parts already covered by them are excluded from the additional Section 301 duty.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-3",
+        "factText": "Most-favoured-nation duty governs is the ordinary tariff treatment applied under the importing state\u2019s schedule; Reuters reported that the new levy applies in addition to standard US MFN tariffs.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-4",
+        "factText": "Article 253 of the Constitution of India governs gives Parliament power to legislate for implementing treaties and international agreements, while treaty negotiation remains an executive function.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-5",
+        "factText": "USTR: is an executive office of the United States responsible for developing and coordinating US international trade policy.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-6",
+        "factText": "Ad valorem tariff: is calculated as a percentage of the customs value of the imported product.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-7",
+        "factText": "MFN principle: generally requires a WTO member to extend like tariff treatment to like products of other members, subject to recognised exceptions.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-8",
+        "factText": "Forced labour: is also addressed by International Labour Organization conventions, linking labour rights with supply-chain and trade policy.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-9",
+        "factText": "Product exemptions: mean the headline tariff rate does not automatically apply to every export line from the affected economy.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      }
+    ],
     "clatPassage": {
-      "passageText": "The development concerning India\u2013US Trade Engagement represents a vital aspect of contemporary legal and general awareness. Under the established framework of Indian constitutional law and international jurisprudence, actions taken by statutory authorities are continuously tested against fundamental rights, statutory mandates, and global treaty obligations. For CLAT and AILET aspirants, mastering the precise legal terms, historical context, and connected static GK of India\u2013US Trade Engagement is essential for contextual reasoning and rapid factual recall.",
+      "passageText": "The United States Trade Representative completed investigations into 60 economies concerning prohibitions on imports made with forced labour. It imposed an additional 10% duty on India, lower than the 12.5% initially proposed. USTR explained that the 10% tier covers economies that prohibit forced-labour imports, commit to such a prohibition through a reciprocal trade agreement, or operate a partial regime preventing certain forced-labour goods. India\u2019s Commerce Ministry stated that generic pharmaceuticals, smartphones, and specified products that currently attract no additional duty remain outside the new levy. Products already subject to section 232 measures, including steel, aluminium, and auto parts, are also excluded. India estimated that these exemptions leave 45% of its exports outside the additional duty and expose 55% to it. The new Section 301 duty operates separately from ordinary most-favoured-nation tariffs. India said it would continue talks on a bilateral trade agreement and unresolved sector-specific matters such as textiles.",
       "questions": [
         {
           "id": "JUL-16-clat-q-1",
           "format": "PASSAGE_BASED",
-          "questionText": "What is the primary legal or constitutional principle underlying India\u2013US Trade Engagement?",
+          "questionText": "Which conclusion is best supported by the passage?",
           "options": [
-            "Compliance with statutory provisions and fundamental rights.",
-            "Automatic suspension of all prior constitutional precedents.",
-            "Exclusive delegation of sovereign power to private entities.",
-            "Exemption from judicial review under Article 32."
+            "Every Indian export to the United States now attracts a single 10% tariff.",
+            "The new duty is product-sensitive, and some exports remain outside it because of exemptions or other tariff regimes.",
+            "Section 232 duties were abolished when the Section 301 action began.",
+            "India ended bilateral trade negotiations after the final measure."
           ],
-          "correctAnswer": "A",
-          "explanation": "Option A reflects the established constitutional and statutory framework governing India\u2013US Trade Engagement."
+          "correctAnswer": "B",
+          "explanation": "The passage expressly identifies exempt product groups and products already covered by section 232, so the 10% duty does not apply uniformly to every export."
+        },
+        {
+          "id": "JUL-16-clat-q-2",
+          "format": "PASSAGE_BASED",
+          "questionText": "Why was India placed in the 10% tier rather than the initially proposed 12.5% tier, according to the stated framework?",
+          "options": [
+            "India withdrew from the WTO.",
+            "India met one of USTR\u2019s lower-tier conditions concerning forced-labour import restrictions or commitments.",
+            "India agreed to treat section 232 duties as MFN tariffs.",
+            "India prohibited all textile exports to the United States."
+          ],
+          "correctAnswer": "B",
+          "explanation": "USTR\u2019s lower tier covers economies with a prohibition, a reciprocal-agreement commitment, or a partial regime preventing certain forced-labour goods."
         }
       ]
     },
@@ -29089,43 +29461,84 @@
       {
         "id": "JUL-16-ailet-q-1",
         "format": "DIRECT",
-        "questionText": "Which constitutional Article, statute, or international body is directly linked to India\u2013US Trade Engagement?",
+        "questionText": "Under which US statute was the final forced-labour tariff action taken?",
         "options": [
-          "Primary statutory authority or constitutional provision governing India\u2013US Trade Engagement.",
-          "Article 368 procedural amendment clause only.",
-          "1864 Geneva Convention exclusively.",
-          "UNCLOS Annex I maritime court."
+          "Section 301 of the Trade Act of 1974",
+          "Section 3 of the Sherman Act",
+          "Title VII of the Civil Rights Act",
+          "Section 230 of the Communications Decency Act"
         ],
         "correctAnswer": "A",
-        "explanation": "India\u2013US Trade Engagement is directly governed by its primary statutory framework and constitutional mandate."
+        "explanation": "USTR took the action under section 301 of the US Trade Act of 1974."
+      },
+      {
+        "id": "JUL-16-ailet-q-2",
+        "format": "DIRECT",
+        "questionText": "What does an ad valorem tariff use as its basis?",
+        "options": [
+          "The number of containers only",
+          "A percentage of the value of the imported product",
+          "The exporter\u2019s annual profit",
+          "The distance travelled by the shipment"
+        ],
+        "correctAnswer": "B",
+        "explanation": "An ad valorem duty is expressed as a percentage of the customs value."
       }
     ],
     "qcards": [
       {
         "id": "JUL-16-card-1",
-        "front": "- **Front**: What is the core factual or legal point behind India\u2013US Trade Engagement?",
-        "back": "Codified under relevant constitutional provisions and verified primary documents.",
+        "front": "- **Front**: What final Section 301 rate did USTR apply to India in July 2026?",
+        "back": "An additional 10% ad valorem duty, reduced from the 12.5% initially proposed.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "JUL-16-card-2",
+        "front": "What share of Indian exports did the Commerce Ministry estimate would remain outside the additional duty?",
+        "back": "About 45%; the remaining 55% was estimated to attract the additional 10% duty.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "JUL-16-card-3",
+        "front": "Why are steel, aluminium, and auto parts treated separately?",
+        "back": "They are already covered by section 232 measures and were excluded from the additional Section 301 duty.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "JUL-16-card-4",
+        "front": "Is the new Section 301 duty the same as an MFN tariff?",
+        "back": "No. Reuters reported that it applies in addition to standard US most-favoured-nation tariffs.",
         "difficulty": "BOX-1",
         "nextReviewDate": "2026-07-22"
       }
     ],
     "onePager": {
-      "thirtySecondSummary": "Key 30-second summary of India\u2013US Trade Engagement for CLAT/AILET 2027 revision.",
-      "fiveFactsToMemorize": [],
-      "examTraps": [
-        "Do not confuse India\u2013US Trade Engagement with non-statutory policy guidelines."
+      "thirtySecondSummary": "USTR placed India in a lower 10% Section 301 forced-labour tariff tier; India says exemptions shield about 45% of exports and bilateral trade talks will continue.",
+      "fiveFactsToMemorize": [
+        "Final rate for India: 10%, down from the proposed 12.5%.",
+        "Scope estimate: 45% exempt and 55% covered, according to India\u2019s Commerce Ministry.",
+        "USTR investigation: 60 economies and forcedlabour import prohibitions.",
+        "Excluded examples: generic pharmaceuticals, smartphones, and products already under section 232.",
+        "Continuing track: India\u2013US bilateral trade agreement negotiations, including textiles."
       ],
-      "mnemonic": "Remember: India\u2013US Trade Engagement requires exact statutory authority and verified primary source backing."
+      "examTraps": [
+        "Do not say the 10% levy covers every Indian export; exemptions and section 232 exclusions matter.",
+        "Do not confuse Section 301 trade retaliation, section 232 national-security duties, and ordinary MFN customs tariffs."
+      ],
+      "mnemonic": "\u201c301\u201310\u201345/55\u201d: Section 301, 10% duty, with India\u2019s 45% exempt and 55% covered estimate."
     },
     "geoCard": {
-      "location": "New Delhi / International Headquarters",
-      "capital": "New Delhi / Administrative Capital",
-      "significance": "Primary administrative, legal, or diplomatic center for India\u2013US Trade Engagement."
+      "location": "India and the United States",
+      "capital": "New Delhi and Washington, D.C.",
+      "significance": "The dispute links two major trading partners, labour-rights enforcement in global supply chains, market access, and ongoing bilateral trade negotiations."
     },
     "confusionTraps": {
-      "frequentlyConfusedWith": "India\u2013US Trade Engagement vs Related Legal Provision",
-      "whyTheyDiffer": "Distinct statutory scope, constitutional jurisdiction, or treaty mandate.",
-      "memoryClue": "Key takeaway for India\u2013US Trade Engagement: Verify exact statutory definition and authority."
+      "frequentlyConfusedWith": "US section 232 sectoral duties and standard WTO/MFN tariff rates.",
+      "whyTheyDiffer": "Section 301 responds to specified foreign practices, section 232 addresses national-security imports, and MFN rates are ordinary scheduled customs duties.",
+      "memoryClue": "\u201c301 is practice; 232 is security; MFN is schedule.\u201d"
     },
     "folderOrder": "07_Jul_2026"
   },
@@ -29617,53 +30030,151 @@
   {
     "id": "JUL-28",
     "title": "National Anthem and National Song",
-    "priority": "P3",
-    "category": "Awards, sports and culture",
-    "subcategory": "Jana Gana Mana vs Vande Mataram history",
-    "importanceScore": 88,
+    "priority": "P2",
+    "category": "Law, polity and culture",
+    "subcategory": "Vande Mataram, national symbols and proposed penal protection",
+    "importanceScore": 92,
     "status": "APPROVED",
-    "continuingIssue": false,
+    "continuingIssue": true,
     "examYear": "CLAT/AILET 2027",
-    "whyThisMayBeAsked": "High-yield topic included in official CLAT & AILET 2027 Current Affairs Master Catalogue.",
-    "lastVerifiedDate": "2026-07-22",
+    "whyThisMayBeAsked": "The introduced Bill connects national-symbol protection with ordinary legislation, Articles 19 and 51A, legislative status, and the constitutional history of Vande Mataram.",
+    "lastVerifiedDate": "2026-07-26",
     "month": "Jul 2026",
     "dossier": {
-      "whatHappened": "The latest verified developments regarding National Anthem and National Song highlight significant constitutional, policy, or international law changes relevant for CLAT and AILET 2027.",
-      "background": "Historical, legal, and institutional background explaining the evolution of National Anthem and National Song in Indian polity and global governance.",
+      "whatHappened": "The Prevention of Insults to National Honour (Amendment) Bill, 2026 was introduced in the Rajya Sabha on 24 July 2026. The introduced text would replace section 3 of the 1971 Act so that intentionally preventing the singing of either the Indian National Anthem or the National Song, or causing disturbance to an assembly engaged in such singing, is punishable with imprisonment up to three years, a fine, or both. The existing section expressly protects the National Anthem; the Bill would add the National Song, Vande Mataram. The Bill has been introduced but not enacted.",
+      "background": "The Prevention of Insults to National Honour Act, 1971 protects the Constitution, the National Flag, and the National Anthem against specified insults. Its current section 3 punishes intentional prevention of anthem singing or disturbance of an assembly engaged in it. Vande Mataram was composed in Sanskritised Bengali by Bankim Chandra Chattopadhyay and appeared in his novel Anandamath. On 24 January 1950, Constituent Assembly President Rajendra Prasad stated that Vande Mataram, which played a historic part in the freedom struggle, should be honoured equally with Jana Gana Mana, though the Assembly did not insert a separate constitutional provision declaring a national song.",
       "timeline": [
         {
-          "date": "2024-2025",
-          "event": "Initial policy or judicial developments leading to National Anthem and National Song."
+          "date": "1870s\u20131882",
+          "event": "Bankim Chandra Chattopadhyay composed Vande Mataram and included it in Anandamath, published in 1882."
         },
         {
-          "date": "2026",
-          "event": "Official executive notifications, parliamentary actions, or judicial rulings regarding National Anthem and National Song."
+          "date": "1896",
+          "event": "Vande Mataram was sung at a session of the Indian National Congress."
+        },
+        {
+          "date": "24 January 1950",
+          "event": "Rajendra Prasad\u2019s Constituent Assembly statement recognised Jana Gana Mana as the National Anthem and accorded Vande Mataram equal honour for its historic role."
+        },
+        {
+          "date": "23 December 1971",
+          "event": "Parliament enacted the Prevention of Insults to National Honour Act."
+        },
+        {
+          "date": "24 July 2026",
+          "event": "The amendment Bill was introduced in the Rajya Sabha to extend section 3 to the National Song."
         }
       ],
       "keyPeopleAndOrgs": [
-        "Entity: Governing Ministry / Body for National Anthem and National Song",
-        "Entity: Supreme Court of India / International Authority",
-        "Entity: Executive & Statutory Authorities"
+        "Bankim Chandra Chattopadhyay: Author and composer associated with Vande Mataram and Anandamath.",
+        "Rajendra Prasad: President of the Constituent Assembly who made the 24 January 1950 statement on the anthem and song.",
+        "Parliament of India: Enacted the 1971 Act and is considering the 2026 amendment.",
+        "Rajya Sabha: House in which the 2026 Bill was introduced.",
+        "Ministry of Home Affairs: Administrative ministry associated with the national-honour statute and national-symbol protocol."
       ],
-      "legalSignificance": "Relevant constitutional articles, statutory acts, and landmark judicial precedents governing National Anthem and National Song.",
-      "staticGkConnection": "Core historical facts, geographic details, institutional headquarters, and foundational concepts connected to National Anthem and National Song."
+      "legalSignificance": "The Bill illustrates that the legal protection of national symbols is statutory and must be reconciled with constitutional freedoms. It criminalises intentional prevention or disturbance, not every failure to sing.\n\n- **Article 19(1)(a) of the Constitution**: protects freedom of speech and expression, subject to reasonable restrictions under Article 19(2).\n- **Article 25 of the Constitution**: protects freedom of conscience and religion, subject to public order, morality, health, and other constitutional limits.\n- **Article 51A(a) of the Constitution**: states the fundamental duty to abide by the Constitution and respect the National Flag and National Anthem.\n- **Section 3 of the 1971 Act**: currently punishes intentional prevention of anthem singing or disturbance of an assembly, with imprisonment up to three years, fine, or both.\n- **Bijoe Emmanuel v. State of Kerala (1986)**: protected students who respectfully stood but did not sing the National Anthem because of genuinely held religious belief; respectful silence was distinguished from intentional prevention or disturbance.",
+      "staticGkConnection": "The national anthem and national song differ in authorship, language, history, and legal treatment.\n\n- **Jana Gana Mana**: written by Rabindranath Tagore and adopted as India\u2019s National Anthem on 24 January 1950.\n- **Vande Mataram**: composed by Bankim Chandra Chattopadhyay and historically associated with the freedom movement.\n- **Anandamath**: Bankim\u2019s 1882 novel containing Vande Mataram.\n- **Constituent Assembly**: adopted the Constitution and was the forum for Rajendra Prasad\u2019s statement on both songs.\n- **Fundamental duties**: appear in Part IVA of the Constitution; Article 51A(a) expressly names the Flag and Anthem, not the National Song."
     },
-    "facts": [],
+    "facts": [
+      {
+        "id": "fact-1",
+        "factText": "Article 19(1)(a) of the Constitution governs protects freedom of speech and expression, subject to reasonable restrictions under Article 19(2).",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-2",
+        "factText": "Article 25 of the Constitution governs protects freedom of conscience and religion, subject to public order, morality, health, and other constitutional limits.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-3",
+        "factText": "Article 51A(a) of the Constitution governs states the fundamental duty to abide by the Constitution and respect the National Flag and National Anthem.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-4",
+        "factText": "Section 3 of the 1971 Act governs currently punishes intentional prevention of anthem singing or disturbance of an assembly, with imprisonment up to three years, fine, or both.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-5",
+        "factText": "Bijoe Emmanuel v. State of Kerala (1986) governs protected students who respectfully stood but did not sing the National Anthem because of genuinely held religious belief; respectful silence was distinguished from intentional prevention or disturbance.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-6",
+        "factText": "Jana Gana Mana: written by Rabindranath Tagore and adopted as India\u2019s National Anthem on 24 January 1950.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-7",
+        "factText": "Vande Mataram: composed by Bankim Chandra Chattopadhyay and historically associated with the freedom movement.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-8",
+        "factText": "Anandamath: Bankim\u2019s 1882 novel containing Vande Mataram.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-9",
+        "factText": "Constituent Assembly: adopted the Constitution and was the forum for Rajendra Prasad\u2019s statement on both songs.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-10",
+        "factText": "Fundamental duties: appear in Part IVA of the Constitution; Article 51A(a) expressly names the Flag and Anthem, not the National Song.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      }
+    ],
     "clatPassage": {
-      "passageText": "The development concerning National Anthem and National Song represents a vital aspect of contemporary legal and general awareness. Under the established framework of Indian constitutional law and international jurisprudence, actions taken by statutory authorities are continuously tested against fundamental rights, statutory mandates, and global treaty obligations. For CLAT and AILET aspirants, mastering the precise legal terms, historical context, and connected static GK of National Anthem and National Song is essential for contextual reasoning and rapid factual recall.",
+      "passageText": "The 2026 amendment Bill introduced in the Rajya Sabha proposes to replace section 3 of the Prevention of Insults to National Honour Act, 1971. The current section punishes a person who intentionally prevents the singing of the National Anthem or causes disturbance to an assembly engaged in such singing. The introduced text would extend the same rule to the National Song. The maximum punishment stated in the introduced Bill is three years\u2019 imprisonment, a fine, or both. This wording focuses on intentional prevention and disturbance rather than imposing an unqualified duty on every person to sing. That distinction matters because the Supreme Court in Bijoe Emmanuel protected students who stood respectfully during the anthem but did not sing owing to sincere religious belief. Vande Mataram has historic national status through the freedom movement and Rajendra Prasad\u2019s 24 January 1950 statement, while Article 51A(a) expressly refers to respecting the National Flag and National Anthem. As introduced, the Bill is a legislative proposal and not yet an enacted amendment.",
       "questions": [
         {
           "id": "JUL-28-clat-q-1",
           "format": "PASSAGE_BASED",
-          "questionText": "What is the primary legal or constitutional principle underlying National Anthem and National Song?",
+          "questionText": "Which conduct falls most directly within the introduced Bill\u2019s wording?",
           "options": [
-            "Compliance with statutory provisions and fundamental rights.",
-            "Automatic suspension of all prior constitutional precedents.",
-            "Exclusive delegation of sovereign power to private entities.",
-            "Exemption from judicial review under Article 32."
+            "Respectfully standing without singing because of a sincere belief",
+            "Intentionally disrupting an assembly while it sings the National Song",
+            "Studying the constitutional history of Vande Mataram",
+            "Proposing an amendment to the Bill in Parliament"
           ],
-          "correctAnswer": "A",
-          "explanation": "Option A reflects the established constitutional and statutory framework governing National Anthem and National Song."
+          "correctAnswer": "B",
+          "explanation": "The text targets intentional prevention of singing and disturbance of an assembly engaged in singing."
+        },
+        {
+          "id": "JUL-28-clat-q-2",
+          "format": "PASSAGE_BASED",
+          "questionText": "Why is Bijoe Emmanuel relevant to interpreting the proposal?",
+          "options": [
+            "It held that every national song is a constitutional amendment.",
+            "It abolished the 1971 Act.",
+            "It distinguished respectful non-singing based on conscience from conduct that prevents or disrupts anthem singing.",
+            "It declared Vande Mataram the National Anthem."
+          ],
+          "correctAnswer": "C",
+          "explanation": "The decision protects respectful non-singing on sincere religious grounds and does not equate silence with intentional disruption."
         }
       ]
     },
@@ -29671,43 +30182,84 @@
       {
         "id": "JUL-28-ailet-q-1",
         "format": "DIRECT",
-        "questionText": "Which constitutional Article, statute, or international body is directly linked to National Anthem and National Song?",
+        "questionText": "Who composed Vande Mataram?",
         "options": [
-          "Primary statutory authority or constitutional provision governing National Anthem and National Song.",
-          "Article 368 procedural amendment clause only.",
-          "1864 Geneva Convention exclusively.",
-          "UNCLOS Annex I maritime court."
+          "Rabindranath Tagore",
+          "Bankim Chandra Chattopadhyay",
+          "Sarojini Naidu",
+          "Subramania Bharati"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Bankim Chandra Chattopadhyay composed Vande Mataram and included it in Anandamath."
+      },
+      {
+        "id": "JUL-28-ailet-q-2",
+        "format": "DIRECT",
+        "questionText": "Which fundamental duty expressly mentions the National Flag and National Anthem?",
+        "options": [
+          "Article 51A(a)",
+          "Article 51A(g)",
+          "Article 21A",
+          "Article 300A"
         ],
         "correctAnswer": "A",
-        "explanation": "National Anthem and National Song is directly governed by its primary statutory framework and constitutional mandate."
+        "explanation": "Article 51A(a) requires citizens to respect the Constitution, National Flag, and National Anthem."
       }
     ],
     "qcards": [
       {
         "id": "JUL-28-card-1",
-        "front": "- **Front**: What is the core factual or legal point behind National Anthem and National Song?",
-        "back": "Codified under relevant constitutional provisions and verified primary documents.",
+        "front": "- **Front**: What change does the 2026 National Honour Amendment Bill propose?",
+        "back": "It would extend section 3\u2019s protection against intentional prevention or disturbance from the National Anthem to the National Song.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "JUL-28-card-2",
+        "front": "What maximum punishment appears in the introduced Bill?",
+        "back": "Imprisonment up to three years, a fine, or both.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "JUL-28-card-3",
+        "front": "Who composed Vande Mataram and where did it appear?",
+        "back": "Bankim Chandra Chattopadhyay; it appeared in the novel Anandamath.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "JUL-28-card-4",
+        "front": "What principle comes from Bijoe Emmanuel?",
+        "back": "Respectful non-singing based on sincere conscience or religion is distinct from intentionally preventing or disturbing anthem singing.",
         "difficulty": "BOX-1",
         "nextReviewDate": "2026-07-22"
       }
     ],
     "onePager": {
-      "thirtySecondSummary": "Key 30-second summary of National Anthem and National Song for CLAT/AILET 2027 revision.",
-      "fiveFactsToMemorize": [],
-      "examTraps": [
-        "Do not confuse National Anthem and National Song with non-statutory policy guidelines."
+      "thirtySecondSummary": "The Bill introduced on 24 July 2026 would extend section 3 of the 1971 Act to intentional prevention or disturbance of Vande Mataram singing; it retains a three-year maximum and is not yet law.",
+      "fiveFactsToMemorize": [
+        "Bill: Prevention of Insults to National Honour (Amendment) Bill, 2026.",
+        "House and date: Rajya Sabha, 24 July 2026.",
+        "Scope: National Anthem plus National Song under proposed section 3.",
+        "Maximum: three years, fine, or both.",
+        "Static link: Vande Mataram\u2014Bankim\u2014Anandamath\u2014freedom movement."
       ],
-      "mnemonic": "Remember: National Anthem and National Song requires exact statutory authority and verified primary source backing."
+      "examTraps": [
+        "The official introduced text states a maximum of three years; some contemporaneous reporting incorrectly stated five years.",
+        "The proposal does not say that every person must sing, and introduction is not enactment."
+      ],
+      "mnemonic": "\u201cBankim\u2019s song joins Section 3\u201d: Vande Mataram added to the three-year section."
     },
     "geoCard": {
-      "location": "New Delhi / International Headquarters",
-      "capital": "New Delhi / Administrative Capital",
-      "significance": "Primary administrative, legal, or diplomatic center for National Anthem and National Song."
+      "location": "Parliament House, New Delhi, India",
+      "capital": "New Delhi",
+      "significance": "The Bill concerns nationally recognised symbols whose protection applies throughout India and engages both legislative competence and constitutional freedoms."
     },
     "confusionTraps": {
-      "frequentlyConfusedWith": "National Anthem and National Song vs Related Legal Provision",
-      "whyTheyDiffer": "Distinct statutory scope, constitutional jurisdiction, or treaty mandate.",
-      "memoryClue": "Key takeaway for National Anthem and National Song: Verify exact statutory definition and authority."
+      "frequentlyConfusedWith": "Jana Gana Mana, Vande Mataram, a fundamental duty, and an enforceable penal offence.",
+      "whyTheyDiffer": "Jana Gana Mana is the National Anthem; Vande Mataram is the National Song; Article 51A(a) is a fundamental duty, while criminal liability must satisfy the words of the statute.",
+      "memoryClue": "\u201cTagore\u2014anthem; Bankim\u2014song; section 3\u2014intentional obstruction.\u201d"
     },
     "folderOrder": "07_Jul_2026"
   },
@@ -31169,53 +31721,139 @@
   {
     "id": "JUL-46",
     "title": "UNESCO Recognitions",
-    "priority": "P2",
+    "priority": "P3",
     "category": "Awards, sports and culture",
-    "subcategory": "new World Heritage sites",
-    "importanceScore": 91,
+    "subcategory": "Sarnath and the World Heritage Convention",
+    "importanceScore": 77,
     "status": "APPROVED",
-    "continuingIssue": false,
+    "continuingIssue": true,
     "examYear": "CLAT/AILET 2027",
-    "whyThisMayBeAsked": "High-yield topic included in official CLAT & AILET 2027 Current Affairs Master Catalogue.",
-    "lastVerifiedDate": "2026-07-22",
+    "whyThisMayBeAsked": "Sarnath\u2019s inscription supplies a strong current-affairs peg for the World Heritage Convention, Buddhist history, the Ashokan Lion Capital, and India\u2019s heritage institutions.",
+    "lastVerifiedDate": "2026-07-26",
     "month": "Jul 2026",
     "dossier": {
-      "whatHappened": "The latest verified developments regarding UNESCO Recognitions highlight significant constitutional, policy, or international law changes relevant for CLAT and AILET 2027.",
-      "background": "Historical, legal, and institutional background explaining the evolution of UNESCO Recognitions in Indian polity and global governance.",
+      "whatHappened": "On 25 July 2026, the World Heritage Committee inscribed the Ancient Buddhist Site of Sarnath in Uttar Pradesh on the UNESCO World Heritage List at its 48th session in Busan, Republic of Korea. UNESCO and India\u2019s Ministry of Culture both identify it as India\u2019s 45th World Heritage property. The serial property has two component parts: Chaukhandi Stupa and the Archaeological Remains of Sarnath, which include the Dhamekh Stupa, Dharmarajika Stupa, Mulagandhakuti Vihara, and Ashokan Pillar remains.",
+      "background": "Sarnath, near Varanasi, is associated with the Buddha\u2019s first sermon after enlightenment and the beginning of the Buddhist sangha. The site developed through royal, monastic, and lay patronage and contains remains spanning roughly the fifth\u2013fourth centuries BCE to the twelfth century CE. It entered India\u2019s World Heritage Tentative List in 1998, and India submitted the nomination for the 2025\u201326 cycle. Under the 1972 World Heritage Convention, the Committee inscribes properties that possess Outstanding Universal Value and satisfy authenticity, integrity, protection, and management requirements.",
       "timeline": [
         {
-          "date": "2024-2025",
-          "event": "Initial policy or judicial developments leading to UNESCO Recognitions."
+          "date": "3 July 1998",
+          "event": "Sarnath entered India\u2019s Tentative List for possible World Heritage nomination."
         },
         {
-          "date": "2026",
-          "event": "Official executive notifications, parliamentary actions, or judicial rulings regarding UNESCO Recognitions."
+          "date": "January 2025",
+          "event": "India submitted the nomination for the 2025\u201326 cycle."
+        },
+        {
+          "date": "24\u201329 September 2025",
+          "event": "An ICOMOS technical evaluation mission examined the nominated property."
+        },
+        {
+          "date": "25 July 2026",
+          "event": "The 48th World Heritage Committee session inscribed Sarnath, making it India\u2019s 45th listed property."
         }
       ],
       "keyPeopleAndOrgs": [
-        "Entity: Governing Ministry / Body for UNESCO Recognitions",
-        "Entity: Supreme Court of India / International Authority",
-        "Entity: Executive & Statutory Authorities"
+        "World Heritage Committee: The intergovernmental body that decides inscriptions and monitors implementation of the Convention.",
+        "UNESCO World Heritage Centre: Serves as the Convention\u2019s secretariat and coordinates nominations and monitoring.",
+        "Archaeological Survey of India: India\u2019s nodal agency for World Heritage matters and the principal conservation authority at Sarnath.",
+        "ICOMOS: The advisory body that evaluates cultural-property nominations for the Committee."
       ],
-      "legalSignificance": "Relevant constitutional articles, statutory acts, and landmark judicial precedents governing UNESCO Recognitions.",
-      "staticGkConnection": "Core historical facts, geographic details, institutional headquarters, and foundational concepts connected to UNESCO Recognitions."
+      "legalSignificance": "World Heritage inscription is not a transfer of sovereignty to UNESCO. The property remains under Indian jurisdiction, while India accepts international conservation and reporting responsibilities under the Convention.\n\n- **World Heritage Convention, 1972**: creates the List and obliges States Parties to identify, protect, conserve, present, and transmit listed heritage to future generations.\n- **Article 49 of the Constitution of India**: directs the State to protect monuments, places, and objects of national importance from spoliation, disfigurement, destruction, removal, disposal, or export.\n- **Article 51A(f) of the Constitution of India**: makes preservation of the rich heritage of India\u2019s composite culture a fundamental duty of citizens.\n- **Ancient Monuments and Archaeological Sites and Remains Act, 1958**: supplies the central statutory framework for protection of monuments and archaeological sites declared nationally important.",
+      "staticGkConnection": "Sarnath links Buddhist history, Mauryan symbolism, India\u2019s national emblem, and the machinery of UNESCO heritage recognition.\n\n- **First sermon**: Sarnath is traditionally associated with Dharmachakra Pravartana, the \u201cTurning of the Wheel of Dharma.\u201d\n- **Buddhist sangha**: the first sermon to the initial disciples is associated with the formation of the monastic community.\n- **Lion Capital of Ashoka**: excavated at Sarnath and adopted as India\u2019s State Emblem; the wheel from it appears on the national flag.\n- **Tentative List**: inclusion is a prerequisite before a State Party may nominate a property to the World Heritage List.\n- **Three property types**: the Convention recognises cultural, natural, and mixed properties."
     },
-    "facts": [],
+    "facts": [
+      {
+        "id": "fact-1",
+        "factText": "World Heritage Convention, 1972 governs creates the List and obliges States Parties to identify, protect, conserve, present, and transmit listed heritage to future generations.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-2",
+        "factText": "Article 49 of the Constitution of India governs directs the State to protect monuments, places, and objects of national importance from spoliation, disfigurement, destruction, removal, disposal, or export.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-3",
+        "factText": "Article 51A(f) of the Constitution of India governs makes preservation of the rich heritage of India\u2019s composite culture a fundamental duty of citizens.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-4",
+        "factText": "Ancient Monuments and Archaeological Sites and Remains Act, 1958 governs supplies the central statutory framework for protection of monuments and archaeological sites declared nationally important.",
+        "volatility": "PERMANENT",
+        "source": "Constitution of India",
+        "sourceType": "PRIMARY"
+      },
+      {
+        "id": "fact-5",
+        "factText": "First sermon: Sarnath is traditionally associated with Dharmachakra Pravartana, the \u201cTurning of the Wheel of Dharma.\u201d",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-6",
+        "factText": "Buddhist sangha: the first sermon to the initial disciples is associated with the formation of the monastic community.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-7",
+        "factText": "Lion Capital of Ashoka: excavated at Sarnath and adopted as India\u2019s State Emblem; the wheel from it appears on the national flag.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-8",
+        "factText": "Tentative List: inclusion is a prerequisite before a State Party may nominate a property to the World Heritage List.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      },
+      {
+        "id": "fact-9",
+        "factText": "Three property types: the Convention recognises cultural, natural, and mixed properties.",
+        "volatility": "STABLE",
+        "source": "Historical Record",
+        "sourceType": "SECONDARY"
+      }
+    ],
     "clatPassage": {
-      "passageText": "The development concerning UNESCO Recognitions represents a vital aspect of contemporary legal and general awareness. Under the established framework of Indian constitutional law and international jurisprudence, actions taken by statutory authorities are continuously tested against fundamental rights, statutory mandates, and global treaty obligations. For CLAT and AILET aspirants, mastering the precise legal terms, historical context, and connected static GK of UNESCO Recognitions is essential for contextual reasoning and rapid factual recall.",
+      "passageText": "At its 48th session in Busan, the World Heritage Committee inscribed the Ancient Buddhist Site of Sarnath as India\u2019s 45th World Heritage property. The serial nomination contains Chaukhandi Stupa and the Archaeological Remains of Sarnath. UNESCO describes Sarnath as the place where the Buddha met his first disciples and delivered his first sermon after enlightenment. India placed the site on its Tentative List in 1998 and later submitted a formal nomination, which underwent evaluation including an ICOMOS mission. Inscription is based on Outstanding Universal Value and does not make UNESCO the owner of the property. India remains responsible for conservation and management under domestic law and its obligations as a party to the 1972 Convention. In India, Article 49 directs the State to protect monuments of national importance, while Article 51A(f) asks citizens to preserve the country\u2019s composite cultural heritage.",
       "questions": [
         {
           "id": "JUL-46-clat-q-1",
           "format": "PASSAGE_BASED",
-          "questionText": "What is the primary legal or constitutional principle underlying UNESCO Recognitions?",
+          "questionText": "Which statement is most consistent with the passage?",
           "options": [
-            "Compliance with statutory provisions and fundamental rights.",
-            "Automatic suspension of all prior constitutional precedents.",
-            "Exclusive delegation of sovereign power to private entities.",
-            "Exemption from judicial review under Article 32."
+            "UNESCO becomes the legal owner of every inscribed property.",
+            "Inscription removes the site from Indian law.",
+            "India retains jurisdiction while accepting conservation responsibilities under the Convention.",
+            "A site may be nominated without first entering a Tentative List."
           ],
-          "correctAnswer": "A",
-          "explanation": "Option A reflects the established constitutional and statutory framework governing UNESCO Recognitions."
+          "correctAnswer": "C",
+          "explanation": "The passage says ownership and jurisdiction remain with India while Convention and domestic-law conservation duties continue."
+        },
+        {
+          "id": "JUL-46-clat-q-2",
+          "format": "PASSAGE_BASED",
+          "questionText": "What role did ICOMOS play in the Sarnath process?",
+          "options": [
+            "It enacted India\u2019s monument law.",
+            "It evaluated the cultural-property nomination as an advisory body.",
+            "It adopted India\u2019s State Emblem.",
+            "It replaced the World Heritage Committee."
+          ],
+          "correctAnswer": "B",
+          "explanation": "ICOMOS is the Committee\u2019s advisory body for cultural nominations and conducted a technical evaluation mission."
         }
       ]
     },
@@ -31223,43 +31861,84 @@
       {
         "id": "JUL-46-ailet-q-1",
         "format": "DIRECT",
-        "questionText": "Which constitutional Article, statute, or international body is directly linked to UNESCO Recognitions?",
+        "questionText": "Sarnath is chiefly associated with which event in the Buddha\u2019s life?",
         "options": [
-          "Primary statutory authority or constitutional provision governing UNESCO Recognitions.",
-          "Article 368 procedural amendment clause only.",
-          "1864 Geneva Convention exclusively.",
-          "UNCLOS Annex I maritime court."
+          "Birth",
+          "First sermon",
+          "Enlightenment",
+          "Mahaparinirvana"
         ],
-        "correctAnswer": "A",
-        "explanation": "UNESCO Recognitions is directly governed by its primary statutory framework and constitutional mandate."
+        "correctAnswer": "B",
+        "explanation": "Sarnath is associated with the Buddha\u2019s first sermon after enlightenment."
+      },
+      {
+        "id": "JUL-46-ailet-q-2",
+        "format": "DIRECT",
+        "questionText": "Which constitutional provision directs the State to protect monuments of national importance?",
+        "options": [
+          "Article 32",
+          "Article 49",
+          "Article 123",
+          "Article 280"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Article 49 is the Directive Principle concerning protection of monuments and objects of national importance."
       }
     ],
     "qcards": [
       {
         "id": "JUL-46-card-1",
-        "front": "- **Front**: What is the core factual or legal point behind UNESCO Recognitions?",
-        "back": "Codified under relevant constitutional provisions and verified primary documents.",
+        "front": "- **Front**: Where and when was Sarnath inscribed on the World Heritage List?",
+        "back": "At the 48th World Heritage Committee session in Busan on 25 July 2026.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "JUL-46-card-2",
+        "front": "What number World Heritage property did Sarnath become for India?",
+        "back": "India\u2019s 45th World Heritage property.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "JUL-46-card-3",
+        "front": "What are the two components of the serial property?",
+        "back": "Chaukhandi Stupa and the Archaeological Remains of Sarnath.",
+        "difficulty": "BOX-1",
+        "nextReviewDate": "2026-07-22"
+      },
+      {
+        "id": "JUL-46-card-4",
+        "front": "Which advisory body evaluated the cultural nomination?",
+        "back": "ICOMOS, the International Council on Monuments and Sites.",
         "difficulty": "BOX-1",
         "nextReviewDate": "2026-07-22"
       }
     ],
     "onePager": {
-      "thirtySecondSummary": "Key 30-second summary of UNESCO Recognitions for CLAT/AILET 2027 revision.",
-      "fiveFactsToMemorize": [],
-      "examTraps": [
-        "Do not confuse UNESCO Recognitions with non-statutory policy guidelines."
+      "thirtySecondSummary": "Sarnath became India\u2019s 45th World Heritage property on 25 July 2026, linking a live UNESCO decision with Buddhist history, Articles 49 and 51A(f), and ASI conservation.",
+      "fiveFactsToMemorize": [
+        "Session: 48th World Heritage Committee, Busan, Republic of Korea.",
+        "Number: India\u2019s 45th World Heritage property.",
+        "Tentative List entry: 1998.",
+        "Components: Chaukhandi Stupa plus the Archaeological Remains of Sarnath.",
+        "National link: the Lion Capital of Ashoka from Sarnath is India\u2019s State Emblem."
       ],
-      "mnemonic": "Remember: UNESCO Recognitions requires exact statutory authority and verified primary source backing."
+      "examTraps": [
+        "Sarnath is the site of the first sermon; Bodh Gaya is associated with enlightenment, Lumbini with birth, and Kushinagar with Mahaparinirvana.",
+        "World Heritage inscription does not transfer ownership or sovereignty to UNESCO."
+      ],
+      "mnemonic": "\u201cSarnath 45 turns the wheel\u201d: 45th site, first sermon, Dharmachakra."
     },
     "geoCard": {
-      "location": "New Delhi / International Headquarters",
-      "capital": "New Delhi / Administrative Capital",
-      "significance": "Primary administrative, legal, or diplomatic center for UNESCO Recognitions."
+      "location": "Sarnath, Varanasi district, Uttar Pradesh, India; committee session in Busan, Republic of Korea",
+      "capital": "Lucknow for Uttar Pradesh; Seoul for the Republic of Korea",
+      "significance": "Sarnath anchors India\u2019s Buddhist Circuit and supports heritage conservation, pilgrimage, tourism, and cultural diplomacy across Asia."
     },
     "confusionTraps": {
-      "frequentlyConfusedWith": "UNESCO Recognitions vs Related Legal Provision",
-      "whyTheyDiffer": "Distinct statutory scope, constitutional jurisdiction, or treaty mandate.",
-      "memoryClue": "Key takeaway for UNESCO Recognitions: Verify exact statutory definition and authority."
+      "frequentlyConfusedWith": "Bodh Gaya, Lumbini, and Kushinagar.",
+      "whyTheyDiffer": "Bodh Gaya marks enlightenment, Lumbini birth, Kushinagar Mahaparinirvana, and Sarnath the first sermon.",
+      "memoryClue": "\u201cBorn Lumbini, enlightened Bodh Gaya, taught Sarnath, passed Kushinagar.\u201d"
     },
     "folderOrder": "07_Jul_2026"
   },

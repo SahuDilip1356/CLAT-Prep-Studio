@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { qcards } from '../qcards';
+import { qcards as bundledQCards } from '../qcards';
 import { 
   BookMarked, Sparkles, Landmark, Scale, Globe, Rocket, Award, 
   ChevronDown, ChevronUp, AlertTriangle, Lightbulb, Play, ArrowRight, Search, CheckCircle2
 } from 'lucide-react';
 
 export default function GKQCardStudio({
+  qcards = bundledQCards,
   onStartTopicPractice,
   bookmarkedCardIds = {},
   onToggleBookmark

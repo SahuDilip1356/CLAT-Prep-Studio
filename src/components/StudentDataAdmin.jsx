@@ -32,7 +32,7 @@ export default function StudentDataAdmin({ studentProfile, attemptHistory = [], 
   const weakDisplay = uniqueWeak.length > 0 ? uniqueWeak.join(', ') : 'No weak area detected yet';
 
   // 5. Revision stats from local Leitner boxes
-  const savedBoxes = localStorage.getItem('clat_leitner_boxes');
+  const savedBoxes = sessionStorage.getItem('clat_leitner_boxes');
   let masteredCount = 0;
   let totalCards = 0;
   if (savedBoxes) {
