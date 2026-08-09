@@ -2,31 +2,31 @@ import { getAppCheck } from 'firebase-admin/app-check';
 import { getAuth } from 'firebase-admin/auth';
 import {
   approveChildRightsRequest,
-  authenticateParentForConsent,
+  activateChildAccount,
   captureParentConsent,
-  claimChildConsent,
   createParentConsentRequest,
   finalizeAdultConsent,
+  getChildActivationRequest,
   getChildRightsApproval,
   getParentConsentRequest,
+  listAdminUserDirectory,
   listDataPrincipalRequests,
   processVerifiedRightsRequests,
   refreshFirebaseAdminCredential,
-  startParentAdultVerification,
   submitDataPrincipalRequest
 } from '../server/privacy-service.js';
 
 const actions = {
   approveChildRightsRequest,
-  authenticateParentForConsent,
+  activateChildAccount,
   captureParentConsent,
-  claimChildConsent,
   createParentConsentRequest,
   finalizeAdultConsent,
+  getChildActivationRequest,
   getChildRightsApproval,
   getParentConsentRequest,
+  listAdminUserDirectory,
   listDataPrincipalRequests,
-  startParentAdultVerification,
   submitDataPrincipalRequest
 };
 

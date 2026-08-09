@@ -1,27 +1,43 @@
-import React, { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { User, CheckCircle2, X } from 'lucide-react';
 
-export default function StudentProfileModal({ currentProfile, onSaveProfile, onClose, isOpen }) {
+const profileFormData = (currentProfile, currentUser) => ({
+  name: currentProfile?.name || currentUser?.displayName || '',
+  email: currentProfile?.email || currentUser?.email || '',
+  phone: currentProfile?.phone || '',
+  targetYear: currentProfile?.targetYear || 'CLAT 2027',
+  targetNlu: currentProfile?.targetNlu || 'NLSIU Bengaluru (Top 5 NLU)'
+});
+
+export default function StudentProfileModal({ currentProfile, currentUser, onSaveProfile, onClose, isOpen }) {
   const [formData, setFormData] = useState({
-    name: currentProfile?.name || '',
-    email: currentProfile?.email || '',
-    phone: currentProfile?.phone || '',
-    targetYear: currentProfile?.targetYear || 'CLAT 2027',
-    targetNlu: currentProfile?.targetNlu || 'NLSIU Bengaluru (Top 5 NLU)'
+    ...profileFormData(currentProfile, currentUser)
   });
 
   const [error, setError] = useState('');
+  const [isSaving, setIsSaving] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) setFormData(profileFormData(currentProfile, currentUser));
+  }, [isOpen, currentProfile, currentUser]);
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name.trim() || !formData.email.trim()) {
       setError('Please provide at least your Name and Email address.');
       return;
     }
     setError('');
-    onSaveProfile(formData);
+    setIsSaving(true);
+    try {
+      await onSaveProfile(formData);
+    } catch (saveError) {
+      setError(saveError?.message || 'Your profile could not be saved. Please try again.');
+    } finally {
+      setIsSaving(false);
+    }
   };
 
   return (
@@ -58,8 +74,11 @@ export default function StudentProfileModal({ currentProfile, onSaveProfile, onC
             <User size={32} />
           </div>
           <h2 style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-primary)' }}>
-            Student Profile Registration
+            Complete student profile
           </h2>
+          <p style={{ marginTop: '8px', color: 'var(--text-secondary)', fontSize: '0.875rem' }}>
+            Your verified Google details are filled automatically. Confirm your name to continue.
+          </p>
         </div>
 
         {error && (
@@ -87,14 +106,20 @@ export default function StudentProfileModal({ currentProfile, onSaveProfile, onC
               type="email" 
               placeholder="e.g. student@clatprep.com"
               value={formData.email}
+              readOnly={Boolean(currentUser?.email)}
               onChange={e => setFormData({ ...formData, email: e.target.value })}
-              style={{ width: '100%', padding: '10px 14px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}
+              style={{ width: '100%', padding: '10px 14px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)', background: 'var(--bg-primary)', color: 'var(--text-primary)', opacity: currentUser?.email ? 0.8 : 1 }}
               required
             />
+            {currentUser?.email && (
+              <small style={{ display: 'block', marginTop: '6px', color: 'var(--text-muted)' }}>
+                Verified by Google and used for this account.
+              </small>
+            )}
           </div>
 
-          <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', padding: '12px', marginTop: '8px' }}>
-            <CheckCircle2 size={18} /> Save & Continue Practice
+          <button type="submit" className="btn btn-primary" disabled={isSaving} style={{ width: '100%', justifyContent: 'center', padding: '12px', marginTop: '8px' }}>
+            <CheckCircle2 size={18} /> {isSaving ? 'Saving profile…' : 'Save & Continue Practice'}
           </button>
         </form>
       </div>

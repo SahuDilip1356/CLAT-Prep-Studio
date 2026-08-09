@@ -7,6 +7,10 @@ import { getVercelOidcToken } from '@vercel/oidc';
 import { applicationDefault, cert, getApps, initializeApp } from 'firebase-admin/app';
 import { getAuth } from 'firebase-admin/auth';
 import { FieldValue, Timestamp, getFirestore } from 'firebase-admin/firestore';
+import {
+  CONSENT_VERSION,
+  PRIVACY_NOTICE_VERSION
+} from '../shared/privacy-versions.js';
 
 const serviceAccountJson = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
 const oidcSettings = {
@@ -70,9 +74,9 @@ export const verifyAdminAccessToken = async (token) => {
   return decoded;
 };
 const REGION = 'asia-south1';
-const NOTICE_VERSION = 'student-privacy-2026-07-23';
-const CONSENT_VERSION = 'parent-consent-2026-07-23';
-const INVITATION_TTL_HOURS = 48;
+const NOTICE_VERSION = PRIVACY_NOTICE_VERSION;
+const INVITATION_TTL_HOURS = Number(process.env.PARENT_INVITATION_TTL_HOURS || 48);
+const CHILD_ACTIVATION_TTL_HOURS = Number(process.env.CHILD_ACTIVATION_TTL_HOURS || 24);
 const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000;
 const RATE_LIMIT_MAX = 5;
 
@@ -87,6 +91,18 @@ const adultVerificationStartUrl = environmentValue('ADULT_VERIFICATION_START_URL
 
 const hash = (value) => createHash('sha256').update(value).digest('hex');
 const normalizeEmail = (value) => String(value || '').trim().toLowerCase();
+const validEmail = (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+const escapeHtml = (value) => String(value || '')
+  .replaceAll('&', '&amp;')
+  .replaceAll('<', '&lt;')
+  .replaceAll('>', '&gt;')
+  .replaceAll('"', '&quot;')
+  .replaceAll("'", '&#039;');
+const maskEmail = (value) => {
+  const [local, domain] = normalizeEmail(value).split('@');
+  if (!local || !domain) return '';
+  return `${local.slice(0, 1)}${'*'.repeat(Math.max(2, Math.min(6, local.length - 1)))}@${domain}`;
+};
 const callableOptions = { region: REGION, enforceAppCheck: true };
 const httpStatusByCode = {
   'invalid-argument': 400,
@@ -137,6 +153,14 @@ const authenticatedGoogleUser = (request) => {
     throw new HttpsError('failed-precondition', 'The Google email address must be verified.');
   }
   return request.auth;
+};
+
+const privacyAdministrator = (request) => {
+  const actor = authenticatedGoogleUser(request);
+  if (actor.token.privacyAdmin !== true) {
+    throw new HttpsError('permission-denied', 'Privacy administrator access is required.');
+  }
+  return actor;
 };
 
 const validateVersions = (data) => {
@@ -234,8 +258,19 @@ export const createParentConsentRequest = createCallable(
     validateVersions(data);
     if (data.ageBand !== 'CHILD') throw new HttpsError('invalid-argument', 'Child age band is required.');
     const parentEmail = normalizeEmail(data.parentEmail);
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(parentEmail)) {
+    const childEmail = normalizeEmail(data.childEmail);
+    const childName = String(data.childName || '').trim().replace(/\s+/g, ' ');
+    if (!validEmail(parentEmail)) {
       throw new HttpsError('invalid-argument', 'Enter a valid parent or guardian email.');
+    }
+    if (!validEmail(childEmail)) {
+      throw new HttpsError('invalid-argument', 'Enter a valid student email.');
+    }
+    if (childName.length < 2 || childName.length > 120) {
+      throw new HttpsError('invalid-argument', 'Enter the student name.');
+    }
+    if (parentEmail === childEmail) {
+      throw new HttpsError('invalid-argument', 'The student and parent must use different email addresses.');
     }
 
     const rateKey = hash(`${request.rawRequest.ip || 'unknown'}:${parentEmail}`);
@@ -258,12 +293,20 @@ export const createParentConsentRequest = createCallable(
 
     const requestRef = db.collection('parentConsentRequests').doc();
     const expiresAt = Timestamp.fromMillis(now + (INVITATION_TTL_HOURS * 60 * 60 * 1000));
+    const invitationToken = randomBytes(32).toString('base64url');
+    const baseUrl = requireHttpsUrl(appBaseUrl.value(), 'Application base URL');
+    baseUrl.pathname = '/';
+    baseUrl.search = '';
+    baseUrl.searchParams.set('parentConsent', invitationToken);
     await requestRef.create({
       ageBand: 'CHILD',
       parentEmail,
+      childEmail,
+      childName,
       noticeVersion: NOTICE_VERSION,
       consentVersion: CONSENT_VERSION,
-      status: 'PARENT_NOTIFICATION_CREATED',
+      invitationTokenHash: hash(invitationToken),
+      status: 'PARENT_INVITATION_CREATED',
       createdAt: FieldValue.serverTimestamp(),
       expiresAt,
       deliveryAttempts: 0
@@ -272,14 +315,15 @@ export const createParentConsentRequest = createCallable(
     try {
       await sendEmail({
         to: parentEmail,
-        subject: 'CLAT Prep Studio under-18 account notification',
-        html: `<p>A student who identified as under 18 entered this address as their parent or lawful guardian contact.</p>
-          <p>No student account, cloud progress, or identifiable learning analytics have been enabled.</p>
-          <p>The student can continue using CLAT Prep Studio in a private device session.</p>
-          <p>Ignore it if you did not expect this request.</p>`
+        subject: 'Review a CLAT Prep Studio student account request',
+        html: `<p>A student entered this address as their parent or lawful guardian contact.</p>
+          <p><strong>Student:</strong> ${escapeHtml(childName)} (${escapeHtml(maskEmail(childEmail))})</p>
+          <p>No student user or cloud account has been created.</p>
+          <p><a href="${escapeHtml(baseUrl.toString())}">Review the request and provide consent</a></p>
+          <p>This single-use link expires in ${INVITATION_TTL_HOURS} hours. Ignore this message if you did not expect it.</p>`
       });
       await requestRef.update({
-        status: 'PARENT_NOTIFICATION_SENT',
+        status: 'PARENT_INVITATION_SENT',
         deliveryAttempts: FieldValue.increment(1),
         sentAt: FieldValue.serverTimestamp()
       });
@@ -290,7 +334,7 @@ export const createParentConsentRequest = createCallable(
     }
     return {
       requestId: requestRef.id,
-      status: 'PARENT_NOTIFICATION_SENT',
+      status: 'PARENT_INVITATION_SENT',
       expiresAt: expiresAt.toDate().toISOString()
     };
   }
@@ -315,7 +359,10 @@ export const getParentConsentRequest = createCallable(callableOptions, async (re
     requestId: invitation.id,
     status: invitation.data.status,
     expiresAt: invitation.data.expiresAt.toDate().toISOString(),
-    noticeVersion: invitation.data.noticeVersion
+    noticeVersion: invitation.data.noticeVersion,
+    childName: invitation.data.childName,
+    childEmail: invitation.data.childEmail,
+    parentEmail: invitation.data.parentEmail
   };
 });
 
@@ -417,121 +464,219 @@ export const parentAdultVerificationWebhook = createRequestHandler(
 export const captureParentConsent = createCallable(
   { ...callableOptions, secrets: [resendApiKey] },
   async (request) => {
-    const actor = authenticatedGoogleUser(request);
     const data = request.data || {};
     validateVersions(data);
     validateRequiredPurposes(data.purposes);
-    if (!['PARENT', 'LAWFUL_GUARDIAN'].includes(data.relationship) || data.guardianDeclaration !== true) {
+    if (
+      !['FATHER', 'MOTHER', 'LAWFUL_GUARDIAN'].includes(data.relationship)
+      || data.guardianDeclaration !== true
+      || data.adultDeclaration !== true
+      || data.studentDetailsConfirmed !== true
+    ) {
       throw new HttpsError('invalid-argument', 'A parent or lawful guardian declaration is required.');
     }
     const invitation = await resolveInvitation(data.token);
-    if (invitation.data.parentUid !== actor.uid) {
-      throw new HttpsError('failed-precondition', 'Verified parent status is required.');
+    if (!['PARENT_INVITATION_SENT', 'ACTIVATION_DELIVERY_FAILED', 'ACTIVATION_EXPIRED'].includes(invitation.data.status)) {
+      if (invitation.data.status === 'CHILD_ACCOUNT_ACTIVATED') {
+        return { status: 'CHILD_ACCOUNT_ACTIVATED' };
+      }
+      throw new HttpsError('failed-precondition', 'This parent consent request is not available.');
     }
 
-    const activationCode = `${randomBytes(3).toString('hex')}-${randomBytes(2).toString('hex')}`.toUpperCase();
-    if (['PARENT_CONSENT_CAPTURED', 'ACTIVATION_EXPIRED'].includes(invitation.data.status)) {
-      await invitation.ref.update({
-        status: 'PARENT_CONSENT_CAPTURED',
-        activationCodeHash: hash(activationCode),
-        activationExpiresAt: Timestamp.fromMillis(Date.now() + (24 * 60 * 60 * 1000)),
-        activationDeliveryStatus: 'REISSUED'
-      });
-    } else {
-      if (invitation.data.status !== 'PARENT_ADULT_VERIFIED') {
-        throw new HttpsError('failed-precondition', 'Verified parent status is required.');
-      }
+    const activationToken = randomBytes(32).toString('base64url');
+    const activationExpiresAt = Timestamp.fromMillis(
+      Date.now() + (CHILD_ACTIVATION_TTL_HOURS * 60 * 60 * 1000)
+    );
+    let receiptId = invitation.data.consentReceiptId;
+    if (!receiptId) {
       const receiptRef = db.collection('consentReceipts').doc();
+      receiptId = receiptRef.id;
       await db.runTransaction(async (transaction) => {
         transaction.create(receiptRef, {
-          actorUid: actor.uid,
+          actorReferenceHash: hash(`parent:${invitation.data.parentEmail}`),
           actorRole: data.relationship,
-          lawfulRoute: 'VERIFIABLE_PARENTAL_CONSENT',
+          lawfulRoute: 'PARENT_EMAIL_LINK_AND_DECLARATION',
           ageBand: 'CHILD',
           noticeVersion: NOTICE_VERSION,
           consentVersion: CONSENT_VERSION,
           purposes: data.purposes,
           event: 'GRANTED',
           parentConsentRequestId: invitation.id,
+          parentEmailConfirmedAt: FieldValue.serverTimestamp(),
           createdAt: FieldValue.serverTimestamp()
         });
         transaction.update(invitation.ref, {
           status: 'PARENT_CONSENT_CAPTURED',
-          activationCodeHash: hash(activationCode),
+          relationship: data.relationship,
+          parentEmailVerified: true,
+          parentEmailVerifiedAt: FieldValue.serverTimestamp(),
+          activationTokenHash: hash(activationToken),
           consentReceiptId: receiptRef.id,
           consentedAt: FieldValue.serverTimestamp(),
-          activationExpiresAt: Timestamp.fromMillis(Date.now() + (24 * 60 * 60 * 1000))
+          activationExpiresAt
         });
       });
+    } else {
+      await invitation.ref.update({
+        status: 'PARENT_CONSENT_CAPTURED',
+        activationTokenHash: hash(activationToken),
+        activationExpiresAt,
+        activationDeliveryError: FieldValue.delete()
+      });
     }
+
+    const activationUrl = requireHttpsUrl(appBaseUrl.value(), 'Application base URL');
+    activationUrl.pathname = '/';
+    activationUrl.search = '';
+    activationUrl.searchParams.set('childActivation', activationToken);
     try {
       await sendEmail({
-        to: invitation.data.parentEmail,
-        subject: 'CLAT Prep Studio student activation code',
-        html: `<p>Your verified consent was recorded.</p><p>Give this one-time code to the student:</p>
-          <p><strong>${activationCode}</strong></p><p>The code expires in 24 hours.</p>`
+        to: invitation.data.childEmail,
+        subject: 'Activate your CLAT Prep Studio student account',
+        html: `<p>Your parent or lawful guardian completed the consent request for ${escapeHtml(invitation.data.childName)}.</p>
+          <p><a href="${escapeHtml(activationUrl.toString())}">Activate your student account with Google</a></p>
+          <p>Use the Google account for ${escapeHtml(maskEmail(invitation.data.childEmail))}. This single-use link expires in ${CHILD_ACTIVATION_TTL_HOURS} hours.</p>`
+      });
+      await invitation.ref.update({
+        status: 'CHILD_INVITED',
+        invitationTokenHash: FieldValue.delete(),
+        activationDeliveryStatus: 'SENT',
+        activationSentAt: FieldValue.serverTimestamp()
       });
     } catch (error) {
       await invitation.ref.update({
+        status: 'ACTIVATION_DELIVERY_FAILED',
         activationDeliveryStatus: 'FAILED',
         activationDeliveryError: String(error.message || error).slice(0, 300)
       });
+      throw new HttpsError('unavailable', 'Consent was recorded, but the student activation email could not be delivered. Please retry.');
     }
-    return { status: 'PARENT_CONSENT_CAPTURED', activationCode };
+    return {
+      status: 'CHILD_INVITED',
+      childEmailMasked: maskEmail(invitation.data.childEmail),
+      activationExpiresAt: activationExpiresAt.toDate().toISOString(),
+      consentReceiptId: receiptId
+    };
   }
 );
 
-export const claimChildConsent = createCallable(callableOptions, async (request) => {
-  const actor = authenticatedGoogleUser(request);
-  const activationCodeHash = hash(String(request.data?.activationCode || '').trim().toUpperCase());
-  const matches = await db.collection('parentConsentRequests')
-    .where('activationCodeHash', '==', activationCodeHash)
+async function resolveChildActivation(token) {
+  if (!token || String(token).length < 32) throw new HttpsError('invalid-argument', 'Invalid activation link.');
+  const snapshot = await db.collection('parentConsentRequests')
+    .where('activationTokenHash', '==', hash(String(token)))
     .limit(1)
     .get();
-  if (matches.empty) throw new HttpsError('not-found', 'Activation code is invalid.');
-  const invitation = matches.docs[0];
-  const data = invitation.data();
-  if (data.activationExpiresAt.toMillis() <= Date.now()) {
-    throw new HttpsError('deadline-exceeded', 'Activation code expired.');
+  if (snapshot.empty) throw new HttpsError('not-found', 'Activation request not found.');
+  const document = snapshot.docs[0];
+  const data = document.data();
+  if (!data.activationExpiresAt || data.activationExpiresAt.toMillis() <= Date.now()) {
+    throw new HttpsError('deadline-exceeded', 'Activation link expired.');
   }
-  if (data.status !== 'PARENT_CONSENT_CAPTURED' && data.childUid !== actor.uid) {
-    throw new HttpsError('failed-precondition', 'Consent is not available for activation.');
+  return { ref: document.ref, id: document.id, data };
+}
+
+export const getChildActivationRequest = createCallable(callableOptions, async (request) => {
+  const activation = await resolveChildActivation(request.data?.token);
+  return {
+    requestId: activation.id,
+    status: activation.data.status,
+    childName: activation.data.childName,
+    childEmailMasked: maskEmail(activation.data.childEmail),
+    activationExpiresAt: activation.data.activationExpiresAt.toDate().toISOString()
+  };
+});
+
+export const activateChildAccount = createCallable(callableOptions, async (request) => {
+  const actor = authenticatedGoogleUser(request);
+  const activation = await resolveChildActivation(request.data?.token);
+  const data = activation.data;
+  if (data.status !== 'CHILD_INVITED') {
+    throw new HttpsError('failed-precondition', 'This student activation is not available.');
+  }
+  if (normalizeEmail(actor.token.email) !== data.childEmail) {
+    throw new HttpsError('permission-denied', 'Sign in with the student Google email approved by the parent.');
+  }
+  const currentUser = await adminAuth.getUser(actor.uid);
+  if (currentUser.customClaims?.privacyStatus && currentUser.customClaims.privacyStatus !== 'PARENT_VERIFIED') {
+    throw new HttpsError('already-exists', 'This Google account is already activated through another privacy route.');
   }
 
   await db.runTransaction(async (transaction) => {
-    const latest = await transaction.get(invitation.ref);
+    const latest = await transaction.get(activation.ref);
     const current = latest.data();
     if (current.childUid && current.childUid !== actor.uid) {
-      throw new HttpsError('already-exists', 'This consent was already used.');
+      throw new HttpsError('already-exists', 'This activation link was already used.');
     }
-    transaction.update(invitation.ref, {
+    if (current.status !== 'CHILD_INVITED') {
+      throw new HttpsError('failed-precondition', 'This activation link is no longer available.');
+    }
+    transaction.update(activation.ref, {
       childUid: actor.uid,
       status: 'CHILD_ACCOUNT_ACTIVATED',
       activatedAt: FieldValue.serverTimestamp(),
       expiresAt: FieldValue.delete(),
       invitationTokenHash: FieldValue.delete(),
-      activationCodeHash: FieldValue.delete()
+      activationTokenHash: FieldValue.delete(),
+      activationExpiresAt: FieldValue.delete()
     });
     transaction.set(db.doc(`users/${actor.uid}/privacy/current`), {
       status: 'PARENT_VERIFIED',
       ageBand: 'CHILD',
       consentReceiptId: current.consentReceiptId,
-      parentConsentRequestId: invitation.id,
+      parentConsentRequestId: activation.id,
       noticeVersion: NOTICE_VERSION,
       updatedAt: FieldValue.serverTimestamp()
     });
+    transaction.set(db.doc(`users/${actor.uid}`), {
+      progress: {
+        studentProfile: {
+          name: current.childName,
+          email: current.childEmail,
+          targetYear: 'CLAT 2027',
+          targetNlu: 'NLSIU Bengaluru'
+        }
+      },
+      lastUpdated: FieldValue.serverTimestamp()
+    }, { merge: true });
+    transaction.set(db.doc(`childProfiles/${activation.id}`), {
+      childUid: actor.uid,
+      preferredName: current.childName,
+      email: current.childEmail,
+      ageBand: 'CHILD',
+      accountStatus: 'ACTIVE',
+      privacyStatus: 'PARENT_VERIFIED',
+      consentReceiptId: current.consentReceiptId,
+      activatedAt: FieldValue.serverTimestamp(),
+      updatedAt: FieldValue.serverTimestamp()
+    });
+    transaction.set(db.doc(`parentChildRelationships/${activation.id}`), {
+      parentEmail: current.parentEmail,
+      childUid: actor.uid,
+      childProfileId: activation.id,
+      relationshipType: current.relationship,
+      status: 'ACTIVE',
+      consentReceiptId: current.consentReceiptId,
+      verifiedAt: FieldValue.serverTimestamp()
+    });
     transaction.update(db.doc(`consentReceipts/${current.consentReceiptId}`), {
       subjectUid: actor.uid,
+      subjectChildProfileId: activation.id,
       activatedAt: FieldValue.serverTimestamp()
     });
   });
   await adminAuth.setCustomUserClaims(actor.uid, {
-    ...(await adminAuth.getUser(actor.uid)).customClaims,
+    ...currentUser.customClaims,
     privacyStatus: 'PARENT_VERIFIED',
     subjectType: 'CHILD',
+    accountRole: 'CHILD',
+    childProfileId: activation.id,
     consentReceiptId: data.consentReceiptId
   });
-  return { status: 'PARENT_VERIFIED', consentReceiptId: data.consentReceiptId };
+  return {
+    status: 'PARENT_VERIFIED',
+    childName: data.childName,
+    consentReceiptId: data.consentReceiptId
+  };
 });
 
 const RIGHTS_TYPES = new Set(['ACCESS', 'CORRECTION', 'ERASURE', 'WITHDRAWAL', 'GRIEVANCE', 'NOMINATION']);
@@ -654,6 +799,70 @@ export const listDataPrincipalRequests = createCallable(callableOptions, async (
     })
     .sort((a, b) => String(b.submittedAt).localeCompare(String(a.submittedAt)));
   return { requests };
+});
+
+export const listAdminUserDirectory = createCallable(callableOptions, async (request) => {
+  privacyAdministrator(request);
+
+  const authUsers = [];
+  let pageToken;
+  do {
+    const page = await adminAuth.listUsers(1000, pageToken);
+    authUsers.push(...page.users);
+    pageToken = page.pageToken;
+  } while (pageToken);
+
+  const progressSnapshot = await db.collection('users').get();
+  const progressByUid = new Map(progressSnapshot.docs.map((document) => [
+    document.id,
+    { id: document.id, ...document.data() }
+  ]));
+  const authByUid = new Map(authUsers.map((user) => [user.uid, user]));
+  const allUids = [...new Set([...authByUid.keys(), ...progressByUid.keys()])];
+
+  const users = allUids.map((uid) => {
+    const authUser = authByUid.get(uid);
+    const stored = progressByUid.get(uid) || {};
+    const progress = stored.progress || {};
+    const storedProfile = progress.studentProfile || null;
+    const claims = authUser?.customClaims || {};
+    const profile = storedProfile ? {
+      ...storedProfile,
+      name: storedProfile.name || authUser?.displayName || '',
+      email: storedProfile.email || authUser?.email || ''
+    } : {
+      name: authUser?.displayName || '',
+      email: authUser?.email || ''
+    };
+    const createdAt = authUser?.metadata?.creationTime || null;
+    const lastSignInAt = authUser?.metadata?.lastSignInTime || null;
+    const lastUpdated = stored.lastUpdated?.toDate?.().toISOString()
+      || lastSignInAt
+      || createdAt;
+
+    return {
+      uid,
+      profile,
+      profileStored: Boolean(storedProfile),
+      progress,
+      lastUpdated,
+      account: {
+        email: authUser?.email || profile.email || '',
+        displayName: authUser?.displayName || profile.name || '',
+        emailVerified: authUser?.emailVerified === true,
+        disabled: authUser?.disabled === true,
+        createdAt,
+        lastSignInAt,
+        privacyStatus: claims.privacyStatus || 'NOT_ACTIVATED',
+        subjectType: claims.subjectType || null,
+        privacyAdmin: claims.privacyAdmin === true,
+        caAdmin: claims.caAdmin === true,
+        authRecordPresent: Boolean(authUser)
+      }
+    };
+  }).sort((first, second) => String(second.lastUpdated || '').localeCompare(String(first.lastUpdated || '')));
+
+  return { users };
 });
 
 async function resolveRightsApproval(token) {
@@ -943,10 +1152,10 @@ export const deleteExpiredPrivacyArtifacts = createScheduledHandler(
     if (!expiredCodes.empty) {
       const codeBatch = db.batch();
       expiredCodes.docs.forEach((document) => {
-        if (document.data().status === 'PARENT_CONSENT_CAPTURED') {
+        if (['PARENT_CONSENT_CAPTURED', 'CHILD_INVITED', 'ACTIVATION_DELIVERY_FAILED'].includes(document.data().status)) {
           codeBatch.update(document.ref, {
             status: 'ACTIVATION_EXPIRED',
-            activationCodeHash: FieldValue.delete(),
+            activationTokenHash: FieldValue.delete(),
             activationExpiresAt: FieldValue.delete()
           });
         }

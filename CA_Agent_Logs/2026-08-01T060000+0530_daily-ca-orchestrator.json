@@ -1,0 +1,171 @@
+{
+  "runId": "clat-daily-ca-orchestrator-2026-08-01T060000+0530",
+  "automationId": "clat-daily-ca-orchestrator",
+  "trigger": "MANUAL_BACKFILL",
+  "timezone": "Asia/Kolkata",
+  "startedAt": "2026-08-01T06:00:00+05:30",
+  "finishedAt": "2026-08-01T06:14:00+05:30",
+  "backfilledAt": "2026-08-02T17:30:00+05:30",
+  "window": {
+    "start": "2026-07-31T00:00:00+05:30",
+    "end": "2026-08-01T06:00:00+05:30",
+    "durationHours": 30
+  },
+  "status": "completed",
+  "repositoryComparison": {
+    "markdownDossiersBefore": 329,
+    "knowledgeGraphNodesBefore": 329,
+    "knowledgeGraphNodesAfter": 329,
+    "comparisonScope": "Existing canonical titles and continuing issues in CA_Source_Repository and src/data/ca_knowledge_graph.json",
+    "duplicatePolicy": "No qualifying new issue or material continuing-issue update was found in the window.",
+    "matchedExistingDossiers": [
+      {
+        "candidate": "Public Examinations Amendment Bill follow-up",
+        "title": "Public Examinations Act",
+        "id": "MAY-06",
+        "result": "No new passage, assent, or notified legal change was verified in the window."
+      }
+    ]
+  },
+  "sourcesScanned": [
+    {
+      "publisher": "Securities and Exchange Board of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-07-31",
+      "url": "https://www.sebi.gov.in/legal/circulars/jul-2026/extension-of-timelines-with-repect-to-compliance-of-digital-accessibility-circulars-_103277.html",
+      "result": "Digital-accessibility compliance timelines were extended; rejected for insufficient substantive novelty and no independent current corroboration."
+    },
+    {
+      "publisher": "Supreme Court of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-07-31",
+      "url": "https://www.sci.gov.in/",
+      "result": "Judgments and orders dated or uploaded on 31 July were headline-screened; no two-source, 65-plus CLAT issue was established."
+    },
+    {
+      "publisher": "Digital Sansad",
+      "type": "PRIMARY",
+      "publishedAt": "2026-07-31",
+      "url": "https://sansad.in/ls/legislation/bills",
+      "result": "Bill-status scan found no verified in-window passage or assent requiring a dossier update."
+    },
+    {
+      "publisher": "PRS Legislative Research",
+      "type": "SECONDARY",
+      "publishedAt": "2026-07-31",
+      "url": "https://prsindia.org/billtrack/the-public-examinations-prevention-of-unfair-means-amendment-bill-2026",
+      "result": "Used to check the continuing anti-paper-leak issue; no new in-window legislative milestone was shown."
+    },
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-07-31",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+      "result": "Releases were predominantly auctions, statistics, and supervisory material without a qualifying CLAT dossier event."
+    }
+  ],
+  "candidates": [
+    {
+      "title": "SEBI extension of digital-accessibility compliance timelines",
+      "score": {
+        "legalConstitutional": 17,
+        "significance": 7,
+        "passagePotential": 10,
+        "staticGk": 9,
+        "recencyNovelty": 10,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 5,
+        "continuingIssueValue": 1,
+        "total": 64
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "unresolvedFactualConflict": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "Below the 65-point threshold and failed the two-source gate; the development extended implementation timelines rather than creating a new rights framework."
+    },
+    {
+      "title": "Supreme Court judgments and routine listing updates of 31 July",
+      "score": {
+        "legalConstitutional": 13,
+        "significance": 6,
+        "passagePotential": 7,
+        "staticGk": 6,
+        "recencyNovelty": 7,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 4,
+        "continuingIssueValue": 0,
+        "total": 48
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "unresolvedFactualConflict": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "No judgment in the screened batch was independently corroborated as a 65-plus national legal development within the window."
+    },
+    {
+      "title": "Public Examinations Amendment Bill status follow-up",
+      "canonicalDossier": "Public Examinations Act",
+      "score": {
+        "legalConstitutional": 18,
+        "significance": 8,
+        "passagePotential": 9,
+        "staticGk": 7,
+        "recencyNovelty": 1,
+        "sourceStrength": 8,
+        "examPatternSimilarity": 7,
+        "continuingIssueValue": 4,
+        "total": 62
+      },
+      "decision": "ignored",
+      "rejectionReason": "No new passage, assent, notification, or material provision was verified after the existing dossier update; below 65 because substantive novelty was absent."
+    }
+  ],
+  "outcomes": {
+    "publishedNew": [],
+    "updated": [],
+    "ignored": [
+      "SEBI extension of digital-accessibility compliance timelines",
+      "Supreme Court judgments and routine listing updates of 31 July",
+      "Public Examinations Amendment Bill status follow-up"
+    ],
+    "failed": []
+  },
+  "contentValidation": {
+    "noOp": true,
+    "reason": "No candidate met both the deterministic 65-point threshold and mandatory source gates."
+  },
+  "validationResults": [
+    {
+      "command": "npm run test:ca",
+      "exitCode": 0,
+      "result": "Passed; 8 tests passed, 0 failed."
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "result": "Passed; Vite production build completed.",
+      "warnings": [
+        "Vite reported a non-fatal chunk-size warning for minified bundles larger than 500 kB."
+      ]
+    }
+  ],
+  "filesChangedByRun": [
+    "CA_Agent_Logs/2026-08-01T060000+0530_daily-ca-orchestrator.json"
+  ],
+  "externalActions": {
+    "firestoreWritten": false,
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "messagesSent": false
+  },
+  "unrelatedUserChangesPreserved": true,
+  "errors": []
+}

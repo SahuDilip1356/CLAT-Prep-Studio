@@ -67,22 +67,35 @@ export const getAuthenticatedApiHeaders = async () => {
 
 export const fetchAllStudentsFromCloud = async () => {
   try {
-    const usersColRef = collection(db, 'users');
-    const querySnapshot = await getDocs(usersColRef);
-    const studentsList = [];
-    querySnapshot.forEach((docSnap) => {
-      const data = docSnap.data();
-      studentsList.push({
-        uid: docSnap.id,
-        profile: data.progress?.studentProfile || {},
-        progress: data.progress || {},
-        lastUpdated: data.lastUpdated ? data.lastUpdated.toDate() : new Date()
+    const result = await privacyApi('listAdminUserDirectory');
+    return result?.users || [];
+  } catch (directoryError) {
+    // Preview deployments intentionally do not receive Firebase Admin credentials.
+    // A privacy administrator can still review stored student profiles through
+    // Firestore rules, but Auth-only accounts and custom claims are unavailable.
+    try {
+      const querySnapshot = await getDocs(collection(db, 'users'));
+      return querySnapshot.docs.map((document) => {
+        const data = document.data();
+        const profile = data.progress?.studentProfile || {};
+        return {
+          uid: document.id,
+          profile,
+          profileStored: Boolean(data.progress?.studentProfile),
+          progress: data.progress || {},
+          lastUpdated: data.lastUpdated?.toDate?.().toISOString() || null,
+          directoryLimited: true,
+          account: {
+            email: profile.email || '',
+            displayName: profile.name || '',
+            privacyStatus: 'UNKNOWN_IN_PREVIEW',
+            authRecordPresent: null
+          }
+        };
       });
-    });
-    return studentsList;
-  } catch (err) {
-    console.log("Admin Firestore fetch notice:", err);
-    return [];
+    } catch {
+      throw directoryError;
+    }
   }
 };
 
@@ -122,6 +135,15 @@ export const syncUserProgressToCloud = async (userId, progressData) => {
   }
 };
 
+export const saveStudentProfileToCloud = async (userId, studentProfile) => {
+  if (!userId || !studentProfile) throw new Error('A signed-in account and student profile are required.');
+  const userDocRef = doc(db, 'users', userId);
+  await setDoc(userDocRef, {
+    progress: { studentProfile },
+    lastUpdated: serverTimestamp()
+  }, { merge: true });
+};
+
 export const finalizeAdultConsent = async (consentChoice) => {
   return privacyApi('finalizeAdultConsent', consentChoice);
 };
@@ -130,24 +152,20 @@ export const createParentConsentRequest = async (invitation) => {
   return privacyApi('createParentConsentRequest', invitation);
 };
 
-export const authenticateParentForConsent = async (token) => {
-  return privacyApi('authenticateParentForConsent', { token });
-};
-
 export const getParentConsentRequest = async (token) => {
   return privacyApi('getParentConsentRequest', { token });
-};
-
-export const startParentAdultVerification = async (token) => {
-  return privacyApi('startParentAdultVerification', { token });
 };
 
 export const captureParentConsent = async (payload) => {
   return privacyApi('captureParentConsent', payload);
 };
 
-export const claimChildConsent = async (activationCode) => {
-  return privacyApi('claimChildConsent', { activationCode });
+export const getChildActivationRequest = async (token) => {
+  return privacyApi('getChildActivationRequest', { token });
+};
+
+export const activateChildAccount = async (token) => {
+  return privacyApi('activateChildAccount', { token });
 };
 
 export const getChildRightsApproval = async (token) => {

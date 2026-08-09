@@ -1,0 +1,383 @@
+{
+  "automationId": "clat-daily-ca-orchestrator",
+  "runId": "2026-08-06T060037+0530_daily-ca-orchestrator",
+  "trigger": "scheduled_daily",
+  "timezone": "Asia/Kolkata",
+  "startedAt": "2026-08-06T06:00:37+05:30",
+  "finishedAt": "2026-08-06T06:07:25+05:30",
+  "status": "completed",
+  "outcome": "no_op",
+  "window": {
+    "from": "2026-08-05T00:00:37+05:30",
+    "to": "2026-08-06T06:00:37+05:30",
+    "durationHours": 30
+  },
+  "sourcesScanned": [
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "primary",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+      "scope": "Press releases published during the scan window",
+      "result": "MPC resolution, Governor's Statement, developmental measures, UCB draft, and routine market/data releases identified"
+    },
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "primary",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63288",
+      "scope": "Governor's Statement dated 5 August 2026",
+      "result": "Verified repo-rate hold at 5.25%, neutral stance, and updated growth and inflation projections"
+    },
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "primary",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63289",
+      "scope": "Statement on Developmental and Regulatory Policies dated 5 August 2026",
+      "result": "Verified proposed resumption of on-tap UCB licensing and related cooperative-bank measures"
+    },
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "primary",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63294",
+      "scope": "Draft guidelines for on-tap licensing of UCBs dated 5 August 2026",
+      "result": "Verified consultation deadline of 5 September 2026"
+    },
+    {
+      "publisher": "Supreme Court of India",
+      "type": "primary",
+      "url": "https://www.sci.gov.in/judgements-judgement-date/",
+      "scope": "Judgments by date",
+      "result": "No independently corroborated, substantive in-window judgment cleared the candidate gate"
+    },
+    {
+      "publisher": "Parliament of India and PRS Legislative Research",
+      "type": "primary_and_secondary",
+      "url": "https://prsindia.org/billtrack",
+      "scope": "Current bill activity and Monsoon Session tracking",
+      "result": "Located recent bill activity, but the potentially relevant passage events occurred before the 30-hour window"
+    },
+    {
+      "publisher": "Press Information Bureau",
+      "type": "primary",
+      "url": "https://www.pib.gov.in/AllReleasem.aspx?lang=1&reg=3",
+      "scope": "All releases by date and ministry",
+      "result": "Reviewed current listings; no qualifying release with a verified publication time inside the cutoff and complete independent corroboration"
+    },
+    {
+      "publisher": "Securities and Exchange Board of India",
+      "type": "primary",
+      "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0",
+      "scope": "Circulars",
+      "result": "No new circular in the scan window"
+    },
+    {
+      "publisher": "Election Commission of India",
+      "type": "primary",
+      "url": "https://www.eci.gov.in/",
+      "scope": "Press releases and current notices",
+      "result": "No independently corroborated, qualifying substantive development found"
+    },
+    {
+      "publisher": "United Nations Committee of Experts on Global Geospatial Information Management",
+      "type": "primary",
+      "url": "https://www.un.org/globalgeospatial/en/events/annual-sessions/sixteenth",
+      "scope": "Sixteenth session opening on 5 August 2026",
+      "result": "Event verified; candidate remained below the CLAT score threshold"
+    },
+    {
+      "publisher": "United Nations Web TV",
+      "type": "primary",
+      "url": "https://webtv.un.org/en/asset/k1a/k1au2xjxkj",
+      "scope": "First meeting of the sixteenth UN-GGIM session",
+      "result": "Opening meeting corroborated within the UN system"
+    },
+    {
+      "publisher": "World Health Organization",
+      "type": "primary",
+      "url": "https://www.who.int/news-room/events/detail/2026/08/04/default-calendar/strengthening-what-works--new-evidence-to-accelerate-investment-in-breastfeeding",
+      "scope": "World Breastfeeding Week investment webinar continuing into 5 August 2026",
+      "result": "Development verified; candidate remained below the CLAT score threshold"
+    },
+    {
+      "publisher": "World Health Organization",
+      "type": "primary",
+      "url": "https://www.who.int/campaigns/world-breastfeeding-week/2026",
+      "scope": "World Breastfeeding Week 2026",
+      "result": "Campaign context verified"
+    },
+    {
+      "publisher": "Reuters",
+      "type": "independent_secondary_context",
+      "url": "https://www.investing.com/news/economy-news/rbi-to-hold-rates-through-2026-as-growth-risks-outweigh-inflation-4812962",
+      "scope": "Pre-meeting RBI policy poll published 27 July 2026",
+      "result": "Provided trusted context but did not independently confirm the 5 August outcome"
+    },
+    {
+      "publisher": "The Economic Times",
+      "type": "independent_secondary_context",
+      "url": "https://economictimes.indiatimes.com/wealth/invest/rbi-reiterates-indian-economy-remains-resilient-but-iran-war-deficient-monsoon-could-pose-risks-to-outlook-will-there-be-rate-change-in-august/articleshow/132608777.cms",
+      "scope": "Pre-meeting monetary-policy context",
+      "result": "Provided contextual reporting but did not independently confirm the 5 August decision"
+    },
+    {
+      "publisher": "ETBFSI",
+      "type": "independent_secondary_context",
+      "url": "https://bfsi.economictimes.indiatimes.com/news/banking/rbi-likely-to-reopen-licensing-window-for-urban-co-operative-banks-report/131651379",
+      "scope": "Earlier reporting on possible reopening of the UCB licensing window",
+      "result": "Provided contextual reporting but did not confirm the final 5 August draft"
+    },
+    {
+      "publisher": "NEXT IAS",
+      "type": "secondary_context",
+      "url": "https://www.nextias.com/ca/current-affairs/28-07-2026/urban-cooperative-banks-rbi",
+      "scope": "UCB regulatory background",
+      "result": "Provided static-GK context but not same-event confirmation"
+    }
+  ],
+  "repositoryComparison": {
+    "scope": "Every dossier title and continuing issue in CA_Source_Repository plus every node in src/data/ca_knowledge_graph.json",
+    "markdownDossiersBefore": 331,
+    "markdownDossiersAfter": 331,
+    "knowledgeGraphNodesBefore": 331,
+    "knowledgeGraphNodesAfter": 331,
+    "continuingIssuesCompared": 39,
+    "duplicatesCreated": 0,
+    "closestExistingIssues": [
+      {
+        "candidate": "RBI August 2026 monetary policy review",
+        "existingTitles": [
+          "Monetary Policy, Repo Rate and Inflation",
+          "RBI Monetary Policy",
+          "Oil Price Shocks and Monetary Policy"
+        ],
+        "decision": "Would update an existing monetary-policy dossier, but the source gate failed"
+      },
+      {
+        "candidate": "RBI draft on-tap UCB licensing guidelines",
+        "existingTitles": [
+          "Banking Sector Developments"
+        ],
+        "decision": "Would extend the existing banking dossier, but the source gate failed"
+      },
+      {
+        "candidate": "Second BRICS Anti-Corruption Working Group meeting",
+        "existingTitles": [
+          "BRICS Developments",
+          "BRICS Summit",
+          "BRICS Expanded Membership"
+        ],
+        "decision": "Would update an existing BRICS dossier, but the outcome and corroboration gates failed"
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "title": "RBI August 2026 monetary policy review",
+      "scoreBreakdown": {
+        "legalConstitutional": 20,
+        "significance": 15,
+        "passagePotential": 15,
+        "staticGK": 10,
+        "recencySubstantiveNovelty": 7,
+        "sourceStrength": 6,
+        "examPatternSimilarity": 10,
+        "continuingIssueValue": 5,
+        "total": 88
+      },
+      "sourceGate": {
+        "trustedSources": 4,
+        "primarySources": 2,
+        "independentSecondarySources": 2,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "No independent trusted secondary source indexed by the cutoff confirmed the actual 5 August policy outcome",
+        "Pre-meeting forecasts and previews do not satisfy the same-event corroboration requirement"
+      ]
+    },
+    {
+      "title": "RBI resumes UCB licensing through draft on-tap guidelines",
+      "scoreBreakdown": {
+        "legalConstitutional": 21,
+        "significance": 13,
+        "passagePotential": 14,
+        "staticGK": 9,
+        "recencySubstantiveNovelty": 10,
+        "sourceStrength": 6,
+        "examPatternSimilarity": 9,
+        "continuingIssueValue": 4,
+        "total": 86
+      },
+      "sourceGate": {
+        "trustedSources": 5,
+        "primarySources": 3,
+        "independentSecondarySources": 2,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "No independent trusted secondary source indexed by the cutoff confirmed publication of the 5 August draft",
+        "Earlier reports about a likely licensing restart provide context only"
+      ]
+    },
+    {
+      "title": "Second BRICS Anti-Corruption Working Group meeting in Hyderabad",
+      "scoreBreakdown": {
+        "legalConstitutional": 15,
+        "significance": 11,
+        "passagePotential": 11,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 8,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 7,
+        "continuingIssueValue": 3,
+        "total": 68
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "No complete official outcome with a verified in-window publication time was available by the cutoff",
+        "No independent trusted same-event corroboration was found"
+      ]
+    },
+    {
+      "title": "World Breastfeeding Week 2026 investment case",
+      "scoreBreakdown": {
+        "legalConstitutional": 5,
+        "significance": 10,
+        "passagePotential": 9,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 8,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 6,
+        "continuingIssueValue": 1,
+        "total": 52
+      },
+      "sourceGate": {
+        "trustedSources": 2,
+        "primarySources": 2,
+        "independentSecondarySources": 0,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "new_issue",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "Score below 65",
+        "No independent trusted same-event corroboration found"
+      ]
+    },
+    {
+      "title": "Sixteenth session of UN-GGIM opens",
+      "scoreBreakdown": {
+        "legalConstitutional": 6,
+        "significance": 8,
+        "passagePotential": 7,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 7,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 5,
+        "continuingIssueValue": 1,
+        "total": 47
+      },
+      "sourceGate": {
+        "trustedSources": 2,
+        "primarySources": 2,
+        "independentSecondarySources": 0,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "new_issue",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "Score below 65",
+        "Annual technical meeting lacked sufficient CLAT passage and exam-pattern value"
+      ]
+    }
+  ],
+  "published": [],
+  "updated": [],
+  "ignored": [
+    {
+      "title": "RBI August 2026 monetary policy review",
+      "reason": "High score, but no independent trusted same-event confirmation by the cutoff"
+    },
+    {
+      "title": "RBI resumes UCB licensing through draft on-tap guidelines",
+      "reason": "High score, but no independent trusted same-event confirmation by the cutoff"
+    },
+    {
+      "title": "Second BRICS Anti-Corruption Working Group meeting in Hyderabad",
+      "reason": "Source and outcome gates failed"
+    },
+    {
+      "title": "World Breastfeeding Week 2026 investment case",
+      "reason": "Score 52 and source gate failed"
+    },
+    {
+      "title": "Sixteenth session of UN-GGIM opens",
+      "reason": "Score 47"
+    }
+  ],
+  "validationResults": [
+    {
+      "name": "knowledge_graph_rebuild",
+      "command": "python3 build_ca_knowledge_graph.py",
+      "passed": true,
+      "details": "Compiled 331 dossiers and redistributed 1,598 questions across 125 days"
+    },
+    {
+      "name": "generated_data_noop_integrity",
+      "passed": true,
+      "details": "SHA-1 hashes for ca_knowledge_graph.json, gk_qcards_data.json, gk_question_bank.json, and question_bank.json were identical before and after the rebuild"
+    },
+    {
+      "name": "ca_tests",
+      "command": "npm run test:ca",
+      "passed": true,
+      "details": "12 tests passed; 0 failed"
+    },
+    {
+      "name": "production_build",
+      "command": "npm run build",
+      "passed": true,
+      "details": "Vite build completed; non-blocking large-chunk warning retained"
+    },
+    {
+      "name": "publication_validation",
+      "passed": true,
+      "details": "No candidate was submitted for publication because none passed every deterministic and sourcing gate"
+    }
+  ],
+  "changeControl": {
+    "caContentChanged": false,
+    "knowledgeGraphChanged": false,
+    "auditLogOnly": true,
+    "unrelatedUserChangesPreserved": true,
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "externalMessagesSent": false
+  },
+  "warnings": [
+    "The production build reported chunks larger than 500 kB; this did not fail validation.",
+    "Same-day independent reporting for the RBI policy package was not indexed by the 06:00 IST cutoff, so high-scoring candidates were rejected fail-closed."
+  ],
+  "errors": []
+}

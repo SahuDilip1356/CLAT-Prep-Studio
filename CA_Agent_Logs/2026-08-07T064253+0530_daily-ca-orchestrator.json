@@ -1,0 +1,584 @@
+{
+  "automationId": "clat-daily-ca-orchestrator",
+  "runId": "2026-08-07T064253+0530_daily-ca-orchestrator",
+  "trigger": "scheduled_daily",
+  "timezone": "Asia/Kolkata",
+  "startedAt": "2026-08-07T06:42:53+05:30",
+  "finishedAt": "2026-08-07T06:55:27+05:30",
+  "status": "completed",
+  "outcome": "updated_existing",
+  "window": {
+    "from": "2026-08-06T00:42:53+05:30",
+    "to": "2026-08-07T06:42:53+05:30",
+    "durationHours": 30
+  },
+  "sourcesScanned": [
+    {
+      "publisher": "Supreme Court of India",
+      "type": "primary",
+      "url": "https://www.sci.gov.in/judgements-judgement-date/",
+      "scope": "Judgments and orders dated 6 August 2026",
+      "result": "No independently corroborated substantive judgment in the window cleared every publication gate"
+    },
+    {
+      "publisher": "Parliament of India — Digital Sansad",
+      "type": "primary",
+      "url": "https://sansad.in/ls/legislation/bills",
+      "scope": "Current Bill records and parliamentary progress",
+      "result": "Verified Bill No. 128 of 2026 and its parliamentary record"
+    },
+    {
+      "publisher": "Lok Sabha — Supreme Court (Number of Judges) Amendment Bill, 2026",
+      "type": "primary_document",
+      "url": "https://prsindia.org/files/bills_acts/bills_parliament/2026/Supreme_Court_%28Number_of_Judges%29_%28A%29_Bill_2026.pdf",
+      "scope": "Bill text, financial memorandum, commencement and savings clause",
+      "result": "Verified increase from 33 to 37 judges excluding the CJI, deemed commencement on 16 May 2026, pendency figures and stated rationale"
+    },
+    {
+      "publisher": "Press Information Bureau — Ministry of Law and Justice",
+      "type": "primary",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2258131&lang=1&reg=3",
+      "scope": "Cabinet approval and constitutional basis",
+      "result": "Verified Article 124(1) basis and the proposed four-post increase"
+    },
+    {
+      "publisher": "PRS Legislative Research",
+      "type": "trusted_secondary",
+      "url": "https://prsindia.org/billtrack/the-supreme-court-number-of-judges-amendment-bill-2026",
+      "scope": "Independent Bill tracker",
+      "result": "Confirmed Lok Sabha passage on 3 August and Rajya Sabha passage on 5 August 2026"
+    },
+    {
+      "publisher": "Bar & Bench",
+      "type": "trusted_secondary",
+      "url": "https://www.barandbench.com/news/law-policy/you-only-appoint-judges-with-your-ideology-menaka-guruswamy-in-rajya-sabha-debate-on-supreme-court-judges-bill",
+      "scope": "Report published 6 August 2026 on Rajya Sabha passage",
+      "result": "Independently confirmed passage, the resulting total ceiling of 38 including the CJI, and the parliamentary debate"
+    },
+    {
+      "publisher": "The Indian Express",
+      "type": "trusted_secondary_context",
+      "url": "https://indianexpress.com/article/india/supreme-court-more-judges-cabinet-approves-bill-10674459/",
+      "scope": "Independent background on the increase and the 2019 amendment",
+      "result": "Corroborated the four-post increase and historical judge-strength context"
+    },
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "primary",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+      "scope": "All press releases dated 6 August 2026",
+      "result": "Reviewed recovery-agent directions, cooperative-bank concentration-risk review, NBFC draft amendments, NBFC upper-layer list, data and routine market releases"
+    },
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "primary",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63305",
+      "scope": "Final directions on recovery agents and loan recovery",
+      "result": "Verified final directions effective 1 January 2027, but no independent trusted same-event confirmation was found by the cutoff"
+    },
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "primary",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63301",
+      "scope": "2026-27 list of NBFCs in the upper layer",
+      "result": "Verified 17 NBFCs under the revised criteria; no qualifying same-event secondary corroboration was found"
+    },
+    {
+      "publisher": "Press Information Bureau",
+      "type": "primary",
+      "url": "https://www.pib.gov.in/AllReleasem.aspx?lang=1&reg=3",
+      "scope": "All 110 releases listed for 6 August 2026 across ministries",
+      "result": "Shortlisted the cross-border e-commerce framework, Chandipura response, child online-safety review, BRICS anti-corruption meeting, NITI care report and pharmacovigilance recognition"
+    },
+    {
+      "publisher": "Securities and Exchange Board of India",
+      "type": "primary",
+      "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0",
+      "scope": "Circulars",
+      "result": "No new circular in the scan window"
+    },
+    {
+      "publisher": "Election Commission of India",
+      "type": "primary",
+      "url": "https://www.eci.gov.in/964-press-releases",
+      "scope": "Press releases and current notices",
+      "result": "No independently corroborated qualifying substantive development was identified"
+    },
+    {
+      "publisher": "United Nations, OHCHR, ICJ and treaty-body portals",
+      "type": "primary",
+      "url": "https://www.un.org/en/",
+      "scope": "New legal, treaty, institutional and India-relevant developments in the window",
+      "result": "No qualifying new legal or treaty development was identified"
+    },
+    {
+      "publisher": "World Health Organization",
+      "type": "primary_context",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2024-DON529",
+      "scope": "Authoritative Chandipura virus background",
+      "result": "Verified disease and outbreak context used to assess the 2026 central response"
+    },
+    {
+      "publisher": "The Indian Express",
+      "type": "trusted_secondary",
+      "url": "https://indianexpress.com/article/cities/ahmedabad/gujarat-chandipura-virus-deaths-panchmahal-godhra-sandfly-medical-survey-10776132/",
+      "scope": "Independent reporting on the 2026 Chandipura outbreak",
+      "result": "Corroborated the outbreak context, but the candidate remained below the deterministic score threshold"
+    }
+  ],
+  "repositoryComparison": {
+    "scope": "Every Markdown title and continuing issue in CA_Source_Repository plus every node in src/data/ca_knowledge_graph.json",
+    "markdownDossiersBefore": 331,
+    "markdownDossiersAfter": 331,
+    "knowledgeGraphNodesBefore": 331,
+    "knowledgeGraphNodesAfter": 331,
+    "continuingIssuesCompared": 40,
+    "duplicatesCreated": 0,
+    "closestExistingIssues": [
+      {
+        "candidate": "Parliament passes Supreme Court judge-strength amendment",
+        "existingTitles": [
+          "Supreme Court Reform Proposals",
+          "Supreme Court Pendency",
+          "National Court of Appeal Debate",
+          "Supreme Court Constitutional Bench Cases",
+          "Supreme Court Collegium Appointments"
+        ],
+        "decision": "Updated and versioned Supreme Court Reform Proposals instead of creating a duplicate"
+      },
+      {
+        "candidate": "RBI final directions on recovery agents and loan recovery",
+        "existingTitles": [
+          "Consumer Credit",
+          "Fintech Lending and RBI Regulation",
+          "Banking Sector Developments"
+        ],
+        "decision": "Would update an existing RBI dossier, but the independent same-event source gate failed"
+      },
+      {
+        "candidate": "Inventory-based cross-border e-commerce export framework",
+        "existingTitles": [
+          "WTO and Digital Trade",
+          "Digital Trade and Agricultural Market",
+          "Tariffs and Market Access"
+        ],
+        "decision": "Would update an existing trade dossier, but the event was implementation of an earlier policy and lacked same-event corroboration"
+      },
+      {
+        "candidate": "Centre affidavit on income-based prioritisation within SC/ST reservations",
+        "existingTitles": [
+          "Scheduled Caste Sub-Classification",
+          "Reservation and Equality Code",
+          "Supreme Court Constitutional Bench Cases"
+        ],
+        "decision": "Would update an existing reservation dossier, but no accessible primary filing and no final judicial outcome cleared the gate"
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Parliament passes Supreme Court judge-strength amendment",
+      "canonicalDossier": "Supreme Court Reform Proposals",
+      "score": {
+        "legalConstitutional": 25,
+        "significance": 14,
+        "passagePotential": 15,
+        "staticGK": 10,
+        "recencySubstantiveNovelty": 7,
+        "sourceStrength": 10,
+        "examPatternSimilarity": 10,
+        "continuingIssueValue": 5,
+        "total": 96
+      },
+      "sourceGate": {
+        "trustedSources": 6,
+        "primarySources": 3,
+        "independentSecondarySources": 3,
+        "independentSecondarySourcesConfirmingEvent": 2,
+        "unresolvedFactualConflict": false,
+        "passed": true
+      },
+      "contentGate": {
+        "scoreAtLeast65": true,
+        "noPlaceholderLanguage": true,
+        "completeDossierSections": true,
+        "answerableClatPassageQuestions": 3,
+        "validAiletMcqs": 2,
+        "qCards": 6,
+        "completeOnePager": true,
+        "passed": true
+      },
+      "repositoryDecision": "existing_issue_update",
+      "decision": "updated",
+      "reason": "Parliamentary passage materially advances an existing continuing issue and satisfies every deterministic score, source, conflict and content gate.",
+      "conflictResolution": "Primary and independent sources agreed on passage dates and a ceiling of 37 judges excluding the CJI, or 38 including the CJI. Parliamentary passage was kept distinct from presidential assent.",
+      "sources": [
+        "https://sansad.in/ls/legislation/bills",
+        "https://prsindia.org/files/bills_acts/bills_parliament/2026/Supreme_Court_%28Number_of_Judges%29_%28A%29_Bill_2026.pdf",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2258131&lang=1&reg=3",
+        "https://prsindia.org/billtrack/the-supreme-court-number-of-judges-amendment-bill-2026",
+        "https://www.barandbench.com/news/law-policy/you-only-appoint-judges-with-your-ideology-menaka-guruswamy-in-rajya-sabha-debate-on-supreme-court-judges-bill",
+        "https://indianexpress.com/article/india/supreme-court-more-judges-cabinet-approves-bill-10674459/"
+      ]
+    },
+    {
+      "title": "RBI final directions on recovery agents and loan recovery",
+      "scoreBreakdown": {
+        "legalConstitutional": 21,
+        "significance": 13,
+        "passagePotential": 14,
+        "staticGK": 9,
+        "recencySubstantiveNovelty": 9,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 9,
+        "continuingIssueValue": 4,
+        "total": 84
+      },
+      "sourceGate": {
+        "trustedSources": 3,
+        "primarySources": 1,
+        "independentSecondarySources": 2,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "No independent trusted source indexed by the cutoff confirmed the final 6 August directions",
+        "Earlier coverage of the draft does not satisfy same-event corroboration"
+      ]
+    },
+    {
+      "title": "RBI review of concentration risk in rural cooperative banks",
+      "scoreBreakdown": {
+        "legalConstitutional": 17,
+        "significance": 12,
+        "passagePotential": 12,
+        "staticGK": 9,
+        "recencySubstantiveNovelty": 9,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 7,
+        "continuingIssueValue": 4,
+        "total": 75
+      },
+      "sourceGate": {
+        "trustedSources": 2,
+        "primarySources": 1,
+        "independentSecondarySources": 1,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "No independent trusted same-event confirmation was found",
+        "Available secondary material addressed earlier policy context"
+      ]
+    },
+    {
+      "title": "Inventory-based cross-border e-commerce export framework",
+      "scoreBreakdown": {
+        "legalConstitutional": 12,
+        "significance": 12,
+        "passagePotential": 12,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 5,
+        "sourceStrength": 6,
+        "examPatternSimilarity": 8,
+        "continuingIssueValue": 4,
+        "total": 67
+      },
+      "sourceGate": {
+        "trustedSources": 3,
+        "primarySources": 1,
+        "independentSecondarySources": 2,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "The 6 August implementation step lacked independent trusted same-event corroboration",
+        "Its principal policy novelty arose from the earlier 23 July FDI decision"
+      ]
+    },
+    {
+      "title": "Centre affidavit on income-based prioritisation within SC/ST reservations",
+      "scoreBreakdown": {
+        "legalConstitutional": 25,
+        "significance": 13,
+        "passagePotential": 14,
+        "staticGK": 10,
+        "recencySubstantiveNovelty": 6,
+        "sourceStrength": 4,
+        "examPatternSimilarity": 9,
+        "continuingIssueValue": 5,
+        "total": 86
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 0,
+        "independentSecondarySources": 1,
+        "independentSecondarySourcesConfirmingEvent": 1,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "The underlying affidavit or an authoritative court order was not accessible from a primary source",
+        "The report concerned a party position in pending litigation rather than a final judicial outcome"
+      ]
+    },
+    {
+      "title": "Supreme Court notice on alleged breach of medical records",
+      "scoreBreakdown": {
+        "legalConstitutional": 22,
+        "significance": 13,
+        "passagePotential": 13,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 7,
+        "sourceStrength": 4,
+        "examPatternSimilarity": 8,
+        "continuingIssueValue": 3,
+        "total": 78
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 0,
+        "independentSecondarySources": 1,
+        "independentSecondarySourcesConfirmingEvent": 1,
+        "unresolvedFactualConflict": true,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "No authoritative primary order was available by the cutoff",
+        "The asserted scale and cause of the breach remained allegations in a pending petition"
+      ]
+    },
+    {
+      "title": "Centre deploys joint response team for Chandipura virus outbreak",
+      "scoreBreakdown": {
+        "legalConstitutional": 3,
+        "significance": 13,
+        "passagePotential": 12,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 9,
+        "sourceStrength": 9,
+        "examPatternSimilarity": 6,
+        "continuingIssueValue": 2,
+        "total": 62
+      },
+      "sourceGate": {
+        "trustedSources": 4,
+        "primarySources": 2,
+        "independentSecondarySources": 2,
+        "independentSecondarySourcesConfirmingEvent": 1,
+        "unresolvedFactualConflict": false,
+        "passed": true
+      },
+      "repositoryDecision": "new_issue",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "Score below 65",
+        "Limited legal and constitutional value despite public-health significance"
+      ]
+    },
+    {
+      "title": "Second BRICS Anti-Corruption Working Group meeting",
+      "scoreBreakdown": {
+        "legalConstitutional": 15,
+        "significance": 11,
+        "passagePotential": 11,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 8,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 7,
+        "continuingIssueValue": 3,
+        "total": 68
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "No independent trusted same-event corroboration was found",
+        "The official release did not establish a sufficiently concrete new legal or institutional outcome"
+      ]
+    },
+    {
+      "title": "NITI Aayog Reimagining Care report",
+      "scoreBreakdown": {
+        "legalConstitutional": 7,
+        "significance": 10,
+        "passagePotential": 10,
+        "staticGK": 7,
+        "recencySubstantiveNovelty": 7,
+        "sourceStrength": 7,
+        "examPatternSimilarity": 5,
+        "continuingIssueValue": 2,
+        "total": 55
+      },
+      "sourceGate": {
+        "trustedSources": 2,
+        "primarySources": 1,
+        "independentSecondarySources": 1,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "new_issue",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "Score below 65",
+        "No independent trusted same-event confirmation was identified"
+      ]
+    },
+    {
+      "title": "Indian Pharmacopoeia Commission recognised by WHO SEARN",
+      "scoreBreakdown": {
+        "legalConstitutional": 4,
+        "significance": 9,
+        "passagePotential": 8,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 7,
+        "sourceStrength": 7,
+        "examPatternSimilarity": 5,
+        "continuingIssueValue": 1,
+        "total": 49
+      },
+      "sourceGate": {
+        "trustedSources": 2,
+        "primarySources": 2,
+        "independentSecondarySources": 0,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "new_issue",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "Score below 65",
+        "Recognition had limited CLAT passage and exam-pattern value",
+        "No independent trusted same-event corroboration was found"
+      ]
+    }
+  ],
+  "published": [],
+  "updated": [
+    {
+      "title": "Supreme Court Reform Proposals",
+      "action": "updated",
+      "version": 2,
+      "score": 96,
+      "path": "CA_Source_Repository/07_Jul_2026/supreme_court_reform_proposals.md",
+      "summary": "Added the May Ordinance, July introduction, 3 August Lok Sabha passage, 5 August Rajya Sabha passage, statutory ceiling, pendency data, constitutional links, questions, Q-cards, One-Pager and version history."
+    }
+  ],
+  "ignored": [
+    {
+      "title": "RBI final directions on recovery agents and loan recovery",
+      "reason": "Score 84, but the same-event independent source gate failed"
+    },
+    {
+      "title": "RBI review of concentration risk in rural cooperative banks",
+      "reason": "Score 75, but the same-event independent source gate failed"
+    },
+    {
+      "title": "Inventory-based cross-border e-commerce export framework",
+      "reason": "Score 67, but same-event corroboration and substantive-novelty gates failed"
+    },
+    {
+      "title": "Centre affidavit on income-based prioritisation within SC/ST reservations",
+      "reason": "Score 86, but no primary filing or final judicial outcome was available"
+    },
+    {
+      "title": "Supreme Court notice on alleged breach of medical records",
+      "reason": "Score 78, but the primary-source and unresolved-factual-conflict gates failed"
+    },
+    {
+      "title": "Centre deploys joint response team for Chandipura virus outbreak",
+      "reason": "Score 62, below threshold"
+    },
+    {
+      "title": "Second BRICS Anti-Corruption Working Group meeting",
+      "reason": "Score 68, but the independent source and substantive-outcome gates failed"
+    },
+    {
+      "title": "NITI Aayog Reimagining Care report",
+      "reason": "Score 55, below threshold"
+    },
+    {
+      "title": "Indian Pharmacopoeia Commission recognised by WHO SEARN",
+      "reason": "Score 49, below threshold"
+    }
+  ],
+  "validationResults": [
+    {
+      "name": "knowledge_graph_rebuild",
+      "command": "python3 build_ca_knowledge_graph.py",
+      "passed": true,
+      "details": "Compiled 331 dossiers and redistributed 1,603 questions across 125 days"
+    },
+    {
+      "name": "dossier_content_gate",
+      "passed": true,
+      "details": "Version 2 contains all 14 dossier sections, three answerable CLAT passage questions, two AILET MCQs, six Q-cards and a complete One-Pager with no placeholder language"
+    },
+    {
+      "name": "knowledge_graph_projection",
+      "passed": true,
+      "details": "The canonical graph contains 331 nodes and projects Supreme Court Reform Proposals with importance score 96 and last verification date 2026-08-07"
+    },
+    {
+      "name": "ca_tests",
+      "command": "npm run test:ca",
+      "passed": true,
+      "details": "12 tests passed; 0 failed"
+    },
+    {
+      "name": "production_build",
+      "command": "npm run build",
+      "passed": true,
+      "details": "Vite transformed 1,644 modules and completed the production build in 11.82 seconds; the large-chunk warning was non-blocking"
+    },
+    {
+      "name": "publication_validation",
+      "passed": true,
+      "details": "Only the existing Supreme Court dossier update passed all score, source, conflict, completeness and generated-data validations"
+    }
+  ],
+  "filesChangedByRun": [
+    "CA_Source_Repository/07_Jul_2026/supreme_court_reform_proposals.md",
+    "src/data/ca_knowledge_graph.json",
+    "src/data/gk_qcards_data.json",
+    "src/data/gk_question_bank.json",
+    "CA_Agent_Logs/2026-08-07T064253+0530_daily-ca-orchestrator.json"
+  ],
+  "changeControl": {
+    "newDossiersCreated": 0,
+    "existingDossiersUpdated": 1,
+    "duplicatesCreated": 0,
+    "unrelatedUserChangesPreserved": true,
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "externalMessagesSent": false
+  },
+  "warnings": [
+    "The production build reported chunks larger than 500 kB; this did not fail validation.",
+    "Several high-scoring candidates were rejected fail-closed because they lacked a primary document, independent same-event confirmation, a resolved factual record, or a final substantive outcome."
+  ],
+  "errors": []
+}

@@ -8,6 +8,9 @@ import CAKnowledgeGraph from './CAKnowledgeGraph';
 import GKDailyOnePagers from './GKDailyOnePagers';
 import GKQCardStudio from './GKQCardStudio';
 import { useCAContent } from '../caContent';
+import {
+  getDossierMonths, getDossierPriorityForMonth, isDossierInMonth
+} from '../utils/caMonths';
 
 export default function CADashboard({ 
   questions, userProgress, onStartDayDrill, onStartTopicPractice, 
@@ -42,11 +45,14 @@ export default function CADashboard({
   const indexedGraphData = graphData.map((dossier, index) => ({ ...dossier, index }));
   const getDossierKey = (dossier) => `${dossier.folderOrder || dossier.month}/${dossier.title}`;
   const currentMonthLabel = new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' }).format(new Date());
-  const catalogueMonths = [...new Set(indexedGraphData.map(dossier => dossier.month))];
+  const catalogueMonths = [...new Set(indexedGraphData.flatMap(getDossierMonths))];
   const activeStudyMonth = catalogueMonths.includes(currentMonthLabel) ? currentMonthLabel : 'Jul 2026';
 
   // 1. Calculate P1 Must-Master Stats
-  const p1Dossiers = indexedGraphData.filter(d => d.priority === 'P1' && d.month === activeStudyMonth);
+  const p1Dossiers = indexedGraphData.filter(d => (
+    getDossierPriorityForMonth(d, activeStudyMonth) === 'P1'
+    && isDossierInMonth(d, activeStudyMonth)
+  ));
   const completedP1s = p1Dossiers.filter(d => {
     const progress = (userProgress?.caDossierProgress || {})[getDossierKey(d)];
     return Boolean(progress?.status && progress.status !== 'NOT_STARTED') || ((userProgress?.caTopicAttempted || {})[d.title] || 0) > 0;

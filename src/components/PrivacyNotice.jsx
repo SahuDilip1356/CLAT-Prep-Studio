@@ -22,7 +22,7 @@ export default function PrivacyNotice({ compact = false }) {
           <li>Processors: Google Firebase for authentication, database, functions and hosting; the configured transactional email provider for consent and rights messages.</li>
           <li>Rights: access, correction, completion, updating, erasure, grievance and nomination through the Privacy Centre.</li>
           <li>Withdrawal: use the Privacy Centre; withdrawing required consent closes cloud access and starts the verified deletion workflow.</li>
-          <li>Retention: account data lasts while the account and purpose remain active; pending parent invitations expire after 48 hours and unused activation codes after 24 hours.</li>
+          <li>Retention: account data lasts while the account and purpose remain active; pending parent invitations expire after 48 hours and unused student activation links after 24 hours.</li>
         </ul>
       )}
       {privacyEmail ? (

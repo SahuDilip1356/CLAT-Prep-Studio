@@ -6,6 +6,10 @@ import {
   Globe, Landmark, MapPin, MessageSquare, AlertCircle, Compass, Star, Filter,
   ChevronDown, ChevronUp, BookMarked
 } from 'lucide-react';
+import {
+  compareDossierMonths, formatDossierMonthLabel, getDossierMonths,
+  getDossierPriorityForMonth
+} from '../utils/caMonths';
 
 export default function CAKnowledgeGraph({
   graphData = bundledGraphData,
@@ -69,7 +73,13 @@ export default function CAKnowledgeGraph({
   });
   
   // Collapsible months and priority categories
-  const [expandedMonths, setExpandedMonths] = useState({ 'Continuing Issues': true });
+  const currentMonthLabel = new Intl.DateTimeFormat('en-US', {
+    month: 'short', year: 'numeric'
+  }).format(new Date());
+  const [expandedMonths, setExpandedMonths] = useState({
+    'Continuing Issues': true,
+    [currentMonthLabel]: true
+  });
   const [expandedPriorities, setExpandedPriorities] = useState({ 'P1': true });
 
   const toggleMonth = (monthName) => {
@@ -138,18 +148,26 @@ export default function CAKnowledgeGraph({
   const continuingDossiers = [];
 
   graphData.forEach((dossier, index) => {
-    const month = dossier.month || "Jul 2026";
-    if (!dossiersByMonth[month]) {
-      dossiersByMonth[month] = [];
-    }
-    dossiersByMonth[month].push({ ...dossier, index });
+    const dossierMonths = getDossierMonths(dossier);
+    dossierMonths.forEach((month) => {
+      if (!dossiersByMonth[month]) {
+        dossiersByMonth[month] = [];
+      }
+      dossiersByMonth[month].push({
+        ...dossier,
+        index,
+        priority: getDossierPriorityForMonth(dossier, month),
+        projectedMonth: month,
+        isMonthProjection: month !== dossier.month
+      });
+    });
 
     const priority = dossier.priority || "P1";
     if (dossiersByPriority[priority]) {
       dossiersByPriority[priority].push({ ...dossier, index });
     }
 
-    if (dossier.continuingIssue || month === "Continuing Issues") {
+    if (dossier.continuingIssue || dossier.month === "Continuing Issues") {
       continuingDossiers.push({ ...dossier, index });
     }
   });
@@ -260,7 +278,17 @@ export default function CAKnowledgeGraph({
           display: 'flex', justifyContent: 'space-between', alignItems: 'center'
         }}
       >
-        <span>{node.title}</span>
+        <span>
+          {node.title}
+          {node.isMonthProjection && (
+            <small style={{
+              marginLeft: '6px', color: 'var(--brand-mint)', fontWeight: 800,
+              textTransform: 'uppercase'
+            }}>
+              Updated
+            </small>
+          )}
+        </span>
         <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)' }}>{node.importanceScore}</span>
       </button>
     );
@@ -338,11 +366,7 @@ export default function CAKnowledgeGraph({
           {/* VIEW MODE 1: MONTH-WISE DIRECTORY */}
           {directoryMode === 'MONTH' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              {Object.keys(dossiersByMonth).sort((a, b) => {
-                const orderA = dossiersByMonth[a][0]?.folderOrder || a;
-                const orderB = dossiersByMonth[b][0]?.folderOrder || b;
-                return orderA.localeCompare(orderB);
-              }).map(monthName => {
+              {Object.keys(dossiersByMonth).sort(compareDossierMonths).map(monthName => {
                 const isExpanded = !!expandedMonths[monthName];
                 return (
                   <div key={monthName} style={{ marginBottom: '4px' }}>
@@ -590,7 +614,7 @@ export default function CAKnowledgeGraph({
                     {activeNode.title}
                   </h2>
                   <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: '4px 0 0 0' }}>
-                    Category: <strong>{activeNode.category}</strong> • Subcategory: <strong>{activeNode.subcategory}</strong> • Month: <strong>{activeNode.month}</strong> • Last Verified: <strong>{activeNode.lastVerifiedDate || '2026-07-22'}</strong>
+                    Category: <strong>{activeNode.category}</strong> • Subcategory: <strong>{activeNode.subcategory}</strong> • Month: <strong>{formatDossierMonthLabel(activeNode)}</strong> • Last Verified: <strong>{activeNode.lastVerifiedDate || '2026-07-22'}</strong>
                   </p>
                 </div>
 

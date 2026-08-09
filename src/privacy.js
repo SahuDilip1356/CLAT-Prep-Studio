@@ -1,5 +1,9 @@
-export const PRIVACY_NOTICE_VERSION = 'student-privacy-2026-07-23';
-export const CONSENT_VERSION = 'parent-consent-2026-07-23';
+import {
+  CONSENT_VERSION,
+  PRIVACY_NOTICE_VERSION
+} from '../shared/privacy-versions.js';
+
+export { CONSENT_VERSION, PRIVACY_NOTICE_VERSION };
 
 export const PRIVACY_STATUS = {
   ADULT_CONSENTED: 'ADULT_CONSENTED',
@@ -27,12 +31,14 @@ export function createAdultConsentChoice() {
   };
 }
 
-export function createParentInvitation(parentEmail) {
+export function createParentInvitation({ parentEmail, childName, childEmail }) {
   return {
     ageBand: 'CHILD',
     noticeVersion: PRIVACY_NOTICE_VERSION,
     consentVersion: CONSENT_VERSION,
-    parentEmail: parentEmail.trim().toLowerCase()
+    parentEmail: parentEmail.trim().toLowerCase(),
+    childName: childName.trim(),
+    childEmail: childEmail.trim().toLowerCase()
   };
 }
 

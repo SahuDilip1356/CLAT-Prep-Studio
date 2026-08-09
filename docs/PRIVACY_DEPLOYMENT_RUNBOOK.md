@@ -72,6 +72,18 @@ rejection, duplicate use, activation delivery, and child-rights approval.
 - Assign `privacyAdmin` only through a privileged operational script with MFA and a change ticket. An email address never grants admin access.
 - Confirm browser clients cannot write consent receipts, parent requests, privacy status, or custom claims.
 
+To inspect and then grant an administrator role, run the repository utility with a narrowly scoped
+Firebase Admin credential. It preserves existing custom claims and requires an exact-email
+confirmation before writing:
+
+```bash
+npm run admin:role -- --email=admin@example.com --role=privacyAdmin
+npm run admin:role -- --email=admin@example.com --role=privacyAdmin --apply --confirm=admin@example.com
+```
+
+Use `caAdmin` instead for Current Affairs-only access. Record the dry-run output, approver and
+change ticket, then have the administrator sign out and back in to receive a refreshed token.
+
 ## 5. Build and deploy gate
 
 Set the client variables in the production build environment and run:

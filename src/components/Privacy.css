@@ -166,6 +166,28 @@
   font-weight: 800;
 }
 
+.privacy-student-summary {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 16px 0;
+  padding: 14px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.privacy-student-summary > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.privacy-student-summary span {
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+}
+
 .privacy-field input,
 .privacy-field select,
 .privacy-field textarea {

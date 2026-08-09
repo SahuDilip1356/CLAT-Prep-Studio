@@ -1,0 +1,463 @@
+{
+  "runId": "clat-daily-ca-orchestrator-2026-08-04T061821+0530",
+  "automationId": "clat-daily-ca-orchestrator",
+  "trigger": "AUTOMATION",
+  "timezone": "Asia/Kolkata",
+  "startedAt": "2026-08-04T06:18:21+05:30",
+  "finishedAt": "2026-08-04T07:05:52+05:30",
+  "window": {
+    "start": "2026-08-03T00:18:21+05:30",
+    "end": "2026-08-04T06:18:21+05:30",
+    "durationHours": 30
+  },
+  "status": "completed",
+  "repositoryComparison": {
+    "markdownDossiersBefore": 330,
+    "knowledgeGraphNodesBefore": 330,
+    "markdownDossiersAfter": 331,
+    "knowledgeGraphNodesAfter": 331,
+    "comparisonScope": "Every Markdown title and continuing issue in CA_Source_Repository, plus every title and node in src/data/ca_knowledge_graph.json.",
+    "duplicatePolicy": "Exact titles, normalized issue keys, topic overlap, and continuing-issue coverage were checked before publication. Existing or continuing dossiers were preferred whenever they represented the same issue.",
+    "closestExistingDossiers": [
+      {
+        "candidate": "United Nations Framework Convention on International Tax Cooperation",
+        "title": "Income Tax Reform Legislation",
+        "path": "CA_Source_Repository/07_Jul_2026/income_tax_reform_legislation.md",
+        "decision": "distinct_issue",
+        "reason": "The existing dossier concerns Indian domestic income-tax legislation, while the candidate concerns a UN treaty-negotiation process allocating cross-border taxing rights."
+      },
+      {
+        "candidate": "United Nations Framework Convention on International Tax Cooperation",
+        "title": "United Nations Developments",
+        "path": "CA_Source_Repository/07_Jul_2026/united_nations_developments.md",
+        "decision": "distinct_issue",
+        "reason": "The existing dossier is a general UN institutions brief and does not cover the tax-convention mandate, protocols, or negotiations."
+      },
+      {
+        "candidate": "Glaw Lake becomes India's 101st Ramsar site",
+        "title": "New Ramsar Recognitions",
+        "path": "CA_Source_Repository/07_Jul_2026/new_ramsar_recognitions.md",
+        "decision": "existing_issue_not_updated",
+        "reason": "The official announcement was in-window, but a directly accessible trusted secondary report independently confirming the designation was not available at cutoff."
+      },
+      {
+        "candidate": "Glasgow 2026 final results and Ahmedabad 2030 handover",
+        "title": "Commonwealth Games 2026",
+        "path": "CA_Source_Repository/07_Jul_2026/commonwealth_games_2026.md",
+        "decision": "existing_issue_not_updated",
+        "reason": "Final India medal totals disagreed across the available live/secondary sources and the official results crawl was stale, leaving an unresolved factual conflict."
+      }
+    ]
+  },
+  "sourcesScanned": [
+    {
+      "publisher": "Press Information Bureau",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://www.pib.gov.in/AllRelease.aspx?MenuId=3&lang=1&reg=3",
+      "result": "Screened the complete in-window 3 August release list, including Parliament answers, wetland recognition, sports, finance, education, health, coal, and routine programme updates."
+    },
+    {
+      "publisher": "UN Department of Economic and Social Affairs",
+      "type": "PRIMARY",
+      "publishedAt": "2026-07",
+      "url": "https://desapublications.un.org/un-desa-voice/more-from-undesa/july-2026/making-global-tax-system-work-everyone",
+      "result": "Confirmed that the fifth session would be the first to negotiate concrete draft text across the framework convention and both early protocols, with final texts targeted for 2027."
+    },
+    {
+      "publisher": "Indico.UN",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://indico.un.org/event/1024271/",
+      "result": "Confirmed the live fifth session at UN Headquarters in New York from 3 to 13 August 2026."
+    },
+    {
+      "publisher": "UN Financing for Sustainable Development Office",
+      "type": "PRIMARY",
+      "publishedAt": "2026",
+      "url": "https://financing.desa.un.org/inc",
+      "result": "Confirmed the member-state-led 2025-2027 negotiating process, the three workstreams, and the intended submission of final texts in 2027."
+    },
+    {
+      "publisher": "United Nations General Assembly",
+      "type": "PRIMARY",
+      "publishedAt": "2024-12-24",
+      "url": "https://financing.desa.un.org/sites/default/files/2025-01/GA%20resolution%2079_235.pdf",
+      "result": "Controlling mandate: Resolution 79/235 established the open-ended negotiating committee and required simultaneous drafting of a framework convention and two early protocols."
+    },
+    {
+      "publisher": "The Guardian",
+      "type": "SECONDARY",
+      "publishedAt": "2026-08-03T02:25:00+10:00",
+      "lastModifiedAt": "2026-08-03T19:46:00+10:00",
+      "url": "https://www.theguardian.com/commentisfree/2026/aug/02/the-guardian-view-on-global-corporate-tax-a-500bn-prize-that-states-must-seize",
+      "result": "Independent current corroboration that the New York talks were opening, that the process aims at a framework convention plus protocols, and that taxing-rights allocation is contested. Advocacy estimates were not treated as settled facts."
+    },
+    {
+      "publisher": "Financial Afrik",
+      "type": "SECONDARY",
+      "publishedAt": "2026-06-29",
+      "url": "https://www.financialafrik.com/en/2026/06/29/negotiation-of-the-united-nations-framework-convention-on-tax-cooperation-a-turning-point-for-african-states-and-civil-society/",
+      "result": "Independent background analysis corroborating the framework-convention structure and developing-country stakes."
+    },
+    {
+      "publisher": "Press Information Bureau / Ministry of Environment, Forest and Climate Change",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2294036&lang=1&reg=3",
+      "result": "Official announcement that Glaw Lake became Arunachal Pradesh's first Ramsar site and India's tally reached 101."
+    },
+    {
+      "publisher": "Convention on Wetlands",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://www.ramsar.org/country-profile/india",
+      "result": "The crawled country profile still displayed 100 sites; treated as database lag because two newer, specific official sources identify the 3 August addition, but the secondary-source gate remained unmet."
+    },
+    {
+      "publisher": "District Lohit, Government of Arunachal Pradesh",
+      "type": "PRIMARY",
+      "publishedAt": "2026",
+      "url": "https://lohit.nic.in/tourist-place/glaw-tuwi-hawai-lake/",
+      "result": "Verified Glaw Lake's location, access, and geographic context."
+    },
+    {
+      "publisher": "India Today North East",
+      "type": "SECONDARY",
+      "publishedAt": "2025-01-12",
+      "url": "https://www.indiatodayne.in/arunachal-pradesh/story/arunachal-deputy-cm-inaugurates-glaw-lake-road-steel-bridge-and-tulow-resort-to-boost-tourism-1153641-2025-01-12",
+      "result": "Corroborated the earlier Ramsar proposal and site context but did not independently confirm the 3 August 2026 designation."
+    },
+    {
+      "publisher": "Glasgow 2026",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://www.glasgow2026.com/medals",
+      "result": "Official results interface was dynamic, while the available crawl reflected an earlier-stage table and could not resolve the final India total."
+    },
+    {
+      "publisher": "Indian Olympic Association",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://olympic.ind.in/cwg-2026/",
+      "result": "Official Indian team page was screened, but its crawled medal information was not current enough to settle the final total."
+    },
+    {
+      "publisher": "NDTV Sports",
+      "type": "SECONDARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://sports.ndtv.com/commonwealth-games-2026/medals-tally",
+      "result": "Displayed India fourth with 13 gold, 17 silver, 9 bronze and 39 total, conflicting with another late event tally that showed 38."
+    },
+    {
+      "publisher": "Securities and Exchange Board of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://www.sebi.gov.in/legal/circulars/aug-2026/extension-of-timeline-for-enrolment-with-parrva-as-specified-in-sebi-circular-no-ho-38-14-4-2026-mirsd-pod-i-10557-2026-dated-april-29-2026_103314.html",
+      "result": "Assessed the PaRRVA enrolment extension as a routine compliance-timeline adjustment below the publication threshold."
+    },
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+      "result": "Screened the citizen-charter status update, executive-director appointment, government-securities auction, and money-market operations; none cleared the deterministic filter."
+    },
+    {
+      "publisher": "Supreme Court of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-04",
+      "url": "https://www.sci.gov.in/judgements-judgement-date/",
+      "result": "No new substantive judgment dated 3 or 4 August was verified in the window."
+    },
+    {
+      "publisher": "Parliament of India / Sansad",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-04",
+      "url": "https://sansad.in/ls/legislation/bills",
+      "result": "No qualifying in-window bill was verified; Question Hour releases were scored separately as administrative or policy updates."
+    },
+    {
+      "publisher": "Election Commission of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-04",
+      "url": "https://www.eci.gov.in/",
+      "result": "No new election-law or electoral-reform press note was verified; scheduled by-election counting was routine and lacked substantive legal novelty."
+    }
+  ],
+  "candidates": [
+    {
+      "title": "United Nations Framework Convention on International Tax Cooperation — fifth session opens",
+      "eventDate": "2026-08-03",
+      "canonicalDossier": "United Nations Framework Convention on International Tax Cooperation",
+      "score": {
+        "legalConstitutional": 22,
+        "significance": 15,
+        "passagePotential": 15,
+        "staticGk": 10,
+        "recencySubstantiveNovelty": 9,
+        "sourceStrength": 10,
+        "examPatternSimilarity": 9,
+        "continuingIssueValue": 3,
+        "total": 93
+      },
+      "sourceGate": {
+        "trustedSources": 6,
+        "primarySources": 4,
+        "independentSecondarySources": 2,
+        "unresolvedFactualConflict": false,
+        "passed": true
+      },
+      "decision": "published_new",
+      "conflictResolution": "The general FSDO calendar had listed 3-14 August, while the current UN DESA preview and live Indico.UN event portal both list 3-13 August. The dossier follows the two current, session-specific official sources. The Guardian's USD 500 billion figure is identified as a Tax Justice Network estimate and was not used as an established fact.",
+      "reason": "A concrete shift to text-based treaty negotiations with high treaty-law, fiscal-sovereignty, constitutional-taxation, development-finance, UN-governance, and passage potential."
+    },
+    {
+      "title": "Glaw Lake becomes India's 101st Ramsar site",
+      "eventDate": "2026-08-03",
+      "score": {
+        "legalConstitutional": 18,
+        "significance": 13,
+        "passagePotential": 14,
+        "staticGk": 10,
+        "recencySubstantiveNovelty": 10,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 9,
+        "continuingIssueValue": 4,
+        "total": 83
+      },
+      "sourceGate": {
+        "trustedSources": 4,
+        "primarySources": 3,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "The raw score cleared 65 and an existing Ramsar dossier was identified, but the in-window designation was not independently corroborated by a directly accessible trusted secondary source at cutoff. Older independent reporting confirmed only the proposal and site context."
+    },
+    {
+      "title": "Glasgow 2026 final results and Ahmedabad 2030 handover",
+      "eventDate": "2026-08-02",
+      "score": {
+        "legalConstitutional": 4,
+        "significance": 13,
+        "passagePotential": 10,
+        "staticGk": 10,
+        "recencySubstantiveNovelty": 10,
+        "sourceStrength": 7,
+        "examPatternSimilarity": 10,
+        "continuingIssueValue": 5,
+        "total": 69
+      },
+      "sourceGate": {
+        "trustedSources": 4,
+        "primarySources": 2,
+        "independentSecondarySources": 2,
+        "unresolvedFactualConflict": true,
+        "passed": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "Available late tallies disagreed between 38 and 39 Indian medals, while the crawled official results were stale. The no-unresolved-conflict rule barred an update to the existing Commonwealth Games dossier."
+    },
+    {
+      "title": "SEBI extends PaRRVA enrolment timeline",
+      "eventDate": "2026-08-03",
+      "score": {
+        "legalConstitutional": 15,
+        "significance": 7,
+        "passagePotential": 7,
+        "staticGk": 7,
+        "recencySubstantiveNovelty": 8,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 5,
+        "continuingIssueValue": 3,
+        "total": 57
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "passed": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "Below 65 and a routine implementation-timeline extension without enough substantive regulatory novelty."
+    },
+    {
+      "title": "RBI appoints Monisha Chakraborty as Executive Director",
+      "eventDate": "2026-08-03",
+      "score": {
+        "legalConstitutional": 5,
+        "significance": 5,
+        "passagePotential": 4,
+        "staticGk": 5,
+        "recencySubstantiveNovelty": 7,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 3,
+        "continuingIssueValue": 1,
+        "total": 35
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "passed": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "Below 65; an institutional personnel announcement without substantial policy or legal change."
+    },
+    {
+      "title": "Counting in three assembly by-elections",
+      "eventDate": "2026-08-03",
+      "score": {
+        "legalConstitutional": 8,
+        "significance": 6,
+        "passagePotential": 6,
+        "staticGk": 6,
+        "recencySubstantiveNovelty": 5,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 5,
+        "continuingIssueValue": 3,
+        "total": 44
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "passed": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "Below 65; routine scheduled counting with no verified new election-law or constitutional development."
+    },
+    {
+      "title": "Parliament answer on foreign university campuses in India",
+      "eventDate": "2026-08-03",
+      "score": {
+        "legalConstitutional": 12,
+        "significance": 8,
+        "passagePotential": 9,
+        "staticGk": 8,
+        "recencySubstantiveNovelty": 6,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 5,
+        "continuingIssueValue": 1,
+        "total": 54
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "passed": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "Below 65; the parliamentary answer mainly restated implementation status and lacked independent in-window corroboration."
+    },
+    {
+      "title": "National Organ Donation Day observance and transplant awareness",
+      "eventDate": "2026-08-03",
+      "score": {
+        "legalConstitutional": 10,
+        "significance": 8,
+        "passagePotential": 8,
+        "staticGk": 7,
+        "recencySubstantiveNovelty": 6,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 5,
+        "continuingIssueValue": 2,
+        "total": 51
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "passed": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "Below 65; an awareness observance without a new statute, judgment, regulator action, or major policy change."
+    }
+  ],
+  "published": [
+    {
+      "title": "United Nations Framework Convention on International Tax Cooperation",
+      "action": "published_new",
+      "score": 93,
+      "path": "CA_Source_Repository/08_Aug_2026/un_framework_convention_on_international_tax_cooperation.md",
+      "generatedArtifacts": {
+        "knowledgeGraphNode": true,
+        "qCardCount": 1,
+        "clatQuestionCount": 3,
+        "ailetQuestionCount": 2
+      }
+    }
+  ],
+  "updated": [],
+  "ignored": [
+    {
+      "title": "Glaw Lake becomes India's 101st Ramsar site",
+      "reason": "Same-event independent secondary corroboration unavailable at cutoff."
+    },
+    {
+      "title": "Glasgow 2026 final results and Ahmedabad 2030 handover",
+      "reason": "Unresolved final-medal-tally conflict."
+    },
+    {
+      "title": "SEBI extends PaRRVA enrolment timeline",
+      "reason": "Below threshold."
+    },
+    {
+      "title": "RBI appoints Monisha Chakraborty as Executive Director",
+      "reason": "Below threshold."
+    },
+    {
+      "title": "Counting in three assembly by-elections",
+      "reason": "Below threshold and no substantive legal novelty."
+    },
+    {
+      "title": "Parliament answer on foreign university campuses in India",
+      "reason": "Below threshold and insufficient corroboration."
+    },
+    {
+      "title": "National Organ Donation Day observance and transplant awareness",
+      "reason": "Below threshold."
+    }
+  ],
+  "validationResults": [
+    {
+      "command": "python3 build_ca_knowledge_graph.py",
+      "exitCode": 0,
+      "passed": true,
+      "result": "331 dossiers compiled; one new CA Q-card added; three CLAT questions and two AILET questions added; 1,598 questions redistributed across 125 days."
+    },
+    {
+      "command": "npm run test:ca",
+      "exitCode": 0,
+      "passed": true,
+      "result": "10 tests passed, 0 failed."
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "passed": true,
+      "result": "Vite production build completed successfully; existing large-chunk advisory remained non-fatal."
+    },
+    {
+      "command": "generated-content inspection",
+      "exitCode": 0,
+      "passed": true,
+      "result": "Verified the new graph node has all six dossier sections, eight timeline entries, three answerable CLAT questions, two four-option AILET MCQs, six Q-cards, five One-Pager facts, exam traps, a mnemonic, a Geo Card, and confusion traps."
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "The production build reported existing chunks larger than 500 kB after minification; the build still passed.",
+    "The UN FSDO calendar's pre-session 3-14 August listing differed from the current UN DESA and live Indico.UN 3-13 August dates; the two current session-specific official sources control."
+  ],
+  "changeControl": {
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "externalMessagesSent": false,
+    "unrelatedUserChangesOverwritten": false,
+    "notes": "The pre-existing dirty worktree and unrelated user files were left in place. Only the new dossier, builder-managed CA data artifacts, and this audit log were created or regenerated."
+  }
+}

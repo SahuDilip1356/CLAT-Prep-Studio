@@ -2,8 +2,17 @@
 
 ## Daily execution
 
-The Codex automation `CLAT Daily CA Orchestrator` runs every day at 6:00 AM
-Asia/Kolkata against the saved CLAT Prep Studio project.
+Daily orchestration has two independently scheduled pipelines:
+
+1. The production Vercel cron calls `/api/ca-daily-cron` at `00:30 UTC`, which is
+   6:00 AM Asia/Kolkata. It publishes validated dossiers and run records to Firestore.
+2. The Codex automation `CLAT Daily CA Orchestrator` runs every day at 6:00 AM
+   Asia/Kolkata against the saved CLAT Prep Studio project. It maintains the repository
+   catalogue, derived assets, validation results, and dated JSON audit log.
+
+Both pipelines use the same publication gates below. A completed Firestore run is
+idempotent by date, while the repository automation updates canonical dossiers instead
+of creating duplicates.
 
 The automation:
 
@@ -12,6 +21,9 @@ The automation:
 3. Applies the 100-point CLAT Issue Dossier filter.
 4. Publishes only candidates scoring at least 65 that pass source and content validation.
 5. Updates existing or continuing issues instead of creating duplicate dossiers.
+   Repository dossiers can declare `featuredMonths` and `featuredPriority` so a
+   material update appears in its event month while retaining one canonical dossier,
+   one bookmark key, and one progress record.
 6. Rebuilds the knowledge graph and derived question/Q-card data.
 7. Runs the CA tests and production build.
 8. Writes a run record to `CA_Agent_Logs`, including no-op and failed runs.
@@ -49,9 +61,10 @@ The application also supports published `caDossiers` records in Firestore. Live 
 are merged with the bundled catalogue by canonical title and automatically projected
 into the Current Affairs Hub, Monthly Dossier, Daily One-Pager and Q-Card Studio.
 
-The authenticated manual endpoint is `/api/ca-daily-cron`. It is intentionally not in
-the Vercel cron schedule until the production project has `OPENAI_API_KEY`,
-`FIREBASE_SERVICE_ACCOUNT_JSON`, `FIREBASE_PROJECT_ID`, and `CRON_SECRET`.
+The authenticated manual endpoint is `/api/ca-daily-cron`. It is registered in the
+Vercel cron schedule only when the production project has `OPENAI_API_KEY`,
+`FIREBASE_SERVICE_ACCOUNT_JSON`, `FIREBASE_PROJECT_ID`, and `CRON_SECRET`. The CA test
+suite verifies that the endpoint remains registered for 6:00 AM Asia/Kolkata.
 
 ## Admin visibility
 

@@ -1,0 +1,220 @@
+{
+  "runId": "clat-daily-ca-orchestrator-2026-08-02T060000+0530",
+  "automationId": "clat-daily-ca-orchestrator",
+  "trigger": "MANUAL_BACKFILL",
+  "timezone": "Asia/Kolkata",
+  "startedAt": "2026-08-02T06:00:00+05:30",
+  "finishedAt": "2026-08-02T06:18:00+05:30",
+  "backfilledAt": "2026-08-02T17:30:00+05:30",
+  "window": {
+    "start": "2026-08-01T00:00:00+05:30",
+    "end": "2026-08-02T06:00:00+05:30",
+    "durationHours": 30
+  },
+  "status": "completed",
+  "repositoryComparison": {
+    "markdownDossiersBefore": 329,
+    "knowledgeGraphNodesBefore": 329,
+    "knowledgeGraphNodesAfter": 329,
+    "comparisonScope": "Existing canonical titles and continuing issues in CA_Source_Repository and src/data/ca_knowledge_graph.json",
+    "duplicatePolicy": "The qualifying development was merged into the existing India’s Energy Security dossier rather than published under a duplicate Samudra Manthan title.",
+    "matchedExistingDossiers": [
+      {
+        "candidate": "Cabinet approval of the National Offshore Exploration Scheme — Samudra Manthan",
+        "title": "India’s Energy Security",
+        "id": "FEB-23",
+        "path": "CA_Source_Repository/02_Feb_2026/indias_energy_security.md"
+      }
+    ]
+  },
+  "sourcesScanned": [
+    {
+      "publisher": "Press Information Bureau / Ministry of Petroleum and Natural Gas",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-01",
+      "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2292891&reg=48&lang=2",
+      "result": "Controlling source for Cabinet approval, scheme name, and ₹84,084 crore outlay."
+    },
+    {
+      "publisher": "Directorate General of Hydrocarbons",
+      "type": "PRIMARY",
+      "publishedAt": "2026-07-28",
+      "url": "https://www.ndrdgh.gov.in/NDR/?page_id=589",
+      "result": "Used for NELP, HELP, OALP, licensing features, and offshore exploration background."
+    },
+    {
+      "publisher": "Press Information Bureau",
+      "type": "PRIMARY",
+      "publishedAt": "2025-08-17",
+      "url": "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=155043&id=155043&lang=2&reg=48",
+      "result": "Used for the Prime Minister’s 2025 National Deep Water Exploration Mission announcement and Deep Ocean Mission distinction."
+    },
+    {
+      "publisher": "The Economic Times",
+      "type": "SECONDARY",
+      "publishedAt": "2026-07-28",
+      "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/govt-plans-rs-80000-crore-package-to-attract-deepwater-oil-explorers/articleshow/132670169.cms",
+      "result": "Independent context on proposed risk-sharing, well costs, seismic surveys, and the deepwater-block auction; proposal terms are labelled as pre-approval reporting."
+    },
+    {
+      "publisher": "Live Hindustan",
+      "type": "SECONDARY",
+      "publishedAt": "2026-07-28",
+      "url": "https://www.livehindustan.com/business/modi-government-gears-up-for-samudra-manthan-rs-80000-crore-package-for-oil-and-gas-exploration-201785207348084.html",
+      "result": "Independent corroboration of the proposed financing structure, exploration costs, and OALP block context."
+    },
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-01",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+      "result": "FCNR(B), ECB, and overseas borrowing reporting under the swap facility was screened but did not independently clear the dossier gate."
+    },
+    {
+      "publisher": "Press Information Bureau",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-01",
+      "url": "https://www.pib.gov.in/AllRelease.aspx",
+      "result": "All 1 August Union releases were screened, including tax devolution, SDRF assistance, India–Rwanda trade talks, transport projects, appointments, and programme announcements."
+    }
+  ],
+  "candidates": [
+    {
+      "title": "Cabinet approval of the National Offshore Exploration Scheme — Samudra Manthan",
+      "canonicalDossier": "India’s Energy Security",
+      "score": {
+        "legalConstitutional": 12,
+        "significance": 15,
+        "passagePotential": 13,
+        "staticGk": 10,
+        "recencyNovelty": 10,
+        "sourceStrength": 9,
+        "examPatternSimilarity": 8,
+        "continuingIssueValue": 5,
+        "total": 82
+      },
+      "sourceGate": {
+        "trustedSources": 5,
+        "primarySources": 3,
+        "independentSecondarySources": 2,
+        "unresolvedFactualConflict": false
+      },
+      "decision": "updated",
+      "conflictResolution": "Pre-approval reports described a proposed package of about ₹80,000 crore and possible reimbursement terms. The 1 August PIB announcement controls for Cabinet approval and the ₹84,084 crore outlay; proposal mechanics are clearly labelled until final scheme documents are available.",
+      "reason": "The Cabinet decision materially updates an existing energy-security dossier and creates strong links to Article 297, Union List Entry 53, maritime geography, HELP/OALP, and exploration-risk economics."
+    },
+    {
+      "title": "Advance tax devolution of ₹1,09,019 crore to states",
+      "score": {
+        "legalConstitutional": 12,
+        "significance": 10,
+        "passagePotential": 8,
+        "staticGk": 8,
+        "recencyNovelty": 7,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 5,
+        "continuingIssueValue": 1,
+        "total": 56
+      },
+      "decision": "ignored",
+      "rejectionReason": "Routine fiscal-transfer implementation without a new Finance Commission rule or constitutional change; below 65 and lacking independent current corroboration."
+    },
+    {
+      "title": "Advance SDRF assistance for monsoon-affected states",
+      "score": {
+        "legalConstitutional": 10,
+        "significance": 9,
+        "passagePotential": 8,
+        "staticGk": 8,
+        "recencyNovelty": 7,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 6,
+        "continuingIssueValue": 2,
+        "total": 55
+      },
+      "decision": "ignored",
+      "rejectionReason": "Important relief administration but no new disaster-law rule or institutional change; below 65 and failed the two-source gate."
+    },
+    {
+      "title": "RBI reporting under the foreign-currency swap facility",
+      "score": {
+        "legalConstitutional": 7,
+        "significance": 9,
+        "passagePotential": 8,
+        "staticGk": 9,
+        "recencyNovelty": 8,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 6,
+        "continuingIssueValue": 2,
+        "total": 54
+      },
+      "decision": "ignored",
+      "rejectionReason": "Technical reporting measure below 65 with no independent corroboration available by the window cutoff."
+    }
+  ],
+  "outcomes": {
+    "publishedNew": [],
+    "updated": [
+      "India’s Energy Security"
+    ],
+    "ignored": [
+      "Advance tax devolution of ₹1,09,019 crore to states",
+      "Advance SDRF assistance for monsoon-affected states",
+      "RBI reporting under the foreign-currency swap facility"
+    ],
+    "failed": []
+  },
+  "contentValidation": {
+    "allUpdatedDossiers": {
+      "completeIssueDossierSections": true,
+      "clatPassageQuestionsPerDossier": 2,
+      "ailetMcqsPerDossier": 2,
+      "qCardsPerDossier": 4,
+      "onePagerFactsPerDossier": 5,
+      "placeholderLanguageFound": false,
+      "unresolvedFactualConflicts": false,
+      "trustedSourceMinimumMet": true,
+      "primarySourceMinimumMet": true
+    }
+  },
+  "validationResults": [
+    {
+      "command": "python3 build_ca_knowledge_graph.py",
+      "exitCode": 0,
+      "result": "Passed; compiled 329 dossiers and redistributed 1,589 questions across 125 days."
+    },
+    {
+      "command": "npm run test:ca",
+      "exitCode": 0,
+      "result": "Passed; 8 tests passed, 0 failed."
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "result": "Passed; Vite production build completed.",
+      "warnings": [
+        "Vite reported a non-fatal chunk-size warning for minified bundles larger than 500 kB."
+      ]
+    },
+    {
+      "command": "git diff --check on automation-owned outputs",
+      "exitCode": 0,
+      "result": "Passed; no whitespace errors."
+    }
+  ],
+  "filesChangedByRun": [
+    "CA_Source_Repository/02_Feb_2026/indias_energy_security.md",
+    "src/data/ca_knowledge_graph.json",
+    "src/data/gk_question_bank.json",
+    "CA_Agent_Logs/2026-08-02T060000+0530_daily-ca-orchestrator.json"
+  ],
+  "externalActions": {
+    "firestoreWritten": false,
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "messagesSent": false
+  },
+  "unrelatedUserChangesPreserved": true,
+  "errors": []
+}

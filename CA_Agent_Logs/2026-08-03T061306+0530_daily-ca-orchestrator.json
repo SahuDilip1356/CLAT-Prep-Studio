@@ -1,0 +1,440 @@
+{
+  "runId": "clat-daily-ca-orchestrator-2026-08-03T061306+0530",
+  "automationId": "clat-daily-ca-orchestrator",
+  "trigger": "AUTOMATION",
+  "timezone": "Asia/Kolkata",
+  "startedAt": "2026-08-03T06:13:06+05:30",
+  "finishedAt": "2026-08-03T08:30:52+05:30",
+  "window": {
+    "start": "2026-08-02T00:13:06+05:30",
+    "end": "2026-08-03T06:13:06+05:30",
+    "durationHours": 30
+  },
+  "status": "completed",
+  "repositoryComparison": {
+    "markdownDossiersBefore": 329,
+    "knowledgeGraphNodesBefore": 329,
+    "knowledgeGraphNodesAfter": 330,
+    "comparisonScope": "Every existing Markdown title and continuing issue in CA_Source_Repository, plus every node in src/data/ca_knowledge_graph.json.",
+    "duplicatePolicy": "A new dossier was permitted only after exact-title, normalized-key, topic, and continuing-issue comparison. The existing European Union Institutions and Membership dossier was not treated as the same issue because it covers institutional structure and membership rather than AI regulation.",
+    "closestExistingDossiers": [
+      {
+        "candidate": "European Union Artificial Intelligence Act",
+        "title": "European Union Institutions and Membership",
+        "path": "CA_Source_Repository/01_Jan_2026/european_union_institutions_and_membership.md",
+        "decision": "distinct_issue"
+      },
+      {
+        "candidate": "Glasgow 2026 Commonwealth Games final results and 2030 handover",
+        "title": "Commonwealth Games 2026 and related Glasgow dossiers",
+        "path": "CA_Source_Repository/07_Jul_2026",
+        "decision": "existing_issue_not_updated_because_post-event_source_gate_failed_at_cutoff"
+      }
+    ]
+  },
+  "sourcesScanned": [
+    {
+      "publisher": "EUR-Lex",
+      "type": "PRIMARY",
+      "publishedAt": "2024-07-12",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32024R1689",
+      "result": "Controlling legal text for Regulation (EU) 2024/1689, phased application, scope, duties, and penalties."
+    },
+    {
+      "publisher": "European Commission",
+      "type": "PRIMARY",
+      "publishedAt": "2026-07-27",
+      "url": "https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act",
+      "result": "Current official FAQ used for the amended high-risk timetable, Article 50 application, scope, enforcement allocation, and fine ceilings."
+    },
+    {
+      "publisher": "European Commission",
+      "type": "PRIMARY",
+      "publishedAt": "2026-07-27",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems",
+      "result": "Official guidance corroborating that Article 50 transparency duties apply from 2 August 2026."
+    },
+    {
+      "publisher": "Council of the European Union",
+      "type": "PRIMARY",
+      "publishedAt": "2026-06-29",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/pdf/",
+      "result": "Official corroboration for the Digital Omnibus amendment and delayed high-risk-system dates."
+    },
+    {
+      "publisher": "Associated Press",
+      "type": "SECONDARY",
+      "publishedAt": "2026-07-31T09:47:00Z",
+      "url": "https://apnews.com/article/eu-ai-regulation-deepfakes-hacking-f4fcee1f9750e2b32cdf26ad73ee5ec2",
+      "result": "Independent reporting corroborating the 2 August transparency and enforcement milestone."
+    },
+    {
+      "publisher": "Cinco Días / El País",
+      "type": "SECONDARY",
+      "publishedAt": "2026-07-22",
+      "url": "https://cincodias.elpais.com/legal/2026-07-22/cinco-decisiones-para-que-una-empresa-se-adapte-al-ai-act.html",
+      "result": "Independent compliance reporting corroborating continued Article 50 application and the revised high-risk timetable."
+    },
+    {
+      "publisher": "Press Information Bureau",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-02",
+      "url": "https://www.pib.gov.in/AllRelease.aspx?MenuId=3&lang=1&reg=3",
+      "result": "Screened all listed 2 August releases, including drugs policy, coal, solar energy, biodiversity benefit sharing, manual-scavenging survey claims, BRICS statistics, defence training, and infrastructure reviews."
+    },
+    {
+      "publisher": "Press Information Bureau / Prime Minister's Office",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-02T13:48:00+05:30",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2293335&lang=1&reg=3",
+      "result": "Used to assess the Nasha Mukt Yuva campaign; no independent current corroboration was available by the cutoff."
+    },
+    {
+      "publisher": "Press Information Bureau / Ministry of Youth Affairs and Sports",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-02T19:13:00+05:30",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2293495&lang=1&reg=3",
+      "result": "Second official account of the Nasha Mukt Yuva campaign; not an independent secondary source."
+    },
+    {
+      "publisher": "Press Information Bureau / Ministry of Coal",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-02",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2293366&lang=1&reg=3",
+      "result": "Commercial-coal-mining background and monthly production data were screened as routine updates."
+    },
+    {
+      "publisher": "Press Information Bureau / Ministry of Environment, Forest and Climate Change",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-02",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2293326&lang=1&reg=3",
+      "result": "₹8.22 crore biodiversity benefit-sharing release for rice research was assessed but failed the independent-source gate."
+    },
+    {
+      "publisher": "Press Information Bureau / Ministry of Social Justice and Empowerment",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-02",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2293443&lang=1&reg=3",
+      "result": "Fresh-survey claim on manual scavengers was screened; the claim substantially repeated a March 2026 parliamentary answer and lacked current independent corroboration."
+    },
+    {
+      "publisher": "Press Information Bureau / Ministry of New and Renewable Energy",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-02",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2293256&lang=1&reg=3",
+      "result": "Solar-energy backgrounder repackaged existing milestones without enough substantive novelty."
+    },
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-01",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+      "result": "Latest visible release concerned FCNR(B), ECB, and overseas-borrowing reporting already screened in the prior run; no new in-window candidate."
+    },
+    {
+      "publisher": "Securities and Exchange Board of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-07-31",
+      "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0",
+      "result": "Latest accessibility-timeline circular pre-dated the window and was already screened in the 1 August backfill."
+    },
+    {
+      "publisher": "Supreme Court of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-01",
+      "url": "https://www.sci.gov.in/judgements-judgement-date/",
+      "result": "Latest uploaded judgments and orders arose from 28-29 July matters; no new substantive in-window judgment was verified."
+    },
+    {
+      "publisher": "Parliament of India / Sansad",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://sansad.in/ls/legislation/bills",
+      "result": "No in-window bill or parliamentary action was verified during the Sunday interval."
+    },
+    {
+      "publisher": "Election Commission of India",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://www.eci.gov.in/",
+      "result": "No new in-window press note or election-law development was verified."
+    },
+    {
+      "publisher": "United Nations",
+      "type": "PRIMARY",
+      "publishedAt": "2026-08-03",
+      "url": "https://www.un.org/",
+      "result": "UN and treaty-body searches returned schedules or background material, not a qualifying new substantive issue."
+    }
+  ],
+  "candidates": [
+    {
+      "title": "European Union Artificial Intelligence Act — 2 August 2026 application and enforcement milestone",
+      "eventDate": "2026-08-02",
+      "canonicalDossier": "European Union Artificial Intelligence Act",
+      "score": {
+        "legalConstitutional": 24,
+        "significance": 14,
+        "passagePotential": 15,
+        "staticGk": 10,
+        "recencyNovelty": 10,
+        "sourceStrength": 10,
+        "examPatternSimilarity": 10,
+        "continuingIssueValue": 3,
+        "total": 96
+      },
+      "sourceGate": {
+        "trustedSources": 6,
+        "primarySources": 4,
+        "independentSecondarySources": 2,
+        "unresolvedFactualConflict": false,
+        "passed": true
+      },
+      "decision": "published_new",
+      "conflictResolution": "Some secondary coverage used 'comes into force' colloquially for the 2 August 2026 milestone. The controlling Regulation establishes 1 August 2024 as entry into force; the dossier accurately describes 2 August 2026 as a phased application and enforcement date. Current Commission guidance controls for dates changed by the Digital Omnibus amendment.",
+      "reason": "A major transnational technology-law milestone with strong fundamental-rights, market-jurisdiction, regulatory-design, enforcement, and static-EU connections."
+    },
+    {
+      "title": "Nasha Mukt Yuva for Viksit Bharat campaign",
+      "eventDate": "2026-08-02",
+      "score": {
+        "legalConstitutional": 13,
+        "significance": 12,
+        "passagePotential": 11,
+        "staticGk": 8,
+        "recencyNovelty": 8,
+        "sourceStrength": 6,
+        "examPatternSimilarity": 8,
+        "continuingIssueValue": 4,
+        "total": 70
+      },
+      "sourceGate": {
+        "trustedSources": 2,
+        "primarySources": 2,
+        "independentSecondarySources": 0,
+        "passed": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "Raw score cleared 65, but the two official releases were not independently corroborated by a trusted secondary source by the cutoff; the campaign also extends a pre-existing initiative."
+    },
+    {
+      "title": "Fresh survey identifies no manual scavengers",
+      "eventDate": "2026-08-02",
+      "score": {
+        "legalConstitutional": 19,
+        "significance": 12,
+        "passagePotential": 12,
+        "staticGk": 8,
+        "recencyNovelty": 4,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 7,
+        "continuingIssueValue": 3,
+        "total": 70
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "passed": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "The release substantially repeated a March 2026 parliamentary answer, and no current independent source resolved the difference between survey identification and continuing sewer/septic-tank deaths."
+    },
+    {
+      "title": "National Biodiversity Authority releases ₹8.22 crore in rice benefit sharing",
+      "eventDate": "2026-08-02",
+      "score": {
+        "legalConstitutional": 12,
+        "significance": 10,
+        "passagePotential": 10,
+        "staticGk": 8,
+        "recencyNovelty": 7,
+        "sourceStrength": 6,
+        "examPatternSimilarity": 8,
+        "continuingIssueValue": 5,
+        "total": 66
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "passed": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "Raw score cleared 65, but this instalment in an existing access-and-benefit-sharing process lacked an independent current source."
+    },
+    {
+      "title": "India solar-energy progress backgrounder",
+      "eventDate": "2026-08-02",
+      "score": {
+        "legalConstitutional": 8,
+        "significance": 10,
+        "passagePotential": 8,
+        "staticGk": 9,
+        "recencyNovelty": 5,
+        "sourceStrength": 7,
+        "examPatternSimilarity": 6,
+        "continuingIssueValue": 3,
+        "total": 56
+      },
+      "decision": "ignored",
+      "rejectionReason": "Below 65; the backgrounder consolidated existing milestones rather than announcing a new legal or policy change."
+    },
+    {
+      "title": "Commercial coal mining and July production update",
+      "eventDate": "2026-08-02",
+      "score": {
+        "legalConstitutional": 6,
+        "significance": 8,
+        "passagePotential": 7,
+        "staticGk": 8,
+        "recencyNovelty": 6,
+        "sourceStrength": 7,
+        "examPatternSimilarity": 7,
+        "continuingIssueValue": 5,
+        "total": 54
+      },
+      "decision": "ignored",
+      "rejectionReason": "Below 65; routine sectoral statistics and policy background without a new controlling rule."
+    },
+    {
+      "title": "BRICS national statistical offices heads meeting",
+      "eventDate": "2026-08-02",
+      "score": {
+        "legalConstitutional": 6,
+        "significance": 9,
+        "passagePotential": 9,
+        "staticGk": 9,
+        "recencyNovelty": 7,
+        "sourceStrength": 7,
+        "examPatternSimilarity": 7,
+        "continuingIssueValue": 3,
+        "total": 57
+      },
+      "decision": "ignored",
+      "rejectionReason": "Below 65; a technical cooperation meeting without a treaty, institutional redesign, or major adopted outcome."
+    },
+    {
+      "title": "Ujh multipurpose project status review",
+      "eventDate": "2026-08-02",
+      "score": {
+        "legalConstitutional": 11,
+        "significance": 9,
+        "passagePotential": 10,
+        "staticGk": 9,
+        "recencyNovelty": 6,
+        "sourceStrength": 6,
+        "examPatternSimilarity": 7,
+        "continuingIssueValue": 3,
+        "total": 61
+      },
+      "decision": "ignored",
+      "rejectionReason": "Below 65; the review did not produce a newly verified approval, treaty development, or final project decision."
+    },
+    {
+      "title": "Glasgow 2026 Commonwealth Games final results and Ahmedabad 2030 handover",
+      "eventDate": "2026-08-03",
+      "score": {
+        "legalConstitutional": 4,
+        "significance": 13,
+        "passagePotential": 12,
+        "staticGk": 10,
+        "recencyNovelty": 10,
+        "sourceStrength": 6,
+        "examPatternSimilarity": 10,
+        "continuingIssueValue": 5,
+        "total": 70
+      },
+      "sourceGate": {
+        "trustedPreEventSources": 4,
+        "primarySources": 1,
+        "independentSecondarySources": 3,
+        "postEventSourcesAvailableByCutoff": 0,
+        "passed": false
+      },
+      "decision": "ignored",
+      "rejectionReason": "Raw score cleared 65 and several duplicate Commonwealth dossiers were identified, but no authoritative post-event result source plus independent post-event corroboration was available by 06:13 IST; no existing dossier was updated with an unverified final tally."
+    }
+  ],
+  "outcomes": {
+    "publishedNew": [
+      "European Union Artificial Intelligence Act"
+    ],
+    "updated": [],
+    "ignored": [
+      "Nasha Mukt Yuva for Viksit Bharat campaign",
+      "Fresh survey identifies no manual scavengers",
+      "National Biodiversity Authority releases ₹8.22 crore in rice benefit sharing",
+      "India solar-energy progress backgrounder",
+      "Commercial coal mining and July production update",
+      "BRICS national statistical offices heads meeting",
+      "Ujh multipurpose project status review",
+      "Glasgow 2026 Commonwealth Games final results and Ahmedabad 2030 handover"
+    ],
+    "failed": []
+  },
+  "contentValidation": {
+    "European Union Artificial Intelligence Act": {
+      "completeIssueDossierSections": true,
+      "clatPassageQuestions": 2,
+      "clatQuestionsAnswerableFromPassage": true,
+      "ailetMcqs": 2,
+      "ailetMcqsValid": true,
+      "qCards": 6,
+      "onePagerFacts": 5,
+      "placeholderLanguageFound": false,
+      "unresolvedFactualConflicts": false,
+      "trustedSources": 6,
+      "primarySources": 4,
+      "independentSecondarySources": 2,
+      "uniqueIdMatchesInGraph": 1,
+      "uniqueTitleMatchesInGraph": 1
+    }
+  },
+  "validationResults": [
+    {
+      "command": "python3 build_ca_knowledge_graph.py",
+      "exitCode": 0,
+      "result": "Passed; compiled 330 dossiers, added one feeder Q-card, added four questions, and redistributed 1,593 questions across 125 days."
+    },
+    {
+      "command": "npm run test:ca",
+      "exitCode": 0,
+      "result": "Passed; 10 tests passed, 0 failed."
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "result": "Passed; Vite production build completed.",
+      "warnings": [
+        "Vite reported a non-fatal chunk-size warning for minified bundles larger than 500 kB."
+      ]
+    },
+    {
+      "command": "Generated-node and content-count integrity check",
+      "exitCode": 0,
+      "result": "Passed; one AUG-01 node, one matching title, August month mapping, two CLAT questions, two AILET MCQs, six Q-cards, five One-Pager facts, four question-bank items, and one feeder card."
+    },
+    {
+      "command": "git diff --check on automation-owned outputs",
+      "exitCode": 0,
+      "result": "Passed; no whitespace errors."
+    }
+  ],
+  "filesChangedByRun": [
+    "CA_Source_Repository/08_Aug_2026/european_union_artificial_intelligence_act.md",
+    "src/data/ca_knowledge_graph.json",
+    "src/data/gk_qcards_data.json",
+    "src/data/gk_question_bank.json",
+    "CA_Agent_Logs/2026-08-03T061306+0530_daily-ca-orchestrator.json"
+  ],
+  "externalActions": {
+    "firestoreWritten": false,
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "messagesSent": false
+  },
+  "unrelatedUserChangesPreserved": true,
+  "errors": []
+}

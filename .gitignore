@@ -36,3 +36,9 @@ Gemini_Generated_Image_*.png
 WhatsApp Image *.jpeg
 CLAT Prep Studio.png
 ClatPrep Studio.png
+
+# Rendered evidence pages (604MB) and PDF scratch renders (145MB). Both are
+# regenerated from the source PDFs by the ingestion scripts; the review queues
+# they support live in public/data/ and are tracked.
+public/review-assets/
+tmp/

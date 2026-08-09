@@ -3,6 +3,7 @@ import { collection, getDocs, limit, orderBy, query } from 'firebase/firestore';
 import { db, getAuthenticatedApiHeaders } from './firebase';
 import staticDossiers from './data/ca_knowledge_graph.json';
 import staticQCards from './data/gk_qcards_data.json';
+import { normalizeRepositoryAudit } from './utils/caAudit';
 
 const normalizeIssueKey = (value) => String(value || '')
   .normalize('NFKD')
@@ -36,62 +37,22 @@ const mergeByCanonicalTitle = (staticItems, liveItems) => {
   liveItems.forEach((item) => {
     const aliases = Array.isArray(item.aliases) ? item.aliases : [];
     const replacementKey = aliases.map(normalizeIssueKey).find((alias) => merged.has(alias));
-    if (replacementKey) merged.delete(replacementKey);
-    merged.set(item.canonicalKey || normalizeIssueKey(item.title), item);
+    const canonicalKey = item.canonicalKey || normalizeIssueKey(item.title);
+    const existing = merged.get(replacementKey || canonicalKey);
+    if (replacementKey && replacementKey !== canonicalKey) merged.delete(replacementKey);
+    merged.set(canonicalKey, {
+      ...existing,
+      ...item,
+      featuredMonths: [...new Set([
+        ...(Array.isArray(existing?.featuredMonths) ? existing.featuredMonths : []),
+        ...(Array.isArray(item.featuredMonths) ? item.featuredMonths : [])
+      ])]
+    });
   });
   return [...merged.values()];
 };
 
 export const getQCardKey = (card) => `${card.id}::${card.title}`;
-
-const normalizeRepositoryAudit = (audit) => {
-  const candidates = Array.isArray(audit.candidates) ? audit.candidates : [];
-  const accepted = candidates.filter((candidate) => (
-    candidate.decision === 'updated' || candidate.decision === 'published'
-  ));
-  const ignored = candidates.filter((candidate) => candidate.decision === 'ignored');
-  const published = accepted.map((candidate, index) => ({
-    id: `${audit.runId || audit.auditFileName}-accepted-${index}`,
-    title: candidate.canonicalDossier || candidate.title,
-    updateType: candidate.decision === 'updated' ? 'UPDATED' : 'NEW',
-    score: candidate.score?.total ?? candidate.score ?? 0,
-    scoreBreakdown: candidate.score || {},
-    reason: candidate.reason || '',
-    sourceGate: candidate.sourceGate || null,
-    conflictResolution: candidate.conflictResolution || ''
-  }));
-  const ignoredItems = ignored.map((candidate) => ({
-    title: candidate.title,
-    score: candidate.score?.total ?? candidate.score ?? 0,
-    scoreBreakdown: candidate.score || {},
-    reasons: [candidate.rejectionReason].filter(Boolean),
-    sourceGate: candidate.sourceGate || null
-  }));
-  const runDate = String(audit.startedAt || audit.window?.end || '').slice(0, 10);
-
-  return {
-    id: audit.runId || audit.auditFileName,
-    runId: audit.runId || audit.auditFileName,
-    runDate,
-    status: String(audit.status || 'completed').toUpperCase(),
-    trigger: 'CODEX_AUTOMATION',
-    auditSource: 'REPOSITORY',
-    auditFileName: audit.auditFileName,
-    searchWindow: audit.window || null,
-    publishedCount: published.length,
-    updatedCount: published.filter((item) => item.updateType === 'UPDATED').length,
-    newCount: published.filter((item) => item.updateType === 'NEW').length,
-    ignoredCount: ignoredItems.length,
-    candidatesFound: candidates.length,
-    published,
-    ignored: ignoredItems,
-    sourcesScanned: audit.sourcesScanned || [],
-    validationResults: audit.validationResults || [],
-    filesChangedByRun: audit.filesChangedByRun || [],
-    errors: audit.errors || [],
-    completedAt: audit.finishedAt || null
-  };
-};
 
 const fetchRepositoryCAAuditRuns = async () => {
   const response = await fetch('/api/ca-admin-audit', {
@@ -162,6 +123,16 @@ export async function fetchCAOrchestrationRuns() {
     }))
     : [];
   const repositoryRuns = repositoryResult.status === 'fulfilled' ? repositoryResult.value : [];
+  const sourceWarnings = [
+    firestoreResult.status === 'rejected' ? {
+      source: 'FIRESTORE',
+      message: firestoreResult.reason?.message || 'Firestore CA runs are unavailable.'
+    } : null,
+    repositoryResult.status === 'rejected' ? {
+      source: 'REPOSITORY',
+      message: repositoryResult.reason?.message || 'Repository CA audit logs are unavailable.'
+    } : null
+  ].filter(Boolean);
 
   if (!firestoreRuns.length && !repositoryRuns.length) {
     throw firestoreResult.status === 'rejected'
@@ -169,11 +140,13 @@ export async function fetchCAOrchestrationRuns() {
       : repositoryResult.reason;
   }
 
-  return [...firestoreRuns, ...repositoryRuns]
+  const runs = [...firestoreRuns, ...repositoryRuns]
     .sort((left, right) => {
       const leftDate = left.startedAt?.toDate?.() || new Date(left.completedAt || left.runDate || 0);
       const rightDate = right.startedAt?.toDate?.() || new Date(right.completedAt || right.runDate || 0);
       return rightDate - leftDate;
     })
     .slice(0, 30);
+
+  return { runs, sourceWarnings };
 }

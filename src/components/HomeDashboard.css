@@ -67,6 +67,8 @@ body:has(.marketing-home) { overflow-x: clip; }
   color: var(--home-ink);
   background: #fff;
   box-shadow: 0 22px 58px rgba(29, 24, 60, .2);
+  max-height: min(590px, calc(100vh - 96px));
+  overflow-y: auto;
 }
 .marketing-module-menu::before {
   content: '';
@@ -114,6 +116,9 @@ body:has(.marketing-home) { overflow-x: clip; }
 }
 .marketing-module-menu > button > i.is-gk { color: var(--home-purple); background: rgba(93,32,251,.1); }
 .marketing-module-menu > button > i.is-ca { color: var(--home-info); background: rgba(36,87,214,.1); }
+.marketing-module-menu > button > i.is-english { color: #0f766e; background: #e8faf6; }
+.marketing-module-menu > button > i.is-legal { color: #7c3aed; background: #f3efff; }
+.marketing-module-menu > button > i.is-mocks { color: #c2410c; background: #fff3e9; }
 .marketing-module-menu b { font-size: 11px; }
 .marketing-module-menu small { display: block; margin-top: 2px; color: var(--home-muted); font-size: 8px; font-weight: 600; }
 .marketing-module-menu > button > svg { color: var(--home-muted); }
@@ -770,7 +775,6 @@ body:has(.marketing-home) { overflow-x: clip; }
   .marketing-hero-copy { max-width: 780px; }
   .marketing-next-action { width: min(100%, 630px); }
   .marketing-module-grid { grid-template-columns: 1fr 1fr; }
-  .marketing-module-card.is-ca { grid-column: 1 / -1; min-height: 350px; }
   .marketing-loop-track { grid-template-columns: 1fr 1fr; }
   .marketing-loop-track::before { display: none; }
   .marketing-loop-track article { min-height: 270px; }

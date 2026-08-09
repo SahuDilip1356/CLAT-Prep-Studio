@@ -12,6 +12,8 @@ import {
   Menu,
   Newspaper,
   RefreshCw,
+  Scale,
+  LibraryBig,
   Sparkles,
   Target,
   Trophy,
@@ -178,6 +180,16 @@ export default function HomeDashboard({
   const caAccuracy = getAccuracy(caAttempted, userProgress?.caTotalCorrect || 0);
   const caPct = Math.min(100, Math.round((completedCaDossiers / totalDossiers) * 100));
 
+  const englishAttempted = userProgress?.englishTotalAttempted || 0;
+  const englishAccuracy = getAccuracy(englishAttempted, userProgress?.englishTotalCorrect || 0);
+  const englishPct = Math.min(100, Math.round((englishAttempted / 96) * 100));
+  const legalAttempted = userProgress?.legalTotalAttempted || 0;
+  const legalAccuracy = getAccuracy(legalAttempted, userProgress?.legalTotalCorrect || 0);
+  const legalPct = Math.min(100, Math.round((legalAttempted / 120) * 100));
+  const mockAttempted = userProgress?.mockTotalAttempted || 0;
+  const mockAccuracy = getAccuracy(mockAttempted, userProgress?.mockTotalCorrect || 0);
+  const mockPct = Math.min(100, Math.round((mockAttempted / 480) * 100));
+
   const nextQuantDay = Array.from({ length: 31 }, (_, index) => index + 1)
     .find((day) => !userProgress?.completedDays?.[day]) || 31;
   const nextGkDay = Array.from({ length: 125 }, (_, index) => index + 1)
@@ -195,7 +207,7 @@ export default function HomeDashboard({
   const overallAccuracy = observedAccuracies.length
     ? observedAccuracies.reduce((sum, value) => sum + value, 0) / observedAccuracies.length
     : 0;
-  const answeredQuestions = quantAttempted + gkAttempted + caAttempted;
+  const answeredQuestions = quantAttempted + gkAttempted + caAttempted + englishAttempted + legalAttempted + mockAttempted;
   const accuracyConfidence = Math.min(1, answeredQuestions / 100);
   const overallCompletion = (quantPct + gkPct + caPct) / 3;
   const readinessScore = Math.min(100, Math.round(
@@ -252,6 +264,27 @@ export default function HomeDashboard({
       description: 'Issue dossiers connect news, law and static facts to CLAT passages, AILET MCQs and spaced revision.',
       progress: `${completedCaDossiers} of ${totalDossiers} dossiers`, pct: caPct, stat: caAttempted ? `${caAccuracy}% accuracy` : 'Next dossier selected',
       action: 'Open Current Affairs'
+    },
+    {
+      id: 'english', eyebrow: 'Read / Infer / Decide', title: 'English Language', icon: BookOpen,
+      color: '#0F766E', soft: '#E8FAF6', module: 'ENGLISH',
+      description: 'Complete CLAT passages for inference, vocabulary in context, author intent and precise reading under time pressure.',
+      progress: `${englishAttempted} of 96 questions attempted`, pct: englishPct, stat: englishAttempted ? `${englishAccuracy}% accuracy` : '4 section tests ready',
+      action: 'Open English Studio'
+    },
+    {
+      id: 'legal', eyebrow: 'Principle / Facts / Answer', title: 'Legal Reasoning', icon: Scale,
+      color: '#7C3AED', soft: '#F3EFFF', module: 'LEGAL',
+      description: 'Passage-led principle application across constitutional, criminal, contract and contemporary legal problems.',
+      progress: `${legalAttempted} of 120 questions attempted`, pct: legalPct, stat: legalAttempted ? `${legalAccuracy}% accuracy` : '4 section tests ready',
+      action: 'Open Legal Studio'
+    },
+    {
+      id: 'mocks', eyebrow: 'Simulate / Review / Improve', title: 'CLAT Mock Papers', icon: LibraryBig,
+      color: '#C2410C', soft: '#FFF3E9', module: 'MOCKS',
+      description: 'Four digitized Career Launcher Prime papers with 480 questions, original section order and official answer keys.',
+      progress: `${mockAttempted} of 480 questions attempted`, pct: mockPct, stat: mockAttempted ? `${mockAccuracy}% accuracy` : '4 full papers ready',
+      action: 'Open Mock Library'
     }
   ];
 
@@ -314,6 +347,21 @@ export default function HomeDashboard({
                     <b>Current Affairs Studio<small>Dossiers, Q-cards and revision</small></b>
                     <ArrowRight size={15} />
                   </button>
+                  <button role="menuitem" onClick={() => enterModule('ENGLISH')}>
+                    <i className="is-english"><BookOpen size={17} /></i>
+                    <b>English Language<small>Passages and inference</small></b>
+                    <ArrowRight size={15} />
+                  </button>
+                  <button role="menuitem" onClick={() => enterModule('LEGAL')}>
+                    <i className="is-legal"><Scale size={17} /></i>
+                    <b>Legal Reasoning<small>Principle and application</small></b>
+                    <ArrowRight size={15} />
+                  </button>
+                  <button role="menuitem" onClick={() => enterModule('MOCKS')}>
+                    <i className="is-mocks"><LibraryBig size={17} /></i>
+                    <b>CLAT Mock Papers<small>Four full-length papers</small></b>
+                    <ArrowRight size={15} />
+                  </button>
                 </div>
               )}
             </div>
@@ -346,6 +394,9 @@ export default function HomeDashboard({
                 <button onClick={() => enterModule('QUANT')}><BrainCircuit size={17} /> Quant &amp; Logical Reasoning <ArrowRight size={14} /></button>
                 <button onClick={() => enterModule('GK')}><BookOpen size={17} /> Static General Knowledge <ArrowRight size={14} /></button>
                 <button onClick={() => enterModule('CA')}><Newspaper size={17} /> Current Affairs Studio <ArrowRight size={14} /></button>
+                <button onClick={() => enterModule('ENGLISH')}><BookOpen size={17} /> English Language <ArrowRight size={14} /></button>
+                <button onClick={() => enterModule('LEGAL')}><Scale size={17} /> Legal Reasoning <ArrowRight size={14} /></button>
+                <button onClick={() => enterModule('MOCKS')}><LibraryBig size={17} /> CLAT Mock Papers <ArrowRight size={14} /></button>
               </div>
             )}
           </nav>
@@ -443,7 +494,7 @@ export default function HomeDashboard({
                 </button>
               </div>
               <div className="marketing-next-footer">
-                <span><Flame size={15} /> {userProgress?.streak || 1}-day momentum</span>
+                <span><Flame size={15} /> {userProgress?.streak > 0 ? `${userProgress.streak}-day streak` : 'Start your streak today'}</span>
                 <span><Trophy size={14} /> {readinessScore > 0 ? `${readinessScore}% readiness` : 'Unlock your baseline today'}</span>
               </div>
             </article>
@@ -455,13 +506,13 @@ export default function HomeDashboard({
             <div><strong>1,230</strong><span>Quant &amp; reasoning challenges</span></div>
             <div><strong>1,565</strong><span>Static GK recall questions</span></div>
             <div><strong>{totalDossiers}</strong><span>Connected Current Affairs dossiers</span></div>
-            <div><strong>31 days</strong><span>To build a visible Quant baseline</span></div>
+            <div><strong>480</strong><span>Digitized mock-paper questions</span></div>
           </div>
         </section>
 
         <section className="marketing-shell marketing-section" id="modules">
           <div className="marketing-section-heading">
-            <div><span className="marketing-section-kicker">Choose your arena</span><h2>Three subjects. One score to move.</h2></div>
+            <div><span className="marketing-section-kicker">Choose your arena</span><h2>The complete CLAT preparation stack.</h2></div>
             <p>Go where your energy is today. Every answer still feeds the same readiness picture and the next best action.</p>
           </div>
           <div className="marketing-module-grid">
@@ -586,7 +637,15 @@ export default function HomeDashboard({
               <p>Think clearly. Argue sharply. Rank higher.</p>
             </div>
             <div className="marketing-footer-links">
-              <div><b>Modules</b><button onClick={() => enterModule('QUANT')}>Quant &amp; LR</button><button onClick={() => enterModule('GK')}>Static GK</button><button onClick={() => enterModule('CA')}>Current Affairs</button></div>
+              <div>
+                <b>Modules</b>
+                <button onClick={() => enterModule('QUANT')}>Quant &amp; LR</button>
+                <button onClick={() => enterModule('GK')}>Static GK</button>
+                <button onClick={() => enterModule('CA')}>Current Affairs</button>
+                <button onClick={() => enterModule('ENGLISH')}>English Language</button>
+                <button onClick={() => enterModule('LEGAL')}>Legal Reasoning</button>
+                <button onClick={() => enterModule('MOCKS')}>Mock Papers</button>
+              </div>
               <div>
                 <b>System</b>
                 <a href="#how-it-works">How it works</a>

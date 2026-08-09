@@ -1,0 +1,484 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03T04:07:22.144859+00:00",
+  "freshness": {
+    "mode": "LOCAL_ORCHESTRATOR_SNAPSHOT",
+    "note": "Refreshes after every terminal orchestration run; production requires deployment or a status API."
+  },
+  "currentRun": {
+    "id": "run_20260803T040600Z_de143ede",
+    "trigger": "MANUAL",
+    "state": "SUCCESS_WITH_REVIEW",
+    "success": true,
+    "fileCount": 202,
+    "startedAt": "2026-08-03T04:06:00.851972+00:00",
+    "endedAt": "2026-08-03T04:06:17.942530+00:00",
+    "durationSeconds": 17.09,
+    "error": null,
+    "summary": {
+      "runId": "run_20260803T040600Z_de143ede",
+      "operationalSuccess": true,
+      "indexedDocuments": 202,
+      "extractedPages": 8925,
+      "questionCandidates": 11138,
+      "verifiedAdaptiveItems": 492,
+      "reviewRequiredCount": 5703,
+      "changes": {
+        "new": 0,
+        "modified": 0,
+        "moved": 0,
+        "unchanged": 202,
+        "missing": 0
+      },
+      "publishedArtifacts": 6,
+      "publicationManifest": "data/mock_ingestion/orchestrator/runs/run_20260803T040600Z_de143ede/publication_manifest.json"
+    },
+    "stages": [
+      {
+        "id": "intake_index",
+        "worker": "Intake and Index Worker",
+        "state": "SUCCESS",
+        "attempts": 1,
+        "startedAt": "2026-08-03T04:06:00.885130+00:00",
+        "endedAt": "2026-08-03T04:06:01.003354+00:00",
+        "durationSeconds": 0.12,
+        "exitCode": 0,
+        "error": null
+      },
+      {
+        "id": "extraction_ocr",
+        "worker": "Extraction and OCR Worker",
+        "state": "SUCCESS",
+        "attempts": 1,
+        "startedAt": "2026-08-03T04:06:01.004113+00:00",
+        "endedAt": "2026-08-03T04:06:01.186241+00:00",
+        "durationSeconds": 0.18,
+        "exitCode": 0,
+        "error": null
+      },
+      {
+        "id": "structure_answer_linking",
+        "worker": "Structure and Answer-Linking Worker",
+        "state": "SUCCESS",
+        "attempts": 1,
+        "startedAt": "2026-08-03T04:06:01.186979+00:00",
+        "endedAt": "2026-08-03T04:06:08.995991+00:00",
+        "durationSeconds": 7.81,
+        "exitCode": 0,
+        "error": null
+      },
+      {
+        "id": "classification_difficulty",
+        "worker": "Classification and Difficulty Worker",
+        "state": "SUCCESS",
+        "attempts": 1,
+        "startedAt": "2026-08-03T04:06:08.997164+00:00",
+        "endedAt": "2026-08-03T04:06:17.450192+00:00",
+        "durationSeconds": 8.45,
+        "exitCode": 0,
+        "error": null
+      },
+      {
+        "id": "adaptive_calibration",
+        "worker": "Adaptive Calibration Service",
+        "state": "SUCCESS",
+        "attempts": 1,
+        "startedAt": "2026-08-03T04:06:17.451881+00:00",
+        "endedAt": "2026-08-03T04:06:17.492675+00:00",
+        "durationSeconds": 0.04,
+        "exitCode": 0,
+        "error": null
+      },
+      {
+        "id": "quality_gate",
+        "worker": "Quality and Publication Worker",
+        "state": "SUCCESS",
+        "attempts": 1,
+        "startedAt": "2026-08-03T04:06:17.493473+00:00",
+        "endedAt": "2026-08-03T04:06:17.918884+00:00",
+        "durationSeconds": 0.43,
+        "exitCode": 0,
+        "error": null
+      },
+      {
+        "id": "atomic_publication",
+        "worker": "Orchestrator Publication Commit",
+        "state": "SUCCESS",
+        "attempts": 1,
+        "startedAt": "2026-08-03T04:06:17.919689+00:00",
+        "endedAt": "2026-08-03T04:06:17.937868+00:00",
+        "durationSeconds": 0.02,
+        "exitCode": 0,
+        "error": null
+      }
+    ]
+  },
+  "questionLayer": {
+    "before": {
+      "indexedDocuments": 202,
+      "extractedPages": 8925,
+      "questionCandidates": 11138,
+      "answerCandidates": 3783,
+      "verifiedAdaptiveItems": 492,
+      "calibratedItems": 0,
+      "reviewIssues": 5703,
+      "integrityErrors": 0,
+      "candidateEligibilityErrors": 0,
+      "candidateByModule": {
+        "ENGLISH": 2369,
+        "GK": 2286,
+        "LEGAL": 2287,
+        "LOGICAL": 2942,
+        "QUANT": 1254
+      },
+      "verifiedByModule": {
+        "ENGLISH": 96,
+        "GK": 112,
+        "LEGAL": 120,
+        "LOGICAL": 104,
+        "QUANT": 60
+      },
+      "verifiedDifficultyByModule": {
+        "ENGLISH": {
+          "Foundation": 29,
+          "Exam Standard": 48,
+          "Advanced": 19
+        },
+        "GK": {
+          "Foundation": 34,
+          "Exam Standard": 56,
+          "Advanced": 22
+        },
+        "LEGAL": {
+          "Foundation": 36,
+          "Exam Standard": 60,
+          "Advanced": 24
+        },
+        "LOGICAL": {
+          "Foundation": 31,
+          "Exam Standard": 52,
+          "Advanced": 21
+        },
+        "QUANT": {
+          "Foundation": 18,
+          "Exam Standard": 30,
+          "Advanced": 12
+        }
+      },
+      "candidateDifficultyByModule": {
+        "ENGLISH": {
+          "Foundation": 711,
+          "Exam Standard": 1184,
+          "Advanced": 474
+        },
+        "GK": {
+          "Foundation": 686,
+          "Exam Standard": 1143,
+          "Advanced": 457
+        },
+        "LEGAL": {
+          "Foundation": 686,
+          "Exam Standard": 1144,
+          "Advanced": 457
+        },
+        "LOGICAL": {
+          "Foundation": 883,
+          "Exam Standard": 1471,
+          "Advanced": 588
+        },
+        "QUANT": {
+          "Foundation": 376,
+          "Exam Standard": 627,
+          "Advanced": 251
+        }
+      },
+      "candidateSourceStatus": {
+        "EXTRACTED_UNSCORED": 6265,
+        "PARSE_REVIEW_REQUIRED": 3169,
+        "READY_FOR_HUMAN_REVIEW": 895,
+        "VERIFIED_STAGING": 809
+      },
+      "pageMethods": {
+        "native_sparse": 222,
+        "native_text": 5357,
+        "tesseract_ocr": 3346
+      },
+      "verifiedSkillCount": 32,
+      "candidateSkillCount": 43
+    },
+    "after": {
+      "indexedDocuments": 202,
+      "extractedPages": 8925,
+      "questionCandidates": 11138,
+      "answerCandidates": 3783,
+      "verifiedAdaptiveItems": 492,
+      "calibratedItems": 0,
+      "reviewIssues": 5703,
+      "integrityErrors": 0,
+      "candidateEligibilityErrors": 0,
+      "candidateByModule": {
+        "ENGLISH": 2369,
+        "GK": 2286,
+        "LEGAL": 2287,
+        "LOGICAL": 2942,
+        "QUANT": 1254
+      },
+      "verifiedByModule": {
+        "ENGLISH": 96,
+        "GK": 112,
+        "LEGAL": 120,
+        "LOGICAL": 104,
+        "QUANT": 60
+      },
+      "verifiedDifficultyByModule": {
+        "ENGLISH": {
+          "Foundation": 29,
+          "Exam Standard": 48,
+          "Advanced": 19
+        },
+        "GK": {
+          "Foundation": 34,
+          "Exam Standard": 56,
+          "Advanced": 22
+        },
+        "LEGAL": {
+          "Foundation": 36,
+          "Exam Standard": 60,
+          "Advanced": 24
+        },
+        "LOGICAL": {
+          "Foundation": 31,
+          "Exam Standard": 52,
+          "Advanced": 21
+        },
+        "QUANT": {
+          "Foundation": 18,
+          "Exam Standard": 30,
+          "Advanced": 12
+        }
+      },
+      "candidateDifficultyByModule": {
+        "ENGLISH": {
+          "Foundation": 711,
+          "Exam Standard": 1184,
+          "Advanced": 474
+        },
+        "GK": {
+          "Foundation": 686,
+          "Exam Standard": 1143,
+          "Advanced": 457
+        },
+        "LEGAL": {
+          "Foundation": 686,
+          "Exam Standard": 1144,
+          "Advanced": 457
+        },
+        "LOGICAL": {
+          "Foundation": 883,
+          "Exam Standard": 1471,
+          "Advanced": 588
+        },
+        "QUANT": {
+          "Foundation": 376,
+          "Exam Standard": 627,
+          "Advanced": 251
+        }
+      },
+      "candidateSourceStatus": {
+        "EXTRACTED_UNSCORED": 6265,
+        "PARSE_REVIEW_REQUIRED": 3169,
+        "READY_FOR_HUMAN_REVIEW": 895,
+        "VERIFIED_STAGING": 809
+      },
+      "pageMethods": {
+        "native_sparse": 222,
+        "native_text": 5357,
+        "tesseract_ocr": 3346
+      },
+      "verifiedSkillCount": 32,
+      "candidateSkillCount": 43
+    },
+    "delta": {
+      "indexedDocuments": 0,
+      "extractedPages": 0,
+      "questionCandidates": 0,
+      "answerCandidates": 0,
+      "verifiedAdaptiveItems": 0,
+      "calibratedItems": 0,
+      "reviewIssues": 0,
+      "integrityErrors": 0,
+      "candidateEligibilityErrors": 0,
+      "candidateByModule": {
+        "ENGLISH": 0,
+        "GK": 0,
+        "LEGAL": 0,
+        "LOGICAL": 0,
+        "QUANT": 0
+      },
+      "verifiedByModule": {
+        "ENGLISH": 0,
+        "GK": 0,
+        "LEGAL": 0,
+        "LOGICAL": 0,
+        "QUANT": 0
+      },
+      "verifiedDifficultyByModule": {
+        "ENGLISH": {
+          "Foundation": 0,
+          "Exam Standard": 0,
+          "Advanced": 0
+        },
+        "GK": {
+          "Foundation": 0,
+          "Exam Standard": 0,
+          "Advanced": 0
+        },
+        "LEGAL": {
+          "Foundation": 0,
+          "Exam Standard": 0,
+          "Advanced": 0
+        },
+        "LOGICAL": {
+          "Foundation": 0,
+          "Exam Standard": 0,
+          "Advanced": 0
+        },
+        "QUANT": {
+          "Foundation": 0,
+          "Exam Standard": 0,
+          "Advanced": 0
+        }
+      },
+      "candidateDifficultyByModule": {
+        "ENGLISH": {
+          "Foundation": 0,
+          "Exam Standard": 0,
+          "Advanced": 0
+        },
+        "GK": {
+          "Foundation": 0,
+          "Exam Standard": 0,
+          "Advanced": 0
+        },
+        "LEGAL": {
+          "Foundation": 0,
+          "Exam Standard": 0,
+          "Advanced": 0
+        },
+        "LOGICAL": {
+          "Foundation": 0,
+          "Exam Standard": 0,
+          "Advanced": 0
+        },
+        "QUANT": {
+          "Foundation": 0,
+          "Exam Standard": 0,
+          "Advanced": 0
+        }
+      },
+      "candidateSourceStatus": {
+        "EXTRACTED_UNSCORED": 0,
+        "PARSE_REVIEW_REQUIRED": 0,
+        "READY_FOR_HUMAN_REVIEW": 0,
+        "VERIFIED_STAGING": 0
+      },
+      "pageMethods": {
+        "native_sparse": 0,
+        "native_text": 0,
+        "tesseract_ocr": 0
+      },
+      "verifiedSkillCount": 0,
+      "candidateSkillCount": 0
+    }
+  },
+  "sourceImpact": [],
+  "history": [
+    {
+      "id": "run_20260803T040600Z_de143ede",
+      "trigger": "MANUAL",
+      "state": "SUCCESS_WITH_REVIEW",
+      "success": true,
+      "startedAt": "2026-08-03T04:06:00.851972+00:00",
+      "endedAt": "2026-08-03T04:06:17.942530+00:00",
+      "fileCount": 202,
+      "summary": {
+        "runId": "run_20260803T040600Z_de143ede",
+        "operationalSuccess": true,
+        "indexedDocuments": 202,
+        "extractedPages": 8925,
+        "questionCandidates": 11138,
+        "verifiedAdaptiveItems": 492,
+        "reviewRequiredCount": 5703,
+        "changes": {
+          "new": 0,
+          "modified": 0,
+          "moved": 0,
+          "unchanged": 202,
+          "missing": 0
+        },
+        "publishedArtifacts": 6,
+        "publicationManifest": "data/mock_ingestion/orchestrator/runs/run_20260803T040600Z_de143ede/publication_manifest.json"
+      }
+    },
+    {
+      "id": "run_20260803T034622Z_41924f9c",
+      "trigger": "MANUAL",
+      "state": "SUCCESS_WITH_REVIEW",
+      "success": true,
+      "startedAt": "2026-08-03T03:46:22.728759+00:00",
+      "endedAt": "2026-08-03T03:46:40.564461+00:00",
+      "fileCount": 202,
+      "summary": {
+        "runId": "run_20260803T034622Z_41924f9c",
+        "operationalSuccess": true,
+        "indexedDocuments": 202,
+        "extractedPages": 8925,
+        "questionCandidates": 11138,
+        "verifiedAdaptiveItems": 492,
+        "reviewRequiredCount": 5703,
+        "changes": {
+          "new": 0,
+          "modified": 0,
+          "moved": 0,
+          "unchanged": 202,
+          "missing": 0
+        },
+        "publishedArtifacts": 6,
+        "publicationManifest": "data/mock_ingestion/orchestrator/runs/run_20260803T034622Z_41924f9c/publication_manifest.json"
+      }
+    },
+    {
+      "id": "run_20260803T034320Z_1b91f2ba",
+      "trigger": "MANUAL",
+      "state": "SUCCESS_WITH_REVIEW",
+      "success": true,
+      "startedAt": "2026-08-03T03:43:20.796066+00:00",
+      "endedAt": "2026-08-03T03:43:38.857251+00:00",
+      "fileCount": 202,
+      "summary": {
+        "runId": "run_20260803T034320Z_1b91f2ba",
+        "operationalSuccess": true,
+        "indexedDocuments": 202,
+        "extractedPages": 8925,
+        "questionCandidates": 11138,
+        "verifiedAdaptiveItems": 492,
+        "reviewRequiredCount": 5703,
+        "changes": {
+          "new": 0,
+          "modified": 0,
+          "moved": 0,
+          "unchanged": 202,
+          "missing": 0
+        },
+        "publishedArtifacts": 6,
+        "publicationManifest": "data/mock_ingestion/orchestrator/runs/run_20260803T034320Z_1b91f2ba/publication_manifest.json"
+      }
+    }
+  ],
+  "definitions": {
+    "questionCandidates": "Structurally parsed candidates; not necessarily learner-publishable.",
+    "verifiedAdaptiveItems": "Questions passing provenance, answer-key and adaptive eligibility gates.",
+    "reviewIssues": "Candidate-level flags requiring automated repair or human review.",
+    "successWithReview": "All operational stages passed and verified items published; gated review work remains."
+  }
+}

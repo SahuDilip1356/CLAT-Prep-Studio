@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import DiagramRenderer from './DiagramRenderer';
 import SourceStimulus from './SourceStimulus';
 import {
@@ -27,6 +27,10 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
   const [visited, setVisited] = useState({ 0: true });
   const [timeLeft, setTimeLeft] = useState(questions.length * 60);
   const [isTimerPaused, setIsTimerPaused] = useState(false);
+  const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
+  const questionTimeRef = useRef({});
+  const questionEnteredAtRef = useRef(Date.now());
+  const isFinishedRef = useRef(false);
 
   const currentQ = questions[currentIndex] || questions[0] || {};
   const currentQuestionType = getQuestionType(currentQ);
@@ -54,41 +58,80 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
   };
 
   const handleSelectOption = (optionLetter) => {
-    setSelectedAnswers(prev => ({
-      ...prev,
-      [currentQ.id]: prev[currentQ.id] === optionLetter ? null : optionLetter
-    }));
+    const nextAnswer = selectedAnswers[currentQ.id] === optionLetter ? null : optionLetter;
+    setSelectedAnswers(prev => ({ ...prev, [currentQ.id]: nextAnswer }));
+    if (!nextAnswer) {
+      setMarkedForReview(prev => ({ ...prev, [currentQ.id]: false }));
+    }
   };
 
   const handleNumericAnswer = (value) => {
     setSelectedAnswers(prev => ({ ...prev, [currentQ.id]: value }));
+    if (!value.trim()) {
+      setMarkedForReview(prev => ({ ...prev, [currentQ.id]: false }));
+    }
   };
 
   const handleSubAnswer = (partIndex, value) => {
-    setSelectedAnswers(prev => ({
-      ...prev,
-      [currentQ.id]: {
-        ...(prev[currentQ.id] || {}),
-        [partIndex]: value,
-      },
-    }));
+    const nextAnswer = {
+      ...(selectedAnswers[currentQ.id] || {}),
+      [partIndex]: value,
+    };
+    setSelectedAnswers(prev => ({ ...prev, [currentQ.id]: nextAnswer }));
+    if (!hasAnyAnswer(currentQ, nextAnswer)) {
+      setMarkedForReview(prev => ({ ...prev, [currentQ.id]: false }));
+    }
   };
 
-  const handleToggleMark = () => {
-    setMarkedForReview(prev => ({
-      ...prev,
-      [currentQ.id]: !prev[currentQ.id]
-    }));
+  const commitQuestionTime = (questionId) => {
+    if (!questionId || isTimerPaused) return;
+    const elapsedSeconds = Math.max(1, Math.round((Date.now() - questionEnteredAtRef.current) / 1000));
+    questionTimeRef.current[questionId] = (questionTimeRef.current[questionId] || 0) + elapsedSeconds;
+    questionEnteredAtRef.current = Date.now();
+  };
+
+  const handleTogglePause = () => {
+    if (!isTimerPaused) {
+      commitQuestionTime(currentQ.id);
+      setIsTimerPaused(true);
+      return;
+    }
+    questionEnteredAtRef.current = Date.now();
+    setIsTimerPaused(false);
   };
 
   const navigateTo = (index) => {
     if (index >= 0 && index < questions.length) {
+      commitQuestionTime(currentQ.id);
       setCurrentIndex(index);
       setVisited(prev => ({ ...prev, [index]: true }));
     }
   };
 
+  const handleAdvance = (reviewLater) => {
+    const attempted = hasAnyAnswer(currentQ, selectedAnswers[currentQ.id]);
+    if (attempted) {
+      setMarkedForReview(prev => ({ ...prev, [currentQ.id]: reviewLater }));
+    }
+    if (currentIndex < questions.length - 1) {
+      navigateTo(currentIndex + 1);
+    }
+  };
+
+  const handleReturnToReview = () => {
+    const reviewIndex = questions.findIndex(q => (
+      markedForReview[q.id] && hasAnyAnswer(q, selectedAnswers[q.id])
+    ));
+    const unansweredIndex = questions.findIndex(q => !hasAnyAnswer(q, selectedAnswers[q.id]));
+    const targetIndex = reviewIndex >= 0 ? reviewIndex : unansweredIndex;
+    setShowSubmitConfirm(false);
+    if (targetIndex >= 0) navigateTo(targetIndex);
+  };
+
   const handleFinishTest = () => {
+    if (isFinishedRef.current) return;
+    isFinishedRef.current = true;
+    commitQuestionTime(currentQ.id);
     let score = 0;
     let correctCount = 0;
     let wrongCount = 0;
@@ -112,7 +155,8 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
         question: q,
         userAnswer: userAns,
         isCorrect: isCorrect,
-        isUnattempted: !attempted
+        isUnattempted: !attempted,
+        timeSpentSeconds: questionTimeRef.current[q.id] || 0
       };
     });
 
@@ -129,6 +173,15 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
       responses: detailedResponses
     });
   };
+
+  const attemptedCount = questions.filter(q => hasAnyAnswer(q, selectedAnswers[q.id])).length;
+  const reviewLaterCount = questions.filter(q => (
+    markedForReview[q.id] && hasAnyAnswer(q, selectedAnswers[q.id])
+  )).length;
+  const sureCount = attemptedCount - reviewLaterCount;
+  const notAttemptedCount = questions.length - attemptedCount;
+  const currentAttempted = hasAnyAnswer(currentQ, selectedAnswers[currentQ.id]);
+  const currentReviewLater = currentAttempted && !!markedForReview[currentQ.id];
 
   return (
     <div className="mock-engine-view">
@@ -150,7 +203,7 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
             <Clock size={18} color="var(--accent-primary)" />
             <span className="timer-display" style={{ fontSize: '1.1rem' }}>{formatTime(timeLeft)}</span>
             <button 
-              onClick={() => setIsTimerPaused(!isTimerPaused)}
+              onClick={handleTogglePause}
               aria-label={isTimerPaused ? 'Resume timer' : 'Pause timer'}
               style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', marginLeft: '6px' }}
             >
@@ -158,7 +211,7 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
             </button>
           </div>
 
-          <button className="btn btn-primary" onClick={handleFinishTest}>
+          <button className="btn btn-primary" onClick={() => setShowSubmitConfirm(true)}>
             <Send size={16} /> Submit Drill
           </button>
         </div>
@@ -267,17 +320,12 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
           )}
 
           <div className="test-actions-bar">
-            <div style={{ display: 'flex', gap: '10px' }}>
-              <button 
-                className={`btn ${markedForReview[currentQ.id] ? 'btn-warning' : 'btn-secondary'}`}
-                onClick={handleToggleMark}
-              >
-                <Flag size={16} /> 
-                {markedForReview[currentQ.id] ? 'Marked for Review' : 'Mark for Review'}
-              </button>
+            <div className={`answer-state-pill ${!currentAttempted ? 'not-attempted' : currentReviewLater ? 'review-later' : 'sure'}`}>
+              {currentReviewLater ? <Flag size={15} /> : currentAttempted ? <CheckCircle2 size={15} /> : <HelpCircle size={15} />}
+              {!currentAttempted ? 'Not attempted' : currentReviewLater ? 'Attempted — Review later' : 'Attempted — Sure'}
             </div>
 
-            <div style={{ display: 'flex', gap: '10px' }}>
+            <div className="test-navigation-actions">
               <button 
                 className="btn btn-secondary"
                 disabled={currentIndex === 0}
@@ -286,28 +334,45 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
                 <ArrowLeft size={16} /> Previous
               </button>
 
+              <button
+                className="btn btn-review-next"
+                disabled={!currentAttempted}
+                onClick={() => handleAdvance(true)}
+                title={currentAttempted ? 'Keep this answer flagged and continue' : 'Select an answer before marking it for review'}
+              >
+                <Flag size={16} />
+                {currentIndex === questions.length - 1 ? 'Keep for Review' : 'Review & Next'}
+              </button>
+
               <button 
                 className="btn btn-primary"
-                disabled={currentIndex === questions.length - 1}
-                onClick={() => navigateTo(currentIndex + 1)}
+                onClick={() => handleAdvance(false)}
               >
-                Next <ArrowRight size={16} />
+                {currentAttempted
+                  ? (currentIndex === questions.length - 1 ? 'Mark as Sure' : 'Sure & Next')
+                  : (currentIndex === questions.length - 1 ? 'Leave Unattempted' : 'Skip & Next')}
+                {currentIndex < questions.length - 1 && <ArrowRight size={16} />}
               </button>
             </div>
           </div>
         </div>
 
         <div className="glass-panel" style={{ padding: '20px' }}>
-          <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '14px' }}>Question Palette</h3>
+          <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '12px' }}>Question Palette</h3>
+          <div className="palette-legend" aria-label="Question status summary">
+            <div><span className="palette-key not-attempted" /> Not attempted <strong>{notAttemptedCount}</strong></div>
+            <div><span className="palette-key sure" /> Attempted — Sure <strong>{sureCount}</strong></div>
+            <div><span className="palette-key review-later" /> Review later <strong>{reviewLaterCount}</strong></div>
+          </div>
           <div className="palette-grid">
             {questions.map((q, idx) => {
               const isAns = hasAnyAnswer(q, selectedAnswers[q.id]);
               const isMrk = !!markedForReview[q.id];
               const isCurr = idx === currentIndex;
 
-              let btnClass = 'palette-btn';
-              if (isAns) btnClass += ' answered';
-              if (isMrk) btnClass += ' marked';
+              const paletteState = !isAns ? 'not-attempted' : isMrk ? 'review-later' : 'sure';
+              const stateLabel = !isAns ? 'not attempted' : isMrk ? 'attempted, review later' : 'attempted, sure';
+              let btnClass = `palette-btn ${paletteState}`;
               if (isCurr) btnClass += ' current';
 
               return (
@@ -315,14 +380,47 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
                   key={q.id} 
                   className={btnClass}
                   onClick={() => navigateTo(idx)}
+                  aria-label={`Question ${idx + 1}: ${stateLabel}${isCurr ? ', current question' : ''}`}
+                  aria-current={isCurr ? 'step' : undefined}
+                  title={`Question ${idx + 1} — ${stateLabel}`}
                 >
-                  {idx + 1}
+                  <span className="palette-number">{idx + 1}</span>
+                  {isAns && isMrk && <Flag className="palette-review-flag" size={10} aria-hidden="true" />}
                 </button>
               );
             })}
           </div>
         </div>
       </div>
+
+      {showSubmitConfirm && (
+        <div className="submit-review-backdrop">
+          <section className="submit-review-dialog" role="dialog" aria-modal="true" aria-labelledby="submit-review-title">
+            <div className="submit-review-icon"><AlertCircle size={22} /></div>
+            <h3 id="submit-review-title">Check your drill before submitting</h3>
+            <p>Your answers will be scored immediately after final submission.</p>
+            <div className="submit-review-summary">
+              <div className="sure"><strong>{sureCount}</strong><span>Sure</span></div>
+              <div className="review-later"><strong>{reviewLaterCount}</strong><span>Review later</span></div>
+              <div className="not-attempted"><strong>{notAttemptedCount}</strong><span>Not attempted</span></div>
+            </div>
+            {reviewLaterCount > 0 && (
+              <p className="submit-review-message">You still have {reviewLaterCount} flagged {reviewLaterCount === 1 ? 'answer' : 'answers'} to review.</p>
+            )}
+            <div className="submit-review-actions">
+              <button className="btn btn-secondary" onClick={() => setShowSubmitConfirm(false)}>Continue drill</button>
+              {(reviewLaterCount > 0 || notAttemptedCount > 0) && (
+                <button className="btn btn-review-next" onClick={handleReturnToReview}>
+                  <Flag size={16} /> Return to review
+                </button>
+              )}
+              <button className="btn btn-primary" onClick={handleFinishTest}>
+                <Send size={16} /> Submit final answers
+              </button>
+            </div>
+          </section>
+        </div>
+      )}
     </div>
   );
 }

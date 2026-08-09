@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'clat-prep-studio';
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const APP_CACHE = `${CACHE_PREFIX}-${CACHE_VERSION}`;
 const CORE_ASSETS = [
   '/',

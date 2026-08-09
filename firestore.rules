@@ -66,6 +66,14 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
+    match /childProfiles/{childProfileId} {
+      allow read, write: if false;
+    }
+
+    match /parentChildRelationships/{relationshipId} {
+      allow read, write: if false;
+    }
+
     match /privacyRateLimits/{rateKey} {
       allow read, write: if false;
     }

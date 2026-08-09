@@ -19,6 +19,8 @@ export default function AuthModal({
   const [step, setStep] = useState('ENTRY');
   const [adultConsent, setAdultConsent] = useState(false);
   const [parentEmail, setParentEmail] = useState('');
+  const [childName, setChildName] = useState('');
+  const [childEmail, setChildEmail] = useState('');
   const [requestId, setRequestId] = useState('');
   const [requestExpiresAt, setRequestExpiresAt] = useState('');
   const [busy, setBusy] = useState(false);
@@ -30,6 +32,8 @@ export default function AuthModal({
     setStep('ENTRY');
     setAdultConsent(false);
     setParentEmail('');
+    setChildName('');
+    setChildEmail('');
     setRequestId('');
     setRequestExpiresAt('');
     setBusy(false);
@@ -84,14 +88,22 @@ export default function AuthModal({
 
   const submitParentRequest = async (event) => {
     event.preventDefault();
-    if (!parentEmail.trim()) {
-      setError('Please enter a parent or lawful guardian email address.');
+    if (!childName.trim() || !childEmail.trim() || !parentEmail.trim()) {
+      setError('Please enter the student name, student email and parent or guardian email.');
+      return;
+    }
+    if (childEmail.trim().toLowerCase() === parentEmail.trim().toLowerCase()) {
+      setError('The student and parent must use different email addresses.');
       return;
     }
     setBusy(true);
     setError('');
     try {
-      const result = await onParentConsentRequested(createParentInvitation(parentEmail));
+      const result = await onParentConsentRequested(createParentInvitation({
+        parentEmail,
+        childName,
+        childEmail
+      }));
       setRequestId(result.requestId);
       setRequestExpiresAt(result.expiresAt || '');
       setStep('PENDING');
@@ -158,8 +170,8 @@ export default function AuthModal({
             </button>
             <div className="privacy-safety-note">
               <LockKeyhole size={18} />
-              Only adults can activate cloud accounts. Students under 18 continue in a private
-              device session after their parent or guardian is notified.
+              Students under 18 can activate a separate account only after their parent or lawful
+              guardian confirms the request and gives consent.
             </div>
           </div>
         )}
@@ -241,13 +253,35 @@ export default function AuthModal({
             <div className="privacy-modal-title">
               <Users size={28} />
               <div>
-                <h2 id="privacy-onboarding-title">Notify a parent or guardian</h2>
+                <h2 id="privacy-onboarding-title">Ask a parent or guardian</h2>
                 <p>
-                  The student can keep learning privately without an account. We will send an
-                  informational notice to the parent or lawful guardian address entered below.
+                  We will send a secure consent link to the parent or lawful guardian. No student
+                  account is created until consent is completed.
                 </p>
               </div>
             </div>
+            <label className="privacy-field">
+              <span>Student name</span>
+              <input
+                type="text"
+                autoComplete="name"
+                maxLength={120}
+                value={childName}
+                onChange={(event) => setChildName(event.target.value)}
+                required
+              />
+            </label>
+            <label className="privacy-field">
+              <span>Student email</span>
+              <input
+                type="email"
+                autoComplete="email"
+                value={childEmail}
+                onChange={(event) => setChildEmail(event.target.value)}
+                required
+              />
+              <small>The student must later sign in with this exact Google email address.</small>
+            </label>
             <label className="privacy-field">
               <span>Parent or lawful guardian email</span>
               <input
@@ -258,12 +292,12 @@ export default function AuthModal({
                 required
               />
               <small>
-                Only the parent’s email is collected. It is not treated as verified identity or
-                consent, and no student profile or learning activity is uploaded.
+                The parent will use the emailed link to review the student details, declare their
+                relationship and give consent.
               </small>
             </label>
             <button className="btn btn-primary privacy-full-button" disabled={busy} type="submit">
-              {busy ? 'Sending notification…' : 'Notify parent or guardian'}
+              {busy ? 'Sending consent request…' : 'Send parent consent request'}
             </button>
             <button className="btn btn-secondary privacy-full-button" disabled={busy} type="button" onClick={continuePrivateSession}>
               Continue learning without an account
@@ -274,22 +308,23 @@ export default function AuthModal({
         {step === 'PENDING' && (
           <div className="privacy-pending">
             <div className="privacy-success-icon"><CheckCircle2 size={30} /></div>
-            <h2 id="privacy-onboarding-title">Parent notification sent</h2>
+            <h2 id="privacy-onboarding-title">Parent consent request sent</h2>
             <p>
-              An informational email was sent to the parent or guardian address. No verification,
-              consent, activation code, or cloud account is created through this email-only route.
+              The parent or guardian must open the secure email link, confirm the student details
+              and give consent. No student account has been created yet.
             </p>
             {requestId && <small>Request reference: {requestId}</small>}
             <p>
-              The temporary parent-contact record expires after 48 hours. The student can continue
-              learning in a private device session.
+              The request expires after 48 hours. After consent, an activation link will be sent to
+              the student email for Google registration.
             </p>
             {requestExpiresAt && (
               <small>Parent-contact record expires: {new Date(requestExpiresAt).toLocaleString('en-IN')}</small>
             )}
             <div className="privacy-safety-note">
               <LockKeyhole size={18} />
-              Google sign-in, cloud sync and identifiable analytics remain off for students under 18.
+              Google sign-in, cloud sync and identifiable analytics remain off until the student
+              completes the consent-authorized activation.
             </div>
             <button className="btn btn-secondary privacy-full-button" onClick={continuePrivateSession}>
               Continue learning privately

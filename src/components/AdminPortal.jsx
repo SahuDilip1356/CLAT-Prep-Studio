@@ -1,10 +1,13 @@
 import { useCallback, useState, useEffect } from 'react';
 import { 
   Users, Trophy, Target, AlertTriangle, Download, RefreshCw, Search, 
-  CheckCircle, Lock, Newspaper, Activity, CircleOff, ExternalLink, FileCheck2
+  CheckCircle, Lock, Newspaper, Activity, CircleOff, ExternalLink, FileCheck2,
+  ChevronDown
 } from 'lucide-react';
 import { fetchAllStudentsFromCloud } from '../firebase';
 import { fetchCAOrchestrationRuns } from '../caContent';
+import MockPipelineAdmin from './MockPipelineAdmin';
+import MockReviewWorkbench from './MockReviewWorkbench';
 
 const SCORE_LABELS = {
   legalConstitutional: 'Legal / constitutional',
@@ -13,6 +16,7 @@ const SCORE_LABELS = {
   staticGk: 'Static GK',
   recency: 'Recency / novelty',
   recencyNovelty: 'Recency / novelty',
+  recencySubstantiveNovelty: 'Recency / novelty',
   sourceStrength: 'Source strength',
   examSimilarity: 'Exam similarity',
   examPatternSimilarity: 'Exam similarity',
@@ -24,6 +28,23 @@ const dossierTopic = (title) => String(title || '')
   .toLowerCase()
   .replace(/[^a-z0-9]+/g, '-')
   .replace(/^-|-$/g, '');
+
+const accountStatusLabel = (student) => {
+  if (student.account?.privacyAdmin) return 'Privacy admin';
+  if (student.account?.caAdmin) return 'CA admin';
+  if (student.account?.disabled) return 'Disabled';
+  if (student.account?.privacyStatus === 'ADULT_CONSENTED') return 'Adult activated';
+  if (student.account?.privacyStatus === 'PARENT_VERIFIED') return 'Child activated';
+  if (student.directoryLimited) return 'Stored profile · Preview';
+  if (student.account?.authRecordPresent === false) return 'Auth record missing';
+  return 'Not activated';
+};
+
+const displayDate = (value) => {
+  if (!value) return '—';
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? '—' : date.toLocaleDateString('en-IN');
+};
 
 const downloadRunAudit = (run) => {
   const blob = new Blob([JSON.stringify(run, null, 2)], { type: 'application/json' });
@@ -87,19 +108,28 @@ export default function AdminPortal({
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
+  const [rosterError, setRosterError] = useState('');
   const [caRuns, setCARuns] = useState([]);
   const [caRunError, setCARunError] = useState('');
+  const [caRunWarnings, setCARunWarnings] = useState([]);
 
   const loadData = useCallback(async () => {
     setLoading(true);
-    const [cloudStudents, runResult] = await Promise.all([
-      isPrivacyAdmin ? fetchAllStudentsFromCloud() : Promise.resolve([]),
+    const [studentResult, runResult] = await Promise.all([
+      isPrivacyAdmin
+        ? fetchAllStudentsFromCloud()
+          .then((users) => ({ users, error: '' }))
+          .catch((error) => ({ users: [], error: error.message }))
+        : Promise.resolve({ users: [], error: '' }),
       fetchCAOrchestrationRuns()
-        .then((runs) => ({ runs, error: '' }))
-        .catch((error) => ({ runs: [], error: error.message }))
+        .then(({ runs, sourceWarnings }) => ({ runs, sourceWarnings, error: '' }))
+        .catch((error) => ({ runs: [], sourceWarnings: [], error: error.message }))
     ]);
     setCARuns(runResult.runs);
     setCARunError(runResult.error);
+    setCARunWarnings(runResult.sourceWarnings);
+    setRosterError(studentResult.error);
+    const cloudStudents = studentResult.users;
     
     if (isPrivacyAdmin && localProfile && localProfile.email) {
       const exists = cloudStudents.find(s => s.profile?.email === localProfile.email);
@@ -130,20 +160,24 @@ export default function AdminPortal({
     const p = s.profile || {};
     const matchesSearch = !searchTerm || 
       (p.name && p.name.toLowerCase().includes(searchTerm.toLowerCase())) ||
-      (p.email && p.email.toLowerCase().includes(searchTerm.toLowerCase()));
+      (p.email && p.email.toLowerCase().includes(searchTerm.toLowerCase())) ||
+      (s.account?.email && s.account.email.toLowerCase().includes(searchTerm.toLowerCase()));
     
     return matchesSearch;
   });
 
-  const totalRegistered = students.length;
+  const directoryLimited = students.some((student) => student.directoryLimited);
+  const totalRegistered = students.filter((student) =>
+    ['ADULT_CONSENTED', 'PARENT_VERIFIED'].includes(student.account?.privacyStatus)
+      || (student.directoryLimited && student.profileStored)
+  ).length;
   const totalDrillsTaken = students.reduce((acc, s) => acc + (s.progress?.attemptHistory?.length || 0), 0);
-  const avgSystemAccuracy = totalRegistered > 0 ? Math.round(
-    students.reduce((acc, s) => {
-      const attempts = s.progress?.attemptHistory || [];
-      if (attempts.length === 0) return acc;
-      const avgAcc = attempts.reduce((a, item) => a + (item.accuracyPct || 0), 0) / attempts.length;
-      return acc + avgAcc;
-    }, 0) / totalRegistered
+  const studentsWithAttempts = students.filter((student) => student.progress?.attemptHistory?.length > 0);
+  const avgSystemAccuracy = studentsWithAttempts.length > 0 ? Math.round(
+    studentsWithAttempts.reduce((acc, s) => {
+      const attempts = s.progress.attemptHistory;
+      return acc + (attempts.reduce((a, item) => a + (item.accuracyPct || 0), 0) / attempts.length);
+    }, 0) / studentsWithAttempts.length
   ) : 0;
 
   const handleExportMasterCSV = () => {
@@ -153,7 +187,8 @@ export default function AdminPortal({
     }
 
     const headers = [
-      'Student Name', 'Email', 'Phone', 'Target Year', 'Target NLU',
+      'Student Name', 'Email', 'Account Status', 'Subject Type', 'Profile Stored',
+      'Email Verified', 'Account Created', 'Last Sign-In', 'Phone', 'Target Year', 'Target NLU',
       'Drills Completed', 'Total Questions Attempted', 'Average Accuracy %',
       'Last Active Date', 'Weak Topics'
     ];
@@ -172,14 +207,20 @@ export default function AdminPortal({
 
       return [
         `"${p.name || 'Anonymous Student'}"`,
-        `"${p.email || 'N/A'}"`,
+        `"${p.email || s.account?.email || 'N/A'}"`,
+        `"${accountStatusLabel(s)}"`,
+        `"${s.account?.subjectType || 'N/A'}"`,
+        s.profileStored ? 'Yes' : 'No',
+        s.account?.emailVerified ? 'Yes' : 'No',
+        `"${displayDate(s.account?.createdAt)}"`,
+        `"${displayDate(s.account?.lastSignInAt)}"`,
         `"${p.phone || 'N/A'}"`,
         `"${p.targetYear || 'CLAT Candidate'}"`,
         `"${p.targetNlu || 'NLU Goal'}"`,
         completedCount,
         totalAtt,
         `"${avgAcc}%"`,
-        `"${new Date(s.lastUpdated).toLocaleDateString()}"`,
+        `"${displayDate(s.lastUpdated)}"`,
         `"${topWeak.join('; ')}"`
       ];
     });
@@ -214,6 +255,8 @@ export default function AdminPortal({
 
   return (
     <div className="admin-portal-view">
+      <MockPipelineAdmin />
+      <MockReviewWorkbench />
       <div className="glass-panel" style={{ padding: '28px', marginBottom: '24px' }}>
         <div style={{
           display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between',
@@ -240,6 +283,19 @@ export default function AdminPortal({
           </button>
         </div>
 
+        {caRunWarnings.length > 0 ? (
+          <div style={{
+            marginBottom: '12px', padding: '12px', borderRadius: '10px',
+            background: 'var(--accent-warning-bg)', color: 'var(--accent-warning)',
+            fontSize: '0.82rem'
+          }}>
+            <AlertTriangle size={15} style={{ verticalAlign: 'middle', marginRight: '7px' }} />
+            Partial CA history: {caRunWarnings.map((warning) => (
+              `${warning.source}: ${warning.message}`
+            )).join(' · ')}
+          </div>
+        ) : null}
+
         {caRunError ? (
           <div style={{
             padding: '12px', borderRadius: '10px', background: 'var(--accent-danger-bg)',
@@ -262,9 +318,17 @@ export default function AdminPortal({
               const noOp = run.status === 'COMPLETED' && Number(run.publishedCount || 0) === 0;
               const newCount = Number(run.newCount || 0);
               const updatedCount = Number(run.updatedCount || 0);
+              const selectedTitles = (run.published || [])
+                .map((item) => item.title)
+                .filter(Boolean);
+              const selectedTitlePreview = selectedTitles.slice(0, 2).join(' · ');
+              const remainingTitleCount = Math.max(0, selectedTitles.length - 2);
               const acceptedLabel = updatedCount || newCount
                 ? `${updatedCount} UPDATED · ${newCount} NEW`
                 : `${run.publishedCount || 0} ACCEPTED`;
+              const summaryStatus = failed
+                ? 'FAILED'
+                : noOp ? 'NO RELEVANT DOSSIER' : acceptedLabel;
               const Icon = failed ? AlertTriangle : noOp ? CircleOff : Newspaper;
               const color = failed
                 ? 'var(--accent-danger)'
@@ -274,18 +338,28 @@ export default function AdminPortal({
                   border: '1px solid var(--border-color)', borderRadius: '12px',
                   padding: '13px 15px', background: 'var(--bg-card)'
                 }}>
-                  <summary style={{
+                  <summary aria-label={`CA run ${run.runDate}: ${summaryStatus}`} style={{
                     cursor: 'pointer', listStyle: 'none', display: 'flex',
-                    alignItems: 'center', gap: '10px'
+                    alignItems: 'center', gap: '10px', flexWrap: 'wrap'
                   }}>
                     <Icon size={18} color={color} />
                     <span style={{ fontWeight: 800, minWidth: '110px' }}>{run.runDate}</span>
                     <span style={{ color, fontWeight: 800, fontSize: '0.78rem' }}>
-                      {failed ? 'FAILED' : noOp ? 'NO RELEVANT DOSSIER' : acceptedLabel}
+                      {summaryStatus}
                     </span>
+                    {selectedTitles.length > 0 ? (
+                      <span title={selectedTitles.join(' · ')} style={{
+                        color: 'var(--text-secondary)', fontSize: '0.8rem', fontWeight: 700,
+                        flex: '1 1 320px', minWidth: '180px'
+                      }}>
+                        {selectedTitlePreview}
+                        {remainingTitleCount > 0 ? ` · +${remainingTitleCount} more` : ''}
+                      </span>
+                    ) : null}
                     <span style={{ color: 'var(--text-muted)', fontSize: '0.76rem', marginLeft: 'auto' }}>
                       {run.ignoredCount || 0} ignored · {run.auditSource || 'FIRESTORE'}
                     </span>
+                    <ChevronDown size={17} color="var(--text-muted)" aria-hidden="true" />
                   </summary>
                   <div style={{
                     marginTop: '12px', paddingTop: '12px',
@@ -404,8 +478,10 @@ export default function AdminPortal({
               <Users size={24} />
             </div>
             <div>
-              <div className="kpi-value">{totalRegistered}</div>
-              <div className="kpi-label">Active Logged-In Students</div>
+              <div className="kpi-value">{totalRegistered}/{students.length}</div>
+              <div className="kpi-label">
+                {directoryLimited ? 'Stored Student Profiles · Preview' : 'Activated Students / Firebase Accounts'}
+              </div>
             </div>
           </div>
 
@@ -451,6 +527,15 @@ export default function AdminPortal({
           </div>
         </div>
 
+        {rosterError && (
+          <div style={{
+            marginBottom: '16px', padding: '12px 14px', borderRadius: '10px',
+            background: 'var(--accent-danger-bg)', color: 'var(--accent-danger)'
+          }}>
+            Student directory could not be loaded: {rosterError}
+          </div>
+        )}
+
         {loading ? (
           <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
             Loading student roster and cloud standings...
@@ -461,6 +546,7 @@ export default function AdminPortal({
               <thead>
                 <tr style={{ background: 'var(--bg-primary)', color: 'var(--text-secondary)', textAlign: 'left' }}>
                   <th style={{ padding: '12px', borderBottom: '2px solid var(--border-color)' }}>Student Profile</th>
+                  <th style={{ padding: '12px', borderBottom: '2px solid var(--border-color)' }}>Account / Privacy</th>
                   <th style={{ padding: '12px', borderBottom: '2px solid var(--border-color)' }}>Target Goal</th>
                   <th style={{ padding: '12px', borderBottom: '2px solid var(--border-color)' }}>Drills Done</th>
                   <th style={{ padding: '12px', borderBottom: '2px solid var(--border-color)' }}>Avg Accuracy</th>
@@ -478,12 +564,19 @@ export default function AdminPortal({
                     <tr key={idx} style={{ borderBottom: '1px solid var(--border-color)' }}>
                       <td style={{ padding: '12px' }}>
                         <div style={{ fontWeight: 700 }}>{p.name || 'Registered Student'}</div>
-                        <div style={{ fontSize: '0.775rem', color: 'var(--text-muted)' }}>{p.email || 'N/A'}</div>
+                        <div style={{ fontSize: '0.775rem', color: 'var(--text-muted)' }}>{p.email || s.account?.email || 'N/A'}</div>
+                      </td>
+                      <td style={{ padding: '12px' }}>
+                        <div style={{ fontWeight: 700 }}>{accountStatusLabel(s)}</div>
+                        <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '3px' }}>
+                          {s.profileStored ? 'Profile stored' : 'Profile missing'}
+                          {s.account?.lastSignInAt ? ` · Last login ${displayDate(s.account.lastSignInAt)}` : ''}
+                        </div>
                       </td>
                       <td style={{ padding: '12px' }}>{p.targetYear || 'CLAT Candidate'}</td>
                       <td style={{ padding: '12px', fontWeight: 800 }}>{completedDaysCount} Days</td>
                       <td style={{ padding: '12px', fontWeight: 800, color: 'var(--accent-primary)' }}>{avgAcc}%</td>
-                      <td style={{ padding: '12px', fontSize: '0.8rem', color: 'var(--text-muted)' }}>{new Date(s.lastUpdated).toLocaleDateString()}</td>
+                      <td style={{ padding: '12px', fontSize: '0.8rem', color: 'var(--text-muted)' }}>{displayDate(s.lastUpdated)}</td>
                     </tr>
                   );
                 })}
