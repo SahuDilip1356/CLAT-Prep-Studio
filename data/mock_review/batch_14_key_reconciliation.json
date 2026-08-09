@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T17:55:55.210412+00:00",
+  "batchId": "CLAT-BATCH-014",
+  "status": "QUESTION_DIGITIZATION_COMPLETE_KEY_ACQUISITION_PENDING",
+  "summary": {
+    "sources": 5,
+    "expectedQuestions": 600,
+    "reconciledAnswers": 0,
+    "structurallyComplete": 600,
+    "byQueueStatus": {
+      "BLOCKED": 600
+    },
+    "byIssueCode": {
+      "ANSWER_KEY_SOURCE_MISSING": 600,
+      "EXPLANATION_REQUIRED": 600,
+      "QUESTION_PAGE_VISUAL_REVIEW": 109
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "SRC-0089",
+      "path": "CLAT Mock Papers/CL • CLAT 2027  Prime MOCK 07 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [],
+      "questionPages": 32,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 13,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; standalone option-label lines were structurally normalized; official answer key is not present.",
+      "rank": 1,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0090",
+      "path": "CLAT Mock Papers/CL • CLAT 2027  Prime MOCK 08 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [],
+      "questionPages": 33,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 22,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; standalone option-label lines were structurally normalized; official answer key is not present.",
+      "rank": 2,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0091",
+      "path": "CLAT Mock Papers/CL • CLAT 2027  Prime MOCK 09 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [],
+      "questionPages": 32,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 21,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; standalone option-label lines were structurally normalized; official answer key is not present.",
+      "rank": 3,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0094",
+      "path": "CLAT Mock Papers/CL • CLAT 2027 Prime Mock 04 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [],
+      "questionPages": 34,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 30,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; standalone option-label lines were structurally normalized; official answer key is not present.",
+      "rank": 4,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0095",
+      "path": "CLAT Mock Papers/CL • CLAT 2027 Prime Mock 05 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [],
+      "questionPages": 31,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 23,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; standalone option-label lines were structurally normalized; official answer key is not present.",
+      "rank": 5,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    }
+  ]
+}

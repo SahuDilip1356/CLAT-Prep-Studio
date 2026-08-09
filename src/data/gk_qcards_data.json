@@ -9210,5 +9210,214 @@
       "Avoid confusing September 2026 Watchlist: UNGA 81st Session & G20 Summit with allied non-statutory policies."
     ],
     "memoryTip": "Key takeaway: September 2026 Watchlist: UNGA 81st Session & G20 Summit requires exact statutory authority and verified primary source backing."
+  },
+  {
+    "id": "qcard-ca-AUG-01",
+    "topic": "International affairs",
+    "category": "AI governance, transparency and fundamental rights",
+    "title": "European Union Artificial Intelligence Act",
+    "subtitle": "The EU AI Act joins technology regulation, fundamental rights, extraterritorial jurisdiction, risk classification, deepfake transparency, institutional enforcement, and the distinction between an EU regulation and a directive.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 2 August 2026, the main application milestone under the European Union Artificial Intelligence Act arrived. Transparency duties under Article 50 became applicable, including duties to tell people when they are interacting directly with certain AI systems and to make AI-generated or manipulated content identifiable in specified circumstances. The European Commission's AI Office also obtained enforcement powers over general-purpose AI models. This did not make every high-risk-system obligation immediately applicable: a 2026 amending measure postponed major high-risk rules to later dates.",
+    "keyMilestones": [
+      {
+        "date": "13 June 2024",
+        "event": "The European Parliament and Council adopted Regulation (EU) 2024/1689, the Artificial Intelligence Act."
+      },
+      {
+        "date": "1 August 2024",
+        "event": "The Regulation entered into force, twenty days after publication in the Official Journal."
+      },
+      {
+        "date": "2 February 2025",
+        "event": "Rules on prohibited AI practices, definitions, and AI literacy began to apply."
+      },
+      {
+        "date": "2 August 2025",
+        "event": "Governance provisions and obligations for general-purpose AI models began to apply."
+      },
+      {
+        "date": "27 July 2026",
+        "event": "The Digital Omnibus amending Regulation entered into force and revised the high-risk implementation timetable."
+      },
+      {
+        "date": "2 August 2026",
+        "event": "Article 50 transparency duties became applicable and the AI Office obtained enforcement powers concerning general-purpose AI models."
+      },
+      {
+        "date": "2 December 2027",
+        "event": "The revised date for major obligations concerning high-risk systems listed in Annex III."
+      },
+      {
+        "date": "2 August 2028",
+        "event": "The revised date for high-risk systems embedded in regulated products listed in Annex I."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Risk-based regulation",
+        "desc": "Risk-based regulation governs Legal duties intensify with the potential harm of an AI use, ranging from prohibited practices to high-risk controls and transparency requirements."
+      },
+      {
+        "article": "Fundamental-rights protection",
+        "desc": "Fundamental-rights protection governs The framework addresses equality, privacy, data protection, dignity, freedom of expression, effective remedy, and democratic integrity in contexts such as biometric identification, employment, education, policing, and access to essential services."
+      },
+      {
+        "article": "Article 50 transparency",
+        "desc": "Article 50 transparency governs Covered providers must inform people when they interact directly with AI, while specified AI-generated or manipulated content must be marked or disclosed; deployers also have duties for deepfakes and certain public-interest content."
+      },
+      {
+        "article": "Extraterritorial reach",
+        "desc": "Extraterritorial reach governs A provider established outside the EU can still fall within scope when it places covered technology on the EU market or when the system's output is used in the EU."
+      },
+      {
+        "article": "Enforcement and proportionality",
+        "desc": "Enforcement and proportionality governs National authorities and the AI Office divide enforcement responsibility. The Act provides tiered administrative fines, with the highest statutory ceiling for certain prohibited practices reaching the greater of \u20ac35 million or 7 per cent of worldwide annual turnover, subject to the applicable legal conditions."
+      },
+      {
+        "article": "fact-6",
+        "desc": "EU regulation versus directive: A regulation is binding in its entirety and directly applicable; a directive binds member states as to the result but normally requires national implementation."
+      },
+      {
+        "article": "fact-7",
+        "desc": "EU membership: The European Union has 27 member states and is distinct from the 46-member Council of Europe."
+      },
+      {
+        "article": "fact-8",
+        "desc": "General-purpose AI model: A model capable of competently performing a wide range of distinct tasks, which may be integrated into many downstream systems."
+      },
+      {
+        "article": "fact-9",
+        "desc": "Deepfake: AI-generated or manipulated image, audio, or video content resembling real persons, objects, places, entities, or events and appearing authentic or truthful."
+      },
+      {
+        "article": "fact-10",
+        "desc": "Risk tiers: Prohibited practices, high-risk systems, transparency-risk uses, and lower-risk uses do not carry identical legal duties."
+      },
+      {
+        "article": "fact-11",
+        "desc": "Brussels effect: Large-market regulation may influence business conduct and technical standards beyond the regulator's territory."
+      }
+    ],
+    "examTraps": [
+      "Do not say the AI Act entered into force on 2 August 2026; it entered into force on 1 August 2024 and applies through a phased timetable.",
+      "Do not equate the European Union with the Council of Europe, or assume that a regulation and a directive operate identically."
+    ],
+    "memoryTip": "\u201c24 force, 26 disclose, 27\u201328 high risk\u201d\u2014entry into force in 2024, transparency in 2026, and revised high-risk dates in 2027 and 2028."
+  },
+  {
+    "id": "qcard-ca-AUG-02",
+    "topic": "International affairs",
+    "category": "International taxation, treaty-making and development finance",
+    "title": "United Nations Framework Convention on International Tax Cooperation",
+    "subtitle": "The negotiations connect treaty-making, fiscal sovereignty, allocation of cross-border taxing rights, digital services, dispute resolution, development finance, UN voting, and India's constitutional rules on taxation and treaty implementation.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 3 August 2026, the Intergovernmental Negotiating Committee opened its fifth substantive session at United Nations Headquarters in New York. The session runs through 13 August. For the first time in this process, member states are expected to negotiate concrete draft language across three linked workstreams: a United Nations Framework Convention on International Tax Cooperation, an early protocol on taxing income from cross-border services, and an early protocol on preventing and resolving tax disputes. This is a negotiating milestone, not the adoption or entry into force of a treaty. The committee is working toward final texts for consideration by the UN General Assembly in 2027.",
+    "keyMilestones": [
+      {
+        "date": "22 December 2023",
+        "event": "The UN General Assembly adopted Resolution 78/230, beginning the formal process for a UN framework convention on international tax cooperation."
+      },
+      {
+        "date": "24 December 2024",
+        "event": "General Assembly Resolution 79/235 adopted the terms of reference and established the intergovernmental negotiating committee."
+      },
+      {
+        "date": "3-6 February 2025",
+        "event": "The committee held its organizational session at UN Headquarters in New York."
+      },
+      {
+        "date": "4 August 2025",
+        "event": "The first substantive negotiating session began in New York."
+      },
+      {
+        "date": "13 February 2026",
+        "event": "The fourth substantive session concluded after work on the convention and the two early protocols."
+      },
+      {
+        "date": "3 August 2026",
+        "event": "The fifth session opened in New York, moving the process from concepts toward negotiation of concrete draft legal language."
+      },
+      {
+        "date": "13 August 2026",
+        "event": "Scheduled closing date of the fifth session."
+      },
+      {
+        "date": "2027",
+        "event": "The committee is due to submit final texts of the framework convention and two early protocols to the General Assembly for consideration."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Article 265 of the Constitution",
+        "desc": "Article 265 of the Constitution governs No tax may be levied or collected in India except by authority of law; an international negotiation cannot itself impose a domestic tax."
+      },
+      {
+        "article": "Article 253 of the Constitution",
+        "desc": "Article 253 of the Constitution governs Parliament may make laws for implementing treaties, agreements, conventions, and decisions made at international conferences."
+      },
+      {
+        "article": "Article 51(c) of the Constitution",
+        "desc": "Article 51(c) of the Constitution governs The State should foster respect for international law and treaty obligations; it is a Directive Principle, not an independent charging provision for tax."
+      },
+      {
+        "article": "Union List, Entry 82",
+        "desc": "Union List, Entry 82 governs Parliament has legislative competence over taxes on income other than agricultural income."
+      },
+      {
+        "article": "Section 90 of the Income-tax Act, 1961",
+        "desc": "Section 90 of the Income-tax Act, 1961 governs It enables the Central Government to enter into and notify agreements with foreign countries or specified territories on double-tax relief, avoidance, information exchange, and recovery of tax."
+      },
+      {
+        "article": "Fiscal sovereignty and coordination",
+        "desc": "Fiscal sovereignty and coordination governs Source countries, residence countries, and market jurisdictions may assert competing claims over the same cross-border income, creating risks of both double taxation and non-taxation."
+      },
+      {
+        "article": "Dispute resolution and due process",
+        "desc": "Dispute resolution and due process governs The second early protocol may shape how cross-border tax disputes are prevented and resolved, raising questions of transparency, consistency, taxpayer protection, and state consent."
+      },
+      {
+        "article": "fact-8",
+        "desc": "Framework convention: A treaty structure that sets broad principles, institutions, and procedures, often supplemented by more detailed protocols."
+      },
+      {
+        "article": "fact-9",
+        "desc": "Protocol: A related legal instrument that can add detailed rules or obligations to a wider treaty framework."
+      },
+      {
+        "article": "fact-10",
+        "desc": "Source jurisdiction: The country claiming taxing rights because income arises from activity, assets, customers, or payments connected with its territory."
+      },
+      {
+        "article": "fact-11",
+        "desc": "Residence jurisdiction: The country claiming taxing rights because the taxpayer is resident there."
+      },
+      {
+        "article": "fact-12",
+        "desc": "Permanent establishment: A treaty concept commonly used to decide when an enterprise has sufficient presence in another state for that state to tax specified business profits."
+      },
+      {
+        "article": "fact-13",
+        "desc": "Double taxation: The same income may be taxed by more than one jurisdiction; treaties can allocate taxing rights and provide relief."
+      },
+      {
+        "article": "fact-14",
+        "desc": "Base erosion and profit shifting: Arrangements that exploit gaps or mismatches in tax rules to shift profits away from the place of economic activity."
+      },
+      {
+        "article": "fact-15",
+        "desc": "UN General Assembly: The principal deliberative organ of the UN, composed of all 193 member states; its resolutions do not by themselves convert a draft convention into a binding treaty for every state."
+      }
+    ],
+    "examTraps": [
+      "Do not describe the current drafts as a binding treaty or say the UN has imposed a worldwide tax.",
+      "Do not confuse the UN framework-convention process with the separate OECD/G20 international tax process.",
+      "Do not treat a framework convention and its protocols as identical instruments, or treaty negotiation and Indian domestic implementation as the same legal stage."
+    ],
+    "memoryTip": "\u201cFramework, services, disputes\u2014text in 26, target in 27.\u201d"
   }
 ]

@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T16:15:22.852328+00:00",
+  "batchId": "CLAT-BATCH-004",
+  "status": "SELECTED_FOR_KEY_VERIFICATION",
+  "selectionPolicy": {
+    "eligibleWorkflow": "ANSWER_KEY_OCR_PENDING",
+    "exam": "CLAT",
+    "targetMocks": 5,
+    "ranking": "safe immediate yield minus parsed-gap, visual-review and answer-page burden",
+    "publicationRule": "No item publishes until official key and rendered evidence pass review."
+  },
+  "summary": {
+    "eligibleSources": 13,
+    "selectedSources": 5,
+    "selectedSafeImmediateYield": 491,
+    "remainingHighYieldSources": 8
+  },
+  "selected": [
+    {
+      "sourceId": "SRC-0137",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 AIOM 06 MOCK 24 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0136"
+      ],
+      "questionPages": 50,
+      "answerKeyPages": 47,
+      "parsedQuestions": 108,
+      "fourOptionQuestions": 106,
+      "answerCandidatesAttached": 100,
+      "visualReviewQuestions": 108,
+      "safeImmediateYield": 100,
+      "yieldScore": 72.923,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 1
+    },
+    {
+      "sourceId": "SRC-0182",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 X-Series Mock 01 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0181"
+      ],
+      "questionPages": 41,
+      "answerKeyPages": 53,
+      "parsedQuestions": 105,
+      "fourOptionQuestions": 100,
+      "answerCandidatesAttached": 103,
+      "visualReviewQuestions": 105,
+      "safeImmediateYield": 100,
+      "yieldScore": 71.993,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 2
+    },
+    {
+      "sourceId": "SRC-0149",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 02 (QS) @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0148"
+      ],
+      "questionPages": 37,
+      "answerKeyPages": 35,
+      "parsedQuestions": 111,
+      "fourOptionQuestions": 108,
+      "answerCandidatesAttached": 96,
+      "visualReviewQuestions": 111,
+      "safeImmediateYield": 96,
+      "yieldScore": 70.7,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 3
+    },
+    {
+      "sourceId": "SRC-0135",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 AIOM 03 MOCK 11 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0134"
+      ],
+      "questionPages": 36,
+      "answerKeyPages": 55,
+      "parsedQuestions": 110,
+      "fourOptionQuestions": 97,
+      "answerCandidatesAttached": 99,
+      "visualReviewQuestions": 110,
+      "safeImmediateYield": 97,
+      "yieldScore": 70.683,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 4
+    },
+    {
+      "sourceId": "SRC-0133",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 AIOM 02 MOCK 07 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0132"
+      ],
+      "questionPages": 35,
+      "answerKeyPages": 68,
+      "parsedQuestions": 106,
+      "fourOptionQuestions": 101,
+      "answerCandidatesAttached": 98,
+      "visualReviewQuestions": 106,
+      "safeImmediateYield": 98,
+      "yieldScore": 70.127,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 5
+    }
+  ],
+  "remaining": [
+    {
+      "sourceId": "SRC-0192",
+      "path": "CLAT Mock Papers/LPT_ CLAT 2027 MOCK 18 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0191"
+      ],
+      "questionPages": 49,
+      "answerKeyPages": 50,
+      "parsedQuestions": 108,
+      "fourOptionQuestions": 107,
+      "answerCandidatesAttached": 96,
+      "visualReviewQuestions": 108,
+      "safeImmediateYield": 96,
+      "yieldScore": 69.5,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 6
+    },
+    {
+      "sourceId": "SRC-0178",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 28 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0177"
+      ],
+      "questionPages": 50,
+      "answerKeyPages": 41,
+      "parsedQuestions": 102,
+      "fourOptionQuestions": 102,
+      "answerCandidatesAttached": 97,
+      "visualReviewQuestions": 102,
+      "safeImmediateYield": 97,
+      "yieldScore": 69.103,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 7
+    },
+    {
+      "sourceId": "SRC-0144",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 Advance Mock - 20001 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0143"
+      ],
+      "questionPages": 30,
+      "answerKeyPages": 36,
+      "parsedQuestions": 102,
+      "fourOptionQuestions": 98,
+      "answerCandidatesAttached": 96,
+      "visualReviewQuestions": 102,
+      "safeImmediateYield": 96,
+      "yieldScore": 68.42,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 8
+    },
+    {
+      "sourceId": "SRC-0164",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 17 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0163"
+      ],
+      "questionPages": 41,
+      "answerKeyPages": 28,
+      "parsedQuestions": 101,
+      "fourOptionQuestions": 101,
+      "answerCandidatesAttached": 91,
+      "visualReviewQuestions": 101,
+      "safeImmediateYield": 91,
+      "yieldScore": 64.243,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 9
+    },
+    {
+      "sourceId": "SRC-0162",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 15 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0161"
+      ],
+      "questionPages": 48,
+      "answerKeyPages": 33,
+      "parsedQuestions": 102,
+      "fourOptionQuestions": 102,
+      "answerCandidatesAttached": 89,
+      "visualReviewQuestions": 102,
+      "safeImmediateYield": 89,
+      "yieldScore": 62.677,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 10
+    },
+    {
+      "sourceId": "SRC-0168",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 20 @CLAT_OWNER.pdf.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0167"
+      ],
+      "questionPages": 42,
+      "answerKeyPages": 37,
+      "parsedQuestions": 99,
+      "fourOptionQuestions": 95,
+      "answerCandidatesAttached": 90,
+      "visualReviewQuestions": 99,
+      "safeImmediateYield": 90,
+      "yieldScore": 62.64,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 11
+    },
+    {
+      "sourceId": "SRC-0155",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 06 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0154"
+      ],
+      "questionPages": 31,
+      "answerKeyPages": 27,
+      "parsedQuestions": 102,
+      "fourOptionQuestions": 95,
+      "answerCandidatesAttached": 88,
+      "visualReviewQuestions": 102,
+      "safeImmediateYield": 88,
+      "yieldScore": 62.023,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 12
+    },
+    {
+      "sourceId": "SRC-0141",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 AIOM 4 MOCK 14 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0140"
+      ],
+      "questionPages": 46,
+      "answerKeyPages": 45,
+      "parsedQuestions": 103,
+      "fourOptionQuestions": 100,
+      "answerCandidatesAttached": 75,
+      "visualReviewQuestions": 103,
+      "safeImmediateYield": 75,
+      "yieldScore": 50.9,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 13
+    }
+  ]
+}

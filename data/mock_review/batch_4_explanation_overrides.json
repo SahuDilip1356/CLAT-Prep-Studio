@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T16:30:02.759982+00:00",
+  "policy": "Drafts never bypass named academic approval; correctOption must still match reconciled official key evidence.",
+  "items": [
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q011",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.787,
+      "explanation": "The relevant fact or inference in the passage corresponds to To emphasise that darkness actively enables perception rather than merely removing light. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q018",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.035,
+      "explanation": "The relevant fact or inference in the passage corresponds to Public health consequences are treated as secondary costs in growth-focused governance models. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q019",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.879,
+      "explanation": "The relevant fact or inference in the passage corresponds to Inadequate spread of pollutants, causing them to remain concentrated. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q054",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.315,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The NDAA is not a juristic person because its statute does not explicitly confer the power to sue. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q056",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Mandamus. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q058",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 18,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.154,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: British legal system. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q059",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 19,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.458,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Yes, because it hasa strong reputation, extensive advertising, and recognition among a substantial segment of consumers. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q060",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 19,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.328,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: It allows protection against misuse even in unrelated classes of goods or services. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q063",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 20,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.496,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: GlowMate — a wearable fitness tracker brand; the mark is distinctive, not similar to any existing mark, and the company has begun commercial sales. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q064",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 20,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.067,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: logos and brand names. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q101",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 29,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.459,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Post-colonial nations with comparable histories have produced equally vague equity legislation. Therefore option A is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q102",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 29,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.799,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Flawed anti-discrimination regulations, even when well-intentioned, can be counterproductive an: d require careful revision before implementation. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0133-Q117",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0133",
+      "sourcePage": 33,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.571,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 9568. Therefore option A is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0135-Q084",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0135",
+      "sourcePage": 30,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.625,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The regulation amounts to restriction of movement under Article 19 rather than Article 21. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0135-Q092",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0135",
+      "sourcePage": 32,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.0,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves B. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0135-Q093",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0135",
+      "sourcePage": 32,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.5,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Teacher. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0135-Q098",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0135",
+      "sourcePage": 32,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.667,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves D. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0135-Q099",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0135",
+      "sourcePage": 33,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.2,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Burma. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0137-Q009",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0137",
+      "sourcePage": 6,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.333,
+      "explanation": "The relevant fact or inference in the passage corresponds to The author’s difference appears pathological partly because culture normalises coherence. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0137-Q034",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0137",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.571,
+      "explanation": "The relevant fact or inference in the passage corresponds to 2018. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0137-Q047",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0137",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.333,
+      "explanation": "The relevant fact or inference in the passage corresponds to Malik Muhammed Jayasi. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0137-Q103",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0137",
+      "sourcePage": 42,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.817,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves The Cockroach Janta Party, born from a viral moment of institutional insult, has become a significant marker of India's young population's alienation from formal politics, even if its capacity for tangible…. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0137-Q108",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0137",
+      "sourcePage": 44,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.832,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Establish that while India has so far avoided comparable upheaval, the socio-economic pressures driving youth discontent in those countries — unemployment, inequality, and stalled futures — are equally present…. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q025",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 9,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.432,
+      "explanation": "The relevant fact or inference in the passage corresponds to Viksit Bharat-Guarantee for Rozgar and Ajeevika Mission (Gramin) Bill. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q027",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 10,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.964,
+      "explanation": "The relevant fact or inference in the passage corresponds to Removing penalties for delayed wage payments to provide administrative flexibility. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q028",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 10,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.167,
+      "explanation": "The relevant fact or inference in the passage corresponds to Expansion of urban industrial corridors. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q031",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 11,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 2.429,
+      "explanation": "The passage states that union Environment Minister Bhupender Yadav chaired a high-level joint meeting of the National Tiger Conservation Authority (NTCA) and the Project Elephant Steering Committee at the Sundarbans Tiger Reserve. This supports Project Tiger, so option B is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q035",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 11,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 1.912,
+      "explanation": "The passage states that the Centre has sought a detailed report on the incident, and railway authorities have been directed to coordinate closely with state forest departments to monitor elephant movement along railway tracks. This supports Coordinating railway authorities with forest departments and monitoring elephant movement, so option B is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q041",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 13,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.283,
+      "explanation": "The relevant fact or inference in the passage corresponds to Conditions in which temperature increases with height instead of decreasing, trapping air near the ground. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q044",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.095,
+      "explanation": "The relevant fact or inference in the passage corresponds to Sardar Vallabhbhai Patel. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q045",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.429,
+      "explanation": "The relevant fact or inference in the passage corresponds to Because the region has hard rock terrain and seasonal rainfall, making large rivers and canals less reliable. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q046",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 14,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 1.08,
+      "explanation": "The passage states that this is one of the largest water resource projects of India covering four states—Maharashtra, Madhya Pradesh, Gujarat and Rajasthan. This supports Sugarcane in Maharashtra, so option D is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q047",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.643,
+      "explanation": "The relevant fact or inference in the passage corresponds to They improve aquatic habitats by creating better conditions for spawning. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q048",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 15,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.333,
+      "explanation": "The relevant fact or inference in the passage corresponds to Federalism. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q050",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 16,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.273,
+      "explanation": "The relevant fact or inference in the passage corresponds to 73™4 and 74th CAA. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q051",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 16,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.5,
+      "explanation": "The relevant fact or inference in the passage corresponds to 2023. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q052",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 16,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.25,
+      "explanation": "The relevant fact or inference in the passage corresponds to Lokpal. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q100",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 34,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.667,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves M1 criticizes Congress, aligns with M2, opposes M3. Therefore option A is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q101",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 34,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.2,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Indirectly opposed. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q105",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 34,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.2,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Analyst. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q106",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 34,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.143,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Indirectly opposes. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q111",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 35,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.667,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 6750. Therefore option A is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q113",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 35,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.417,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 113650. Therefore option B is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0149-Q116",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0149",
+      "sourcePage": 36,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.571,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 12:13. Therefore option B is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0182-Q047",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0182",
+      "sourcePage": 19,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.571,
+      "explanation": "The relevant fact or inference in the passage corresponds to = 920. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0182-Q067",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0182",
+      "sourcePage": 27,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.389,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The Act is not colourable, provided its true nature remains environmental regulation, a subject within Parliament's competence. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0182-Q093",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0182",
+      "sourcePage": 34,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.109,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves None. Therefore option A is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0182-Q102",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0182",
+      "sourcePage": 36,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.125,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Hear the other side. Therefore option A is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0182-Q104",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0182",
+      "sourcePage": 37,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.1,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves De minimis non curat lex. Therefore option A is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-004-SRC-0182-Q108",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0182",
+      "sourcePage": 37,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.077,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Let justice be done, though the heavens fall. Therefore option A is the only result consistent with the arrangement."
+    }
+  ]
+}

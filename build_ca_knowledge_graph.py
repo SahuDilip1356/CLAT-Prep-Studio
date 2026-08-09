@@ -27,6 +27,8 @@ def parse_dossier_markdown(file_path):
                 frontmatter[k] = int(v)
             elif k == 'continuingIssue':
                 frontmatter[k] = v.lower() == 'true'
+            elif k == 'featuredMonths':
+                frontmatter[k] = [month.strip() for month in v.split(',') if month.strip()]
             else:
                 frontmatter[k] = v
 
@@ -40,6 +42,8 @@ def parse_dossier_markdown(file_path):
       "importanceScore": frontmatter.get("importanceScore", 70),
       "status": "APPROVED",
       "continuingIssue": frontmatter.get("continuingIssue", False),
+      "featuredMonths": frontmatter.get("featuredMonths", []),
+      "featuredPriority": frontmatter.get("featuredPriority", ""),
       "examYear": frontmatter.get("examYear", "CLAT/AILET 2027"),
       "whyThisMayBeAsked": frontmatter.get("whyThisMayBeAsked", "Important current events."),
       "lastVerifiedDate": frontmatter.get("lastVerifiedDate", "2026-07-22"),
@@ -383,20 +387,59 @@ def main():
 
     # 3. Sync to gk_question_bank.json
     qbank_data = []
+    qbank_envelope = None
+    qbank_passages = {}
     if os.path.exists(qbank_file):
         with open(qbank_file, 'r', encoding='utf-8') as f:
             try:
-                qbank_data = json.load(f)
+                loaded_qbank = json.load(f)
+                if isinstance(loaded_qbank, dict):
+                    # The current module-bank format stores shared passages once
+                    # and keeps the questions inside an envelope. Preserve that
+                    # schema instead of replacing it with the legacy flat list.
+                    qbank_envelope = loaded_qbank
+                    qbank_data = loaded_qbank.get("questions", [])
+                    qbank_passages = loaded_qbank.get("passages", {})
+                elif isinstance(loaded_qbank, list):
+                    qbank_data = loaded_qbank
             except Exception:
                 qbank_data = []
 
-    existing_question_texts = {q["questionText"] for q in qbank_data if "questionText" in q}
+    qbank_data = [q for q in qbank_data if isinstance(q, dict)]
+    existing_question_texts = {
+        q["questionText"] for q in qbank_data if q.get("questionText")
+    }
     
     # Get highest existing id
     highest_id = 1000
     for q in qbank_data:
         if isinstance(q.get("id"), int) and q["id"] > highest_id:
             highest_id = q["id"]
+
+    passage_ids_by_text = {text: passage_id for passage_id, text in qbank_passages.items()}
+    highest_passage_id = max(
+        (
+            int(passage_id.rsplit("P", 1)[1])
+            for passage_id in qbank_passages
+            if passage_id.startswith("GK-P") and passage_id.rsplit("P", 1)[1].isdigit()
+        ),
+        default=0,
+    )
+
+    def compact_passage_id(passage_text):
+        nonlocal highest_passage_id
+        if not passage_text or qbank_envelope is None:
+            return None
+        existing_id = passage_ids_by_text.get(passage_text)
+        if existing_id:
+            return existing_id
+        highest_passage_id += 1
+        passage_id = f"GK-P{highest_passage_id:04d}"
+        qbank_passages[passage_id] = passage_text
+        passage_ids_by_text[passage_text] = passage_id
+        return passage_id
+
+    new_questions = []
 
     for dossier in graph_nodes:
         # Sync CLAT Passage questions
@@ -420,7 +463,22 @@ def main():
                         "solution": cq["explanation"],
                         "conceptTip": dossier["onePager"].get("mnemonic", "")
                     }
+                    if qbank_envelope is not None:
+                        new_q.update({
+                            "module": "GK",
+                            "skillId": "GK.CURRENT_AFFAIRS",
+                            "difficultyIndex": 100.0,
+                            "targetSeconds": 75,
+                            "hasExplanation": True,
+                            "explanationProvenance": "VERIFIED_CA_DOSSIER",
+                            "answerSource": "Verified Current Affairs dossier",
+                            "sourceId": dossier["id"],
+                            "sourceQuestionNo": len(new_questions) + 1,
+                            "passageId": compact_passage_id(new_q.pop("passageText")),
+                        })
                     qbank_data.append(new_q)
+                    new_questions.append(new_q)
+                    existing_question_texts.add(cq["questionText"])
                     print(f"Synced CLAT MCQ: {cq['questionText'][:40]}...")
 
         # Sync AILET MCQs
@@ -444,37 +502,75 @@ def main():
                         "solution": aq["explanation"],
                         "conceptTip": dossier["onePager"].get("mnemonic", "")
                     }
+                    if qbank_envelope is not None:
+                        new_q.update({
+                            "module": "GK",
+                            "skillId": "GK.CURRENT_AFFAIRS",
+                            "difficultyIndex": 100.0,
+                            "targetSeconds": 45,
+                            "hasExplanation": True,
+                            "explanationProvenance": "VERIFIED_CA_DOSSIER",
+                            "answerSource": "Verified Current Affairs dossier",
+                            "sourceId": dossier["id"],
+                            "sourceQuestionNo": len(new_questions) + 1,
+                            "passageId": None,
+                        })
+                        new_q.pop("passageText", None)
                     qbank_data.append(new_q)
+                    new_questions.append(new_q)
+                    existing_question_texts.add(aq["questionText"])
                     print(f"Synced AILET MCQ: {aq['questionText'][:40]}...")
 
-    # Redistribute all questions in qbank_data across 125 days
-    qbank_data.sort(key=lambda q: (
-        q.get("category", ""),
-        q.get("topic", ""),
-        q.get("id", 0)
-    ))
-
-    num_days = 125
     total_qs = len(qbank_data)
-    qs_per_day = total_qs // num_days
-    extra_days = total_qs % num_days
-
-    current_idx = 0
-    for day in range(1, num_days + 1):
-        # Determine the size of the block for this day
-        size = qs_per_day + (1 if day <= extra_days else 0)
-        
-        for q_idx_in_day in range(size):
-            if current_idx < total_qs:
-                q = qbank_data[current_idx]
-                q["day"] = day
-                q["dayStr"] = f"Day {day}"
-                q["dailyQNo"] = f"Q{q_idx_in_day + 1}"
-                current_idx += 1
-
-    with open(qbank_file, 'w', encoding='utf-8') as f:
-        json.dump(qbank_data, f, indent=2)
-    print(f"Successfully redistributed {total_qs} questions across {num_days} days.")
+    if qbank_envelope is None:
+        # Preserve the original 125-day behaviour for legacy flat banks.
+        qbank_data.sort(key=lambda q: (
+            q.get("category", ""),
+            q.get("topic", ""),
+            q.get("id", 0)
+        ))
+        num_days = 125
+        qs_per_day = total_qs // num_days
+        extra_days = total_qs % num_days
+        current_idx = 0
+        for day in range(1, num_days + 1):
+            size = qs_per_day + (1 if day <= extra_days else 0)
+            for q_idx_in_day in range(size):
+                if current_idx < total_qs:
+                    q = qbank_data[current_idx]
+                    q["day"] = day
+                    q["dayStr"] = f"Day {day}"
+                    q["dailyQNo"] = f"Q{q_idx_in_day + 1}"
+                    current_idx += 1
+        with open(qbank_file, 'w', encoding='utf-8') as f:
+            json.dump(qbank_data, f, indent=2)
+        print(f"Successfully redistributed {total_qs} questions across {num_days} days.")
+    else:
+        # The curated module bank is already difficulty-ranked and sessioned.
+        # Append new dossier questions without reshuffling stable saved progress.
+        session_size = int(qbank_envelope.get("sessionSize", 35))
+        current_day = max((q.get("day", 0) for q in qbank_data if q not in new_questions), default=1)
+        current_position = sum(
+            1 for q in qbank_data
+            if q not in new_questions and q.get("day") == current_day
+        )
+        for q in new_questions:
+            if current_position >= session_size:
+                current_day += 1
+                current_position = 0
+            current_position += 1
+            q["day"] = current_day
+            q["dayStr"] = f"Session {current_day}"
+            q["dailyQNo"] = current_position
+        qbank_envelope["questions"] = qbank_data
+        qbank_envelope["passages"] = qbank_passages
+        with open(qbank_file, 'w', encoding='utf-8') as f:
+            json.dump(qbank_envelope, f, ensure_ascii=False, separators=(",", ":"))
+            f.write("\n")
+        print(
+            f"Successfully preserved {total_qs - len(new_questions)} curated questions "
+            f"and scheduled {len(new_questions)} verified CA questions across {current_day} sessions."
+        )
 
 if __name__ == '__main__':
     main()

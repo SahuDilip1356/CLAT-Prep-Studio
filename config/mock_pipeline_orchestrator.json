@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "sourceDirectories": [
+    "CLAT Mock Papers",
+    "CA Download"
+  ],
+  "stateDirectory": "data/mock_ingestion/orchestrator",
+  "pollSeconds": 10,
+  "stableSeconds": 20,
+  "stageTimeoutSeconds": 7200,
+  "retries": {
+    "intake_index": 1,
+    "extraction_ocr": 2,
+    "structure_answer_linking": 1,
+    "classification_difficulty": 1,
+    "adaptive_calibration": 1,
+    "quality_gate": 0
+  }
+}

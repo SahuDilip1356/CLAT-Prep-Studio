@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03T12:55:45.404999+00:00",
+  "policy": "Drafts never bypass named academic approval; correctOption must still match reconciled official key evidence.",
+  "items": [
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0151-Q113",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0151",
+      "sourcePage": 31,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.667,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 1:1. Therefore option A is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0157-Q016",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0157",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.143,
+      "explanation": "The relevant fact or inference in the passage corresponds to Recesses. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0157-Q024",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0157",
+      "sourcePage": 8,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "The relevant fact or inference in the passage corresponds to Subjective. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0170-Q054",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0170",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.687,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The agreement is void because it imposes a restriction on Raj’s right to marry, which is an agreement in restraint of marriage even if other contract conditions are satisfied. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0170-Q055",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0170",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.762,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The agreement is valid only until B attains the age of 18, after which it becomes void as it restrains the marriage of a major. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0170-Q056",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0170",
+      "sourcePage": 18,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.637,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The agreement is valid because it restrains marriage only up to the legally permissible age for marriage under personal law, and thus does not impose an unlawful restriction. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0170-Q098",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0170",
+      "sourcePage": 38,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.75,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Delhi. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0170-Q099",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0170",
+      "sourcePage": 38,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.75,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves G. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0170-Q107",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0170",
+      "sourcePage": 39,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Aunt. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0170-Q118",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0170",
+      "sourcePage": 41,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.6,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 25. Therefore option B is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0176-Q069",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0176",
+      "sourcePage": 30,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.6,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: No, because the interference is minor and trifling nature. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0176-Q071",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0176",
+      "sourcePage": 30,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.648,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Gian is liable because Gian’s act constitutes an unreasonable and substantial interference. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0176-Q073",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0176",
+      "sourcePage": 31,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.464,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The court would rule in favor of Ms. L because she has suffered personal discomfort, and the factory's public utility is not a defense in a private nuisance action. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0176-Q074",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0176",
+      "sourcePage": 32,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.343,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: No, because the information was not provided in a language that the accused could understand, thereby defeating the purpose of the right. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0176-Q075",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0176",
+      "sourcePage": 33,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.763,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Even if the arrest was based on a misunderstanding, the detention becomes lawful when he is produced before the Magistrate within 24 hours. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0176-Q081",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0176",
+      "sourcePage": 36,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.747,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: This is an unlawful assembly, as the sisters are trying to enforce a right by a show of criminal force. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0176-Q093",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0176",
+      "sourcePage": 41,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.2,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves It frames the finding culturally without directly supplying experimental support for it. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0184-Q018",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0184",
+      "sourcePage": 10,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.593,
+      "explanation": "The relevant fact or inference in the passage corresponds to made elite football visible as part of a wider world. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0184-Q044",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0184",
+      "sourcePage": 18,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.375,
+      "explanation": "The relevant fact or inference in the passage corresponds to Concentrated capital can influence policy environments that later validate its expectations. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-002-SRC-0184-Q046",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0184",
+      "sourcePage": 20,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.84,
+      "explanation": "The relevant fact or inference in the passage corresponds to The recorded fall in women’s unpaid housework was limited to a modest ten-minute change. Therefore option C is the answer identified by the official key."
+    }
+  ]
+}

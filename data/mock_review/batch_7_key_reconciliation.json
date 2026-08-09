@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T03:23:44.471622+00:00",
+  "batchId": "CLAT-BATCH-007",
+  "status": "KEY_RECONCILIATION_COMPLETE_REVIEW_PENDING",
+  "summary": {
+    "sources": 5,
+    "expectedQuestions": 600,
+    "reconciledAnswers": 600,
+    "structurallyComplete": 600,
+    "byQueueStatus": {
+      "REVIEW_REQUIRED": 600
+    },
+    "byIssueCode": {
+      "EXPLANATION_DRAFT_REVIEW_REQUIRED": 489,
+      "KEY_ACADEMIC_APPROVAL_PENDING": 600,
+      "QUESTION_PAGE_VISUAL_REVIEW": 600
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "SRC-0093",
+      "path": "CLAT Mock Papers/CL • CLAT 2027  Prime MOCK 10 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [
+        "SRC-0092"
+      ],
+      "questionPages": 31,
+      "answerKeyPages": 8,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 120,
+      "visualReviewQuestions": 120,
+      "safeImmediateYield": 120,
+      "yieldScore": 100,
+      "selectionReason": "Complete layout-specific staging artifact; re-audit under the current source-evidence gate.",
+      "rank": 1,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 33,
+      "reconciledAnswers": 120,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "VISUAL_AUDIT_RECONCILED_PENDING_ACADEMIC_APPROVAL": 120
+      },
+      "status": "REVIEW_QUEUE_READY"
+    },
+    {
+      "sourceId": "SRC-0099",
+      "path": "CLAT Mock Papers/CL • Prime MOCK 11 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [
+        "SRC-0098"
+      ],
+      "questionPages": 31,
+      "answerKeyPages": 1,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 120,
+      "visualReviewQuestions": 120,
+      "safeImmediateYield": 120,
+      "yieldScore": 100,
+      "selectionReason": "Complete layout-specific staging artifact; re-audit under the current source-evidence gate.",
+      "rank": 2,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 120,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "VISUAL_AUDIT_RECONCILED_PENDING_ACADEMIC_APPROVAL": 120
+      },
+      "status": "REVIEW_QUEUE_READY"
+    },
+    {
+      "sourceId": "SRC-0101",
+      "path": "CLAT Mock Papers/CL • Prime MOCK 13 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [
+        "SRC-0100"
+      ],
+      "questionPages": 33,
+      "answerKeyPages": 1,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 120,
+      "visualReviewQuestions": 120,
+      "safeImmediateYield": 120,
+      "yieldScore": 100,
+      "selectionReason": "Complete layout-specific staging artifact; re-audit under the current source-evidence gate.",
+      "rank": 3,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 120,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "VISUAL_AUDIT_RECONCILED_PENDING_ACADEMIC_APPROVAL": 120
+      },
+      "status": "REVIEW_QUEUE_READY"
+    },
+    {
+      "sourceId": "SRC-0103",
+      "path": "CLAT Mock Papers/CL • Prime MOCK 14 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [
+        "SRC-0102"
+      ],
+      "questionPages": 32,
+      "answerKeyPages": 1,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 120,
+      "visualReviewQuestions": 120,
+      "safeImmediateYield": 120,
+      "yieldScore": 100,
+      "selectionReason": "Complete layout-specific staging artifact; re-audit under the current source-evidence gate.",
+      "rank": 4,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 120,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "VISUAL_AUDIT_RECONCILED_PENDING_ACADEMIC_APPROVAL": 120
+      },
+      "status": "REVIEW_QUEUE_READY"
+    },
+    {
+      "sourceId": "SRC-0139",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 AIOM 07 MOCK 31 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0138"
+      ],
+      "questionPages": 50,
+      "answerKeyPages": 72,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 104,
+      "visualReviewQuestions": 120,
+      "safeImmediateYield": 104,
+      "yieldScore": 80,
+      "selectionReason": "Final keyed CLAT paper requiring full question and answer-explanation OCR.",
+      "rank": 5,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 119,
+      "reconciledAnswers": 120,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "VISUAL_AUDIT_RECONCILED_PENDING_ACADEMIC_APPROVAL": 120
+      },
+      "status": "REVIEW_QUEUE_READY"
+    }
+  ]
+}

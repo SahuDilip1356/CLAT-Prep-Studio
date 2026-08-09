@@ -1,0 +1,3749 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03T04:06:00.918297+00:00",
+  "catalogueSchemaVersion": 2,
+  "taxonomy": {
+    "modules": [
+      {
+        "id": "QUANT",
+        "label": "Quantitative Techniques",
+        "shortLabel": "QP (Quant)"
+      },
+      {
+        "id": "GK",
+        "label": "Static GK + Current Affairs",
+        "shortLabel": "GK"
+      },
+      {
+        "id": "LEGAL",
+        "label": "Legal Reasoning",
+        "shortLabel": "Legal"
+      },
+      {
+        "id": "LOGICAL",
+        "label": "Logical Reasoning",
+        "shortLabel": "Analytical + Critical"
+      },
+      {
+        "id": "ENGLISH",
+        "label": "English Language",
+        "shortLabel": "English"
+      }
+    ]
+  },
+  "qualityGates": [
+    "stable_source_identity_and_hash",
+    "complete_question_numbering",
+    "section_and_passage_boundaries_reviewed",
+    "four_ordered_options_per_mcq",
+    "official_answer_key_verified",
+    "tables_charts_and_superscripts_visually_reviewed",
+    "difficulty_rubric_recorded",
+    "validator_passed"
+  ],
+  "difficultyScale": [
+    {
+      "level": 1,
+      "label": "Foundation"
+    },
+    {
+      "level": 2,
+      "label": "Exam Standard"
+    },
+    {
+      "level": 3,
+      "label": "Advanced"
+    }
+  ],
+  "summary": {
+    "questionSources": 97,
+    "byWorkflowState": {
+      "ANSWER_KEY_OCR_PENDING": 32,
+      "DIGITIZED_STAGING": 5,
+      "FULL_OCR_PENDING": 4,
+      "OCR_BLOCKED_MISSING_KEY": 1,
+      "TEXT_BLOCKED_MISSING_KEY": 55
+    },
+    "byTargetModule": {
+      "ENGLISH": 93,
+      "GK": 89,
+      "LEGAL": 90,
+      "LOGICAL": 90,
+      "QUANT": 91
+    }
+  },
+  "items": [
+    {
+      "sourceId": "SRC-0093",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • CLAT 2027  Prime MOCK 10 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "DIGITIZED_STAGING",
+        "priority": 0,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 31,
+        "answerKeyRequired": true,
+        "answerKeyPages": 8,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0092"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": [
+        {
+          "path": "src/data/staging/career_launcher_prime/cl-prime-2027-10.json",
+          "mockId": "cl-prime-2027-10",
+          "questionCount": 120,
+          "status": "verified_staging"
+        }
+      ]
+    },
+    {
+      "sourceId": "SRC-0099",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • Prime MOCK 11 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "DIGITIZED_STAGING",
+        "priority": 0,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 31,
+        "answerKeyRequired": true,
+        "answerKeyPages": 1,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0098"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": [
+        {
+          "path": "src/data/staging/career_launcher_prime/cl-prime-2027-11.json",
+          "mockId": "cl-prime-2027-11",
+          "questionCount": 120,
+          "status": "verified_staging"
+        }
+      ]
+    },
+    {
+      "sourceId": "SRC-0101",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • Prime MOCK 13 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "DIGITIZED_STAGING",
+        "priority": 0,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 33,
+        "answerKeyRequired": true,
+        "answerKeyPages": 1,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0100"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": [
+        {
+          "path": "src/data/staging/career_launcher_prime/cl-prime-2027-13.json",
+          "mockId": "cl-prime-2027-13",
+          "questionCount": 120,
+          "status": "verified_staging"
+        }
+      ]
+    },
+    {
+      "sourceId": "SRC-0103",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • Prime MOCK 14 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "DIGITIZED_STAGING",
+        "priority": 0,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 32,
+        "answerKeyRequired": true,
+        "answerKeyPages": 1,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0102"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": [
+        {
+          "path": "src/data/staging/career_launcher_prime/cl-prime-2027-14.json",
+          "mockId": "cl-prime-2027-14",
+          "questionCount": 120,
+          "status": "verified_staging"
+        }
+      ]
+    },
+    {
+      "sourceId": "SRC-0198",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/QT Compilation CLAT 2025.pdf",
+      "provider": "Unclassified",
+      "exam": "CLAT",
+      "assetKind": "sectional_source",
+      "targetModules": [
+        "QUANT"
+      ],
+      "workflow": {
+        "state": "DIGITIZED_STAGING",
+        "priority": 0,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 337,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": [
+        {
+          "path": "src/data/staging/qt_compilation_mock_01.json",
+          "mockId": "lpt-qt-2025-mock-01",
+          "questionCount": 12,
+          "status": "verified_staging"
+        }
+      ]
+    },
+    {
+      "sourceId": "SRC-0117",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LE • Championship Mock 01 @CLAT_OWNER.pdf",
+      "provider": "LegalEdge",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 32,
+        "answerKeyRequired": true,
+        "answerKeyPages": 1,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0116"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0119",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • AILET 2027 AIOM MOCK 01 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "AILET",
+      "assetKind": "ailet_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 34,
+        "answerKeyRequired": true,
+        "answerKeyPages": 43,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0118"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0121",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • AILET 2027 MOCK 13 @CLAT_OWNER.pdf.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "AILET",
+      "assetKind": "ailet_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 40,
+        "answerKeyRequired": true,
+        "answerKeyPages": 47,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0120"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0123",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • AILET 2027 MOCK 16 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "AILET",
+      "assetKind": "ailet_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 41,
+        "answerKeyRequired": true,
+        "answerKeyPages": 43,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0122"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0125",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • AILET 2027 MOCK 2 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "AILET",
+      "assetKind": "ailet_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 37,
+        "answerKeyRequired": true,
+        "answerKeyPages": 47,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0124"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0133",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 AIOM 02 MOCK 07 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 35,
+        "answerKeyRequired": true,
+        "answerKeyPages": 68,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0132"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0135",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 AIOM 03 MOCK 11 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 36,
+        "answerKeyRequired": true,
+        "answerKeyPages": 55,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0134"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0137",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 AIOM 06 MOCK 24 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 50,
+        "answerKeyRequired": true,
+        "answerKeyPages": 47,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0136"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0141",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 AIOM 4 MOCK 14 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 46,
+        "answerKeyRequired": true,
+        "answerKeyPages": 45,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0140"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0144",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 Advance Mock - 20001 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 30,
+        "answerKeyRequired": true,
+        "answerKeyPages": 36,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0143"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0145",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 Advance Mock - 20004  @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 50,
+        "answerKeyRequired": true,
+        "answerKeyPages": 45,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0146"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0149",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 02 (QS) @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "question_sheet",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 37,
+        "answerKeyRequired": true,
+        "answerKeyPages": 35,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0148"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0151",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 04 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 33,
+        "answerKeyRequired": true,
+        "answerKeyPages": 29,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0150"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0153",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 05 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 40,
+        "answerKeyRequired": true,
+        "answerKeyPages": 36,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0152"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0155",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 06 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 31,
+        "answerKeyRequired": true,
+        "answerKeyPages": 27,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0154"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0157",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 08 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 38,
+        "answerKeyRequired": true,
+        "answerKeyPages": 36,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0156"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0160",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 12 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 40,
+        "answerKeyRequired": true,
+        "answerKeyPages": 45,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0159"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0162",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 15 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 48,
+        "answerKeyRequired": true,
+        "answerKeyPages": 33,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0161"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0164",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 17 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 41,
+        "answerKeyRequired": true,
+        "answerKeyPages": 28,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0163"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0166",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 19 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 50,
+        "answerKeyRequired": true,
+        "answerKeyPages": 45,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0165"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0168",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 20 @CLAT_OWNER.pdf.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 42,
+        "answerKeyRequired": true,
+        "answerKeyPages": 37,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0167"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0170",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 21 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 42,
+        "answerKeyRequired": true,
+        "answerKeyPages": 57,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0169"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0172",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 22 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 50,
+        "answerKeyRequired": true,
+        "answerKeyPages": 45,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0171"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0174",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 25 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 50,
+        "answerKeyRequired": true,
+        "answerKeyPages": 69,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0173"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0176",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 26 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 50,
+        "answerKeyRequired": true,
+        "answerKeyPages": 36,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0175"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0178",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 28 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 50,
+        "answerKeyRequired": true,
+        "answerKeyPages": 41,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0177"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0179",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 Mock 30 @CLAT_OWNER (1).pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 50,
+        "answerKeyRequired": true,
+        "answerKeyPages": 35,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0180"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0182",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 X-Series Mock 01 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 41,
+        "answerKeyRequired": true,
+        "answerKeyPages": 53,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0181"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0184",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 X-Series Mock 02 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 58,
+        "answerKeyRequired": true,
+        "answerKeyPages": 47,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0183"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0186",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT Advance 20003 (AIOM) MOCK 19 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 50,
+        "answerKeyRequired": true,
+        "answerKeyPages": 50,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0185"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0188",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT Advance Mock 20002 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 49,
+        "answerKeyRequired": true,
+        "answerKeyPages": 48,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0187"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0192",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT_ CLAT 2027 MOCK 18 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "ANSWER_KEY_OCR_PENDING",
+        "priority": 20,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 49,
+        "answerKeyRequired": true,
+        "answerKeyPages": 50,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0191"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0127",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • AILET 2027 MOCK 23 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "AILET",
+      "assetKind": "ailet_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "FULL_OCR_PENDING",
+        "priority": 30,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": true,
+        "questionPages": 42,
+        "answerKeyRequired": true,
+        "answerKeyPages": 40,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0126"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0129",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • AILET 2027 MOCK 27 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "AILET",
+      "assetKind": "ailet_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "FULL_OCR_PENDING",
+        "priority": 30,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": true,
+        "questionPages": 42,
+        "answerKeyRequired": true,
+        "answerKeyPages": 45,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0128"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0131",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • AILET 2027 MOCK 29 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "AILET",
+      "assetKind": "ailet_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "FULL_OCR_PENDING",
+        "priority": 30,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": true,
+        "questionPages": 42,
+        "answerKeyRequired": true,
+        "answerKeyPages": 38,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0130"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0139",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 AIOM 07 MOCK 31 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "FULL_OCR_PENDING",
+        "priority": 30,
+        "blocker": null
+      },
+      "ocr": {
+        "questionRequired": true,
+        "questionPages": 50,
+        "answerKeyRequired": true,
+        "answerKeyPages": 72,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [
+        "SRC-0138"
+      ],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0046",
+      "sourceRevision": 1,
+      "path": "CA Download/Economics Reading Comprehension @CLAT_OWNER.pdf",
+      "provider": "Unclassified",
+      "exam": "CLAT",
+      "assetKind": "sectional_source",
+      "targetModules": [
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 59,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0047",
+      "sourceRevision": 1,
+      "path": "CA Download/Important Idiomatic Expressions @CLAT_Vision.pdf",
+      "provider": "CLAT Vision",
+      "exam": "CLAT",
+      "assetKind": "sectional_source",
+      "targetModules": [
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 10,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0055",
+      "sourceRevision": 1,
+      "path": "CA Download/Vocabulary & Root Words @CLAT_Vision.pdf",
+      "provider": "CLAT Vision",
+      "exam": "CLAT",
+      "assetKind": "sectional_source",
+      "targetModules": [
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 9,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0056",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC - CLAT 2027 MOCK TEST – 1- @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 36,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0057",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 04 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 39,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0058",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 05 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 36,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0059",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 06 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 36,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0060",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 07 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 40,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0061",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 08 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 40,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0062",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 09 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 41,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0063",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 10 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 41,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0064",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 11 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 40,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0065",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 12 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 53,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0066",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 13 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 47,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0067",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 14 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 45,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0068",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 15 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 42,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0069",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 16 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 53,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0070",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 17 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 47,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0071",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 18 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 42,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0072",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 19 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 54,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0073",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 20 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 49,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0074",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 21 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 47,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0075",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 22 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 57,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0076",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 23 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 56,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0077",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 24 @CLAT_OWNER.pdf.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 56,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0078",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 25 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 56,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0079",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 26 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 54,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0080",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 27 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 56,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0081",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 28 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 48,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0082",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 29 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 58,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0083",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 30 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 57,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0084",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 31 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 55,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0085",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK TEST – 2 - @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 39,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0086",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/AILET Mock compilation 01-12 @CLAT_OWNER.pdf",
+      "provider": "Unclassified",
+      "exam": "AILET",
+      "assetKind": "ailet_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 74,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0087",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • AILET 2027  Prime MOCK 03 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "AILET",
+      "assetKind": "ailet_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 37,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0089",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • CLAT 2027  Prime MOCK 07 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 32,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0090",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • CLAT 2027  Prime MOCK 08 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 33,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0091",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • CLAT 2027  Prime MOCK 09 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 32,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0094",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • CLAT 2027 Prime Mock 04 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 34,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0095",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • CLAT 2027 Prime Mock 05 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 31,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0096",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • CLAT 2027 Prime Mock 06 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 32,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0097",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/CL • Countdown MOCK 01 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 30,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0114",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LE • AILET 2027 MOCK 03 @CLAT_OWNER.pdf",
+      "provider": "LegalEdge",
+      "exam": "AILET",
+      "assetKind": "ailet_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 40,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0115",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LE • CLAT 2027 PDF MOCK 18 @CLAT_OWNER.pdf",
+      "provider": "LegalEdge",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 32,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0158",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 09 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 30,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0190",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LPT- CLAT MOCK 2027 MOCK-01 @CLAT_OWMER.pdf",
+      "provider": "Law Prep Tutorial",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 31,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0193",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/Origin • CLAT 2027 MOCK 29 @CLAT_OWNER.pdf",
+      "provider": "Origin",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 42,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0194",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/Origin • CLAT 2027 MOCK 30 @CLAT_OWNER.pdf",
+      "provider": "Origin",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 42,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0195",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/Origin • CLAT 2027 MOCK 31 @CLAT_OWNER.pdf",
+      "provider": "Origin",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 42,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0196",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/Origin_ CLAT 2027 MOCK 27 @CLAT_OWNER.pdf",
+      "provider": "Origin",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 43,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0197",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/Origin_ CLAT 2027 MOCK 28 @CLAT_OWNER.pdf",
+      "provider": "Origin",
+      "exam": "CLAT",
+      "assetKind": "clat_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 35,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0199",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/RSM • P Batch Booklet (English Language) @CLAT_OWNER.pdf",
+      "provider": "RSM",
+      "exam": "CLAT",
+      "assetKind": "sectional_source",
+      "targetModules": [
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 268,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0200",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/RSM • P Batch Booklet (Legal Reasoning) @CLAT_OWNER.pdf.pdf",
+      "provider": "RSM",
+      "exam": "CLAT",
+      "assetKind": "sectional_source",
+      "targetModules": [
+        "LEGAL"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 244,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0201",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/RSM • P Batch Booklet (Logical Reasoning) @CLAT_OWNER.pdf",
+      "provider": "RSM",
+      "exam": "CLAT",
+      "assetKind": "sectional_source",
+      "targetModules": [
+        "LOGICAL"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 228,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0202",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/RSM • P Batch Booklet (Quantative Techniques) @CLAT_OWNER.pdf",
+      "provider": "RSM",
+      "exam": "CLAT",
+      "assetKind": "sectional_source",
+      "targetModules": [
+        "QUANT"
+      ],
+      "workflow": {
+        "state": "TEXT_BLOCKED_MISSING_KEY",
+        "priority": 60,
+        "blocker": "Official answer key is not matched."
+      },
+      "ocr": {
+        "questionRequired": false,
+        "questionPages": 80,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    },
+    {
+      "sourceId": "SRC-0113",
+      "sourceRevision": 1,
+      "path": "CLAT Mock Papers/LE • AILET 2027 MOCK 02 @CLAT_OWNER.pdf",
+      "provider": "LegalEdge",
+      "exam": "AILET",
+      "assetKind": "ailet_mock_paper",
+      "targetModules": [
+        "QUANT",
+        "GK",
+        "LEGAL",
+        "LOGICAL",
+        "ENGLISH"
+      ],
+      "workflow": {
+        "state": "OCR_BLOCKED_MISSING_KEY",
+        "priority": 70,
+        "blocker": "Question OCR can proceed, but scored publication requires an official key."
+      },
+      "ocr": {
+        "questionRequired": true,
+        "questionPages": 32,
+        "answerKeyRequired": false,
+        "answerKeyPages": 0,
+        "engine": "tesseract",
+        "renderedPageReviewRequired": true
+      },
+      "answerKeySourceIds": [],
+      "difficulty": {
+        "status": "UNRATED",
+        "level": null,
+        "label": "Unrated",
+        "assignmentPolicy": "content_rubric_then_learner_telemetry"
+      },
+      "indexChangeStatus": "unchanged",
+      "stagingArtifacts": []
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "policy": "Implementation visual audit confirms transcription only and never substitutes for named academic approval.",
+  "pages": [
+    {
+      "sourceId": "SRC-0171",
+      "sourceSha256": "ca910454ed3ef678e46f76ad0831aa2a29a67bda861ad29f7dfb0b5c98c8f5a3",
+      "page": 43,
+      "renderedImage": "/review-assets/batch-3/SRC-0171-p0043.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-03T12:48:00+00:00",
+      "answers": {"104": "C", "105": "B", "106": "D", "107": "A"}
+    },
+    {
+      "sourceId": "SRC-0171",
+      "sourceSha256": "ca910454ed3ef678e46f76ad0831aa2a29a67bda861ad29f7dfb0b5c98c8f5a3",
+      "page": 44,
+      "renderedImage": "/review-assets/batch-3/SRC-0171-p0044.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-03T12:48:00+00:00",
+      "answers": {"108": "A", "109": "B", "110": "C", "111": "C", "112": "C", "113": "B", "114": "C"}
+    },
+    {
+      "sourceId": "SRC-0180",
+      "sourceSha256": "c1cabb51ff29636de60ef2b7ba5c7823bcdd9d493a5f502c07c8661e57a065c7",
+      "page": 35,
+      "renderedImage": "/review-assets/batch-3/SRC-0180-p0035.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-03T12:48:00+00:00",
+      "answers": {"117": "A", "118": "C", "119": "C", "120": "B"}
+    },
+    {
+      "sourceId": "SRC-0159",
+      "sourceSha256": "3a63437d156d272a5b5525a214d6af9ddb92a45bd2adc6baac9fa57e6c09e045",
+      "page": 42,
+      "renderedImage": "/review-assets/batch-3/SRC-0159-p0042.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-03T12:48:00+00:00",
+      "answers": {"99": "B", "100": "A", "101": "D", "102": "D", "103": "B"}
+    },
+    {
+      "sourceId": "SRC-0159",
+      "sourceSha256": "3a63437d156d272a5b5525a214d6af9ddb92a45bd2adc6baac9fa57e6c09e045",
+      "page": 43,
+      "renderedImage": "/review-assets/batch-3/SRC-0159-p0043.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-03T12:48:00+00:00",
+      "answers": {"104": "C", "105": "A", "106": "B", "107": "A", "108": "D"}
+    },
+    {
+      "sourceId": "SRC-0173",
+      "sourceSha256": "6ca1fc18e8a5c44a1bbc7dfa3de7cd00fb75b4c14f9035731d93d2c28f51c90e",
+      "page": 51,
+      "renderedImage": "/review-assets/batch-3/SRC-0173-p0051.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-03T12:48:00+00:00",
+      "answers": {"85": "C", "86": "D", "87": "A", "88": "A", "89": "C", "90": "B", "91": "A"}
+    },
+    {
+      "sourceId": "SRC-0185",
+      "sourceSha256": "7cc55784ecc35ce5710d091aa87f01a120512a90de2cfa9cfc660a3cdbdc9991",
+      "page": 45,
+      "renderedImage": "/review-assets/batch-3/SRC-0185-p0045.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-03T12:50:00+00:00",
+      "answers": {"104": "C"}
+    }
+  ]
+}

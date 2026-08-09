@@ -1,0 +1,4221 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03T12:58:20.480837+00:00",
+  "batchId": "CLAT-BATCH-003",
+  "status": "BLOCKED",
+  "publishable": false,
+  "summary": {
+    "queueItems": 600,
+    "decisionRecords": 0,
+    "approvedAndValid": 0,
+    "blocked": 600,
+    "byFailureCode": {
+      "ACADEMIC_APPROVAL_MISSING": 600
+    },
+    "structuralFailures": []
+  },
+  "duplicateQueueIds": [],
+  "duplicateDecisionIds": [],
+  "items": [
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q001",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q002",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q003",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q004",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q005",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q006",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q007",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q008",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q009",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q010",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q011",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q012",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q013",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q014",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q015",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q016",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q017",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q018",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q019",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q020",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q021",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q022",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q023",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q024",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q025",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q026",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q027",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q028",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q029",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q030",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q031",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q032",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q033",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q034",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q035",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q036",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q037",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q038",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q039",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q040",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q041",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q042",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q043",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q044",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q045",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q046",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q047",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q048",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q049",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q050",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q051",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q052",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q053",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q054",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q055",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q056",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q057",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q058",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q059",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q060",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q061",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q062",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q063",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q064",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q065",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q066",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q067",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q068",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q069",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q070",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q071",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q072",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q073",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q074",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q075",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q076",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q077",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q078",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q079",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q080",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q081",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q082",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q083",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q084",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q085",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q086",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q087",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q088",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q089",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q090",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q091",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q092",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q093",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q094",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q095",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q096",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q097",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q098",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q099",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q100",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q101",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q102",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q103",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q104",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q105",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q106",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q107",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q108",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q109",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q110",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q111",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q112",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q113",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q114",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q115",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q116",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q117",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q118",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q119",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0186-Q120",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q001",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q002",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q003",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q004",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q005",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q006",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q007",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q008",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q009",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q010",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q011",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q012",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q013",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q014",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q015",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q016",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q017",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q018",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q019",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q020",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q021",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q022",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q023",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q024",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q025",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q026",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q027",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q028",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q029",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q030",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q031",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q032",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q033",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q034",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q035",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q036",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q037",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q038",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q039",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q040",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q041",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q042",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q043",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q044",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q045",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q046",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q047",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q048",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q049",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q050",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q051",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q052",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q053",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q054",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q055",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q056",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q057",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q058",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q059",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q060",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q061",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q062",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q063",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q064",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q065",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q066",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q067",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q068",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q069",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q070",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q071",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q072",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q073",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q074",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q075",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q076",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q077",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q078",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q079",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q080",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q081",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q082",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q083",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q084",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q085",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q086",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q087",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q088",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q089",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q090",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q091",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q092",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q093",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q094",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q095",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q096",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q097",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q098",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q099",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q100",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q101",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q102",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q103",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q104",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q105",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q106",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q107",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q108",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q109",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q110",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q111",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q112",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q113",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q114",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q115",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q116",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q117",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q118",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q119",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0172-Q120",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q001",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q002",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q003",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q004",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q005",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q006",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q007",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q008",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q009",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q010",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q011",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q012",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q013",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q014",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q015",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q016",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q017",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q018",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q019",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q020",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q021",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q022",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q023",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q024",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q025",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q026",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q027",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q028",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q029",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q030",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q031",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q032",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q033",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q034",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q035",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q036",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q037",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q038",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q039",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q040",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q041",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q042",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q043",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q044",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q045",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q046",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q047",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q048",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q049",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q050",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q051",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q052",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q053",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q054",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q055",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q056",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q057",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q058",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q059",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q060",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q061",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q062",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q063",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q064",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q065",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q066",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q067",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q068",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q069",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q070",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q071",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q072",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q073",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q074",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q075",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q076",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q077",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q078",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q079",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q080",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q081",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q082",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q083",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q084",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q085",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q086",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q087",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q088",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q089",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q090",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q091",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q092",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q093",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q094",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q095",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q096",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q097",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q098",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q099",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q100",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q101",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q102",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q103",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q104",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q105",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q106",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q107",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q108",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q109",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q110",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q111",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q112",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q113",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q114",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q115",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q116",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q117",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q118",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q119",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0179-Q120",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q001",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q002",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q003",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q004",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q005",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q006",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q007",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q008",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q009",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q010",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q011",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q012",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q013",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q014",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q015",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q016",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q017",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q018",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q019",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q020",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q021",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q022",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q023",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q024",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q025",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q026",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q027",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q028",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q029",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q030",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q031",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q032",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q033",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q034",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q035",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q036",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q037",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q038",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q039",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q040",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q041",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q042",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q043",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q044",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q045",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q046",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q047",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q048",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q049",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q050",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q051",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q052",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q053",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q054",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q055",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q056",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q057",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q058",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q059",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q060",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q061",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q062",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q063",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q064",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q065",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q066",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q067",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q068",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q069",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q070",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q071",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q072",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q073",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q074",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q075",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q076",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q077",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q078",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q079",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q080",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q081",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q082",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q083",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q084",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q085",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q086",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q087",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q088",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q089",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q090",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q091",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q092",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q093",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q094",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q095",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q096",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q097",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q098",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q099",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q100",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q101",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q102",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q103",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q104",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q105",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q106",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q107",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q108",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q109",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q110",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q111",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q112",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q113",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q114",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q115",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q116",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q117",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q118",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q119",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0160-Q120",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q001",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q002",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q003",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q004",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q005",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q006",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q007",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q008",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q009",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q010",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q011",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q012",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q013",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q014",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q015",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q016",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q017",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q018",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q019",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q020",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q021",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q022",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q023",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q024",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q025",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q026",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q027",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q028",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q029",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q030",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q031",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q032",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q033",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q034",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q035",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q036",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q037",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q038",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q039",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q040",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q041",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q042",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q043",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q044",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q045",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q046",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q047",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q048",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q049",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q050",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q051",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q052",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q053",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q054",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q055",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q056",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q057",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q058",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q059",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q060",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q061",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q062",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q063",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q064",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q065",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q066",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q067",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q068",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q069",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q070",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q071",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q072",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q073",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q074",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q075",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q076",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q077",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q078",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q079",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q080",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q081",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q082",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q083",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q084",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q085",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q086",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q087",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q088",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q089",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q090",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q091",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q092",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q093",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q094",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q095",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q096",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q097",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q098",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q099",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q100",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q101",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q102",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q103",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q104",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q105",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q106",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q107",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q108",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q109",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q110",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q111",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q112",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q113",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q114",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q115",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q116",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q117",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q118",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q119",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    },
+    {
+      "id": "CLAT-BATCH-003-SRC-0174-Q120",
+      "passed": false,
+      "failures": [
+        "ACADEMIC_APPROVAL_MISSING"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T17:23:55.289311+00:00",
+  "batchId": "CLAT-BATCH-006",
+  "status": "SELECTED_FOR_KEY_VERIFICATION",
+  "selectionPolicy": {
+    "eligibleWorkflow": "ANSWER_KEY_OCR_PENDING",
+    "exam": "CLAT",
+    "targetMocks": 5,
+    "ranking": "safe immediate yield minus parsed-gap, visual-review and answer-page burden",
+    "publicationRule": "No item publishes until official key and rendered evidence pass review."
+  },
+  "summary": {
+    "eligibleSources": 3,
+    "selectedSources": 3,
+    "selectedSafeImmediateYield": 253,
+    "remainingHighYieldSources": 0
+  },
+  "selected": [
+    {
+      "sourceId": "SRC-0168",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 20 @CLAT_OWNER.pdf.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0167"
+      ],
+      "questionPages": 42,
+      "answerKeyPages": 37,
+      "parsedQuestions": 99,
+      "fourOptionQuestions": 95,
+      "answerCandidatesAttached": 90,
+      "visualReviewQuestions": 99,
+      "safeImmediateYield": 90,
+      "yieldScore": 62.64,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 1
+    },
+    {
+      "sourceId": "SRC-0155",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 06 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0154"
+      ],
+      "questionPages": 31,
+      "answerKeyPages": 27,
+      "parsedQuestions": 102,
+      "fourOptionQuestions": 95,
+      "answerCandidatesAttached": 88,
+      "visualReviewQuestions": 102,
+      "safeImmediateYield": 88,
+      "yieldScore": 62.023,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 2
+    },
+    {
+      "sourceId": "SRC-0141",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 AIOM 4 MOCK 14 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0140"
+      ],
+      "questionPages": 46,
+      "answerKeyPages": 45,
+      "parsedQuestions": 103,
+      "fourOptionQuestions": 100,
+      "answerCandidatesAttached": 75,
+      "visualReviewQuestions": 103,
+      "safeImmediateYield": 75,
+      "yieldScore": 50.9,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 3
+    }
+  ],
+  "remaining": []
+}

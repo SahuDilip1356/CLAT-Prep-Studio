@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "policy": "Implementation visual audit confirms transcription only and never substitutes for named academic approval.",
+  "pages": [
+    {
+      "sourceId": "SRC-0136",
+      "sourceSha256": "312fd452ea4215fa463c91c57b61203c352242e082141df4297735ecea49c05e",
+      "page": 19,
+      "renderedImage": "/review-assets/batch-4/SRC-0136-p0019.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:30:00+00:00",
+      "answers": {"47": "A"}
+    },
+    {
+      "sourceId": "SRC-0136",
+      "sourceSha256": "312fd452ea4215fa463c91c57b61203c352242e082141df4297735ecea49c05e",
+      "page": 20,
+      "renderedImage": "/review-assets/batch-4/SRC-0136-p0020.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:30:00+00:00",
+      "answers": {"52": "D", "54": "A"}
+    },
+    {
+      "sourceId": "SRC-0136",
+      "sourceSha256": "312fd452ea4215fa463c91c57b61203c352242e082141df4297735ecea49c05e",
+      "page": 21,
+      "renderedImage": "/review-assets/batch-4/SRC-0136-p0021.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:30:00+00:00",
+      "answers": {"55": "C"}
+    },
+    {
+      "sourceId": "SRC-0181",
+      "sourceSha256": "9ecdb1119c9b7c183a31972dedb20850682505e21c3f4cc14e0795667464494a",
+      "page": 24,
+      "renderedImage": "/review-assets/batch-4/SRC-0181-p0024.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:30:00+00:00",
+      "answers": {"47": "D"}
+    },
+    {
+      "sourceId": "SRC-0134",
+      "sourceSha256": "2011f4afb77fc206ac247a07de0547f445736b111aee46d6cd4ac92a03142628",
+      "page": 25,
+      "renderedImage": "/review-assets/batch-4/SRC-0134-p0025.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:30:00+00:00",
+      "answers": {"28": "C"}
+    },
+    {
+      "sourceId": "SRC-0134",
+      "sourceSha256": "2011f4afb77fc206ac247a07de0547f445736b111aee46d6cd4ac92a03142628",
+      "page": 50,
+      "renderedImage": "/review-assets/batch-4/SRC-0134-p0050.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:30:00+00:00",
+      "answers": {"92": "D", "93": "C", "94": "C", "95": "D", "96": "C", "97": "A"}
+    },
+    {
+      "sourceId": "SRC-0134",
+      "sourceSha256": "2011f4afb77fc206ac247a07de0547f445736b111aee46d6cd4ac92a03142628",
+      "page": 53,
+      "renderedImage": "/review-assets/batch-4/SRC-0134-p0053.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:30:00+00:00",
+      "answers": {"109": "C", "110": "A", "111": "B", "112": "B", "113": "B"}
+    },
+    {
+      "sourceId": "SRC-0132",
+      "sourceSha256": "630b91f480f04d1bd3e331717841389a8e24b192ef7a55945e6451fc1874bee1",
+      "page": 48,
+      "renderedImage": "/review-assets/batch-4/SRC-0132-p0048.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:30:00+00:00",
+      "answers": {"83": "D", "84": "C"}
+    },
+    {
+      "sourceId": "SRC-0132",
+      "sourceSha256": "630b91f480f04d1bd3e331717841389a8e24b192ef7a55945e6451fc1874bee1",
+      "page": 50,
+      "renderedImage": "/review-assets/batch-4/SRC-0132-p0050.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:30:00+00:00",
+      "answers": {"95": "B"}
+    },
+    {
+      "sourceId": "SRC-0132",
+      "sourceSha256": "630b91f480f04d1bd3e331717841389a8e24b192ef7a55945e6451fc1874bee1",
+      "page": 66,
+      "renderedImage": "/review-assets/batch-4/SRC-0132-p0066.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:30:00+00:00",
+      "answers": {"109": "B"}
+    }
+  ]
+}

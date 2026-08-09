@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T16:30:02.759982+00:00",
+  "batchId": "CLAT-BATCH-004",
+  "sourceId": "ALL_EXPLANATION_GAPS",
+  "drafts": 0,
+  "byConfidence": {},
+  "averageLexicalEvidenceOverlap": 0.0,
+  "status": "DRAFT_REVIEW_REQUIRED",
+  "publicationRule": "Every draft requires rendered-source review and named academic approval."
+}

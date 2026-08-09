@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03T12:48:47.154176+00:00",
+  "dpi": 350,
+  "pageSegmentationModes": [
+    3,
+    4,
+    6
+  ],
+  "targetedOnly": true,
+  "targetedReviewPages": 6,
+  "pages": [
+    {
+      "sourceId": "SRC-0171",
+      "sourceRevision": 1,
+      "sourceSha256": "ca910454ed3ef678e46f76ad0831aa2a29a67bda861ad29f7dfb0b5c98c8f5a3",
+      "pageNumber": 43,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10022 : ANSWER & EXPLANATIONS\n\n104. Answer: C\nExplanation: Harsh sits to the left of Bhavna and he is the brother of Arun.\n\n105. Answer: B\n\nExplanation: Deepak sits opposite of Gauri and she is the niece of Deepak.\n\n106. Answer: D\n\nExplanation:\n8\nF H\nG Le)\nc E\n\n107. Answer:A\n\nExplanation:",
+      "ocrConfidence": 84.21,
+      "answerSignals": 4,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0171",
+      "sourceRevision": 1,
+      "sourceSha256": "ca910454ed3ef678e46f76ad0831aa2a29a67bda861ad29f7dfb0b5c98c8f5a3",
+      "pageNumber": 44,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10022 : ANSWER & EXPLANATIONS\n\n108. Answer:A\n\nExplanation: Esha sits opposite of Farhan, and she is the wife of Deepak.\n\nQuantitative Aptitude\n\n109. Answer: B\nExplanation: Total revenue = = 60,00,000\nElectronics = 40% of 60,00,000 = = 24,00,000\nClothing = 35% of 60,00,000 = = 21,00,000\nGrocery = 100% — 40% — 35% = 25%\nGrocery revenue = 25% of 60,00,000 = = 15,00,000\n\n110. Answer: C\nExplanation: Total staff = 240\nRatio of Electronics : Clothing : Grocery = 3:4:5\nSum of ratio parts =3+4+5=12\nClothing staff = (4/12) x 240 = 80\n\n111. Answer: C\nExplanation: Part-time employees = 25% of 240 = 60\nFull-time employees = 240 — 60 = 180\n\n112. Answer: C\nExplanation: Electronics revenue = = 24,00,000\nOperating cost = 60% of 24,00,000 = = 14,40,000\nProfit = Revenue — Operating cost = 24,00,000 — 14,40,000 = = 9,60,000\n\n113. Answer: B\nExplanation: Electronics profit = = 9,60,000\nAmount spent on software = (2/5) x 9,60,000 = = 3,84,000\nAmount spent on hardware = 9,60,000 — 3,84,000 = = 5,76,000\n\n114. Answer: C\nExplanation: Total bonus pool = 2 3,60,000\nNumber of full-time employees = 180\nBonus per employee = 3,60,000 + 180 = = 2,000",
+      "ocrConfidence": 90.95,
+      "answerSignals": 7,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0180",
+      "sourceRevision": 1,
+      "sourceSha256": "c1cabb51ff29636de60ef2b7ba5c7823bcdd9d493a5f502c07c8661e57a065c7",
+      "pageNumber": 35,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "— Tutorial — MOCK CLAT 10030 : ANSWER & EXPLANATIONS\nTherefore, the ratio = 135 : 400 = 27: 80.\nSo, the correct option is (A) 27 : 80.\n117. Answer:A\nExplanation: Add the seven per worker payments:\n15 + 45 + 40 + 35 + 30 + 20 + 25 = 2210\nNow divide by 7:\n210+ 7= 230\nSo, the correct answer is (A) 230.\n118. Answer: C\nExplanation: Payment per worker at 3 workers = <45\nPayment per worker at 26 workers = %25\nDifference = %45 — %25 = =20\n% less = 20/45 x 100 = 44.44%\nSo, the correct answer is (C) 44.44%.\n119. Answer: C\nExplanation: For 26 workers:\n26 X 25 = %650\nFor 16 workers:\n16 x 30 = 2480\nDifference:\n650 — 7480 = 2170\nSo, the correct option is (C) =170.\n120. Answer: B\nExplanation: Statement 1: The highest per worker payment is 745, which was paid when 3\nworkers were employed. Hence, this statement is true.\nStatement 2:\nFor 20 workers, total wage bill = 20 x 20 = 400.\nFor 9 workers, total wage bill = 9 x 35 = 815.\nSince 7400 > %315, this statement is true.\nStatement 3:\nFor 4 workers, total wage bill = 4 x 40 = =160.\nFor 16 workers, total wage bill = 16 x 30 = 2480.\nHalf of 480 is 7240, not 7160. Hence, this statement is false.\nSo, the correct option is (B) 1 and 2 only.",
+      "ocrConfidence": 89.01,
+      "answerSignals": 4,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0159",
+      "sourceRevision": 1,
+      "sourceSha256": "3a63437d156d272a5b5525a214d6af9ddb92a45bd2adc6baac9fa57e6c09e045",
+      "pageNumber": 42,
+      "method": "tesseract_supplement_350dpi_psm4",
+      "text": "LAW PREP\n\n— Tutorial—\n\nMOCK CLAT 10012 : ANSWER & EXPLANATIONS\n\n99.\n\n100.\n\n101.\n\n102.\n\n103.\n\nAnswer: B\n\nExplanation:\n\nP\nQ\n|\n\nv\n\nM—> <+R\n\nAnswer: A\n\nExplanation:\nQ i L\nv\nM—> <_R\nt\nre) N\nAnswer: D\nExplanation:\nQ 1 L\nVv\nM—> <+R\nt\nre) | N\nSs\nAnswer: D\nExplanation:\nQ f L\nv\nM—> <+R\nt\nre) | N\nAnswer: B\nExplanation:\nQ i L\nv\nM—> <R\nt\no N",
+      "ocrConfidence": 75.06,
+      "answerSignals": 5,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0159",
+      "sourceRevision": 1,
+      "sourceSha256": "3a63437d156d272a5b5525a214d6af9ddb92a45bd2adc6baac9fa57e6c09e045",
+      "pageNumber": 43,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "LAW PREP\n— Tutorial— MOCK CLAT 10012 : ANSWER & EXPLANATIONS\n104. Answer: C\nExplanation:\nA F\nc D\nE H\nG B\n105. Answer: A\nExplanation:\nA F\nc D\nE H\nG B\n106. Answer: B\nExplanation:\nA 3\nis D\nE H\nG B\n107. Answer: A\nExplanation:\nAF\nc D\nE H\nG B\n108. Answer: D\nExplanation:\nA F\nc D\nE H\nG B",
+      "ocrConfidence": 79.66,
+      "answerSignals": 5,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0173",
+      "sourceRevision": 1,
+      "sourceSha256": "6ca1fc18e8a5c44a1bbc7dfa3de7cd00fb75b4c14f9035731d93d2c28f51c90e",
+      "pageNumber": 51,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10025 : ANSWER & EXPLANATIONS\nLogical Reasoning\n85. Answer: C\nExplanation: Common Solution: According to the given information we can make the following\narrangement.\nRatan (+) Urmila (-) Magbool (+)\nHostess (-) Host (+)\n(Madhuri) (Jackie)\nMonisha (-)  Dhirubhai (+) Shobha (-)\nJakie is the host and seated to Shobha’s right. Hence, only statement I and II are correct.\n86. Answer: D\nExplanation: Shobha is a person who is seated between Dhirubhai and Jackie\n87. Answer: A\nExplanation: If Ratan changes his seat with the person at the fourth place to his left means he would\nchange his seat with Shobha., Thus, all three men would be seated together and same would be the\ncase with women. Hence, statement I would be true.\n88. Answer: A\nExplanation: Ratan and Monisha are sitting just opposite to each other. Hence, they must be married.\n89. Answer: C\nExplanation: Common Solution: n + n +1+ n+2+n+ 3 = 4n +6 = 10 or n = 1 5 the coins\ndistributed are : 1, 2, 3, 4. Further,Q>PandS<R.\nP gets even number of coins 1.e. 2 or 4.\n*” Q>P hence P cannot be 4.\n> P=2andQ=3o0r4 ...(1)\nAgain S < R, using (i), S= 1 and R= 38 or 4\n-. Sum of Q and R>5\n90. Answer: B\nExplanation: R=S + 2, but R is not maximum.\n>R=8andS=1\nAgain Q>P,P=2andQ=4\n. SumofRandS=3+1=4\n91. Answer: A\nExplanation: Q=2P>Q=4and P=2\nAgain,S<R=>S=landR=3\nOnly (a), i.e. ‘S can have only odd value’ is true.",
+      "ocrConfidence": 88.43,
+      "answerSignals": 7,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    }
+  ]
+}

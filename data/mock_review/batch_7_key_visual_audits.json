@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "policy": "Implementation visual audit confirms answer-key transcription only and never substitutes for named academic approval.",
+  "sourceRuns": [
+    {
+      "sourceId": "SRC-0138",
+      "sourceSha256": "018fb8c5dad7f37504acae9683e95a417af7930975b2421238ffc4802a9fc6c8",
+      "renderedPageRange": "1-72",
+      "renderedImagePattern": "/review-assets/batch-7/SRC-0138-p%04d.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-06T03:30:00+00:00",
+      "start": 1,
+      "answers": "ACBBACACABAABAABCCBCADBBACCBBCBBCBADCACDBACDBCADDBBCDABDCABBACCDBDBDCCBBCCCBBCACCABDDCBDDBCDAAADCACBACCABBACBACAAABABABA"
+    }
+  ],
+  "ranges": [
+    {
+      "sourceId": "SRC-0092",
+      "sourceSha256": "02e5b0709070bc4c8c02db0044bbdbae168fa624c7b66d0c54a35d7f62ccedc0",
+      "page": 1,
+      "renderedImage": "/review-assets/batch-7/SRC-0092-p0001.jpg",
+      "auditor": "Codex implementation visual audit with migration of 2026-08-01 rendered-page transcription",
+      "auditedAt": "2026-08-06T03:15:00+00:00",
+      "start": 1,
+      "answers": "DADDADADBDC"
+    },
+    {
+      "sourceId": "SRC-0092",
+      "sourceSha256": "02e5b0709070bc4c8c02db0044bbdbae168fa624c7b66d0c54a35d7f62ccedc0",
+      "page": 2,
+      "renderedImage": "/review-assets/batch-7/SRC-0092-p0002.jpg",
+      "auditor": "Codex implementation visual audit with migration of 2026-08-01 rendered-page transcription",
+      "auditedAt": "2026-08-06T03:15:00+00:00",
+      "start": 12,
+      "answers": "CAADACD"
+    },
+    {
+      "sourceId": "SRC-0092",
+      "sourceSha256": "02e5b0709070bc4c8c02db0044bbdbae168fa624c7b66d0c54a35d7f62ccedc0",
+      "page": 3,
+      "renderedImage": "/review-assets/batch-7/SRC-0092-p0003.jpg",
+      "auditor": "Codex implementation visual audit with migration of 2026-08-01 rendered-page transcription",
+      "auditedAt": "2026-08-06T03:15:00+00:00",
+      "start": 19,
+      "answers": "ACABCDBDBCADCACB"
+    },
+    {
+      "sourceId": "SRC-0092",
+      "sourceSha256": "02e5b0709070bc4c8c02db0044bbdbae168fa624c7b66d0c54a35d7f62ccedc0",
+      "page": 4,
+      "renderedImage": "/review-assets/batch-7/SRC-0092-p0004.jpg",
+      "auditor": "Codex implementation visual audit with migration of 2026-08-01 rendered-page transcription",
+      "auditedAt": "2026-08-06T03:15:00+00:00",
+      "start": 35,
+      "answers": "BDCDABBCCABDCDBCDACACBCD"
+    },
+    {
+      "sourceId": "SRC-0092",
+      "sourceSha256": "02e5b0709070bc4c8c02db0044bbdbae168fa624c7b66d0c54a35d7f62ccedc0",
+      "page": 5,
+      "renderedImage": "/review-assets/batch-7/SRC-0092-p0005.jpg",
+      "auditor": "Codex implementation visual audit with migration of 2026-08-01 rendered-page transcription",
+      "auditedAt": "2026-08-06T03:15:00+00:00",
+      "start": 59,
+      "answers": "ABCDACACBDCDABBDADDA"
+    },
+    {
+      "sourceId": "SRC-0092",
+      "sourceSha256": "02e5b0709070bc4c8c02db0044bbdbae168fa624c7b66d0c54a35d7f62ccedc0",
+      "page": 6,
+      "renderedImage": "/review-assets/batch-7/SRC-0092-p0006.jpg",
+      "auditor": "Codex implementation visual audit with migration of 2026-08-01 rendered-page transcription",
+      "auditedAt": "2026-08-06T03:15:00+00:00",
+      "start": 79,
+      "answers": "CDCDCBBDACCDCDADB"
+    },
+    {
+      "sourceId": "SRC-0092",
+      "sourceSha256": "02e5b0709070bc4c8c02db0044bbdbae168fa624c7b66d0c54a35d7f62ccedc0",
+      "page": 7,
+      "renderedImage": "/review-assets/batch-7/SRC-0092-p0007.jpg",
+      "auditor": "Codex implementation visual audit with migration of 2026-08-01 rendered-page transcription",
+      "auditedAt": "2026-08-06T03:15:00+00:00",
+      "start": 96,
+      "answers": "BCADCBCDDBCADCDA"
+    },
+    {
+      "sourceId": "SRC-0092",
+      "sourceSha256": "02e5b0709070bc4c8c02db0044bbdbae168fa624c7b66d0c54a35d7f62ccedc0",
+      "page": 8,
+      "renderedImage": "/review-assets/batch-7/SRC-0092-p0008.jpg",
+      "auditor": "Codex implementation visual audit with migration of 2026-08-01 rendered-page transcription",
+      "auditedAt": "2026-08-06T03:15:00+00:00",
+      "start": 112,
+      "answers": "BCDBADACC"
+    },
+    {
+      "sourceId": "SRC-0098",
+      "sourceSha256": "cbc7ea22f758a31589397b8f232c805883cc7a1d0c8d6fc97eb08e8f47d793ae",
+      "page": 1,
+      "renderedImage": "/review-assets/batch-7/SRC-0098-p0001.jpg",
+      "auditor": "Codex implementation visual audit with migration of 2026-08-01 rendered-page transcription",
+      "auditedAt": "2026-08-06T03:15:00+00:00",
+      "start": 1,
+      "answers": "BDCBABBABCBBACCACBBCDADCBACBDCBABCDBCAABCBBBDCBABCDABADBCBABCDADACBDADABCDADDABDADACBACBCABADCCDBACDAADBCCADDABCDBACABBA"
+    },
+    {
+      "sourceId": "SRC-0100",
+      "sourceSha256": "1ca6db7d2555f7858af8159f7e03a3e141a9694aa6d49068902cea68a9665d50",
+      "page": 1,
+      "renderedImage": "/review-assets/batch-7/SRC-0100-p0001.jpg",
+      "auditor": "Codex implementation visual audit with migration of 2026-08-01 rendered-page transcription",
+      "auditedAt": "2026-08-06T03:15:00+00:00",
+      "start": 1,
+      "answers": "DCBDACCDBDADBACBACABCDCDABCBDBABCBCCCADBCABADCDAABDACADBADAACADCBBADCABCBBABCABCDCBBDDCCDCBACBCABDACBDCDCBCBBDACBCDBCADC"
+    },
+    {
+      "sourceId": "SRC-0102",
+      "sourceSha256": "5f7651536e6e069ab5e9811cce4a59c6acb0adaff68ca7c854ddfa9149837e3a",
+      "page": 1,
+      "renderedImage": "/review-assets/batch-7/SRC-0102-p0001.jpg",
+      "auditor": "Codex implementation visual audit with migration of 2026-08-01 rendered-page transcription",
+      "auditedAt": "2026-08-06T03:15:00+00:00",
+      "start": 1,
+      "answers": "BAACDABBBABCABBDBCDDCADCBACADDBCBCDABDBACDBACDBBDACBDCABBCDAACBBCBABCCBABBACABCCBCBCDABCDBCBDDACBDCADCBACDDBBBCCADBDBCBC"
+    },
+    {
+      "sourceId": "SRC-0138",
+      "sourceSha256": "018fb8c5dad7f37504acae9683e95a417af7930975b2421238ffc4802a9fc6c8",
+      "page": 6,
+      "renderedImage": "/review-assets/batch-7/SRC-0138-p0006.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-06T03:30:00+00:00",
+      "start": 21,
+      "answers": "A"
+    }
+  ]
+}

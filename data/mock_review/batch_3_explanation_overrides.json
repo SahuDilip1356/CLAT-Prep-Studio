@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03T12:54:31.372201+00:00",
+  "policy": "Drafts never bypass named academic approval; correctOption must still match reconciled official key evidence.",
+  "items": [
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0160-Q008",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0160",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.285,
+      "explanation": "The relevant fact or inference in the passage corresponds to Metaphor — a statistical distribution used figuratively to describe average workplace behaviour. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0160-Q009",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0160",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.333,
+      "explanation": "The relevant fact or inference in the passage corresponds to An idiomatic expression referring to employees who enjoy preferential treatment from authority figures. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0160-Q010",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0160",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.273,
+      "explanation": "The relevant fact or inference in the passage corresponds to A plural noun meaning large quantities. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0160-Q011",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0160",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "The relevant fact or inference in the passage corresponds to Playful irony that highlights a possible absurdity in administrative communication. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0160-Q012",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0160",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.429,
+      "explanation": "The relevant fact or inference in the passage corresponds to A gerund phrase functioning as the subject of the interrogative clause. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0160-Q076",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0160",
+      "sourcePage": 26,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.809,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The purposive approach permits examining parties’ actual conduct to understand true commercial arrangement despite written terms. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0160-Q090",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0160",
+      "sourcePage": 33,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.222,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Procedural opacity continues allowing states discretionary censorship authority over speech acts broadly. Therefore option A is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0160-Q099",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0160",
+      "sourcePage": 35,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.25,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves The one who sits to the immediate left of P. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0160-Q109",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0160",
+      "sourcePage": 37,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.4,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 320. Therefore option C is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0160-Q113",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0160",
+      "sourcePage": 37,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.75,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 3:2. Therefore option B is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0160-Q115",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0160",
+      "sourcePage": 38,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.444,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives %18,000. Therefore option C is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0172-Q003",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0172",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.667,
+      "explanation": "The relevant fact or inference in the passage corresponds to Serving enlightened teachers to reduce one’s inner burdens and confusion. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0172-Q103",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0172",
+      "sourcePage": 41,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.4,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Esha. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0172-Q106",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0172",
+      "sourcePage": 42,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.2,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Four. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0172-Q107",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0172",
+      "sourcePage": 42,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.222,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Charu and Harsh. Therefore option A is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q038",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 16,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.143,
+      "explanation": "The relevant fact or inference in the passage corresponds to P. T. Usha. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q055",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 22,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.253,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: A spouse cannot withdraw consent under Section 13B of the Hindu Marriage Act. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q057",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 22,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.194,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Article 142 permits the Court to do complete justice where the marriage is emotionally dead and beyond salvation. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q058",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 23,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.175,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Vague or omnibus allegations lacking specific incidents may amount to abuse of legal process and need not be allowed to continue mechanically. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q059",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 23,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.042,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Both A and R are true, and R is the correct explanation of A. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q061",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 25,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.528,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The seat is the juridical home of arbitration that determines supervisory jurisdiction, while the venue is merely a geographically convenient place for conducting hearings. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q062",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 25,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.646,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The Court rejected the argument, holding that stray recitals in an arbitral award cannot override the express agreement of parties regarding the seat. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q063",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 25,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.321,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The Hyderabad courts retain exclusive jurisdiction because the seat, once designated, remains fixed and immutable unless the parties expressly agree to alter it. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q064",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 26,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.275,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Only two. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q065",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 27,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.629,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The second suit is barred because A ought to have claimed all connected reliefs in the first suit itself. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q066",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 27,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.2,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The second writ petition may be barred because constructive res judicata may apply to writ proceedings as well. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q067",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 28,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.369,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Guaranteeing that every litigant has multiple opportunities to raise additional grounds whenever new legal arguments come to mind. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q068",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 28,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.273,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The second petition may be maintainable because courts recognize exceptions involving changed circumstances and personal liberty. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q069",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 28,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.196,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Only three. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q070",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 29,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.108,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The State has not fully complied, because furnishing periodic compliance reports through monthly meetings with uploaded minutes was itself a directed obligation. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q071",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 30,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.357,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Both A and R are true, and R is the correct explanation of A. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q072",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 30,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.849,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Paschim Banga Khet Mazdoor Samity (1996) held that denial of emergency care violates Article 21 and directed referral protocols, while SaveLIFE Foundation (2016) gave binding force to Good Samaritan protections. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q073",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 30,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.578,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Statistics showing that survival rates depend almost entirely on the quality of surgery performed days after the accident, with minimal effect from first-hour intervention. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q074",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 30,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.136,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The Centre may issue the protocol within three months, and the States must thereafter operationalise it within three months of that issuance. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q075",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 32,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.562,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The writ would still be refused, because the Court located the choice within the individual's private domain and found the continuance voluntary. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q076",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 32,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.16,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Both A and R are true, and R is the correct explanation of A. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q077",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 32,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.772,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Adults refraining from making independent choices about faith out of fear that relatives might trigger state-backed judicial inquiries. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q078",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 33,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.145,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: A writ of habeas corpus cannot be issued if an adult's detention is proven voluntary, as parental disagreement does not justify intervention. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q079",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 33,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.695,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Credible material established that the daughters were being confined and their signed statements were extracted under threat. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q080",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 34,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.302,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Correct, because the operationalisation depended on a delimitation exercise governed by the companion Delimitation Bill, 2026, under which the latest published census would apply. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q081",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 34,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.364,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Both A and R are true, and R is the correct explanation of A. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q082",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 35,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.039,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The Bill would clear the special majority threshold in that House. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q083",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 35,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.243,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: (i), Gi) and (iii) only. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q084",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 35,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.877,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Southern states that successfully curbed population growth would lose seats, meaning their effective demographic control reduced their representation. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q116",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 47,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.571,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 5:3. Therefore option A is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0174-Q117",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0174",
+      "sourcePage": 47,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.333,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives %32 lakh. Therefore option D is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0179-Q014",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0179",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.41,
+      "explanation": "The relevant fact or inference in the passage corresponds to Detached but increasingly overwhelmed by competing demands. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0179-Q020",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0179",
+      "sourcePage": 9,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.071,
+      "explanation": "The relevant fact or inference in the passage corresponds to The distinction between the owners and the villagers remained carefully maintained. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0179-Q021",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0179",
+      "sourcePage": 9,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.375,
+      "explanation": "The relevant fact or inference in the passage corresponds to Suggest that the house appeared fragile and gradually losing its grandeur. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0179-Q029",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0179",
+      "sourcePage": 11,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.087,
+      "explanation": "The relevant fact or inference in the passage corresponds to 1 and 2 only. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0179-Q038",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0179",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.714,
+      "explanation": "The relevant fact or inference in the passage corresponds to Congress leaders considered the proposal too vague and insufficient. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0179-Q041",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0179",
+      "sourcePage": 15,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.061,
+      "explanation": "The relevant fact or inference in the passage corresponds to A-2, B-4, C-3, D-1. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0179-Q046",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0179",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.156,
+      "explanation": "The relevant fact or inference in the passage corresponds to 2 and 3 only. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0179-Q051",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0179",
+      "sourcePage": 18,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.25,
+      "explanation": "The relevant fact or inference in the passage corresponds to Carbon, Hydrogen and Oxygen. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0186-Q099",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0186",
+      "sourcePage": 43,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.469,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Dinoflagellates must rely on symbiotic bacteria since their glow depends on external environmental stimulation. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-003-SRC-0186-Q106",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0186",
+      "sourcePage": 45,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.13,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Ishan and Juhi. Therefore option A is the only result consistent with the arrangement."
+    }
+  ]
+}

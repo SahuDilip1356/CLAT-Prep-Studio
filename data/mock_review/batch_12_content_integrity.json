@@ -1,0 +1,7231 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T17:34:49.175200+00:00",
+  "batchId": "CLAT-BATCH-012",
+  "status": "QUESTIONS_READY_KEY_REQUIRED",
+  "summary": {
+    "items": 600,
+    "mocks": 5,
+    "failures": 0,
+    "warnings": 1800,
+    "byFailureCode": {},
+    "byWarningCode": {
+      "ANSWER_MISSING": 600,
+      "ANSWER_PROVENANCE": 600,
+      "EXPLANATION_MISSING": 600
+    },
+    "explanationProvenance": {
+      "MISSING": 600
+    },
+    "moduleTotals": {
+      "ENGLISH": 120,
+      "GK": 140,
+      "LEGAL": 150,
+      "LOGICAL": 130,
+      "QUANT": 60
+    }
+  },
+  "failures": [],
+  "warnings": [
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q001"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q001"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q001"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q002"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q002"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q002"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q003"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q003"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q003"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q004"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q004"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q004"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q005"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q005"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q005"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q006"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q006"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q006"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q007"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q007"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q007"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q008"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q008"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q008"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q009"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q009"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q009"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q010"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q010"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q010"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q011"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q011"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q011"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q012"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q012"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q012"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q013"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q013"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q013"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q014"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q014"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q014"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q015"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q015"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q015"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q016"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q016"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q016"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q017"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q017"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q017"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q018"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q018"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q018"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q019"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q019"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q019"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q020"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q020"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q020"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q021"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q021"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q021"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q022"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q022"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q022"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q023"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q023"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q023"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q024"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q024"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q024"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q025"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q025"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q025"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q026"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q026"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q026"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q027"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q027"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q027"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q028"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q028"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q028"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q029"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q029"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q029"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q030"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q030"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q030"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q031"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q031"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q031"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q032"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q032"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q032"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q033"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q033"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q033"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q034"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q034"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q034"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q035"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q035"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q035"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q036"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q036"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q036"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q037"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q037"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q037"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q038"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q038"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q038"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q039"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q039"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q039"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q040"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q040"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q040"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q041"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q041"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q041"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q042"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q042"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q042"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q043"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q043"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q043"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q044"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q044"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q044"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q045"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q045"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q045"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q046"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q046"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q046"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q047"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q047"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q047"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q048"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q048"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q048"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q049"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q049"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q049"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q050"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q050"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q050"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q051"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q051"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q051"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q052"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q052"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q052"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q053"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q053"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q053"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q054"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q054"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q054"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q055"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q055"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q055"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q056"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q056"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q056"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q057"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q057"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q057"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q058"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q058"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q058"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q059"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q059"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q059"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q060"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q060"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q060"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q061"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q061"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q061"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q062"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q062"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q062"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q063"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q063"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q063"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q064"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q064"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q064"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q065"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q065"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q065"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q066"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q066"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q066"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q067"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q067"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q067"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q068"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q068"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q068"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q069"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q069"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q069"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q070"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q070"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q070"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q071"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q071"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q071"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q072"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q072"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q072"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q073"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q073"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q073"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q074"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q074"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q074"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q075"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q075"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q075"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q076"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q076"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q076"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q077"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q077"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q077"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q078"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q078"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q078"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q079"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q079"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q079"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q080"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q080"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q080"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q081"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q081"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q081"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q082"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q082"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q082"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q083"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q083"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q083"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q084"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q084"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q084"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q085"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q085"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q085"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q086"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q086"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q086"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q087"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q087"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q087"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q088"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q088"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q088"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q089"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q089"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q089"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q090"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q090"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q090"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q091"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q091"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q091"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q092"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q092"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q092"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q093"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q093"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q093"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q094"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q094"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q094"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q095"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q095"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q095"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q096"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q096"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q096"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q097"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q097"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q097"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q098"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q098"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q098"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q099"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q099"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q099"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q100"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q100"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q100"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q101"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q101"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q101"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q102"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q102"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q102"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q103"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q103"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q103"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q104"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q104"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q104"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q105"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q105"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q105"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q106"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q106"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q106"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q107"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q107"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q107"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q108"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q108"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q108"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q109"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q109"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q109"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q110"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q110"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q110"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q111"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q111"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q111"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q112"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q112"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q112"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q113"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q113"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q113"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q114"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q114"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q114"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q115"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q115"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q115"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q116"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q116"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q116"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q117"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q117"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q117"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q118"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q118"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q118"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q119"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q119"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q119"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q120"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q120"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0076-Q120"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q001"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q001"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q001"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q002"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q002"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q002"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q003"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q003"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q003"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q004"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q004"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q004"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q005"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q005"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q005"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q006"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q006"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q006"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q007"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q007"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q007"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q008"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q008"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q008"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q009"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q009"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q009"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q010"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q010"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q010"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q011"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q011"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q011"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q012"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q012"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q012"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q013"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q013"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q013"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q014"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q014"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q014"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q015"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q015"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q015"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q016"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q016"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q016"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q017"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q017"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q017"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q018"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q018"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q018"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q019"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q019"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q019"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q020"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q020"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q020"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q021"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q021"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q021"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q022"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q022"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q022"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q023"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q023"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q023"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q024"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q024"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q024"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q025"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q025"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q025"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q026"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q026"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q026"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q027"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q027"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q027"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q028"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q028"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q028"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q029"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q029"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q029"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q030"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q030"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q030"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q031"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q031"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q031"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q032"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q032"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q032"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q033"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q033"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q033"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q034"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q034"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q034"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q035"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q035"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q035"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q036"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q036"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q036"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q037"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q037"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q037"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q038"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q038"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q038"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q039"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q039"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q039"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q040"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q040"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q040"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q041"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q041"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q041"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q042"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q042"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q042"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q043"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q043"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q043"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q044"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q044"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q044"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q045"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q045"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q045"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q046"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q046"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q046"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q047"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q047"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q047"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q048"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q048"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q048"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q049"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q049"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q049"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q050"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q050"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q050"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q051"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q051"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q051"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q052"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q052"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q052"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q053"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q053"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q053"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q054"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q054"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q054"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q055"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q055"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q055"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q056"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q056"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q056"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q057"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q057"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q057"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q058"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q058"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q058"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q059"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q059"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q059"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q060"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q060"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q060"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q061"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q061"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q061"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q062"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q062"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q062"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q063"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q063"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q063"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q064"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q064"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q064"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q065"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q065"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q065"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q066"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q066"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q066"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q067"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q067"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q067"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q068"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q068"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q068"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q069"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q069"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q069"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q070"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q070"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q070"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q071"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q071"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q071"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q072"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q072"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q072"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q073"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q073"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q073"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q074"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q074"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q074"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q075"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q075"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q075"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q076"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q076"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q076"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q077"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q077"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q077"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q078"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q078"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q078"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q079"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q079"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q079"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q080"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q080"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q080"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q081"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q081"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q081"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q082"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q082"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q082"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q083"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q083"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q083"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q084"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q084"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q084"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q085"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q085"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q085"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q086"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q086"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q086"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q087"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q087"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q087"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q088"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q088"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q088"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q089"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q089"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q089"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q090"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q090"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q090"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q091"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q091"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q091"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q092"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q092"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q092"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q093"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q093"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q093"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q094"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q094"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q094"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q095"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q095"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q095"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q096"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q096"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q096"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q097"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q097"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q097"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q098"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q098"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q098"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q099"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q099"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q099"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q100"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q100"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q100"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q101"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q101"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q101"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q102"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q102"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q102"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q103"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q103"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q103"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q104"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q104"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q104"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q105"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q105"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q105"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q106"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q106"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q106"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q107"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q107"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q107"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q108"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q108"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q108"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q109"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q109"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q109"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q110"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q110"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q110"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q111"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q111"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q111"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q112"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q112"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q112"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q113"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q113"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q113"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q114"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q114"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q114"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q115"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q115"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q115"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q116"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q116"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q116"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q117"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q117"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q117"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q118"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q118"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q118"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q119"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q119"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q119"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q120"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q120"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0077-Q120"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q001"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q001"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q001"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q002"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q002"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q002"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q003"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q003"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q003"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q004"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q004"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q004"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q005"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q005"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q005"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q006"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q006"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q006"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q007"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q007"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q007"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q008"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q008"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q008"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q009"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q009"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q009"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q010"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q010"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q010"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q011"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q011"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q011"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q012"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q012"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q012"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q013"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q013"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q013"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q014"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q014"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q014"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q015"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q015"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q015"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q016"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q016"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q016"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q017"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q017"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q017"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q018"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q018"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q018"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q019"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q019"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q019"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q020"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q020"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q020"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q021"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q021"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q021"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q022"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q022"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q022"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q023"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q023"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q023"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q024"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q024"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q024"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q025"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q025"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q025"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q026"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q026"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q026"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q027"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q027"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q027"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q028"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q028"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q028"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q029"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q029"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q029"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q030"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q030"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q030"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q031"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q031"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q031"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q032"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q032"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q032"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q033"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q033"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q033"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q034"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q034"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q034"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q035"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q035"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q035"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q036"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q036"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q036"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q037"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q037"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q037"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q038"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q038"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q038"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q039"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q039"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q039"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q040"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q040"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q040"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q041"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q041"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q041"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q042"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q042"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q042"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q043"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q043"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q043"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q044"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q044"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q044"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q045"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q045"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q045"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q046"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q046"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q046"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q047"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q047"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q047"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q048"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q048"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q048"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q049"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q049"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q049"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q050"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q050"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q050"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q051"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q051"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q051"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q052"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q052"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q052"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q053"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q053"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q053"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q054"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q054"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q054"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q055"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q055"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q055"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q056"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q056"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q056"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q057"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q057"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q057"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q058"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q058"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q058"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q059"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q059"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q059"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q060"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q060"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q060"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q061"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q061"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q061"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q062"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q062"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q062"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q063"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q063"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q063"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q064"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q064"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q064"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q065"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q065"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q065"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q066"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q066"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q066"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q067"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q067"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q067"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q068"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q068"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q068"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q069"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q069"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q069"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q070"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q070"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q070"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q071"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q071"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q071"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q072"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q072"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q072"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q073"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q073"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q073"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q074"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q074"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q074"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q075"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q075"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q075"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q076"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q076"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q076"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q077"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q077"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q077"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q078"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q078"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q078"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q079"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q079"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q079"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q080"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q080"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q080"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q081"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q081"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q081"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q082"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q082"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q082"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q083"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q083"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q083"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q084"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q084"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q084"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q085"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q085"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q085"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q086"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q086"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q086"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q087"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q087"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q087"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q088"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q088"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q088"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q089"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q089"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q089"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q090"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q090"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q090"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q091"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q091"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q091"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q092"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q092"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q092"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q093"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q093"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q093"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q094"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q094"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q094"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q095"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q095"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q095"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q096"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q096"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q096"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q097"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q097"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q097"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q098"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q098"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q098"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q099"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q099"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q099"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q100"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q100"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q100"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q101"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q101"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q101"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q102"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q102"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q102"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q103"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q103"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q103"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q104"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q104"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q104"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q105"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q105"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q105"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q106"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q106"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q106"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q107"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q107"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q107"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q108"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q108"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q108"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q109"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q109"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q109"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q110"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q110"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q110"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q111"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q111"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q111"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q112"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q112"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q112"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q113"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q113"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q113"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q114"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q114"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q114"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q115"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q115"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q115"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q116"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q116"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q116"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q117"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q117"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q117"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q118"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q118"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q118"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q119"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q119"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q119"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q120"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q120"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0078-Q120"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q001"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q001"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q001"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q002"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q002"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q002"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q003"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q003"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q003"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q004"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q004"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q004"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q005"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q005"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q005"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q006"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q006"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q006"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q007"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q007"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q007"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q008"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q008"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q008"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q009"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q009"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q009"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q010"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q010"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q010"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q011"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q011"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q011"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q012"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q012"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q012"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q013"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q013"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q013"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q014"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q014"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q014"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q015"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q015"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q015"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q016"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q016"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q016"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q017"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q017"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q017"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q018"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q018"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q018"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q019"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q019"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q019"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q020"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q020"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q020"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q021"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q021"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q021"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q022"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q022"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q022"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q023"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q023"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q023"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q024"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q024"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q024"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q025"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q025"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q025"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q026"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q026"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q026"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q027"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q027"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q027"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q028"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q028"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q028"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q029"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q029"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q029"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q030"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q030"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q030"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q031"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q031"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q031"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q032"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q032"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q032"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q033"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q033"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q033"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q034"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q034"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q034"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q035"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q035"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q035"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q036"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q036"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q036"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q037"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q037"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q037"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q038"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q038"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q038"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q039"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q039"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q039"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q040"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q040"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q040"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q041"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q041"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q041"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q042"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q042"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q042"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q043"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q043"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q043"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q044"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q044"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q044"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q045"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q045"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q045"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q046"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q046"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q046"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q047"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q047"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q047"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q048"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q048"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q048"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q049"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q049"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q049"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q050"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q050"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q050"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q051"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q051"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q051"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q052"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q052"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q052"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q053"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q053"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q053"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q054"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q054"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q054"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q055"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q055"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q055"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q056"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q056"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q056"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q057"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q057"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q057"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q058"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q058"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q058"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q059"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q059"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q059"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q060"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q060"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q060"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q061"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q061"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q061"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q062"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q062"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q062"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q063"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q063"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q063"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q064"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q064"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q064"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q065"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q065"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q065"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q066"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q066"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q066"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q067"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q067"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q067"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q068"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q068"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q068"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q069"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q069"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q069"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q070"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q070"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q070"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q071"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q071"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q071"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q072"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q072"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q072"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q073"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q073"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q073"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q074"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q074"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q074"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q075"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q075"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q075"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q076"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q076"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q076"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q077"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q077"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q077"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q078"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q078"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q078"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q079"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q079"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q079"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q080"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q080"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q080"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q081"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q081"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q081"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q082"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q082"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q082"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q083"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q083"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q083"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q084"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q084"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q084"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q085"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q085"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q085"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q086"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q086"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q086"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q087"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q087"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q087"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q088"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q088"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q088"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q089"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q089"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q089"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q090"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q090"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q090"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q091"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q091"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q091"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q092"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q092"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q092"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q093"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q093"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q093"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q094"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q094"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q094"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q095"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q095"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q095"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q096"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q096"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q096"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q097"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q097"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q097"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q098"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q098"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q098"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q099"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q099"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q099"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q100"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q100"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q100"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q101"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q101"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q101"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q102"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q102"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q102"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q103"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q103"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q103"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q104"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q104"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q104"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q105"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q105"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q105"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q106"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q106"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q106"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q107"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q107"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q107"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q108"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q108"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q108"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q109"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q109"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q109"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q110"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q110"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q110"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q111"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q111"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q111"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q112"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q112"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q112"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q113"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q113"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q113"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q114"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q114"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q114"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q115"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q115"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q115"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q116"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q116"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q116"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q117"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q117"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q117"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q118"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q118"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q118"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q119"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q119"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q119"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q120"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q120"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0079-Q120"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q001"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q001"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q001"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q002"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q002"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q002"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q003"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q003"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q003"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q004"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q004"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q004"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q005"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q005"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q005"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q006"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q006"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q006"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q007"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q007"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q007"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q008"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q008"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q008"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q009"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q009"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q009"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q010"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q010"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q010"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q011"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q011"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q011"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q012"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q012"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q012"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q013"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q013"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q013"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q014"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q014"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q014"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q015"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q015"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q015"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q016"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q016"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q016"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q017"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q017"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q017"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q018"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q018"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q018"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q019"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q019"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q019"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q020"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q020"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q020"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q021"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q021"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q021"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q022"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q022"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q022"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q023"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q023"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q023"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q024"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q024"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q024"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q025"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q025"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q025"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q026"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q026"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q026"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q027"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q027"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q027"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q028"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q028"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q028"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q029"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q029"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q029"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q030"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q030"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q030"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q031"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q031"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q031"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q032"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q032"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q032"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q033"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q033"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q033"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q034"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q034"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q034"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q035"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q035"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q035"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q036"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q036"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q036"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q037"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q037"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q037"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q038"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q038"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q038"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q039"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q039"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q039"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q040"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q040"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q040"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q041"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q041"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q041"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q042"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q042"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q042"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q043"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q043"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q043"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q044"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q044"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q044"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q045"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q045"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q045"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q046"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q046"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q046"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q047"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q047"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q047"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q048"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q048"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q048"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q049"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q049"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q049"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q050"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q050"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q050"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q051"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q051"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q051"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q052"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q052"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q052"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q053"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q053"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q053"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q054"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q054"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q054"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q055"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q055"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q055"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q056"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q056"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q056"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q057"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q057"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q057"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q058"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q058"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q058"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q059"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q059"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q059"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q060"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q060"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q060"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q061"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q061"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q061"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q062"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q062"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q062"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q063"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q063"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q063"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q064"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q064"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q064"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q065"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q065"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q065"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q066"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q066"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q066"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q067"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q067"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q067"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q068"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q068"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q068"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q069"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q069"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q069"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q070"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q070"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q070"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q071"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q071"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q071"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q072"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q072"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q072"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q073"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q073"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q073"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q074"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q074"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q074"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q075"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q075"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q075"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q076"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q076"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q076"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q077"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q077"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q077"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q078"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q078"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q078"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q079"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q079"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q079"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q080"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q080"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q080"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q081"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q081"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q081"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q082"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q082"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q082"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q083"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q083"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q083"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q084"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q084"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q084"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q085"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q085"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q085"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q086"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q086"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q086"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q087"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q087"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q087"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q088"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q088"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q088"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q089"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q089"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q089"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q090"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q090"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q090"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q091"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q091"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q091"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q092"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q092"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q092"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q093"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q093"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q093"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q094"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q094"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q094"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q095"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q095"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q095"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q096"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q096"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q096"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q097"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q097"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q097"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q098"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q098"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q098"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q099"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q099"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q099"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q100"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q100"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q100"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q101"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q101"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q101"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q102"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q102"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q102"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q103"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q103"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q103"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q104"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q104"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q104"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q105"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q105"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q105"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q106"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q106"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q106"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q107"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q107"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q107"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q108"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q108"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q108"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q109"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q109"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q109"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q110"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q110"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q110"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q111"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q111"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q111"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q112"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q112"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q112"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q113"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q113"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q113"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q114"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q114"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q114"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q115"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q115"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q115"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q116"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q116"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q116"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q117"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q117"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q117"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q118"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q118"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q118"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q119"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q119"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q119"
+    },
+    {
+      "code": "ANSWER_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q120"
+    },
+    {
+      "code": "EXPLANATION_MISSING",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q120"
+    },
+    {
+      "code": "ANSWER_PROVENANCE",
+      "itemId": "CLAT-BATCH-012-SRC-0080-Q120"
+    }
+  ]
+}

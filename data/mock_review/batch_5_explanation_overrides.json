@@ -1,0 +1,777 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T16:47:09.769668+00:00",
+  "policy": "Drafts never bypass named academic approval; correctOption must still match reconciled official key evidence.",
+  "items": [
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0144-Q023",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0144",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.5,
+      "explanation": "The relevant fact or inference in the passage corresponds to Ubiquitous travel masks time harms. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0144-Q027",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0144",
+      "sourcePage": 8,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "The relevant fact or inference in the passage corresponds to Dr. Samir V. Kamat. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0144-Q081",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0144",
+      "sourcePage": 22,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.286,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: B.R. Ambedkar. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0144-Q093",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0144",
+      "sourcePage": 25,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.353,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Many users disregard volume limit notifications while using headphones. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0144-Q094",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0144",
+      "sourcePage": 25,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.521,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Individuals can control how they interact with sound in their daily environment. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0162-Q085",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0162",
+      "sourcePage": 38,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.271,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Counter-terrorism policy in India seeks to balance community involvement while ensuring no group feels targeted. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0162-Q104",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0162",
+      "sourcePage": 44,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.385,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Both I and III. Therefore option A is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0162-Q105",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0162",
+      "sourcePage": 44,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.4,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Three. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0162-Q106",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0162",
+      "sourcePage": 44,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.667,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves L. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0162-Q107",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0162",
+      "sourcePage": 45,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.25,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Third. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0162-Q108",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0162",
+      "sourcePage": 45,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves (4, 24, 214). Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q002",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 4,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.867,
+      "explanation": "The relevant fact or inference in the passage corresponds to A direct connection to the sea. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q008",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 6,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.2,
+      "explanation": "The relevant fact or inference in the passage corresponds to Passively swept along. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q009",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 6,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 1.333,
+      "explanation": "The passage states that his table was between the entrance to the kitchen and the bathrooms, caught in a stream of constant traffic. This supports It faced the noisy kitchen traffic, so option A is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q010",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 6,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 1.333,
+      "explanation": "The passage states that something uncoiled in my stomach, slow and languorous, and I decided it would be better if I left now, and did not go in to him. This supports Slow and relaxed, so option B is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q011",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 6,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.222,
+      "explanation": "The relevant fact or inference in the passage corresponds to Perplexed by its impracticality. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q012",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 6,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.6,
+      "explanation": "The relevant fact or inference in the passage corresponds to Personification. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q013",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.231,
+      "explanation": "The relevant fact or inference in the passage corresponds to Physically present but mentally detached. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q014",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.25,
+      "explanation": "The relevant fact or inference in the passage corresponds to Audacious or shameless behaviour. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q015",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 7,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 1.222,
+      "explanation": "The passage states that in reality, pushing the metal through the bumpy pink flesh was the easy part; the difficult part was resisting the urge to do the same to the customers. This supports Customers' picky part selections, so option C is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q016",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.4,
+      "explanation": "The relevant fact or inference in the passage corresponds to Grotesque, dehumanizing imagery. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q017",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.7,
+      "explanation": "The relevant fact or inference in the passage corresponds to Forced tolerance masking irritation. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q018",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 7,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 1.167,
+      "explanation": "The passage states that there was a time he would have taken pride in this orderliness. This supports Once took pride in orderliness, so option D is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q020",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 8,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.424,
+      "explanation": "The relevant fact or inference in the passage corresponds to It is designed to feel calm but visually intentional. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q021",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 8,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.182,
+      "explanation": "The relevant fact or inference in the passage corresponds to Naturally holey or cut through with openings. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q022",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 8,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 1.125,
+      "explanation": "The passage states that the combination of turn-of-the-century luxury and raw modern grittiness lends a feeling of freedom and decadence, with a hint of eroticism. This supports Luxury and neglect, so option B is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q023",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 9,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.357,
+      "explanation": "The relevant fact or inference in the passage corresponds to It creates a mixed impression of decline and lived-in warmth. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q024",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 9,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.462,
+      "explanation": "The relevant fact or inference in the passage corresponds to Interpretation of the building's atmosphere. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q043",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 15,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "The relevant fact or inference in the passage corresponds to 1930. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q045",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 15,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "The relevant fact or inference in the passage corresponds to Padma Vibhushan Award. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q058",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 19,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.777,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Yes, because Meera was put in fear of instant death or hurt while Arjun stood present before her. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q060",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 20,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.143,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Tonly. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q067",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 22,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.343,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: No, because supremacy of law means no man is above the ordinary law of the land. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q068",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 23,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.88,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Yes, because it demonstrates arbitrariness clearly excluded by Rule of Law doctrine. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q069",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 23,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.853,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The law violates constitutional supremacy and thereby excludes the operation of Rule of Law. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q070",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 23,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.417,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Predominance of legal spirit, because judicial decisions are being improperly coerced. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q072",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 23,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.862,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: All three actions violate different but core aspects of Dicey’s Rule of Law. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q073",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 24,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.968,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Conservation of options by permanently losing unique biodiversity and species. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q074",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 24,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.759,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Present generation's duty to preserve environment for future generations' enjoyment. Accordingly, option C is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q075",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 24,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.37,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Conservation of quality - sustaining environmental quality for future human use. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q076",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 25,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.143,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Intergenerational equity balancing development needs with future resource protection. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q078",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 25,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.606,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Universal Declaration of Human Rights on fundamental human freedoms. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q079",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 26,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.691,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Yes, because contribution is available after plaintiff compensation to workers. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0164-Q082",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0164",
+      "sourcePage": 26,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.024,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Indemnity as manufacturer primarily liable, retailer secondarily liable for product. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q001",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.306,
+      "explanation": "The relevant fact or inference in the passage corresponds to Ancient philosophical discourse frequently treated the home and domestic partnerships as subjects of notable intellectual analysis, exploring the structural, moral, and emotional dynamics of marriage. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q002",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.425,
+      "explanation": "The relevant fact or inference in the passage corresponds to To underline the breadth of classical texts that address the domestic sphere to illustrate its validity as a subject of ancient philosophical debate. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q003",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.486,
+      "explanation": "The relevant fact or inference in the passage corresponds to Contemporary studies often marginalize classical texts dealing with domestic arrangements when the chronological origin or exact authorship cannot be verified. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q004",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 6,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.425,
+      "explanation": "The relevant fact or inference in the passage corresponds to It utilizes a colloquial idiom to describe a temporary period of heightened academic attention before his work was re-evaluated through a broader lens. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q005",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 6,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.605,
+      "explanation": "The relevant fact or inference in the passage corresponds to Classical Antiquity, Domestic Philosophy, Pseudonymous Fragments, Marital Companionship. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q006",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 6,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.167,
+      "explanation": "The relevant fact or inference in the passage corresponds to Prevail. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q007",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.291,
+      "explanation": "The relevant fact or inference in the passage corresponds to The author’s lifelong preoccupation with socioeconomic standing stems from an internal synthesis of divergent family backgrounds, blending the psychological traits of inherited privilege with those of economic…. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q008",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.433,
+      "explanation": "The relevant fact or inference in the passage corresponds to To reflect on personal identity by examining the contrasting familial influences and early memories that shaped the author's awareness of wealth. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q009",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.35,
+      "explanation": "The relevant fact or inference in the passage corresponds to The author's relationships with classmates were defined by a conscious awareness of relative material differences rather than an objective assessment of personal wealth. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q010",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 8,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.262,
+      "explanation": "The relevant fact or inference in the passage corresponds to A distinct personal independence and competitive drive that commanded attention despite his preference for a secluded lifestyle. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q011",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 8,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.265,
+      "explanation": "The relevant fact or inference in the passage corresponds to A metaphorical expression emphasizing the enduring psychological and authoritative influence the grandfather maintains over the family. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q012",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 8,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.167,
+      "explanation": "The relevant fact or inference in the passage corresponds to Measured. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q013",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 9,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.554,
+      "explanation": "The relevant fact or inference in the passage corresponds to The author's personal encounter with Rothko's art reveals a functional convergence between abstract expressionism and religious iconography, both serving to dissolve the self and evoke profound wonder. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q014",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 9,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.411,
+      "explanation": "The relevant fact or inference in the passage corresponds to The author assumed that an exhibition of American abstract expressionism would feel contextually detached from the traditional artistic heritage of the city. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q015",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 10,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.272,
+      "explanation": "The relevant fact or inference in the passage corresponds to Agnostic Spirituality, Color-Field Contemplation, Ego Dissolution, Renaissance Influence. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q016",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 10,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.413,
+      "explanation": "The relevant fact or inference in the passage corresponds to The emotional vulnerability experienced during the contemplation of art is entirely dependent on an individual's personal history of religious indoctrination. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q018",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 10,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.563,
+      "explanation": "The relevant fact or inference in the passage corresponds to Modern society is highly focused on the individual self, which makes an experience that helps us forget our own identity deeply meaningful. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q019",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 11,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.327,
+      "explanation": "The relevant fact or inference in the passage corresponds to They utilize physical museum exhibitions as their primary backdrop and organizational framework. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q020",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 12,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.708,
+      "explanation": "The relevant fact or inference in the passage corresponds to Provides a basic, unpretentious, and essential summary of the historical facts of Kahlo's life. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q021",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 12,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.792,
+      "explanation": "The relevant fact or inference in the passage corresponds to Beyond the Gallery Walls. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q022",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 12,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.303,
+      "explanation": "The relevant fact or inference in the passage corresponds to Documentary Review, Biographical Balance, Phenomenon Reclamation, Aesthetic Influences. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q023",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 12,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.444,
+      "explanation": "The relevant fact or inference in the passage corresponds to The historical roots of Kahlo’s artistic choices were uninfluenced by folk art traditions or vernacular street paintings. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q024",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 12,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.5,
+      "explanation": "The relevant fact or inference in the passage corresponds to Biographical films frequently struggle by overemphasizing private scandals at the expense of serious aesthetic analysis. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q032",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 15,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.143,
+      "explanation": "The relevant fact or inference in the passage corresponds to Seventh Schedule. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q037",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 16,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.3,
+      "explanation": "The relevant fact or inference in the passage corresponds to Uranium. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q038",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.333,
+      "explanation": "The relevant fact or inference in the passage corresponds to 111. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q040",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.143,
+      "explanation": "The relevant fact or inference in the passage corresponds to Ebene, Mauritius. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q050",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 20,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.05,
+      "explanation": "The relevant fact or inference in the passage corresponds to Only I and IT. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q063",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 27,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.564,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: An insurer may be made liable once the injured person is inside an insured vehicle in a public place, even if the vehicle had no role in the injury. Accordingly, option D is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0178-Q096",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0178",
+      "sourcePage": 43,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.611,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Anewly felt lack can disturb the rest produced by possessing a desired object. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0192-Q033",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0192",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.075,
+      "explanation": "The relevant fact or inference in the passage corresponds to 2 and 3 only. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0192-Q092",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0192",
+      "sourcePage": 41,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.206,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves At least one project associated with the Games replaced a natural landscape with a permanent, non-wood-built structure. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-005-SRC-0192-Q096",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0192",
+      "sourcePage": 42,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.105,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Independent audits found rebuilding lowered lifetime emissions and land disturbance. Therefore option A is the only result consistent with the arrangement."
+    }
+  ]
+}

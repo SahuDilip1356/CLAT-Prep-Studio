@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T17:35:15.287049+00:00",
+  "batchId": "CLAT-BATCH-006",
+  "status": "READY_FOR_ACADEMIC_REVIEW",
+  "summary": {
+    "items": 360,
+    "mocks": 3,
+    "failures": 0,
+    "warnings": 79,
+    "byFailureCode": {},
+    "byWarningCode": {
+      "EXPLANATION_DRAFT_REVIEW_REQUIRED": 79
+    },
+    "explanationProvenance": {
+      "EVIDENCE_LINKED_AUTO_DRAFT": 79,
+      "OFFICIAL_SOURCE_EXTRACT": 281
+    },
+    "moduleTotals": {
+      "ENGLISH": 72,
+      "GK": 84,
+      "LEGAL": 96,
+      "LOGICAL": 72,
+      "QUANT": 36
+    }
+  },
+  "failures": [],
+  "warnings": [
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q001"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q002"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q003"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q004"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q005"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q006"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q007"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q008"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q009"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q014"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q017"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q026"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q030"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q074"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q092"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q098"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q108"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q109"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q120"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q001"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q002"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q003"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q006"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q013"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q020"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q021"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q022"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q023"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q024"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q034"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q092"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q095"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q099"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q100"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q101"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q113"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q025"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q026"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q027"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q028"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q029"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q030"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q031"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q032"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q033"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q034"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q035"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q036"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q037"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q038"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q039"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q040"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q041"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q042"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q043"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q044"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q045"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q046"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q047"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q048"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q049"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q050"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q051"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q052"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q084"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q085"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q093"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q096"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q098"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q099"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q100"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q101"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q102"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q103"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q104"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q105"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q106"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q107"
+    },
+    {
+      "code": "EXPLANATION_DRAFT_REVIEW_REQUIRED",
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q110"
+    }
+  ]
+}

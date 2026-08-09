@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-08-01",
+  "answerKeys": [
+    {
+      "mockId": "cl-prime-2027-10",
+      "questionSourceId": "SRC-0093",
+      "answerSourceId": "SRC-0092",
+      "sourceFormat": "typed_scanned_explanations",
+      "verificationMethod": "tesseract_ocr_plus_rendered_page_review",
+      "answersByRange": [
+        {"start": 1, "end": 30, "answers": "DADDADADBDCCAADACDACABCDBDBCAD"},
+        {"start": 31, "end": 60, "answers": "CACBBDCDABBCCABDCDBCDACACBCDAB"},
+        {"start": 61, "end": 90, "answers": "CDACACBDCDABBDADDACDCDCBBDACCD"},
+        {"start": 91, "end": 120, "answers": "CDADBBCADCBCDDBCADCDABCDBADACC"}
+      ]
+    },
+    {
+      "mockId": "cl-prime-2027-11",
+      "questionSourceId": "SRC-0099",
+      "answerSourceId": "SRC-0098",
+      "sourceFormat": "handwritten_answer_grid",
+      "verificationMethod": "rendered_page_visual_transcription",
+      "answersByRange": [
+        {"start": 1, "end": 30, "answers": "BDCBABBABCBBACCACBBCDADCBACBDC"},
+        {"start": 31, "end": 60, "answers": "BABCDBCAABCBBBDCBABCDABADBCBAB"},
+        {"start": 61, "end": 90, "answers": "CDADACBDADABCDADDABDADACBACBCA"},
+        {"start": 91, "end": 120, "answers": "BADCCDBACDAADBCCADDABCDBACABBA"}
+      ]
+    },
+    {
+      "mockId": "cl-prime-2027-13",
+      "questionSourceId": "SRC-0101",
+      "answerSourceId": "SRC-0100",
+      "sourceFormat": "handwritten_answer_grid",
+      "verificationMethod": "rendered_page_visual_transcription",
+      "answersByRange": [
+        {"start": 1, "end": 30, "answers": "DCBDACCDBDADBACBACABCDCDABCBDB"},
+        {"start": 31, "end": 60, "answers": "ABCBCCCADBCABADCDAABDACADBADAA"},
+        {"start": 61, "end": 90, "answers": "CADCBBADCABCBBABCABCDCBBDDCCDC"},
+        {"start": 91, "end": 120, "answers": "BACBCABDACBDCDCBCBBDACBCDBCADC"}
+      ]
+    },
+    {
+      "mockId": "cl-prime-2027-14",
+      "questionSourceId": "SRC-0103",
+      "answerSourceId": "SRC-0102",
+      "sourceFormat": "handwritten_answer_grid",
+      "verificationMethod": "rendered_page_visual_transcription",
+      "answersByRange": [
+        {"start": 1, "end": 30, "answers": "BAACDABBBABCABBDBCDDCADCBACADD"},
+        {"start": 31, "end": 60, "answers": "BCBCDABDBACDBACDBBDACBDCABBCDA"},
+        {"start": 61, "end": 90, "answers": "ACBBCBABCCBABBACABCCBCBCDABCDB"},
+        {"start": 91, "end": 120, "answers": "CBDDACBDCADCBACDDBBBCCADBDBCBC"}
+      ]
+    }
+  ]
+}

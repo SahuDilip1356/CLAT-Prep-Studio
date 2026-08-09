@@ -155,6 +155,311 @@ ANSWER_OVERRIDES = {
 }
 
 
+PURE_QUANT_TOPICS = {
+    "Ratio, Proportion & Variation",
+    "Averages, Mixtures & Alligations",
+}
+
+
+# pypdf extracts ordinary prose from these source files reliably, but vertically
+# laid-out maths (fractions, exponents, radicals and mixed numbers) can be emitted
+# in the wrong reading order. Keep the visually verified corrections beside the
+# digitizer so rebuilding the bank cannot reintroduce the damaged expressions.
+CONTENT_OVERRIDES: dict[tuple[str, str, int], dict[str, Any]] = {
+    ("SM1001906_Chapter-2_RPV.pdf", "Concept Review", 1): {
+        "questionText": "If a = (9/8)b, then (3b)/(4a) = ?",
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Concept Review", 2): {
+        "questionText": "If 2.4p = 0.08q, then (q + p)/(q - p) = ?",
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Concept Review", 3): {
+        "questionText": "If a : b = 2 : 3, find (3a + 4b)/(4a + 5b).",
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Concept Review", 22): {
+        "questionText": (
+            "Three positive numbers p, q and r satisfy "
+            "(q + r)/p = (p + r)/q = (p + q)/r = K. Find K."
+        ),
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(a)", 1): {
+        "questionText": (
+            "If a : b = 3 : 7, what is the value of (4a + 5b)/(2a + 2b)?"
+        ),
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(a)", 6): {
+        "options": [
+            "(p + q)/3",
+            "(3p - q)/4",
+            "(p - q)/(p + q)",
+            "(q - 3p)/4",
+        ],
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(a)", 16): {
+        "questionText": (
+            "If k = (a + c)/(b + d) = (c + e)/(d + f) = "
+            "(a + e)/(b + f), when all quantities are positive, then which "
+            "of the following must be true?"
+        ),
+        "options": ["k = e/f", "k = a/b", "k = c/d", "All of the above"],
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(a)", 18): {
+        "questionText": (
+            "The mean proportional between two numbers is 9 and the third "
+            "proportional of the two numbers is 243. Find the larger of the two numbers."
+        ),
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(a)", 19): {
+        "questionText": (
+            "P and Q are distinct two-digit numbers. Pₛ and Qₛ denote the sums "
+            "of the digits in P and Q respectively. If P/Pₛ = Q/Qₛ, find the "
+            "minimum possible value of Pₛ + Qₛ."
+        ),
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(b)", 2): {
+        "questionText": (
+            "Which of the following represents a possible value of p : q satisfying "
+            "(20p² - 40pq)/(pq + 4q²) = 20?"
+        ),
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(b)", 3): {
+        "questionText": (
+            "If a : b = 3 : 4 and c : d = 2 : 3, find "
+            "(a³c² + b³d²)/(ab²d² + a²bcd)."
+        ),
+        "options": ["19/3", "19/4", "19/9", "19/18"],
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(b)", 11): {
+        "options": ["1/3", "1/5", "1/4", "2/5"],
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(b)", 14): {
+        "questionText": (
+            "The ratio of the prices of tea last year and this year is 5 : 6. "
+            "The ratio of the prices of coffee last year and this year is 7 : 8. "
+            "The sum of the prices of a kg of tea and a kg of coffee this year is "
+            "₹48. Find the price of tea (in ₹) last year if it was 20/21 of the "
+            "price of coffee last year."
+        ),
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(b)", 15): {
+        "questionText": (
+            "₹117 was supposed to be divided among Rohan, Sohan and Mohan in the "
+            "ratio 2 : 3 : 4. By mistake, it was divided in the ratio "
+            "1/2 : 1/3 : 1/4. Find Rohan's loss or gain due to this mistake (in ₹)."
+        ),
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(b)", 24): {
+        "questionText": (
+            "If (a² + c²)/(a + c) = (b² + c²)/(b + c) = k and a ≠ b, "
+            "which of the following is equal to k?"
+        ),
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(b)", 25): {
+        "questionText": (
+            "If (p + q)/r = (q + r)/p = (p + r)/q = k, find the sum of all "
+            "possible values of k."
+        ),
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(b)", 26): {
+        "questionText": (
+            "If (2x² - 4x + 3)/(4x - 3) = "
+            "(2x² - 3x + 5)/(3x - 5), find the value(s) of x."
+        ),
+    },
+    ("SM1001906_Chapter-2_RPV.pdf", "Exercise 2(b)", 30): {
+        "options": ["2 : 1", "4 : 1", "3 : 1", "√2 : 1"],
+    },
+    ("SM1001906_Chapter-7_(AMA).pdf", "Concept Review", 25): {
+        "questionText": (
+            "A vessel has 20 litres of a mixture of milk and water having 60% milk. "
+            "Five litres of pure milk is added to the vessel. Find the percentage "
+            "of milk in the new solution."
+        ),
+    },
+    ("SM1001906_Chapter-7_(AMA).pdf", "Exercise 7(a)", 6): {
+        "options": [
+            "1/n = (x - y)/(a - b)",
+            "1/n = (a - b)/(y - x)",
+            "1/n = (x + y)/(a + b)",
+            "1/n = (a + b)/(x + y)",
+        ],
+    },
+    ("SM1001906_Chapter-7_(AMA).pdf", "Exercise 7(a)", 11): {
+        "questionText": (
+            "Four classes take an algebra test: Class A has 32 students with an "
+            "average of 83; Class B has 58 students with an average of 76; Class C "
+            "has 82 students with an average of 85; and Class D has 48 students with "
+            "an average of 90. Find the combined average score of all four classes."
+        ),
+    },
+    ("SM1001906_Chapter-7_(AMA).pdf", "Exercise 7(a)", 17): {
+        "options": [
+            "₹128/7 per kg",
+            "₹120/7 per kg",
+            "₹141/7 per kg",
+            "₹149/7 per kg",
+        ],
+    },
+    ("SM1001906_Chapter-7_(AMA).pdf", "Exercise 7(a)", 21): {
+        "questionText": (
+            "Raju bought 40 kg of coffee powder costing ₹240/kg and 60 kg of another "
+            "variety costing ₹360/kg. He mixed them and sold 4/5 of the mixture at "
+            "₹360/kg and the rest at ₹270/kg. What overall profit percentage did he make?"
+        ),
+        "options": ["9 8/13%", "11 4/7%", "5 5/11%", "17 2/19%"],
+    },
+    ("SM1001906_Chapter-7_(AMA).pdf", "Exercise 7(a)", 29): {
+        "questionText": (
+            "A vessel contains 100 litres of a milk-and-water mixture with 90% milk. "
+            "Each time, 10% of the contents is withdrawn and replaced with an equal "
+            "amount of water. What is the minimum number of repetitions needed for "
+            "the milk concentration to fall below 66 2/3%?"
+        ),
+    },
+    ("SM1001906_Chapter-7_(AMA).pdf", "Exercise 7(b)", 4): {
+        "questionText": (
+            "A basketball player played nine matches and averaged 16 points per match. "
+            "His score in the i-th match was two less than in the (i - 1)-th match. "
+            "Find the average points scored in the second and eighth matches."
+        ),
+    },
+    ("SM1001906_Chapter-7_(AMA).pdf", "Exercise 7(b)", 9): {
+        "options": ["9", "10", "11 7/11", "11 5/11"],
+    },
+    ("SM1001906_Chapter-7_(AMA).pdf", "Exercise 7(b)", 36): {
+        "questionText": (
+            "Three varieties of rice A, B and C costing ₹6/kg, ₹9/kg and ₹12/kg are "
+            "mixed in a certain ratio. The mixture is sold at a profit of 66 2/3% for "
+            "₹15/kg. Of the 100 kg mixture, 50 kg is variety B. Find the quantity of "
+            "variety A (in kg)."
+        ),
+    },
+    ("SM1001906_Chapter-7_(AMA).pdf", "Exercise 7(b)", 42): {
+        "questionText": (
+            "A certain alloy contains lead, copper and tin. How many kilograms of tin "
+            "are contained in 60 kilograms of the alloy? I. By weight, the alloy is "
+            "2/5 lead and 3/16 copper. II. By volume, the alloy is 1/3 lead and 1/3 copper."
+        ),
+    },
+}
+
+
+QUANT_TEXT_REPAIRS = {
+    "corre ct": "correct",
+    "corr ect": "correct",
+    "wri te": "write",
+    "adde d": "added",
+    "i s": "is",
+    "t he": "the",
+    "followi ng": "following",
+    "so n": "son",
+    "o f": "of",
+    "classe s": "classes",
+    "Fi nd": "Find",
+    "salar y": "salary",
+    "proportion al": "proportional",
+    "cov er": "cover",
+    "wat er": "water",
+    "pri ce": "price",
+    "g ets": "gets",
+    "thr ee": "three",
+    "va riety": "variety",
+    "T he": "The",
+    "rati o": "ratio",
+    "travell ed": "travelled",
+    "t ime": "time",
+    "sufficien t": "sufficient",
+    "als o": "also",
+    "fix ed": "fixed",
+    "fr om": "from",
+    "quant ity": "quantity",
+    "numbe r": "number",
+    "bel ow": "below",
+    "k g": "kg",
+    "th rice": "thrice",
+    "son s": "sons",
+    "an d": "and",
+    "tot al": "total",
+    "ye ar": "year",
+    "te a": "tea",
+    "gi rls": "girls",
+    "scholar s": "scholars",
+    "scho ol": "school",
+    "wha t": "what",
+    "su m": "sum",
+    "are as": "areas",
+    "questio ns": "questions",
+    "thei r": "their",
+    "le ngths": "lengths",
+    "squa re": "square",
+    "va lue": "value",
+    "mathemat ics": "mathematics",
+    "Mathema tics": "Mathematics",
+    "Engli sh": "English",
+    "lit res": "litres",
+    "stude nt": "student",
+    "resu lt": "result",
+    "mi lk": "milk",
+    "solutio n": "solution",
+    "conte nts": "contents",
+    "currentl y": "currently",
+    "variet y": "variety",
+    "ad ded": "added",
+    "w ith": "with",
+    "averag e": "average",
+    "inter est": "interest",
+    "p. a.": "p.a.",
+    "opthe": "of the",
+    "th an": "than",
+    "ag o": "ago",
+    "te sts": "tests",
+    "avera ge": "average",
+    "th e": "the",
+    "cost pric e": "cost price",
+    "to tal": "total",
+    "re sult": "result",
+    "var iation": "variation",
+    "par tly": "partly",
+    "staf f": "staff",
+    "uni ts": "units",
+    "sta ge": "stage",
+    "weig ht": "weight",
+    "aft er": "after",
+    "anot her": "another",
+    "dire ctly": "directly",
+    "equ al": "equal",
+    "i t": "it",
+    "ra tio": "ratio",
+    "rat io": "ratio",
+    "a re": "are",
+    "scor e": "score",
+    "shoul d": "should",
+    "sufficie nt": "sufficient",
+    "teach er": "teacher",
+    "thi rd": "third",
+    "tota l": "total",
+    "wate r": "water",
+    "weigh t": "weight",
+}
+
+
+def normalize_quant_content(value: Any) -> Any:
+    if isinstance(value, str):
+        value = value.replace("`", "₹").replace("ΙΙ", "II").replace("Ι", "I")
+        for damaged, repaired in QUANT_TEXT_REPAIRS.items():
+            value = re.sub(
+                rf"(?<![A-Za-z]){re.escape(damaged)}(?![A-Za-z])",
+                repaired,
+                value,
+            )
+        value = re.sub(r"\s+([,.;:?!])", r"\1", value)
+        return re.sub(r"\s+", " ", value).strip()
+    if isinstance(value, list):
+        return [normalize_quant_content(item) for item in value]
+    if isinstance(value, dict):
+        return {key: normalize_quant_content(item) for key, item in value.items()}
+    return value
+
+
 def clean_lines(text: str) -> str:
     kept: list[str] = []
     for line in text.replace("\u00a0", " ").splitlines():
@@ -668,6 +973,11 @@ def main() -> None:
                 f"{scheduled['id']}: {scheduled['pdfFile']} / {scheduled['location']}"
             )
             continue
+
+        source = dict(source)
+        if scheduled["topic"] in PURE_QUANT_TOPICS:
+            source = normalize_quant_content(source)
+            source.update(CONTENT_OVERRIDES.get(key, {}))
 
         level, label = difficulty(scheduled["day"], scheduled["dailyNumber"])
         source_pdf_url = f"/quant-sources/{scheduled['pdfFile']}"

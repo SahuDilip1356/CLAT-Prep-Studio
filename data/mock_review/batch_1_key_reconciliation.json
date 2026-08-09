@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03T12:57:04.535055+00:00",
+  "batchId": "CLAT-BATCH-001",
+  "status": "KEY_RECONCILIATION_COMPLETE_REVIEW_PENDING",
+  "summary": {
+    "sources": 5,
+    "expectedQuestions": 600,
+    "reconciledAnswers": 600,
+    "structurallyComplete": 600,
+    "byQueueStatus": {
+      "REVIEW_REQUIRED": 600
+    },
+    "byIssueCode": {
+      "EXPLANATION_DRAFT_REVIEW_REQUIRED": 141,
+      "KEY_ACADEMIC_APPROVAL_PENDING": 6,
+      "KEY_VISUAL_APPROVAL_PENDING": 594,
+      "QUESTION_PAGE_VISUAL_REVIEW": 501
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "SRC-0117",
+      "path": "CLAT Mock Papers/LE • Championship Mock 01 @CLAT_OWNER.pdf",
+      "provider": "LegalEdge",
+      "answerKeySourceIds": [
+        "SRC-0116"
+      ],
+      "questionPages": 32,
+      "answerKeyPages": 1,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 119,
+      "answerCandidatesAttached": 120,
+      "visualReviewQuestions": 21,
+      "safeImmediateYield": 119,
+      "yieldScore": 98.087,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 1,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 120,
+      "reconciledAnswers": 120,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "NATIVE_KEY_RECONCILED_PENDING_VISUAL_APPROVAL": 120
+      },
+      "status": "REVIEW_QUEUE_READY"
+    },
+    {
+      "sourceId": "SRC-0188",
+      "path": "CLAT Mock Papers/LPT • CLAT Advance Mock 20002 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0187"
+      ],
+      "questionPages": 49,
+      "answerKeyPages": 48,
+      "parsedQuestions": 113,
+      "fourOptionQuestions": 111,
+      "answerCandidatesAttached": 111,
+      "visualReviewQuestions": 113,
+      "safeImmediateYield": 111,
+      "yieldScore": 83.31,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 2,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 120,
+      "reconciledAnswers": 120,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "OCR_RECONCILED_PENDING_VISUAL_APPROVAL": 120
+      },
+      "status": "REVIEW_QUEUE_READY"
+    },
+    {
+      "sourceId": "SRC-0166",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 19 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0165"
+      ],
+      "questionPages": 50,
+      "answerKeyPages": 45,
+      "parsedQuestions": 115,
+      "fourOptionQuestions": 110,
+      "answerCandidatesAttached": 110,
+      "visualReviewQuestions": 115,
+      "safeImmediateYield": 110,
+      "yieldScore": 83.067,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 3,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 120,
+      "reconciledAnswers": 120,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "OCR_RECONCILED_PENDING_VISUAL_APPROVAL": 114,
+        "VISUAL_AUDIT_RECONCILED_PENDING_ACADEMIC_APPROVAL": 6
+      },
+      "status": "REVIEW_QUEUE_READY"
+    },
+    {
+      "sourceId": "SRC-0153",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 05 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0152"
+      ],
+      "questionPages": 40,
+      "answerKeyPages": 36,
+      "parsedQuestions": 117,
+      "fourOptionQuestions": 115,
+      "answerCandidatesAttached": 109,
+      "visualReviewQuestions": 117,
+      "safeImmediateYield": 109,
+      "yieldScore": 83.003,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 4,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 120,
+      "reconciledAnswers": 120,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "OCR_RECONCILED_PENDING_VISUAL_APPROVAL": 120
+      },
+      "status": "REVIEW_QUEUE_READY"
+    },
+    {
+      "sourceId": "SRC-0145",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 Advance Mock - 20004  @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [
+        "SRC-0146"
+      ],
+      "questionPages": 50,
+      "answerKeyPages": 45,
+      "parsedQuestions": 114,
+      "fourOptionQuestions": 112,
+      "answerCandidatesAttached": 108,
+      "visualReviewQuestions": 114,
+      "safeImmediateYield": 108,
+      "yieldScore": 81.15,
+      "selectionReason": "Highest expected verified-item yield after structural, answer and review-burden penalties.",
+      "rank": 5,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 120,
+      "reconciledAnswers": 120,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "OCR_RECONCILED_PENDING_VISUAL_APPROVAL": 120
+      },
+      "status": "REVIEW_QUEUE_READY"
+    }
+  ]
+}

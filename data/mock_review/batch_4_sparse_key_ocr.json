@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T16:23:04.038249+00:00",
+  "dpi": 350,
+  "pageSegmentationModes": [
+    3,
+    4,
+    6
+  ],
+  "targetedOnly": true,
+  "targetedReviewPages": 14,
+  "pages": [
+    {
+      "sourceId": "SRC-0136",
+      "sourceRevision": 1,
+      "sourceSha256": "312fd452ea4215fa463c91c57b61203c352242e082141df4297735ecea49c05e",
+      "pageNumber": 18,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial — MOCK CLAT 10024 : ANSWER & EXPLANATIONS\n\n42. Answer: C\nDifficulty level: Hard\nExplanation: Norway is a member of NATO and participates in the European Single Market\nthrough the European Economic Area (EEA), but it is not a member of the European Union (EU).\nFinland, Sweden, and Denmark are all members of both NATO and the EU. Therefore, Norway is\nthe only option that satisfies all three conditions.\n\n43. Answer: C\nDifficulty level: Moderate\nExplanation: India's Arctic engagement is not limited to scientific research. As an observer in the\nArctic Council since 2013, India can participate in discussions relating to Arctic governance,\ninternational law, climate policy, and geopolitical developments.\nThis demonstrates that India's interest in the Arctic extends beyond research to strategic and\ndiplomatic considerations.\nStatements (B), (C), and (D) are incorrect because India has no military presence, no sovereign\nrights over Arctic resources, and is not a founding member of the Arctic Council.\n\n44, Answer: C\nDifficulty level: Hard\nExplanation: Scandinavian countries = Denmark, Norway, and Sweden.\nNordic countries = Denmark, Norway, Sweden, Finland, and Iceland (plus associated territories).\nThe distinction becomes especially important in India—Nordic Summit discussions because the\nsummit includes all Nordic countries, not just the Scandinavian ones. Therefore, using\n“Scandinavian” instead of “Nordic” would exclude Finland and Iceland.\n\nAb. Answer: B\nDifficulty level: Moderate\nExplanation: + India and the Nordic countries are increasingly cooperating in the Indo-Pacific\nregion, particularly on maritime security, sustainable ocean governance, and freedom of\nnavigation.\nA major sign of this convergence is the institutionalisation of Maritime Security Dialogues and\nNorway's participation in the Indo-Pacific Oceans Initiative (IPO]), which aligns Nordic interests\nwith India's Indo-Pacific vision.\n\nA6. Answer: B\n\nDifficulty level: Moderate\n\nExplanation: In December 2028, Italy officially withdrew from China's Belt and Road Initiative\n(BRI). Italy had joined the BRI in 2019 and was the only G7 country to do so.\n\nThe withdrawal was welcomed by India because India has consistently opposed the BRI,\nparticularly due to concerns over the China—Pakistan Economic Corridor (CPEC) passing through\n\nterritory claimed by India.",
+      "ocrConfidence": 94.76,
+      "answerSignals": 3,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0136",
+      "sourceRevision": 1,
+      "sourceSha256": "312fd452ea4215fa463c91c57b61203c352242e082141df4297735ecea49c05e",
+      "pageNumber": 19,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial—\n\nAT.\n\n48.\n\n49.\n\n50.\n\n51.\n\nAnswer: A\n\nDifficulty level: Moderate\n\nExplanation: Malik Muhammed Jayasi was the first Indian Hindi Scholar. He wrote the famous\npoem ‘Padmavat’ (the story of Alauddin Khilji and Rani Padmini) during the reign of Sher Shah\n\nSuri.\n\nAnswer: B\n\nDifficulty level: Easy\n\nExplanation: Raja Todarmal was the finance minister (Mushrif i-Diwan) of Mughal Emperor\nAkbar, he was one of the navratnas of Akbar’s court.\n\nHe introduced land measurement system, Zabti/Dhasala system (revenue collection) and karori\n\nsystem.\n\nAnswer: D\n\nDifficulty level: Moderate\n\nExplanation: Statement 1 is correct because Shah Jahan built the Taj Mahal at Agra in memory\nof his wife Mumtaz Mahal, and it became the finest example of Mughal architecture.\n\nStatement 2 is also correct because the famous Peacock Throne was commissioned during Shah\nJahan’s reign and became a symbol of Mughal wealth and grandeur.\n\nStatement 3 is correct as Shah Jahan shifted the Mughal capital from Agra to Shahjahanabad, a\nnew city built in Delhi, where he also constructed the Red Fort and Jama Masjid. Therefore, all\n\nthe given statements are correct, making option (D) the right answer.\n\nAnswer: C\n\nDifficulty level: Moderate\n\nExplanation: Baburnama was not written in Urdu. It was originally written by Babur in\nChagatai Turkish (Turki), the literary language of the Timurids. Urdu had not yet developed into\na major literary language during Babur's time in the early sixteenth century.\n\nThe Baburnama is widely regarded as one of the earliest and most remarkable autobiographies in\nIslamic literature. Baburnama was translated into Persian during the reign of Emperor Akbar.\nThe translation was undertaken by Abdur Rahim Khan-i-Khanan, one of Akbar's prominent\nnobles and scholars. Since Persian was the official language of the Mughal court, the translation\nmade the work accessible to a wider audience within the empire.\n\nAnswer: A\n\nDifficulty level: Moderate\n\nExplanation: Babur introduced matchlock guns and field artillery on a large scale in North India,\ngiving him a significant military advantage.\n\nHis chief artillery experts were Ustad Ali Quli and Mustafa, who helped organize and deploy the\nartillery effectively.\n\nHowever, Babur did not learn artillery techniques from the Portuguese; he adopted Ottoman-style\nartillery methods through Turkish experts.\n\nTherefore, statements 1 and 2 are correct, while 3 is incorrect.\n\nMOCK CLAT 10024 : ANSWER & EXPLANATIONS",
+      "ocrConfidence": 95.26,
+      "answerSignals": 5,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0181",
+      "sourceRevision": 1,
+      "sourceSha256": "9ecdb1119c9b7c183a31972dedb20850682505e21c3f4cc14e0795667464494a",
+      "pageNumber": 23,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "— Tutorial — X-SERIES MOCK 50001 : ANSWER & EXPLANATIONS\nscaffolding. The author acknowledges \"the delightfully mundane\" and \"intermittently poignant\"\nelements. \"Intellectually worthless\" overstates the critique; the limitations are significant but not\ntotal.\n\nOption (b): Entirely laudatory, praising Rogers' comprehensive and groundbreaking\nsociological research methodology. — Incorrect. This is the opposite of the passage's\nposition. The author explicitly criticizes \"conspicuous omissions,\" \"institutional allegiances,\" \"rose-\ntinted appraisal,\" and \"naivety.\" The work is called \"ultimately constrained\" and \"editorially\ncircumscribed.\" There is no praise for comprehensiveness or groundbreaking methodology.\n\nOption (c): Critically appreciative, acknowledging value while exposing significant\nselective institutional limitations. — Correct. The author acknowledges the book's merits: it\nis \"diverting,\" contains \"arresting visuals,\" effectively deploys contextual scaffolding where\navailable, and treats search behaviour as capable of reflecting \"something genuine and substantive\nabout human nature.\" Simultaneously, the author exposes \"conspicuous omissions,\" corporate\nbias, naive interpretations, and selective curation. The balance — recognizing value while\ncritiquing limitations — defines critically appreciative tone. The final assessment (\"approach its\noptimistic conclusions with considerable scepticism\") confirms this balanced stance.\n\nOption (d): Neutral and objective, presenting the book's strengths and weaknesses\ndispassionately. — Incorrect. The author's tone is not neutral or dispassionate. Adjectives like\n\"rose-tinted,\" \"naivety,\" \"grotesque,\" \"egregiously,\" and \"damning\" convey strong evaluative\njudgment. The critique is pointed and morally charged, particularly regarding healthcare\ninequities and corporate complicity. While balanced in covering both merits and flaws, the\npresentation is emphatically critical, not neutral.\n\n44. Answer: A\nExplanation: Common Solution: Number of people working in the finance department in\nJaipur = 900.\n\nNumber of people working in the operations department in Kota = 900 x — = 765.\n\nNumber of people working in the support wing in Jaipur = 765 x — = 612.\n\nNumber of people working in the accounts wing in Jaipur = 765 x a = 459.\n\nTotal number of people working in Kota = 1650, thus the number of people working in marketing\ndepartment in Kota = 1650 — 765 = 885.\n\nThe difference between the number of employees working in the departments having the highest\nand lowest number of employees = 900 — 459 = 441.\n\n45. Answer: D\nExplanation: The total number of company employees working in Jaipur = 900 + 612 + 459 =\n1971.\n\nThe total number of company employees working in Kota = 1650.\nThus, the required percentage will be = X 100 = 119.45% = 119%.\n\n46. Answer: A\nExplanation: Out of 816, number of people transferred from Jaipur = 816 x , = 510. Number of\npeople transferred from accounts department = 510 x= = 150. The number of employees left\nworking in the accounts wing in Jaipur = 459 — 150 = 309.",
+      "ocrConfidence": 94.12,
+      "answerSignals": 3,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0181",
+      "sourceRevision": 1,
+      "sourceSha256": "9ecdb1119c9b7c183a31972dedb20850682505e21c3f4cc14e0795667464494a",
+      "pageNumber": 24,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n— Tutorial — X-SERIES MOCK 50001 : ANSWER & EXPLANATIONS\n\nAT. Answer: D\n\nExplanation: Amount received by A at the end of 3 years = 50000 x os = 59000\n\nAmount received by C at the end of 3 years = 40000 x a x a x - = 58080%.\n\nThus the required difference will be 59000 — 58080 = 920%.\n\n48. Answer: D\nExplanation: Amount received by B at the end of 3 years = ?72600 and the principal invested by\n\nhim was 60000. Thus, the interest earned by B in 3 years will be 72600 — 60000 = 12600. Interest\n12600\n3\n\nearned in 2 years will be x 2 = 8400. Thus, the amount accumulated at the end of 2 years will\n\nbe 60000 + 8400 = %68400.\n\n49. Answer: C\n\nExplanation: Total amount of money accumulated in bank Z at the end of 5 years will be\n\n40000 x =x=x2x 2x2 = 83635.2%\n10 10 5 5 5\n\n50. Answer: C\nExplanation: Amount received by B at the end of 3 years = 72600 and the principal invested by\nhim was 60000. Thus, the interest earned by B in 8 years will be 72600 — 60000 = 12600. Interest\n\n— = 4200. Thus, the rate of interest for B was — x 100 = 7%.\n\nRate of interest for D will be 7 x 2 = 14%.\n\nPrincipal invested by D will be 40000 x = = 75000%.\n\nearned in 1 year will be\n\n14x4\n100\n\nFurther, the market price of the scooter will be 42000 x - = 490002.\n\nNow, interest earned by D will be 75000 x = 420002.\n\n51. Answer: A\nExplanation: Assumption I: The previous sensory algorithms struggled to accurately\nidentify pedestrians under these specific conditions. This is implicit. If the manufacturer\nupdated algorithms to \"better detect\" pedestrians in these conditions, it logically follows that the\nprevious algorithms were insufficient or struggled with these specific scenarios. Otherwise, there\nwould be no need for an update targeting these conditions specifically.\nAssumption II: Improving pedestrian detection in low-light scenarios is critical for the\nsafe deployment of autonomous vehicles. This is implicit. Manufacturers invest resources in\nupdates that address safety-critical issues. The fact that they specifically updated algorithms for\npedestrian detection in low-light urban environments suggests this is a safety priority. If it weren't\ncritical for safe deployment, there would be less urgency or justification for this specific update.\nAssumption III: Autonomous vehicles only operate in rural, brightly lit environments.\nThis is NOT implicit. In fact, this directly contradicts the statement. The statement explicitly\nmentions \"low-light urban environments,\" which means autonomous vehicles operate in urban (not\nrural) and low-light (not brightly lit) conditions. This assumption is false based on the statement\nitself.",
+      "ocrConfidence": 92.17,
+      "answerSignals": 4,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0148",
+      "sourceRevision": 1,
+      "sourceSha256": "69381f09913ade29f37d5db13f3f0fb3db9ed27110e6ffe50d6afe9cae9bf2ce",
+      "pageNumber": 13,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial—\n\n45.\n\n46.\n\nwhile also supplying drinking water to over 9,000 villages and 170 towns. Its power generation\ncapacity is 1,450 MW, produced through the River Bed Power House and the Canal Head Power\nHouse, with the generated electricity shared among Madhya Pradesh (57%), Maharashtra (27%),\nand Gujarat (16%).\n\nAnswer: B\n\nExplanation: Difficulty Level: Moderate\n\nThe prevalence of tank irrigation in Southern India is primarily driven by the unique geological\n\nand topographical characteristics of the Peninsular plateau, which make other forms of irrigation\n\nlike canals or wells highly difficult to implement.\n\nGeological and Topographical Factors\n\nHard Rock Structure: The Deccan Plateau is composed of ancient, hard crystalline rocks that\nare non-porous and impervious. This makes it extremely difficult and expensive to dig deep\nwells or borewells compared to the soft alluvial soils of Northern India.\n\nImpervious Surface: Because the underlying rock does not allow water to seep through easily,\nthere is very little natural percolation. This prevents the formation of large underground\naquifers but makes the surface ideal for catching and storing rainwater in natural or artificial\ndepressions.\n\nUndulating Terrain: The landscape of South India is naturally uneven with many natural\ndepressions and valleys. This topography allows for the easy construction of small earthen\ndams or bunds across streams to impound water, creating \"tanks\" with minimal engineering\neffort.\n\nHydrological and Climatic Reasons\n\nSeasonal Rivers: Unlike the perennial Himalayan rivers of the North, the rivers in Southern\nIndia (like the Krishna, Kaveri, and Godavari) are rain-fed and seasonal. They often dry up\nduring the summer, making year-round canal irrigation unreliable. Tanks act as vital storage\nreservoirs that hold monsoon water for use during the dry months.\n\nTorrential Rainfall: The region often receives intense bursts of rainfall during the monsoon.\nWithout tanks, this water would quickly run off into the sea due to the hard, rocky surface.\nTanks capture this \"torrential\" runoff, preserving it for agricultural use.\n\nEconomic and Social Factors\n\nLow Construction Cost: Since many tanks utilize natural depressions in the rocky terrain, the\ncost of building them is relatively low. Small-scale tanks can even be maintained by individual\nfarmers or local village communities.\n\nAncillary Benefits: Beyond irrigation, these tanks serve multiple purposes, including providing\ndrinking water for cattle, supporting local fisheries, and helping to slightly recharge the\nimmediate local water table.\n\nScattered Agricultural Fields: The nature of farming in the plateau region involves scattered\npatches of cultivable land. Large-scale canal networks are often not viable for such fragmented\n\nfields, making localized tanks a more practical solution.\n\nAnswer: D\n\nExplanation: Difficulty Level: Hard\n\nMOCK CLAT 10002 : ANSWER & EXPLANATIONS",
+      "ocrConfidence": 96.12,
+      "answerSignals": 2,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0148",
+      "sourceRevision": 1,
+      "sourceSha256": "69381f09913ade29f37d5db13f3f0fb3db9ed27110e6ffe50d6afe9cae9bf2ce",
+      "pageNumber": 14,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial—\n\nAT.\n\n48.\n\n49,\n\nIn Maharashtra, sugarcane cultivation is paradoxically concentrated in water-stressed regions like\nMarathwada and Western Maharashtra because it serves as a \"security crop\" with assured\nreturns through the Fair and Remunerative Price (FRP) and a well-established network of\ncooperative sugar mills. Despite occupying only about 4% of the state's total cultivable land, this\nthirst-intensive crop consumes more than 70% of the state's total irrigated water, primarily\nbecause many farmers still rely on inefficient flood irrigation rather than drip systems. The\nprimary disadvantages of this practice include the rapid depletion of groundwater—with borewells\nin some districts now reaching depths of over 1,000 feet—and the long-term degradation of soil\nhealth due to salinity and the loss of organic carbon. Furthermore, the massive diversion of water\nto sugarcane often triggers acute drinking water crises in neighboring villages during summer\nmonths, forcing a dependence on \"tanker economies\" and creating severe social and ecological\n\nimbalances in a region already prone to climate-induced droughts.\n\nAnswer: C\n\nAnswer: B\n\nAnswer: D\n\nExplanation: The Seventh Schedule of the Constitution of India, under Article 246, defines the\n\nlegislative jurisdiction of the Union and State governments. It embodies the federal character of\n\nthe Indian polity by providing a clear three-fold distribution of powers, ensuring that both levels of\ngovernment operate within their designated spheres.\n\nThe Three Lists of the Seventh Schedule\n\nThe Constitution classifies all legislative subjects into three functional categories:\n\n* List I— Union List: This list contains subjects of national importance that require a uniform\nlaw across the entire country. The Union Parliament has exclusive power to legislate on these\nmatters. It originally contained 97 subjects but currently includes 100.\n\no Examples: Defence, Foreign Affairs, Banking, Atomic Energy, Railways, Post and Telegraph,\nand Citizenship.\n\n- List II — State List: This list includes matters of local or regional importance where diversity in\nlegislation is beneficial to cater to specific state needs. State Legislatures have exclusive power\nto make laws here under normal circumstances. It originally had 66 subjects but now has 61.\n\no Examples: Police, Public Order, Agriculture, Public Health, Sanitation, Local Government, and\nFisheries.\n\n* List HI — Concurrent List: This list covers subjects where uniformity is desirable but not\nessential, allowing both the Union Parliament and State Legislatures to make laws. The\nconcept was borrowed from the Australian Constitution. It originally had 47 subjects and now\nhas 52.\n\no Examples: Education, Forests, Criminal Law, Marriage and Divorce, Trade Unions, and\nProtection of Wild Animals.\n\nKey Principles of Power Distribution\n\nThe distribution of power is governed by several constitutional safeguards and principles:\n\nMOCK CLAT 10002 : ANSWER & EXPLANATIONS",
+      "ocrConfidence": 94.75,
+      "answerSignals": 3,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0134",
+      "sourceRevision": 1,
+      "sourceSha256": "2011f4afb77fc206ac247a07de0547f445736b111aee46d6cd4ac92a03142628",
+      "pageNumber": 25,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial—\n\nMOCK CLAT 10011 : ANSWER & EXPLANATIONS\n\nPartner\nAgreement Name Comins Status Key Features\nThis was a fast-tracked, high-\nIndia-UAE United impact deal designed to\nComprehensive Arab Implemented provide preferential market\nEconomic Partnership Emirates (May 2022) access for Indian goods to the\nAgreement (CEPA) (UAE) UAE, a critical gateway to the\nGulf and Afric(a)\nProvides duty-free access for\nIndia-Australia over 96% of India's exports\nEconomic to Australia, covering key\n; . Implemented : ,\nCooperation and Australia (Dec 2022) sectors like textiles,\nTrade Agreement agriculture, and engineering.\n(ECTA) It is also strong on regulatory\ncooperation.\nIndia-Mauritius -_\ni. India’s first such agreement\nComprehensive . . .\n: with an = African nation,\nEconomic a Implemented . ;\n; Mauritius covering trade in goods, rules\nCooperation and (2021) ine :\n. of origin, and_ technical\nPartnership ;\nbarriers.\nAgreement (CECPA)\nAlthough a PTA (less\ncomprehensive than an FTA),\nIndia-Chile Impl a it is a vital step for access to\nPreferential Trade Chile a : the Latin American market,\nAgreement (PTA) focusing on products like\npharmaceutical and _ textile\ngoods.\n28. Answer: C\n\nDifficulty level — Hard\n\nExplanation: United Arab Emirates\n\nIRAN\n* UAE has a coastline on: Ce\n* Persian Gulf (Dubai, Abu Dhabi) Persian Gulf\n£) BAHRAIN\n\n* Gulf of Oman (Fujairah)\n\nis gi AE strategi to th “a nes\n\nThis gives U. strategic access to the Abi Diab, auemenaae\nArabian Sea without crossing the Strait\nSAUDI ARABIA\nof Hormuz. UAE\nOMAN\n\nWhy others are wrong:\nSaudi Arabia — Only Persian Gulf & Red Sea\nQatar & Bahrain — Only Persian Gulf\n\nPoint to keep in mind\n\nDesert (Rub’ al Khali / Empty Quarter) in the south\n\nCoastal plains along the Persian Gulf\n\nHajar Mountains in the east (along the Oman border)\nHighest point: Jebel Jais (~1,934 m), in Ras Al Khaimah",
+      "ocrConfidence": 85.31,
+      "answerSignals": 1,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0134",
+      "sourceRevision": 1,
+      "sourceSha256": "2011f4afb77fc206ac247a07de0547f445736b111aee46d6cd4ac92a03142628",
+      "pageNumber": 28,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10011 : ANSWER & EXPLANATIONS\n\n35. Answer: B\n\nDifficulty level — Easy\nExplanation: -In May 2023, the Meitei community, concentrated in the Imphal Valley, was\nseeking Scheduled Tribe (ST) status.\nGranting ST status to Meiteis would have:\n\nAllowed them access to reservation benefits in government jobs and education.\n\nChanged political representation dynamics in the hill districts, affecting Kuki-Zo and Naga\ntribal communities.\n\nTribal groups perceived this as a threat to their rights and privileges.\n\nThe immediate spark: a tribal solidarity march to protest the Meitei ST demand, which\nescalated into widespread ethnic violence.\n\nA) Narcotics trafficking — While trafficking exists in the northeast, it was not linked to\nthe outbreak of ethnic violence in May 2023.\n\nC) AFSPA introduction — AFSPA has existed in Manipur for decades; no new enforcement\ntriggered the May 2023 violence.\n\nD) Tribal demand to merge with Myanmar — There was no such demand, and Manipur\nremains fully part of India\n#AFSPA\n\nFull form: Armed Forces (Special Powers) Act, 1958.\n\nPurpose: To give special powers to the Indian Armed Forces in “disturbed areas” for\nmaintaining law and order.\n\nApplicable Areas: Sections of northeastern states (Manipur, Nagaland, Assam, Arunachal\n\nPradesh, etc) and Jammu & Kashmir (when declared disturbed).\n\n36. Answer: C\n\nDifficulty level — Easy\nExplanation: *Chief Minister N. Biren Singh resigned on 9 February 2025, leaving a power\nvacuum.\n\nAfter nearly a year of central administration via the Governor, the state was ready for a\nreturn to elected government.\n\nNemcha Kipgen, a Kuki-Zo MLA, was appointed as Deputy Chief Minister — the first\nwoman and first Kuki-Zo to hold this post.\nLegislative Context:\n\nThe Manipur Assembly has 60 seats, with BJP holding 37 seats, including 7 Kuki-Zo\nMLAs.\n\nThe Assembly term runs 2022-2027, so this government is within the current legislative\n\nterm.\n\n37. Answer: C\nDifficulty level — Moderate\nExplanation: Modern badminton is believed to have originated in India, where a game called\n“Poona” was played in the 19th century in Pune (then Poona). British army officers stationed in\nIndia learned the game and carried it back to England\n\n¢ International governing body: Badminton World Federation (BWF)",
+      "ocrConfidence": 94.59,
+      "answerSignals": 3,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0134",
+      "sourceRevision": 1,
+      "sourceSha256": "2011f4afb77fc206ac247a07de0547f445736b111aee46d6cd4ac92a03142628",
+      "pageNumber": 29,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial—\n\n38.\n\n39.\n\n40.\n\nHeadquarters: Kuala Lumpur, Malaysia\n\nBadminton became an official Olympic sport in 1992 (Barcelona Olympics).\nThomas Cup — Men’s team championship\n\nUber Cup — Women’s team championship\n\nSudirman Cup — Mixed team\n\nP. V. Sindhu — Olympic silver (2016), bronze (2020)\n\nSaina Nehwal — Olympic bronze (2012)\n\nAnswer: A\n\nDifficulty level — Easy\n\nExplanation: Bronze Medal — 2012 London Olympics\nEvent: Women’s Singles\nFirst Indian to win an Olympic medal in badminton\n\nFirst Indian woman shuttler to reach Olympic semifinals\n\nYear ||Player ||Medal |Event |\n|20 12 ||Saina Nehyyall|Bronze]Women’s Singles|\n|20 16 IP. V. Sindhu ||Silver |Women’s Singles|\n12020 (T okyo)||P. V. Sindhu ||[Bronze|Women’s Singles|\n\nNote : P. V. Sindhu is the first Indian woman to win two Olympic medals.\n1. Prakash Padukone : won all England open 1980\n2. Kidambi Srikanth : world championship silver\n\nAnswer: A\n\nDifficulty level — Moderate\n\nExplanation: The Badminton Asia Mixed Team Championships is a biennial continental\ntournament organized by Badminton Asia, where national teams from across Asia compete in\nmixed team matches — this means each tie consists of men’s singles, women’s singles, men’s\ndoubles, women’s doubles, and mixed doubles matches.\n\nThe 2025 edition was held from 11-16 February 2025 in Qingdao, China, and brought together\nthe top badminton nations of the continent.\n\nIndonesia upset China in the final, winning 3 matches to 1 and lifting the continental mixed\nteam trophy. This was significant because it was Indonesia’s first gold medal in this event since\nthe championship’s inception.\n\nBronze medals in the tournament went to Japan and Thailand, with both losing in the\n\nsemifinals.\n\nAnswer: C\nDifficulty level — Easy\nExplanation: The 2026 Winter Olympic Games will be jointly hosted by Milan and Cortina\nd'Ampezzo. This edition is officially known as the 2026 Winter Olympics (Milano-Cortina 2026).\nThis is significant because:\n\nIt marks the first time the Winter Olympics are officially branded under two host cities in\nItaly.\n\nMOCK CLAT 10011 : ANSWER & EXPLANATIONS",
+      "ocrConfidence": 92.91,
+      "answerSignals": 3,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0134",
+      "sourceRevision": 1,
+      "sourceSha256": "2011f4afb77fc206ac247a07de0547f445736b111aee46d6cd4ac92a03142628",
+      "pageNumber": 50,
+      "method": "tesseract_supplement_350dpi_psm4",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10011 : ANSWER & EXPLANATIONS\n\n92. Answer: D\nDifficulty: Easy\n\nExplanation: B is the lawyer.\n\n93. Answer: C\nDifficulty: Easy\nExplanation: E is the teacher.\n\n94, Answer: C\nDifficulty: Easy\n\nExplanation: Out of the given options “D — Engineer” is correct.\n\n95. Answer: D\nDifficulty: Easy\n\nExplanation: C is married to B and A is married to F, thus, option (d) is correct.\n\n96. Answer: C\nDifficulty: Easy\n\nExplanation: The pattern is explained below:\n\n3 2] bk fb\nr 24 bb f fe\n\nHence, the correct answer is option (c) 1.e., POQPR\n\n97. Answer: A\nDifficulty: Moderate\n\nExplanation: According to the given information we can make the following arrangement:\n\n{Shortest}\nF\n(India) (Japan) (Pakistan)\n\n| | |\n\n+ + +\n\nt t t\n\n| | |\n\nE B C\n(Burma) (Nepali) (China)\n{Tallest}\n\nAlso, the girls can be arranged in the descending order of their heights as follows:\nE>D>B>A>CoF\nA who belongs to Pakistan sits diagonally opposite to E.",
+      "ocrConfidence": 89.6,
+      "answerSignals": 6,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0134",
+      "sourceRevision": 1,
+      "sourceSha256": "2011f4afb77fc206ac247a07de0547f445736b111aee46d6cd4ac92a03142628",
+      "pageNumber": 53,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "— Tutorial — MOCK CLAT 10011 : ANSWER & EXPLANATIONS\nQuantitative Aptitude\n109. Answer: C\nDifficulty Level: Difficult\nExplanation: Common explanation: Since the cities lie on the same route then we can calculate\nthe distances as follows:\nFarmhouse Udaipur Ajmer Jaipur Kota Jodhpur\no_e—_—_-o—\\___JT_rhH——-0\n250km 350km 600 km 200 km 800 km\nLet the distance from Kota to Bikaner be d then:\nOO OO Nt Hd = 1300.\n60 60 90 90\nNow, the distance between Kota and Bikaner is 1300 km, and that between Kota and Jodhpur is\n800 km, thus the distance between Jodhpur and Bikaner will be 1300 — 800 = 500 km.\n110. Answer: A\nDifficulty Level: Moderate\nExplanation: — — — = = >x= 75.\n111. Answer: B\nDifficulty Level: Easy\nExplanation: Total Distance covered by Ram:\nFarmhouse to Jaipur = 1200 km\nJaipur to Udaipur = 600 + 350 = 950 km\nUdaipur to Kota = 350 + 600 + 200 = 1150 km\n=> 1200 + 950 + 1150 = 3300 km.\nTotal time taking by him to cover this distance in swift = aa = 55 hours.\n112. Answer: B\nDifficulty Level: Easy\nExplanation: Farmhouse—Ajmer = 600 km.\nSwift time = < = 10 hours\nVenue time = 10 - 2 =8 hours.\nVenue speed = = = 75 km/h.\n113. Answer: B\nDifficulty Level: Moderate\nExplanation: Safari speed = 90 km/h, Swift speed = 60 km/h.\nLet distance from Farmhouse to breakdown point = d km.\nHe travels d at 90 km/h in 10 hours => d = 90 x 10 = 900 km.\nReturns 900 km at 60 km/h = time = on = 15h.\nTotal distance = 900 + 900 = 1800 km\nTotal time =10+15=25h\nAverage speed = — = 72 km/h.",
+      "ocrConfidence": 89.13,
+      "answerSignals": 5,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0132",
+      "sourceRevision": 1,
+      "sourceSha256": "630b91f480f04d1bd3e331717841389a8e24b192ef7a55945e6451fc1874bee1",
+      "pageNumber": 48,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10007 : ANSWER & EXPLANATIONS\nLogical Reasoning\n83. Answer: D\nExplanation: Consider the following family tree.\nP (+)\nT (-)\nSince we do not know the gender of L, the correct answer will be option (D) Can’t be determined.\n84. Answer: C\nExplanation: Consider the following family trees for each option:\nOption (a)\nin\nT(-)\nQt) +H\nOption (b)\nH (+)\nT(-)\nQi) -— Ww\nOption (c)\nQ (+) -——-W (\") a S (+)\nN (+)\nOption (d)\nW (+)-——Q(-) an C (+)\nP (+)\nFrom the family trees, we can clearly see that in option (c) W is necessarily the sister of Q.",
+      "ocrConfidence": 86.17,
+      "answerSignals": 2,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0132",
+      "sourceRevision": 1,
+      "sourceSha256": "630b91f480f04d1bd3e331717841389a8e24b192ef7a55945e6451fc1874bee1",
+      "pageNumber": 50,
+      "method": "tesseract_supplement_350dpi_psm4",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10007 : ANSWER & EXPLANATIONS\n\nClearly, they are 4 + 3 = 7 km apart.\n\n93. Answer: B\n\nExplanation: The pattern is explained as follows:\n\nS E L DOM\n+2] +27 +2] +2f +2] +2]\nU C N BQ K\n\nFollowing the same pattern we get,\nB A S K E T\n+2] +2{ +2] +2{ +2] +2{\nD Y U_sit G R\n\nHence, option (b) is correct.\n\n94. Answer: D\nExplanation: B stays in building V.\n\nCommon Explanation: According to the given information we can tabulate the following results:\n\nPerson | Subject | Building\n\nA English | R\nB History | V\nC Maths | T\nD History | W\nE English | S\nF Maths | P\nG Maths | Q\n\n95. Answer: B\nExplanation: Out of the given options Maths — G — Q is definitely correct.\n\n96. Answer: C\nExplanation: C, F, and G evaluate the Maths papers.\n\n97. Answer: A\nDifficulty Level: Easy\nExplanation: Option A: (Correct main idea — This option is conclusive towards the author’s\nsuggestion of bridging the gaps)\nOption A most accurately captures the central idea of the passage because it integrates all the major\nargumentative strands the author develops and brings them together into a coherent conclusion. The\npassage begins by questioning why social discrimination remains difficult to prevent even within\n\ninstitutions meant to embody equality and social justice. This framing immediately places institutional",
+      "ocrConfidence": 90.41,
+      "answerSignals": 5,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0132",
+      "sourceRevision": 1,
+      "sourceSha256": "630b91f480f04d1bd3e331717841389a8e24b192ef7a55945e6451fc1874bee1",
+      "pageNumber": 66,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10007 : ANSWER & EXPLANATIONS\n\nQuantitative Aptitude\n\n109. Answer: B\nExplanation: The required average will be = = 195.\n\nCommon Solution for questions (Q.109 TO Q.114):\nVariables:\n\nSg, Stdg, Pg for Gaurav Towers\n* Sup Std, Py for Mall 21\n\nSc, Stdc, Pe for Crystal Palm\n\nGiven ratios:\n\nStd 9 9\n~—§ = - > Stdg =-S,\nSG 7 7\nStd 3\n\n3\nSM =7 > Stdy = 75M\n\nThis is twice P. > Pc = 162\nStdc\n\nwee = z = With Stdc + Sc = 324 = Stdc = 189,S, = 135\nCc\n\nStdg is 20% more than Stdy:\nStdg = 1.2 X Stdy\n\nSubstitute Stdg = *Sq and Stdy = = Su\n\n7Sq = 1.2 x= Sy\n\n“Sg = 0.9Sy\n\nSg = 0.9Sy x7\n\nSo = 0.7Sy\n\nStdg == x 0.784 = 0.9Sy4\n\nStdy = 0.7581\n\nPu is 33.33% less than Pc: Py = - x 162 = 108\nP_M is twice P_G: Pg = 54.\n\nSurface + Standard at M21:\n\nSm + Stdy = Sy + 0.75Sy = 1.75Sy\n\nSurface + Standard at GT: Sg + Stdg = 0.7Sy + 0.9Sy = 1.6Sy\n\nSum: 1.75Sy + 1.6Sy = 3.35Sy = 804\n\n804 20\nSu = —~ = 804x =\n3.35 67\n\n67 X 12 = 804 = 804/67 = 12\n\nSo 804 x\" = 12 x 20 = 240.\n\nSm = 240\n\nStdy = 0.75 x 240 = 180\n\nSg = 0.7 xX 240 = 168\n\nStdg = 0.9 x 240 = 216\n\nPy = 54, Py = 108, Po = 162\n\nFrom earlier: Sc = 135,Stdc = 189.\nGaurav Towers: 168 + 216 + 54 = 438\nMall 21: 240 + 180 + 108 = 528\nCrystal Palm: 135 + 189 + 162 = 486\nGrand total: 438 + 528 + 486 = 1452",
+      "ocrConfidence": 83.69,
+      "answerSignals": 1,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    }
+  ]
+}

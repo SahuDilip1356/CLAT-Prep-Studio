@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-07T01:13:00+00:00",
+  "batchId": "CLAT-BATCH-015",
+  "status": "QUESTION_DIGITIZATION_SELECTED_KEY_ACQUISITION_PENDING",
+  "selectionPolicy": {
+    "exam": "CLAT",
+    "targetMocks": 5,
+    "ranking": "next five indexed full CLAT mocks whose question text is available but whose official answer key is missing; AILET and section-only compilations are excluded",
+    "publicationRule": "Questions may be repaired and classified now; scoring and learner publication remain blocked until an authoritative key is paired and academically approved."
+  },
+  "summary": {
+    "eligibleSources": 10,
+    "selectedSources": 5,
+    "selectedSafeImmediateYield": 0,
+    "remainingMissingKeySources": 5
+  },
+  "selected": [
+    {
+      "sourceId": "SRC-0096",
+      "path": "CLAT Mock Papers/CL • CLAT 2027 Prime Mock 06 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [],
+      "questionPages": 32,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 12,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 1
+    },
+    {
+      "sourceId": "SRC-0097",
+      "path": "CLAT Mock Papers/CL • Countdown MOCK 01 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [],
+      "questionPages": 30,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 7,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 2
+    },
+    {
+      "sourceId": "SRC-0115",
+      "path": "CLAT Mock Papers/LE • CLAT 2027 PDF MOCK 18 @CLAT_OWNER.pdf",
+      "provider": "LegalEdge",
+      "answerKeySourceIds": [],
+      "questionPages": 32,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 31,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 3
+    },
+    {
+      "sourceId": "SRC-0158",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 09 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [],
+      "questionPages": 30,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 120,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper required deterministic recovery of damaged question numbers and option glyphs from rendered evidence; official answer key is not present.",
+      "rank": 4
+    },
+    {
+      "sourceId": "SRC-0190",
+      "path": "CLAT Mock Papers/LPT- CLAT MOCK 2027 MOCK-01 @CLAT_OWMER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [],
+      "questionPages": 31,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 120,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper required deterministic recovery of one damaged question number from rendered evidence; official answer key is not present.",
+      "rank": 5
+    }
+  ],
+  "remaining": {
+    "missingKeySources": 5,
+    "nextSourceId": "SRC-0193"
+  }
+}

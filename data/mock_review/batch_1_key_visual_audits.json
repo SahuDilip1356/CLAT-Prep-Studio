@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "policy": "Implementation visual audit confirms transcription only and never substitutes for named academic approval.",
+  "pages": [
+    {
+      "sourceId": "SRC-0165",
+      "sourceSha256": "29f821d239c317d1410c412e64f453df1beafd6c1231d6896186aa763e4cdb9f",
+      "page": 45,
+      "renderedImage": "/review-assets/batch-1/SRC-0165-p0045.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-03T00:00:00+00:00",
+      "answers": {
+        "115": "C",
+        "116": "B",
+        "117": "D",
+        "118": "C",
+        "119": "C",
+        "120": "B"
+      }
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-07T03:39:07.863908+00:00",
+  "questionSources": 5,
+  "pageExtractionAvailable": 5,
+  "parsedQuestionCandidates": 600,
+  "verifiedStagingQuestions": 0,
+  "answerCandidatesAttached": 0,
+  "byStatus": {
+    "EXTRACTED_UNSCORED": 5
+  },
+  "byModule": {
+    "ENGLISH": 120,
+    "GK": 140,
+    "LEGAL": 150,
+    "LOGICAL": 130,
+    "QUANT": 60
+  },
+  "sources": [
+    {
+      "sourceId": "SRC-0193",
+      "status": "EXTRACTED_UNSCORED",
+      "parsedQuestions": 120,
+      "verifiedStagingQuestions": 0,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 19,
+      "byModule": {
+        "ENGLISH": 24,
+        "GK": 28,
+        "LEGAL": 30,
+        "LOGICAL": 26,
+        "QUANT": 12
+      }
+    },
+    {
+      "sourceId": "SRC-0194",
+      "status": "EXTRACTED_UNSCORED",
+      "parsedQuestions": 120,
+      "verifiedStagingQuestions": 0,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 34,
+      "byModule": {
+        "ENGLISH": 24,
+        "GK": 28,
+        "LEGAL": 30,
+        "LOGICAL": 26,
+        "QUANT": 12
+      }
+    },
+    {
+      "sourceId": "SRC-0195",
+      "status": "EXTRACTED_UNSCORED",
+      "parsedQuestions": 120,
+      "verifiedStagingQuestions": 0,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 19,
+      "byModule": {
+        "ENGLISH": 24,
+        "GK": 28,
+        "LEGAL": 30,
+        "LOGICAL": 26,
+        "QUANT": 12
+      }
+    },
+    {
+      "sourceId": "SRC-0196",
+      "status": "EXTRACTED_UNSCORED",
+      "parsedQuestions": 120,
+      "verifiedStagingQuestions": 0,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 23,
+      "byModule": {
+        "ENGLISH": 24,
+        "GK": 28,
+        "LEGAL": 30,
+        "LOGICAL": 26,
+        "QUANT": 12
+      }
+    },
+    {
+      "sourceId": "SRC-0197",
+      "status": "EXTRACTED_UNSCORED",
+      "parsedQuestions": 120,
+      "verifiedStagingQuestions": 0,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 17,
+      "byModule": {
+        "ENGLISH": 24,
+        "GK": 28,
+        "LEGAL": 30,
+        "LOGICAL": 26,
+        "QUANT": 12
+      }
+    }
+  ],
+  "removedStaleCandidateArtifacts": [],
+  "publicationRule": "Only VERIFIED_STAGING artifacts are learner-facing; all OCR candidates remain quality-gated."
+}

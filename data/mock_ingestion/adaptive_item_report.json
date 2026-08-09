@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03T04:06:17.423178+00:00",
+  "rubricVersion": "clat-content-prior-v1",
+  "candidatePriors": 11138,
+  "verifiedAdaptiveItems": 492,
+  "verifiedMockOverlays": 480,
+  "verifiedStandaloneItems": 12,
+  "candidateSourceStatus": {
+    "EXTRACTED_UNSCORED": 6265,
+    "PARSE_REVIEW_REQUIRED": 3169,
+    "READY_FOR_HUMAN_REVIEW": 895,
+    "VERIFIED_STAGING": 809
+  },
+  "candidateDifficultyByModule": {
+    "ENGLISH": {
+      "Foundation": 711,
+      "Exam Standard": 1184,
+      "Advanced": 474
+    },
+    "GK": {
+      "Foundation": 686,
+      "Exam Standard": 1143,
+      "Advanced": 457
+    },
+    "LEGAL": {
+      "Foundation": 686,
+      "Exam Standard": 1144,
+      "Advanced": 457
+    },
+    "LOGICAL": {
+      "Foundation": 883,
+      "Exam Standard": 1471,
+      "Advanced": 588
+    },
+    "QUANT": {
+      "Foundation": 376,
+      "Exam Standard": 627,
+      "Advanced": 251
+    }
+  },
+  "verifiedDifficultyByModule": {
+    "ENGLISH": {
+      "Foundation": 29,
+      "Exam Standard": 48,
+      "Advanced": 19
+    },
+    "GK": {
+      "Foundation": 34,
+      "Exam Standard": 56,
+      "Advanced": 22
+    },
+    "LEGAL": {
+      "Foundation": 36,
+      "Exam Standard": 60,
+      "Advanced": 24
+    },
+    "LOGICAL": {
+      "Foundation": 31,
+      "Exam Standard": 52,
+      "Advanced": 21
+    },
+    "QUANT": {
+      "Foundation": 18,
+      "Exam Standard": 30,
+      "Advanced": 12
+    }
+  },
+  "verifiedByModule": {
+    "ENGLISH": 96,
+    "GK": 112,
+    "LEGAL": 120,
+    "LOGICAL": 104,
+    "QUANT": 60
+  },
+  "verifiedSkillCoverage": {
+    "ENG.COMPREHENSION": 2,
+    "ENG.DETAIL": 4,
+    "ENG.GRAMMAR": 1,
+    "ENG.INFERENCE": 52,
+    "ENG.MAIN_IDEA": 5,
+    "ENG.TONE_PURPOSE": 8,
+    "ENG.VOCAB_CONTEXT": 24,
+    "GK.ECONOMY": 5,
+    "GK.ENVIRONMENT": 6,
+    "GK.GENERAL": 4,
+    "GK.HISTORY_CULTURE": 4,
+    "GK.INTERNATIONAL": 43,
+    "GK.POLITY_LAW": 40,
+    "GK.SCI_TECH": 6,
+    "GK.SPORTS_AWARDS": 4,
+    "LEGAL.CONSTITUTION": 37,
+    "LEGAL.CONTRACT": 40,
+    "LEGAL.CRIMINAL": 25,
+    "LEGAL.PRINCIPLE": 12,
+    "LEGAL.TORT": 6,
+    "LOGIC.ARRANGEMENT": 13,
+    "LOGIC.ASSUMPTION": 5,
+    "LOGIC.CAUSE": 16,
+    "LOGIC.CRITICAL": 27,
+    "LOGIC.FLAW": 11,
+    "LOGIC.INFERENCE": 13,
+    "LOGIC.STRENGTHEN_WEAKEN": 17,
+    "LOGIC.SYLLOGISM": 2,
+    "QUANT.AVERAGE": 4,
+    "QUANT.DATA": 25,
+    "QUANT.PERCENT": 30,
+    "QUANT.RATIO": 1
+  },
+  "candidateSkillCoverage": {
+    "ENG.COMPREHENSION": 250,
+    "ENG.DETAIL": 99,
+    "ENG.GRAMMAR": 243,
+    "ENG.INFERENCE": 845,
+    "ENG.MAIN_IDEA": 175,
+    "ENG.PARAGRAPH": 9,
+    "ENG.TONE_PURPOSE": 333,
+    "ENG.VOCAB_CONTEXT": 415,
+    "GK.ECONOMY": 120,
+    "GK.ENVIRONMENT": 31,
+    "GK.GENERAL": 164,
+    "GK.HISTORY_CULTURE": 63,
+    "GK.INTERNATIONAL": 475,
+    "GK.POLITY_LAW": 1240,
+    "GK.SCI_TECH": 149,
+    "GK.SPORTS_AWARDS": 44,
+    "LEGAL.APPLICATION": 163,
+    "LEGAL.CONSTITUTION": 1024,
+    "LEGAL.CONTRACT": 396,
+    "LEGAL.CRIMINAL": 377,
+    "LEGAL.FAMILY_PROPERTY": 87,
+    "LEGAL.JURISPRUDENCE": 54,
+    "LEGAL.PRINCIPLE": 125,
+    "LEGAL.TORT": 61,
+    "LOGIC.ANALYTICAL": 221,
+    "LOGIC.ARRANGEMENT": 443,
+    "LOGIC.ASSUMPTION": 155,
+    "LOGIC.CAUSE": 559,
+    "LOGIC.CRITICAL": 232,
+    "LOGIC.FLAW": 268,
+    "LOGIC.INFERENCE": 620,
+    "LOGIC.STRENGTHEN_WEAKEN": 330,
+    "LOGIC.SYLLOGISM": 114,
+    "QUANT.ARITHMETIC": 40,
+    "QUANT.AVERAGE": 21,
+    "QUANT.DATA": 730,
+    "QUANT.INTEREST": 3,
+    "QUANT.MENSURATION": 32,
+    "QUANT.NUMBER": 23,
+    "QUANT.PERCENT": 267,
+    "QUANT.PROFIT": 11,
+    "QUANT.RATIO": 125,
+    "QUANT.SPEED": 2
+  },
+  "publicationRule": "Only items in adaptive_verified_mock_bank.json are selectable; JSONL candidates are priors for review only."
+}

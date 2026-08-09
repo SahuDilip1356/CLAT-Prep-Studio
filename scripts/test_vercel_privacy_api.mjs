@@ -3,7 +3,7 @@ import privacyHandler from '../api/privacy.js';
 import cronHandler from '../api/privacy-cron.js';
 import webhookHandler from '../api/parent-verification-webhook.js';
 import {
-  claimChildConsent,
+  activateChildAccount,
   createParentConsentRequest,
   finalizeAdultConsent,
   submitDataPrincipalRequest
@@ -61,7 +61,7 @@ const tests = [
   }],
   ['Child activation requires authenticated Google user', async () => {
     await expectCode(
-      claimChildConsent.invoke({ auth: undefined, data: {}, rawRequest: {} }),
+      activateChildAccount.invoke({ auth: undefined, data: {}, rawRequest: {} }),
       'unauthenticated'
     );
   }],

@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03T04:06:17.487423+00:00",
+  "sourceEvents": "data/mock_ingestion/telemetry/item_attempts.jsonl",
+  "privacy": "Only aggregate item statistics are retained; learner keys are not copied.",
+  "items": []
+}

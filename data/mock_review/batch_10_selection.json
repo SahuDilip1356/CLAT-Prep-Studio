@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T16:20:00+00:00",
+  "batchId": "CLAT-BATCH-010",
+  "status": "QUESTION_DIGITIZATION_SELECTED_KEY_ACQUISITION_PENDING",
+  "selectionPolicy": {
+    "exam": "CLAT",
+    "targetMocks": 5,
+    "ranking": "next five indexed CLAT mocks whose question text is available but whose official answer key is missing",
+    "publicationRule": "Questions may be repaired and classified now; scoring and learner publication remain blocked until an authoritative key is paired and academically approved."
+  },
+  "summary": {
+    "eligibleSources": 35,
+    "selectedSources": 5,
+    "selectedSafeImmediateYield": 0,
+    "remainingMissingKeySources": 30
+  },
+  "selected": [
+    {
+      "sourceId": "SRC-0066",
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 13 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "answerKeySourceIds": [],
+      "questionPages": 47,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 0,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 1
+    },
+    {
+      "sourceId": "SRC-0067",
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 14 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "answerKeySourceIds": [],
+      "questionPages": 45,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 0,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; final Quant option-marker defects were repaired from rendered evidence; official answer key is not present.",
+      "rank": 2
+    },
+    {
+      "sourceId": "SRC-0068",
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 15 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "answerKeySourceIds": [],
+      "questionPages": 42,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 0,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 3
+    },
+    {
+      "sourceId": "SRC-0069",
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 16 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "answerKeySourceIds": [],
+      "questionPages": 53,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 0,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 4
+    },
+    {
+      "sourceId": "SRC-0070",
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 17 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "answerKeySourceIds": [],
+      "questionPages": 47,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 0,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 5
+    }
+  ],
+  "remaining": {
+    "missingKeySources": 30,
+    "nextSourceId": "SRC-0071"
+  }
+}

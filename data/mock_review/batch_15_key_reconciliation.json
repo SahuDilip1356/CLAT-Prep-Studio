@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-07T01:15:21.668438+00:00",
+  "batchId": "CLAT-BATCH-015",
+  "status": "QUESTION_DIGITIZATION_COMPLETE_KEY_ACQUISITION_PENDING",
+  "summary": {
+    "sources": 5,
+    "expectedQuestions": 600,
+    "reconciledAnswers": 0,
+    "structurallyComplete": 600,
+    "byQueueStatus": {
+      "BLOCKED": 600
+    },
+    "byIssueCode": {
+      "ANSWER_KEY_SOURCE_MISSING": 600,
+      "EXPLANATION_REQUIRED": 600,
+      "QUESTION_PAGE_VISUAL_REVIEW": 290
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "SRC-0096",
+      "path": "CLAT Mock Papers/CL • CLAT 2027 Prime Mock 06 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [],
+      "questionPages": 32,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 12,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 1,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0097",
+      "path": "CLAT Mock Papers/CL • Countdown MOCK 01 @CLAT_OWNER.pdf",
+      "provider": "Career Launcher",
+      "answerKeySourceIds": [],
+      "questionPages": 30,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 7,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 2,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0115",
+      "path": "CLAT Mock Papers/LE • CLAT 2027 PDF MOCK 18 @CLAT_OWNER.pdf",
+      "provider": "LegalEdge",
+      "answerKeySourceIds": [],
+      "questionPages": 32,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 31,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 3,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0158",
+      "path": "CLAT Mock Papers/LPT • CLAT 2027 MOCK 09 @CLAT_OWNER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [],
+      "questionPages": 30,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 120,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper required deterministic recovery of damaged question numbers and option glyphs from rendered evidence; official answer key is not present.",
+      "rank": 4,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0190",
+      "path": "CLAT Mock Papers/LPT- CLAT MOCK 2027 MOCK-01 @CLAT_OWMER.pdf",
+      "provider": "Law Prep Tutorial",
+      "answerKeySourceIds": [],
+      "questionPages": 31,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 120,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper required deterministic recovery of one damaged question number from rendered evidence; official answer key is not present.",
+      "rank": 5,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    }
+  ]
+}

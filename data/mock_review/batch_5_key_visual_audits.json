@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "policy": "Implementation visual audit confirms transcription only and never substitutes for named academic approval.",
+  "pages": [
+    {
+      "sourceId": "SRC-0177",
+      "sourceSha256": "6469dc4fe3c003fefecb0f802f1707fbd5bf04b50a0b5667a1a713035524034f",
+      "page": 10,
+      "renderedImage": "/review-assets/batch-5/SRC-0177-p0010.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"32": "C"}
+    },
+    {
+      "sourceId": "SRC-0177",
+      "sourceSha256": "6469dc4fe3c003fefecb0f802f1707fbd5bf04b50a0b5667a1a713035524034f",
+      "page": 27,
+      "renderedImage": "/review-assets/batch-5/SRC-0177-p0027.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"82": "B"}
+    },
+    {
+      "sourceId": "SRC-0143",
+      "sourceSha256": "572da7cc2f5ec7b3be51506e2e80d800374a7d1662442d554211c89108183a91",
+      "page": 32,
+      "renderedImage": "/review-assets/batch-5/SRC-0143-p0032.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"104": "C", "105": "B"}
+    },
+    {
+      "sourceId": "SRC-0143",
+      "sourceSha256": "572da7cc2f5ec7b3be51506e2e80d800374a7d1662442d554211c89108183a91",
+      "page": 33,
+      "renderedImage": "/review-assets/batch-5/SRC-0143-p0033.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"106": "A", "107": "C"}
+    },
+    {
+      "sourceId": "SRC-0143",
+      "sourceSha256": "572da7cc2f5ec7b3be51506e2e80d800374a7d1662442d554211c89108183a91",
+      "page": 34,
+      "renderedImage": "/review-assets/batch-5/SRC-0143-p0034.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"108": "A", "109": "A", "110": "D", "111": "C", "112": "B"}
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "page": 1,
+      "renderedImage": "/review-assets/batch-5/SRC-0163-p0001.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"2": "C"}
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "page": 3,
+      "renderedImage": "/review-assets/batch-5/SRC-0163-p0003.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"13": "D"}
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "page": 6,
+      "renderedImage": "/review-assets/batch-5/SRC-0163-p0006.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"25": "B"}
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "page": 12,
+      "renderedImage": "/review-assets/batch-5/SRC-0163-p0012.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"58": "A"}
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "page": 17,
+      "renderedImage": "/review-assets/batch-5/SRC-0163-p0017.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"74": "C", "76": "D"}
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "page": 18,
+      "renderedImage": "/review-assets/batch-5/SRC-0163-p0018.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"77": "D"}
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "page": 26,
+      "renderedImage": "/review-assets/batch-5/SRC-0163-p0026.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"109": "D", "110": "A", "111": "A", "112": "B", "113": "C", "114": "B"}
+    },
+    {
+      "sourceId": "SRC-0161",
+      "sourceSha256": "f40729c74acb6784142df3fc12720c09e94b9af83717bb94570ec68ce6b03a20",
+      "page": 12,
+      "renderedImage": "/review-assets/batch-5/SRC-0161-p0012.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"48": "A", "49": "D", "50": "A"}
+    },
+    {
+      "sourceId": "SRC-0161",
+      "sourceSha256": "f40729c74acb6784142df3fc12720c09e94b9af83717bb94570ec68ce6b03a20",
+      "page": 33,
+      "renderedImage": "/review-assets/batch-5/SRC-0161-p0033.jpg",
+      "auditor": "Codex implementation visual audit",
+      "auditedAt": "2026-08-05T16:48:00+00:00",
+      "answers": {"119": "A", "120": "B"}
+    }
+  ]
+}

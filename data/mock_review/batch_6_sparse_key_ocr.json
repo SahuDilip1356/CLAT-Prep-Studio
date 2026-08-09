@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T17:32:11.863513+00:00",
+  "dpi": 350,
+  "pageSegmentationModes": [
+    3,
+    4,
+    6
+  ],
+  "targetedOnly": true,
+  "targetedReviewPages": 5,
+  "pages": [
+    {
+      "sourceId": "SRC-0167",
+      "sourceRevision": 1,
+      "sourceSha256": "8c566fad9d8091c9421f4f383fed81bb3c85977785d5acd30a28bc4be27dbe5c",
+      "pageNumber": 2,
+      "method": "tesseract_supplement_350dpi_psm4",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10020 : ANSWER & EXPLANATIONS\n\n8. Answer: D\nExplanation: Production in 2nd week = 1,400; Production in 1st week = 700.\nDifference = 1,400 — 700 = 700 cycles.\nThis represents a 100% increase from Week 1 to Week 2, showing the sharpest week-on-week jump\n\nin the entire period.\n\n9. Answer: D\nExplanation: Percentage increase = [(5th week — 4th week) / 4th week] x 100\n= [(1,600 — 900) / 900] x 100\n= (700 / 900) x 100\n= 77.78% = 77.8%.\n\n10. Answer: B\nExplanation: Five-week average = 1,120 cycles.\nChecking each week: 1st (700 < 1120), 2nd (1400 > 1120 V), 38rd (1000 < 1120), 4th (900 < 1120),\n5th (1600 > 1120 Vv).\nOnly the 2nd and 5th weeks exceeded the average — a total of 2 weeks.\n\n11. Answer: D\nExplanation: Cycles in 2nd week = 1,400; Cycles in 5th week = 1,600.\nCombined production = 1,400 + 1,600 = 3,000 cycles.\nTotal Revenue = 3,000 x %1,500 = %45,00,000.\n\n12. Answer: D\nExplanation: Statement I: First two weeks = 700 + 1,400 = 2,100; Last two weeks = 900 + 1,600 =\n2,500. Since 2,100 < 2,500, Statement I is TRUE.\nStatement II: Ratio = 2,100 : 2,500 = 21 : 25 (dividing by HCF = 100). Statement IT is TRUE.\nStatement III: Average of 2nd and 4th weeks = (1,400 + 900) / 2 = 2,300 / 2 = 1,150 # 1,000.\nStatement III is FALSE.\n\nTherefore, only Statements I and II are correct — Option D.",
+      "ocrConfidence": 92.91,
+      "answerSignals": 5,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0154",
+      "sourceRevision": 1,
+      "sourceSha256": "127f41aab6d346630a59c31071a05975e0c8aba312e3ca85f96d1415672f343f",
+      "pageNumber": 2,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "— Tutorial — MOCK CLAT 10006 : ANSWER & EXPLANATIONS\n7. Answer: B\nDifficulty Level: Easy\nExplanation: (a) Incorrect, he draws spirals instead of studying.\n(b) Correct, he \"drew spirals in the margins of his school notes while he waited.\"\n(c) Incorrect, no argument is mentioned.\n(d) Incorrect, he's surrounded by books but not reading them.\n8. Answer: B\nDifficulty Level: Medium\nExplanation: (a) Incorrect, he notes a technical loophole, not total dishonesty.\n(b) Correct, he promised to \"sit... surrounded by books\" but omitted studying, so not fully breaking his\nword.\n(c) Incorrect, he hopes his father won't discover it for months.\n(d) Incorrect, as B fits the text.\n9. Answer: D\nDifficulty Level: Hard\nExplanation: (a) Incorrect, father's knowledge of the account is uncertain, not confirmed neglect.\n(b) Correct, it's \"digital money, the only kind the dead can have.\"\n(c) Correct, he \"had already used that account on other occasions.\"\n(d) Correct, as both (b) and (c) are directly supported.\n10. Answer: B\nDifficulty Level: Medium\nExplanation: (a) Incorrect, criticism is implied but not overt.\n(b) Correct, Marvin doubts father will \"find the time to discover anything else about his son again.\"\n(c) Incorrect, no warmth is shown.\n(d) Incorrect, Marvin shows cunning, not fear.\n11. Answer: B\nDifficulty Level: Easy\nExplanation: (a) Incorrect, it's a literal tablet message for kentuki startup.\n(b) Correct, it's the tablet display during kentuki setup process.\n(c) Incorrect, unrelated to grades directly.\n(d) Incorrect, that's about the savings account separately.\n12. Answer: B\nDifficulty Level: Hard\nExplanation: (a) Incorrect, no metaphorical burden; it's physical description.\n(b) Correct, vivid detail shows his small size/childlike state visually.\n(c) Incorrect, irony would contrast maturity with action, but deceit is separate.\n(d) Incorrect, only (b) fits as clear imagery of youth.\n13. Answer: C\nDifficulty Level: Easy\nExplanation: (a) Incorrect. Durbeyfield is not a farmer.\n(b) Incorrect. Durbeyfield is not a parson; the parson is Tringham.",
+      "ocrConfidence": 94.68,
+      "answerSignals": 7,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0154",
+      "sourceRevision": 1,
+      "sourceSha256": "127f41aab6d346630a59c31071a05975e0c8aba312e3ca85f96d1415672f343f",
+      "pageNumber": 3,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10006 : ANSWER & EXPLANATIONS\n\n(c) Correct. Durbeyfield explicitly identifies himself as \"plain Jack Durbeyfield, the haggler.\"\n\n(d) Incorrect. There is no mention of clerical work.\n\n14, Answer: D\nDifficulty Level: Easy\nExplanation: The description of physical wear correlates with his humble occupation (haggler with an\negg-basket). These details foreshadow the irony of his sudden \"nobility.\" Options B and C are both\nsupported by the passage's emphasis on material detail reflecting social status. Option A overstates the\n\nimplication of age-related decline. Option D is the most complete answer.\n\n15. Answer: B\nDifficulty Level: Easy\nExplanation: The parson explicitly states he had \"resolved not to disturb you with such a useless piece\nof information,\" showing he anticipated problems. His hesitation reflects this moral uncertainty. Option\nB captures his prescient worry. Option A contradicts his confident delivery. Option C misses the\n\nseriousness of the hesitation. Option D is incorrect since B is valid.\n\n16. Answer: D\nDifficulty Level: Medium\nExplanation: The parson later admits \"I thought you might perhaps know something of it all the\nwhile,\" and his repetition of the title suggests he was probing whether Durbeyfield would eventually\nrecognize the hint. Option D identifies this strategy. Option A mischaracterizes the tone as cruel rather\nthan exploratory. Option B assumes knowledge the parson doesn't attribute to him. Option C doesn't\n\naccount for the pattern's purpose.\n\n17. Answer: B\nDifficulty Level: Medium\nExplanation: The entire passage is constructed around the contrast between Durbeyfield's actual\ncurrent state (a worn-down haggler) and his alleged ancestral nobility (descended from William the\nConqueror's knights). Option B identifies this central irony. Option A ignores the complication of\ncurrent degradation. Option C underestimates Hardy's foreshadowing of tragic implication. Option D\n\noverstates the parson's evaluative role.\n\n18. Answer: B\nDifficulty Level: Hard\nExplanation: The observation of \"debased\" features—degraded versions of ancestral traits—implies\nthat each generation has declined physically and socially. This visual correlation reinforces the\npassage's pattern of inherited nobility worn away by time and circumstance. Option B identifies this\nimplication. Option A reverses causality inappropriately. Option C makes a moral judgment the\n\npassage doesn't support. Option D is incorrect since B is valid.\n\n19. Answer: A\nDifficulty Level: Easy\nExplanation: A) Correct, black clothing covers skin and buttons are removed to prevent torchlight\nreflection, specifically addressing Coast Guard, Guardia Nacional, and bandit risks. B) Incorrect, no\nmention of weather protection or cold; focus is on concealment for night travel. C) Incorrect, while\n\nfishermen wear simple clothes, the emphasis is on hiding reflective elements like skin, not blending",
+      "ocrConfidence": 94.97,
+      "answerSignals": 6,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0140",
+      "sourceRevision": 1,
+      "sourceSha256": "0a1bcf1a523123b50bd67239c5e0eac1d8d6c534f5efb6b18ac75827f9198ac3",
+      "pageNumber": 24,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial—\n\nMOCK CLAT 10014 : ANSWER & EXPLANATIONS\n\nThis option suggests social acceptance or general agreement, which is unrelated to the meaning of\n“provisional” in the passage. The focus of the passage is on the instability of peace, not on whether\nit is accepted by people. In fact, the presence of “anticipation and unease” indicates that people do\nnot fully accept the situation as stable. Thus, this option fails to capture the intended meaning and\n\nis incorrect.\n\nCurrent Affairs Including General Knowledge\n\n25. Answer: D 26. Answer: A 27. Answer: D 28. Answer: C 29. Answer: B\n30. Answer: A 31. Answer: C 32. Answer: A 33. Answer: B 34. Answer: C\n35. Answer: B 36. Answer: A 37. Answer: A 38. Answer: A 39. Answer: B\n40. Answer: B 41. Answer: A 42. Answer: A 43. Answer: D 44, Answer: B\n45. Answer: A 46. Answer: D 47. Answer: A 48. Answer: C 49. Answer: B\n50. Answer: B 51. Answer: B 52. Answer: C\n\nLegal Reasoning\n\n53. Answer: D\nReference Line: \"Mahbub Shah v. Emperor emphasised that common intention implies prior\nconcert and is distinct from similar intention, which is merely a simultaneous inclination of\nseveral persons acting independently.\"\nExplanation: (A): Incorrect. No presumption of common intention arises from simultaneous\naction. The prosecution bears the affirmative burden of establishing a prior meeting of minds;\nSection 3(5) does not shift this burden merely because two persons' acts coincide in time and place.\n(B): Incorrect. The fact that a criminal act is done by several persons satisfies only the first\ningredient of Section 3(5). A common intention shared among all accused — established through a\nprior meeting of minds — is a distinct and equally mandatory element that cannot be bypassed.\n(C): Incorrect. Section 3(5) is not triggered by the commission of the same offence by multiple\npersons against the same victim. Synchronous violence is evidence courts may consider, but it does\nnot discharge the requirement of proving a pre-arranged plan or an on-the-spot meeting of minds.\n(D): Correct. As held in Mahbub Shah v. Emperor, common intention is categorically distinct from\nsimilar intention. Two persons independently attacking the same victim, each acting on a separate\nand unconnected impulse, share only similar intention — not common intention — within the\nmeaning of Section 3(5). Temporal and spatial coincidence without a pre-arranged plan cannot\n\nground joint liability.\n\n54. Answer: C\nReference Line: \"participation need not take the form of direct physical commission of the\noffence; assistance, instigation, or facilitation at the scene in furtherance of the pre-arranged plan\nsuffices.\"\nExplanation: (A): Incorrect. The mere fact that the killing was not expressly discussed does not\nautomatically make it an independent act. Where participants jointly execute an armed robbery,\ncourts may infer that acts done to carry out that plan — including use of force to overcome\n\nresistance — can fall within the scope of the common intention.",
+      "ocrConfidence": 95.29,
+      "answerSignals": 8,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0140",
+      "sourceRevision": 1,
+      "sourceSha256": "0a1bcf1a523123b50bd67239c5e0eac1d8d6c534f5efb6b18ac75827f9198ac3",
+      "pageNumber": 42,
+      "method": "tesseract_supplement_350dpi_psm4",
+      "text": "LAW PREP\n\n— Tutorial —~ MOCK CLAT 10014 : ANSWER & EXPLANATIONS\ny\nWoody Case? <—R\nt\nPp | Vv\n\nT is the immediate neighbour of either of P or U, but not the both. Q sits second to the left of U.\n\nFrom the above condition, casel gets eliminated. Case 2 shows the final arrangement.\n\nQ\n\n| ’\n\n5s\nU | Q\n\nw — > Case? <+— kr\n\n98. Answer: B\n99. Answer: D\n100. Answer: B\n101. Answer: D\n102. Answer:A\n\n103. Answer: D\nExplanation: Common Explanation 103-108: In this type of question, we will look for the\ncommon words between all the three sentences Let’s just take an example: First word is\nConference We can see that Conference word is in first two sentences and now we will look for the\ncommon words between the two sentences and the common word is “CE” Now we will decode all\nthe words with the codes:\n\nWords Codes\nConference CE\nParliamentary PY\nAspirants AS\nPersonal PL\nCommonwealth/Author | CH/AE\nOnline OE\nOffline FL\nGuidance GE\n\nValidity VY",
+      "ocrConfidence": 88.98,
+      "answerSignals": 6,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    }
+  ]
+}

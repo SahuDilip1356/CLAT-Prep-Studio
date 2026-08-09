@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T16:41:40.678472+00:00",
+  "dpi": 350,
+  "pageSegmentationModes": [
+    3,
+    4,
+    6
+  ],
+  "targetedOnly": true,
+  "targetedReviewPages": 16,
+  "pages": [
+    {
+      "sourceId": "SRC-0177",
+      "sourceRevision": 1,
+      "sourceSha256": "6469dc4fe3c003fefecb0f802f1707fbd5bf04b50a0b5667a1a713035524034f",
+      "pageNumber": 9,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10028 : ANSWER & EXPLANATIONS\n\nFundamental Duty of citizens relating to environmental protection including forest, lakes, rivers\n\nand wildlife. Therefore, Article 48A is the correct answer.\n\n27. Answer: C\nExplanation: The Environment (Protection) Act, 1986 gives a broad definition of the\nenvironment. It includes water, air and land, along with their interrelationship with human\nbeings, other living creatures, plants, micro-organisms and property. Therefore, it is incorrect to\nsay that the Act defines environment only in terms of forests and wildlife. The Act was enacted\nafter India’s participation in the 1972 Stockholm Conference and empowers the Central\nGovernment to issue directions for environmental protection. Bhopal Gas Tragedy 1984 was also\n\none of the reason behind this act. Hence, option (c) is the correct answer.\n\n28. Answer: C\nExplanation: Principle 21 of the Stockholm Declaration balances two ideas: a State’s sovereign\nright to exploit its own resources and its responsibility not to cause environmental damage beyond\nits jurisdiction. This principle is widely treated as a foundational statement of the no-harm rule in\nenvironmental law. Principle 24 deals more broadly with international cooperation. Hence,\n\nPrinciple 21 is the correct answer.\n\n29. Answer: A\nExplanation: India hosted the global World Environment Day celebration in 2018. The theme\nthat year was “Beat Plastic Pollution,” which focused on reducing plastic waste and single-use\nplastic. World Environment Day 2026 was hosted by Azerbaijan, not India. The theme for the year\n2026 is “Inspired by Nature. For Climate. For Our Future.” The first World Environment Day\ncelebration took place in 1973 and was not hosted by India.\nThe Rio Earth Summit was held in 1992, but World Environment Day had already been\n\nestablished in 1972. Hence, option (a) is the correct answer.\n\n30. Answer: C\nExplanation: Nagpur City was listed under the High-Level Engagement category in the 50@50:\nCities Beating the Heat initiative. The initiative was linked with World Environment Day 2026\nand focused on helping cities respond to extreme heat and climate-related urban risks. Mumbai\nand Delhi were also associated with the wider initiative, but not under the High-Level\n\nEngagement category. Therefore, Nagpur City is the correct answer.\n\n31. Answer: D\nExplanation: World Environment Day 2026 used the campaign hashtag #NowForClimate.\nThe phrase reflected the urgency of climate action in a year marked by concern over heat,\nemissions and climate risks. The campaign message focused on moving beyond delay and\nstrengthening collective action. #BeatPlasticPollution has been associated with plastic pollution\ncampaigns, especially in earlier World Environment Day themes. #OnlyOneEarth and\n#GenerationRestoration are also linked with earlier environmental campaigns. Hence, option (d) is\n\nthe correct answer.",
+      "ocrConfidence": 95.51,
+      "answerSignals": 5,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0177",
+      "sourceRevision": 1,
+      "sourceSha256": "6469dc4fe3c003fefecb0f802f1707fbd5bf04b50a0b5667a1a713035524034f",
+      "pageNumber": 10,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "— Tutorial — MOCK CLAT 10028 : ANSWER & EXPLANATIONS\n\n32. Answer: C\nExplanation: The exploration licence mechanism permits reconnaissance and prospecting\noperations for deep-seated and critical minerals mentioned in the Seventh Schedule of the MMDR\nAct. The reform was intended to attract specialised exploration agencies and private participation\nin minerals such as lithium, cobalt, nickel, rare earth elements and tungsten. The First Schedule\nis relevant for other statutory classifications, but the exploration licence is linked to the Seventh\nSchedule. Hence, Option (c) is the correct answer.\n\n33. Answer: D\nExplanation: Under the critical mineral policy framework, 24 critical minerals were included in\nPart D of the First Schedule of the Mines and Minerals (Development and Regulation) Act, 1957.\nThis gives the Central Government the exclusive authority to auction mining leases and composite\nlicences for these specified minerals. The step is meant to strengthen national control over\nstrategically important mineral resources. These minerals are crucial for clean energy\ntechnologies, batteries, electronics and strategic industries. District Mineral Foundations and\nregulatory bodies have different functions, but they do not hold this auction authority for these\nspecified minerals. Hence, option (d) is the correct answer.\n\n34. Answer: B\nExplanation: Khanij Bidesh India Ltd, commonly known as KABIL, signed an Exploration and\nDevelopment contract with a state-owned company in Argentina. The agreement relates to lithium\nblocks in Catamarca Province. Lithium is a key mineral for lithium-ion batteries, electric vehicles\nand energy storage systems. This deal is part of India’s effort to secure overseas critical mineral\nassets. Australia and Chile are also relevant to India’s critical mineral outreach, but the\nCatamarca lithium project is associated with Argentina. Hence, option (b) is the correct answer.\n\n35. Answer: D\nExplanation: KABIL is a joint venture of National Aluminium Company Ltd., Hindustan Copper\nLtd. and Mineral Exploration and Consultancy Ltd in the ratio of 40 : 30: 30. It was formed to\nensure supply-side assurance of critical and strategic minerals for India. Steel Authority of India\nLimited is a major steel PSU, but it is not one of the three KABIL partners. Hence, Option (d) is\nthe correct answer.\n\n36. Answer: A\nExplanation: Statement I is correct because the initiative was announced during the India-UK\nPrime Ministers’ bilateral engagement in October 2025. Statement III is also correct because it\nwas later formalised through a Research Collaboration Agreement signed in March 2026.\nStatement II is incorrect because the Observatory is not meant only for domestic coal mining\nauctions. Its purpose is to monitor global critical mineral supply chains, identify risks and support\ninformed decisions. Therefore, the first and third statements are correct, while the second\nstatement is incorrect. Hence, option (a) is the correct answer.\n\n37. Answer: C\nExplanation: India’s 2023 list of 30 critical minerals includes minerals such as rhenium,\nhafnium, tantalum, lithium, cobalt, graphite and rare earth elements. Uranium is not part of this",
+      "ocrConfidence": 95.3,
+      "answerSignals": 6,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0143",
+      "sourceRevision": 1,
+      "sourceSha256": "572da7cc2f5ec7b3be51506e2e80d800374a7d1662442d554211c89108183a91",
+      "pageNumber": 32,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "— Tutorial — MOCK CLAT 20001 : ANSWER & EXPLANATIONS\n104. Answer: C\nExplanation:\nP|\nCoos\n[oa\nC lives on floor 2, which is an even-numbered floor, and is immediately below B. As per the clues, this\nposition is occupied by the Scientist.\n105. Answer: B\nExplanation:\nPL =\nCocos\n[foams\nH lives immediately below the Teacher, and B is placed immediately below H. Hence, B (floor 3) and H\n(floor 4) live on adjacent floors.",
+      "ocrConfidence": 85.94,
+      "answerSignals": 2,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0143",
+      "sourceRevision": 1,
+      "sourceSha256": "572da7cc2f5ec7b3be51506e2e80d800374a7d1662442d554211c89108183a91",
+      "pageNumber": 33,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial—\n\n106. Answer: A\n\nExplanation:\n8|D DOCTOR\n7|E LAWYER\n6)A Arc/Bank\n5] F TEACHER\n4|H Bank/Arc\n3 | B | JOURNALIST\n2|C | SCIENTIST\n1|G] ENGINEER\n\nE lives on floor 7 and is a Lawyer.\n\n107. Answer: C\n\nExplanation:\n8|D DOCTOR\n7|E LAWYER\n6);A Arc/Bank\n5| F | TEACHER\n4|H Bank/Arc\n3 | B | JOURNALIST\n2}C} SCIENTIST\n1|G]| ENGINEER\n\nMOCK CLAT 20001 : ANSWER & EXPLANATIONS\n\nThe Doctor lives on floor 8, and E (the Lawyer) lives on floor 7, which is immediately below floor 8. All\n\nother statements contradict the given solution.",
+      "ocrConfidence": 82.46,
+      "answerSignals": 2,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0143",
+      "sourceRevision": 1,
+      "sourceSha256": "572da7cc2f5ec7b3be51506e2e80d800374a7d1662442d554211c89108183a91",
+      "pageNumber": 34,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 20001 : ANSWER & EXPLANATIONS\n108. Answer: A\nExplanation:\njs]. DOCTOR\nLAWYER\nje) a] Arc/Bank\nTEACHER\nBank/Arc\nBE JOURNALIST\nSCIENTIST\nENGINEER\nFrom the above arrangement we can see that F is a Teacher.\nQuantitative Aptitude\n109. Answer:A\nExplanation: Total number of rupee notes printed on Monday = 18% of 7500 = 18*75 = 1350\nNumber of Rs.100 notes printed on Monday = 1350 * 7/15 = 630\nTotal number of rupee notes printed on Friday = 22% of 7500 = 22 * 75 = 1650\nNumber of Rs.100 notes printed on Friday = 1650 * 2/5 = 660\nRequired average = ( 630 + 660 )/ 2 = 1290/2 = 645\n110. Answer: D\nExplanation: Total number of rupee notes printed on Tuesday = 24% of 7500 = 24 * 75 = 1800\nTotal number of rupee notes printed on Saturday = 116.67% of 1800 = 1800 * 7/6 = 2100\nNumber of Rs.200 notes printed on Saturday = 2100 * 60 / 100 = 2100 * 3/5 = 1260\nRequired percentage = 1260 / 1800 * 100 = 70%\n111. Answer: C\nExplanation: Total number of rupee notes printed on Tuesday and Friday (%) = 24 + 22 = 46\nTotal number of rupee notes printed on Monday and Wednesday (%) = 18 + 16 = 34\nRequired difference = (46 — 34)% of 7500 = 12% of 7500 = 12 * 75 = 900 more\n112. Answer: B\nExplanation: Total number of rupee notes printed on Wednesday=16% of 7500=16*75=1200\nNumber of Rs.100 notes printed on Wednesday=37.5% of 1200=1200*3/8=450\nTotal number of rupee notes printed on Thursday=20% of 7500=20*75=1500\nNumber of Rs.100 notes printed on Thursday=60% of 1500=900\nRequired percentage = (900 — 450) / 450 * 100 = 450 / 450 * 100 = 100%",
+      "ocrConfidence": 91.32,
+      "answerSignals": 5,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceRevision": 1,
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "pageNumber": 1,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10017 : ANSWER & EXPLANATIONS\n\nMOCK CLAT 10017 (ESSENTIAL)\nANSWER & EXPLANATIONS\n\nEnglish Language\n\n1. Answer: B\nDifficulty Level: Easy\nExplanation: A) Incorrect because the narrator specifically wanted \"only a few\" tourists and a\nplace that was \"not too many people like myself.\"\nB) Correct as the passage states the intention was to find a place \"quiet, but not somnolent\" to\n\"put my thoughts in order.\"\nC) Incorrect because the narrator moved west, specifically avoiding the historical sites located to\nthe east.\nD) Incorrect because the beach was only for \"solitude, which would at some point be required,\" not\n\nthe main purpose of the stay.\n\n2 Answer: C\nDifficulty Level: Medium\nExplanation: A) Incorrect; the airport is only mentioned as a landmark to determine directions\n(east/west), not a requirement for the stay.\nB) Incorrect; the text explicitly states \"sand was not\" a prerequisite.\nC) Correct; the narrator states \"the sea was a prerequisite.\"\n\nD) Incorrect; the narrator chose to drive away from the \"historical sites of significance.\"\n\n3. Answer: C\nDifficulty Level: Medium\nExplanation: A) Incorrect; the narrator noted that \"no English [was] overheard\" during their\nwalk.\nB) Incorrect; the beach was on the \"other side of the headland\" and not the reason the square was\nrejected.\nC) Correct; the text states the square \"was not in the centre\" and the café was \"no place for\nlingering.\"\n\nD) Incorrect; since A and B are factually wrong based on the text, D cannot be the answer.\n\nA, Answer: B\nDifficulty Level: Hard\nExplanation: A) Incorrect; this is the opposite of the \"quiet\" atmosphere the narrator was\nseeking.\nB) Correct; \"somnolent\" means drowsy or sleepy. The narrator wanted peace (\"quiet\") but still\nwanted \"activity to observe.\"\nC) Incorrect; while the narrator wanted activity, \"somnolent\" is used to describe what they didn't\nwant the quiet to turn into.\n\nD) Incorrect; the word refers to the energy or noise level of the town, not its historical value.",
+      "ocrConfidence": 94.87,
+      "answerSignals": 3,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceRevision": 1,
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "pageNumber": 3,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial — MOCK CLAT 10017 : ANSWER & EXPLANATIONS\n10. Answer: B\nReference Lines: \"Something uncoiled in my stomach, slow and languorous\"\nDifficulty Level: Hard\nExplanation: A) Incorrect; opposes the \"slow\" description.\nB) Correct; pairs with \"slow\" uncoiling sensation.\nC) Incorrect; no positive emotion.\nD) Incorrect; contradicts the deliberate pace.\n11. Answer: A\nReference Lines: \"I wondered again why Xavier had chosen such a crowded venue at such a busy\ntime, when we might just as easily have met elsewhere\"\nDifficulty Level: Medium\nExplanation: A) Correct; shows repeated questioning of the choice.\nB) Incorrect; timing is questioned specifically.\nC) Incorrect; the \"din pressed against me\" shows irritation.\n12. Answer: B\nReference Lines: \"the din pressed against me, crowding the inside of my head\"\nDifficulty Level: Hard\nExplanation: A) Incorrect; direct equation absent.\nB) Correct; noise given human actions of pressing/crowding.\nC) Incorrect; exaggeration present but secondary to personification.\nD) Incorrect; no \"like/as\" comparison.\n13. Answer: D\nReference Lines: \"his mind had abandoned him and left his body wandering down below... his\nsoul floated above the aisles\"\nDifficulty Level: Easy\nExplanation: A) Incorrect: the passage shows no excitement; customers later frustrate him.\nB) Incorrect: body moves \"listlessly,\" contradicting focus.\nC) Incorrect: Ann's absence noted later, not initial mental state.\nD) Correct: directly captures mind-body dissociation with \"pale and vacant-eyed\" body.\n14. Answer: A\nReference Lines: \"Ann McGee had the brass neck to call in sick again that morning\"\nDifficulty Level: Medium\nExplanation: A) Correct: idiomatic for bold, cheeky repeated absenteeism in negative context.\nB) Incorrect: sarcasm implies faked illness, not genuine.\nC) Incorrect: portrayed negatively as burdensome.\nD) Incorrect: refers to attitude, not physical harm.\n15. Answer: C\n\nReference Lines: \"resisting the urge to do the same to the customers... 'Gies three breasts, five\nthighs, and just wan wing the day, son\"\nDifficulty Level: Medium",
+      "ocrConfidence": 94.75,
+      "answerSignals": 6,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceRevision": 1,
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "pageNumber": 12,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10017 : ANSWER & EXPLANATIONS\n\nC) This is correct. For extortion to become robbery, the offender must be present and the threat\nmust be of instant death/hurt/restraint. A threat to post photos later via email lacks these\nelements.\n\nD) This is incorrect. While it describes Extortion, it fails the test for Robbery because the element\n\nof \"presence\" and \"instant death/hurt\" is missing.\n\n56. Answer: A\nDifficulty Level: Medium\nReference Line(s): \"Theft becomes robbery if, in order to the committing of the theft... the\noffender, for that end, voluntarily causes or attempts to cause to any person death or hurt.\"\nExplanation: A) This is correct. The passage states theft becomes robbery if the offender\n\"voluntarily causes... hurt\" in order to commit the theft. Snatching with such force implies a\nvoluntary disregard for the victim's safety to achieve the theft.\nB) This is incorrect. Snatching a chain with force sufficient to break it and cause bleeding is\nconsidered \"voluntarily causing hurt\" in the eyes of the law \"for that end\" (committing theft).\nC) This is incorrect. Threats are one way to make it robbery; actual hurt is another. Both are not\nrequired simultaneously.\nD) This is incorrect. Even without a verbal threat, causing hurt during the act converts it to\n\nrobbery.\n\n57. Answer: D\nDifficulty Level: Hard\nReference Line(s): \"Extortion becomes robbery if the offender... is in the presence of the person\nput in fear... fear of instant death, of instant hurt, or of instant wrongful restraint... and... induces\nthe person... then and there to deliver up the thing.\"\nExplanation: A) This is incorrect. Violence is not strictly necessary; the fear of instant hurt or\nrestraint is sufficient for robbery.\nB) This is incorrect. It is extortion (consent obtained via fear), not simple theft.\nC) This is incorrect because it is the aggravated form of extortion (Robbery).\nD) This is correct. All elements of Robbery via Extortion are met: Offenders are present, they\nthreaten \"instant wrongful restraint\" (blocking path/won't leave tonight), and delivery is \"then and\n\nthere.\"\n\n58. Answer: A\nDifficulty Level: Medium\nReference Line(s): \"Extortion becomes robbery if... the offender... commits the extortion by\nputting that person in fear of instant death... and... induces the person so put in fear then and\nthere to deliver up the thing.\"\nExplanation: A) This is correct. The passage emphasizes putting the person \"in fear of instant\ndeath or hurt.\" The victim's perspective (induced fear) and the offender's intent to create that fear\ndefine the crime, not the actual lethality of the weapon.\nB) This is incorrect. The law focuses on \"putting that person in fear.\" If the victim reasonably\n\nbelieves the threat is real, the definition is satisfied.",
+      "ocrConfidence": 95.46,
+      "answerSignals": 3,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceRevision": 1,
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "pageNumber": 13,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial—\n\n59.\n\n60.\n\n61.\n\nC) This is incorrect. Physical contact is not required for Extortion becoming Robbery; the induction\nof fear and delivery of property is sufficient.\nD) This is incorrect. It qualifies as Robbery because the fear was of instant harm and the offender\n\nwas present.\n\nAnswer: A\n\nDifficulty Level: Medium\n\nReference Line(s): \"In theft, the offender takes the moveable property without the possessor's\nconsent... In extortion, such consent 1s wrongfully obtained...\" AND \"Theft can only be committed\nwith regards to moveable property, whereas extortion can also be committed in case of immovable\nproperty.\" AND \"In case of theft, the question of overpowering of will does not arise... however\nthere is overpowering of will in case of extortion.\"\n\nExplanation: A) Correct. Statement I is correct per the passage (\"without the possessor’s consent\"\nvs \"consent is wrongfully obtained\"). Statement III is correct (\"overpowering of will does not arise\n[in theft]... however there is overpowering of will in case of extortion\").\n\nB) Incorrect. Statement II is false because the passage states the opposite: \"Theft can only be\ncommitted with regards to moveable property, whereas extortion can also be committed in case of\nimmovable property.\"\n\nC) Incorrect. Statement II is false (as explained above). Statement IV is also false because\nExtortion becoming Robbery requires more than just presence; it requires putting the person in\nfear of instant death/hurt/restraint and inducing delivery then and there.\n\nD) Incorrect. Statement IV is false (explained above). Only I and III are supported by the text.\n\nAnswer: A\n\nDifficulty Level: Hard\n\nReference Line(s): I (classic wager), II (collateral transaction, enforceable), III (presence of\nindependent business interest).\n\nExplanation: A) Correct — I is a pure wagering agreement as both parties depend solely on an\nuncertain event and have no other interest apart from the stake.\n\nB) Incorrect — II is only a collateral transaction and does not itself constitute a wagering\nagreement.\n\nC) Incorrect — II alone is not a wagering agreement as it is merely a loan.\n\nD) Incorrect — III involves independent business interests, which disqualifies it from being a\n\nwagering agreement as per the passage.\n\nAnswer: D\n\nDifficulty Level: Easy\n\nReference Line(s): \"Section 30... declares that agreements by way of wager are void... wagering\nagreements are void ab initio... This renders them unenforceable in a court of law.\"\n\nExplanation: A) Incorrect because the passage specifically states Section 65 does not apply to\nwagering agreements.\n\nB) Incorrect because Section 30 applies throughout India, not just specific states.\n\nC) Incorrect because willingness doesn't override Section 30's prohibition on wagering agreements.\n\nMOCK CLAT 10017 : ANSWER & EXPLANATIONS",
+      "ocrConfidence": 95.49,
+      "answerSignals": 3,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceRevision": 1,
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "pageNumber": 17,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial—\n\n73.\n\n74,\n\n75.\n\n76.\n\nAnswer: C\n\nDifficulty Level: Easy\n\nReference Line(s): \"Conservation of options, which means preserving biodiversity and genetic\nresources.\"\n\nExplanation: A) Incorrect - Conservation of access relates to equitable resource use rights, not\nmineral extraction rights.\n\nB) Incorrect - Sustainable development requires balancing all equity components, not favoring one\nactivity.\n\nC) Correct - Destroying unique orchid species eliminates biodiversity options for future\ngenerations.\n\nD) Incorrect - Conservation of quality concerns environmental conditions, not job creation benefits.\n\nAnswer: C\n\nDifficulty Level: Easy\n\nReference Line(s): \"Duty of the current generation to preserve the environment for future\ngenerations... present generation owes a duty to future generations to keep the environment\nclean.\"\n\nExplanation: A) Incorrect - Development rights must be equitable for present AND future\ngenerations per Rio Declaration.\n\nB) Incorrect - Principle specifically requires long-term responsibility over short-term gains.\n\nC) Correct - Wetlands destruction affects biodiversity and water for future generations’ use.\n\nD) Incorrect - Access component concerns natural resources, not commercial developments.\n\nAnswer: B\n\nDifficulty Level: Easy\n\nReference Line(s): \"Conservation of quality, which involves sustaining environmental quality.\"\nExplanation: A) Incorrect - Access ensures equitable resource USE, not access to pollutants or\nwaste.\n\nB) Correct - Pollution destroys river's quality making it unusable for future generations.\n\nC) Incorrect - Public participation supports principle implementation, not a core component.\n\nD) Incorrect - Conservation of options preserves biodiversity diversity, not just river fish\n\npopulations.\n\nAnswer: D\n\nDifficulty Level: Medium\n\nReference Line(s): \"The principle aims to balance environmental protection with development\nactivities between present and future generations.\"\n\nExplanation: A) Incorrect - Stockholm supports equitable development for ALL generations, not\nagriculture priority.\n\nB) Incorrect - Access is one component; balancing all interests is the core principle.\n\nC) Incorrect - Rio Declaration requires equity for present AND future generations equally.\n\nD) Correct - Principle specifically guides balancing current farmland vs future water/electricity\n\nneeds.\n\nMOCK CLAT 10017 : ANSWER & EXPLANATIONS",
+      "ocrConfidence": 94.64,
+      "answerSignals": 4,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0163",
+      "sourceRevision": 1,
+      "sourceSha256": "8dd769c7ca659df5d98716b472223a2f53106887c5bbe3b91e5f816e7b8125da",
+      "pageNumber": 26,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "— Tutorial — MOCK CLAT 10017 : ANSWER & EXPLANATIONS\nQuantitative Aptitude\n109. Answer: D\nExplanation: Sales in 1995 = =190 crore\nSales in 1996 = %250 crore\nSales in 1997 = 2340 crore\nTotal = €190 + $250 + %340 = 780 crore\n110. Answer:A\nExplanation: Profit in 1992 = 210 crore\nProfit in 1998 = %60 crore\nIncrease = <60 - 10 = %50 crore\nPercentage increase = (50/10) x 100 = 500%\n111. Answer: A\nExplanation: Profit margins:\n1993: (15/130) x 100 = 11.54%\n1996: (25/250) x 100 = 10%\n1997: (55/340) X 100 = 16.18%\n1998: (60/420) x 100 = 14.29%\nThe highest profit margin was in 1997 at 16.18%\n112. Answer:B\nExplanation: Total sales (1992-1998) = 130 + 130 + 140 + 190 + 250 + 340 + 420 = 21,600 crore\nNumber of years = 7\nAverage = 1,600/7 = 228.57 crore\n113. Answer: C\nExplanation: Sales in 1996 = =250 crore\nSales in 1998 = %420 crore\nIncrease = %420 - 250 = <170 crore\n114. Answer: B\nExplanation: Statement I: Sales progression: 130—-130—-140—-190—-250—340—420. Despite\nstagnation in 1998, there was no decline. (Correct)\nStatement II: Year-on-year profit increases:\n1993: 15-10 = 25 crore\n1994: 15-15 = 20 crore\n1995: 20-15 = 25 crore\n1996: 25-20 = %5 crore\n1997: 55-25 = %30 crore\n1998: 60-55 = 25 crore\nThe highest increase was in 1997. (Correct)",
+      "ocrConfidence": 86.5,
+      "answerSignals": 6,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0161",
+      "sourceRevision": 1,
+      "sourceSha256": "f40729c74acb6784142df3fc12720c09e94b9af83717bb94570ec68ce6b03a20",
+      "pageNumber": 11,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n\n— Tutorial — MOCK CLAT 10015 : ANSWER & EXPLANATIONS\n\n42.\n\n43.\n\n44,\n\n45.\n\n46.\n\n47.\n\nAnswer: C\n\nExplanation: The Defence Acquisition Council is the highest decision-making body for\ndefence procurement in India.\n\nIt is chaired by the Defence Minister, who approves major arms and equipment acquisitions.\nOthers:\n\nA: CDS handles military coordination, not procurement apex body.\n\nB: PM is not the chair of DAC.\n\nD: NSA deals with security strategy, not procurement decisions.\n\nAnswer: B\n\nExplanation: According to Stockholm International Peace Research Institute, the United States\naccounts for the largest share of global military expenditure, far exceeding other countries.\n\nOthers:\n\nChina is 2nd largest.\n\nRussia and India rank below them.\n\nAnswer: A\nExplanation: 1. Election Commission of India is a constitutional body under Article 324.\n2. It conducts elections for Parliament, State Legislatures, President & Vice-President.\n\n3. Itis independent, not under the Ministry of Home Affairs.\n\nAnswer: B\n\nExplanation: -Special Intensive Revision (SIR) is conducted by the Election Commission of\nIndia to update electoral rolls.\n\n-It ensures eligible voters are added and duplicate/ineligible names are removed,\nimproving accuracy.\n\nOthers:\n\nA: Elections # SIR purpose.\n\nC: Funding oversight is not part of SIR.\n\nD: Appointments are administrative, not related to SIR.\n\nAnswer: B\n\nExplanation: The Election Commission of India is a constitutional body under Article 324.\n\n-It has the power to supervise, direct, and control elections to Parliament, State Legislatures, and\nthe offices of President & Vice-President.\n\nOthers:\n\nA: Wrong — not a statutory body and not limited to Lok Sabha.\n\nC: Not a judicial body; election disputes go to courts.\n\nD: Its powers are not merely advisory, they are extensive and binding.\n\nAnswer: B\nExplanation: -Members of the Election Commission of India serve for 6 years or till 65 years of\n\nage (whichever is earlier).",
+      "ocrConfidence": 94.7,
+      "answerSignals": 6,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0161",
+      "sourceRevision": 1,
+      "sourceSha256": "f40729c74acb6784142df3fc12720c09e94b9af83717bb94570ec68ce6b03a20",
+      "pageNumber": 12,
+      "method": "tesseract_supplement_350dpi_psm6",
+      "text": "— Tutorial — MOCK CLAT 10015 : ANSWER & EXPLANATIONS\n-The Chief Election Commissioner (CEC) can be removed only like a Supreme Court judge\n(through a rigorous parliamentary process), ensuring independence.\n\n-Other Election Commissioners can be removed only on the recommendation of the CEC.\nOthers:\n\nA: Wrong tenure (5 years) and incorrect removal process.\n\nC: No fixed “only impeachment for all” rule; age limit exists.\n\nD: Not at the pleasure of the President.\n\n48. Answer: A\nExplanation: 1. Special Intensive Revision (SIR) by the Election Commission of India ensures\naccurate electoral rolls (add eligible, remove duplicates).\n\n2. It involves field verification by BLOs.\n3. Not fixed to every 10 years or Census; it is done as needed, often before elections.\n\n49. Answer: D\nExplanation: 1. Salma Dam (2016) is a hydroelectric + irrigation project built with India’s\nsupport.\n\n2. Zaranj—Delaram Highway connects Afghanistan to Chabahar Port and was built by India’s\nBorder Roads Organisation, helping bypass Pakistan.\n\n3. Afghan Parliament Building was constructed by India as a symbol of democratic support.\n\n4. Shahtoot Dam Project aims to provide drinking water to Kabul and support irrigation.\n\n50. Answer: A\nExplanation: 1. Universal Declaration of Human Rights was adopted by the United Nations\nGeneral Assembly on 10 Dec 1948.\n\n2. It contains 30 articles outlining human rights.\n3. Itis not legally binding (not a treaty).\n4.10 Dec = Human Rights Day (since 1950).\n\n51. Answer: B\nExplanation: The Durand Line is the boundary between Afghanistan and Pakistan.\n\nIt was drawn in 1893 between British India and Afghanistan.\nKey point: Afghanistan has not formally recognized it as an international border, making it a\nsource of tension.\n\n52. Answer: B\nExplanation: Operation Ghazab—Lil—Haq was launched by Pakistan on Afghan targets.\n\nNur Khan Airbase is located in Rawalpindi (Pakistan) and was targeted in retaliation.\nWhy others are wrong:\n\nA: Operation not by Afghanistan; Nur Khan is not in Kabul.\n\nC: 12th Division HQ is in Quetta, not Peshawar.\n\nD: Operation not launched by Afghanistan.",
+      "ocrConfidence": 95.2,
+      "answerSignals": 5,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0161",
+      "sourceRevision": 1,
+      "sourceSha256": "f40729c74acb6784142df3fc12720c09e94b9af83717bb94570ec68ce6b03a20",
+      "pageNumber": 30,
+      "method": "tesseract_supplement_350dpi_psm4",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10015 : ANSWER & EXPLANATIONS\n\ncapita terms”), so it is addressed. (D) is not necessarily flawed because discussing multiple factors\nbut focusing on one debated point (hours) is a normal argument structure; it’s not automatically\n\ninvalid.\n\n103. Answer: A\nCommon Solution for Q103-108:\n\nFloor | Person\n\n8 M\n7 O\n6 Q\n5 L\n4 R\n3 S\n2 N\n1 P\n\n104. Answer:A\n105. Answer: B\n106. Answer: D\n107. Answer: D\n108. Answer: C\n\nExplanation:\n\nSecond *\nFirst = (Third)? —2\n24 *\n\n77 (6)? —2=214\n\nQuantitative Aptitude\n\n109. Answer: C\nExplanation: Total students in Alpha =1050\nStudent in Alpha in Science= 32% of 1050= 336\nTotal students in Beta =700\nCommerce students in Beta =31% of 700= 217\nArts students in Beta = 40% of 700= 280\nSo, Science students in Beta = 700 — 217 — 280 = 2038\nLet total students in Gamma=100x\nScience students in Gamma=30x\nCommerce students in Gamma =30x\nArts students in Gamma = 100x-(80x+30x)=40x\nLet the total students in Delta = 100y\nCommerce students in Delta = 40y\nArts students in Delta = 20y\nScience students in Delta = 100y-( 40y+20y)=40y\nTotal students in Epsilon = 100z",
+      "ocrConfidence": 90.22,
+      "answerSignals": 7,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0161",
+      "sourceRevision": 1,
+      "sourceSha256": "f40729c74acb6784142df3fc12720c09e94b9af83717bb94570ec68ce6b03a20",
+      "pageNumber": 31,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10015 : ANSWER & EXPLANATIONS\n\nScience students in Epsilon = 35z\n\nCommerce students in Epsilon = 50z\n\nArts students in Epsilon = 100z-(35z+50z) =15z\nRequired Difference = 280-203=77\n\nScience | Commerce | Arts | Total\n\nAlpha 336 1050\nBeta 203 217 280 | 700\nGamma| 30x 30x 40x | 100x\nDelta AOy 40y 20y | 100y\nEpsilon 35z 50z 15z | 100z\n\n110. Answer:B\n\nExplanation: oneness = 312\n50Z+15z =312\noFF— 312\n2\n100z=960\n\n111. Answer:A\nExplanation: Total students in Alpha = 1050\nStudents in science = 336\n\nStudents in Commerce and Arts together = 1050-336=714\nNumber of students in Arts = “x714 = 294\n\n112. Answer:B\nExplanation: Number of students in Beta in 2013 = : x 700= 840\nNumber of students in Science in Beta in 2013= 20% of 840= 168\n\n113. Answer: D\nExplanation: Total students in Delta = 3 x 100X = 300X=100y\n3X=y\nDifference between Arts students in Delta and Gamma = 20y-40x=180\n60x-40x=180\n20x=180\nx=9\n100x=900\n\n114. Answer: C\nExplanation: 30x+40y=620\n40x-20y=240\nOn solving these equations, we get x=10 and y=8\nTotal students in Delta = 100y =100x8=800",
+      "ocrConfidence": 90.47,
+      "answerSignals": 5,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    },
+    {
+      "sourceId": "SRC-0161",
+      "sourceRevision": 1,
+      "sourceSha256": "f40729c74acb6784142df3fc12720c09e94b9af83717bb94570ec68ce6b03a20",
+      "pageNumber": 33,
+      "method": "tesseract_supplement_350dpi_psm3",
+      "text": "LAW PREP\n— Tutorial — MOCK CLAT 10015 : ANSWER & EXPLANATIONS\n\n119. Answer:A\nExplanation: Male voters from regions Nova and Crest together = 216+135=351\nFemale voters from regions Zenith and Orion together = 185+245=430\nRequired ratio = 351:430\n\n120. Answer: B\n\nExplanation: The difference between females and males in\nOrion=245-105=140\n\nNova = 216 — 184 =32\n\nZenith = 185-185=0\n\nApex = 135-115=20\n\nCrest = 165-135=30\n\nVertex = 425-200=225\n\n1404+324+0+20+304+225 447\n\nRequired Average =",
+      "ocrConfidence": 89.71,
+      "answerSignals": 2,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    }
+  ]
+}

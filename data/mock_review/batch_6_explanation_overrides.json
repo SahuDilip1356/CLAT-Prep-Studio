@@ -1,0 +1,797 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T17:34:41.675534+00:00",
+  "policy": "Drafts never bypass named academic approval; correctOption must still match reconciled official key evidence.",
+  "items": [
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q025",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 12,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "The relevant fact or inference in the passage corresponds to Mediterranean Sea. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q026",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 12,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "The relevant fact or inference in the passage corresponds to Pakistan. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q027",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 12,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "The relevant fact or inference in the passage corresponds to All of the Above. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q028",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 12,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "The relevant fact or inference in the passage corresponds to Saudi Arabia. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q029",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 12,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 2.056,
+      "explanation": "The passage states that when Pope Leo XIV announced that his first pastoral visit would be to Lebanon, the response among many residents was marked by a mixture of anticipation and unease. This supports Lebanon, so option B is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q030",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 13,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.133,
+      "explanation": "The relevant fact or inference in the passage corresponds to 1. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q031",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 13,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.167,
+      "explanation": "The relevant fact or inference in the passage corresponds to 60. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q032",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 13,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.222,
+      "explanation": "The relevant fact or inference in the passage corresponds to 2024. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q033",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 13,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.867,
+      "explanation": "The relevant fact or inference in the passage corresponds to Combination of Low interest rates and Lower Inflation. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q034",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.143,
+      "explanation": "The relevant fact or inference in the passage corresponds to Rationing of Credit. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q035",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.556,
+      "explanation": "The relevant fact or inference in the passage corresponds to 1526. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q036",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.125,
+      "explanation": "The relevant fact or inference in the passage corresponds to Jahangir. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q037",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.429,
+      "explanation": "The relevant fact or inference in the passage corresponds to Tulguhma. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q038",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.125,
+      "explanation": "The relevant fact or inference in the passage corresponds to Ain-i- Akbari. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q039",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 14,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.125,
+      "explanation": "The relevant fact or inference in the passage corresponds to 1555. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q040",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 15,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.182,
+      "explanation": "The relevant fact or inference in the passage corresponds to It evaporates easily and burns with a red flame. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q041",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 16,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.818,
+      "explanation": "The relevant fact or inference in the passage corresponds to USA. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q042",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 16,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.154,
+      "explanation": "The relevant fact or inference in the passage corresponds to 2025. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q043",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 16,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.143,
+      "explanation": "The relevant fact or inference in the passage corresponds to G20. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q044",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 16,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.083,
+      "explanation": "The relevant fact or inference in the passage corresponds to 500 GW. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q045",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.529,
+      "explanation": "The relevant fact or inference in the passage corresponds to 2026. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q046",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 17,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 1.091,
+      "explanation": "The passage states that while the CTBT never entered into force, the moratorium on testing served like a tacit agreement, which all major powers (apart from North Korea) have voluntarily abided by since the 1990s. This supports All of the Above, so option D is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q047",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.125,
+      "explanation": "The relevant fact or inference in the passage corresponds to Dr Homi Jahangir Bhabha. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q048",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.111,
+      "explanation": "The relevant fact or inference in the passage corresponds to Gorakhpur — Uttar Pradesh. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q049",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 17,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.8,
+      "explanation": "The relevant fact or inference in the passage corresponds to 33. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q050",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 18,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.857,
+      "explanation": "The relevant fact or inference in the passage corresponds to 1973. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q051",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 18,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 1.333,
+      "explanation": "The passage states that the composition of the tournament is extremely conservative — no new teams have debuted in the tournament since 1997, and since 2000 the number of teams in the World Cup has been fixed at eight. This supports Total 10 teams participated in the tournament, so option B is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q052",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 18,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.273,
+      "explanation": "The relevant fact or inference in the passage corresponds to 2029. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q084",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 35,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.774,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: S.P. Gupta v. Union of India. Accordingly, option A is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q085",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 37,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.35,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves An international climate summit pledges reforestation of degraded lands, including semi- arid grasslands, as a primary carbon sequestration strategy. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q093",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 40,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.286,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Shorter and warmer winters in Rajasthan are disrupting agriculture and livestock cycles. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q096",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 41,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.057,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Farmers in Rajasthan depend partly on winter weather stability. Therefore option A is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q098",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 41,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.083,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Q. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q099",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 42,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.143,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves All of the above. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q100",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 42,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.143,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves 2. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q101",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 42,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.944,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves The one who sits to the immediate left of U. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q102",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 42,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.167,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves V. Therefore option A is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q103",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 42,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.8,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves FL. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q104",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 42,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.667,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Validity. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q105",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 42,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.667,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves SE CH. Therefore option A is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q106",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 43,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.571,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves None of These. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q107",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 43,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.8,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves PL. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0141-Q110",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0141",
+      "sourcePage": 44,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.0,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives Rs.2320. Therefore option D is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q001",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 3,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.577,
+      "explanation": "The relevant fact or inference in the passage corresponds to Gratitude for the ordinary freedom they had. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q002",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 3,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.133,
+      "explanation": "The relevant fact or inference in the passage corresponds to Anxious longing mixed with physical exhaustion. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q003",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 3,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.708,
+      "explanation": "The relevant fact or inference in the passage corresponds to Contrast its striking night beauty with its daytime ordinariness. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q006",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 4,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.241,
+      "explanation": "The relevant fact or inference in the passage corresponds to The narrator's greatest distress came from missing her daughters rather than physical pain. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q013",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.917,
+      "explanation": "The relevant fact or inference in the passage corresponds to A haggler (peddler or trader). Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q020",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.2,
+      "explanation": "The relevant fact or inference in the passage corresponds to Nostalgic and serene. Therefore option D is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q021",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.333,
+      "explanation": "The relevant fact or inference in the passage corresponds to Simple, essential tools of local livelihood. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q022",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.6,
+      "explanation": "The relevant fact or inference in the passage corresponds to Bandits posed the greatest threat. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q023",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.6,
+      "explanation": "The relevant fact or inference in the passage corresponds to Extreme caution against visual betrayal. Therefore option B is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q024",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.538,
+      "explanation": "The relevant fact or inference in the passage corresponds to Repetition emphasizing remoteness. Therefore option C is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q034",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 10,
+      "confidence": "MEDIUM",
+      "lexicalEvidenceOverlap": 1.333,
+      "explanation": "The passage states that human Rights Day reminds citizens and governments of their responsibility to uphold human dignity and justice. This supports Justice V Ramasubramanian, so option B is correct."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q092",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 24,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.5,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Emerging weeds and climate create urgent demand for innovative crop breeding solutions. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q095",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 24,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.126,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves GM crops carry unacceptable risks that can only be assessed through large-scale field trials. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q099",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 25,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.333,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Colonial exclusion to migrant inclusion. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q100",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 26,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.833,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Second-generation = US citizens. Therefore option C is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q101",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 26,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.714,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves Football's immigrant team cores. Therefore option B is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0155-Q113",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0155",
+      "sourcePage": 28,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.667,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 7:4. Therefore option C is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q001",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 4,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.5,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 5:4. Therefore option C is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q002",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 4,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.417,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives %72,000. Therefore option D is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q003",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 4,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.375,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 94.4%. Therefore option D is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q004",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.444,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 7/25. Therefore option A is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q005",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.385,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 50,000. Therefore option C is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q006",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 5,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.212,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives Both II and HI. Therefore option D is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q007",
+      "correctOption": "C",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 6,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.417,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 1,120. Therefore option C is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q008",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 6,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.625,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 700. Therefore option D is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q009",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 6,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.5,
+      "explanation": "Using the figures in the caselet and carrying out the calculation requested in the stem gives 77.8%. Therefore option D is the keyed numerical result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q014",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 7,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.333,
+      "explanation": "The relevant fact or inference in the passage corresponds to Dr. S. Radhakrishnan. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q017",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 8,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.461,
+      "explanation": "The relevant fact or inference in the passage corresponds to It may neglect similar forms of unfair treatment faced by other categories. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q026",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 10,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.143,
+      "explanation": "The relevant fact or inference in the passage corresponds to Merritt Island. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q030",
+      "correctOption": "A",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 11,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.333,
+      "explanation": "The relevant fact or inference in the passage corresponds to V.K Saxena. Therefore option A is the answer identified by the official key."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q074",
+      "correctOption": "D",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 24,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.204,
+      "explanation": "Applying all the stated constraints and eliminating inconsistent alternatives leaves They would pay less attention to the main explosions and more attention to the background music or camera work. Therefore option D is the only result consistent with the arrangement."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q092",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 30,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 2.31,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: It must meticulously examine what the accused knew and what precautions were reasonably feasible. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q098",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 33,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.793,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: The timing of the statement and its omission from the written contract are factors that weigh against treating it as a contractual term. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q108",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 36,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.606,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: No, the disclosure is not admissible under Section 27 because it merely identifies a person (Rajesh). Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q109",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 37,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 1.643,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Only A's disclosure statement is admissible. Accordingly, option B is the keyed legal result."
+    },
+    {
+      "itemId": "CLAT-BATCH-006-SRC-0168-Q120",
+      "correctOption": "B",
+      "kind": "EVIDENCE_LINKED_AUTO_DRAFT",
+      "sourceId": "SRC-0168",
+      "sourcePage": 41,
+      "confidence": "LOW",
+      "lexicalEvidenceOverlap": 0.865,
+      "explanation": "Applying the rule stated in the passage to the facts in the question leads to this conclusion: Shayara Bano v. Union of India (2017). Accordingly, option B is the keyed legal result."
+    }
+  ]
+}

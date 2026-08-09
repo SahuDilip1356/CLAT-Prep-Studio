@@ -10,6 +10,10 @@
     {
       "path": "/api/privacy-cron",
       "schedule": "17 1 * * *"
+    },
+    {
+      "path": "/api/ca-daily-cron",
+      "schedule": "30 0 * * *"
     }
   ],
   "headers": [

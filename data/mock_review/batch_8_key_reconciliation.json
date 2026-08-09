@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T03:54:49.372850+00:00",
+  "batchId": "CLAT-BATCH-008",
+  "status": "QUESTION_DIGITIZATION_COMPLETE_KEY_ACQUISITION_PENDING",
+  "summary": {
+    "sources": 5,
+    "expectedQuestions": 600,
+    "reconciledAnswers": 0,
+    "structurallyComplete": 600,
+    "byQueueStatus": {
+      "BLOCKED": 600
+    },
+    "byIssueCode": {
+      "ANSWER_KEY_SOURCE_MISSING": 600,
+      "EXPLANATION_REQUIRED": 600,
+      "QUESTION_PAGE_VISUAL_REVIEW": 90
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "SRC-0056",
+      "path": "CLAT Mock Papers/12MTC - CLAT 2027 MOCK TEST – 1- @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "answerKeySourceIds": [],
+      "questionPages": 36,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 0,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 1,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0057",
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 04 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "answerKeySourceIds": [],
+      "questionPages": 39,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 0,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 2,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0058",
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 05 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "answerKeySourceIds": [],
+      "questionPages": 36,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 0,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 3,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0059",
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 06 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "answerKeySourceIds": [],
+      "questionPages": 36,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 0,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 4,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    },
+    {
+      "sourceId": "SRC-0060",
+      "path": "CLAT Mock Papers/12MTC • CLAT 2027 MOCK 07 @CLAT_OWNER.pdf",
+      "provider": "12MTC",
+      "answerKeySourceIds": [],
+      "questionPages": 40,
+      "answerKeyPages": 0,
+      "parsedQuestions": 120,
+      "fourOptionQuestions": 120,
+      "answerCandidatesAttached": 0,
+      "visualReviewQuestions": 0,
+      "safeImmediateYield": 0,
+      "yieldScore": 0,
+      "selectionReason": "Question paper is native-text readable; official answer key is not present.",
+      "rank": 5,
+      "expectedQuestions": 120,
+      "directKeyEvidence": 0,
+      "reconciledAnswers": 0,
+      "structurallyComplete": 120,
+      "statusCounts": {
+        "ANSWER_KEY_SOURCE_MISSING": 120
+      },
+      "status": "QUESTION_REVIEW_QUEUE_READY_KEY_PENDING"
+    }
+  ]
+}

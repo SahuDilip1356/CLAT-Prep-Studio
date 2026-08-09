@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T03:07:36.829139+00:00",
+  "catalogueGeneratedAt": "2026-08-03T04:06:00.918297+00:00",
+  "requestedSources": 2,
+  "pages": 122,
+  "methodCounts": {
+    "native_sparse": 1,
+    "tesseract_ocr": 121
+  },
+  "visualReviewPages": 122,
+  "byStatus": {
+    "extracted": 2
+  },
+  "errors": []
+}

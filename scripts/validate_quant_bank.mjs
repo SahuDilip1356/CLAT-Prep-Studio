@@ -10,6 +10,40 @@ const errors = [];
 const placeholderPattern =
   /Select the logical option that best completes|Option A|Person A, B, C, D, E, F are evaluating options/i;
 
+const damagedQuantTextPattern =
+  /`|corre ct|corr ect|wri te|8 9 b|kcb cb|ba yx|q r p p r|24 3|66 3 2|%3 266|%13 89|3 ² x|2222/;
+
+const auditedQuantContent = new Map([
+  [5, '(3b)/(4a)'],
+  [19, '(q + p)/(q - p)'],
+  [33, '(3a + 4b)/(4a + 5b)'],
+  [299, '(q + r)/p = (p + r)/q = (p + q)/r'],
+  [425, '(4a + 5b)/(2a + 2b)'],
+  [495, '(q - 3p)/4'],
+  [635, '(a + c)/(b + d)'],
+  [663, 'proportional of the two numbers is 243'],
+  [677, 'P/Pₛ = Q/Qₛ'],
+  [820, '(20p² - 40pq)/(pq + 4q²)'],
+  [828, '(a³c² + b³d²)/(ab²d² + a²bcd)'],
+  [892, '2/5'],
+  [916, '20/21'],
+  [924, '1/2 : 1/3 : 1/4'],
+  [993, '(a² + c²)/(a + c)'],
+  [1000, '(p + q)/r = (q + r)/p = (p + r)/q'],
+  [1007, '(2x² - 4x + 3)/(4x - 3)'],
+  [1035, '√2 : 1'],
+  [342, 'percentage of milk in the new solution'],
+  [566, '1/n = (x - y)/(a - b)'],
+  [636, 'Class A has 32 students with an average of 83'],
+  [717, '₹149/7 per kg'],
+  [761, '17 2/19%'],
+  [837, '66 2/3%'],
+  [877, '(i - 1)-th match'],
+  [917, '11 7/11'],
+  [1092, 'profit of 66 2/3%'],
+  [1114, '2/5 lead and 3/16 copper'],
+]);
+
 if (questions.length !== 1230) {
   errors.push(`Expected 1230 questions, found ${questions.length}.`);
 }
@@ -24,6 +58,12 @@ for (const question of questions) {
   }
   if (placeholderPattern.test(JSON.stringify(question))) {
     errors.push(`Question ${question.id} still contains placeholder content.`);
+  }
+  if (
+    question.category === 'Quantitative Techniques' &&
+    damagedQuantTextPattern.test(JSON.stringify(question))
+  ) {
+    errors.push(`Question ${question.id} still contains damaged Quant extraction text.`);
   }
   if (!question.sourcePdfUrl || !question.sourceSection || !question.sourceQuestionNo) {
     errors.push(`Question ${question.id} has incomplete source provenance.`);
@@ -65,6 +105,15 @@ for (const question of questions) {
     }
   } else if (!question.numericAnswer?.trim()) {
     errors.push(`Question ${question.id} has no numeric/source answer.`);
+  }
+}
+
+for (const [id, expectedFragment] of auditedQuantContent) {
+  const question = questions.find((item) => item.id === id);
+  if (!question || !JSON.stringify(question).includes(expectedFragment)) {
+    errors.push(
+      `Audited Quant question ${id} is missing corrected content ${JSON.stringify(expectedFragment)}.`,
+    );
   }
 }
 

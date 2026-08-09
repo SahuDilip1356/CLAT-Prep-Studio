@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T03:18:48.870496+00:00",
+  "dpi": 350,
+  "pageSegmentationModes": [
+    3,
+    4,
+    6
+  ],
+  "targetedOnly": true,
+  "targetedReviewPages": 1,
+  "pages": [
+    {
+      "sourceId": "SRC-0138",
+      "sourceRevision": 1,
+      "sourceSha256": "018fb8c5dad7f37504acae9683e95a417af7930975b2421238ffc4802a9fc6c8",
+      "pageNumber": 28,
+      "method": "tesseract_supplement_350dpi_psm4",
+      "text": "LPT MOCK CLAT 10031 : ANSWER & EXPLANATIONS\n\n72. Answer: B\nLevel: easy\nExplanation: + Food and Agriculture Organization (FAO) was founded on 16 October 1945 in\nQuebec City.\nIt is a specialized agency of the United Nations that works to eliminate hunger, improve\nnutrition, and promote sustainable agriculture.\n\n16 October is observed every year as World Food Day to mark the FAO's founding.\n\n73. Answer: C\nLevel: easy\nExplanation: * The Mahanadi Water Disputes Tribunal was constituted in 2018 under the Inter-\nState River Water Disputes Act, 1956.\nIt was set up to resolve the water-sharing dispute between the states of Odisha and\nChhattisgarh over the Mahanadi River.\n\n74, Answer: C\nLevel: easy\nExplanation: * The Mahanadi Water Disputes Tribunal was constituted by the Government of\nIndia in 2018 under the Inter-State River Water Disputes Act, 1956.\nIt was established to adjudicate the water-sharing dispute between Odisha and Chhattisgarh\n\nover the Mahanadi River.\n\n75. Answer: C\nLevel: easy\nExplanation: * Hirakud Dam is built across the Mahanadi River near Sambalpur.\nIt is located in the state of Odisha\nIt is one of the longest earthen dams in the world and is used for flood control, irrigation, and\n\nhydroelectric power generation.\n\n76. Answer: B\nLevel:easy\nExplanation: ° Article 262 of the Constitution of India empowers Parliament to:\no Provide for the adjudication of disputes relating to inter-State river waters.\no Exclude the jurisdiction of the Supreme Court and other courts over such disputes by law.\nThis provision led to the enactment of the Inter-State River Water Disputes Act, 1956.\n\n77. Answer: B\nLevel: easy\nExplanation: - The Supreme Court (Number of Judges) Amendment Act, 2019 increased the\nsanctioned strength of the Supreme Court of India from 31 to 34 judges (excluding the Chief\n\nJustice of India.",
+      "ocrConfidence": 93.48,
+      "answerSignals": 6,
+      "evaluatedPsmModes": [
+        3,
+        4,
+        6
+      ],
+      "requiresVisualReview": true,
+      "reason": "low_or_missing_key_evidence"
+    }
+  ]
+}

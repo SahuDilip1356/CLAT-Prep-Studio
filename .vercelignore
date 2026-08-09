@@ -1,6 +1,8 @@
 .git
 .firebaserc
 .env*
+node_modules
+functions/node_modules
 docs
 firebase.json
 firestore.rules
@@ -9,7 +11,10 @@ storage.rules
 /dist
 /GK
 /Quant
+/Quant Old
 /CA_Source_Repository
+/CA Download
+/CLAT Mock Papers
 /*.pdf
 /*.py
 /*.xlsx

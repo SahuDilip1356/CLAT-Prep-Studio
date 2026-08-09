@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03T04:06:17.876251+00:00",
+  "valid": true,
+  "summary": {
+    "verifiedAdaptiveItems": 492,
+    "candidatePriors": 11138,
+    "candidateEligibilityErrors": 0,
+    "calibratedItems": 0,
+    "byModule": {
+      "ENGLISH": 96,
+      "GK": 112,
+      "LEGAL": 120,
+      "LOGICAL": 104,
+      "QUANT": 60
+    },
+    "byDifficulty": {
+      "ENGLISH": {
+        "1": 29,
+        "2": 48,
+        "3": 19
+      },
+      "GK": {
+        "1": 34,
+        "2": 56,
+        "3": 22
+      },
+      "LEGAL": {
+        "1": 36,
+        "2": 60,
+        "3": 24
+      },
+      "LOGICAL": {
+        "1": 31,
+        "2": 52,
+        "3": 21
+      },
+      "QUANT": {
+        "1": 18,
+        "2": 30,
+        "3": 12
+      }
+    },
+    "errors": 0
+  },
+  "errors": []
+}

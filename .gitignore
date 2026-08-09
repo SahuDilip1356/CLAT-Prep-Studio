@@ -17,3 +17,22 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# Local mock-pipeline orchestration state
+data/mock_ingestion/orchestrator/orchestrator.sqlite3*
+data/mock_ingestion/orchestrator/orchestrator.lock
+data/mock_ingestion/orchestrator/latest_run.json
+data/mock_ingestion/orchestrator/runs/
+
+# Raw source material (3.6GB): purchased mock PDFs, scanned answer keys and
+# design assets. The digitized output lives in data/mock_ingestion/ and
+# src/data/; the originals stay on local disk and in the owner's own backups.
+CLAT Mock Papers/
+CA Download/
+Quant Old/
+CLAT Prep Studio BG/
+*.zip
+Gemini_Generated_Image_*.png
+WhatsApp Image *.jpeg
+CLAT Prep Studio.png
+ClatPrep Studio.png

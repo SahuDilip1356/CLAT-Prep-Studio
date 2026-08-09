@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "sessionPolicy": "Each session holds about 35 questions; sessions are balanced so none is short.",
+  "difficultyPolicy": "Percentile rank within the module pool: <30 Foundation, <80 Exam Standard, else Advanced.",
+  "poolPolicy": "One pool per module: curated bank plus mock library, ranked together.",
+  "summary": {
+    "GK": {
+      "questions": 2966,
+      "sessionTarget": 35,
+      "sessionSizeRange": [
+        34,
+        35
+      ],
+      "sessions": 85,
+      "withExplanation": 2544,
+      "byLevel": {
+        "1": 888,
+        "2": 1485,
+        "3": 593
+      }
+    },
+    "QUANT": {
+      "questions": 1764,
+      "sessionTarget": 35,
+      "sessionSizeRange": [
+        35,
+        36
+      ],
+      "sessions": 50,
+      "withExplanation": 1642,
+      "byLevel": {
+        "1": 529,
+        "2": 882,
+        "3": 353
+      }
+    },
+    "ENGLISH": {
+      "questions": 1195,
+      "sessionTarget": 35,
+      "sessionSizeRange": [
+        35,
+        36
+      ],
+      "sessions": 34,
+      "withExplanation": 872,
+      "byLevel": {
+        "1": 358,
+        "2": 598,
+        "3": 239
+      }
+    },
+    "LEGAL": {
+      "questions": 1549,
+      "sessionTarget": 35,
+      "sessionSizeRange": [
+        35,
+        36
+      ],
+      "sessions": 44,
+      "withExplanation": 1104,
+      "byLevel": {
+        "1": 465,
+        "2": 774,
+        "3": 310
+      }
+    },
+    "LOGICAL": {
+      "questions": 1224,
+      "sessionTarget": 35,
+      "sessionSizeRange": [
+        34,
+        35
+      ],
+      "sessions": 35,
+      "withExplanation": 830,
+      "byLevel": {
+        "1": 367,
+        "2": 612,
+        "3": 245
+      }
+    }
+  },
+  "filesWritten": {
+    "english_question_bank.json": 1195,
+    "gk_question_bank.json": 2966,
+    "legal_question_bank.json": 1549,
+    "logical_question_bank.json": 1224,
+    "question_bank.json": 1764
+  }
+}
