@@ -98,15 +98,70 @@ body {
   box-shadow: var(--shadow-md);
 }
 
-/* Testbook Clean Top Navbar */
+/* Top navbar: brand and account tools on row one, study modules on row two.
+   Thirteen controls never fit one row at any realistic width, which is what
+   made the bar look stretched and clipped the last tab. */
 .header-nav {
-  padding: 14px 28px;
+  padding: 12px 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 24px;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.header-nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-width: 0;
+}
+
+.module-switcher {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.module-switcher::-webkit-scrollbar {
+  display: none;
+}
+
+.module-tab {
+  flex: 1 1 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 9px 12px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.module-tab:hover {
+  background: var(--bg-card);
+  color: var(--module-accent);
+}
+
+.module-tab.active {
+  background: var(--module-accent);
+  color: #fff;
   box-shadow: var(--shadow-sm);
 }
 
@@ -131,15 +186,24 @@ body {
 
 .nav-tabs {
   display: flex;
-  gap: 8px;
+  gap: 4px;
   align-items: center;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.nav-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-tab-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 14px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 8px 12px;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
   background: transparent;
@@ -160,36 +224,10 @@ body {
   color: white;
 }
 
+/* Below this width the seven module tabs stop fitting evenly, so they revert
+   from stretch-to-fill to natural width and the row scrolls instead. */
 @media (max-width: 1100px) {
-  .header-nav {
-    align-items: stretch;
-    flex-direction: column;
-    gap: 12px;
-    padding: 14px 16px;
-  }
-
-  .header-nav > div:first-child {
-    justify-content: space-between;
-    min-width: 0;
-  }
-
-  .header-nav > div:first-child > div:last-child,
-  .nav-tabs {
-    max-width: 100%;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-
-  .header-nav > div:first-child > div:last-child::-webkit-scrollbar,
-  .nav-tabs::-webkit-scrollbar {
-    display: none;
-  }
-
-  .nav-tabs {
-    padding-bottom: 2px;
-  }
-
-  .nav-tab-btn {
+  .module-tab {
     flex: 0 0 auto;
   }
 }
@@ -201,19 +239,20 @@ body {
 
   .header-nav {
     margin-bottom: 16px;
+    padding: 12px;
   }
 
-  .header-nav > div:first-child {
-    align-items: stretch !important;
+  .header-nav-top {
+    align-items: stretch;
     flex-direction: column;
+    gap: 10px;
   }
 
   .logo-brand {
     align-self: flex-start;
   }
 
-  .header-nav > div:first-child > div:last-child {
-    justify-content: flex-start;
+  .nav-tabs {
     width: 100%;
   }
 }
@@ -446,11 +485,103 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
   padding-top: 16px;
   border-top: 1px solid var(--border-color);
 }
 
+.test-navigation-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.answer-state-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 7px 11px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.answer-state-pill.not-attempted {
+  background: #f2f4f7;
+  color: #475467;
+}
+
+.answer-state-pill.sure {
+  background: #e5f8f3;
+  border-color: #8cddca;
+  color: #08745e;
+}
+
+.answer-state-pill.review-later {
+  background: #fff4d6;
+  border-color: #f3ca70;
+  color: #7a4d00;
+}
+
+.btn-review-next {
+  background: #fff4d6;
+  border: 1px solid #e7b64c;
+  color: #694100;
+}
+
+.btn-review-next:hover:not(:disabled) {
+  background: #ffe7a8;
+  border-color: #cc9420;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
 /* Testbook Exam Replica Palette Badges */
+.palette-legend {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 14px;
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  font-weight: 650;
+}
+
+.palette-legend > div {
+  display: grid;
+  grid-template-columns: 12px 1fr auto;
+  align-items: center;
+  gap: 7px;
+}
+
+.palette-key {
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+}
+
+.palette-key.not-attempted {
+  background: #f2f4f7;
+  border-color: #d0d5dd;
+}
+
+.palette-key.sure {
+  background: #35c7a5;
+  border-color: #24a989;
+}
+
+.palette-key.review-later {
+  background: #f5b942;
+  border-color: #d99a1d;
+}
+
 .palette-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -458,30 +589,56 @@ body {
 }
 
 .palette-btn {
+  position: relative;
   height: 36px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
-  background: var(--bg-primary);
-  color: var(--text-primary);
+  display: grid;
+  place-items: center;
   font-weight: 700;
   font-size: 0.85rem;
   cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.palette-btn.answered {
-  background: var(--testbook-green);
-  color: white;
-  border-color: var(--testbook-green);
+.palette-btn:hover {
+  transform: translateY(-1px);
 }
 
-.palette-btn.marked {
-  background: var(--testbook-purple);
-  color: white;
-  border-color: var(--testbook-purple);
+.palette-btn.not-attempted {
+  background: #f2f4f7;
+  border-color: #d0d5dd;
+  color: #344054;
+}
+
+.palette-btn.sure {
+  background: #dff7f0;
+  border-color: #62d2b8;
+  color: #086b57;
+}
+
+.palette-btn.review-later {
+  background: #fff0c4;
+  border-color: #efbd51;
+  color: #754900;
 }
 
 .palette-btn.current {
-  border: 2px solid var(--accent-primary);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(108, 76, 241, 0.2);
+}
+
+.palette-number {
+  position: relative;
+  z-index: 1;
+  line-height: 1;
+}
+
+.palette-review-flag {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  color: #9a6200;
 }
 
 .timer-box {
@@ -493,6 +650,147 @@ body {
   border-radius: 20px;
   font-family: var(--font-mono);
   font-weight: 700;
+}
+
+.submit-review-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(16, 24, 40, 0.55);
+  backdrop-filter: blur(3px);
+}
+
+.submit-review-dialog {
+  width: min(560px, 100%);
+  padding: 26px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-lg);
+}
+
+.submit-review-dialog h3 {
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+}
+
+.submit-review-dialog > p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.submit-review-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: var(--accent-warning-bg);
+  color: #9a6200;
+}
+
+.submit-review-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0 14px;
+}
+
+.submit-review-summary > div {
+  min-width: 0;
+  padding: 13px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.submit-review-summary strong,
+.submit-review-summary span {
+  display: block;
+}
+
+.submit-review-summary strong {
+  font-size: 1.25rem;
+}
+
+.submit-review-summary span {
+  margin-top: 2px;
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.submit-review-summary .sure {
+  background: #e5f8f3;
+  border-color: #8cddca;
+  color: #08745e;
+}
+
+.submit-review-summary .review-later {
+  background: #fff4d6;
+  border-color: #f3ca70;
+  color: #7a4d00;
+}
+
+.submit-review-summary .not-attempted {
+  background: #f2f4f7;
+  border-color: #d0d5dd;
+  color: #475467;
+}
+
+.submit-review-message {
+  padding: 10px 12px;
+  border-radius: 9px;
+  background: var(--accent-warning-bg);
+  color: #754900 !important;
+  font-weight: 700;
+}
+
+.submit-review-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+@media (max-width: 900px) {
+  .test-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .test-actions-bar,
+  .test-navigation-actions {
+    align-items: stretch;
+  }
+
+  .test-navigation-actions {
+    width: 100%;
+  }
+
+  .test-navigation-actions .btn {
+    flex: 1 1 150px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .question-canvas {
+    padding: 18px;
+  }
+
+  .submit-review-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .submit-review-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* Open Design Printable PDF & Diagnostic Report Styling */
@@ -514,4 +812,74 @@ body {
     background: white !important;
     break-inside: avoid;
   }
+}
+
+/* Section-wise scorecard on the results screen. The table scrolls inside its
+   own container so a five-section paper never forces the page sideways. */
+.section-scorecard {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.section-scorecard-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.section-scorecard-head h2 {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.section-scorecard-head p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.section-scorecard-scroll {
+  overflow-x: auto;
+}
+
+.section-scorecard table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.section-scorecard th,
+.section-scorecard td {
+  padding: 10px 12px;
+  text-align: right;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-scorecard thead th {
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-scorecard th:first-child,
+.section-scorecard tbody th {
+  text-align: left;
+  font-weight: 700;
+}
+
+.section-scorecard td span {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.section-scorecard .is-positive { color: var(--accent-success); font-weight: 700; }
+.section-scorecard .is-negative { color: var(--accent-danger); font-weight: 700; }
+
+.section-scorecard tr.is-weakest {
+  background: var(--accent-danger-bg, rgba(220, 38, 38, 0.07));
 }

@@ -1,0 +1,236 @@
+/**
+ * The workspace chrome every study module shares: a dark rail on the left with
+ * the module mark, its views and a readiness meter, and the content area beside
+ * it. Quant established this layout; it lives here so English, Legal, Logical
+ * and anything added later are the same shell rather than a lookalike.
+ *
+ * --studio-accent is the only thing a module changes.
+ */
+
+.studio-shell {
+  --studio-ink: #182032;
+  --studio-paper: #f8f7f3;
+  --studio-white: #ffffff;
+  --studio-line: #e8e6df;
+  --studio-muted: #697386;
+  --studio-accent: #6c4cf1;
+  --studio-accent-soft: #9b86ff;
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  min-height: calc(100vh - 116px);
+  background: var(--studio-paper);
+  border: 1px solid var(--studio-line);
+  color: var(--studio-ink);
+  overflow: hidden;
+}
+
+[data-theme="dark"] .studio-shell {
+  --studio-ink: #f3f5f8;
+  --studio-paper: #111827;
+  --studio-white: #192232;
+  --studio-line: #2d394b;
+  --studio-muted: #a5afbf;
+}
+
+.studio-sidebar {
+  background: #182032;
+  color: #fff;
+  padding: 24px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-theme="dark"] .studio-sidebar {
+  background: #0a0f19;
+}
+
+.studio-mark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.studio-mark > span {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--studio-accent);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.studio-mark div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.studio-mark strong {
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.studio-mark small {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.68rem;
+}
+
+.studio-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 22px;
+}
+
+.studio-sidebar nav button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.66);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.studio-sidebar nav button:hover,
+.studio-sidebar nav button.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.studio-sidebar nav button.active {
+  box-shadow: inset 3px 0 0 var(--studio-accent-soft);
+}
+
+.studio-sidebar nav em {
+  margin-left: auto;
+  min-width: 20px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  background: #f06457;
+  color: #fff;
+  font-size: 0.65rem;
+  font-style: normal;
+  text-align: center;
+}
+
+.studio-side-status {
+  margin-top: auto;
+  padding: 14px 10px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.studio-side-status > div {
+  height: 4px;
+  margin-bottom: 7px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.studio-side-status > div span {
+  display: block;
+  height: 100%;
+  background: var(--studio-accent-soft);
+}
+
+.studio-side-status strong {
+  font-size: 0.78rem;
+}
+
+.studio-side-status small {
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 0.68rem;
+}
+
+.studio-workspace {
+  padding: 30px;
+  min-width: 0;
+}
+
+.studio-mobile-nav {
+  display: none;
+}
+
+/* Narrow desktop: collapse the rail to icons rather than crowding the labels. */
+@media (max-width: 1180px) {
+  .studio-shell {
+    grid-template-columns: 74px minmax(0, 1fr);
+  }
+
+  .studio-mark {
+    justify-content: center;
+    padding-inline: 0;
+  }
+
+  .studio-mark div,
+  .studio-sidebar nav button span,
+  .studio-sidebar nav em,
+  .studio-side-status strong,
+  .studio-side-status small {
+    display: none;
+  }
+
+  .studio-sidebar nav button {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 820px) {
+  .studio-shell {
+    display: block;
+  }
+
+  .studio-sidebar {
+    display: none;
+  }
+
+  .studio-workspace {
+    padding: 18px;
+  }
+
+  .studio-mobile-nav {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 14px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .studio-mobile-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .studio-mobile-nav button {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    border: 1px solid var(--studio-line);
+    background: var(--studio-white);
+    color: var(--studio-muted);
+    font: inherit;
+    font-size: 0.66rem;
+    font-weight: 800;
+  }
+
+  .studio-mobile-nav button.active {
+    border-color: var(--studio-accent);
+    color: var(--studio-accent);
+  }
+}
