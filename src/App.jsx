@@ -1,6 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
-import questionsData from './data/question_bank.json';
-import gkQuestionsData from './data/gk_question_bank.json';
+import { lazy, Suspense, useState, useEffect, useMemo, useRef } from 'react';
+import {
+  quantQuestionBank as questionsData,
+  gkQuestionBank as gkQuestionsData,
+} from './data/moduleBanks';
 import graphData from './data/ca_knowledge_graph.json';
 import { qcards } from './qcards';
 import Dashboard from './components/Dashboard';
@@ -8,6 +10,7 @@ import GKDashboard from './components/GKDashboard';
 import CADashboard from './components/CADashboard';
 import HomeDashboard from './components/HomeDashboard';
 import StudentDashboard from './components/StudentDashboard';
+import AITutor from './components/AITutor';
 import MockTestEngine from './components/MockTestEngine';
 import TestResults from './components/TestResults';
 import StudentProfileModal from './components/StudentProfileModal';
@@ -15,29 +18,49 @@ import StudentDataAdmin from './components/StudentDataAdmin';
 import AdminPortal from './components/AdminPortal';
 import AuthModal from './components/AuthModal';
 import ParentConsentPage from './components/ParentConsentPage';
+import ChildActivationPage from './components/ChildActivationPage';
 import ParentRightsApprovalPage from './components/ParentRightsApprovalPage';
 import PrivacyCentre from './components/PrivacyCentre';
 import ModuleErrorBoundary from './components/ModuleErrorBoundary';
+import { calculateStreak, completionKeyFor } from './utils/sessionProgress';
+import { accuracyOf, attemptRateOf } from './utils/resultAnalytics';
 import BrandLockup from './components/BrandLockup';
 import PWAExperience from './components/PWAExperience';
 import { formatCorrectAnswer } from './utils/questionAnswers';
+import { profileFromVerifiedGoogleAccount, shouldRequestStudentProfile } from './utils/studentProfile';
 import {
   auth, signInWithGoogle, logOutUser, syncUserProgressToCloud, fetchCloudUserProgress,
+  saveStudentProfileToCloud,
   submitPrivacyRightsRequest, finalizeAdultConsent, createParentConsentRequest,
-  claimChildConsent, getTrustedTokenClaims, listPrivacyRightsRequests, reauthenticateCurrentUser
+  getTrustedTokenClaims, listPrivacyRightsRequests, reauthenticateCurrentUser
 } from './firebase';
 import { deleteUser, onAuthStateChanged } from 'firebase/auth';
 import { canProcessInCloud } from './privacy';
-import { 
+import { canUseAuthenticatedAccount, hasAdminAccess } from './authAccess';
+import {
   LayoutDashboard, BrainCircuit, BookMarked, Sun, Moon, User, Database,
-  ShieldCheck, Globe, Newspaper, LockKeyhole
+  ShieldCheck, Globe, Newspaper, LockKeyhole, BookOpen, Scale, LibraryBig, Sigma
 } from 'lucide-react';
 
-const hasAdminAccess = (claims) =>
-  claims?.privacyAdmin === true || claims?.caAdmin === true;
+// One row of study modules, one row of account tools. Declaring the modules as
+// data keeps every tab identical in structure so the bar cannot drift.
+const MODULE_TABS = [
+  { id: 'QUANT', label: 'Quant', icon: Sigma, accent: 'var(--accent-primary)' },
+  { id: 'GK', label: 'Static GK', icon: Globe, accent: 'var(--accent-success)' },
+  { id: 'CA', label: 'Current Affairs', icon: Newspaper, accent: 'var(--brand-purple)' },
+  { id: 'ENGLISH', label: 'English', icon: BookOpen, accent: '#0f766e' },
+  { id: 'LEGAL', label: 'Legal', icon: Scale, accent: '#7c3aed' },
+  { id: 'LOGICAL', label: 'Logical', icon: BrainCircuit, accent: '#2563eb' },
+  { id: 'MOCKS', label: 'Mock Papers', icon: LibraryBig, accent: '#c2410c' },
+];
 
-const canUseAuthenticatedAccount = (claims) =>
-  canProcessInCloud(claims) || hasAdminAccess(claims);
+const legacyTutorQuestionBank = [
+  ...questionsData.map((question) => ({ ...question, tutorModule: 'QUANT' })),
+  ...gkQuestionsData.map((question) => ({ ...question, tutorModule: 'GK' })),
+];
+
+const CLATSectionDashboard = lazy(() => import('./components/CLATSectionDashboard'));
+const MockPaperDashboard = lazy(() => import('./components/MockPaperDashboard'));
 
 const defaultProgress = {
   studentProfile: null,
@@ -48,6 +71,8 @@ const defaultProgress = {
   topicCorrect: {},
   totalAttempted: 0,
   totalCorrect: 0,
+  questionAttempts: [],
+  errorNotebook: {},
   gkCompletedDays: {},
   gkDayScores: {},
   gkTopicAttempted: {},
@@ -61,10 +86,34 @@ const defaultProgress = {
   caTotalAttempted: 0,
   caTotalCorrect: 0,
   caDossierProgress: {},
+  englishCompletedDays: {},
+  englishDayScores: {},
+  englishTopicAttempted: {},
+  englishTopicCorrect: {},
+  englishTotalAttempted: 0,
+  englishTotalCorrect: 0,
+  legalCompletedDays: {},
+  legalDayScores: {},
+  legalTopicAttempted: {},
+  legalTopicCorrect: {},
+  legalTotalAttempted: 0,
+  legalTotalCorrect: 0,
+  logicalCompletedDays: {},
+  logicalDayScores: {},
+  logicalTopicAttempted: {},
+  logicalTopicCorrect: {},
+  logicalTotalAttempted: 0,
+  logicalTotalCorrect: 0,
+  mockCompletedDays: {},
+  mockDayScores: {},
+  mockTopicAttempted: {},
+  mockTopicCorrect: {},
+  mockTotalAttempted: 0,
+  mockTotalCorrect: 0,
   bookmarkedIds: {},
   bookmarkedQCardIds: {},
   bookmarkedDossierIds: {},
-  streak: 1
+  streak: 0
   ,
   privacy: null,
   privacyRequests: []
@@ -78,9 +127,21 @@ const clearSessionPracticeState = () => {
   ].forEach((key) => sessionStorage.removeItem(key));
 };
 
+const progressWithVerifiedAdultProfile = (cloudProgress, user, claims) => {
+  const progress = { ...defaultProgress, ...(cloudProgress || {}) };
+  const studentProfile = profileFromVerifiedGoogleAccount({
+    user,
+    claims,
+    existingProfile: progress.studentProfile
+  });
+  return studentProfile ? { ...progress, studentProfile } : progress;
+};
+
 export default function App() {
   const params = new URLSearchParams(window.location.search);
   const queryToken = params.get('parentConsent');
+  const childActivationToken = params.get('childActivation') || sessionStorage.getItem('child_activation_token');
+  if (childActivationToken) return <ChildActivationPage token={childActivationToken} />;
   const rightsApprovalToken = params.get('rightsApproval') || sessionStorage.getItem('rights_approval_token');
   if (rightsApprovalToken) return <ParentRightsApprovalPage token={rightsApprovalToken} />;
   const parentConsentToken = queryToken || sessionStorage.getItem('parent_consent_token');
@@ -89,10 +150,24 @@ export default function App() {
 }
 
 function StudentApp() {
-  const [activeModule, setActiveModule] = useState('HOME'); // 'HOME' vs 'QUANT' vs 'GK' vs 'CA'
+  const [activeModule, setActiveModule] = useState('HOME');
   const [activeTab, setActiveTab] = useState('DASHBOARD');
   const [viewState, setViewState] = useState('DASHBOARD');
   const [initialDossierTopic, setInitialDossierTopic] = useState(null);
+  const [adaptiveTutorQuestions, setAdaptiveTutorQuestions] = useState([]);
+  const tutorQuestionBank = useMemo(
+    () => [...legacyTutorQuestionBank, ...adaptiveTutorQuestions],
+    [adaptiveTutorQuestions],
+  );
+
+  useEffect(() => {
+    if (activeModule !== 'STUDENT' || adaptiveTutorQuestions.length) return;
+    let active = true;
+    import('./data/adaptiveMockBank').then((module) => {
+      if (active) setAdaptiveTutorQuestions(module.adaptiveVerifiedQuestions);
+    });
+    return () => { active = false; };
+  }, [activeModule, adaptiveTutorQuestions.length]);
 
   // Parse query params for deep linking on load
   useEffect(() => {
@@ -102,7 +177,7 @@ function StudentApp() {
     if (topic) {
       setInitialDossierTopic(topic);
       setActiveModule('CA');
-    } else if (['QUANT', 'GK', 'CA'].includes(requestedModule)) {
+    } else if (['QUANT', 'GK', 'CA', 'ENGLISH', 'LEGAL', 'LOGICAL', 'MOCKS'].includes(requestedModule)) {
       setActiveModule(requestedModule);
     }
   }, []);
@@ -121,12 +196,18 @@ function StudentApp() {
   };
   
   const [activeDrillTitle, setActiveDrillTitle] = useState('');
+  // What the learner actually opened: { day, sessionSize, paperId }. Completion
+  // used to be inferred by regexing "Day N" out of the display title, which
+  // marked a 15-question sample as a finished 36-question session and never
+  // recognised a mock paper at all. Identity is now passed, not parsed.
+  const [activeSession, setActiveSession] = useState(null);
   const [activeQuestions, setActiveQuestions] = useState([]);
   const [lastTestResult, setLastTestResult] = useState(null);
 
   const [currentUser, setCurrentUser] = useState(null);
   const [trustedClaims, setTrustedClaims] = useState(null);
   const [authResolved, setAuthResolved] = useState(false);
+  const [profileBootstrapResolved, setProfileBootstrapResolved] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
   const [privacyRequests, setPrivacyRequests] = useState([]);
@@ -139,6 +220,7 @@ function StudentApp() {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
+      setProfileBootstrapResolved(false);
       if (user) {
         try {
           const claims = await getTrustedTokenClaims(user);
@@ -146,7 +228,13 @@ function StudentApp() {
             setTrustedClaims(claims);
             if (canProcessInCloud(claims)) {
               const cloudProgress = await fetchCloudUserProgress(user.uid);
-              if (cloudProgress) setUserProgress({ ...defaultProgress, ...cloudProgress });
+              const restoredProgress = progressWithVerifiedAdultProfile(cloudProgress, user, claims);
+              setUserProgress(restoredProgress);
+              if (!cloudProgress?.studentProfile && restoredProgress.studentProfile) {
+                await saveStudentProfileToCloud(user.uid, restoredProgress.studentProfile).catch((error) => {
+                  console.warn('Verified profile persistence notice:', error);
+                });
+              }
             } else {
               setUserProgress(defaultProgress);
             }
@@ -166,11 +254,13 @@ function StudentApp() {
             setCurrentUser(null);
           }
         } finally {
+          setProfileBootstrapResolved(true);
           setAuthResolved(true);
         }
       } else {
         setTrustedClaims(null);
         setUserProgress(defaultProgress);
+        setProfileBootstrapResolved(true);
         setAuthResolved(true);
       }
     });
@@ -197,6 +287,7 @@ function StudentApp() {
 
   const handleExistingGoogleSignIn = async () => {
     authFlowInProgress.current = true;
+    setProfileBootstrapResolved(false);
     try {
       const signInResult = await signInWithGoogle();
       const user = signInResult?.user;
@@ -209,17 +300,25 @@ function StudentApp() {
           await logOutUser();
         }
         throw new Error(
-          'This Google account has not completed privacy activation. Choose “Create account” to finish the adult or parent-consent route.'
+          'This Google account has neither an activated student account nor a server-issued administrator role. Students can choose “Create account”; administrators must have an authorized operator assign their Firebase admin role.'
         );
       }
       setCurrentUser(user);
       setTrustedClaims(claims);
       if (canProcessInCloud(claims)) {
         const cloudProgress = await fetchCloudUserProgress(user.uid);
-        setUserProgress(cloudProgress ? { ...defaultProgress, ...cloudProgress } : defaultProgress);
+        const restoredProgress = progressWithVerifiedAdultProfile(cloudProgress, user, claims);
+        setUserProgress(restoredProgress);
+        if (!cloudProgress?.studentProfile && restoredProgress.studentProfile) {
+          await saveStudentProfileToCloud(user.uid, restoredProgress.studentProfile).catch((error) => {
+            console.warn('Verified profile persistence notice:', error);
+          });
+        }
+        setProfileBootstrapResolved(true);
         enterStudentDashboard();
       } else {
         setUserProgress(defaultProgress);
+        setProfileBootstrapResolved(true);
         setIsAuthModalOpen(false);
         setActiveModule('STUDENT');
         setActiveTab('TEACHER_ADMIN');
@@ -255,43 +354,7 @@ function StudentApp() {
           targetNlu: prev?.studentProfile?.targetNlu || 'NLSIU Bengaluru'
         }
       }));
-      enterStudentDashboard();
-    } catch (err) {
-      if (signInResult?.isNewUser && signInResult.user) {
-        await deleteUser(signInResult.user).catch(() => logOutUser());
-      } else {
-        await logOutUser();
-      }
-      throw err;
-    } finally {
-      authFlowInProgress.current = false;
-    }
-  };
-
-  const handleChildGoogleSignIn = async ({ activationCode }) => {
-    let signInResult;
-    authFlowInProgress.current = true;
-    try {
-      signInResult = await signInWithGoogle();
-      const user = signInResult?.user;
-      if (!user) throw new Error('Google sign-in was not completed.');
-      await claimChildConsent(activationCode);
-      const claims = await getTrustedTokenClaims(user, true);
-      if (claims?.privacyStatus !== 'PARENT_VERIFIED') {
-        throw new Error('Verified parent consent was not attached to this account.');
-      }
-      clearSessionPracticeState();
-      setTrustedClaims(claims);
-      setUserProgress(prev => ({
-        ...(prev || defaultProgress),
-        studentProfile: {
-          ...(prev?.studentProfile || {}),
-          name: user.displayName || 'CLAT Aspirant',
-          email: user.email || '',
-          targetYear: prev?.studentProfile?.targetYear || 'CLAT 2027',
-          targetNlu: prev?.studentProfile?.targetNlu || 'NLSIU Bengaluru'
-        }
-      }));
+      setProfileBootstrapResolved(true);
       enterStudentDashboard();
     } catch (err) {
       if (signInResult?.isNewUser && signInResult.user) {
@@ -339,18 +402,33 @@ function StudentApp() {
     clearSessionPracticeState();
     setTrustedClaims(null);
     setUserProgress(defaultProgress);
+    setProfileBootstrapResolved(false);
     setPrivacyRequests([]);
   };
 
   // Open profile modal if no profile registered yet
   useEffect(() => {
-    if (!userProgress?.studentProfile && activeModule !== 'HOME' && canProcessInCloud(trustedClaims)) {
+    if (userProgress?.studentProfile) {
+      setIsProfileModalOpen(false);
+      return undefined;
+    }
+    if (shouldRequestStudentProfile({
+      profileBootstrapResolved,
+      activeModule,
+      cloudProcessingAllowed: canProcessInCloud(trustedClaims),
+      studentProfile: userProgress?.studentProfile
+    })) {
       const timer = setTimeout(() => setIsProfileModalOpen(true), 800);
       return () => clearTimeout(timer);
     }
-  }, [userProgress, activeModule, trustedClaims]);
+    return undefined;
+  }, [userProgress?.studentProfile, profileBootstrapResolved, activeModule, trustedClaims]);
 
-  const handleSaveProfile = (profileData) => {
+  const handleSaveProfile = async (profileData) => {
+    if (!currentUser?.uid || !canProcessInCloud(trustedClaims)) {
+      throw new Error('Please sign in again before saving your student profile.');
+    }
+    await saveStudentProfileToCloud(currentUser.uid, profileData);
     setUserProgress(prev => ({ ...(prev || defaultProgress), studentProfile: profileData }));
     setIsProfileModalOpen(false);
   };
@@ -364,7 +442,11 @@ function StudentApp() {
     const dayQs = questionsList.filter(q => q.day === dayNum);
     const modulePrefix = targetModule === 'QUANT' ? 'Quant & LR' : 'GK & Current Affairs';
     setActiveDrillTitle(`Day ${dayNum} ${modulePrefix} Mock Drill`);
-    setActiveQuestions(dayQs.length > 0 ? dayQs : questionsList.slice(0, 10));
+    const served = dayQs.length > 0 ? dayQs : questionsList.slice(0, 10);
+    // Only a real day counts toward completion; the 10-question fallback that
+    // fires when a day is empty is practice, not a finished session.
+    setActiveSession(dayQs.length > 0 ? { day: dayNum, sessionSize: dayQs.length } : null);
+    setActiveQuestions(served);
     setViewState('MOCK_TEST');
   };
 
@@ -405,15 +487,29 @@ function StudentApp() {
     }
 
     setActiveDrillTitle(`${topicName} Topic Practice Drill`);
+    setActiveSession(null); // A topic drill spans sessions; it completes none.
     setActiveQuestions(topicQs.length > 0 ? topicQs : questionsList.slice(0, 10));
     setViewState('MOCK_TEST');
+  };
+
+  const handleStartQuestionSet = (title, questionSet, moduleName = 'QUANT', session = null) => {
+    if (!Array.isArray(questionSet) || questionSet.length === 0) return;
+    setActiveModule(moduleName);
+    setActiveDrillTitle(title);
+    setActiveSession(session);
+    setActiveQuestions(questionSet);
+    setViewState('MOCK_TEST');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const intVal = (val) => parseInt(val, 10);
 
   const handleCompleteTest = (resultData) => {
-    const match = resultData.drillTitle.match(/Day (\d+)/);
-    const dayNum = match ? intVal(match[1]) : null;
+    // A "Quick 15" out of 36 is real practice and is scored as such, but it
+    // does not tick the session off the ladder.
+    const completionKey = completionKeyFor(activeSession, resultData.maxScore);
+    const paperId = activeSession?.paperId || null;
+    const dayNum = paperId ? null : completionKey;
 
     const topicAccMap = {};
     resultData.responses.forEach(r => {
@@ -430,28 +526,43 @@ function StudentApp() {
       return item.tot > 0 && (item.corr / item.tot) < 0.5;
     });
 
+    // Accuracy is correct-out-of-attempted; how much of the paper was attempted
+    // is a separate signal. Blending them into one number understates every
+    // student who leaves questions blank, which CLAT strategy often rewards.
+    const attemptedCount = resultData.correctCount + resultData.wrongCount;
     const attemptRecord = {
       module: activeModule,
       drillTitle: resultData.drillTitle,
       dayNum: dayNum,
+      paperId,
       timestamp: new Date().toISOString(),
       score: resultData.score,
       maxScore: resultData.maxScore,
-      accuracyPct: Math.round((resultData.correctCount / resultData.maxScore) * 100),
+      attemptedCount,
+      accuracyPct: accuracyOf(resultData.correctCount, resultData.wrongCount),
+      attemptRatePct: attemptRateOf(resultData.correctCount, resultData.wrongCount, resultData.maxScore),
       correctCount: resultData.correctCount,
       wrongCount: resultData.wrongCount,
       unattemptedCount: resultData.unattemptedCount,
       totalTimeSpent: resultData.totalTimeSpent,
+      averageSecondsPerAttempt: resultData.correctCount + resultData.wrongCount
+        ? Math.round(resultData.totalTimeSpent / (resultData.correctCount + resultData.wrongCount))
+        : null,
       weakTopics: weakTopics
     };
 
     setUserProgress(prev => {
       const base = prev || defaultProgress;
-      const moduleKeys = activeModule === 'GK'
-        ? ['gkCompletedDays', 'gkDayScores', 'gkTopicAttempted', 'gkTopicCorrect', 'gkTotalAttempted', 'gkTotalCorrect']
-        : activeModule === 'CA'
-          ? ['caCompletedDays', 'caDayScores', 'caTopicAttempted', 'caTopicCorrect', 'caTotalAttempted', 'caTotalCorrect']
-          : ['completedDays', 'dayScores', 'topicAttempted', 'topicCorrect', 'totalAttempted', 'totalCorrect'];
+      const progressKeysByModule = {
+        GK: ['gkCompletedDays', 'gkDayScores', 'gkTopicAttempted', 'gkTopicCorrect', 'gkTotalAttempted', 'gkTotalCorrect'],
+        CA: ['caCompletedDays', 'caDayScores', 'caTopicAttempted', 'caTopicCorrect', 'caTotalAttempted', 'caTotalCorrect'],
+        ENGLISH: ['englishCompletedDays', 'englishDayScores', 'englishTopicAttempted', 'englishTopicCorrect', 'englishTotalAttempted', 'englishTotalCorrect'],
+        LEGAL: ['legalCompletedDays', 'legalDayScores', 'legalTopicAttempted', 'legalTopicCorrect', 'legalTotalAttempted', 'legalTotalCorrect'],
+        LOGICAL: ['logicalCompletedDays', 'logicalDayScores', 'logicalTopicAttempted', 'logicalTopicCorrect', 'logicalTotalAttempted', 'logicalTotalCorrect'],
+        MOCKS: ['mockCompletedDays', 'mockDayScores', 'mockTopicAttempted', 'mockTopicCorrect', 'mockTotalAttempted', 'mockTotalCorrect'],
+      };
+      const moduleKeys = progressKeysByModule[activeModule]
+        || ['completedDays', 'dayScores', 'topicAttempted', 'topicCorrect', 'totalAttempted', 'totalCorrect'];
       const [keyCompletedDays, keyDayScores, keyTopicAttempted, keyTopicCorrect, keyTotalAttempted, keyTotalCorrect] = moduleKeys;
 
       const newCompletedDays = { ...(base[keyCompletedDays] || {}) };
@@ -459,12 +570,15 @@ function StudentApp() {
       const newTopicAttempted = { ...(base[keyTopicAttempted] || {}) };
       const newTopicCorrect = { ...(base[keyTopicCorrect] || {}) };
 
-      if (dayNum) {
-        newCompletedDays[dayNum] = true;
-        newDayScores[dayNum] = {
+      // Sessions are keyed by day, mock papers by paper id — the mock library
+      // has no day numbers, which is why it never recorded a completion before.
+      if (completionKey) {
+        newCompletedDays[completionKey] = true;
+        newDayScores[completionKey] = {
           score: resultData.score,
           total: resultData.maxScore,
-          pct: Math.round((resultData.correctCount / resultData.maxScore) * 100)
+          attempted: attemptedCount,
+          pct: accuracyOf(resultData.correctCount, resultData.wrongCount)
         };
       }
 
@@ -478,16 +592,71 @@ function StudentApp() {
         }
       });
 
+      const attemptedAt = new Date().toISOString();
+      const nextQuestionAttempts = resultData.responses
+        .filter(response => !response.isUnattempted)
+        .map(response => {
+          const questionModule = response.question.tutorModule || response.question.module || activeModule;
+          return {
+            questionId: response.question.id,
+            module: questionModule,
+            topic: response.question.topic,
+            skillId: response.question.skillId || null,
+            difficultyLevel: response.question.difficultyLevel,
+            difficultyIndex: response.question.difficultyIndex ?? null,
+            calibrationStatus: response.question.adaptiveCalibration?.calibrationStatus || null,
+            isCorrect: response.isCorrect,
+            userAnswer: response.userAnswer,
+            timeSpentSeconds: response.timeSpentSeconds,
+            attemptedAt
+          };
+        });
+      const nextErrorNotebook = { ...(base.errorNotebook || {}) };
+      resultData.responses.forEach(response => {
+        if (response.isUnattempted) return;
+        const questionId = String(response.question.id);
+        const questionModule = response.question.tutorModule || response.question.module || activeModule;
+        const notebookKey = `${questionModule}:${questionId}`;
+        const existing = nextErrorNotebook[notebookKey] || nextErrorNotebook[questionId] || {};
+        if (response.isCorrect) {
+          if (nextErrorNotebook[notebookKey] || nextErrorNotebook[questionId]) {
+            nextErrorNotebook[notebookKey] = {
+              ...existing,
+              status: 'resolved',
+              resolvedAt: attemptedAt,
+              lastAttemptAt: attemptedAt
+            };
+          }
+          return;
+        }
+        nextErrorNotebook[notebookKey] = {
+          ...existing,
+          questionId: response.question.id,
+          module: questionModule,
+          topic: response.question.topic,
+          skillId: response.question.skillId || null,
+          wrongCount: (existing.wrongCount || 0) + 1,
+          lastAnswer: response.userAnswer,
+          lastAttemptAt: attemptedAt,
+          revisionDueAt: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(),
+          status: 'open'
+        };
+      });
+
+      const nextHistory = [attemptRecord, ...(base.attemptHistory || [])];
+
       return {
         ...base,
-        attemptHistory: [attemptRecord, ...(base.attemptHistory || [])],
+        attemptHistory: nextHistory,
         [keyCompletedDays]: newCompletedDays,
         [keyDayScores]: newDayScores,
         [keyTopicAttempted]: newTopicAttempted,
         [keyTopicCorrect]: newTopicCorrect,
         [keyTotalAttempted]: (base[keyTotalAttempted] || 0) + (resultData.correctCount + resultData.wrongCount),
         [keyTotalCorrect]: (base[keyTotalCorrect] || 0) + resultData.correctCount,
-        streak: Object.keys(newCompletedDays).length > 0 ? Object.keys(newCompletedDays).length : 1
+        questionAttempts: [...nextQuestionAttempts, ...(base.questionAttempts || [])].slice(0, 500),
+        errorNotebook: nextErrorNotebook,
+        streak: calculateStreak(nextHistory)
       };
     });
 
@@ -582,7 +751,7 @@ function StudentApp() {
     <div className="app-container">
       {viewState !== 'MOCK_TEST' && activeModule !== 'HOME' && (
         <header className="glass-panel header-nav">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <div className="header-nav-top">
             <div
               className="logo-brand"
               onClick={() => { setActiveModule('HOME'); setViewState('DASHBOARD'); }}
@@ -596,59 +765,9 @@ function StudentApp() {
               role="button"
               tabIndex={0}
               aria-label="Open home dashboard"
-              style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}
             >
               <BrandLockup />
             </div>
-
-            {/* THREE MODULE SWITCHER */}
-            <div style={{
-              display: 'flex', gap: '6px', background: 'var(--bg-primary)',
-              padding: '4px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)'
-            }}>
-              <button
-                onClick={() => { setActiveModule('QUANT'); setActiveTab('DASHBOARD'); setViewState('DASHBOARD'); }}
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '6px',
-                  padding: '8px 16px', borderRadius: 'var(--radius-sm)', border: 'none',
-                  background: activeModule === 'QUANT' ? 'var(--accent-primary)' : 'transparent',
-                  color: activeModule === 'QUANT' ? 'white' : 'var(--text-secondary)',
-                  fontWeight: 800, fontSize: '0.875rem', cursor: 'pointer', transition: 'all 0.2s',
-                  boxShadow: activeModule === 'QUANT' ? 'var(--shadow-sm)' : 'none'
-                }}
-              >
-                <BrainCircuit size={16} /> 🧮 Quant
-              </button>
-
-              <button
-                onClick={() => { setActiveModule('GK'); setActiveTab('DASHBOARD'); setViewState('DASHBOARD'); }}
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '6px',
-                  padding: '8px 16px', borderRadius: 'var(--radius-sm)', border: 'none',
-                  background: activeModule === 'GK' ? 'var(--accent-success)' : 'transparent',
-                  color: activeModule === 'GK' ? 'white' : 'var(--text-secondary)',
-                  fontWeight: 800, fontSize: '0.875rem', cursor: 'pointer', transition: 'all 0.2s',
-                  boxShadow: activeModule === 'GK' ? 'var(--shadow-sm)' : 'none'
-                }}
-              >
-                <Globe size={16} /> 🏛️ Static GK
-              </button>
-
-              <button
-                onClick={() => { setActiveModule('CA'); setActiveTab('DASHBOARD'); setViewState('DASHBOARD'); }}
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '6px',
-                  padding: '8px 16px', borderRadius: 'var(--radius-sm)', border: 'none',
-                  background: activeModule === 'CA' ? 'var(--brand-purple)' : 'transparent',
-                  color: activeModule === 'CA' ? 'white' : 'var(--text-secondary)',
-                  fontWeight: 800, fontSize: '0.875rem', cursor: 'pointer', transition: 'all 0.2s',
-                  boxShadow: activeModule === 'CA' ? 'var(--shadow-sm)' : 'none'
-                }}
-              >
-                <Newspaper size={16} /> 📰 Current Affairs
-              </button>
-            </div>
-          </div>
 
           <nav className="nav-tabs">
             <button 
@@ -681,7 +800,7 @@ function StudentApp() {
             </button>
 
             {/* Admin access is granted only by trusted Firebase custom claims. */}
-            {(trustedClaims?.privacyAdmin === true || trustedClaims?.caAdmin === true) && (
+            {hasAdminAccess(trustedClaims) && (
               <button 
                 className={`nav-tab-btn ${activeTab === 'TEACHER_ADMIN' ? 'active' : ''}`}
                 onClick={() => { setActiveTab('TEACHER_ADMIN'); setViewState('TEACHER_ADMIN'); }}
@@ -723,6 +842,22 @@ function StudentApp() {
             >
               {theme === 'light' ? <Moon size={16} color="var(--accent-primary)" /> : <Sun size={16} color="var(--accent-warning)" />}
             </button>
+            </nav>
+          </div>
+
+          <nav className="module-switcher" aria-label="Study modules">
+            {MODULE_TABS.map(({ id, label, icon: Icon, accent }) => (
+              <button
+                key={id}
+                type="button"
+                className={`module-tab ${activeModule === id ? 'active' : ''}`}
+                style={{ '--module-accent': accent }}
+                aria-current={activeModule === id ? 'page' : undefined}
+                onClick={() => { setActiveModule(id); setActiveTab('DASHBOARD'); setViewState('DASHBOARD'); }}
+              >
+                <Icon size={16} /> {label}
+              </button>
+            ))}
           </nav>
         </header>
       )}
@@ -750,6 +885,7 @@ function StudentApp() {
           <ModuleErrorBoundary key="STUDENT" moduleName="Student Dashboard">
             <StudentDashboard
               userProgress={safeProgress}
+              tutorQuestions={tutorQuestionBank}
               currentUser={currentUser}
               onStartDayDrill={handleStartDayDrill}
               onStartTopicPractice={handleStartTopicPractice}
@@ -777,6 +913,19 @@ function StudentApp() {
                 setActiveTab('ADMIN');
                 setViewState('ADMIN');
               }}
+              onOpenTutor={() => setViewState('AI_TUTOR')}
+            />
+          </ModuleErrorBoundary>
+        )}
+
+        {viewState === 'AI_TUTOR' && activeModule === 'STUDENT' && (
+          <ModuleErrorBoundary key="AI_TUTOR" moduleName="AI Tutor">
+            <AITutor
+              userProgress={safeProgress}
+              questions={tutorQuestionBank}
+              currentUser={currentUser}
+              onStartQuestionSet={handleStartQuestionSet}
+              onBack={() => setViewState('DASHBOARD')}
             />
           </ModuleErrorBoundary>
         )}
@@ -788,6 +937,7 @@ function StudentApp() {
               userProgress={safeProgress}
               onStartDayDrill={handleStartDayDrill}
               onStartTopicPractice={handleStartTopicPractice}
+              onStartQuestionSet={handleStartQuestionSet}
             />
           </ModuleErrorBoundary>
         )}
@@ -822,6 +972,53 @@ function StudentApp() {
               bookmarkedDossierIds={safeProgress.bookmarkedDossierIds}
               onToggleDossierBookmark={handleToggleDossierBookmark}
             />
+          </ModuleErrorBoundary>
+        )}
+
+        {viewState === 'DASHBOARD' && activeModule === 'ENGLISH' && (
+          <ModuleErrorBoundary key="ENGLISH" moduleName="English Language">
+            <Suspense fallback={<div className="glass-panel" style={{ padding: '28px' }}>Loading English question bank…</div>}>
+              <CLATSectionDashboard
+                moduleId="ENGLISH"
+                userProgress={safeProgress}
+                onStartQuestionSet={handleStartQuestionSet}
+              />
+            </Suspense>
+          </ModuleErrorBoundary>
+        )}
+
+        {viewState === 'DASHBOARD' && activeModule === 'LEGAL' && (
+          <ModuleErrorBoundary key="LEGAL" moduleName="Legal Reasoning">
+            <Suspense fallback={<div className="glass-panel" style={{ padding: '28px' }}>Loading Legal question bank…</div>}>
+              <CLATSectionDashboard
+                moduleId="LEGAL"
+                userProgress={safeProgress}
+                onStartQuestionSet={handleStartQuestionSet}
+              />
+            </Suspense>
+          </ModuleErrorBoundary>
+        )}
+
+        {viewState === 'DASHBOARD' && activeModule === 'LOGICAL' && (
+          <ModuleErrorBoundary key="LOGICAL" moduleName="Logical Reasoning">
+            <Suspense fallback={<div className="glass-panel" style={{ padding: '28px' }}>Loading Logical question bank…</div>}>
+              <CLATSectionDashboard
+                moduleId="LOGICAL"
+                userProgress={safeProgress}
+                onStartQuestionSet={handleStartQuestionSet}
+              />
+            </Suspense>
+          </ModuleErrorBoundary>
+        )}
+
+        {viewState === 'DASHBOARD' && activeModule === 'MOCKS' && (
+          <ModuleErrorBoundary key="MOCKS" moduleName="CLAT Mock Papers">
+            <Suspense fallback={<div className="glass-panel" style={{ padding: '28px' }}>Loading mock-paper library…</div>}>
+              <MockPaperDashboard
+                userProgress={safeProgress}
+                onStartQuestionSet={handleStartQuestionSet}
+              />
+            </Suspense>
           </ModuleErrorBoundary>
         )}
 
@@ -983,7 +1180,6 @@ function StudentApp() {
           onClose={() => setIsAuthModalOpen(false)}
           onExistingGoogleSignIn={handleExistingGoogleSignIn}
           onAdultGoogleSignIn={handleAdultGoogleSignIn}
-          onChildGoogleSignIn={handleChildGoogleSignIn}
           onGuestContinue={() => setIsAuthModalOpen(false)}
           onParentConsentRequested={handleParentConsentRequested}
         />
@@ -991,6 +1187,7 @@ function StudentApp() {
         <StudentProfileModal 
           isOpen={isProfileModalOpen}
           currentProfile={safeProgress.studentProfile}
+          currentUser={currentUser}
           onSaveProfile={handleSaveProfile}
           onClose={safeProgress.studentProfile ? () => setIsProfileModalOpen(false) : null}
         />

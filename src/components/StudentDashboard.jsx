@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   ArrowRight,
   BarChart3,
@@ -18,11 +18,22 @@ import {
   Trophy
 } from 'lucide-react';
 import graphData from '../data/ca_knowledge_graph.json';
+import { buildStudentModel } from '../utils/adaptiveTutor';
 import './StudentDashboard.css';
 
 const getAccuracy = (attempted, correct) => (
   attempted > 0 ? Math.round((correct / attempted) * 100) : 0
 );
+
+const MODULE_LABELS = {
+  QUANT: 'Quantitative Techniques',
+  GK: 'General Knowledge',
+  CA: 'Current Affairs',
+  ENGLISH: 'English Language',
+  LEGAL: 'Legal Reasoning',
+  LOGICAL: 'Logical Reasoning',
+  MOCKS: 'Full Mock',
+};
 
 const getNextDay = (completedDays, totalDays) => (
   Array.from({ length: totalDays }, (_, index) => index + 1)
@@ -117,13 +128,15 @@ const findWeakTopics = (attemptedMap = {}, correctMap = {}) => (
 
 export default function StudentDashboard({
   userProgress,
+  tutorQuestions,
   currentUser,
   onStartDayDrill,
   onStartTopicPractice,
   onOpenModule,
   onOpenDossier,
   onOpenBookmarks,
-  onOpenRecords
+  onOpenRecords,
+  onOpenTutor
 }) {
   const [countdownNow, setCountdownNow] = useState(() => new Date());
 
@@ -132,7 +145,12 @@ export default function StudentDashboard({
     return () => window.clearInterval(timer);
   }, []);
 
-  const progress = userProgress || {};
+  const progress = useMemo(() => userProgress || {}, [userProgress]);
+  const adaptiveModel = useMemo(() => buildStudentModel({
+    userProgress: progress,
+    questions: tutorQuestions || [],
+    targetScore: 110,
+  }), [progress, tutorQuestions]);
   const profile = progress.studentProfile || {};
   const studentName = currentUser?.displayName || profile.name || 'CLAT Aspirant';
   const firstName = studentName.split(' ')[0];
@@ -173,10 +191,11 @@ export default function StudentDashboard({
     ? observedAccuracies.reduce((sum, value) => sum + value, 0) / observedAccuracies.length
     : 0;
   const accuracyConfidence = Math.min(1, answeredQuestions / 100);
-  const readiness = Math.min(100, Math.round(
+  const legacyReadiness = Math.min(100, Math.round(
     (((quantCompletion + gkCompletion + caCompletion) / 3) * 0.6)
     + (overallAccuracy * accuracyConfidence * 0.4)
   ));
+  const readiness = adaptiveModel.totalAttempted ? adaptiveModel.readiness : legacyReadiness;
   const readinessLabel = readiness >= 75
     ? 'Exam-ready momentum'
     : readiness >= 50
@@ -247,15 +266,15 @@ export default function StudentDashboard({
             Your smartest next step is ready. Finish today’s three moves to create a stronger readiness signal.
           </p>
           <div className="student-command-actions">
-            <button className="student-command-primary" onClick={() => onStartDayDrill(nextQuantDay, 'QUANT')}>
-              <Play size={17} /> {answeredQuestions ? `Continue Quant · Day ${nextQuantDay}` : 'Start my first drill'} <ArrowRight size={16} />
+            <button className="student-command-primary" onClick={onOpenTutor}>
+              <Sparkles size={17} /> Ask my AI tutor <ArrowRight size={16} />
             </button>
-            <button className="student-command-secondary" onClick={onOpenRecords}>
-              <History size={17} /> View my records
+            <button className="student-command-secondary" onClick={() => onStartDayDrill(nextQuantDay, 'QUANT')}>
+              <Play size={17} /> {answeredQuestions ? `Continue Quant · Day ${nextQuantDay}` : 'Start my first drill'}
             </button>
           </div>
           <div className="student-command-signals">
-            <span><Flame size={15} /> {progress.streak || 1}-day momentum</span>
+            <span><Flame size={15} /> {progress.streak > 0 ? `${progress.streak}-day streak` : 'Start your streak today'}</span>
             <span><Target size={15} /> {answeredQuestions} answers recorded</span>
             <span><BookMarked size={15} /> {totalBookmarks} saved</span>
           </div>
@@ -269,7 +288,11 @@ export default function StudentDashboard({
           <div className="student-readiness-ring" style={{ '--readiness': `${readiness * 3.6}deg` }}>
             <div><strong>{readiness}<small>%</small></strong><span>{readinessLabel}</span></div>
           </div>
-          <p>{answeredQuestions ? 'Based on your completion and observed accuracy.' : 'Complete one drill to unlock a meaningful score.'}</p>
+          <p>{adaptiveModel.totalAttempted
+            ? `Accuracy, active speed, difficulty, coverage and revision · ${adaptiveModel.evidenceScore}% evidence`
+            : answeredQuestions
+              ? 'Legacy progress found. Complete one timed drill to calibrate the adaptive model.'
+              : 'Complete one drill to unlock a meaningful score.'}</p>
         </article>
       </section>
 
@@ -395,9 +418,13 @@ export default function StudentDashboard({
                   <article key={`${attempt.timestamp || 'attempt'}-${index}`}>
                     <div className={`student-activity-dot is-${(attempt.module || 'QUANT').toLowerCase()}`}><CheckCircle2 size={14} /></div>
                     <div>
-                      <span>{attempt.module === 'GK' ? 'Static GK' : attempt.module === 'CA' ? 'Current Affairs' : 'Quant'} · {formatAttemptDate(attempt.timestamp)}</span>
+                      <span>{MODULE_LABELS[attempt.module] || attempt.module || 'Practice'} · {formatAttemptDate(attempt.timestamp)}</span>
                       <strong>{attempt.drillTitle || 'Practice session'}</strong>
-                      <p>{attempt.accuracyPct ?? 0}% accuracy{formatDuration(attempt.totalTimeSpent) ? ` · ${formatDuration(attempt.totalTimeSpent)}` : ''}</p>
+                      <p>
+                        {attempt.accuracyPct ?? 0}% accuracy
+                        {Number.isFinite(attempt.attemptRatePct) ? ` · ${attempt.attemptRatePct}% attempted` : ''}
+                        {formatDuration(attempt.totalTimeSpent) ? ` · ${formatDuration(attempt.totalTimeSpent)}` : ''}
+                      </p>
                     </div>
                   </article>
                 ))}

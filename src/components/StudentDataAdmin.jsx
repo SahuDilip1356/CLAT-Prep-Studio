@@ -127,6 +127,7 @@ export default function StudentDataAdmin({ studentProfile, attemptHistory = [], 
                       </div>
                       <div style={{ fontSize: '0.775rem', color: 'var(--accent-success)' }}>
                         +{att.correctCount} Correct | -{att.wrongCount} Wrong
+                        {att.unattemptedCount ? ` | ${att.unattemptedCount} blank` : ''}
                       </div>
                     </div>
                   </div>

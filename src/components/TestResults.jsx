@@ -6,6 +6,9 @@ import {
   formatCorrectAnswer,
   formatUserAnswer,
 } from '../utils/questionAnswers';
+import {
+  accuracyOf, attemptRateOf, formatDuration, sectionBreakdown, weakestSection,
+} from '../utils/resultAnalytics';
 import { 
   Trophy, CheckCircle2, XCircle, HelpCircle, ArrowLeft, RefreshCw, Bookmark, AlertTriangle, Lightbulb, Printer, Download 
 } from 'lucide-react';
@@ -13,7 +16,16 @@ import {
 export default function TestResults({ testData, onBackToDashboard, onRetakeDrill, onToggleBookmark, bookmarkedIds = {} }) {
   const { drillTitle, score, maxScore, correctCount, wrongCount, unattemptedCount, totalTimeSpent, responses } = testData;
 
-  const pct = Math.max(0, Math.round((correctCount / maxScore) * 100));
+  // Accuracy answers "of the ones I tried, how many did I get right"; attempt
+  // rate answers "how much of the paper did I reach". Two different problems,
+  // two different fixes, so they are never merged into one percentage.
+  const attemptedCount = correctCount + wrongCount;
+  const accuracyPct = accuracyOf(correctCount, wrongCount);
+  const attemptRatePct = attemptRateOf(correctCount, wrongCount, maxScore);
+  const sections = sectionBreakdown(responses);
+  // One row is not a breakdown, so a single-module set skips the table.
+  const showSections = sections.length > 1;
+  const weakest = weakestSection(sections);
 
   const handlePrintPDF = () => {
     window.print();
@@ -42,8 +54,13 @@ export default function TestResults({ testData, onBackToDashboard, onRetakeDrill
           </div>
 
           <div className="glass-card kpi-card">
-            <div className="kpi-value" style={{ color: 'var(--accent-success)' }}>{pct}%</div>
-            <div className="kpi-label">Accuracy Percentage</div>
+            <div className="kpi-value" style={{ color: 'var(--accent-success)' }}>{accuracyPct}%</div>
+            <div className="kpi-label">Accuracy — {correctCount} of {attemptedCount} attempted</div>
+          </div>
+
+          <div className="glass-card kpi-card">
+            <div className="kpi-value">{attemptRatePct}%</div>
+            <div className="kpi-label">Paper attempted — {unattemptedCount} left blank</div>
           </div>
 
           <div className="glass-card kpi-card">
@@ -55,6 +72,15 @@ export default function TestResults({ testData, onBackToDashboard, onRetakeDrill
             <div className="kpi-value" style={{ color: 'var(--accent-danger)' }}>-{wrongCount}</div>
             <div className="kpi-label">Incorrect Answers</div>
           </div>
+
+          {totalTimeSpent > 0 && (
+            <div className="glass-card kpi-card">
+              <div className="kpi-value">{formatDuration(totalTimeSpent)}</div>
+              <div className="kpi-label">
+                Time taken{attemptedCount ? ` · ${Math.round(totalTimeSpent / attemptedCount)}s per attempt` : ''}
+              </div>
+            </div>
+          )}
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '14px', flexWrap: 'wrap' }}>
@@ -69,6 +95,48 @@ export default function TestResults({ testData, onBackToDashboard, onRetakeDrill
           </button>
         </div>
       </div>
+
+      {showSections && (
+        <div className="glass-panel section-scorecard">
+          <div className="section-scorecard-head">
+            <h2>Section-wise performance</h2>
+            {weakest && (
+              <p>
+                Weakest section: <strong>{weakest.label}</strong> — {weakest.score.toFixed(2)} of {weakest.total}.
+                Start here tomorrow.
+              </p>
+            )}
+          </div>
+          <div className="section-scorecard-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Section</th>
+                  <th scope="col">Score</th>
+                  <th scope="col">Correct</th>
+                  <th scope="col">Wrong</th>
+                  <th scope="col">Blank</th>
+                  <th scope="col">Accuracy</th>
+                  <th scope="col">Sec / Q</th>
+                </tr>
+              </thead>
+              <tbody>
+                {sections.map((section) => (
+                  <tr key={section.key} className={weakest?.key === section.key ? 'is-weakest' : ''}>
+                    <th scope="row">{section.label}</th>
+                    <td><strong>{section.score.toFixed(2)}</strong> <span>/ {section.total}</span></td>
+                    <td className="is-positive">{section.correct}</td>
+                    <td className="is-negative">{section.wrong}</td>
+                    <td>{section.blank}</td>
+                    <td>{section.accuracy}%</td>
+                    <td>{section.secondsPerQuestion || '—'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
         {responses.map((res, idx) => {
