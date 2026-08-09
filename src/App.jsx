@@ -22,7 +22,8 @@ import ChildActivationPage from './components/ChildActivationPage';
 import ParentRightsApprovalPage from './components/ParentRightsApprovalPage';
 import PrivacyCentre from './components/PrivacyCentre';
 import ModuleErrorBoundary from './components/ModuleErrorBoundary';
-import { calculateStreak, completionKeyFor } from './utils/sessionProgress';
+import UnsavedProgressBanner from './components/UnsavedProgressBanner';
+import { calculateStreak, completionKeyFor, unsavedAnswerCount } from './utils/sessionProgress';
 import { accuracyOf, attemptRateOf } from './utils/resultAnalytics';
 import BrandLockup from './components/BrandLockup';
 import PWAExperience from './components/PWAExperience';
@@ -277,6 +278,23 @@ function StudentApp() {
       localStorage.removeItem('clat_quant_progress');
     }
   }, [userProgress, currentUser, trustedClaims, authResolved]);
+
+  // Without consent nothing is written to disk or cloud, which is the DPDPA
+  // position. It only becomes a defect when the learner is not told, so count
+  // what is at risk and surface it.
+  const unsavedAnswers = unsavedAnswerCount(userProgress, canProcessInCloud(trustedClaims));
+
+  // A reload or a closed tab is where the work actually disappears.
+  useEffect(() => {
+    if (!unsavedAnswers) return undefined;
+    const warn = (event) => {
+      event.preventDefault();
+      event.returnValue = '';
+      return '';
+    };
+    window.addEventListener('beforeunload', warn);
+    return () => window.removeEventListener('beforeunload', warn);
+  }, [unsavedAnswers]);
 
   const enterStudentDashboard = () => {
     setIsAuthModalOpen(false);
@@ -860,6 +878,13 @@ function StudentApp() {
             ))}
           </nav>
         </header>
+      )}
+
+      {viewState !== 'MOCK_TEST' && (
+        <UnsavedProgressBanner
+          answeredCount={unsavedAnswers}
+          onEnableSaving={() => setIsAuthModalOpen(true)}
+        />
       )}
 
       <main>

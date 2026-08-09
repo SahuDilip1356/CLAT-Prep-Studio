@@ -1,0 +1,44 @@
+.unsaved-progress-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 18px;
+  margin-bottom: 18px;
+  border: 1px solid var(--accent-warning);
+  border-radius: var(--radius-md);
+  background: var(--accent-warning-bg);
+  color: var(--text-primary);
+}
+
+.unsaved-progress-banner > svg {
+  flex: 0 0 auto;
+  color: var(--accent-warning);
+}
+
+.unsaved-progress-banner p {
+  flex: 1 1 320px;
+  min-width: 0;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.unsaved-progress-banner button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  padding: 9px 16px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--accent-primary);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.unsaved-progress-banner button:hover {
+  background: var(--accent-primary-hover);
+}

@@ -23,6 +23,21 @@ export function completionKeyFor(session, questionsServed) {
 }
 
 /**
+ * How many answers exist that are not being stored anywhere.
+ *
+ * Without consent nothing is written to localStorage or the cloud — that is
+ * the DPDPA position and it stays. The defect was that the work then vanished
+ * on reload with no warning, so the learner needs to see the number at risk.
+ */
+export function unsavedAnswerCount(userProgress, progressIsPersisted) {
+  if (progressIsPersisted) return 0;
+  return (userProgress?.attemptHistory || []).reduce(
+    (total, attempt) => total + (attempt?.correctCount || 0) + (attempt?.wrongCount || 0),
+    0,
+  );
+}
+
+/**
  * Consecutive calendar days of study, counted back from the most recent
  * attempt. The old value was the count of sessions ever completed, which
  * showed "5-day momentum" to somebody who studied five times in a year, and

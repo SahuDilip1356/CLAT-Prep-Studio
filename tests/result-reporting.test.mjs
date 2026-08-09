@@ -165,3 +165,19 @@ test('every bank question carries the module the section table needs', () => {
     assert.equal(missing, 0, `${bank} has ${missing} questions without a module`);
   }
 });
+
+test('unsaved work is counted so the learner can be warned about it', async () => {
+  const { unsavedAnswerCount } = await import('../src/utils/sessionProgress.js');
+  const progress = {
+    attemptHistory: [
+      { correctCount: 18, wrongCount: 12, unattemptedCount: 6 },
+      { correctCount: 5, wrongCount: 0 },
+    ],
+  };
+  // Consent given: the work is persisted, so nothing is at risk.
+  assert.equal(unsavedAnswerCount(progress, true), 0);
+  // No consent: every answered question is at risk and must be surfaced.
+  assert.equal(unsavedAnswerCount(progress, false), 35);
+  assert.equal(unsavedAnswerCount({ attemptHistory: [] }, false), 0);
+  assert.equal(unsavedAnswerCount(null, false), 0);
+});
