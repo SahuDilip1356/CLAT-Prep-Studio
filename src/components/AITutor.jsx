@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { buildAdaptivePlan, getTutorReply } from '../utils/adaptiveTutor';
 import { studyState } from '../utils/studyState';
+import { auth } from '../firebase';
 import './AITutor.css';
 
 const QUICK_PROMPTS = [
@@ -90,12 +91,17 @@ export default function AITutor({
 
     let reply = null;
     try {
-      const response = await fetch('/api/tutor', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: trimmed, state: studyState(userProgress), history }),
-      });
-      if (response.ok) reply = (await response.json()).reply;
+      // The endpoint checks this token against its own allowlist; an unsigned
+      // request never reaches the provider.
+      const idToken = await auth.currentUser?.getIdToken();
+      if (idToken) {
+        const response = await fetch('/api/tutor', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
+          body: JSON.stringify({ message: trimmed, state: studyState(userProgress), history }),
+        });
+        if (response.ok) reply = (await response.json()).reply;
+      }
     } catch {
       reply = null;
     }

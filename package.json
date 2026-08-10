@@ -121,7 +121,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test:reporting": "node --test tests/result-reporting.test.mjs",
-    "test:tutor": "node --test tests/study-state.test.mjs"
+    "test:tutor": "node --test tests/study-state.test.mjs tests/tutor-access.test.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.4.2",

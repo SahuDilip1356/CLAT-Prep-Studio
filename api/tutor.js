@@ -10,10 +10,45 @@
  * the browser, never stored with progress, and never written to a log.
  */
 
+import { getAuth } from 'firebase-admin/auth';
+import { refreshFirebaseAdminCredential } from '../server/privacy-service.js';
+
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
-const DEFAULT_MODEL = process.env.TUTOR_MODEL || 'anthropic/claude-sonnet-4.5';
+const DEFAULT_MODEL = process.env.TUTOR_MODEL || 'anthropic/claude-sonnet-5';
 const MAX_QUESTION_CHARS = 1200;
 const MAX_HISTORY_TURNS = 8;
+
+/**
+ * The provider key is the owner's, billed to the owner, so the tutor answers
+ * for the owner's household and nobody else. Everyone else gets the built-in
+ * deterministic coach — the app stays fully usable, it just does not spend
+ * someone else's credit.
+ *
+ * The allowlist is checked against a verified Firebase ID token. A
+ * client-supplied email would be trivially forgeable and is never trusted.
+ */
+const ALLOWED_EMAILS = new Set(
+  (process.env.TUTOR_ALLOWED_EMAILS || 'drishtissahu@gmail.com,dilip.sahu@gmail.com')
+    .split(',')
+    .map((email) => email.trim().toLowerCase())
+    .filter(Boolean),
+);
+
+async function resolveAllowedEmail(request) {
+  const authorization = String(request.headers.authorization || '');
+  if (!authorization.startsWith('Bearer ')) return null;
+  const token = authorization.slice('Bearer '.length).trim();
+  if (!token) return null;
+
+  await refreshFirebaseAdminCredential();
+  // checkRevoked: a signed-out or disabled account loses access immediately.
+  const decoded = await getAuth().verifyIdToken(token, true);
+  const email = String(decoded.email || '').toLowerCase();
+
+  // An unverified address proves nothing about who owns it.
+  if (!decoded.email_verified) return null;
+  return ALLOWED_EMAILS.has(email) ? email : null;
+}
 
 const SYSTEM_POLICY = `You are the study coach inside CLAT Prep Studio, working with one student preparing for CLAT 2027.
 
@@ -87,6 +122,17 @@ export default async function handler(request, response) {
     // Deterministic coaching still works without a provider; the client falls
     // back on its own when it sees this.
     return response.status(503).json({ error: 'tutor-not-configured', fallback: true });
+  }
+
+  // Gate before reading the body, so an unauthorised caller costs nothing.
+  let allowedEmail = null;
+  try {
+    allowedEmail = await resolveAllowedEmail(request);
+  } catch {
+    allowedEmail = null;
+  }
+  if (!allowedEmail) {
+    return response.status(403).json({ error: 'tutor-not-enabled-for-account', fallback: true });
   }
 
   const { message, state, question, lastResult, history = [] } = request.body || {};
