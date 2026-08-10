@@ -81,3 +81,26 @@ test('the provider key is only ever read from the server environment', () => {
   const srcDir = readFileSync(join(ROOT, 'src/components/AITutor.jsx'), 'utf8');
   assert.ok(!/OPENROUTER/.test(srcDir), 'client code must not reference the key at all');
 });
+
+test('every route into the tutor sets both the module and the view', () => {
+  const app = readFileSync(join(ROOT, 'src/App.jsx'), 'utf8');
+  const helper = app.match(/const openTutor = \(\) => \{[\s\S]*?\};/);
+  assert.ok(helper, 'a single openTutor helper exists');
+  assert.match(helper[0], /setActiveModule\('STUDENT'\)/);
+  assert.match(helper[0], /setViewState\('AI_TUTOR'\)/);
+
+  // The tutor renders only when both are set, so a caller that sets one alone
+  // opens a blank screen — which is exactly how the Quant button failed.
+  const strayViewOnly = app.match(/onOpenTutor=\{\(\) => setViewState\('AI_TUTOR'\)\}/);
+  assert.equal(strayViewOnly, null, 'no entry point sets the view without the module');
+
+  const entryPoints = app.match(/on(Open|Ask)Tutor=\{openTutor\}/g) || [];
+  assert.ok(entryPoints.length >= 3, `expected every entry point routed through the helper, saw ${entryPoints.length}`);
+});
+
+test('the Quant tools panel opens the real tutor, not its own current view', () => {
+  const dash = readFileSync(join(ROOT, 'src/components/Dashboard.jsx'), 'utf8');
+  assert.match(dash, /selectedTool\.title === 'AI Tutor' && onOpenTutor/, 'AI Tutor card routes out');
+  assert.ok(!/tutor-answer[\s\S]{0,200}setup step is unstable/.test(dash),
+    'the hardcoded example answer must not be presented as a tutor reply');
+});

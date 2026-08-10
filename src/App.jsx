@@ -535,6 +535,13 @@ function StudentApp() {
     handleStartQuestionSet(`Revision · ${revision.length} unresolved errors`, revision, 'STUDENT');
   };
 
+  const openTutor = () => {
+    setActiveModule('STUDENT');
+    setActiveTab('DASHBOARD');
+    setViewState('AI_TUTOR');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const handleStartQuestionSet = (title, questionSet, moduleName = 'QUANT', session = null) => {
     if (!Array.isArray(questionSet) || questionSet.length === 0) return;
     setActiveModule(moduleName);
@@ -923,10 +930,7 @@ function StudentApp() {
                 setActiveTab('DASHBOARD');
                 setViewState('DASHBOARD');
               }}
-              onAskTutor={() => {
-                setActiveModule('STUDENT');
-                setViewState('AI_TUTOR');
-              }}
+              onAskTutor={openTutor}
             />
           </ModuleErrorBoundary>
         )}
@@ -981,7 +985,7 @@ function StudentApp() {
                 setActiveTab('ADMIN');
                 setViewState('ADMIN');
               }}
-              onOpenTutor={() => setViewState('AI_TUTOR')}
+              onOpenTutor={openTutor}
             />
           </ModuleErrorBoundary>
         )}
@@ -1006,6 +1010,7 @@ function StudentApp() {
               onStartDayDrill={handleStartDayDrill}
               onStartTopicPractice={handleStartTopicPractice}
               onStartQuestionSet={handleStartQuestionSet}
+              onOpenTutor={openTutor}
             />
           </ModuleErrorBoundary>
         )}

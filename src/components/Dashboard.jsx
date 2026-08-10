@@ -177,6 +177,7 @@ export default function Dashboard({
   onStartDayDrill,
   onStartTopicPractice,
   onStartQuestionSet,
+  onOpenTutor,
 }) {
   const [activeView, setActiveView] = useState('today');
   const [query, setQuery] = useState('');
@@ -743,12 +744,18 @@ export default function Dashboard({
           <p>{selectedTool.copy}</p>
           {selectedTool.title === 'AI Tutor' ? (
             <div className="tutor-preview">
-              <div className="tutor-question">Why do I keep missing {primaryFocus?.short || 'ratio'} questions?</div>
+              <div className="tutor-question">
+                {primaryFocus?.short
+                  ? `Why do I keep missing ${primaryFocus.short} questions?`
+                  : 'What should I work on next?'}
+              </div>
+              {/* An example of what to ask — never a fabricated answer shown as
+                  though the tutor had said it. */}
               <div className="tutor-answer">
                 <Bot size={18} />
-                <p>Your pattern suggests the concept is understood, but the setup step is unstable. Before calculating, write the two quantities in the same unit and label the ratio order.</p>
+                <p>Ask this in the tutor and it answers from your own record: your accuracy on each topic, your response times and the questions you have got wrong and not yet fixed.</p>
               </div>
-              <div className="tutor-levels"><span>Grade 6</span><span className="active">CLAT</span><span>Advanced</span></div>
+              <div className="tutor-levels"><span>Explain</span><span className="active">Diagnose</span><span>Test me</span></div>
             </div>
           ) : (
             <div className="tool-data-preview">
@@ -757,7 +764,12 @@ export default function Dashboard({
               <div><span>Active concept nodes</span><strong>{topicInsights.length}</strong></div>
             </div>
           )}
-          <button className="quant-primary-action" onClick={() => setActiveView(selectedTool.view)}>
+          <button
+            className="quant-primary-action"
+            onClick={() => (selectedTool.title === 'AI Tutor' && onOpenTutor
+              ? onOpenTutor()
+              : setActiveView(selectedTool.view))}
+          >
             Open {selectedTool.title} <ArrowRight size={16} />
           </button>
         </aside>
