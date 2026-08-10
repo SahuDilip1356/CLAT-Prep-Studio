@@ -120,7 +120,8 @@
     "test:mock-orchestrator": "python3 -m unittest tests/test_mock_orchestrator.py tests/test_mock_pipeline_admin_snapshot.py",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test:reporting": "node --test tests/result-reporting.test.mjs"
+    "test:reporting": "node --test tests/result-reporting.test.mjs",
+    "test:tutor": "node --test tests/study-state.test.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.4.2",

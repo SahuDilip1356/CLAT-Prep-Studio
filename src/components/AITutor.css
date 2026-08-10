@@ -226,3 +226,18 @@
   .ai-readiness-bars > div { grid-template-columns: 105px 1fr 25px; }
   .ai-readiness-bars span small { display: none; }
 }
+
+/* The tutor answers from the connected model when one is configured and from
+   the built-in coach when it is not. The difference is always stated. */
+.ai-chat-offline {
+  display: block;
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.ai-chat-thinking {
+  opacity: 0.65;
+  font-style: italic;
+}

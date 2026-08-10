@@ -20,6 +20,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { buildAdaptivePlan, getTutorReply } from '../utils/adaptiveTutor';
+import { studyState } from '../utils/studyState';
 import './AITutor.css';
 
 const QUICK_PROMPTS = [
@@ -63,21 +64,49 @@ export default function AITutor({
   const { model } = plan;
   const firstName = (currentUser?.displayName || userProgress?.studentProfile?.name || 'Aspirant').split(' ')[0];
   const [input, setInput] = useState('');
+  const [isThinking, setIsThinking] = useState(false);
   const [messages, setMessages] = useState(() => [{
     id: 'welcome',
     role: 'tutor',
     text: `${plan.coachMessage} I have prepared your next block and will recalculate after you finish it.`,
   }]);
 
-  const askTutor = (prompt) => {
+  /**
+   * Ask the connected model when one is configured, and fall back to the
+   * deterministic reply when it is not — a provider outage must never take the
+   * study plan down with it.
+   */
+  const askTutor = async (prompt) => {
     const trimmed = prompt.trim();
-    if (!trimmed) return;
-    setMessages((previous) => [
-      ...previous,
-      { id: `student-${Date.now()}`, role: 'student', text: trimmed },
-      { id: `tutor-${Date.now() + 1}`, role: 'tutor', text: getTutorReply(trimmed, plan) },
-    ]);
+    if (!trimmed || isThinking) return;
+    const turnId = Date.now();
+    const history = messages
+      .filter((message) => message.id !== 'welcome')
+      .map((message) => ({ role: message.role === 'student' ? 'user' : 'assistant', content: message.text }));
+
+    setMessages((previous) => [...previous, { id: `student-${turnId}`, role: 'student', text: trimmed }]);
     setInput('');
+    setIsThinking(true);
+
+    let reply = null;
+    try {
+      const response = await fetch('/api/tutor', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: trimmed, state: studyState(userProgress), history }),
+      });
+      if (response.ok) reply = (await response.json()).reply;
+    } catch {
+      reply = null;
+    }
+
+    setMessages((previous) => [...previous, {
+      id: `tutor-${turnId + 1}`,
+      role: 'tutor',
+      text: reply || getTutorReply(trimmed, plan),
+      offline: !reply,
+    }]);
+    setIsThinking(false);
   };
 
   const startBlock = () => {
@@ -247,13 +276,21 @@ export default function AITutor({
             {messages.map((message) => (
               <div key={message.id} className={`ai-chat-message is-${message.role}`}>
                 {message.role === 'tutor' && <Bot size={16} />}
-                <p>{message.text}</p>
+                <div>
+                  <p>{message.text}</p>
+                  {/* Say so when the answer came from the built-in coach rather
+                      than the connected model, so nothing is passed off. */}
+                  {message.offline && <small className="ai-chat-offline">Offline coach — no model connected</small>}
+                </div>
               </div>
             ))}
+            {isThinking && (
+              <div className="ai-chat-message is-tutor"><Bot size={16} /><p className="ai-chat-thinking">Thinking…</p></div>
+            )}
           </div>
           <div className="ai-quick-prompts">
             {QUICK_PROMPTS.map((prompt) => (
-              <button key={prompt} onClick={() => askTutor(prompt)}>{prompt}</button>
+              <button key={prompt} disabled={isThinking} onClick={() => askTutor(prompt)}>{prompt}</button>
             ))}
           </div>
           <form onSubmit={(event) => { event.preventDefault(); askTutor(input); }}>

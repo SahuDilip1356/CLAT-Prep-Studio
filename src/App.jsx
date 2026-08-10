@@ -23,6 +23,7 @@ import ParentRightsApprovalPage from './components/ParentRightsApprovalPage';
 import PrivacyCentre from './components/PrivacyCentre';
 import ModuleErrorBoundary from './components/ModuleErrorBoundary';
 import UnsavedProgressBanner from './components/UnsavedProgressBanner';
+import DailyPlan from './components/DailyPlan';
 import { calculateStreak, completionKeyFor, unsavedAnswerCount } from './utils/sessionProgress';
 import { accuracyOf, attemptRateOf } from './utils/resultAnalytics';
 import BrandLockup from './components/BrandLockup';
@@ -510,6 +511,30 @@ function StudentApp() {
     setViewState('MOCK_TEST');
   };
 
+  /**
+   * Practise the questions she got wrong and has not yet fixed, pulled from
+   * every module at once. Revision completes no session — it is repair work.
+   */
+  const handleStartRevision = async (entries) => {
+    const wanted = entries.slice(0, 20);
+    const wantedIds = new Set(wanted.map((entry) => String(entry.questionId)));
+    const pool = [...questionsData, ...gkQuestionsData, ...adaptiveTutorQuestions];
+
+    // English, Legal and Logical load on demand, so their banks are not in
+    // memory until that module has been opened. Fetch whichever are needed.
+    const lazyModules = [...new Set(wanted.map((entry) => entry.module))]
+      .filter((moduleId) => ['ENGLISH', 'LEGAL', 'LOGICAL'].includes(moduleId));
+    if (lazyModules.length) {
+      const { loadModuleBank } = await import('./data/sectionBanks');
+      const banks = await Promise.all(lazyModules.map((moduleId) => loadModuleBank(moduleId)));
+      banks.forEach((bank) => pool.push(...(bank.questions || [])));
+    }
+
+    const revision = pool.filter((question) => wantedIds.has(String(question.id)));
+    if (!revision.length) return;
+    handleStartQuestionSet(`Revision · ${revision.length} unresolved errors`, revision, 'STUDENT');
+  };
+
   const handleStartQuestionSet = (title, questionSet, moduleName = 'QUANT', session = null) => {
     if (!Array.isArray(questionSet) || questionSet.length === 0) return;
     setActiveModule(moduleName);
@@ -888,6 +913,24 @@ function StudentApp() {
       )}
 
       <main>
+        {viewState === 'DASHBOARD' && activeModule === 'HOME' && (
+          <ModuleErrorBoundary key="DAILY_PLAN" moduleName="Daily plan">
+            <DailyPlan
+              userProgress={safeProgress}
+              onStartRevision={handleStartRevision}
+              onOpenModule={(moduleId) => {
+                setActiveModule(moduleId);
+                setActiveTab('DASHBOARD');
+                setViewState('DASHBOARD');
+              }}
+              onAskTutor={() => {
+                setActiveModule('STUDENT');
+                setViewState('AI_TUTOR');
+              }}
+            />
+          </ModuleErrorBoundary>
+        )}
+
         {viewState === 'DASHBOARD' && activeModule === 'HOME' && (
           <ModuleErrorBoundary key="HOME" moduleName="Home Dashboard">
             <HomeDashboard

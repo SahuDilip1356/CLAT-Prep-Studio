@@ -1,0 +1,167 @@
+.daily-plan {
+  padding: 26px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+}
+
+.daily-plan-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.daily-plan-head > div:first-child > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent-primary);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.daily-plan-head h2 {
+  margin: 8px 0 6px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.daily-plan-head p {
+  max-width: 62ch;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.daily-plan-signals {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.daily-plan-signals span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.daily-plan-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 12px;
+}
+
+.daily-plan-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 18px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--accent-primary);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.daily-plan-actions button:hover {
+  background: var(--accent-primary-hover);
+}
+
+.daily-plan-actions button.is-secondary {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.daily-plan-actions button.is-secondary:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.daily-plan-note {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.daily-plan-modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.daily-plan-modules article {
+  padding: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-primary);
+}
+
+.daily-plan-modules article.is-unstarted {
+  border-style: dashed;
+}
+
+.daily-plan-module-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.daily-plan-module-top strong {
+  font-size: 0.82rem;
+  line-height: 1.3;
+}
+
+.daily-plan-module-top i {
+  flex: 0 0 auto;
+  padding: 2px 7px;
+  border-radius: 99px;
+  background: var(--accent-warning-bg);
+  color: var(--accent-warning);
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.daily-plan-bar {
+  height: 4px;
+  margin-bottom: 8px;
+  border-radius: 99px;
+  background: var(--border-color);
+  overflow: hidden;
+}
+
+.daily-plan-bar span {
+  display: block;
+  height: 100%;
+  background: var(--accent-primary);
+}
+
+.daily-plan-modules p {
+  color: var(--text-secondary);
+  font-size: 0.74rem;
+}
+
+.daily-plan-modules small {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+}
