@@ -5,6 +5,7 @@ import {
   AlertCircle, Compass, Target, BookMarked, RefreshCw, Star, ChevronRight
 } from 'lucide-react';
 import CAKnowledgeGraph from './CAKnowledgeGraph';
+import StudioShell from './StudioShell';
 import GKDailyOnePagers from './GKDailyOnePagers';
 import GKQCardStudio from './GKQCardStudio';
 import { useCAContent } from '../caContent';
@@ -20,6 +21,13 @@ export default function CADashboard({
 }) {
   const { dossiers: graphData, qcards } = useCAContent();
   const [caTab, setCaTab] = useState('HOME'); // 'HOME' vs 'GRAPH' vs 'ONE_PAGERS' vs 'QCARDS'
+  // The same rail every other module uses; CA's four views live in it now.
+  const CA_NAV = [
+    { id: 'HOME', label: 'Current affairs hub', icon: Compass },
+    { id: 'GRAPH', label: 'Issue dossiers', icon: BrainCircuit },
+    { id: 'ONE_PAGERS', label: 'Daily one-pagers', icon: BookOpen },
+    { id: 'QCARDS', label: 'Q-Cards studio', icon: Zap },
+  ];
   
   // Controlled states passed down to CAKnowledgeGraph
   const [selectedDossierIndex, setSelectedDossierIndex] = useState(0);
@@ -43,6 +51,12 @@ export default function CADashboard({
   const profile = userProgress?.studentProfile || {};
   const studentName = profile.name || 'CLAT Aspirant';
   const indexedGraphData = graphData.map((dossier, index) => ({ ...dossier, index }));
+  // Dossiers the learner has taken all the way to retained, for the rail footer.
+  const retainedDossierCount = Object.values(userProgress?.caDossierProgress || {})
+    .filter((entry) => entry?.status === 'RETAINED').length;
+  const dossierCoveragePct = indexedGraphData.length
+    ? Math.round((retainedDossierCount / indexedGraphData.length) * 100)
+    : 0;
   const getDossierKey = (dossier) => `${dossier.folderOrder || dossier.month}/${dossier.title}`;
   const currentMonthLabel = new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' }).format(new Date());
   const catalogueMonths = [...new Set(indexedGraphData.flatMap(getDossierMonths))];
@@ -110,67 +124,20 @@ export default function CADashboard({
   return (
     <div className="ca-landing-view">
       
-      {/* Sub-Navigation Tabs inside Current Affairs */}
-      <div style={{ 
-        display: 'flex', 
-        gap: '10px', 
-        marginBottom: '20px', 
-        borderBottom: '1px solid var(--border-color)', 
-        paddingBottom: '12px' 
-      }}>
-        <button
-          onClick={() => setCaTab('HOME')}
-          style={{
-            padding: '10px 18px', borderRadius: '8px', border: 'none',
-            background: caTab === 'HOME' ? 'var(--brand-purple)' : 'var(--bg-card)',
-            color: caTab === 'HOME' ? '#fff' : 'var(--text-primary)',
-            fontWeight: 800, fontSize: '0.875rem', cursor: 'pointer',
-            display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.2s'
-          }}
-        >
-          🏠 Current Affairs Hub
-        </button>
-
-        <button
-          onClick={() => setCaTab('GRAPH')}
-          style={{
-            padding: '10px 18px', borderRadius: '8px', border: 'none',
-            background: caTab === 'GRAPH' ? 'var(--brand-purple)' : 'var(--bg-card)',
-            color: caTab === 'GRAPH' ? '#fff' : 'var(--text-primary)',
-            fontWeight: 800, fontSize: '0.875rem', cursor: 'pointer',
-            display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.2s'
-          }}
-        >
-          <BrainCircuit size={16} /> 🕸️ Issue Dossiers (25 Lenses)
-        </button>
-
-        <button
-          onClick={() => setCaTab('ONE_PAGERS')}
-          style={{
-            padding: '10px 18px', borderRadius: '8px', border: 'none',
-            background: caTab === 'ONE_PAGERS' ? 'var(--brand-purple)' : 'var(--bg-card)',
-            color: caTab === 'ONE_PAGERS' ? '#fff' : 'var(--text-primary)',
-            fontWeight: 800, fontSize: '0.875rem', cursor: 'pointer',
-            display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.2s'
-          }}
-        >
-          <BookOpen size={16} /> 📄 Daily One-Pagers
-        </button>
-
-        <button
-          onClick={() => setCaTab('QCARDS')}
-          style={{
-            padding: '10px 18px', borderRadius: '8px', border: 'none',
-            background: caTab === 'QCARDS' ? 'var(--brand-purple)' : 'var(--bg-card)',
-            color: caTab === 'QCARDS' ? '#fff' : 'var(--text-primary)',
-            fontWeight: 800, fontSize: '0.875rem', cursor: 'pointer',
-            display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.2s'
-          }}
-        >
-          <Zap size={16} /> ⚡ Q-Cards Studio
-        </button>
-      </div>
-
+      <StudioShell
+        accent="#6C4CF1"
+        mark="C"
+        title="Current Affairs OS"
+        subtitle="Adaptive learning"
+        navItems={CA_NAV}
+        activeView={caTab}
+        onChangeView={setCaTab}
+        status={{
+          percent: dossierCoveragePct,
+          value: `${retainedDossierCount}/${indexedGraphData.length} dossiers`,
+          label: retainedDossierCount ? 'Retained' : 'Awaiting baseline',
+        }}
+      >
       {/* TAB 1: CURRENT AFFAIRS HOME (SIGNATURE PORTAL) */}
       {caTab === 'HOME' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -533,6 +500,7 @@ export default function CADashboard({
           onToggleBookmark={onToggleQCardBookmark}
         />
       )}
+      </StudioShell>
     </div>
   );
 }

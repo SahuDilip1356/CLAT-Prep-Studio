@@ -1,5 +1,7 @@
-import { ArrowRight, CheckCircle2, Clock3, FileCheck2, LibraryBig, ShieldCheck } from 'lucide-react';
-import { clatMockPapers, mockSectionLabels, sectionQuestionsForMock } from '../data/clatMockBank';
+import { ArrowRight, CheckCircle2, Clock3, FileCheck2, Layers3, LibraryBig, ShieldCheck } from 'lucide-react';
+import { useState } from 'react';
+import { clatMockPapers, mockSectionLabels, questionsForModule, sectionQuestionsForMock } from '../data/clatMockBank';
+import StudioShell from './StudioShell';
 import './CLATModules.css';
 
 const SECTION_ORDER = ['ENGLISH', 'CA', 'LEGAL', 'LOGICAL', 'QUANT'];
@@ -8,11 +10,32 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
   const attempted = userProgress?.mockTotalAttempted || 0;
   const correct = userProgress?.mockTotalCorrect || 0;
   const accuracy = attempted ? Math.round((correct / attempted) * 100) : 0;
+  const [view, setView] = useState('papers');
   const completedPapers = userProgress?.mockCompletedDays || {};
   const paperScores = userProgress?.mockDayScores || {};
 
+  const attemptedPaperCount = clatMockPapers.filter((mock) => completedPapers[mock.id]).length;
+  const MOCK_NAV = [
+    { id: 'papers', label: 'Full papers', icon: LibraryBig },
+    { id: 'sections', label: 'Section practice', icon: Layers3 },
+  ];
+
   return (
     <div className="clat-module-dashboard is-mock-library" style={{ '--clat-module-color': '#c2410c', '--clat-module-soft': '#fff3e9' }}>
+      <StudioShell
+        accent="#c2410c"
+        mark="M"
+        title="Mock OS"
+        subtitle="Full-length practice"
+        navItems={MOCK_NAV}
+        activeView={view}
+        onChangeView={setView}
+        status={{
+          percent: Math.round((attemptedPaperCount / clatMockPapers.length) * 100),
+          value: `${attemptedPaperCount}/${clatMockPapers.length} papers`,
+          label: attempted ? `${accuracy}% accuracy` : 'Awaiting baseline',
+        }}
+      >
       <section className="clat-module-hero">
         <div className="clat-module-hero-copy">
           <span className="clat-module-eyebrow"><LibraryBig size={16} /> CLAT Mock Paper Library</span>
@@ -47,6 +70,7 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
         <article><Clock3 size={19} /><div><strong>120 min</strong><span>full-paper timer</span></div></article>
       </section>
 
+      {view === 'papers' && (
       <section className="clat-module-paper-section">
         <div className="clat-module-section-heading">
           <div><span>Full-length practice</span><h2>Choose a paper or isolate a section</h2></div>
@@ -91,6 +115,44 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
           })}
         </div>
       </section>
+      )}
+
+      {view === 'sections' && (
+        <section className="clat-module-paper-section">
+          <div className="clat-module-section-heading">
+            <div><span>Section practice</span><h2>One section, every paper</h2></div>
+            <p>Pools the same section across all {clatMockPapers.length} papers, so you can drill Legal or Quant on its own.</p>
+          </div>
+          <div className="clat-module-paper-grid">
+            {SECTION_ORDER.map((module) => {
+              const questions = questionsForModule(module);
+              return (
+                <article className="clat-module-paper-card" key={module}>
+                  <div className="clat-module-paper-top">
+                    <span>{mockSectionLabels[module]}</span>
+                    <i>{clatMockPapers.length} papers</i>
+                  </div>
+                  <h3>{questions.length} questions</h3>
+                  <p>Every {mockSectionLabels[module]} question from the mock library, in paper order.</p>
+                  <div className="clat-module-paper-buttons">
+                    <button onClick={() => onStartQuestionSet(
+                      `${mockSectionLabels[module]} · mock library`, questions, 'MOCKS',
+                    )}>
+                      Practise all <ArrowRight size={15} />
+                    </button>
+                    <button className="is-secondary" onClick={() => onStartQuestionSet(
+                      `${mockSectionLabels[module]} · first 25`, questions.slice(0, 25), 'MOCKS',
+                    )}>
+                      First 25
+                    </button>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
+      </StudioShell>
     </div>
   );
 }

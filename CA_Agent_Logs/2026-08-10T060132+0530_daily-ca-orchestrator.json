@@ -1,0 +1,435 @@
+{
+  "automationId": "clat-daily-ca-orchestrator",
+  "runId": "2026-08-10T060132+0530_daily-ca-orchestrator",
+  "trigger": "SCHEDULED_DAILY",
+  "timezone": "Asia/Kolkata",
+  "startedAt": "2026-08-10T06:01:32+05:30",
+  "finishedAt": "2026-08-10T06:05:31+05:30",
+  "status": "completed",
+  "outcome": "no_op",
+  "window": {
+    "start": "2026-08-09T00:01:32+05:30",
+    "end": "2026-08-10T06:01:32+05:30",
+    "durationHours": 30,
+    "policy": "Events had to be published or substantively advanced within this exact Asia/Kolkata window. Items first reported before the window were excluded unless an in-window primary-source development materially changed the issue."
+  },
+  "sourcesScanned": [
+    {
+      "publisher": "Press Information Bureau",
+      "type": "primary_index",
+      "url": "https://www.pib.gov.in/AllRelease.aspx?MenuId=3&lang=1&reg=3",
+      "scope": "All Union government releases in the window",
+      "result": "Identified the 300 GW non-fossil-capacity milestone, National Biodiversity Authority ABS disbursement, Air India AI2379 investigation update, BRICS competition-authority meeting, India-US Navy EOD exercise, Commonwealth Games felicitation and routine or ceremonial releases."
+    },
+    {
+      "publisher": "Ministry of New and Renewable Energy via PIB",
+      "type": "primary",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782&lang=1&reg=3",
+      "scope": "India crossing 300 GW of installed non-fossil-fuel power capacity on 9 August 2026",
+      "result": "Verified the official milestone, but no independent trusted same-event report was indexed by cutoff."
+    },
+    {
+      "publisher": "Ministry of Environment, Forest and Climate Change via PIB",
+      "type": "primary",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296731&lang=1&reg=3",
+      "scope": "National Biodiversity Authority disbursement of about Rs 3.79 crore under the Access and Benefit Sharing mechanism",
+      "result": "Verified the official disbursement to 33 States, Union Territories and national institutes, but found no independent trusted same-event corroboration by cutoff."
+    },
+    {
+      "publisher": "Ministry of Civil Aviation via PIB",
+      "type": "primary",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296835&lang=1&reg=3",
+      "scope": "Serious-incident investigation after Air India flight AI2379 lost altitude on 4 August 2026",
+      "result": "Verified that both pilots were taken off roster, AAIB was investigating and a preliminary screening required confirmatory laboratory testing."
+    },
+    {
+      "publisher": "Reuters",
+      "type": "trusted_secondary",
+      "url": "https://www.reuters.com/world/india/air-india-captains-initial-drug-screening-prompts-further-testing-after-sudden-2026-08-09/",
+      "scope": "Independent reporting on the AI2379 screening and investigation update",
+      "result": "Corroborated the official update, while confirming that the laboratory result and causal findings remained pending."
+    },
+    {
+      "publisher": "Supreme Court of India",
+      "type": "primary_index",
+      "url": "https://www.sci.gov.in/judgements-judgement-date/",
+      "scope": "Judgments and orders in the rolling window",
+      "result": "No new in-window judgment or order cleared the novelty and publication gates."
+    },
+    {
+      "publisher": "Parliament of India - Digital Sansad",
+      "type": "primary_index",
+      "url": "https://sansad.in/ls/legislation/bills",
+      "scope": "Bills, parliamentary records and the Monsoon Session calendar",
+      "result": "The Houses were not sitting on Sunday 9 August and the 10 August sitting began after cutoff; no in-window parliamentary action qualified."
+    },
+    {
+      "publisher": "Reserve Bank of India",
+      "type": "primary_index",
+      "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+      "scope": "RBI press releases and regulatory action",
+      "result": "The latest listed releases were dated 7 August 2026; no in-window release was identified."
+    },
+    {
+      "publisher": "Securities and Exchange Board of India",
+      "type": "primary_index",
+      "url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&smid=0&ssid=7",
+      "scope": "SEBI circulars and regulatory notices",
+      "result": "The latest listed circular was dated 3 August 2026; no in-window circular was identified."
+    },
+    {
+      "publisher": "Election Commission of India",
+      "type": "primary_index",
+      "url": "https://www.eci.gov.in/issue-details-page/press-releases",
+      "scope": "Election Commission press notes and decisions",
+      "result": "No independently corroborated, substantive in-window election-law development was identified."
+    },
+    {
+      "publisher": "United Nations - Meetings Coverage and Press Releases",
+      "type": "primary_index",
+      "url": "https://press.un.org/en",
+      "scope": "UN, treaty-body and international-law developments",
+      "result": "No completed in-window decision cleared the novelty, source and CLAT-content gates; the UN tax-convention process was already covered and had no weekend outcome."
+    },
+    {
+      "publisher": "Office of the UN High Commissioner for Human Rights",
+      "type": "primary_index",
+      "url": "https://www.ohchr.org/en/press-releases",
+      "scope": "Human-rights and treaty-body releases",
+      "result": "No qualifying in-window judicial, treaty-body or institutional outcome was identified."
+    },
+    {
+      "publisher": "International Court of Justice",
+      "type": "primary_index",
+      "url": "https://www.icj-cij.org/press-releases",
+      "scope": "ICJ judgments, orders and press releases",
+      "result": "No qualifying in-window judicial outcome was identified."
+    },
+    {
+      "publisher": "The Economic Times, Hindustan Times, The Tribune, The Indian Express and Reuters",
+      "type": "trusted_secondary_search",
+      "url": "https://economictimes.indiatimes.com/",
+      "scope": "Independent same-event corroboration for official in-window candidates",
+      "result": "Found reliable earlier context for the 300 GW and ABS issues and same-event Reuters reporting for AI2379, but no independent same-event report for the 9 August 300 GW, ABS or BRICS competition developments by cutoff."
+    }
+  ],
+  "repositoryComparison": {
+    "scope": "Every front-matter title in CA_Source_Repository and every node title in src/data/ca_knowledge_graph.json, including every file in 00_Continuing_Issues",
+    "markdownDossiersBefore": 331,
+    "markdownDossiersAfter": 331,
+    "uniqueMarkdownTitlesCompared": 329,
+    "knowledgeGraphNodesBefore": 331,
+    "knowledgeGraphNodesAfter": 331,
+    "uniqueKnowledgeGraphTitlesCompared": 329,
+    "continuingIssueFilesCompared": 31,
+    "duplicatesCreated": 0,
+    "closestExistingIssues": [
+      {
+        "candidate": "India crosses 300 GW of installed non-fossil-fuel power capacity",
+        "existingTitles": [
+          "Paris Agreement and India’s Climate Targets",
+          "Earth Day and Climate Commitments",
+          "National Green Hydrogen Mission",
+          "Climate Negotiations after COP30",
+          "India’s Energy Security"
+        ],
+        "decision": "Would update an existing climate or energy dossier rather than create a duplicate, but the same-event independent-source gate failed."
+      },
+      {
+        "candidate": "National Biodiversity Authority disburses Rs 3.79 crore under ABS",
+        "existingTitles": [
+          "International Day for Biological Diversity",
+          "CITES and Endangered Species",
+          "India’s Big Cat Conservation Diplomacy"
+        ],
+        "decision": "Would extend an existing biodiversity dossier rather than create a duplicate, but the same-event independent-source gate failed."
+      },
+      {
+        "candidate": "CCI hosts BRICS Heads of Competition Authorities 2026 meeting",
+        "existingTitles": [
+          "Competition Commission of India",
+          "BRICS Developments",
+          "BRICS Summit",
+          "BRICS Expanded Membership"
+        ],
+        "decision": "Would update an existing CCI or BRICS dossier, but the meeting lacked independent same-event corroboration and a sufficiently concrete outcome."
+      },
+      {
+        "candidate": "Prime Minister hosts Commonwealth Games 2026 medal winners",
+        "existingTitles": [
+          "Commonwealth Games 2026",
+          "India’s Commonwealth Games Performance",
+          "Glasgow 2026 Commonwealth Games & International Sports Law",
+          "August 2026 Watchlist: Commonwealth Games & Independence Day"
+        ],
+        "decision": "Ignored as a ceremonial follow-up with no substantive novelty; no duplicate was created."
+      },
+      {
+        "candidate": "Indian Navy-US Navy Explosive Ordnance Disposal Exercise 2026",
+        "existingTitles": [
+          "Major Military Exercises involving India",
+          "Army Day and Indian Military Commands"
+        ],
+        "decision": "Would extend the military-exercises dossier if a higher-value completed outcome emerged; the announcement scored below 65."
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "title": "India crosses 300 GW of installed non-fossil-fuel power capacity",
+      "scoreBreakdown": {
+        "legalConstitutional": 10,
+        "significance": 15,
+        "passagePotential": 14,
+        "staticGK": 10,
+        "recencySubstantiveNovelty": 10,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 9,
+        "continuingIssueValue": 4,
+        "total": 77
+      },
+      "sourceGate": {
+        "trustedSources": 3,
+        "primarySources": 1,
+        "independentSecondarySources": 2,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update_if_qualified",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "No independent trusted source indexed by cutoff confirmed that the 300 GW milestone had actually been crossed on 9 August",
+        "Earlier independent reports that capacity was nearing 300 GW provide context but do not satisfy same-event corroboration"
+      ],
+      "sources": [
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782&lang=1&reg=3",
+        "https://economictimes.indiatimes.com/industry/energy/power/clean-power-capacity-all-set-to-cross-300-gw-pralhad-joshi/articleshow/132591324.cms",
+        "https://www.hindustantimes.com/india-news/india-likely-to-cross-target-of-300-gw-of-renewable-energy-by-august-end-prahlad-joshi-101784748515985.html/"
+      ]
+    },
+    {
+      "title": "National Biodiversity Authority disburses about Rs 3.79 crore under Access and Benefit Sharing",
+      "scoreBreakdown": {
+        "legalConstitutional": 17,
+        "significance": 10,
+        "passagePotential": 13,
+        "staticGK": 10,
+        "recencySubstantiveNovelty": 8,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 8,
+        "continuingIssueValue": 3,
+        "total": 74
+      },
+      "sourceGate": {
+        "trustedSources": 2,
+        "primarySources": 2,
+        "independentSecondarySources": 0,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update_if_qualified",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "No independent trusted same-event report corroborated the 9 August disbursement by cutoff",
+        "The closely related 22 July cotton-state ABS disbursement was an earlier separate event and cannot serve as same-event corroboration"
+      ],
+      "sources": [
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296731&lang=1&reg=3",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287985&lang=1&reg=3"
+      ]
+    },
+    {
+      "title": "AI2379 serious-incident investigation and preliminary pilot screening",
+      "scoreBreakdown": {
+        "legalConstitutional": 9,
+        "significance": 11,
+        "passagePotential": 12,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 10,
+        "sourceStrength": 10,
+        "examPatternSimilarity": 7,
+        "continuingIssueValue": 2,
+        "total": 69
+      },
+      "sourceGate": {
+        "trustedSources": 2,
+        "primarySources": 1,
+        "independentSecondarySources": 1,
+        "independentSecondarySourcesConfirmingEvent": 1,
+        "unresolvedFactualConflict": true,
+        "passed": false
+      },
+      "repositoryDecision": "new_issue_if_qualified",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "The initial screen was not a final laboratory result and the indicated substance, if any, was undisclosed",
+        "AAIB had not determined the cause of the altitude loss; publishing would require placeholder or speculative language",
+        "The no-unresolved-factual-conflict gate therefore failed despite adequate primary and independent sourcing"
+      ],
+      "sources": [
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296835&lang=1&reg=3",
+        "https://www.reuters.com/world/india/air-india-captains-initial-drug-screening-prompts-further-testing-after-sudden-2026-08-09/"
+      ]
+    },
+    {
+      "title": "CCI hosts BRICS Heads of Competition Authorities 2026 meeting",
+      "scoreBreakdown": {
+        "legalConstitutional": 12,
+        "significance": 10,
+        "passagePotential": 11,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 8,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 7,
+        "continuingIssueValue": 4,
+        "total": 65
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update_if_qualified",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "No independent trusted same-event corroboration was found",
+        "The release described a meeting without a sufficiently concrete new legal or regulatory outcome"
+      ],
+      "sources": [
+        "https://www.pib.gov.in/AllRelease.aspx?MenuId=3&lang=1&reg=3"
+      ]
+    },
+    {
+      "title": "Indian Navy-US Navy Explosive Ordnance Disposal Exercise 2026 announced",
+      "scoreBreakdown": {
+        "legalConstitutional": 3,
+        "significance": 7,
+        "passagePotential": 7,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 8,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 6,
+        "continuingIssueValue": 2,
+        "total": 46
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "existing_issue_update_if_qualified",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "Score below 65",
+        "Announcement of an exercise rather than a completed strategic or legal outcome",
+        "No independent trusted same-event corroboration found"
+      ]
+    },
+    {
+      "title": "Prime Minister hosts Commonwealth Games 2026 medal winners",
+      "scoreBreakdown": {
+        "legalConstitutional": 2,
+        "significance": 7,
+        "passagePotential": 6,
+        "staticGK": 8,
+        "recencySubstantiveNovelty": 3,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 7,
+        "continuingIssueValue": 3,
+        "total": 41
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "ignore",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "Score below 65",
+        "Ceremonial follow-up with no substantive novelty beyond the already covered Games and results",
+        "Creating a new dossier would duplicate multiple existing Commonwealth Games dossiers"
+      ]
+    },
+    {
+      "title": "National Biodiversity Authority and routine 9 August institutional releases cluster",
+      "scoreBreakdown": {
+        "legalConstitutional": 6,
+        "significance": 6,
+        "passagePotential": 6,
+        "staticGK": 6,
+        "recencySubstantiveNovelty": 5,
+        "sourceStrength": 5,
+        "examPatternSimilarity": 5,
+        "continuingIssueValue": 1,
+        "total": 40
+      },
+      "sourceGate": {
+        "trustedSources": 1,
+        "primarySources": 1,
+        "independentSecondarySources": 0,
+        "independentSecondarySourcesConfirmingEvent": 0,
+        "unresolvedFactualConflict": false,
+        "passed": false
+      },
+      "repositoryDecision": "ignore",
+      "decision": "ignored",
+      "rejectionReasons": [
+        "Score below 65",
+        "Speeches, commemorations, operational notices and backgrounders lacked a distinct legal, policy or international-law outcome"
+      ]
+    }
+  ],
+  "published": [],
+  "updated": [],
+  "ignored": [
+    "India crosses 300 GW of installed non-fossil-fuel power capacity",
+    "National Biodiversity Authority disburses about Rs 3.79 crore under Access and Benefit Sharing",
+    "AI2379 serious-incident investigation and preliminary pilot screening",
+    "CCI hosts BRICS Heads of Competition Authorities 2026 meeting",
+    "Indian Navy-US Navy Explosive Ordnance Disposal Exercise 2026 announced",
+    "Prime Minister hosts Commonwealth Games 2026 medal winners",
+    "Routine and ceremonial 9 August releases"
+  ],
+  "validation": {
+    "knowledgeGraphBuild": {
+      "command": "python3 build_ca_knowledge_graph.py",
+      "status": "passed",
+      "nodes": 331,
+      "sha256Before": "19c48bd8d7fbe2c497bee265ffb53111a831797266921e6e6093fbcc721756da",
+      "sha256After": "19c48bd8d7fbe2c497bee265ffb53111a831797266921e6e6093fbcc721756da",
+      "result": "Knowledge graph rebuilt byte-for-byte identically. The builder's generated GK session-bank rescheduling side effect was removed because no CA issue qualified and this run must remain a content no-op."
+    },
+    "caTests": {
+      "command": "npm run test:ca",
+      "status": "passed",
+      "tests": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "productionBuild": {
+      "command": "npm run build",
+      "status": "passed",
+      "result": "Vite production build completed successfully; only the existing non-blocking large-chunk warning was emitted."
+    }
+  },
+  "contentChanges": {
+    "dossiersAdded": 0,
+    "dossiersUpdated": 0,
+    "knowledgeGraphChanged": false,
+    "gkQuestionBankChanged": false,
+    "auditLogsAdded": 1
+  },
+  "errors": []
+}

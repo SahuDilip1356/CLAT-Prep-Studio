@@ -6,6 +6,7 @@ import {
 import GKQCardStudio from './GKQCardStudio';
 import GKDailyOnePagers from './GKDailyOnePagers';
 import CAKnowledgeGraph from './CAKnowledgeGraph';
+import StudioShell from './StudioShell';
 
 export default function GKDashboard({
   questions,
@@ -18,6 +19,13 @@ export default function GKDashboard({
   onToggleDossierBookmark
 }) {
   const [gkTab, setGkTab] = useState('GRAPH'); // Default to Exam-Relevant Knowledge Graph
+  // Same rail as every other module; GK's four views simply live in it now.
+  const GK_NAV = [
+    { id: 'GRAPH', label: 'Knowledge graph', icon: Network },
+    { id: 'QCARDS', label: 'Smart Q-Cards', icon: Zap },
+    { id: 'DAILY_ONEPAGERS', label: 'Daily one-pagers', icon: BookOpen },
+    { id: 'DRILLS', label: 'Drill matrix', icon: Globe },
+  ];
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   // Compute GK stats
@@ -49,6 +57,20 @@ export default function GKDashboard({
 
   return (
     <div className="gk-landing-view">
+      <StudioShell
+        accent="#10b981"
+        mark="G"
+        title="GK OS"
+        subtitle="Adaptive learning"
+        navItems={GK_NAV}
+        activeView={gkTab}
+        onChangeView={setGkTab}
+        status={{
+          percent: readinessIndex,
+          value: `${completedDays}/125 drills`,
+          label: totalAttempted ? `${accuracy}% recall` : 'Awaiting baseline',
+        }}
+      >
       {/* GK Dedicated Landing Page Hero Banner */}
       <div className="glass-panel" style={{
         padding: '32px', marginBottom: '24px',
@@ -150,65 +172,6 @@ export default function GKDashboard({
             <div className="kpi-label">GK Readiness Index</div>
           </div>
         </div>
-      </div>
-
-      {/* GK MODULE VIEW TOGGLE TABS */}
-      <div style={{ display: 'flex', gap: '12px', marginBottom: '24px' }}>
-        <button
-          onClick={() => setGkTab('QCARDS')}
-          style={{
-            padding: '12px 24px', borderRadius: 'var(--radius-md)', fontWeight: 800, fontSize: '0.95rem',
-            border: gkTab === 'QCARDS' ? '2px solid var(--accent-primary)' : '1px solid var(--border-color)',
-            background: gkTab === 'QCARDS' ? 'var(--accent-primary)' : 'var(--bg-card)',
-            color: gkTab === 'QCARDS' ? 'white' : 'var(--text-primary)',
-            cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px',
-            boxShadow: gkTab === 'QCARDS' ? '0 4px 14px rgba(37, 99, 235, 0.3)' : 'none'
-          }}
-        >
-          <Zap size={18} /> ⚡ Smart One-Pagers (Q-Cards)
-        </button>
-
-        <button
-          onClick={() => setGkTab('DAILY_ONEPAGERS')}
-          style={{
-            padding: '12px 24px', borderRadius: 'var(--radius-md)', fontWeight: 800, fontSize: '0.95rem',
-            border: gkTab === 'DAILY_ONEPAGERS' ? '2px solid var(--brand-mint)' : '1px solid var(--border-color)',
-            background: gkTab === 'DAILY_ONEPAGERS' ? 'var(--brand-mint)' : 'var(--bg-card)',
-            color: gkTab === 'DAILY_ONEPAGERS' ? 'white' : 'var(--text-primary)',
-            cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px',
-            boxShadow: gkTab === 'DAILY_ONEPAGERS' ? '0 4px 14px rgba(53, 199, 165, 0.3)' : 'none'
-          }}
-        >
-          <BookOpen size={18} /> 📄 Daily One-Pagers
-        </button>
-
-        <button
-          onClick={() => setGkTab('GRAPH')}
-          style={{
-            padding: '12px 24px', borderRadius: 'var(--radius-md)', fontWeight: 800, fontSize: '0.95rem',
-            border: gkTab === 'GRAPH' ? '2px solid var(--brand-purple)' : '1px solid var(--border-color)',
-            background: gkTab === 'GRAPH' ? 'var(--brand-purple)' : 'var(--bg-card)',
-            color: gkTab === 'GRAPH' ? 'white' : 'var(--text-primary)',
-            cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px',
-            boxShadow: gkTab === 'GRAPH' ? '0 4px 14px rgba(108, 76, 241, 0.3)' : 'none'
-          }}
-        >
-          <Network size={18} /> 🕸️ Knowledge Graph
-        </button>
-
-        <button
-          onClick={() => setGkTab('DRILLS')}
-          style={{
-            padding: '12px 24px', borderRadius: 'var(--radius-md)', fontWeight: 800, fontSize: '0.95rem',
-            border: gkTab === 'DRILLS' ? '2px solid var(--accent-success)' : '1px solid var(--border-color)',
-            background: gkTab === 'DRILLS' ? 'var(--accent-success)' : 'var(--bg-card)',
-            color: gkTab === 'DRILLS' ? 'white' : 'var(--text-primary)',
-            cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px',
-            boxShadow: gkTab === 'DRILLS' ? '0 4px 14px rgba(16, 185, 129, 0.3)' : 'none'
-          }}
-        >
-          <Globe size={18} /> 📅 125-Day Mock Drill Matrix
-        </button>
       </div>
 
       {/* TAB 1: SMART ONE-PAGERS (Q-CARDS) */}
@@ -359,6 +322,7 @@ export default function GKDashboard({
 
         </div>
       )}
+      </StudioShell>
     </div>
   );
 }
