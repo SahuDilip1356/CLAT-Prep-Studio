@@ -42,3 +42,6 @@ ClatPrep Studio.png
 # they support live in public/data/ and are tracked.
 public/review-assets/
 tmp/
+
+# Word/Office lock files
+~$*
