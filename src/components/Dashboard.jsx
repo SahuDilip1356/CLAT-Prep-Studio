@@ -33,6 +33,7 @@ import {
   Zap,
 } from 'lucide-react';
 import StudioShell from './StudioShell';
+import { firstNameOf } from '../utils/studentName';
 import './QuantStudio.css';
 
 const CONCEPT_META = {
@@ -296,7 +297,7 @@ export default function Dashboard({
   };
 
   const profile = userProgress.studentProfile || {};
-  const studentName = profile.name?.split(' ')[0] || 'Aspirant';
+  const studentName = firstNameOf(null, profile);
   const targetNlu = profile.targetNlu || 'your target NLU';
 
   const filteredTopics = topicInsights.filter((topic) => {
@@ -318,7 +319,9 @@ export default function Dashboard({
       <section className="quant-hero">
         <div className="quant-hero-copy">
           <div className="quant-eyebrow"><Sparkles size={14} /> PERSONAL QUANT PLAN · TODAY</div>
-          <h1>{totalAttempted < 10 ? `Let’s find your highest-impact gap, ${studentName}.` : `Close the ${primaryFocus?.short || 'next'} gap today.`}</h1>
+          <h1>{totalAttempted < 10
+            ? `Let’s find your highest-impact gap${studentName ? `, ${studentName}` : ''}.`
+            : `Close the ${primaryFocus?.short || 'next'} gap today.`}</h1>
           <p>
             {totalAttempted < 10
               ? 'A short diagnostic will map your micro-skills and build your first adaptive path.'
@@ -608,7 +611,7 @@ export default function Dashboard({
         <div>
           <span className="section-kicker">HOW ADAPTATION WORKS</span>
           <h2>Your score is not the diagnosis.</h2>
-          <p>The engine combines concept accuracy, question difficulty, coverage and recency. A wrong weighted-average question updates “weighted average”—not the whole chapter.</p>
+          <p>The engine combines concept accuracy, question difficulty, coverage and recency. A wrong weighted-average question updates “weighted average”, not the whole chapter.</p>
         </div>
         <div className="logic-pills">
           <span>Accuracy</span><ChevronRight size={14} /><span>Micro-skill</span><ChevronRight size={14} /><span>Next best question</span>
@@ -624,7 +627,7 @@ export default function Dashboard({
       <section className="workspace-heading">
         <div>
           <span className="section-kicker">MEMORY & ERROR SYSTEM</span>
-          <h1>Mistakes become scheduled learning—not lost marks.</h1>
+          <h1>Mistakes become scheduled learning, not lost marks.</h1>
           <p>Retry errors, recall the governing rule, and clear items only after a correct response.</p>
         </div>
         <div className="review-due-card">
@@ -717,7 +720,7 @@ export default function Dashboard({
         <div>
           <span className="section-kicker">QUANT OPERATING SYSTEM</span>
           <h1>Eighteen views. One living question graph.</h1>
-          <p>No separate silos or duplicate content—every tool reads the same concepts, questions, errors and mastery signals.</p>
+          <p>No separate silos, no duplicate content. Every tool reads the same concepts, questions, errors and mastery signals.</p>
         </div>
       </section>
       <section className="tool-layout">

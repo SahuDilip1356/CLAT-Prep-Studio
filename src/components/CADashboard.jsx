@@ -49,7 +49,6 @@ export default function CADashboard({
   }, [initialDossierTopic, clearInitialDossierTopic]);
 
   const profile = userProgress?.studentProfile || {};
-  const studentName = profile.name || 'CLAT Aspirant';
   const indexedGraphData = graphData.map((dossier, index) => ({ ...dossier, index }));
   // Dossiers the learner has taken all the way to retained, for the rail footer.
   const retainedDossierCount = Object.values(userProgress?.caDossierProgress || {})

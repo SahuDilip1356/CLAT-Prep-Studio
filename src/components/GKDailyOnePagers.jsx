@@ -173,7 +173,7 @@ export default function GKDailyOnePagers({ onStartTopicPractice, qcards = bundle
               📌 Topic of the Day (Structured Focus)
             </span>
             <h4 style={{ margin: '4px 0 0 0', fontSize: '1rem', fontWeight: 800 }}>
-              {dailyFocusTopic.title} — <span style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>{dailyFocusTopic.topic}</span>
+              {dailyFocusTopic.title} · <span style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>{dailyFocusTopic.topic}</span>
             </h4>
           </div>
           <button 

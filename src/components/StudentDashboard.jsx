@@ -152,8 +152,7 @@ export default function StudentDashboard({
     targetScore: 110,
   }), [progress, tutorQuestions]);
   const profile = progress.studentProfile || {};
-  const studentName = currentUser?.displayName || profile.name || 'CLAT Aspirant';
-  const firstName = studentName.split(' ')[0];
+  const firstName = firstNameOf(currentUser, profile);
   const targetYear = profile.targetYear || 'CLAT 2027';
   const targetNlu = profile.targetNlu || 'your target NLU';
 
@@ -261,7 +260,7 @@ export default function StudentDashboard({
         <div className="student-command-copy">
           <span className="student-command-kicker"><Sparkles size={14} /> My command centre</span>
           <p className="student-command-date">{targetYear} · Targeting {targetNlu}</p>
-          <h1>Welcome back, {firstName}. <em>Let’s move your score.</em></h1>
+          <h1>{firstName ? `Welcome back, ${firstName}.` : 'Welcome back.'} <em>Let’s move your score.</em></h1>
           <p className="student-command-lead">
             Your smartest next step is ready. Finish today’s three moves to create a stronger readiness signal.
           </p>

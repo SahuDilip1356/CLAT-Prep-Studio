@@ -432,7 +432,7 @@ export default function CAKnowledgeGraph({
           {directoryMode === 'PRIORITY' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {['P1', 'P2', 'P3'].map(pKey => {
-                const titleMap = { P1: '🔴 P1 — Must Master', P2: '🟡 P2 — High Priority', P3: '🟢 P3 — Supporting' };
+                const titleMap = { P1: '🔴 P1 · Must Master', P2: '🟡 P2 · High Priority', P3: '🟢 P3 · Supporting' };
                 const list = dossiersByPriority[pKey] || [];
                 if (list.length === 0) return null;
                 const isExpanded = !!expandedPriorities[pKey];

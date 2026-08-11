@@ -322,7 +322,7 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
           <div className="test-actions-bar">
             <div className={`answer-state-pill ${!currentAttempted ? 'not-attempted' : currentReviewLater ? 'review-later' : 'sure'}`}>
               {currentReviewLater ? <Flag size={15} /> : currentAttempted ? <CheckCircle2 size={15} /> : <HelpCircle size={15} />}
-              {!currentAttempted ? 'Not attempted' : currentReviewLater ? 'Attempted — Review later' : 'Attempted — Sure'}
+              {!currentAttempted ? 'Not attempted' : currentReviewLater ? 'Attempted · Review later' : 'Attempted · Sure'}
             </div>
 
             <div className="test-navigation-actions">
@@ -361,7 +361,7 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
           <h3 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '12px' }}>Question Palette</h3>
           <div className="palette-legend" aria-label="Question status summary">
             <div><span className="palette-key not-attempted" /> Not attempted <strong>{notAttemptedCount}</strong></div>
-            <div><span className="palette-key sure" /> Attempted — Sure <strong>{sureCount}</strong></div>
+            <div><span className="palette-key sure" /> Attempted · Sure <strong>{sureCount}</strong></div>
             <div><span className="palette-key review-later" /> Review later <strong>{reviewLaterCount}</strong></div>
           </div>
           <div className="palette-grid">
@@ -382,7 +382,7 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
                   onClick={() => navigateTo(idx)}
                   aria-label={`Question ${idx + 1}: ${stateLabel}${isCurr ? ', current question' : ''}`}
                   aria-current={isCurr ? 'step' : undefined}
-                  title={`Question ${idx + 1} — ${stateLabel}`}
+                  title={`Question ${idx + 1} · ${stateLabel}`}
                 >
                   <span className="palette-number">{idx + 1}</span>
                   {isAns && isMrk && <Flag className="palette-review-flag" size={10} aria-hidden="true" />}

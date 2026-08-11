@@ -55,12 +55,12 @@ export default function TestResults({ testData, onBackToDashboard, onRetakeDrill
 
           <div className="glass-card kpi-card">
             <div className="kpi-value" style={{ color: 'var(--accent-success)' }}>{accuracyPct}%</div>
-            <div className="kpi-label">Accuracy — {correctCount} of {attemptedCount} attempted</div>
+            <div className="kpi-label">Accuracy · {correctCount} of {attemptedCount} attempted</div>
           </div>
 
           <div className="glass-card kpi-card">
             <div className="kpi-value">{attemptRatePct}%</div>
-            <div className="kpi-label">Paper attempted — {unattemptedCount} left blank</div>
+            <div className="kpi-label">Paper attempted · {unattemptedCount} left blank</div>
           </div>
 
           <div className="glass-card kpi-card">
@@ -102,7 +102,7 @@ export default function TestResults({ testData, onBackToDashboard, onRetakeDrill
             <h2>Section-wise performance</h2>
             {weakest && (
               <p>
-                Weakest section: <strong>{weakest.label}</strong> — {weakest.score.toFixed(2)} of {weakest.total}.
+                Weakest section: <strong>{weakest.label}</strong> · {weakest.score.toFixed(2)} of {weakest.total}.
                 Start here tomorrow.
               </p>
             )}

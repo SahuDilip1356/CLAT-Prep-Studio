@@ -367,7 +367,7 @@ function StudentApp() {
         ...(prev || defaultProgress),
         studentProfile: {
           ...(prev?.studentProfile || {}),
-          name: user.displayName || prev?.studentProfile?.name || 'CLAT Aspirant',
+          name: user.displayName || prev?.studentProfile?.name || null,
           email: user.email || '',
           targetYear: prev?.studentProfile?.targetYear || 'CLAT 2027',
           targetNlu: prev?.studentProfile?.targetNlu || 'NLSIU Bengaluru'

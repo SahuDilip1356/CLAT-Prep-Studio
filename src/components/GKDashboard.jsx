@@ -7,6 +7,7 @@ import GKQCardStudio from './GKQCardStudio';
 import GKDailyOnePagers from './GKDailyOnePagers';
 import CAKnowledgeGraph from './CAKnowledgeGraph';
 import StudioShell from './StudioShell';
+import { firstNameOf } from '../utils/studentName';
 
 export default function GKDashboard({
   questions,
@@ -40,7 +41,7 @@ export default function GKDashboard({
 
   // Extract student profile
   const profile = userProgress.studentProfile || {};
-  const studentName = profile.name || 'CLAT Aspirant';
+  const studentName = firstNameOf(null, profile);
 
   // Extract GK topic dimensions breakdown
   const topicStats = {};
@@ -95,7 +96,7 @@ export default function GKDashboard({
              </h1>
 
              <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '18px' }}>
-               Welcome <strong style={{ color: 'var(--accent-success)' }}>{studentName}</strong>! Explore the Exam-Relevant Current Affairs Knowledge Graph, Spaced Repetition cards, Smart One-Pagers, and Mock Drills.
+               {studentName && <>Welcome <strong style={{ color: 'var(--accent-success)' }}>{studentName}</strong>! </>}Explore the Exam-Relevant Current Affairs Knowledge Graph, Spaced Repetition cards, Smart One-Pagers, and Mock Drills.
             </p>
 
             <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap', fontSize: '0.875rem' }}>

@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { buildAdaptivePlan, getTutorReply } from '../utils/adaptiveTutor';
 import { studyState } from '../utils/studyState';
+import { firstNameOf } from '../utils/studentName';
 import { auth } from '../firebase';
 import './AITutor.css';
 
@@ -63,7 +64,7 @@ export default function AITutor({
     blockSize: 12,
   }), [userProgress, questions]);
   const { model } = plan;
-  const firstName = (currentUser?.displayName || userProgress?.studentProfile?.name || 'Aspirant').split(' ')[0];
+  const firstName = firstNameOf(currentUser, userProgress?.studentProfile);
   const [input, setInput] = useState('');
   const [isThinking, setIsThinking] = useState(false);
   const [messages, setMessages] = useState(() => [{
@@ -132,10 +133,10 @@ export default function AITutor({
       <section className="ai-tutor-hero">
         <div className="ai-tutor-hero-copy">
           <span><Sparkles size={14} /> PERSONAL AI TUTOR</span>
-          <h1>{firstName}, train the constraint that is costing you marks.</h1>
+          <h1>{firstName ? `${firstName}, train` : 'Train'} the constraint that is costing you marks.</h1>
           <p>
             I remember your answers, response time, difficulty, mock volatility and unresolved errors.
-            Today I am choosing <b>{plan.mode.replaceAll('-', ' ')}</b> mode—not a generic chapter test.
+            Today I am choosing <b>{plan.mode.replaceAll('-', ' ')}</b> mode, not a generic chapter test.
           </p>
           <div className="ai-tutor-hero-actions">
             <button onClick={startBlock} disabled={!plan.questions.length}>
@@ -286,7 +287,7 @@ export default function AITutor({
                   <p>{message.text}</p>
                   {/* Say so when the answer came from the built-in coach rather
                       than the connected model, so nothing is passed off. */}
-                  {message.offline && <small className="ai-chat-offline">Offline coach — no model connected</small>}
+                  {message.offline && <small className="ai-chat-offline">Offline coach · no model connected</small>}
                 </div>
               </div>
             ))}

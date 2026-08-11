@@ -14,7 +14,7 @@ export default function DailyPlan({ userProgress, onStartRevision, onOpenModule,
   const { nextAction, modules, dueCount, modulesStarted } = state;
 
   const greeting = modulesStarted === 0
-    ? 'Nothing recorded yet — one session gives me something to work from.'
+    ? 'Nothing recorded yet. One session gives me something to work from.'
     : `${state.totalAttempted} answers recorded across ${modulesStarted} of ${modules.length} modules.`;
 
   return (

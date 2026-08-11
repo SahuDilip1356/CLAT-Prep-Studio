@@ -466,7 +466,7 @@ export default function HomeDashboard({
                 <span><Zap size={15} /><b>Instant</b> answer feedback</span>
                 <span><Trophy size={15} /><b>One</b> readiness score</span>
               </div>
-              <div className="marketing-hero-note"><Check size={16} /> Built for serious CLAT &amp; AILET 2027/2028 aspirants—without the chaos.</div>
+              <div className="marketing-hero-note"><Check size={16} /> Built for serious CLAT &amp; AILET 2027/2028 aspirants, without the chaos.</div>
             </div>
 
             <article className="marketing-next-action" aria-label="Today's CLAT preparation mission">
@@ -541,7 +541,7 @@ export default function HomeDashboard({
             <div className="marketing-loop-heading">
               <span className="marketing-section-kicker">The daily score-building loop</span>
               <h2>No random studying. Every session ends with proof.</h2>
-              <p>You do not need another pile of content. You need a short loop that turns effort into a visible signal—and tells you exactly what to do tomorrow.</p>
+              <p>You do not need another pile of content. You need a short loop that turns effort into a visible signal, and tells you exactly what to do tomorrow.</p>
             </div>
             <div className="marketing-loop-track" aria-label="The four-step CLAT preparation loop">
               {PREP_LOOP.map(({ number, eyebrow, title, description, payoff, color, icon: LoopIcon }) => (
@@ -560,7 +560,7 @@ export default function HomeDashboard({
             <div className="marketing-loop-outcome">
               <div className="marketing-loop-outcome-copy">
                 <span><Zap size={15} /> After one focused loop</span>
-                <h3>You leave with evidence—not study guilt.</h3>
+                <h3>You leave with evidence, not study guilt.</h3>
                 <p>Your dashboard captures what you attempted, what you got right, what needs revision and the smartest move to make next.</p>
               </div>
               <div className="marketing-loop-scorecard" aria-label="Example session result">
@@ -612,7 +612,7 @@ export default function HomeDashboard({
           <div className="marketing-shell marketing-progress-layout">
             <div className="marketing-progress-copy">
               <span className="marketing-section-kicker">Progress / Diagnose</span>
-              <h2>Progress should explain what remains—and what to do now.</h2>
+              <h2>Progress should explain what remains, and what to do now.</h2>
               <p>Completion alone is not readiness. The Studio combines accuracy, speed, retention and consistency into a useful next action.</p>
               <article className="marketing-readiness-card">
                 <div><span>Overall readiness</span><b>{readinessLabel}</b></div>
