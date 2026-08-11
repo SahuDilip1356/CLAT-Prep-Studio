@@ -89,7 +89,7 @@
   margin-top: 12px;
   font-size: clamp(2rem, 4vw, 3.35rem);
   line-height: 1.04;
-  letter-spacing: -.05em;
+  letter-spacing: -.03em;
 }
 .ai-tutor-hero-copy p { max-width: 720px; margin-top: 16px; color: #c6ceda; font-size: .93rem; }
 .ai-tutor-hero-copy p b { color: #ff8c82; }
@@ -122,7 +122,7 @@
   backdrop-filter: blur(14px);
 }
 .ai-score-target-head { display: flex; align-items: center; justify-content: space-between; color: #d8d0ff; font-size: .66rem; font-weight: 900; letter-spacing: .1em; }
-.ai-score-target > strong { display: block; margin-top: 18px; font-size: 3.4rem; line-height: 1; letter-spacing: -.07em; }
+.ai-score-target > strong { display: block; margin-top: 18px; font-size: 3.4rem; line-height: 1; letter-spacing: -.03em; }
 .ai-score-target > strong small { margin-left: 4px; color: #abb5c5; font-size: 1rem; }
 .ai-score-target > b { display: block; margin-top: 12px; color: #fff; font-size: .78rem; }
 .ai-score-target > p { min-height: 42px; margin-top: 5px; color: #aeb8c8; font-size: .68rem; line-height: 1.45; }

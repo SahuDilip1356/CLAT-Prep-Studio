@@ -247,7 +247,7 @@ body:has(.marketing-home) { overflow-x: clip; }
   display: block;
   color: #fff;
   font: 800 23px/1 'JetBrains Mono', monospace;
-  letter-spacing: -.05em;
+  letter-spacing: -.03em;
 }
 .marketing-ticker-numbers > div:first-child strong { color: #ffd168; }
 .marketing-ticker-seconds strong {

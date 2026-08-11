@@ -22,7 +22,7 @@
 
 .clat-module-hero-copy { max-width: 760px; }
 .clat-module-eyebrow { display: inline-flex; align-items: center; gap: 7px; color: var(--clat-module-color); font-size: .76rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
-.clat-module-hero h1 { max-width: 720px; margin: 16px 0 14px; font-size: clamp(2.1rem, 5vw, 4.2rem); line-height: 1.02; letter-spacing: -.055em; }
+.clat-module-hero h1 { max-width: 720px; margin: 16px 0 14px; font-size: clamp(2.1rem, 5vw, 4.2rem); line-height: 1.02; letter-spacing: -.03em; }
 .clat-module-hero-copy > p { max-width: 700px; margin: 0; color: var(--text-secondary); font-size: 1rem; line-height: 1.75; }
 .clat-module-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-top: 28px; }
 .clat-module-actions button,

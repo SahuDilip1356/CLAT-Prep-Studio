@@ -55,7 +55,7 @@
   margin-top: 8px;
   font-size: clamp(2rem, 4vw, 3.4rem);
   line-height: 1.05;
-  letter-spacing: -.045em;
+  letter-spacing: -.03em;
 }
 .student-command-copy h1 em { color: #ff8278; font-style: normal; }
 .student-command-lead { max-width: 670px; margin-top: 16px; color: #cbd2dd; font-size: 1rem; }
@@ -108,7 +108,7 @@
   background: conic-gradient(#ff6b5e var(--readiness), rgba(255,255,255,.12) 0);
 }
 .student-readiness-ring > div { display: grid; place-items: center; width: 100%; height: 100%; border-radius: inherit; background: #1b2436; text-align: center; }
-.student-readiness-ring strong { display: block; font-size: 2.35rem; line-height: 1; letter-spacing: -.05em; }
+.student-readiness-ring strong { display: block; font-size: 2.35rem; line-height: 1; letter-spacing: -.03em; }
 .student-readiness-ring strong small { font-size: .9rem; }
 .student-readiness-ring span { max-width: 90px; margin-top: 5px; color: #aeb8c8; font-size: .66rem; line-height: 1.2; }
 .student-readiness-card > p { color: #aeb8c8; font-size: .72rem; text-align: center; }
@@ -199,7 +199,7 @@
   color: var(--text-primary);
   font-size: 2.35rem;
   line-height: 1;
-  letter-spacing: -.06em;
+  letter-spacing: -.03em;
 }
 .student-exam-number span {
   color: var(--text-secondary);

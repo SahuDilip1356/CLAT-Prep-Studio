@@ -1,7 +1,10 @@
 /* Testbook.com Inspired Design System for CLAT Prep Studio */
 :root {
-  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  /* Both faces are bundled and self-hosted. Until now these named Inter and
+     JetBrains Mono, neither of which was ever loaded, so every device silently
+     rendered its own system font instead. */
+  --font-main: 'IBM Plex Sans Variable', 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
   
   /* CLAT Prep Studio Brand Bible v1.0 Color Palette */
   --brand-ink: #101828;       /* 40% Argument Ink */
@@ -882,4 +885,21 @@ body {
 
 .section-scorecard tr.is-weakest {
   background: var(--accent-danger-bg, rgba(220, 38, 38, 0.07));
+}
+
+/* Mono earns its place on figures that sit in columns: the section scorecard,
+   the countdown and the module stats. Proportional digits jitter as a count
+   ticks down; tabular ones hold their column. Everywhere else stays sans. */
+.section-scorecard td,
+.section-scorecard th:not(:first-child),
+.marketing-ticker-clock strong,
+.daily-plan-modules p,
+.studio-side-status strong,
+.clat-module-metrics strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.section-scorecard thead th,
+.marketing-ticker-clock span {
+  font-family: var(--font-mono);
 }
