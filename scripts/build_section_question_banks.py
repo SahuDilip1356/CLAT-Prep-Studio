@@ -32,6 +32,7 @@ QUEUE_DIR = REPO_ROOT / "public/data"
 REVIEW_DIR = REPO_ROOT / "data/mock_review"
 DATA_DIR = REPO_ROOT / "src/data"
 AUG26 = REPO_ROOT / "CLAT Mock Papers/CLAT AUG26"
+AUTHORED_SOLUTIONS = REPO_ROOT / "data/authored_solutions.json"
 
 MODULES = ("ENGLISH", "GK", "LEGAL", "LOGICAL", "QUANT")
 
@@ -138,6 +139,15 @@ def option_texts(question: dict) -> list[str]:
         option["text"] if isinstance(option, dict) else str(option)
         for option in (question.get("options") or [])
     ]
+
+
+def authored_solutions() -> dict[str, dict]:
+    """Hand-written worked methods for questions whose source gives an answer
+    but no working. Verified against the stored key by
+    scripts/verify_authored_solutions.mjs before they land here."""
+    if not AUTHORED_SOLUTIONS.is_file():
+        return {}
+    return json.loads(AUTHORED_SOLUTIONS.read_text(encoding="utf-8")).get("solutions", {})
 
 
 def collect_legacy() -> list[dict]:
@@ -311,6 +321,7 @@ def build() -> dict:
         record["topic"] = skill["primarySkill"]
         by_module[record["module"]].append(record)
 
+    authored = authored_solutions()
     banks: dict[str, list[dict]] = {}
     summary: dict[str, dict] = {}
     for module, items in by_module.items():
@@ -351,11 +362,22 @@ def build() -> dict:
                 "correctOption": record["correctOption"],
                 "solution": record["solution"],
                 "hasExplanation": bool(record["solution"]),
+                # Overridden below when a worked method has been authored.
                 "explanationProvenance": record["provenance"],
                 "answerSource": record["answerSource"],
                 "sourceId": record["sourceId"],
                 "sourceQuestionNo": record["number"],
             })
+        # A source answer key restates the answer and teaches nothing. Where a
+        # worked method has been authored and verified, it replaces that.
+        for entry in bank:
+            written = authored.get(str(entry["id"]))
+            if not written:
+                continue
+            entry["solution"] = written["text"]
+            entry["hasExplanation"] = True
+            entry["explanationProvenance"] = "AUTHORED_UNREVIEWED"
+
         # Passages repeat for every question in their group and account for
         # ~82% of the raw payload. Store each once and reference it by id.
         passages: dict[str, str] = {}

@@ -122,7 +122,8 @@
     "preview": "vite preview",
     "test:reporting": "node --test tests/result-reporting.test.mjs",
     "test:tutor": "node --test tests/study-state.test.mjs tests/tutor-access.test.mjs",
-    "check:visual": "node scripts/visual_check.mjs"
+    "check:visual": "node scripts/visual_check.mjs",
+    "verify:solutions": "node scripts/verify_authored_solutions.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.4.2",

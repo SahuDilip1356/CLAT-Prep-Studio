@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Worked solutions for questions whose source PDF carries an answer but no method. The source chapters contain solved examples inside the teaching text, never solutions to the practice sets, so these cannot be extracted and are written by hand.",
+  "verification": "Every entry is derived independently and must reproduce the answer already stored in the bank. scripts/verify_authored_solutions.mjs fails the build if any solution names an answer the bank does not agree with.",
+  "provenance": "AUTHORED_UNREVIEWED",
+  "caveat": "Written to be correct and checkable, but not reviewed by CLAT faculty. Displayed to the learner as a worked method, not as official material.",
+  "solutions": {
+    "644": {
+      "answer": "D",
+      "text": "B is the mother of only A and D, so A and D are siblings. C is D's wife, and E is their only child. A is married to a doctor; H is the only remaining adult with children, so A and H are the second couple, and G and F are their children. That makes B the widow. F's uncle is therefore D, the sibling of her parent A. Since F is the niece of the manager, D is the manager."
+    },
+    "658": {
+      "answer": "Cannot be determined",
+      "text": "F is a child of A and H, so her mother is one of those two. The puzzle never states whether A is male or female: A is described only as the engineer married to a doctor. Either A or H could be the mother, so it cannot be determined. Watch for this trap: knowing both parents is not the same as knowing which one is the mother."
+    },
+    "672": {
+      "answer": "Grandmother",
+      "text": "B is the mother of A. G is the son of A and H. A parent's mother is a grandmother, so B is G's grandmother."
+    },
+    "686": {
+      "answer": "Doctor",
+      "text": "A is the engineer and is married to a doctor. A's spouse is H, since H is the only remaining adult who is a parent alongside A. Therefore H is the doctor."
+    },
+    "700": {
+      "answer": "Data insufficient",
+      "text": "Professions are given for A (engineer), B (teacher), C (architect), D (manager, deduced) and E (student). G's occupation is never mentioned and cannot be inferred from any condition, so the correct choice is Data insufficient. When a puzzle names five professions for eight people, expect at least one question to be unanswerable by design."
+    },
+    "1041": {
+      "answer": "4",
+      "text": "Direct proportion means x = k(y² + 4) for some constant k. Substituting x = 39 when y = 3 gives 39 = k(9 + 4) = 13k, so k = 3. Now set x = 60: 60 = 3(y² + 4), so y² + 4 = 20 and y² = 16. The positive value is y = 4. Always find k from the given pair before using the second condition."
+    },
+    "1028": {
+      "answer": "81",
+      "text": "If the mean proportional of a and b is 9, then ab = 9² = 81. If the third proportional is 6561, then a : b = b : 6561, so b² = 6561a. Substituting a = 81/b gives b³ = 6561 × 81 = 531441, so b = 81 and a = 1. The greater number is 81."
+    },
+    "62": {
+      "answer": "25.5",
+      "text": "The numbers 21 to 30 form an arithmetic progression, and the average of an AP is the mean of its first and last terms: (21 + 30) ÷ 2 = 25.5. No need to add ten numbers; recognising the AP turns this into one subtraction."
+    },
+    "6": {
+      "answer": "57",
+      "text": "These nine numbers increase by 4 each time, so they form an arithmetic progression. An AP with an odd number of terms has its average equal to the middle term. The fifth of nine terms is 57."
+    },
+    "738": {
+      "answer": "21",
+      "text": "Let the fixed amount be F and the royalty per book be r. Then F + 2000r = 46000 and F + 3000r = 66000. Subtracting gives 1000r = 20000, so r = 20 and F = 6000. For 6000 books the total is 6000 + 6000 × 20 = 126000, and income per book is 126000 ÷ 6000 = 21. Note the answer is not 20: the fixed amount is spread across the books too."
+    },
+    "103": {
+      "answer": "20",
+      "text": "The ratio 4 : 3 means 7 equal parts in total. Sita receives 4 of them: 35 × 4/7 = 20 sweets."
+    },
+    "1051": {
+      "answer": "85",
+      "text": "Distance varies with the square of time, so d = kt². From 500 = k × 10², k = 5. The distance in the 9th second is the total after 9 seconds minus the total after 8: 5(81) − 5(64) = 405 − 320 = 85 m. \"In the nth second\" always means a difference of two totals, never d(n) itself."
+    },
+    "1066": {
+      "answer": "500",
+      "text": "Combining both relationships, P varies as T/V, so T varies as PV. Tripling the pressure and doubling the volume multiplies the temperature by 3 × 2 = 6, giving 100 × 6 = 600 K. The question asks for the increase, not the new value: 600 − 100 = 500 K."
+    },
+    "805": {
+      "answer": "5",
+      "text": "Work with the part that does not change: the dry matter. Fresh dates are 90% water, so 36 kg contains 10% dry matter = 3.6 kg. Dry dates are 28% water, so they are 72% dry matter. The 3.6 kg of dry matter forms 3.6 ÷ 0.72 = 5 kg of dry dates."
+    },
+    "482": {
+      "answer": "72.9",
+      "text": "Each replacement leaves the milk multiplied by (1 − 9/90) = 0.9. After two replacements the milk is 90 × 0.9 × 0.9 = 72.9 litres. The general rule for repeated replacement is initial × (1 − withdrawn/total)^n."
+    }
+  }
+}
