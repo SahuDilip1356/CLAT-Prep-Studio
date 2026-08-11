@@ -404,7 +404,7 @@ export default function HomeDashboard({
         )}
       </header>
 
-      <main>
+      <div className="marketing-main">
         {/* A returning learner sees her plan first; a first-time visitor sees
             the hero. The plan is only passed in once there is progress to show. */}
         {dailyPlan && <div className="marketing-shell marketing-daily-plan">{dailyPlan}</div>}
@@ -632,7 +632,7 @@ export default function HomeDashboard({
             <button className="marketing-primary-button" onClick={() => startDrill(nextQuantDay, 'QUANT')}>{primaryActionLabel} <ArrowRight size={17} /></button>
           </div>
         </section>
-      </main>
+      </div>
 
       <footer className="marketing-footer" id="footer-about">
         <div className="marketing-shell">

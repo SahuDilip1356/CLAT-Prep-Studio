@@ -1,45 +1,9 @@
 # Current State
 
-_Last updated: 2026-08-11 00:05 · mid-session checkpoint_
+_Last updated: 2026-08-11 07:28 · mid-session checkpoint_
 
 ## Handoff (auto-summary — no explicit block found)
 
 
-**Files touched:**
-- /private/tmp/claude-501/-Users-sahudilip-Downloads-CLAT-Prep-Studio/b75a191b-bfc3-4534-9c19-4cb6c8d256bc/scratchpad/tutor-journey.html
-
-**git diff --stat:**
-```
-.agent/CURRENT.md                      | 21 +++------------------
- .agent/sessions/2026-08-10-b75a191b.md | 33 +++++++++++++++++++++++++++++++++
- 2 files changed, 36 insertions(+), 18 deletions(-)
- 2 files changed, 36 insertions(+), 18 deletions(-)
-```
-
-**Topics this session:**
-- double check the api key is providerd
-- Could you please show me the journey how does AI tutor works , give me the complete testin
-- Approach this as the design lead at a small studio known for their versatility, giving eve
-- deploy this to prod
-- https://github.com/leonxlnx/taste-skill. apply this skill and evaluate and assess how to i
-
-**Key points / decisions:**
-- The part I'd read first
-- The probe result, and what it actually proves
-- The one thing left
-- Confirmed live in the production bundle
-- Shipped today
-- Design Read (§0.B, as the skill prescribes)
-- First, an honest scoping problem
-- Audit results
-- Where I think the skill is wrong for this app
-- The 112px nav is the fix, not the bug. Yesterday it was one row of thirteen controls that 
-- What's genuinely worth doing
-- The honest bottom line
-
 **Last assistant note:**
-Read the full skill (1,206 lines). Before applying it, one thing matters:
-
-> *"Landing pages, portfolios, and redesigns. **Not dashboards, not data tables, not multi-step product UI.**"*
-
-Most of this app is exactly what it excludes. But the home dashboard is a marketing-style landing surface, the redesign protocol (§11) applies throughout, and the AI-tell bans (§9) are universal. Let me audit against those rather than misapply the rest.
+Now removing the bad mount point and passing it through properly:

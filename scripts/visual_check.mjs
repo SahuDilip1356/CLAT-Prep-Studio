@@ -1,0 +1,147 @@
+/**
+ * Look at the application before shipping it.
+ *
+ * Two layout defects reached the user this week — the daily plan rendering
+ * above the site's own navigation, and the Quant "Open AI Tutor" button that
+ * went nowhere. Both built clean and passed every unit test, because neither
+ * was a logic error. The only thing that catches them is looking.
+ *
+ * Renders each surface at three widths, captures a screenshot, and asserts a
+ * short list of structural facts that have actually been wrong before.
+ *
+ *   npm run check:visual            # assert only
+ *   npm run check:visual -- --open  # also write screenshots for eyeballing
+ */
+import { chromium } from 'playwright';
+import { mkdirSync, rmSync } from 'node:fs';
+import { spawn } from 'node:child_process';
+
+const OUT = 'tmp/visual';
+const PORT = 4173;
+const BASE = `http://localhost:${PORT}`;
+const WIDTHS = [
+  { name: 'desktop', width: 1440, height: 900 },
+  { name: 'laptop', width: 1024, height: 768 },
+  { name: 'mobile', width: 390, height: 844 },
+];
+
+const SURFACES = [
+  { id: 'home', path: '/' },
+  { id: 'quant', path: '/?module=QUANT' },
+  { id: 'english', path: '/?module=ENGLISH' },
+  { id: 'gk', path: '/?module=GK' },
+  { id: 'mocks', path: '/?module=MOCKS' },
+];
+
+let failures = 0;
+const fail = (msg) => { failures += 1; console.log(`  ✗ ${msg}`); };
+const pass = (msg) => console.log(`  ✓ ${msg}`);
+const check = (ok, msg) => (ok ? pass(msg) : fail(msg));
+
+async function waitForServer(url, timeoutMs = 60_000) {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    try {
+      const response = await fetch(url);
+      if (response.ok) return true;
+    } catch { /* not up yet */ }
+    await new Promise((resolve) => setTimeout(resolve, 400));
+  }
+  return false;
+}
+
+// Call the local binary directly: `npx` does not resolve reliably when spawned
+// without a shell, and the failure is silent.
+const server = spawn(
+  process.execPath,
+  ['node_modules/vite/bin/vite.js', 'preview', '--port', String(PORT), '--strictPort'],
+  { stdio: 'ignore' },
+);
+
+try {
+  if (!await waitForServer(BASE)) throw new Error(`preview server did not start on ${PORT}`);
+  rmSync(OUT, { recursive: true, force: true });
+  mkdirSync(OUT, { recursive: true });
+
+  const browser = await chromium.launch();
+
+  for (const viewport of WIDTHS) {
+    const context = await browser.newContext({ viewport, deviceScaleFactor: 1 });
+    const page = await context.newPage();
+    const consoleErrors = [];
+    // Running without production secrets, reCAPTCHA rejects the dummy site key.
+    // The failing URL is on the message location, not in its text.
+    const LOCAL_ONLY = /recaptcha|dummy-site-key|appcheck|firebase/i;
+    page.on('console', (message) => {
+      if (message.type() !== 'error') return;
+      const where = `${message.text()} ${message.location()?.url || ''}`;
+      if (!LOCAL_ONLY.test(where)) consoleErrors.push(message.text());
+    });
+
+    console.log(`\n${viewport.name} (${viewport.width}px)`);
+
+    for (const surface of SURFACES) {
+      await page.goto(BASE + surface.path, { waitUntil: 'networkidle' });
+      await page.waitForTimeout(500);
+      await page.screenshot({ path: `${OUT}/${viewport.name}-${surface.id}.png`, fullPage: false });
+
+      // Nothing may sit outside the viewport horizontally. This is the single
+      // most common way a layout breaks and the easiest to miss by eye.
+      const overflow = await page.evaluate(() =>
+        document.documentElement.scrollWidth - document.documentElement.clientWidth);
+      check(overflow <= 1, `${surface.id}: no horizontal overflow (${overflow}px)`);
+
+      // The brand must be the first thing on the page. The daily plan once
+      // rendered above it.
+      const brandIsFirst = await page.evaluate(() => {
+        const brand = document.querySelector('.marketing-logo-button, .logo-brand');
+        if (!brand) return true;
+        const brandTop = brand.getBoundingClientRect().top + window.scrollY;
+        // Panels injected by App, not the page's own content. The daily plan
+        // once rendered above the site navigation this way.
+        const injected = document.querySelectorAll('.daily-plan, .unsaved-progress-banner');
+        const earlier = [...injected]
+          .filter((node) => node.getBoundingClientRect().height > 40)
+          .some((node) => node.getBoundingClientRect().top + window.scrollY < brandTop - 4);
+        return !earlier;
+      });
+      check(brandIsFirst, `${surface.id}: nothing renders above the brand`);
+
+      const mains = await page.evaluate(() => ({
+        count: document.querySelectorAll('main').length,
+        nested: !!document.querySelector('main main'),
+      }));
+      check(mains.count === 1 && !mains.nested,
+        `${surface.id}: exactly one main landmark (${mains.count}${mains.nested ? ', nested' : ''})`);
+    }
+
+    // The module rail is the shared shell; if it collapses at the wrong width
+    // the modules stop looking like one product.
+    await page.goto(`${BASE}/?module=ENGLISH`, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(400);
+    const rail = await page.evaluate(() => {
+      const el = document.querySelector('.studio-sidebar');
+      if (!el) return null;
+      const rect = el.getBoundingClientRect();
+      return { visible: rect.width > 0, width: Math.round(rect.width) };
+    });
+    if (viewport.width >= 820) {
+      check(rail?.visible, `rail visible (${rail?.width}px)`);
+    } else {
+      check(!rail?.visible, 'rail collapses to the mobile switcher');
+    }
+
+    check(consoleErrors.length === 0,
+      `no console errors${consoleErrors.length ? `: ${consoleErrors[0].slice(0, 90)}` : ''}`);
+
+    await context.close();
+  }
+
+  await browser.close();
+} finally {
+  server.kill();
+}
+
+console.log(failures ? `\n${failures} visual check(s) failed` : '\nAll visual checks passed');
+console.log(`Screenshots: ${OUT}/`);
+process.exit(failures ? 1 : 0);
