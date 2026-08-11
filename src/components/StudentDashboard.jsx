@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import graphData from '../data/ca_knowledge_graph.json';
 import { buildStudentModel } from '../utils/adaptiveTutor';
+import { firstNameOf } from '../utils/studentName';
 import './StudentDashboard.css';
 
 const getAccuracy = (attempted, correct) => (

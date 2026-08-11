@@ -28,9 +28,22 @@ const WIDTHS = [
 const SURFACES = [
   { id: 'home', path: '/' },
   { id: 'quant', path: '/?module=QUANT' },
-  { id: 'english', path: '/?module=ENGLISH' },
   { id: 'gk', path: '/?module=GK' },
+  { id: 'ca', path: '/?module=CA' },
+  { id: 'english', path: '/?module=ENGLISH' },
+  { id: 'legal', path: '/?module=LEGAL' },
+  { id: 'logical', path: '/?module=LOGICAL' },
   { id: 'mocks', path: '/?module=MOCKS' },
+];
+
+// Surfaces with no deep link, reached the way a learner reaches them. The
+// student dashboard crashed on a missing import and no check saw it, because
+// nothing ever opened it.
+const CLICK_THROUGHS = [
+  // "My Dashboard" lives in the app header, which the marketing home does not
+  // render, so enter from a module page the way a studying learner would.
+  { id: 'student', from: '/?module=QUANT', click: 'My Dashboard' },
+  { id: 'tutor', from: '/?module=QUANT', click: 'My Dashboard', then: 'Ask my AI tutor' },
 ];
 
 let failures = 0;
@@ -81,8 +94,8 @@ try {
     console.log(`\n${viewport.name} (${viewport.width}px)`);
 
     for (const surface of SURFACES) {
-      await page.goto(BASE + surface.path, { waitUntil: 'networkidle' });
-      await page.waitForTimeout(500);
+      await page.goto(BASE + surface.path, { waitUntil: 'domcontentloaded', timeout: 45_000 });
+      await page.waitForTimeout(1200);
       await page.screenshot({ path: `${OUT}/${viewport.name}-${surface.id}.png`, fullPage: false });
 
       // Nothing may sit outside the viewport horizontally. This is the single
@@ -115,9 +128,27 @@ try {
         `${surface.id}: exactly one main landmark (${mains.count}${mains.nested ? ', nested' : ''})`);
     }
 
+    // A crashed module renders the error boundary instead of itself. That is
+    // the failure this check exists to catch.
+    for (const route of CLICK_THROUGHS) {
+      await page.goto(BASE + route.from, { waitUntil: 'domcontentloaded', timeout: 45_000 });
+      const entry = page.getByRole('button', { name: new RegExp(route.click, 'i') }).first();
+      if (await entry.count() === 0) { check(false, `${route.id}: entry point "${route.click}" not found`); continue; }
+      await entry.click();
+      await page.waitForTimeout(900);
+      if (route.then) {
+        const next = page.getByRole('button', { name: new RegExp(route.then, 'i') }).first();
+        if (await next.count()) { await next.click(); await page.waitForTimeout(900); }
+      }
+      await page.screenshot({ path: `${OUT}/${viewport.name}-${route.id}.png` });
+      const crashed = await page.evaluate(() =>
+        document.body.innerText.includes('temporarily unavailable'));
+      check(!crashed, `${route.id}: module renders, no error boundary`);
+    }
+
     // The module rail is the shared shell; if it collapses at the wrong width
     // the modules stop looking like one product.
-    await page.goto(`${BASE}/?module=ENGLISH`, { waitUntil: 'networkidle' });
+    await page.goto(`${BASE}/?module=ENGLISH`, { waitUntil: 'domcontentloaded', timeout: 45_000 });
     await page.waitForTimeout(400);
     const rail = await page.evaluate(() => {
       const el = document.querySelector('.studio-sidebar');
