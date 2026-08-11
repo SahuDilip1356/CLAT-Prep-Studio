@@ -34,6 +34,19 @@ DATA_DIR = REPO_ROOT / "src/data"
 AUG26 = REPO_ROOT / "CLAT Mock Papers/CLAT AUG26"
 AUTHORED_SOLUTIONS = REPO_ROOT / "data/authored_solutions.json"
 
+# The curated Quant workbook mixes reasoning chapters in with arithmetic. These
+# topics appear in the real CLAT papers under Logical Reasoning - the mock-derived
+# Logical bank already carries 205 "Arrangements and ordering" and 57
+# "Syllogisms and deductions" questions - so they are filed there rather than
+# counted as Quantitative Techniques. Nothing is removed; only the module moves.
+RECLASSIFY_TO_LOGICAL = {
+    "Analytical Puzzles",
+    "All Areas (Puzzles/Arrangements)",
+    "Linear Arrangement",
+    "Ordering & Sequence",
+    "Deductions",
+}
+
 MODULES = ("ENGLISH", "GK", "LEGAL", "LOGICAL", "QUANT")
 
 # A study day is ~35 questions in every module, so the daily load stays
@@ -159,9 +172,12 @@ def collect_legacy() -> list[dict]:
         if not path.is_file():
             continue
         for question in json.loads(path.read_text(encoding="utf-8")):
+            filed_under = module
+            if module == "QUANT" and question.get("topic") in RECLASSIFY_TO_LOGICAL:
+                filed_under = "LOGICAL"
             records.append({
                 "key": f"legacy-{module}-{question['id']}",
-                "module": module,
+                "module": filed_under,
                 "sourceId": "CURATED",
                 "number": question["id"],
                 "questionText": question.get("questionText") or "",

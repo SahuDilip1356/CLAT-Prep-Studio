@@ -19,19 +19,34 @@
         "3": 593
       }
     },
-    "QUANT": {
-      "questions": 1764,
+    "LOGICAL": {
+      "questions": 1694,
       "sessionTarget": 35,
       "sessionSizeRange": [
         35,
         36
       ],
-      "sessions": 50,
-      "withExplanation": 1642,
+      "sessions": 48,
+      "withExplanation": 1300,
       "byLevel": {
-        "1": 529,
-        "2": 882,
-        "3": 353
+        "1": 508,
+        "2": 847,
+        "3": 339
+      }
+    },
+    "QUANT": {
+      "questions": 1294,
+      "sessionTarget": 35,
+      "sessionSizeRange": [
+        34,
+        35
+      ],
+      "sessions": 37,
+      "withExplanation": 1172,
+      "byLevel": {
+        "1": 388,
+        "2": 647,
+        "3": 259
       }
     },
     "ENGLISH": {
@@ -63,28 +78,13 @@
         "2": 774,
         "3": 310
       }
-    },
-    "LOGICAL": {
-      "questions": 1224,
-      "sessionTarget": 35,
-      "sessionSizeRange": [
-        34,
-        35
-      ],
-      "sessions": 35,
-      "withExplanation": 830,
-      "byLevel": {
-        "1": 367,
-        "2": 612,
-        "3": 245
-      }
     }
   },
   "filesWritten": {
     "english_question_bank.json": 1195,
     "gk_question_bank.json": 2966,
     "legal_question_bank.json": 1549,
-    "logical_question_bank.json": 1224,
-    "question_bank.json": 1764
+    "logical_question_bank.json": 1694,
+    "question_bank.json": 1294
   }
 }
