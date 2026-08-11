@@ -127,7 +127,8 @@ export default function HomeDashboard({
   onOpenAuth,
   onOpenStudentDashboard,
   onSignOut,
-  currentUser
+  currentUser,
+  dailyPlan
 }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [dossierOpen, setDossierOpen] = useState(false);
@@ -404,6 +405,10 @@ export default function HomeDashboard({
       </header>
 
       <main>
+        {/* A returning learner sees her plan first; a first-time visitor sees
+            the hero. The plan is only passed in once there is progress to show. */}
+        {dailyPlan && <div className="marketing-shell marketing-daily-plan">{dailyPlan}</div>}
+
         <section className="marketing-hero" id="top">
           <div className={`marketing-shell marketing-exam-ticker is-${clatTicker.state} is-${clatTicker.urgency}`} aria-label="CLAT 2027 exam countdown">
             <div className="marketing-ticker-title">

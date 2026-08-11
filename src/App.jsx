@@ -921,24 +921,21 @@ function StudentApp() {
 
       <main>
         {viewState === 'DASHBOARD' && activeModule === 'HOME' && (
-          <ModuleErrorBoundary key="DAILY_PLAN" moduleName="Daily plan">
-            <DailyPlan
-              userProgress={safeProgress}
-              onStartRevision={handleStartRevision}
-              onOpenModule={(moduleId) => {
-                setActiveModule(moduleId);
-                setActiveTab('DASHBOARD');
-                setViewState('DASHBOARD');
-              }}
-              onAskTutor={openTutor}
-            />
-          </ModuleErrorBoundary>
-        )}
-
-        {viewState === 'DASHBOARD' && activeModule === 'HOME' && (
           <ModuleErrorBoundary key="HOME" moduleName="Home Dashboard">
             <HomeDashboard
               userProgress={safeProgress}
+              dailyPlan={(safeProgress.attemptHistory?.length || 0) > 0 ? (
+                <DailyPlan
+                  userProgress={safeProgress}
+                  onStartRevision={handleStartRevision}
+                  onOpenModule={(moduleId) => {
+                    setActiveModule(moduleId);
+                    setActiveTab('DASHBOARD');
+                    setViewState('DASHBOARD');
+                  }}
+                  onAskTutor={openTutor}
+                />
+              ) : null}
               setActiveModule={setActiveModule}
               onStartDayDrill={handleStartDayDrill}
               onOpenAuth={() => setIsAuthModalOpen(true)}

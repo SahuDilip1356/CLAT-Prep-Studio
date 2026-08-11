@@ -165,3 +165,14 @@
   color: var(--text-muted);
   font-size: 0.7rem;
 }
+
+/* Inside the marketing home the plan sits under the site navigation and takes
+   the shell's own width, so it reads as part of the page rather than a panel
+   dropped on top of it. */
+.marketing-daily-plan {
+  padding-top: 28px;
+}
+
+.marketing-daily-plan .daily-plan {
+  margin-bottom: 0;
+}
