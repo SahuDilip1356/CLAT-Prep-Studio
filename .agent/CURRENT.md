@@ -1,30 +1,25 @@
 # Current State
 
-_Last updated: 2026-08-11 08:11 · mid-session checkpoint_
+_Last updated: 2026-08-11 08:29 · mid-session checkpoint_
 
 ## Handoff (auto-summary — no explicit block found)
 
 
 **Topics this session:**
-- what is this and waht areas I will check to confirm fixes been built
+- Looks good deploy this into PROD, merge this
 
 **Key points / decisions:**
-- Verified rendering, not assumed
-- Tracking retuned
-- Mono was about to ship for nothing
-- One thing I found and can't fix
-- Verification
 - What broke
 - What to check on the preview
 - Honest note
+- Shipped
+- One correction to my own verification
+- Still open
+- The tutor has never completed a conversation. The 403 proves the key is loaded and the gat
 
 **Last assistant note:**
-ld be comfortable at reading size — this is what she'll stare at for hours.
+sation.** The 403 proves the key is loaded and the gate holds against strangers; it does not prove it opens for you. Sign in as `dilip.sahu@gmail.com` or `drishtissahu@gmail.com`, open the tutor, ask *"What should I do today?"* — a real answer means the last link works; *"Offline coach · no model connected"* means I have a Firebase Admin problem to fix.
 
-**4. The AI Tutor** — reachable from My Dashboard via "Ask my AI tutor". Both the button and the page.
+**C4 (spacing rhythm)** remains, unblocked now that the font metrics are settled. Half a day.
 
-**5. No "Aspirant" anywhere.** Signed out, greetings should simply be shorter, with no stray commas.
-
-## Honest note
-
-Three of my last five changes needed a follow-up fix after you looked. The visual check is closing that gap — it caught the nested `<main>`, and it now covers the surface it missed — but it's about ten days behind where it should have been. Each gap it finds gets added to it rather than just patched.
+**reCAPTCHA still pulls a Roboto file from gstatic** at runtime — visible in the fetch list above. That's the App Check widget, not our stylesheets.

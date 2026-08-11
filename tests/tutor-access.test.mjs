@@ -48,6 +48,18 @@ test('address matching ignores case and surrounding spaces', () => {
   assert.ok(allowed.has('drishtissahu@gmail.com'));
 });
 
+test('a broken auth service is distinguishable from a rejected stranger', () => {
+  // Both used to return 403, so a misconfigured deployment looked identical to
+  // one that was correctly turning people away.
+  assert.match(source, /status: 'unavailable'/, 'the unavailable state exists');
+  assert.match(source, /tutor-auth-unavailable/, 'and is reported distinctly');
+  assert.match(source, /startsWith\('auth\/'\)/, 'auth\/* codes are treated as rejections');
+  const rejected = source.indexOf("access.status !== 'allowed'");
+  const unavailable = source.indexOf("access.status === 'unavailable'");
+  assert.ok(unavailable > -1 && unavailable < rejected,
+    'the server-fault branch is checked before the rejection branch');
+});
+
 test('the endpoint verifies a Firebase token and never trusts a client email', () => {
   assert.match(source, /verifyIdToken\(token, true\)/, 'token verified, revocation checked');
   assert.match(source, /decoded\.email_verified/, 'unverified addresses rejected');
@@ -58,7 +70,7 @@ test('the endpoint verifies a Firebase token and never trusts a client email', (
 });
 
 test('the gate runs before the provider is ever called', () => {
-  const gate = source.indexOf('resolveAllowedEmail(request)');
+  const gate = source.indexOf('resolveAccess(request)');
   const providerCall = source.indexOf('fetch(OPENROUTER_URL');
   assert.ok(gate > -1 && providerCall > -1);
   assert.ok(gate < providerCall, 'an unauthorised caller must cost nothing');

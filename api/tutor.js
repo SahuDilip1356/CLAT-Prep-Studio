@@ -34,20 +34,45 @@ const ALLOWED_EMAILS = new Set(
     .filter(Boolean),
 );
 
-async function resolveAllowedEmail(request) {
+/**
+ * Returns one of:
+ *   { status: 'allowed', email }   caller may spend the owner's credit
+ *   { status: 'rejected' }         caller is not allowed — the correct answer
+ *   { status: 'unavailable' }      the server cannot verify tokens at all
+ *
+ * The third case matters: a misconfigured Admin SDK and a genuine stranger
+ * previously produced the same 403, so a working deployment and a broken one
+ * were indistinguishable from outside. Neither response reveals anything a
+ * caller could use; the difference is only legible to whoever is debugging.
+ */
+async function resolveAccess(request) {
   const authorization = String(request.headers.authorization || '');
-  if (!authorization.startsWith('Bearer ')) return null;
+  if (!authorization.startsWith('Bearer ')) return { status: 'rejected' };
   const token = authorization.slice('Bearer '.length).trim();
-  if (!token) return null;
+  if (!token) return { status: 'rejected' };
 
-  await refreshFirebaseAdminCredential();
-  // checkRevoked: a signed-out or disabled account loses access immediately.
-  const decoded = await getAuth().verifyIdToken(token, true);
-  const email = String(decoded.email || '').toLowerCase();
+  try {
+    await refreshFirebaseAdminCredential();
+  } catch {
+    return { status: 'unavailable' };
+  }
+
+  let decoded;
+  try {
+    // checkRevoked: a signed-out or disabled account loses access immediately.
+    decoded = await getAuth().verifyIdToken(token, true);
+  } catch (error) {
+    // An auth/* code means the token itself was bad, which is a rejection.
+    // Anything else is the service failing, which is ours to fix.
+    return String(error?.code || '').startsWith('auth/')
+      ? { status: 'rejected' }
+      : { status: 'unavailable' };
+  }
 
   // An unverified address proves nothing about who owns it.
-  if (!decoded.email_verified) return null;
-  return ALLOWED_EMAILS.has(email) ? email : null;
+  if (!decoded.email_verified) return { status: 'rejected' };
+  const email = String(decoded.email || '').toLowerCase();
+  return ALLOWED_EMAILS.has(email) ? { status: 'allowed', email } : { status: 'rejected' };
 }
 
 const SYSTEM_POLICY = `You are the study coach inside CLAT Prep Studio, working with one student preparing for CLAT 2027.
@@ -125,13 +150,17 @@ export default async function handler(request, response) {
   }
 
   // Gate before reading the body, so an unauthorised caller costs nothing.
-  let allowedEmail = null;
+  let access;
   try {
-    allowedEmail = await resolveAllowedEmail(request);
+    access = await resolveAccess(request);
   } catch {
-    allowedEmail = null;
+    access = { status: 'unavailable' };
   }
-  if (!allowedEmail) {
+  if (access.status === 'unavailable') {
+    console.error('Tutor auth unavailable: Firebase Admin could not verify the token.');
+    return response.status(503).json({ error: 'tutor-auth-unavailable', fallback: true });
+  }
+  if (access.status !== 'allowed') {
     return response.status(403).json({ error: 'tutor-not-enabled-for-account', fallback: true });
   }
 
