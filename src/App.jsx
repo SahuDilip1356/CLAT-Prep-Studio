@@ -25,6 +25,7 @@ import ModuleErrorBoundary from './components/ModuleErrorBoundary';
 import UnsavedProgressBanner from './components/UnsavedProgressBanner';
 import DailyPlan from './components/DailyPlan';
 import { calculateStreak, completionKeyFor, unsavedAnswerCount } from './utils/sessionProgress';
+import { recordQuestionsSeen } from './utils/mockExposure';
 import { accuracyOf, attemptRateOf } from './utils/resultAnalytics';
 import BrandLockup from './components/BrandLockup';
 import PWAExperience from './components/PWAExperience';
@@ -55,6 +56,9 @@ const MODULE_TABS = [
   { id: 'LOGICAL', label: 'Logical', icon: BrainCircuit, accent: '#2563eb' },
   { id: 'MOCKS', label: 'Mock Papers', icon: LibraryBig, accent: '#c2410c' },
 ];
+
+const DEFAULT_MOCK_MODE = 'practice';
+const DEFAULT_MOCK_POOL = 'practice';
 
 const legacyTutorQuestionBank = [
   ...questionsData.map((question) => ({ ...question, tutorModule: 'QUANT' })),
@@ -112,6 +116,9 @@ const defaultProgress = {
   mockTopicCorrect: {},
   mockTotalAttempted: 0,
   mockTotalCorrect: 0,
+  // First sighting of each mock question, `{ questionId: 'YYYY-MM-DD' }`.
+  // A paper with nothing in here is still an honest diagnostic.
+  mockQuestionsSeen: {},
   bookmarkedIds: {},
   bookmarkedQCardIds: {},
   bookmarkedDossierIds: {},
@@ -544,9 +551,23 @@ function StudentApp() {
 
   const handleStartQuestionSet = (title, questionSet, moduleName = 'QUANT', session = null) => {
     if (!Array.isArray(questionSet) || questionSet.length === 0) return;
+    const sessionData = session || {};
+    const mode = sessionData.mode || DEFAULT_MOCK_MODE;
+    const pool = sessionData.pool || DEFAULT_MOCK_POOL;
+
+    // Exposure is burnt on serve, not on submit. A student who opens a paper,
+    // reads it and walks away has still seen those questions, and the next
+    // sitting is no longer a clean measurement.
+    if (moduleName === 'MOCKS') {
+      setUserProgress(prev => {
+        const base = prev || defaultProgress;
+        return { ...base, mockQuestionsSeen: recordQuestionsSeen(base.mockQuestionsSeen, questionSet) };
+      });
+    }
+
     setActiveModule(moduleName);
     setActiveDrillTitle(title);
-    setActiveSession(session);
+    setActiveSession({ ...sessionData, mode, pool });
     setActiveQuestions(questionSet);
     setViewState('MOCK_TEST');
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -580,11 +601,16 @@ function StudentApp() {
     // is a separate signal. Blending them into one number understates every
     // student who leaves questions blank, which CLAT strategy often rewards.
     const attemptedCount = resultData.correctCount + resultData.wrongCount;
+    const sessionMode = activeSession?.mode || DEFAULT_MOCK_MODE;
+    const sessionPool = activeSession?.pool || DEFAULT_MOCK_POOL;
+
     const attemptRecord = {
       module: activeModule,
       drillTitle: resultData.drillTitle,
       dayNum: dayNum,
       paperId,
+      mode: sessionMode,
+      pool: sessionPool,
       timestamp: new Date().toISOString(),
       score: resultData.score,
       maxScore: resultData.maxScore,

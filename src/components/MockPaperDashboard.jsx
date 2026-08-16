@@ -1,10 +1,38 @@
-import { ArrowRight, CheckCircle2, Clock3, FileCheck2, Layers3, LibraryBig, ShieldCheck } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Clock3, Eye, FileCheck2, Layers3, LibraryBig, ShieldCheck } from 'lucide-react';
 import { useState } from 'react';
 import { clatMockPapers, mockSectionLabels, questionsForModule, sectionQuestionsForMock } from '../data/clatMockBank';
+import { paperExposure } from '../utils/mockExposure';
 import StudioShell from './StudioShell';
 import './CLATModules.css';
 
 const SECTION_ORDER = ['ENGLISH', 'CA', 'LEGAL', 'LOGICAL', 'QUANT'];
+
+// A paper is only worth a timed, honest attempt while it is untouched. Say so
+// plainly on the card, so nobody spends two hours measuring their own memory.
+function Freshness({ exposure }) {
+  if (exposure.isFresh) {
+    return (
+      <p className="clat-mock-freshness is-fresh">
+        <ShieldCheck size={13} /> Fresh paper · none of these questions seen yet
+      </p>
+    );
+  }
+  if (exposure.unseen === 0) {
+    return (
+      <p className="clat-mock-freshness is-spent">
+        <Eye size={13} /> Every question seen · retake measures recall, not readiness
+      </p>
+    );
+  }
+  // Rounding must never read "100% seen" while questions remain: the count and
+  // the percentage are describing the same paper and have to agree.
+  const seenPct = Math.min(exposure.seenPct, 99);
+  return (
+    <p className="clat-mock-freshness is-partial">
+      <Eye size={13} /> {seenPct}% seen · {exposure.unseen} of {exposure.total} questions still new
+    </p>
+  );
+}
 
 export default function MockPaperDashboard({ userProgress, onStartQuestionSet }) {
   const attempted = userProgress?.mockTotalAttempted || 0;
@@ -13,8 +41,10 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
   const [view, setView] = useState('papers');
   const completedPapers = userProgress?.mockCompletedDays || {};
   const paperScores = userProgress?.mockDayScores || {};
+  const seenMap = userProgress?.mockQuestionsSeen || {};
 
   const attemptedPaperCount = clatMockPapers.filter((mock) => completedPapers[mock.id]).length;
+  const freshPaperCount = clatMockPapers.filter((mock) => paperExposure(mock, seenMap).isFresh).length;
   const MOCK_NAV = [
     { id: 'papers', label: 'Full papers', icon: LibraryBig },
     { id: 'sections', label: 'Section practice', icon: Layers3 },
@@ -66,7 +96,7 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
       <section className="clat-module-metrics">
         <article><LibraryBig size={19} /><div><strong>{clatMockPapers.length}</strong><span>complete papers</span></div></article>
         <article><FileCheck2 size={19} /><div><strong>480</strong><span>digitized questions</span></div></article>
-        <article><CheckCircle2 size={19} /><div><strong>480</strong><span>official answers mapped</span></div></article>
+        <article><ShieldCheck size={19} /><div><strong>{freshPaperCount}</strong><span>papers still unseen</span></div></article>
         <article><Clock3 size={19} /><div><strong>120 min</strong><span>full-paper timer</span></div></article>
       </section>
 
@@ -80,6 +110,7 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
           {clatMockPapers.map((mock) => {
             const done = Boolean(completedPapers[mock.id]);
             const paperScore = paperScores[mock.id];
+            const exposure = paperExposure(mock, seenMap);
             return (
               <article className={`clat-mock-card ${done ? 'is-done' : ''}`} key={mock.id}>
                 <div className="clat-mock-card-main">
@@ -91,7 +122,8 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
                   </div>
                   <h3>{mock.title}</h3>
                   <p>120 questions · 120 minutes · {mock.passages.length} passage/direction groups</p>
-                  <button onClick={() => onStartQuestionSet(mock.title, mock.questions, 'MOCKS', { paperId: mock.id })}>
+                  <Freshness exposure={exposure} />
+                  <button onClick={() => onStartQuestionSet(mock.title, mock.questions, 'MOCKS', { paperId: mock.id, mode: 'practice', pool: 'practice' })}>
                     {done ? 'Retake' : 'Start'} full paper <ArrowRight size={16} />
                   </button>
                 </div>
@@ -103,7 +135,7 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
                     return (
                       <button
                         key={module}
-                        onClick={() => onStartQuestionSet(`${mock.title} · ${mockSectionLabels[module]}`, questions, 'MOCKS')}
+                        onClick={() => onStartQuestionSet(`${mock.title} · ${mockSectionLabels[module]}`, questions, 'MOCKS', { mode: 'practice', pool: 'practice' })}
                       >
                         <span>{mockSectionLabels[module]}</span><b>{questions.length} Q</b>
                       </button>
@@ -122,6 +154,14 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
           <div className="clat-module-section-heading">
             <div><span>Section practice</span><h2>One section, every paper</h2></div>
             <p>Pools the same section across all {clatMockPapers.length} papers, so you can drill Legal or Quant on its own.</p>
+            {/* Pooled practice reaches into papers the student may be saving for
+                a timed sitting. Better to say so here than to discover it after
+                the paper has stopped being a real diagnostic. */}
+            {freshPaperCount > 0 && (
+              <p className="clat-mock-pool-warning">
+                <Eye size={14} /> These pools draw from all {clatMockPapers.length} papers, including the {freshPaperCount} still unseen. Drilling here spends their questions.
+              </p>
+            )}
           </div>
           <div className="clat-module-paper-grid">
             {SECTION_ORDER.map((module) => {
@@ -133,15 +173,18 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
                     <i>{clatMockPapers.length} papers</i>
                   </div>
                   <h3>{questions.length} questions</h3>
-                  <p>Every {mockSectionLabels[module]} question from the mock library, in paper order.</p>
+                  <p>Every {mockSectionLabels[module]} question from the mock library, in paper order.
+                    {' '}{questions.filter((q) => seenMap[String(q?.id)]).length} already seen.</p>
                   <div className="clat-module-paper-buttons">
                     <button onClick={() => onStartQuestionSet(
                       `${mockSectionLabels[module]} · mock library`, questions, 'MOCKS',
+                      { mode: 'practice', pool: 'practice' }
                     )}>
                       Practise all <ArrowRight size={15} />
                     </button>
                     <button className="is-secondary" onClick={() => onStartQuestionSet(
                       `${mockSectionLabels[module]} · first 25`, questions.slice(0, 25), 'MOCKS',
+                      { mode: 'practice', pool: 'practice' }
                     )}>
                       First 25
                     </button>
