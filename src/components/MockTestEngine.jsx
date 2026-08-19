@@ -20,7 +20,11 @@ function SafeDiagramRenderer(props) {
   }
 }
 
-export default function MockTestEngine({ drillTitle, questions, onCompleteTest, onCancelTest }) {
+export default function MockTestEngine({ drillTitle, questions, onCompleteTest, onCancelTest, mode = 'practice' }) {
+  // A strict sitting is the closest thing to the real exam this app can offer,
+  // and CLAT has no pause button. Practice keeps it: stopping to think is the
+  // point there.
+  const isStrict = mode === 'strict';
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [markedForReview, setMarkedForReview] = useState({});
@@ -91,6 +95,9 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
   };
 
   const handleTogglePause = () => {
+    // The control is hidden in a strict sitting; refuse the action too, so the
+    // clock cannot be stopped by any route that reaches this handler.
+    if (isStrict) return;
     if (!isTimerPaused) {
       commitQuestionTime(currentQ.id);
       setIsTimerPaused(true);
@@ -193,7 +200,7 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
           <div>
             <h2 style={{ fontSize: '1.15rem', fontWeight: 800 }}>{drillTitle}</h2>
             <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-              {questions.length} Questions • CLAT Exam Interface
+              {questions.length} Questions • {isStrict ? 'Strict sitting · no pause' : 'CLAT Exam Interface'}
             </div>
           </div>
         </div>
@@ -202,13 +209,15 @@ export default function MockTestEngine({ drillTitle, questions, onCompleteTest, 
           <div className="timer-box" style={{ margin: 0, padding: '8px 16px' }}>
             <Clock size={18} color="var(--accent-primary)" />
             <span className="timer-display" style={{ fontSize: '1.1rem' }}>{formatTime(timeLeft)}</span>
-            <button 
-              onClick={handleTogglePause}
-              aria-label={isTimerPaused ? 'Resume timer' : 'Pause timer'}
-              style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', marginLeft: '6px' }}
-            >
-              {isTimerPaused ? <Play size={16} /> : <Pause size={16} />}
-            </button>
+            {!isStrict && (
+              <button
+                onClick={handleTogglePause}
+                aria-label={isTimerPaused ? 'Resume timer' : 'Pause timer'}
+                style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', marginLeft: '6px' }}
+              >
+                {isTimerPaused ? <Play size={16} /> : <Pause size={16} />}
+              </button>
+            )}
           </div>
 
           <button className="btn btn-primary" onClick={() => setShowSubmitConfirm(true)}>

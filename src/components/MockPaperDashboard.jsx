@@ -44,7 +44,9 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
   const seenMap = userProgress?.mockQuestionsSeen || {};
 
   const attemptedPaperCount = clatMockPapers.filter((mock) => completedPapers[mock.id]).length;
-  const freshPaperCount = clatMockPapers.filter((mock) => paperExposure(mock, seenMap).isFresh).length;
+  const freshPapers = clatMockPapers.filter((mock) => paperExposure(mock, seenMap).isFresh);
+  const freshPaperCount = freshPapers.length;
+  const nextFreshPaper = freshPapers[0] || null;
   const MOCK_NAV = [
     { id: 'papers', label: 'Full papers', icon: LibraryBig },
     { id: 'sections', label: 'Section practice', icon: Layers3 },
@@ -71,13 +73,25 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
           <span className="clat-module-eyebrow"><LibraryBig size={16} /> CLAT Mock Paper Library</span>
           <h1>Train in the exact 120-question rhythm.</h1>
           <p>Four Career Launcher Prime papers are digitized with original section order, passage grouping and official answer keys.</p>
+          {/* The hero used to always start paper one, which stopped being the
+              right advice the moment paper one was spent. Send the student to
+              the next paper that can still measure them. */}
           <div className="clat-module-actions">
-            <button onClick={() => onStartQuestionSet(
-              clatMockPapers[0].title, clatMockPapers[0].questions, 'MOCKS',
-              { paperId: clatMockPapers[0].id },
-            )}>
-              Start Prime Mock 10 <ArrowRight size={17} />
-            </button>
+            {nextFreshPaper ? (
+              <button onClick={() => onStartQuestionSet(
+                nextFreshPaper.title, nextFreshPaper.questions, 'MOCKS',
+                { paperId: nextFreshPaper.id, mode: 'strict', pool: 'strict' },
+              )}>
+                Sit {nextFreshPaper.title} strict <ArrowRight size={17} />
+              </button>
+            ) : (
+              <button onClick={() => onStartQuestionSet(
+                clatMockPapers[0].title, clatMockPapers[0].questions, 'MOCKS',
+                { paperId: clatMockPapers[0].id, mode: 'practice', pool: 'practice' },
+              )}>
+                Practise {clatMockPapers[0].title} <ArrowRight size={17} />
+              </button>
+            )}
             <span><ShieldCheck size={15} /> Provenance recorded</span>
           </div>
         </div>
@@ -123,9 +137,23 @@ export default function MockPaperDashboard({ userProgress, onStartQuestionSet })
                   <h3>{mock.title}</h3>
                   <p>120 questions · 120 minutes · {mock.passages.length} passage/direction groups</p>
                   <Freshness exposure={exposure} />
-                  <button onClick={() => onStartQuestionSet(mock.title, mock.questions, 'MOCKS', { paperId: mock.id, mode: 'practice', pool: 'practice' })}>
-                    {done ? 'Retake' : 'Start'} full paper <ArrowRight size={16} />
-                  </button>
+                  {/* Only an unseen paper can be sat strictly. Offering a strict
+                      run on a paper the student has already met would dress a
+                      memory test up as a diagnostic. */}
+                  {exposure.isFresh ? (
+                    <div className="clat-module-paper-buttons">
+                      <button onClick={() => onStartQuestionSet(mock.title, mock.questions, 'MOCKS', { paperId: mock.id, mode: 'strict', pool: 'strict' })}>
+                        Sit it strict <ArrowRight size={16} />
+                      </button>
+                      <button className="is-secondary" onClick={() => onStartQuestionSet(mock.title, mock.questions, 'MOCKS', { paperId: mock.id, mode: 'practice', pool: 'practice' })}>
+                        Practice run
+                      </button>
+                    </div>
+                  ) : (
+                    <button onClick={() => onStartQuestionSet(mock.title, mock.questions, 'MOCKS', { paperId: mock.id, mode: 'practice', pool: 'practice' })}>
+                      {done ? 'Retake' : 'Start'} full paper <ArrowRight size={16} />
+                    </button>
+                  )}
                 </div>
                 {/* Sections are practice slices of a paper, so they score but do
                     not mark the paper attempted. */}

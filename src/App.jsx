@@ -1119,9 +1119,10 @@ function StudentApp() {
         )}
 
         {viewState === 'MOCK_TEST' && (
-          <MockTestEngine 
+          <MockTestEngine
             drillTitle={activeDrillTitle}
             questions={activeQuestions}
+            mode={activeSession?.mode || DEFAULT_MOCK_MODE}
             onCompleteTest={handleCompleteTest}
             onCancelTest={() => setViewState('DASHBOARD')}
           />

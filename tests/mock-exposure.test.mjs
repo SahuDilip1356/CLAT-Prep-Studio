@@ -67,3 +67,27 @@ test('the strict pool is the papers with nothing seen in them', () => {
   assert.deepEqual(freshPapers(papers, seen).map((p) => p.id), ['b']);
   assert.deepEqual(freshPapers(papers, {}).map((p) => p.id), ['a', 'b', 'c']);
 });
+
+// The dashboard offers a strict sitting on the first fresh paper and nothing
+// else. These pin the selection rule that button depends on.
+test('the strict offer moves on as papers are spent, and ends when none are left', () => {
+  const papers = [paper('a', [1, 2]), paper('b', [3, 4])];
+  assert.equal(freshPapers(papers, {})[0].id, 'a');
+
+  const afterA = recordQuestionsSeen({}, papers[0].questions);
+  assert.equal(freshPapers(papers, afterA)[0].id, 'b');
+
+  const afterBoth = recordQuestionsSeen(afterA, papers[1].questions);
+  assert.deepEqual(freshPapers(papers, afterBoth), []);
+});
+
+test('a pooled section drill spends that section in every paper it drew from', () => {
+  const papers = [paper('a', ['a-legal', 'a-quant']), paper('b', ['b-legal', 'b-quant'])];
+  const pooledLegalDrill = [{ id: 'a-legal' }, { id: 'b-legal' }];
+
+  const seen = recordQuestionsSeen({}, pooledLegalDrill);
+
+  assert.deepEqual(freshPapers(papers, seen), []);
+  assert.equal(paperExposure(papers[0], seen).seenPct, 50);
+  assert.equal(paperExposure(papers[1], seen).unseen, 1);
+});
