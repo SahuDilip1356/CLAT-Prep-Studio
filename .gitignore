@@ -37,6 +37,18 @@ WhatsApp Image *.jpeg
 CLAT Prep Studio.png
 ClatPrep Studio.png
 
+# More raw source material (187MB): the mock papers and study material the
+# ingestion scripts read from. Same rule as the block above — originals stay on
+# local disk, digitized output is tracked.
+CLAT/
+
+# Per-run output from the daily current-affairs agent. Regenerated on every run
+# and useful only while debugging that run.
+CA_Agent_Logs/
+
+# Local git worktrees. Checkouts of this same repository, not content of it.
+CLAT Prep Studio.worktrees/
+
 # Rendered evidence pages (604MB) and PDF scratch renders (145MB). Both are
 # regenerated from the source PDFs by the ingestion scripts; the review queues
 # they support live in public/data/ and are tracked.

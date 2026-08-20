@@ -178,14 +178,29 @@
   }
 
   .studio-mark div,
-  .studio-sidebar nav button span,
-  .studio-sidebar nav em,
   .studio-side-status strong,
   .studio-side-status small {
     display: none;
   }
 
+  /* The rail collapses to icons here, but the labels must only leave the
+     screen — not the accessibility tree. `display: none` took the name off
+     every nav button, so between 821px and 1180px, which is an ordinary
+     laptop, the whole rail read as unnamed buttons to a screen reader. */
+  .studio-sidebar nav button span,
+  .studio-sidebar nav em {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
   .studio-sidebar nav button {
+    position: relative;
     justify-content: center;
   }
 }

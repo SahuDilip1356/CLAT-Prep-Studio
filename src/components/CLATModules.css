@@ -62,6 +62,17 @@
 .clat-module-paper-buttons { display: flex; gap: 9px; margin-top: 20px; }
 .clat-module-paper-buttons button { flex: 1; min-height: 42px; font-size: .78rem; }
 .clat-module-paper-buttons button.is-secondary { color: var(--clat-module-color); background: var(--clat-module-soft); }
+/* A lane with nothing in it says so and refuses the click, rather than looking
+   live and doing nothing when pressed. */
+.clat-module-paper-buttons button:disabled { opacity: .38; cursor: not-allowed; }
+
+/* Freshness pill: a paper is only a true diagnostic while unseen, so the card
+   says which state it is in before the student commits two hours to it. */
+.clat-mock-card-main > p.clat-mock-freshness { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; padding: 5px 10px; border-radius: 999px; font-size: .72rem; font-weight: 700; }
+.clat-mock-freshness.is-fresh { color: var(--accent-success); background: var(--accent-success-bg); }
+.clat-mock-freshness.is-partial { color: var(--accent-warning); background: var(--accent-warning-bg); }
+.clat-mock-freshness.is-spent { color: var(--accent-danger); background: var(--accent-danger-bg); }
+.clat-mock-pool-warning { display: flex; align-items: center; gap: 7px; margin: 10px 0 0; padding: 9px 12px; border-radius: 10px; color: var(--accent-warning); background: var(--accent-warning-bg); font-size: .75rem; font-weight: 600; }
 
 .clat-mock-list { display: grid; gap: 18px; }
 .clat-mock-card { display: grid; grid-template-columns: minmax(300px, .9fr) minmax(420px, 1.1fr); overflow: hidden; }

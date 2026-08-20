@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import {
+  levelPracticeFrom,
   loadModuleBank,
   nextSessionFrom,
   revisionSetFrom,
@@ -197,7 +198,89 @@ export default function CLATSectionDashboard({ moduleId, userProgress, onStartQu
     </section>
   );
 
+  // The Practice tab used to be topic chips and nothing else, so a student who
+  // did not already know which skill was failing them had no way in. These are
+  // the four things worth doing in a section when you cannot name the problem:
+  // build the base, sit it at exam difficulty, stretch, and fix what you got
+  // wrong. Quant has had its own version of this since the start.
+  const practiceLanes = [
+    {
+      key: 'foundation',
+      tone: 'is-foundation',
+      eyebrow: 'BUILD THE BASE',
+      title: 'Foundation set',
+      copy: 'The straightforward questions, until the pattern is automatic.',
+      available: stats.byLevel[1],
+      build: () => levelPracticeFrom(bank, 1, 15, attempted),
+    },
+    {
+      key: 'standard',
+      tone: 'is-standard',
+      eyebrow: 'EXAM PACE',
+      title: 'Exam-standard set',
+      copy: 'Fifteen questions at the difficulty the paper actually asks.',
+      available: stats.byLevel[2],
+      build: () => levelPracticeFrom(bank, 2, 15, attempted),
+    },
+    {
+      key: 'advanced',
+      tone: 'is-advanced',
+      eyebrow: 'STRETCH',
+      title: 'Advanced set',
+      copy: 'The hardest questions in the bank, for when the basics hold.',
+      available: stats.byLevel[3],
+      build: () => levelPracticeFrom(bank, 3, 15, attempted),
+    },
+    {
+      key: 'repair',
+      tone: '',
+      eyebrow: 'REPAIR',
+      title: 'Mistake retry',
+      copy: 'Questions you answered wrong. They clear once you get them right.',
+      available: revision.length,
+      build: () => revision.slice(0, 20),
+      emptyMeta: 'No open mistakes',
+    },
+  ];
+
   const renderPractice = () => (
+    <>
+    <section className="clat-module-paper-section">
+      <div className="clat-module-section-heading">
+        <div><span>Practice</span><h2>Pick the outcome you need</h2></div>
+        <p>Each lane reads the same keyed bank; only the difficulty and the purpose change.</p>
+      </div>
+      <div className="clat-module-paper-grid">
+        {practiceLanes.map((lane) => {
+          const count = Math.min(lane.available, lane.key === 'repair' ? 20 : 15);
+          return (
+            <article className={`clat-module-paper-card ${lane.tone}`} key={lane.key}>
+              <div className="clat-module-paper-top">
+                <span>{lane.eyebrow}</span>
+                <i>{lane.available ? `${lane.available} in bank` : 'none yet'}</i>
+              </div>
+              <h3>{lane.title}</h3>
+              <p>{lane.copy}</p>
+              <div className="clat-module-paper-buttons">
+                <button
+                  disabled={!lane.available}
+                  onClick={() => onStartQuestionSet(
+                    `${details.eyebrow} · ${lane.title}`,
+                    lane.build(),
+                    moduleId,
+                  )}
+                >
+                  {lane.available
+                    ? <>Start {count} question{count === 1 ? '' : 's'} <ArrowRight size={15} /></>
+                    : (lane.emptyMeta || 'Nothing here yet')}
+                </button>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+
     <section className="clat-module-paper-section">
       <div className="clat-module-section-heading">
         <div><span>Practice by topic</span><h2>Drill a single skill</h2></div>
@@ -219,6 +302,7 @@ export default function CLATSectionDashboard({ moduleId, userProgress, onStartQu
         ))}
       </div>
     </section>
+    </>
   );
 
   const renderReview = () => (
