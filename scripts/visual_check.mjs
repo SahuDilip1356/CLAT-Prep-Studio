@@ -46,6 +46,15 @@ const CLICK_THROUGHS = [
   { id: 'tutor', from: '/?module=QUANT', click: 'My Dashboard', then: 'Ask my AI tutor' },
 ];
 
+// Quant is included deliberately: it is the module whose Practice tab already
+// worked, so it is the control that proves the check can tell the difference.
+const PRACTICE_TABS = [
+  { id: 'quant', module: 'QUANT' },
+  { id: 'english', module: 'ENGLISH' },
+  { id: 'legal', module: 'LEGAL' },
+  { id: 'logical', module: 'LOGICAL' },
+];
+
 let failures = 0;
 const fail = (msg) => { failures += 1; console.log(`  ✗ ${msg}`); };
 const pass = (msg) => console.log(`  ✓ ${msg}`);
@@ -170,6 +179,36 @@ try {
       check(!crashed, `${route.id}: module renders, no error boundary`);
     }
 
+    // Every module's Practice tab must offer a way in. English, Legal and
+    // Logical once rendered topic chips and nothing else: a student who could
+    // not already name their weak skill had no route from "I am bad at Legal"
+    // to a set of questions. It built clean and no check saw it, because
+    // nothing ever opened the tab.
+    for (const practice of PRACTICE_TABS) {
+      await page.goto(`${BASE}/?module=${practice.module}`, { waitUntil: 'domcontentloaded', timeout: 45_000 });
+      await page.waitForTimeout(1200);
+      const tab = page.getByRole('button', { name: /^Practice$/i }).first();
+      if (await tab.count() === 0) {
+        check(false, `${practice.id}: no Practice tab to open`);
+        continue;
+      }
+      await tab.click();
+      await page.waitForTimeout(900);
+      await page.screenshot({ path: `${OUT}/${viewport.name}-${practice.id}-practice.png`, fullPage: true });
+
+      const lanes = await stableEvaluate(page, () =>
+        document.querySelectorAll('.practice-card, .clat-module-paper-card').length);
+      check(lanes >= 4, `${practice.id}: Practice offers ${lanes} ways in (needs 4+)`);
+
+      // A lane that starts nothing is worse than no lane: it reads as a
+      // working button and silently does nothing.
+      const deadButtons = await stableEvaluate(page, () => {
+        const cards = [...document.querySelectorAll('.practice-card, .clat-module-paper-card')];
+        return cards.filter((card) => !card.querySelector('button')).length;
+      });
+      check(deadButtons === 0, `${practice.id}: every Practice lane has a control (${deadButtons} without)`);
+    }
+
     // The module rail is the shared shell; if it collapses at the wrong width
     // the modules stop looking like one product.
     await page.goto(`${BASE}/?module=ENGLISH`, { waitUntil: 'domcontentloaded', timeout: 45_000 });
@@ -182,6 +221,17 @@ try {
     });
     if (viewport.width >= 820) {
       check(rail?.visible, `rail visible (${rail?.width}px)`);
+
+      // Between 821px and 1180px the rail collapses to icons. The labels were
+      // hidden with display:none, which takes the text out of the
+      // accessibility tree as well as off the screen — every module's nav
+      // became a column of unnamed buttons on an ordinary laptop.
+      const unnamed = await stableEvaluate(page, () => {
+        const buttons = [...document.querySelectorAll('.studio-sidebar nav button')];
+        return buttons.filter((button) =>
+          !(button.getAttribute('aria-label') || button.innerText.trim())).length;
+      });
+      check(unnamed === 0, `every rail nav button is named (${unnamed} unnamed)`);
     } else {
       check(!rail?.visible, 'rail collapses to the mobile switcher');
     }

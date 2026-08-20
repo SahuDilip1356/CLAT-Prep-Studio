@@ -91,6 +91,21 @@ export function topicPracticeFrom(bank, topic, limit = 20) {
 }
 
 /**
+ * A practice set at one difficulty level.
+ *
+ * `offset` rotates the starting point and wraps, so a student who comes back
+ * to the same lane tomorrow gets the next questions rather than the same ones
+ * again. Pass their attempt count: it advances on its own, and the same count
+ * always yields the same set, which keeps this testable.
+ */
+export function levelPracticeFrom(bank, level, limit = 15, offset = 0) {
+  const pool = (bank?.questions || []).filter((question) => question.difficultyLevel === level);
+  if (!pool.length) return [];
+  const start = ((offset % pool.length) + pool.length) % pool.length;
+  return [...pool.slice(start), ...pool.slice(0, start)].slice(0, limit);
+}
+
+/**
  * Questions this learner has answered wrong and not yet resolved, newest first.
  * The notebook is keyed MODULE:questionId, so read only this module's entries.
  */

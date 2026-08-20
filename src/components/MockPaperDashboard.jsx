@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle2, Clock3, Eye, FileCheck2, Layers3, LibraryBig, ShieldCheck } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { clatMockPapers, mockSectionLabels, questionsForModule, sectionQuestionsForMock } from '../data/clatMockBank';
 import { paperExposure } from '../utils/mockExposure';
 import StudioShell from './StudioShell';
@@ -34,16 +34,31 @@ function Freshness({ exposure }) {
   );
 }
 
-export default function MockPaperDashboard({ userProgress, onStartQuestionSet }) {
+export default function MockPaperDashboard({ userProgress, onStartQuestionSet, onRecordExposure }) {
   const attempted = userProgress?.mockTotalAttempted || 0;
   const correct = userProgress?.mockTotalCorrect || 0;
   const accuracy = attempted ? Math.round((correct / attempted) * 100) : 0;
   const [view, setView] = useState('papers');
-  const completedPapers = userProgress?.mockCompletedDays || {};
   const paperScores = userProgress?.mockDayScores || {};
-  const seenMap = userProgress?.mockQuestionsSeen || {};
+  // Memoised because the backfill effect below depends on them: a fresh `{}`
+  // on every render would re-run it on every render.
+  const completedPapers = useMemo(() => userProgress?.mockCompletedDays || {}, [userProgress?.mockCompletedDays]);
+  const seenMap = useMemo(() => userProgress?.mockQuestionsSeen || {}, [userProgress?.mockQuestionsSeen]);
 
   const attemptedPaperCount = clatMockPapers.filter((mock) => completedPapers[mock.id]).length;
+  // Exposure tracking started after people had already been sitting papers, so
+  // a paper finished last month carried no record and read as untouched — the
+  // card would say "Attempted 88/120" and "none of these questions seen yet"
+  // in the same breath, and offer a strict sitting on a paper already known.
+  // A finished paper was seen in full, so say so.
+  useEffect(() => {
+    if (!onRecordExposure) return;
+    const unrecorded = clatMockPapers
+      .filter((mock) => completedPapers[mock.id] && paperExposure(mock, seenMap).unseen > 0)
+      .flatMap((mock) => mock.questions);
+    if (unrecorded.length) onRecordExposure(unrecorded);
+  }, [completedPapers, seenMap, onRecordExposure]);
+
   const freshPapers = clatMockPapers.filter((mock) => paperExposure(mock, seenMap).isFresh);
   const freshPaperCount = freshPapers.length;
   const nextFreshPaper = freshPapers[0] || null;

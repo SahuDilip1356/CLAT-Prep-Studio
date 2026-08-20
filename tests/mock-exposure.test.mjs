@@ -81,6 +81,37 @@ test('the strict offer moves on as papers are spent, and ends when none are left
   assert.deepEqual(freshPapers(papers, afterBoth), []);
 });
 
+// Tracking began after people had already sat papers. A finished paper with no
+// exposure record must not read as untouched — that is the exact failure the
+// feature exists to prevent, arriving through the back door.
+test('a paper already finished is backfilled to fully seen, not left fresh', () => {
+  const sat = paper('sat', [1, 2, 3]);
+  const untouched = paper('untouched', [4, 5, 6]);
+  const noRecordYet = {};
+
+  // What the dashboard detects: finished, yet nothing recorded against it.
+  assert.equal(paperExposure(sat, noRecordYet).isFresh, true);
+  assert.equal(paperExposure(sat, noRecordYet).unseen, 3);
+
+  const backfilled = recordQuestionsSeen(noRecordYet, sat.questions);
+
+  assert.equal(paperExposure(sat, backfilled).isFresh, false);
+  assert.equal(paperExposure(sat, backfilled).seenPct, 100);
+  assert.equal(paperExposure(untouched, backfilled).isFresh, true);
+  assert.deepEqual(freshPapers([sat, untouched], backfilled).map((p) => p.id), ['untouched']);
+});
+
+test('backfilling a partly-drilled paper completes it without moving first-seen dates', () => {
+  const sat = paper('sat', [1, 2, 3]);
+  const fromDrill = recordQuestionsSeen({}, [{ id: 2 }], new Date('2026-06-01T00:00:00Z'));
+
+  const backfilled = recordQuestionsSeen(fromDrill, sat.questions, new Date('2026-08-20T00:00:00Z'));
+
+  assert.equal(paperExposure(sat, backfilled).unseen, 0);
+  assert.equal(backfilled['2'], '2026-06-01');
+  assert.equal(backfilled['1'], '2026-08-20');
+});
+
 test('a pooled section drill spends that section in every paper it drew from', () => {
   const papers = [paper('a', ['a-legal', 'a-quant']), paper('b', ['b-legal', 'b-quant'])];
   const pooledLegalDrill = [{ id: 'a-legal' }, { id: 'b-legal' }];

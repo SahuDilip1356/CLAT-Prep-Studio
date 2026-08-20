@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, useEffect, useMemo, useRef } from 'react';
+import { lazy, Suspense, useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import {
   quantQuestionBank as questionsData,
   gkQuestionBank as gkQuestionsData,
@@ -549,6 +549,19 @@ function StudentApp() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // Every route that puts a mock question in front of a student comes through
+  // here. Writing only on a real change matters: this state syncs to Firestore,
+  // and the backfill below runs on render.
+  const recordMockExposure = useCallback((questions) => {
+    setUserProgress(prev => {
+      const base = prev || defaultProgress;
+      const seen = base.mockQuestionsSeen || {};
+      const next = recordQuestionsSeen(seen, questions);
+      if (Object.keys(next).length === Object.keys(seen).length) return base;
+      return { ...base, mockQuestionsSeen: next };
+    });
+  }, []);
+
   const handleStartQuestionSet = (title, questionSet, moduleName = 'QUANT', session = null) => {
     if (!Array.isArray(questionSet) || questionSet.length === 0) return;
     const sessionData = session || {};
@@ -558,12 +571,7 @@ function StudentApp() {
     // Exposure is burnt on serve, not on submit. A student who opens a paper,
     // reads it and walks away has still seen those questions, and the next
     // sitting is no longer a clean measurement.
-    if (moduleName === 'MOCKS') {
-      setUserProgress(prev => {
-        const base = prev || defaultProgress;
-        return { ...base, mockQuestionsSeen: recordQuestionsSeen(base.mockQuestionsSeen, questionSet) };
-      });
-    }
+    if (moduleName === 'MOCKS') recordMockExposure(questionSet);
 
     setActiveModule(moduleName);
     setActiveDrillTitle(title);
@@ -1113,6 +1121,7 @@ function StudentApp() {
               <MockPaperDashboard
                 userProgress={safeProgress}
                 onStartQuestionSet={handleStartQuestionSet}
+                onRecordExposure={recordMockExposure}
               />
             </Suspense>
           </ModuleErrorBoundary>
