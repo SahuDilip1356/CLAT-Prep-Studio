@@ -1,46 +1,26 @@
 # Current State
 
-_Last updated: 2026-09-02 17:52 · mid-session checkpoint_
+_Last updated: 2026-09-02 20:40 · mid-session checkpoint_
 
 ## Handoff (auto-summary — no explicit block found)
 
 
 **git diff --stat:**
 ```
-.agent/CURRENT.md                                  |   52 +-
- .agent/DECISIONS.md                                |    3 +
- .agent/ERRORS.md                                   |    4 +-
- .agent/sessions/2026-08-11-b75a191b.md             |   75 +
- .../00_Continuing_Issues/indianepal_relations.md   |  157 +-
- .../00_Continuing_Issues/indus_waters_treaty.md    |  167 +-
- .../judicial_appointments_and_collegium_system.md  |   95 +-
- .../ladakh_and_sixth_schedule_demands.md           |  162 +-
- .../00_Continuing_Issues/russia_ukraine.md         |  157 +-
- .../02_Feb_2026/supreme_court_pendency.md          |  178 +-
- .../03_Mar_2026/polluter_pays_principle.md         |  159 +-
- .../05_May_2026/brics_developments.md              |  199 +-
-… (+6 more files)
- 18 files changed, 10411 insertions(+), 1233 deletions(-)
+.agent/CURRENT.md                      |  56 +++++++-------
+ .agent/sessions/2026-09-02-2a436a11.md | 132 +++++++++++++++++++++++++++++++++
+ 2 files changed, 157 insertions(+), 31 deletions(-)
+ 2 files changed, 157 insertions(+), 31 deletions(-)
 ```
 
 **Topics this session:**
-- Give me the spec
-- Reevaluate the questions from final solution point
-- where we are on the development?
+- Pls
 
 **Key points / decisions:**
-- First, a correction that changes the decision I asked you to make.
-- What the spec actually says
-- Diagnosis before ranking. Raw accuracy conflates causes needing opposite fixes. Every resp
-- Rank by recoverable marks, not weakness. Uses `delta = accuracy − expected` against the IR
-- Two things I'd flag
-- The field-presence test was wrong
-- Two things this breaks
-- You already found this once
-- Spec updated
-- What changed since Aug 30
-- What hasn't moved
-- Where that leaves it
+- Pushed. `--no-thin` cleared it. Checking whether Vercel picked it up:
+- Answering your question, with two corrections
+- Time from here
+- What to verify
 
 **Last assistant note:**
-Three days since we last looked. Let me check what's moved.
+All 3,126 GK questions now have exactly 4 options. Running the wider suites to be sure nothing regressed:
