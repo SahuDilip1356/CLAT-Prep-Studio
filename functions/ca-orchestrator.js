@@ -1,17 +1,22 @@
 import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
-import { getApps, initializeApp, cert } from 'firebase-admin/app';
-import { FieldValue, getFirestore } from 'firebase-admin/firestore';
-
 const serviceAccountJson = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
-if (!getApps().length) {
-  initializeApp(serviceAccountJson ? {
-    credential: cert(JSON.parse(serviceAccountJson)),
-    projectId: process.env.FIREBASE_PROJECT_ID
-  } : {});
-}
-
-const db = getFirestore();
+let firebaseRuntime;
+const getFirebaseRuntime = async () => {
+  if (firebaseRuntime) return firebaseRuntime;
+  const [{ getApps, initializeApp, cert }, { FieldValue, getFirestore }] = await Promise.all([
+    import('firebase-admin/app'),
+    import('firebase-admin/firestore')
+  ]);
+  if (!getApps().length) {
+    initializeApp(serviceAccountJson ? {
+      credential: cert(JSON.parse(serviceAccountJson)),
+      projectId: process.env.FIREBASE_PROJECT_ID
+    } : {});
+  }
+  firebaseRuntime = { db: getFirestore(), FieldValue };
+  return firebaseRuntime;
+};
 const IST_TIME_ZONE = 'Asia/Kolkata';
 const PUBLISH_THRESHOLD = 65;
 const MAX_DAILY_DOSSIERS = 5;
@@ -351,6 +356,7 @@ const readStaticTitles = async () => {
 };
 
 const loadExistingCatalogue = async () => {
+  const { db } = await getFirebaseRuntime();
   const [staticTitles, snapshot] = await Promise.all([
     readStaticTitles(),
     db.collection('caDossiers').where('status', '==', 'PUBLISHED').get()
@@ -421,7 +427,7 @@ answerable from its passage. Return only the required structured result.`;
   return { output, model, responseId: payload.id, usage: payload.usage || null };
 };
 
-const toPublishedDossier = (candidate, validation, runId) => {
+const toPublishedDossier = (candidate, validation, runId, FieldValue) => {
   const id = dossierId(candidate);
   const priority = validation.score >= 80 ? 'P1' : validation.score >= 65 ? 'P2' : 'P3';
   const facts = candidate.facts.map((fact, index) => ({
@@ -499,6 +505,7 @@ const sendAdminEmail = async ({ runDate, status, published, ignored, error }) =>
 };
 
 export async function runDailyCAOrchestration({ force = false, now = new Date() } = {}) {
+  const { db, FieldValue } = await getFirebaseRuntime();
   const runDate = formatISTDate(now);
   const runId = `ca-daily-${runDate}`;
   const runRef = db.collection('caOrchestrationRuns').doc(runId);
@@ -527,7 +534,7 @@ export async function runDailyCAOrchestration({ force = false, now = new Date() 
     const publishedSummaries = [];
 
     for (const item of publishable) {
-      const dossier = toPublishedDossier(item.candidate, item.validation, runId);
+      const dossier = toPublishedDossier(item.candidate, item.validation, runId, FieldValue);
       const targetId = item.candidate.existingDossierTitle
         ? normalizeIssueKey(item.candidate.existingDossierTitle)
         : dossier.canonicalKey;

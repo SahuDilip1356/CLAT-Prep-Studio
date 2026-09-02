@@ -1,0 +1,490 @@
+{
+  "generatedAt": "2026-09-02T03:39:56.077Z",
+  "runs": [
+    {
+      "runDate": "2026-09-02",
+      "status": "PUBLISHED",
+      "candidatesFound": 20,
+      "ignoredCount": 17,
+      "newCount": 2,
+      "updatedCount": 1,
+      "accepted": [
+        {
+          "title": "Foreign Decrees, Asset Security and Contempt Undertakings",
+          "updateType": "NEW"
+        },
+        {
+          "title": "Foreign Travel Tax Penalty and No Reformatio in Peius",
+          "updateType": "NEW"
+        },
+        {
+          "title": "SCO Summit",
+          "updateType": "UPDATED"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-09-02T09:09:43+05:30"
+    },
+    {
+      "runDate": "2026-09-01",
+      "status": "PUBLISHED",
+      "candidatesFound": 15,
+      "ignoredCount": 12,
+      "newCount": 1,
+      "updatedCount": 2,
+      "accepted": [
+        {
+          "title": "Bihar–Jharkhand Sone River Water Agreement",
+          "updateType": "NEW"
+        },
+        {
+          "title": "Indus Waters Treaty",
+          "updateType": "UPDATED"
+        },
+        {
+          "title": "Judicial Appointments and Collegium System",
+          "updateType": "UPDATED"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-09-01T11:12:24+05:30"
+    },
+    {
+      "runDate": "2026-08-30",
+      "status": "PUBLISHED",
+      "candidatesFound": 17,
+      "ignoredCount": 14,
+      "newCount": 2,
+      "updatedCount": 1,
+      "accepted": [
+        {
+          "title": "Article 12 “State” and Article 131 Original Jurisdiction",
+          "updateType": "NEW"
+        },
+        {
+          "title": "Bona Fide Land-Title Disputes and Limits on Summary Eviction",
+          "updateType": "NEW"
+        },
+        {
+          "title": "Russia–Ukraine War, NATO Expansion & Strategic Autonomy",
+          "updateType": "UPDATED"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-31T04:56:42+05:30"
+    },
+    {
+      "runDate": "2026-08-29",
+      "status": "PUBLISHED",
+      "candidatesFound": 14,
+      "ignoredCount": 12,
+      "newCount": 2,
+      "updatedCount": 0,
+      "accepted": [
+        {
+          "title": "India–US Javelin Missile Acquisition and Foreign Military Sales",
+          "updateType": "NEW"
+        },
+        {
+          "title": "Defence Export OGEL and SCOMET Reforms",
+          "updateType": "NEW"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-29T07:46:47+05:30"
+    },
+    {
+      "runDate": "2026-08-28",
+      "status": "NO_CHANGES",
+      "candidatesFound": 12,
+      "ignoredCount": 12,
+      "newCount": 0,
+      "updatedCount": 0,
+      "accepted": [],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-28T23:40:36+05:30"
+    },
+    {
+      "runDate": "2026-08-27",
+      "status": "PUBLISHED",
+      "candidatesFound": 12,
+      "ignoredCount": 10,
+      "newCount": 1,
+      "updatedCount": 1,
+      "accepted": [
+        {
+          "title": "India’s ICERD Review and CERD Concluding Observations",
+          "updateType": "NEW"
+        },
+        {
+          "title": "India–Nepal Relations",
+          "updateType": "UPDATED"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-27T08:09:05+05:30"
+    },
+    {
+      "runDate": "2026-08-25",
+      "status": "PUBLISHED",
+      "candidatesFound": 12,
+      "ignoredCount": 10,
+      "newCount": 0,
+      "updatedCount": 2,
+      "accepted": [
+        {
+          "title": "Supreme Court Pendency",
+          "updateType": "UPDATED"
+        },
+        {
+          "title": "Cybersecurity and Critical Infrastructure",
+          "updateType": "UPDATED"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-25T06:52:38+05:30"
+    },
+    {
+      "runDate": "2026-08-24",
+      "status": "PUBLISHED",
+      "candidatesFound": 14,
+      "ignoredCount": 12,
+      "newCount": 0,
+      "updatedCount": 2,
+      "accepted": [
+        {
+          "title": "Supreme Court Pendency",
+          "updateType": "UPDATED"
+        },
+        {
+          "title": "BRICS Developments",
+          "updateType": "UPDATED"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-24T06:45:31+05:30"
+    },
+    {
+      "runDate": "2026-08-23",
+      "status": "PUBLISHED",
+      "candidatesFound": 18,
+      "ignoredCount": 15,
+      "newCount": 1,
+      "updatedCount": 2,
+      "accepted": [
+        {
+          "title": "Polluter Pays Principle",
+          "updateType": "UPDATED"
+        },
+        {
+          "title": "BRICS Developments",
+          "updateType": "UPDATED"
+        },
+        {
+          "title": "Biodiversity Access and Benefit-Sharing",
+          "updateType": "NEW"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-23T06:56:36+05:30"
+    },
+    {
+      "runDate": "2026-08-22",
+      "status": "PUBLISHED",
+      "candidatesFound": 19,
+      "ignoredCount": 15,
+      "newCount": 3,
+      "updatedCount": 1,
+      "accepted": [
+        {
+          "title": "Civil Judge Recruitment and the One-Year Practice Rule",
+          "updateType": "NEW"
+        },
+        {
+          "title": "Advocate-Client Confidentiality and Professional Misconduct",
+          "updateType": "NEW"
+        },
+        {
+          "title": "Mobile Phone Manufacturing Scheme",
+          "updateType": "NEW"
+        },
+        {
+          "title": "BRICS Developments",
+          "updateType": "UPDATED"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-22T06:14:02+05:30"
+    },
+    {
+      "runDate": "2026-08-21",
+      "status": "PUBLISHED",
+      "candidatesFound": 15,
+      "ignoredCount": 10,
+      "newCount": 4,
+      "updatedCount": 1,
+      "accepted": [
+        {
+          "title": "UP Gangsters Act and the Principle of Legality",
+          "updateType": "NEW"
+        },
+        {
+          "title": "PC-PNDT Act Investigation and Cognisance",
+          "updateType": "NEW"
+        },
+        {
+          "title": "SC/ST Act and the “Public View” Requirement",
+          "updateType": "NEW"
+        },
+        {
+          "title": "Ladakh and Sixth Schedule Demands",
+          "updateType": "UPDATED"
+        },
+        {
+          "title": "India–Japan Maritime Security Cooperation",
+          "updateType": "NEW"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-21T06:21:10+05:30"
+    },
+    {
+      "runDate": "2026-08-20",
+      "status": "VALIDATION_FAILED",
+      "candidatesFound": 12,
+      "ignoredCount": 12,
+      "newCount": 0,
+      "updatedCount": 0,
+      "accepted": [],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-20T08:00:21+05:30"
+    },
+    {
+      "runDate": "2026-08-19",
+      "status": "NO_CHANGES",
+      "candidatesFound": 10,
+      "ignoredCount": 10,
+      "newCount": 0,
+      "updatedCount": 0,
+      "accepted": [],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-19T08:09:12+05:30"
+    },
+    {
+      "runDate": "2026-08-18",
+      "status": "PUBLISHED",
+      "candidatesFound": 8,
+      "ignoredCount": 7,
+      "newCount": 1,
+      "updatedCount": 0,
+      "accepted": [
+        {
+          "title": "UNCCD COP17 and India's Open Natural Ecosystems Guide",
+          "updateType": "NEW"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-18T08:53:21+05:30"
+    },
+    {
+      "runDate": "2026-08-17",
+      "status": "NO_CHANGES",
+      "candidatesFound": 8,
+      "ignoredCount": 8,
+      "newCount": 0,
+      "updatedCount": 0,
+      "accepted": [],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-17T12:22:44+05:30"
+    },
+    {
+      "runDate": "2026-08-16",
+      "status": "NO_CHANGES",
+      "candidatesFound": 8,
+      "ignoredCount": 8,
+      "newCount": 0,
+      "updatedCount": 0,
+      "accepted": [],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-16T08:27:13+05:30"
+    },
+    {
+      "runDate": "2026-08-15",
+      "status": "VALIDATION_FAILED",
+      "candidatesFound": 8,
+      "ignoredCount": 8,
+      "newCount": 0,
+      "updatedCount": 0,
+      "accepted": [],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-15T08:13:03+05:30"
+    },
+    {
+      "runDate": "2026-08-12",
+      "status": "VALIDATION_FAILED",
+      "candidatesFound": 7,
+      "ignoredCount": 7,
+      "newCount": 0,
+      "updatedCount": 0,
+      "accepted": [],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-12T09:10:00+05:30"
+    },
+    {
+      "runDate": "2026-08-11",
+      "status": "NO_CHANGES",
+      "candidatesFound": 11,
+      "ignoredCount": 11,
+      "newCount": 0,
+      "updatedCount": 0,
+      "accepted": [],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-11T07:21:07+05:30"
+    },
+    {
+      "runDate": "2026-08-10",
+      "status": "NO_CHANGES",
+      "candidatesFound": 7,
+      "ignoredCount": 7,
+      "newCount": 0,
+      "updatedCount": 0,
+      "accepted": [],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-10T06:05:31+05:30"
+    },
+    {
+      "runDate": "2026-08-09",
+      "status": "PUBLISHED",
+      "candidatesFound": 7,
+      "ignoredCount": 6,
+      "newCount": 0,
+      "updatedCount": 1,
+      "accepted": [
+        {
+          "title": "Judicial Appointments and Collegium System",
+          "updateType": "UPDATED"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-09T06:14:48+05:30"
+    },
+    {
+      "runDate": "2026-08-07",
+      "status": "PUBLISHED",
+      "candidatesFound": 10,
+      "ignoredCount": 9,
+      "newCount": 0,
+      "updatedCount": 1,
+      "accepted": [
+        {
+          "title": "Supreme Court Reform Proposals",
+          "updateType": "UPDATED"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-07T06:55:27+05:30"
+    },
+    {
+      "runDate": "2026-08-06",
+      "status": "NO_CHANGES",
+      "candidatesFound": 5,
+      "ignoredCount": 5,
+      "newCount": 0,
+      "updatedCount": 0,
+      "accepted": [],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-06T06:07:25+05:30"
+    },
+    {
+      "runDate": "2026-08-04",
+      "status": "PUBLISHED",
+      "candidatesFound": 8,
+      "ignoredCount": 7,
+      "newCount": 1,
+      "updatedCount": 0,
+      "accepted": [
+        {
+          "title": "United Nations Framework Convention on International Tax Cooperation",
+          "updateType": "NEW"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-04T07:05:52+05:30"
+    },
+    {
+      "runDate": "2026-08-03",
+      "status": "PUBLISHED",
+      "candidatesFound": 9,
+      "ignoredCount": 8,
+      "newCount": 1,
+      "updatedCount": 0,
+      "accepted": [
+        {
+          "title": "European Union Artificial Intelligence Act",
+          "updateType": "NEW"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-03T08:30:52+05:30"
+    },
+    {
+      "runDate": "2026-08-02",
+      "status": "PUBLISHED",
+      "candidatesFound": 4,
+      "ignoredCount": 3,
+      "newCount": 0,
+      "updatedCount": 1,
+      "accepted": [
+        {
+          "title": "India’s Energy Security",
+          "updateType": "UPDATED"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-02T06:18:00+05:30"
+    },
+    {
+      "runDate": "2026-08-01",
+      "status": "NO_CHANGES",
+      "candidatesFound": 3,
+      "ignoredCount": 3,
+      "newCount": 0,
+      "updatedCount": 0,
+      "accepted": [],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-08-01T06:14:00+05:30"
+    },
+    {
+      "runDate": "2026-07-26",
+      "status": "PUBLISHED",
+      "candidatesFound": 17,
+      "ignoredCount": 12,
+      "newCount": 0,
+      "updatedCount": 5,
+      "accepted": [
+        {
+          "title": "Election Commission and Electoral Reforms",
+          "updateType": "UPDATED"
+        },
+        {
+          "title": "Public Examinations Act",
+          "updateType": "UPDATED"
+        },
+        {
+          "title": "National Anthem and National Song",
+          "updateType": "UPDATED"
+        },
+        {
+          "title": "India–US Trade Engagement",
+          "updateType": "UPDATED"
+        },
+        {
+          "title": "UNESCO Recognitions",
+          "updateType": "UPDATED"
+        }
+      ],
+      "auditSource": "REPOSITORY",
+      "completedAt": "2026-07-26T06:16:10+05:30"
+    }
+  ]
+}
