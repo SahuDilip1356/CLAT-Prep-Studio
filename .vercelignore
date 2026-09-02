@@ -30,3 +30,8 @@ Quant Old
 /Gemini_Generated_Image_1hxvzo1hxvzo1hxv (1).png
 /Gemini_Generated_Image_1hxvzo1hxvzo1hxv.png
 /WhatsApp Image 2026-07-22 at 23.40.16.jpeg
+
+# Raw current-affairs source PDFs and their digitized intermediate output. The
+# learner-facing result lives in src/data/; neither of these is read at runtime.
+Current Affairs/
+data/ca_ingestion/
