@@ -57,3 +57,11 @@ tmp/
 
 # Word/Office lock files
 ~$*
+
+# Raw current-affairs source PDFs (28MB): the weekly issues and practice sheets
+# the ingestion scripts read from. Same rule as the blocks above — originals stay
+# on local disk, the digitized output in data/ca_ingestion/ is tracked.
+Current Affairs/
+
+# Vite dependency-scan temp files
+vite.config.js.timestamp-*

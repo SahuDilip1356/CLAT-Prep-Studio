@@ -1,0 +1,2546 @@
+[
+  {
+    "month": "Jan",
+    "monthNum": 1,
+    "issue": "I",
+    "source": "Current Affairs - January I.pdf",
+    "title": "Bulgaria joins Eurozone",
+    "slides": 21,
+    "bullets": 54,
+    "status": "review",
+    "matchTitle": "Bulgaria’s Adoption of the Euro",
+    "matchId": "JAN-22",
+    "matchPath": "CA_Source_Repository/01_Jan_2026/bulgarias_adoption_of_the_euro.md",
+    "score": 0.4,
+    "candidates": [
+      {
+        "id": "JAN-22",
+        "title": "Bulgaria’s Adoption of the Euro",
+        "path": "CA_Source_Repository/01_Jan_2026/bulgarias_adoption_of_the_euro.md",
+        "score": 0.4
+      },
+      {
+        "id": "JAN-23",
+        "title": "Eurozone and European Central Bank",
+        "path": "CA_Source_Repository/01_Jan_2026/eurozone_and_european_central_bank.md",
+        "score": 0.4
+      },
+      {
+        "id": "MAY-17",
+        "title": "BRICS Developments",
+        "path": "CA_Source_Repository/05_May_2026/brics_developments.md",
+        "score": 0.3
+      }
+    ]
+  },
+  {
+    "month": "Jan",
+    "monthNum": 1,
+    "issue": "I",
+    "source": "Current Affairs - January I.pdf",
+    "title": "Somaliland’s Recognition",
+    "slides": 12,
+    "bullets": 28,
+    "status": "review",
+    "matchTitle": "New Ramsar Sites Recognition & Wetland Conservation Rules",
+    "matchId": "JAN-07",
+    "matchPath": "CA_Source_Repository/01_Jan_2026/ramsar_sites_2026.md",
+    "score": 0.51,
+    "candidates": [
+      {
+        "id": "JAN-07",
+        "title": "New Ramsar Sites Recognition & Wetland Conservation Rules",
+        "path": "CA_Source_Repository/01_Jan_2026/ramsar_sites_2026.md",
+        "score": 0.51
+      },
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+        "score": 0.44
+      },
+      {
+        "id": "JUL-46",
+        "title": "UNESCO Recognitions",
+        "path": "CA_Source_Repository/07_Jul_2026/unesco_recognitions.md",
+        "score": 0.44
+      }
+    ]
+  },
+  {
+    "month": "Jan",
+    "monthNum": 1,
+    "issue": "II",
+    "source": "Current Affairs - January II.pdf",
+    "title": "Donroe Doctrine",
+    "slides": 19,
+    "bullets": 51,
+    "status": "review",
+    "matchTitle": "“Rarest of Rare” Doctrine",
+    "matchId": "FEB-17",
+    "matchPath": "CA_Source_Repository/02_Feb_2026/rarest_of_rare_doctrine.md",
+    "score": 0.5,
+    "candidates": [
+      {
+        "id": "FEB-17",
+        "title": "“Rarest of Rare” Doctrine",
+        "path": "CA_Source_Repository/02_Feb_2026/rarest_of_rare_doctrine.md",
+        "score": 0.5
+      },
+      {
+        "id": "JUL-11",
+        "title": "Parens Patriae Doctrine",
+        "path": "CA_Source_Repository/07_Jul_2026/parens_patriae_doctrine.md",
+        "score": 0.5
+      },
+      {
+        "id": "CONT-19",
+        "title": "Judicial Appointments and Collegium System",
+        "path": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+        "score": 0.43
+      }
+    ]
+  },
+  {
+    "month": "Jan",
+    "monthNum": 1,
+    "issue": "II",
+    "source": "Current Affairs - January II.pdf",
+    "title": "Trump claims Greenland",
+    "slides": 23,
+    "bullets": 57,
+    "status": "review",
+    "matchTitle": "Election Commission and Electoral Reforms",
+    "matchId": "CONT-21",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/election_commission_and_electoral_reforms.md",
+    "score": 0.28,
+    "candidates": [
+      {
+        "id": "CONT-21",
+        "title": "Election Commission and Electoral Reforms",
+        "path": "CA_Source_Repository/00_Continuing_Issues/election_commission_and_electoral_reforms.md",
+        "score": 0.28
+      },
+      {
+        "id": "AUG-11",
+        "title": "Biodiversity Access and Benefit-Sharing",
+        "path": "CA_Source_Repository/08_Aug_2026/biodiversity_access_and_benefit_sharing.md",
+        "score": 0.28
+      },
+      {
+        "id": "AUG-02",
+        "title": "United Nations Framework Convention on International Tax Cooperation",
+        "path": "CA_Source_Repository/08_Aug_2026/un_framework_convention_on_international_tax_cooperation.md",
+        "score": 0.28
+      }
+    ]
+  },
+  {
+    "month": "Jan",
+    "monthNum": 1,
+    "issue": "IV",
+    "source": "Current Affairs - January IV.pdf",
+    "title": "Impeachment of Judges",
+    "slides": 20,
+    "bullets": 53,
+    "status": "review",
+    "matchTitle": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+    "matchId": "CONT-02",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+    "score": 0.4,
+    "candidates": [
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+        "score": 0.4
+      },
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israelpalestine_conflict.md",
+        "score": 0.4
+      },
+      {
+        "id": "CONT-19",
+        "title": "Judicial Appointments and Collegium System",
+        "path": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+        "score": 0.4
+      }
+    ]
+  },
+  {
+    "month": "Jan",
+    "monthNum": 1,
+    "issue": "IV",
+    "source": "Current Affairs - January IV.pdf",
+    "title": "BMC Elections",
+    "slides": 17,
+    "bullets": 43,
+    "status": "review",
+    "matchTitle": "Major Global Elections",
+    "matchId": "MAY-22",
+    "matchPath": "CA_Source_Repository/05_May_2026/major_global_elections.md",
+    "score": 0.54,
+    "candidates": [
+      {
+        "id": "MAY-22",
+        "title": "Major Global Elections",
+        "path": "CA_Source_Repository/05_May_2026/major_global_elections.md",
+        "score": 0.54
+      },
+      {
+        "id": "AUG-11",
+        "title": "Biodiversity Access and Benefit-Sharing",
+        "path": "CA_Source_Repository/08_Aug_2026/biodiversity_access_and_benefit_sharing.md",
+        "score": 0.53
+      },
+      {
+        "id": "CONT-21",
+        "title": "Election Commission and Electoral Reforms",
+        "path": "CA_Source_Repository/00_Continuing_Issues/election_commission_and_electoral_reforms.md",
+        "score": 0.47
+      }
+    ]
+  },
+  {
+    "month": "Jan",
+    "monthNum": 1,
+    "issue": "V",
+    "source": "Current Affairs - January V.pdf",
+    "title": "Trump’s Peace Board",
+    "slides": 24,
+    "bullets": 62,
+    "status": "review",
+    "matchTitle": "Central Board of Film Certification",
+    "matchId": "JUL-30",
+    "matchPath": "CA_Source_Repository/07_Jul_2026/central_board_of_film_certification.md",
+    "score": 0.35,
+    "candidates": [
+      {
+        "id": "JUL-30",
+        "title": "Central Board of Film Certification",
+        "path": "CA_Source_Repository/07_Jul_2026/central_board_of_film_certification.md",
+        "score": 0.35
+      },
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+        "score": 0.31
+      },
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israelpalestine_conflict.md",
+        "score": 0.31
+      }
+    ]
+  },
+  {
+    "month": "Jan",
+    "monthNum": 1,
+    "issue": "V",
+    "source": "Current Affairs - January V.pdf",
+    "title": "Ukraine Peace Talks",
+    "slides": 16,
+    "bullets": 42,
+    "status": "review",
+    "matchTitle": "Russia–Ukraine War, NATO Expansion & Strategic Autonomy",
+    "matchId": "CONT-04",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/russia_ukraine.md",
+    "score": 0.39,
+    "candidates": [
+      {
+        "id": "CONT-04",
+        "title": "Russia–Ukraine War, NATO Expansion & Strategic Autonomy",
+        "path": "CA_Source_Repository/00_Continuing_Issues/russia_ukraine.md",
+        "score": 0.39
+      },
+      {
+        "id": "CONT-04",
+        "title": "Russia–Ukraine War",
+        "path": "CA_Source_Repository/00_Continuing_Issues/russiaukraine_war.md",
+        "score": 0.39
+      },
+      {
+        "id": "JUL-16",
+        "title": "India–US Trade Engagement",
+        "path": "CA_Source_Repository/07_Jul_2026/indiaus_trade_engagement.md",
+        "score": 0.34
+      }
+    ]
+  },
+  {
+    "month": "Feb",
+    "monthNum": 2,
+    "issue": "II",
+    "source": "Current Affairs - February II.pdf",
+    "title": "Manipur Government",
+    "slides": 22,
+    "bullets": 57,
+    "status": "review",
+    "matchTitle": "Judicial Appointments and Collegium System",
+    "matchId": "CONT-19",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+    "score": 0.39,
+    "candidates": [
+      {
+        "id": "CONT-19",
+        "title": "Judicial Appointments and Collegium System",
+        "path": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+        "score": 0.39
+      },
+      {
+        "id": "CONT-15",
+        "title": "Ladakh and Sixth Schedule Demands",
+        "path": "CA_Source_Repository/00_Continuing_Issues/ladakh_and_sixth_schedule_demands.md",
+        "score": 0.39
+      },
+      {
+        "id": "FEB-23",
+        "title": "India’s Energy Security",
+        "path": "CA_Source_Repository/02_Feb_2026/indias_energy_security.md",
+        "score": 0.39
+      }
+    ]
+  },
+  {
+    "month": "Feb",
+    "monthNum": 2,
+    "issue": "II",
+    "source": "Current Affairs - February II.pdf",
+    "title": "Kunal Kamra Petition",
+    "slides": 14,
+    "bullets": 39,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Feb",
+    "monthNum": 2,
+    "issue": "II",
+    "source": "Current Affairs - February II.pdf",
+    "title": "Two New Telescope",
+    "slides": 12,
+    "bullets": 40,
+    "status": "review",
+    "matchTitle": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+    "matchId": "CONT-02",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+    "score": 0.42,
+    "candidates": [
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+        "score": 0.42
+      },
+      {
+        "id": "CONT-21",
+        "title": "Election Commission and Electoral Reforms",
+        "path": "CA_Source_Repository/00_Continuing_Issues/election_commission_and_electoral_reforms.md",
+        "score": 0.37
+      },
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israelpalestine_conflict.md",
+        "score": 0.37
+      }
+    ]
+  },
+  {
+    "month": "Feb",
+    "monthNum": 2,
+    "issue": "III",
+    "source": "Current Affairs - February III.pdf",
+    "title": "114 Rafale",
+    "slides": 18,
+    "bullets": 51,
+    "status": "review",
+    "matchTitle": "Parliamentary Procedure on Finance Bill & Union Budget Passage",
+    "matchId": "FEB-01",
+    "matchPath": "CA_Source_Repository/02_Feb_2026/budget_finance_bill.md",
+    "score": 0.44,
+    "candidates": [
+      {
+        "id": "FEB-01",
+        "title": "Parliamentary Procedure on Finance Bill & Union Budget Passage",
+        "path": "CA_Source_Repository/02_Feb_2026/budget_finance_bill.md",
+        "score": 0.44
+      },
+      {
+        "id": "AUG-10",
+        "title": "Mobile Phone Manufacturing Scheme",
+        "path": "CA_Source_Repository/08_Aug_2026/mobile_phone_manufacturing_scheme.md",
+        "score": 0.44
+      },
+      {
+        "id": "AUG-03",
+        "title": "UNCCD COP17 and India’s Open Natural Ecosystems Guide",
+        "path": "CA_Source_Repository/08_Aug_2026/unccd_cop17_and_open_natural_ecosystems.md",
+        "score": 0.44
+      }
+    ]
+  },
+  {
+    "month": "Feb",
+    "monthNum": 2,
+    "issue": "III",
+    "source": "Current Affairs - February III.pdf",
+    "title": "Two New Telescope",
+    "slides": 12,
+    "bullets": 40,
+    "status": "review",
+    "matchTitle": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+    "matchId": "CONT-02",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+    "score": 0.42,
+    "candidates": [
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+        "score": 0.42
+      },
+      {
+        "id": "CONT-21",
+        "title": "Election Commission and Electoral Reforms",
+        "path": "CA_Source_Repository/00_Continuing_Issues/election_commission_and_electoral_reforms.md",
+        "score": 0.37
+      },
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israelpalestine_conflict.md",
+        "score": 0.37
+      }
+    ]
+  },
+  {
+    "month": "Feb",
+    "monthNum": 2,
+    "issue": "III",
+    "source": "Current Affairs - February III.pdf",
+    "title": "Nikhil Gupta Case",
+    "slides": 8,
+    "bullets": 24,
+    "status": "review",
+    "matchTitle": "Judicial Appointments and Collegium System",
+    "matchId": "CONT-19",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+    "score": 0.61,
+    "candidates": [
+      {
+        "id": "CONT-19",
+        "title": "Judicial Appointments and Collegium System",
+        "path": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+        "score": 0.61
+      },
+      {
+        "id": "CONT-15",
+        "title": "Ladakh and Sixth Schedule Demands",
+        "path": "CA_Source_Repository/00_Continuing_Issues/ladakh_and_sixth_schedule_demands.md",
+        "score": 0.25
+      },
+      {
+        "id": "FEB-04",
+        "title": "Supreme Court Pendency",
+        "path": "CA_Source_Repository/02_Feb_2026/supreme_court_pendency.md",
+        "score": 0.25
+      }
+    ]
+  },
+  {
+    "month": "Feb",
+    "monthNum": 2,
+    "issue": "IV",
+    "source": "Current Affairs - February IV.pdf",
+    "title": "USA Section 122 Tariffs",
+    "slides": 17,
+    "bullets": 50,
+    "status": "review",
+    "matchTitle": "India–US Trade Engagement",
+    "matchId": "JUL-16",
+    "matchPath": "CA_Source_Repository/07_Jul_2026/indiaus_trade_engagement.md",
+    "score": 0.43,
+    "candidates": [
+      {
+        "id": "JUL-16",
+        "title": "India–US Trade Engagement",
+        "path": "CA_Source_Repository/07_Jul_2026/indiaus_trade_engagement.md",
+        "score": 0.43
+      },
+      {
+        "id": "JUL-17",
+        "title": "Tariffs and Market Access",
+        "path": "CA_Source_Repository/07_Jul_2026/tariffs_and_market_access.md",
+        "score": 0.28
+      },
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+        "score": 0.25
+      }
+    ]
+  },
+  {
+    "month": "Feb",
+    "monthNum": 2,
+    "issue": "IV",
+    "source": "Current Affairs - February IV.pdf",
+    "title": "Maoist Devuji’s Surrender",
+    "slides": 20,
+    "bullets": 57,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Mar",
+    "monthNum": 3,
+    "issue": "I",
+    "source": "Current Affairs - March I.pdf",
+    "title": "Nepal Elections",
+    "slides": 23,
+    "bullets": 63,
+    "status": "review",
+    "matchTitle": "India–Nepal Relations",
+    "matchId": "CONT-07",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/indianepal_relations.md",
+    "score": 0.61,
+    "candidates": [
+      {
+        "id": "CONT-07",
+        "title": "India–Nepal Relations",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indianepal_relations.md",
+        "score": 0.61
+      },
+      {
+        "id": "MAY-22",
+        "title": "Major Global Elections",
+        "path": "CA_Source_Repository/05_May_2026/major_global_elections.md",
+        "score": 0.54
+      },
+      {
+        "id": "CONT-21",
+        "title": "Election Commission and Electoral Reforms",
+        "path": "CA_Source_Repository/00_Continuing_Issues/election_commission_and_electoral_reforms.md",
+        "score": 0.47
+      }
+    ]
+  },
+  {
+    "month": "Mar",
+    "monthNum": 3,
+    "issue": "I",
+    "source": "Current Affairs - March I.pdf",
+    "title": "Israel-Hezbollah War",
+    "slides": 31,
+    "bullets": 88,
+    "status": "review",
+    "matchTitle": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+    "matchId": "CONT-02",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+    "score": 0.68,
+    "candidates": [
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+        "score": 0.68
+      },
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israelpalestine_conflict.md",
+        "score": 0.68
+      },
+      {
+        "id": "CONT-03",
+        "title": "Iran–Israel–United States Conflict, JCPOA & Strait of Hormuz",
+        "path": "CA_Source_Repository/00_Continuing_Issues/iran_israel_us.md",
+        "score": 0.36
+      }
+    ]
+  },
+  {
+    "month": "Mar",
+    "monthNum": 3,
+    "issue": "II",
+    "source": "Current Affairs - March II @CLAT_OWNER.pdf",
+    "title": "LPG Shortage",
+    "slides": 14,
+    "bullets": 40,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Mar",
+    "monthNum": 3,
+    "issue": "II",
+    "source": "Current Affairs - March II @CLAT_OWNER.pdf",
+    "title": "NavIC Satellite",
+    "slides": 14,
+    "bullets": 46,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Mar",
+    "monthNum": 3,
+    "issue": "II",
+    "source": "Current Affairs - March II @CLAT_OWNER.pdf",
+    "title": "LS Speaker Removal",
+    "slides": 14,
+    "bullets": 45,
+    "status": "review",
+    "matchTitle": "Judicial Appointments and Collegium System",
+    "matchId": "CONT-19",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+    "score": 0.46,
+    "candidates": [
+      {
+        "id": "CONT-19",
+        "title": "Judicial Appointments and Collegium System",
+        "path": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+        "score": 0.46
+      },
+      {
+        "id": "JUL-46",
+        "title": "UNESCO Recognitions",
+        "path": "CA_Source_Repository/07_Jul_2026/unesco_recognitions.md",
+        "score": 0.46
+      }
+    ]
+  },
+  {
+    "month": "Mar",
+    "monthNum": 3,
+    "issue": "II",
+    "source": "Current Affairs - March II.pdf",
+    "title": "LPG Shortage",
+    "slides": 14,
+    "bullets": 40,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Mar",
+    "monthNum": 3,
+    "issue": "II",
+    "source": "Current Affairs - March II.pdf",
+    "title": "NavIC Satellite",
+    "slides": 14,
+    "bullets": 46,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Mar",
+    "monthNum": 3,
+    "issue": "II",
+    "source": "Current Affairs - March II.pdf",
+    "title": "LS Speaker Removal",
+    "slides": 14,
+    "bullets": 45,
+    "status": "review",
+    "matchTitle": "Judicial Appointments and Collegium System",
+    "matchId": "CONT-19",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+    "score": 0.46,
+    "candidates": [
+      {
+        "id": "CONT-19",
+        "title": "Judicial Appointments and Collegium System",
+        "path": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+        "score": 0.46
+      },
+      {
+        "id": "JUL-46",
+        "title": "UNESCO Recognitions",
+        "path": "CA_Source_Repository/07_Jul_2026/unesco_recognitions.md",
+        "score": 0.46
+      }
+    ]
+  },
+  {
+    "month": "Mar",
+    "monthNum": 3,
+    "issue": "III",
+    "source": "Current Affairs - March III @CLAT_OWNER.pdf",
+    "title": "World Happiness Report",
+    "slides": 16,
+    "bullets": 57,
+    "status": "review",
+    "matchTitle": "Polluter Pays Principle",
+    "matchId": "MAR-20",
+    "matchPath": "CA_Source_Repository/03_Mar_2026/polluter_pays_principle.md",
+    "score": 0.54,
+    "candidates": [
+      {
+        "id": "MAR-20",
+        "title": "Polluter Pays Principle",
+        "path": "CA_Source_Repository/03_Mar_2026/polluter_pays_principle.md",
+        "score": 0.54
+      },
+      {
+        "id": "AUG-03",
+        "title": "UNCCD COP17 and India’s Open Natural Ecosystems Guide",
+        "path": "CA_Source_Repository/08_Aug_2026/unccd_cop17_and_open_natural_ecosystems.md",
+        "score": 0.54
+      },
+      {
+        "id": "CONT-19",
+        "title": "Judicial Appointments and Collegium System",
+        "path": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+        "score": 0.3
+      }
+    ]
+  },
+  {
+    "month": "Mar",
+    "monthNum": 3,
+    "issue": "III",
+    "source": "Current Affairs - March III @CLAT_OWNER.pdf",
+    "title": "Lipulekh Pass",
+    "slides": 14,
+    "bullets": 33,
+    "status": "review",
+    "matchTitle": "Public Examinations Act",
+    "matchId": "MAY-06",
+    "matchPath": "CA_Source_Repository/05_May_2026/public_examinations_act.md",
+    "score": 0.47,
+    "candidates": [
+      {
+        "id": "MAY-06",
+        "title": "Public Examinations Act",
+        "path": "CA_Source_Repository/05_May_2026/public_examinations_act.md",
+        "score": 0.47
+      }
+    ]
+  },
+  {
+    "month": "Mar",
+    "monthNum": 3,
+    "issue": "III",
+    "source": "Current Affairs - March III @CLAT_OWNER.pdf",
+    "title": "Pearl Harbor Attack",
+    "slides": 21,
+    "bullets": 57,
+    "status": "review",
+    "matchTitle": "India–Japan Maritime Security Cooperation",
+    "matchId": "AUG-07",
+    "matchPath": "CA_Source_Repository/08_Aug_2026/india_japan_maritime_security_cooperation.md",
+    "score": 0.31,
+    "candidates": [
+      {
+        "id": "AUG-07",
+        "title": "India–Japan Maritime Security Cooperation",
+        "path": "CA_Source_Repository/08_Aug_2026/india_japan_maritime_security_cooperation.md",
+        "score": 0.31
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "I",
+    "source": "Current Affairs - April - I.pdf",
+    "title": "Transgender Persons (Protection of Rights) Amendment Act",
+    "slides": 29,
+    "bullets": 85,
+    "status": "review",
+    "matchTitle": "European Union Artificial Intelligence Act",
+    "matchId": "AUG-01",
+    "matchPath": "CA_Source_Repository/08_Aug_2026/european_union_artificial_intelligence_act.md",
+    "score": 0.77,
+    "candidates": [
+      {
+        "id": "AUG-01",
+        "title": "European Union Artificial Intelligence Act",
+        "path": "CA_Source_Repository/08_Aug_2026/european_union_artificial_intelligence_act.md",
+        "score": 0.77
+      },
+      {
+        "id": "AUG-05",
+        "title": "PC-PNDT Act Investigation and Cognisance",
+        "path": "CA_Source_Repository/08_Aug_2026/pc_pndt_act_investigation_and_cognisance.md",
+        "score": 0.72
+      },
+      {
+        "id": "MAR-24",
+        "title": "Rights of Persons with Disabilities",
+        "path": "CA_Source_Repository/03_Mar_2026/rights_of_persons_with_disabilities.md",
+        "score": 0.57
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "I",
+    "source": "Current Affairs - April - I.pdf",
+    "title": "Houthis Iran War",
+    "slides": 24,
+    "bullets": 63,
+    "status": "review",
+    "matchTitle": "Iran–Israel–United States Conflict, JCPOA & Strait of Hormuz",
+    "matchId": "CONT-03",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/iran_israel_us.md",
+    "score": 0.33,
+    "candidates": [
+      {
+        "id": "CONT-03",
+        "title": "Iran–Israel–United States Conflict, JCPOA & Strait of Hormuz",
+        "path": "CA_Source_Repository/00_Continuing_Issues/iran_israel_us.md",
+        "score": 0.33
+      },
+      {
+        "id": "CONT-03B",
+        "title": "Iran Nuclear Programme and JCPOA",
+        "path": "CA_Source_Repository/00_Continuing_Issues/iran_nuclear_programme_and_jcpoa.md",
+        "score": 0.33
+      },
+      {
+        "id": "CONT-03",
+        "title": "Iran–Israel–United States Conflict",
+        "path": "CA_Source_Repository/00_Continuing_Issues/iranisraelunited_states_conflict.md",
+        "score": 0.33
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "II",
+    "source": "Current Affairs - April - II.pdf",
+    "title": "Myanmar President",
+    "slides": 27,
+    "bullets": 66,
+    "status": "review",
+    "matchTitle": "Governor's Power Over State Bills & Constitutional Timeframes",
+    "matchId": "CONT-09",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/governor_bill_assent.md",
+    "score": 0.4,
+    "candidates": [
+      {
+        "id": "CONT-09",
+        "title": "Governor's Power Over State Bills & Constitutional Timeframes",
+        "path": "CA_Source_Repository/00_Continuing_Issues/governor_bill_assent.md",
+        "score": 0.4
+      },
+      {
+        "id": "CONT-09",
+        "title": "Governor’s Power over State Bills",
+        "path": "CA_Source_Repository/00_Continuing_Issues/governors_power_over_state_bills.md",
+        "score": 0.4
+      },
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+        "path": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+        "score": 0.4
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "IV",
+    "source": "Current Affairs - April - IV.pdf",
+    "title": "India’s Nuclear Era",
+    "slides": 22,
+    "bullets": 61,
+    "status": "review",
+    "matchTitle": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+    "matchId": "CONT-01",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+    "score": 0.51,
+    "candidates": [
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+        "path": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+        "score": 0.51
+      },
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations and Operation Sindoor",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indiapakistan_relations_and_operation_sindoor.md",
+        "score": 0.51
+      },
+      {
+        "id": "CONT-03B",
+        "title": "Iran Nuclear Programme and JCPOA",
+        "path": "CA_Source_Repository/00_Continuing_Issues/iran_nuclear_programme_and_jcpoa.md",
+        "score": 0.51
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "V",
+    "source": "Current Affairs - April - V.pdf",
+    "title": "FCRA Amendment Bill, 2026",
+    "slides": 25,
+    "bullets": 63,
+    "status": "review",
+    "matchTitle": "FCRA and NGO Regulation",
+    "matchId": "JUL-25",
+    "matchPath": "CA_Source_Repository/07_Jul_2026/fcra_and_ngo_regulation.md",
+    "score": 0.73,
+    "candidates": [
+      {
+        "id": "JUL-25",
+        "title": "FCRA and NGO Regulation",
+        "path": "CA_Source_Repository/07_Jul_2026/fcra_and_ngo_regulation.md",
+        "score": 0.73
+      },
+      {
+        "id": "JAN-04",
+        "title": "Finance Bill and Appropriation Bill",
+        "path": "CA_Source_Repository/01_Jan_2026/finance_bill_and_appropriation_bill.md",
+        "score": 0.6
+      },
+      {
+        "id": "FEB-01",
+        "title": "Parliamentary Procedure on Finance Bill & Union Budget Passage",
+        "path": "CA_Source_Repository/02_Feb_2026/budget_finance_bill.md",
+        "score": 0.6
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "V",
+    "source": "Current Affairs - April - V.pdf",
+    "title": "UK – Mauritius Chagos Deal",
+    "slides": 28,
+    "bullets": 72,
+    "status": "review",
+    "matchTitle": "Artificial Intelligence and Copyright",
+    "matchId": "MAY-23",
+    "matchPath": "CA_Source_Repository/05_May_2026/artificial_intelligence_and_copyright.md",
+    "score": 0.28,
+    "candidates": [
+      {
+        "id": "MAY-23",
+        "title": "Artificial Intelligence and Copyright",
+        "path": "CA_Source_Repository/05_May_2026/artificial_intelligence_and_copyright.md",
+        "score": 0.28
+      },
+      {
+        "id": "JUL-16",
+        "title": "India–US Trade Engagement",
+        "path": "CA_Source_Repository/07_Jul_2026/indiaus_trade_engagement.md",
+        "score": 0.28
+      },
+      {
+        "id": "AUG-04",
+        "title": "UP Gangsters Act and the Principle of Legality",
+        "path": "CA_Source_Repository/08_Aug_2026/up_gangsters_act_and_principle_of_legality.md",
+        "score": 0.28
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "VI",
+    "source": "Current Affairs - April - VI.pdf",
+    "title": "Noida Workers’ Protest",
+    "slides": 19,
+    "bullets": 53,
+    "status": "review",
+    "matchTitle": "Right to Protest",
+    "matchId": "MAY-07",
+    "matchPath": "CA_Source_Repository/05_May_2026/right_to_protest.md",
+    "score": 0.34,
+    "candidates": [
+      {
+        "id": "MAY-07",
+        "title": "Right to Protest",
+        "path": "CA_Source_Repository/05_May_2026/right_to_protest.md",
+        "score": 0.34
+      },
+      {
+        "id": "JUL-05",
+        "title": "Student Protest Movement",
+        "path": "CA_Source_Repository/07_Jul_2026/student_protest_movement.md",
+        "score": 0.34
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "VI",
+    "source": "Current Affairs - April - VI.pdf",
+    "title": "India’s New Deportation",
+    "slides": 28,
+    "bullets": 78,
+    "status": "new",
+    "matchTitle": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+    "matchId": "CONT-01",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+    "score": 0.15,
+    "candidates": [
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+        "path": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+        "score": 0.15
+      },
+      {
+        "id": "CONT-06",
+        "title": "India–Bangladesh Relations",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indiabangladesh_relations.md",
+        "score": 0.15
+      },
+      {
+        "id": "CONT-05",
+        "title": "India–Canada Relations",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indiacanada_relations.md",
+        "score": 0.15
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "VII",
+    "source": "Current Affairs - April - VII.pdf",
+    "title": "India’s New Deportation",
+    "slides": 26,
+    "bullets": 78,
+    "status": "new",
+    "matchTitle": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+    "matchId": "CONT-01",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+    "score": 0.15,
+    "candidates": [
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+        "path": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+        "score": 0.15
+      },
+      {
+        "id": "CONT-06",
+        "title": "India–Bangladesh Relations",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indiabangladesh_relations.md",
+        "score": 0.15
+      },
+      {
+        "id": "CONT-05",
+        "title": "India–Canada Relations",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indiacanada_relations.md",
+        "score": 0.15
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "VII",
+    "source": "Current Affairs - April - VII.pdf",
+    "title": "The Delimitation Bill, 2026",
+    "slides": 25,
+    "bullets": 74,
+    "status": "review",
+    "matchTitle": "Delimitation after 2026",
+    "matchId": "CONT-11",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/delimitation_after_2026.md",
+    "score": 0.64,
+    "candidates": [
+      {
+        "id": "CONT-11",
+        "title": "Delimitation after 2026",
+        "path": "CA_Source_Repository/00_Continuing_Issues/delimitation_after_2026.md",
+        "score": 0.64
+      },
+      {
+        "id": "CONT-13",
+        "title": "Women’s Reservation and Delimitation",
+        "path": "CA_Source_Repository/00_Continuing_Issues/womens_reservation_and_delimitation.md",
+        "score": 0.64
+      },
+      {
+        "id": "APR-05",
+        "title": "Census Linkage to Delimitation",
+        "path": "CA_Source_Repository/04_Apr_2026/census_linkage_to_delimitation.md",
+        "score": 0.64
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "VIII",
+    "source": "Current Affairs - April - VIII.pdf",
+    "title": "Anti-Defection Law",
+    "slides": 28,
+    "bullets": 70,
+    "status": "review",
+    "matchTitle": "FATF and Anti-Terror Mechanisms",
+    "matchId": "MAY-03",
+    "matchPath": "CA_Source_Repository/05_May_2026/fatf_and_antiterror_mechanisms.md",
+    "score": 0.51,
+    "candidates": [
+      {
+        "id": "MAY-03",
+        "title": "FATF and Anti-Terror Mechanisms",
+        "path": "CA_Source_Repository/05_May_2026/fatf_and_antiterror_mechanisms.md",
+        "score": 0.51
+      },
+      {
+        "id": "MAY-20",
+        "title": "Regional Anti-Terrorist Structure",
+        "path": "CA_Source_Repository/05_May_2026/regional_antiterrorist_structure.md",
+        "score": 0.51
+      },
+      {
+        "id": "JUL-31",
+        "title": "Cinematograph Law",
+        "path": "CA_Source_Repository/07_Jul_2026/cinematograph_law.md",
+        "score": 0.51
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "VIII",
+    "source": "Current Affairs - April - VIII.pdf",
+    "title": "Mahanadi River Dispute",
+    "slides": 17,
+    "bullets": 48,
+    "status": "review",
+    "matchTitle": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+    "matchId": "CONT-01",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+    "score": 0.32,
+    "candidates": [
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+        "path": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+        "score": 0.32
+      },
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations and Operation Sindoor",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indiapakistan_relations_and_operation_sindoor.md",
+        "score": 0.32
+      },
+      {
+        "id": "MAR-20",
+        "title": "Polluter Pays Principle",
+        "path": "CA_Source_Repository/03_Mar_2026/polluter_pays_principle.md",
+        "score": 0.32
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "IX",
+    "source": "Current Affairs - April - IX.pdf",
+    "title": "Mahanadi River Dispute",
+    "slides": 16,
+    "bullets": 47,
+    "status": "review",
+    "matchTitle": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+    "matchId": "CONT-01",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+    "score": 0.32,
+    "candidates": [
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+        "path": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+        "score": 0.32
+      },
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations and Operation Sindoor",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indiapakistan_relations_and_operation_sindoor.md",
+        "score": 0.32
+      },
+      {
+        "id": "MAR-20",
+        "title": "Polluter Pays Principle",
+        "path": "CA_Source_Repository/03_Mar_2026/polluter_pays_principle.md",
+        "score": 0.32
+      }
+    ]
+  },
+  {
+    "month": "Apr",
+    "monthNum": 4,
+    "issue": "IX",
+    "source": "Current Affairs - April - IX.pdf",
+    "title": "99th Ramsar Site",
+    "slides": 24,
+    "bullets": 68,
+    "status": "review",
+    "matchTitle": "Judicial Appointments and Collegium System",
+    "matchId": "CONT-19",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+    "score": 0.38,
+    "candidates": [
+      {
+        "id": "CONT-19",
+        "title": "Judicial Appointments and Collegium System",
+        "path": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+        "score": 0.38
+      },
+      {
+        "id": "JAN-07",
+        "title": "New Ramsar Sites in India",
+        "path": "CA_Source_Repository/01_Jan_2026/new_ramsar_sites_in_india.md",
+        "score": 0.35
+      },
+      {
+        "id": "JAN-07B",
+        "title": "Ramsar Convention and Montreux Record",
+        "path": "CA_Source_Repository/01_Jan_2026/ramsar_convention_and_montreux_record.md",
+        "score": 0.35
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "monthNum": 5,
+    "issue": "I",
+    "source": "Current Affairs - May - I.pdf",
+    "title": "50th Anniversary of Skikkim’s Intergration",
+    "slides": 21,
+    "bullets": 63,
+    "status": "new",
+    "matchTitle": "Supreme Court Pendency",
+    "matchId": "FEB-04",
+    "matchPath": "CA_Source_Repository/02_Feb_2026/supreme_court_pendency.md",
+    "score": 0.23,
+    "candidates": [
+      {
+        "id": "FEB-04",
+        "title": "Supreme Court Pendency",
+        "path": "CA_Source_Repository/02_Feb_2026/supreme_court_pendency.md",
+        "score": 0.23
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "monthNum": 5,
+    "issue": "I",
+    "source": "Current Affairs - May - I.pdf",
+    "title": "SCO Defense Ministers’ Meet",
+    "slides": 17,
+    "bullets": 45,
+    "status": "review",
+    "matchTitle": "India–Japan Maritime Security Cooperation",
+    "matchId": "AUG-07",
+    "matchPath": "CA_Source_Repository/08_Aug_2026/india_japan_maritime_security_cooperation.md",
+    "score": 0.51,
+    "candidates": [
+      {
+        "id": "AUG-07",
+        "title": "India–Japan Maritime Security Cooperation",
+        "path": "CA_Source_Repository/08_Aug_2026/india_japan_maritime_security_cooperation.md",
+        "score": 0.51
+      },
+      {
+        "id": "MAY-17",
+        "title": "BRICS Developments",
+        "path": "CA_Source_Repository/05_May_2026/brics_developments.md",
+        "score": 0.49
+      },
+      {
+        "id": "MAY-18",
+        "title": "SCO Developments",
+        "path": "CA_Source_Repository/05_May_2026/sco_developments.md",
+        "score": 0.27
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "monthNum": 5,
+    "issue": "II",
+    "source": "Current Affairs - May - II.pdf",
+    "title": "SHANTI Act & US Nuclear Mission",
+    "slides": 24,
+    "bullets": 65,
+    "status": "review",
+    "matchTitle": "India’s Energy Security",
+    "matchId": "FEB-23",
+    "matchPath": "CA_Source_Repository/02_Feb_2026/indias_energy_security.md",
+    "score": 0.41,
+    "candidates": [
+      {
+        "id": "FEB-23",
+        "title": "India’s Energy Security",
+        "path": "CA_Source_Repository/02_Feb_2026/indias_energy_security.md",
+        "score": 0.41
+      },
+      {
+        "id": "JUL-46",
+        "title": "UNESCO Recognitions",
+        "path": "CA_Source_Repository/07_Jul_2026/unesco_recognitions.md",
+        "score": 0.41
+      },
+      {
+        "id": "AUG-02",
+        "title": "United Nations Framework Convention on International Tax Cooperation",
+        "path": "CA_Source_Repository/08_Aug_2026/un_framework_convention_on_international_tax_cooperation.md",
+        "score": 0.4
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "monthNum": 5,
+    "issue": "III",
+    "source": "Current Affairs - May - III.pdf",
+    "title": "India’s New CDS",
+    "slides": 17,
+    "bullets": 48,
+    "status": "new",
+    "matchTitle": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+    "matchId": "CONT-01",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+    "score": 0.15,
+    "candidates": [
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+        "path": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+        "score": 0.15
+      },
+      {
+        "id": "CONT-06",
+        "title": "India–Bangladesh Relations",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indiabangladesh_relations.md",
+        "score": 0.15
+      },
+      {
+        "id": "CONT-05",
+        "title": "India–Canada Relations",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indiacanada_relations.md",
+        "score": 0.15
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "monthNum": 5,
+    "issue": "IV",
+    "source": "Current Affairs - May - IV.pdf",
+    "title": "1st International Big Cat Summit",
+    "slides": 16,
+    "bullets": 47,
+    "status": "review",
+    "matchTitle": "International Big Cat Alliance",
+    "matchId": "FEB-31",
+    "matchPath": "CA_Source_Repository/02_Feb_2026/international_big_cat_alliance.md",
+    "score": 0.61,
+    "candidates": [
+      {
+        "id": "FEB-31",
+        "title": "International Big Cat Alliance",
+        "path": "CA_Source_Repository/02_Feb_2026/international_big_cat_alliance.md",
+        "score": 0.61
+      },
+      {
+        "id": "MAY-34",
+        "title": "India’s Big Cat Conservation Diplomacy",
+        "path": "CA_Source_Repository/05_May_2026/indias_big_cat_conservation_diplomacy.md",
+        "score": 0.61
+      },
+      {
+        "id": "event-002",
+        "title": "India-AI Impact Summit 2026 & Responsible AI",
+        "path": "CA_Source_Repository/02_Feb_2026/india_ai_impact_summit_2026.md",
+        "score": 0.26
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "monthNum": 5,
+    "issue": "IV",
+    "source": "Current Affairs - May - IV.pdf",
+    "title": "TVK and Governor’s Delay",
+    "slides": 17,
+    "bullets": 44,
+    "status": "review",
+    "matchTitle": "Governor's Power Over State Bills & Constitutional Timeframes",
+    "matchId": "CONT-09",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/governor_bill_assent.md",
+    "score": 0.68,
+    "candidates": [
+      {
+        "id": "CONT-09",
+        "title": "Governor's Power Over State Bills & Constitutional Timeframes",
+        "path": "CA_Source_Repository/00_Continuing_Issues/governor_bill_assent.md",
+        "score": 0.68
+      },
+      {
+        "id": "CONT-09",
+        "title": "Governor’s Power over State Bills",
+        "path": "CA_Source_Repository/00_Continuing_Issues/governors_power_over_state_bills.md",
+        "score": 0.68
+      },
+      {
+        "id": "APR-01",
+        "title": "Governor’s Assent to State Bills",
+        "path": "CA_Source_Repository/04_Apr_2026/governors_assent_to_state_bills.md",
+        "score": 0.33
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "monthNum": 5,
+    "issue": "V",
+    "source": "Current Affairs - May - V.pdf",
+    "title": "BRICS backs Palestine",
+    "slides": 31,
+    "bullets": 83,
+    "status": "review",
+    "matchTitle": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+    "matchId": "CONT-02",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+    "score": 0.37,
+    "candidates": [
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+        "score": 0.37
+      },
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israelpalestine_conflict.md",
+        "score": 0.37
+      },
+      {
+        "id": "MAY-17",
+        "title": "BRICS Developments",
+        "path": "CA_Source_Repository/05_May_2026/brics_developments.md",
+        "score": 0.34
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "monthNum": 5,
+    "issue": "V",
+    "source": "Current Affairs - May - V.pdf",
+    "title": "VB-GRAMG Act",
+    "slides": 19,
+    "bullets": 51,
+    "status": "review",
+    "matchTitle": "Information Technology Act and IT Rules",
+    "matchId": "FEB-10",
+    "matchPath": "CA_Source_Repository/02_Feb_2026/information_technology_act_and_it.md",
+    "score": 0.36,
+    "candidates": [
+      {
+        "id": "FEB-10",
+        "title": "Information Technology Act and IT Rules",
+        "path": "CA_Source_Repository/02_Feb_2026/information_technology_act_and_it.md",
+        "score": 0.36
+      },
+      {
+        "id": "APR-17",
+        "title": "Disaster Management Act",
+        "path": "CA_Source_Repository/04_Apr_2026/disaster_management_act.md",
+        "score": 0.36
+      },
+      {
+        "id": "MAY-13",
+        "title": "Census Act and Registrar General",
+        "path": "CA_Source_Repository/05_May_2026/census_act_and_registrar_general.md",
+        "score": 0.36
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "monthNum": 5,
+    "issue": "VI",
+    "source": "Current Affairs - May - VI.pdf",
+    "title": "VB-GRAMG Act",
+    "slides": 19,
+    "bullets": 51,
+    "status": "review",
+    "matchTitle": "Information Technology Act and IT Rules",
+    "matchId": "FEB-10",
+    "matchPath": "CA_Source_Repository/02_Feb_2026/information_technology_act_and_it.md",
+    "score": 0.36,
+    "candidates": [
+      {
+        "id": "FEB-10",
+        "title": "Information Technology Act and IT Rules",
+        "path": "CA_Source_Repository/02_Feb_2026/information_technology_act_and_it.md",
+        "score": 0.36
+      },
+      {
+        "id": "APR-17",
+        "title": "Disaster Management Act",
+        "path": "CA_Source_Repository/04_Apr_2026/disaster_management_act.md",
+        "score": 0.36
+      },
+      {
+        "id": "MAY-13",
+        "title": "Census Act and Registrar General",
+        "path": "CA_Source_Repository/05_May_2026/census_act_and_registrar_general.md",
+        "score": 0.36
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "monthNum": 5,
+    "issue": "VI",
+    "source": "Current Affairs - May - VI.pdf",
+    "title": "India Rejects COA Award",
+    "slides": 19,
+    "bullets": 56,
+    "status": "review",
+    "matchTitle": "Supreme Court Pendency",
+    "matchId": "FEB-04",
+    "matchPath": "CA_Source_Repository/02_Feb_2026/supreme_court_pendency.md",
+    "score": 0.32,
+    "candidates": [
+      {
+        "id": "FEB-04",
+        "title": "Supreme Court Pendency",
+        "path": "CA_Source_Repository/02_Feb_2026/supreme_court_pendency.md",
+        "score": 0.32
+      },
+      {
+        "id": "MAR-20",
+        "title": "Polluter Pays Principle",
+        "path": "CA_Source_Repository/03_Mar_2026/polluter_pays_principle.md",
+        "score": 0.32
+      },
+      {
+        "id": "MAY-15",
+        "title": "International Booker Prize 2026",
+        "path": "CA_Source_Repository/05_May_2026/international_booker_prize_2026.md",
+        "score": 0.32
+      }
+    ]
+  },
+  {
+    "month": "May",
+    "monthNum": 5,
+    "issue": "VII",
+    "source": "Current Affairs - May - VII.pdf",
+    "title": "4th S-400 Air Defence System",
+    "slides": 21,
+    "bullets": 59,
+    "status": "review",
+    "matchTitle": "Advocate-Client Confidentiality and Professional Misconduct",
+    "matchId": "AUG-09",
+    "matchPath": "CA_Source_Repository/08_Aug_2026/advocate_client_confidentiality_and_professional_misconduct.md",
+    "score": 0.32,
+    "candidates": [
+      {
+        "id": "AUG-09",
+        "title": "Advocate-Client Confidentiality and Professional Misconduct",
+        "path": "CA_Source_Repository/08_Aug_2026/advocate_client_confidentiality_and_professional_misconduct.md",
+        "score": 0.32
+      },
+      {
+        "id": "FEB-04",
+        "title": "Supreme Court Pendency",
+        "path": "CA_Source_Repository/02_Feb_2026/supreme_court_pendency.md",
+        "score": 0.21
+      },
+      {
+        "id": "CONT-19",
+        "title": "Judicial Appointments and Collegium System",
+        "path": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+        "score": 0.17
+      }
+    ]
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "I",
+    "source": "Current Affairs - June - I.pdf",
+    "title": "BrahMos Missile Deal",
+    "slides": 20,
+    "bullets": 60,
+    "status": "review",
+    "matchTitle": "Artificial Intelligence and Copyright",
+    "matchId": "MAY-23",
+    "matchPath": "CA_Source_Repository/05_May_2026/artificial_intelligence_and_copyright.md",
+    "score": 0.28,
+    "candidates": [
+      {
+        "id": "MAY-23",
+        "title": "Artificial Intelligence and Copyright",
+        "path": "CA_Source_Repository/05_May_2026/artificial_intelligence_and_copyright.md",
+        "score": 0.28
+      },
+      {
+        "id": "JUL-16",
+        "title": "India–US Trade Engagement",
+        "path": "CA_Source_Repository/07_Jul_2026/indiaus_trade_engagement.md",
+        "score": 0.28
+      },
+      {
+        "id": "AUG-04",
+        "title": "UP Gangsters Act and the Principle of Legality",
+        "path": "CA_Source_Repository/08_Aug_2026/up_gangsters_act_and_principle_of_legality.md",
+        "score": 0.28
+      }
+    ]
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "I",
+    "source": "Current Affairs - June - I.pdf",
+    "title": "BSF",
+    "slides": 19,
+    "bullets": 57,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "II",
+    "source": "Current Affairs - June - II.pdf",
+    "title": "UNGA 81 Presidency",
+    "slides": 20,
+    "bullets": 59,
+    "status": "review",
+    "matchTitle": "September 2026 Watchlist: UNGA 81st Session & G20 Summit",
+    "matchId": "SEP-WATCH-01",
+    "matchPath": "CA_Source_Repository/08_Aug_Dec_2026_Watchlist/september_2026_watchlist_unga_81st.md",
+    "score": 0.5,
+    "candidates": [
+      {
+        "id": "SEP-WATCH-01",
+        "title": "September 2026 Watchlist: UNGA 81st Session & G20 Summit",
+        "path": "CA_Source_Repository/08_Aug_Dec_2026_Watchlist/september_2026_watchlist_unga_81st.md",
+        "score": 0.5
+      },
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict, ICJ Rulings & Two-State Solution",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israel_palestine_gaza.md",
+        "score": 0.43
+      },
+      {
+        "id": "CONT-02",
+        "title": "Israel–Palestine Conflict",
+        "path": "CA_Source_Repository/00_Continuing_Issues/israelpalestine_conflict.md",
+        "score": 0.43
+      }
+    ]
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "II",
+    "source": "Current Affairs - June - II.pdf",
+    "title": "Trump’s China Visit",
+    "slides": 17,
+    "bullets": 51,
+    "status": "review",
+    "matchTitle": "India–China Relations",
+    "matchId": "CONT-10",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/indiachina_relations.md",
+    "score": 0.3,
+    "candidates": [
+      {
+        "id": "CONT-10",
+        "title": "India–China Relations",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indiachina_relations.md",
+        "score": 0.3
+      },
+      {
+        "id": "JAN-18",
+        "title": "China’s Economic Transition",
+        "path": "CA_Source_Repository/01_Jan_2026/chinas_economic_transition.md",
+        "score": 0.3
+      },
+      {
+        "id": "CONT-15",
+        "title": "Ladakh and Sixth Schedule Demands",
+        "path": "CA_Source_Repository/00_Continuing_Issues/ladakh_and_sixth_schedule_demands.md",
+        "score": 0.26
+      }
+    ]
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "III",
+    "source": "Current Affairs - June - III.pdf",
+    "title": "Blue Bond",
+    "slides": 20,
+    "bullets": 59,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "III",
+    "source": "Current Affairs - June - III.pdf",
+    "title": "Ebola Outbreak",
+    "slides": 20,
+    "bullets": 53,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "IV",
+    "source": "Current Affairs - June - IV.pdf",
+    "title": "Clean Mobility Scheme",
+    "slides": 19,
+    "bullets": 57,
+    "status": "review",
+    "matchTitle": "BRICS Developments",
+    "matchId": "MAY-17",
+    "matchPath": "CA_Source_Repository/05_May_2026/brics_developments.md",
+    "score": 0.36,
+    "candidates": [
+      {
+        "id": "MAY-17",
+        "title": "BRICS Developments",
+        "path": "CA_Source_Repository/05_May_2026/brics_developments.md",
+        "score": 0.36
+      },
+      {
+        "id": "AUG-10",
+        "title": "Mobile Phone Manufacturing Scheme",
+        "path": "CA_Source_Repository/08_Aug_2026/mobile_phone_manufacturing_scheme.md",
+        "score": 0.35
+      },
+      {
+        "id": "JAN-20",
+        "title": "National Green Hydrogen Mission",
+        "path": "CA_Source_Repository/01_Jan_2026/national_green_hydrogen_mission.md",
+        "score": 0.34
+      }
+    ]
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "IV",
+    "source": "Current Affairs - June - IV.pdf",
+    "title": "Padma Barrage",
+    "slides": 17,
+    "bullets": 46,
+    "status": "review",
+    "matchTitle": "Padma Awards 2026",
+    "matchId": "JAN-15",
+    "matchPath": "CA_Source_Repository/01_Jan_2026/padma_awards_2026.md",
+    "score": 0.54,
+    "candidates": [
+      {
+        "id": "JAN-15",
+        "title": "Padma Awards 2026",
+        "path": "CA_Source_Repository/01_Jan_2026/padma_awards_2026.md",
+        "score": 0.54
+      }
+    ]
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "V",
+    "source": "Current Affairs - June - V.pdf",
+    "title": "PoK Protests",
+    "slides": 30,
+    "bullets": 79,
+    "status": "review",
+    "matchTitle": "Student Protests and Examination Integrity",
+    "matchId": "CONT-22",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/student_protests_and_examination_integrity.md",
+    "score": 0.51,
+    "candidates": [
+      {
+        "id": "CONT-22",
+        "title": "Student Protests and Examination Integrity",
+        "path": "CA_Source_Repository/00_Continuing_Issues/student_protests_and_examination_integrity.md",
+        "score": 0.51
+      },
+      {
+        "id": "MAY-04",
+        "title": "Youth Protests and Public Accountability",
+        "path": "CA_Source_Repository/05_May_2026/youth_protests_and_public_accountability.md",
+        "score": 0.51
+      },
+      {
+        "id": "JUN-27",
+        "title": "Student Protests and Internet Shutdowns",
+        "path": "CA_Source_Repository/06_Jun_2026/student_protests_and_internet_shutdowns.md",
+        "score": 0.51
+      }
+    ]
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "VI",
+    "source": "Current Affairs - June - VI.pdf",
+    "title": "Ram Mandir Fund Row",
+    "slides": 30,
+    "bullets": 89,
+    "status": "new",
+    "matchTitle": "Supreme Court Reform Proposals",
+    "matchId": "JUL-26",
+    "matchPath": "CA_Source_Repository/07_Jul_2026/supreme_court_reform_proposals.md",
+    "score": 0.25,
+    "candidates": [
+      {
+        "id": "JUL-26",
+        "title": "Supreme Court Reform Proposals",
+        "path": "CA_Source_Repository/07_Jul_2026/supreme_court_reform_proposals.md",
+        "score": 0.25
+      },
+      {
+        "id": "JAN-05",
+        "title": "Consolidated Fund, Contingency Fund and Public Account",
+        "path": "CA_Source_Repository/01_Jan_2026/consolidated_fund_contingency_fund_and.md",
+        "score": 0.23
+      },
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+        "path": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+        "score": 0.2
+      }
+    ]
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "VI",
+    "source": "Current Affairs - June - VI.pdf",
+    "title": "Gallantry Awards",
+    "slides": 19,
+    "bullets": 50,
+    "status": "review",
+    "matchTitle": "Padma Awards 2026",
+    "matchId": "JAN-15",
+    "matchPath": "CA_Source_Repository/01_Jan_2026/padma_awards_2026.md",
+    "score": 0.36,
+    "candidates": [
+      {
+        "id": "JAN-15",
+        "title": "Padma Awards 2026",
+        "path": "CA_Source_Repository/01_Jan_2026/padma_awards_2026.md",
+        "score": 0.36
+      },
+      {
+        "id": "JUL-22",
+        "title": "FIFA Awards and Records",
+        "path": "CA_Source_Repository/07_Jul_2026/fifa_awards_and_records.md",
+        "score": 0.36
+      },
+      {
+        "id": "JAN-24",
+        "title": "Australian Open 2026",
+        "path": "CA_Source_Repository/01_Jan_2026/australian_open_2026.md",
+        "score": 0.31
+      }
+    ]
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "VII",
+    "source": "Current Affairs - June - VII.pdf",
+    "title": "QS World University Rankings",
+    "slides": 20,
+    "bullets": 60,
+    "status": "new",
+    "matchTitle": "India–World Food Programme Cooperation",
+    "matchId": "FEB-27",
+    "matchPath": "CA_Source_Repository/02_Feb_2026/indiaworld_food_programme_cooperation.md",
+    "score": 0.24,
+    "candidates": [
+      {
+        "id": "FEB-27",
+        "title": "India–World Food Programme Cooperation",
+        "path": "CA_Source_Repository/02_Feb_2026/indiaworld_food_programme_cooperation.md",
+        "score": 0.24
+      },
+      {
+        "id": "FEB-28",
+        "title": "World Food Programme",
+        "path": "CA_Source_Repository/02_Feb_2026/world_food_programme.md",
+        "score": 0.24
+      },
+      {
+        "id": "APR-29",
+        "title": "IMF–World Bank Spring Meetings",
+        "path": "CA_Source_Repository/04_Apr_2026/imfworld_bank_spring_meetings.md",
+        "score": 0.24
+      }
+    ]
+  },
+  {
+    "month": "Jun",
+    "monthNum": 6,
+    "issue": "VIII",
+    "source": "Current Affairs - June - VIII.pdf",
+    "title": "Right to Walk on Footpaths",
+    "slides": 17,
+    "bullets": 50,
+    "status": "review",
+    "matchTitle": "Menstrual Hygiene as a Fundamental Right",
+    "matchId": "JAN-12",
+    "matchPath": "CA_Source_Repository/01_Jan_2026/menstrual_hygiene_as_a_fundamental.md",
+    "score": 0.27,
+    "candidates": [
+      {
+        "id": "JAN-12",
+        "title": "Menstrual Hygiene as a Fundamental Right",
+        "path": "CA_Source_Repository/01_Jan_2026/menstrual_hygiene_as_a_fundamental.md",
+        "score": 0.27
+      },
+      {
+        "id": "MAR-02",
+        "title": "Right to Die with Dignity",
+        "path": "CA_Source_Repository/03_Mar_2026/right_to_die_with_dignity.md",
+        "score": 0.27
+      },
+      {
+        "id": "MAY-07",
+        "title": "Right to Protest",
+        "path": "CA_Source_Repository/05_May_2026/right_to_protest.md",
+        "score": 0.27
+      }
+    ]
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "I",
+    "source": "Current Affairs - July - I.pdf",
+    "title": "“Terrorists” Under UAPA",
+    "slides": 16,
+    "bullets": 46,
+    "status": "review",
+    "matchTitle": "UAPA and Civil Liberties",
+    "matchId": "MAR-32",
+    "matchPath": "CA_Source_Repository/03_Mar_2026/uapa_and_civil_liberties.md",
+    "score": 0.59,
+    "candidates": [
+      {
+        "id": "MAR-32",
+        "title": "UAPA and Civil Liberties",
+        "path": "CA_Source_Repository/03_Mar_2026/uapa_and_civil_liberties.md",
+        "score": 0.59
+      },
+      {
+        "id": "FEB-18",
+        "title": "Mercy Petitions under Articles 72 and 161",
+        "path": "CA_Source_Repository/02_Feb_2026/mercy_petitions_under_articles_72.md",
+        "score": 0.08
+      },
+      {
+        "id": "MAR-34",
+        "title": "ED Powers under PMLA",
+        "path": "CA_Source_Repository/03_Mar_2026/ed_powers_under_pmla.md",
+        "score": 0.08
+      }
+    ]
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "I",
+    "source": "Current Affairs - July - I.pdf",
+    "title": "Gwadar Port Attack",
+    "slides": 23,
+    "bullets": 63,
+    "status": "review",
+    "matchTitle": "Chabahar Port",
+    "matchId": "MAR-13",
+    "matchPath": "CA_Source_Repository/03_Mar_2026/chabahar_port.md",
+    "score": 0.35,
+    "candidates": [
+      {
+        "id": "MAR-13",
+        "title": "Chabahar Port",
+        "path": "CA_Source_Repository/03_Mar_2026/chabahar_port.md",
+        "score": 0.35
+      },
+      {
+        "id": "AUG-07",
+        "title": "India–Japan Maritime Security Cooperation",
+        "path": "CA_Source_Repository/08_Aug_2026/india_japan_maritime_security_cooperation.md",
+        "score": 0.33
+      },
+      {
+        "id": "MAY-17",
+        "title": "BRICS Developments",
+        "path": "CA_Source_Repository/05_May_2026/brics_developments.md",
+        "score": 0.31
+      }
+    ]
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "II",
+    "source": "Current Affairs - July - II.pdf",
+    "title": "Dancing Girl Controversy",
+    "slides": 19,
+    "bullets": 54,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "II",
+    "source": "Current Affairs - July - II.pdf",
+    "title": "e-OCI Card",
+    "slides": 26,
+    "bullets": 68,
+    "status": "new",
+    "matchTitle": "Artificial Intelligence Regulation",
+    "matchId": "CONT-17",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/artificial_intelligence_regulation.md",
+    "score": 0.13,
+    "candidates": [
+      {
+        "id": "CONT-17",
+        "title": "Artificial Intelligence Regulation",
+        "path": "CA_Source_Repository/00_Continuing_Issues/artificial_intelligence_regulation.md",
+        "score": 0.13
+      },
+      {
+        "id": "CONT-12",
+        "title": "Census and Caste Enumeration",
+        "path": "CA_Source_Repository/00_Continuing_Issues/census_and_caste_enumeration.md",
+        "score": 0.13
+      },
+      {
+        "id": "CONT-18",
+        "title": "Climate Negotiations after COP30",
+        "path": "CA_Source_Repository/00_Continuing_Issues/climate_negotiations_after_cop30.md",
+        "score": 0.13
+      }
+    ]
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "III",
+    "source": "Current Affairs - July - III.pdf",
+    "title": "Global Liveability Index 2026",
+    "slides": 14,
+    "bullets": 40,
+    "status": "review",
+    "matchTitle": "World Press Freedom",
+    "matchId": "APR-19",
+    "matchPath": "CA_Source_Repository/04_Apr_2026/world_press_freedom.md",
+    "score": 0.55,
+    "candidates": [
+      {
+        "id": "APR-19",
+        "title": "World Press Freedom",
+        "path": "CA_Source_Repository/04_Apr_2026/world_press_freedom.md",
+        "score": 0.55
+      },
+      {
+        "id": "CONT-11",
+        "title": "Delimitation after 2026",
+        "path": "CA_Source_Repository/00_Continuing_Issues/delimitation_after_2026.md",
+        "score": 0.16
+      },
+      {
+        "id": "JAN-24",
+        "title": "Australian Open 2026",
+        "path": "CA_Source_Repository/01_Jan_2026/australian_open_2026.md",
+        "score": 0.16
+      }
+    ]
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "III",
+    "source": "Current Affairs - July - III.pdf",
+    "title": "TN asks EC to Step Down",
+    "slides": 22,
+    "bullets": 62,
+    "status": "review",
+    "matchTitle": "Public Examinations Act",
+    "matchId": "MAY-06",
+    "matchPath": "CA_Source_Repository/05_May_2026/public_examinations_act.md",
+    "score": 0.36,
+    "candidates": [
+      {
+        "id": "MAY-06",
+        "title": "Public Examinations Act",
+        "path": "CA_Source_Repository/05_May_2026/public_examinations_act.md",
+        "score": 0.36
+      },
+      {
+        "id": "CONT-19",
+        "title": "Judicial Appointments and Collegium System",
+        "path": "CA_Source_Repository/00_Continuing_Issues/judicial_appointments_and_collegium_system.md",
+        "score": 0.32
+      },
+      {
+        "id": "JUL-16",
+        "title": "India–US Trade Engagement",
+        "path": "CA_Source_Repository/07_Jul_2026/indiaus_trade_engagement.md",
+        "score": 0.32
+      }
+    ]
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "IV",
+    "source": "Current Affairs - July - IV.pdf",
+    "title": "‘Satluj’ Movie Controversy",
+    "slides": 25,
+    "bullets": 73,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "V",
+    "source": "Current Affairs - July - V.pdf",
+    "title": "Ind-Aus Uranium Deal",
+    "slides": 20,
+    "bullets": 59,
+    "status": "new",
+    "matchTitle": "Artificial Intelligence and Copyright",
+    "matchId": "MAY-23",
+    "matchPath": "CA_Source_Repository/05_May_2026/artificial_intelligence_and_copyright.md",
+    "score": 0.21,
+    "candidates": [
+      {
+        "id": "MAY-23",
+        "title": "Artificial Intelligence and Copyright",
+        "path": "CA_Source_Repository/05_May_2026/artificial_intelligence_and_copyright.md",
+        "score": 0.21
+      },
+      {
+        "id": "JUL-16",
+        "title": "India–US Trade Engagement",
+        "path": "CA_Source_Repository/07_Jul_2026/indiaus_trade_engagement.md",
+        "score": 0.21
+      },
+      {
+        "id": "AUG-04",
+        "title": "UP Gangsters Act and the Principle of Legality",
+        "path": "CA_Source_Repository/08_Aug_2026/up_gangsters_act_and_principle_of_legality.md",
+        "score": 0.21
+      }
+    ]
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "V",
+    "source": "Current Affairs - July - V.pdf",
+    "title": "BIMSTEC",
+    "slides": 22,
+    "bullets": 63,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "VII",
+    "source": "Current Affairs - July VII.pdf",
+    "title": "US Saudi Nuclear Deal",
+    "slides": 21,
+    "bullets": 61,
+    "status": "review",
+    "matchTitle": "BRICS Developments",
+    "matchId": "MAY-17",
+    "matchPath": "CA_Source_Repository/05_May_2026/brics_developments.md",
+    "score": 0.38,
+    "candidates": [
+      {
+        "id": "MAY-17",
+        "title": "BRICS Developments",
+        "path": "CA_Source_Repository/05_May_2026/brics_developments.md",
+        "score": 0.38
+      },
+      {
+        "id": "MAY-23",
+        "title": "Artificial Intelligence and Copyright",
+        "path": "CA_Source_Repository/05_May_2026/artificial_intelligence_and_copyright.md",
+        "score": 0.34
+      },
+      {
+        "id": "JUL-16",
+        "title": "India–US Trade Engagement",
+        "path": "CA_Source_Repository/07_Jul_2026/indiaus_trade_engagement.md",
+        "score": 0.34
+      }
+    ]
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "VII",
+    "source": "Current Affairs - July VII.pdf",
+    "title": "Ken-Betwa Project",
+    "slides": 23,
+    "bullets": 66,
+    "status": "review",
+    "matchTitle": "United Nations Framework Convention on International Tax Cooperation",
+    "matchId": "AUG-02",
+    "matchPath": "CA_Source_Repository/08_Aug_2026/un_framework_convention_on_international_tax_cooperation.md",
+    "score": 0.31,
+    "candidates": [
+      {
+        "id": "AUG-02",
+        "title": "United Nations Framework Convention on International Tax Cooperation",
+        "path": "CA_Source_Repository/08_Aug_2026/un_framework_convention_on_international_tax_cooperation.md",
+        "score": 0.31
+      }
+    ]
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "VIII",
+    "source": "Current Affairs - July VIII.pdf",
+    "title": "Ken-Betwa Project",
+    "slides": 23,
+    "bullets": 66,
+    "status": "review",
+    "matchTitle": "United Nations Framework Convention on International Tax Cooperation",
+    "matchId": "AUG-02",
+    "matchPath": "CA_Source_Repository/08_Aug_2026/un_framework_convention_on_international_tax_cooperation.md",
+    "score": 0.31,
+    "candidates": [
+      {
+        "id": "AUG-02",
+        "title": "United Nations Framework Convention on International Tax Cooperation",
+        "path": "CA_Source_Repository/08_Aug_2026/un_framework_convention_on_international_tax_cooperation.md",
+        "score": 0.31
+      }
+    ]
+  },
+  {
+    "month": "Jul",
+    "monthNum": 7,
+    "issue": "VIII",
+    "source": "Current Affairs - July VIII.pdf",
+    "title": "UK Prime Minsiter",
+    "slides": 12,
+    "bullets": 33,
+    "status": "review",
+    "matchTitle": "Governor's Power Over State Bills & Constitutional Timeframes",
+    "matchId": "CONT-09",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/governor_bill_assent.md",
+    "score": 0.43,
+    "candidates": [
+      {
+        "id": "CONT-09",
+        "title": "Governor's Power Over State Bills & Constitutional Timeframes",
+        "path": "CA_Source_Repository/00_Continuing_Issues/governor_bill_assent.md",
+        "score": 0.43
+      },
+      {
+        "id": "CONT-09",
+        "title": "Governor’s Power over State Bills",
+        "path": "CA_Source_Repository/00_Continuing_Issues/governors_power_over_state_bills.md",
+        "score": 0.43
+      },
+      {
+        "id": "FEB-23",
+        "title": "India’s Energy Security",
+        "path": "CA_Source_Repository/02_Feb_2026/indias_energy_security.md",
+        "score": 0.43
+      }
+    ]
+  },
+  {
+    "month": "Aug",
+    "monthNum": 8,
+    "issue": "I",
+    "source": "Current Affairs - August I.pdf",
+    "title": "Section 498A",
+    "slides": 19,
+    "bullets": 54,
+    "status": "review",
+    "matchTitle": "Ladakh and Sixth Schedule Demands",
+    "matchId": "CONT-15",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/ladakh_and_sixth_schedule_demands.md",
+    "score": 0.37,
+    "candidates": [
+      {
+        "id": "CONT-15",
+        "title": "Ladakh and Sixth Schedule Demands",
+        "path": "CA_Source_Repository/00_Continuing_Issues/ladakh_and_sixth_schedule_demands.md",
+        "score": 0.37
+      },
+      {
+        "id": "FEB-11",
+        "title": "Intermediary Liability and Safe Harbour",
+        "path": "CA_Source_Repository/02_Feb_2026/intermediary_liability_and_safe_harbour.md",
+        "score": 0.37
+      },
+      {
+        "id": "FEB-04",
+        "title": "Supreme Court Pendency",
+        "path": "CA_Source_Repository/02_Feb_2026/supreme_court_pendency.md",
+        "score": 0.37
+      }
+    ]
+  },
+  {
+    "month": "Aug",
+    "monthNum": 8,
+    "issue": "II",
+    "source": "Current Affairs - August II.pdf",
+    "title": "Environmental Performance Index",
+    "slides": 16,
+    "bullets": 48,
+    "status": "review",
+    "matchTitle": "Mobile Phone Manufacturing Scheme",
+    "matchId": "AUG-10",
+    "matchPath": "CA_Source_Repository/08_Aug_2026/mobile_phone_manufacturing_scheme.md",
+    "score": 0.62,
+    "candidates": [
+      {
+        "id": "AUG-10",
+        "title": "Mobile Phone Manufacturing Scheme",
+        "path": "CA_Source_Repository/08_Aug_2026/mobile_phone_manufacturing_scheme.md",
+        "score": 0.62
+      },
+      {
+        "id": "JUL-08D",
+        "title": "India’s Commonwealth Games Performance",
+        "path": "CA_Source_Repository/07_Jul_2026/indias_commonwealth_games_performance.md",
+        "score": 0.38
+      },
+      {
+        "id": "APR-19",
+        "title": "World Press Freedom",
+        "path": "CA_Source_Repository/04_Apr_2026/world_press_freedom.md",
+        "score": 0.38
+      }
+    ]
+  },
+  {
+    "month": "Aug",
+    "monthNum": 8,
+    "issue": "II",
+    "source": "Current Affairs - August II.pdf",
+    "title": "Ceuta Migrant Crisis",
+    "slides": 21,
+    "bullets": 56,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  },
+  {
+    "month": "Aug",
+    "monthNum": 8,
+    "issue": "III",
+    "source": "Current Affairs - August III.pdf",
+    "title": "Creamy Layer for SC-ST Quotas",
+    "slides": 19,
+    "bullets": 57,
+    "status": "review",
+    "matchTitle": "European Union Artificial Intelligence Act",
+    "matchId": "AUG-01",
+    "matchPath": "CA_Source_Repository/08_Aug_2026/european_union_artificial_intelligence_act.md",
+    "score": 0.31,
+    "candidates": [
+      {
+        "id": "AUG-01",
+        "title": "European Union Artificial Intelligence Act",
+        "path": "CA_Source_Repository/08_Aug_2026/european_union_artificial_intelligence_act.md",
+        "score": 0.31
+      }
+    ]
+  },
+  {
+    "month": "Aug",
+    "monthNum": 8,
+    "issue": "III",
+    "source": "Current Affairs - August III.pdf",
+    "title": "Pak-Saudi-Turkey Deal",
+    "slides": 17,
+    "bullets": 47,
+    "status": "new",
+    "matchTitle": "BRICS Developments",
+    "matchId": "MAY-17",
+    "matchPath": "CA_Source_Repository/05_May_2026/brics_developments.md",
+    "score": 0.24,
+    "candidates": [
+      {
+        "id": "MAY-17",
+        "title": "BRICS Developments",
+        "path": "CA_Source_Repository/05_May_2026/brics_developments.md",
+        "score": 0.24
+      },
+      {
+        "id": "MAY-23",
+        "title": "Artificial Intelligence and Copyright",
+        "path": "CA_Source_Repository/05_May_2026/artificial_intelligence_and_copyright.md",
+        "score": 0.22
+      },
+      {
+        "id": "JUL-16",
+        "title": "India–US Trade Engagement",
+        "path": "CA_Source_Repository/07_Jul_2026/indiaus_trade_engagement.md",
+        "score": 0.22
+      }
+    ]
+  },
+  {
+    "month": "Aug",
+    "monthNum": 8,
+    "issue": "IV",
+    "source": "Current Affairs - August IV.pdf",
+    "title": "Cauvery Water Dispute",
+    "slides": 26,
+    "bullets": 75,
+    "status": "review",
+    "matchTitle": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+    "matchId": "CONT-01",
+    "matchPath": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+    "score": 0.3,
+    "candidates": [
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations, Line of Control & Indus Waters Treaty",
+        "path": "CA_Source_Repository/00_Continuing_Issues/india_pakistan_sindoor.md",
+        "score": 0.3
+      },
+      {
+        "id": "CONT-01",
+        "title": "India–Pakistan Relations and Operation Sindoor",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indiapakistan_relations_and_operation_sindoor.md",
+        "score": 0.3
+      },
+      {
+        "id": "CONT-01B",
+        "title": "Indus Waters Treaty",
+        "path": "CA_Source_Repository/00_Continuing_Issues/indus_waters_treaty.md",
+        "score": 0.3
+      }
+    ]
+  },
+  {
+    "month": "Aug",
+    "monthNum": 8,
+    "issue": "IV",
+    "source": "Current Affairs - August IV.pdf",
+    "title": "BCI Inspection",
+    "slides": 23,
+    "bullets": 69,
+    "status": "review",
+    "matchTitle": "Advocate-Client Confidentiality and Professional Misconduct",
+    "matchId": "AUG-09",
+    "matchPath": "CA_Source_Repository/08_Aug_2026/advocate_client_confidentiality_and_professional_misconduct.md",
+    "score": 0.47,
+    "candidates": [
+      {
+        "id": "AUG-09",
+        "title": "Advocate-Client Confidentiality and Professional Misconduct",
+        "path": "CA_Source_Repository/08_Aug_2026/advocate_client_confidentiality_and_professional_misconduct.md",
+        "score": 0.47
+      }
+    ]
+  },
+  {
+    "month": "Dec",
+    "monthNum": 12,
+    "issue": "I",
+    "source": "Current Affairs - December - I.pdf",
+    "title": "Thailand-Cambodia",
+    "slides": 18,
+    "bullets": 43,
+    "status": "new",
+    "matchTitle": null,
+    "matchId": null,
+    "matchPath": null,
+    "score": 0.0,
+    "candidates": []
+  }
+]

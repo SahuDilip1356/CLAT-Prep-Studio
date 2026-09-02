@@ -1,0 +1,810 @@
+{
+  "source": "Current Affairs - July VI.pdf",
+  "month": 7,
+  "monthName": "July",
+  "monthAbbr": "Jul",
+  "issue": 6,
+  "issueRoman": "VI",
+  "topicCount": 1,
+  "quizSlideCount": 75,
+  "droppedCount": 0,
+  "topics": [
+    {
+      "slug": "vikram_i",
+      "title": "Vikram-I",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "slideCount": 27,
+      "bullets": [
+        "On 18 July 2026, India's first privately developed orbital rocket, Vikram-1, lifted off from Sriharikota at 12:05 PM IST.",
+        "Built by Hyderabad-based Skyroot Aerospace, it deployed technology payloads and a PM Modi postcard into Low Earth Orbit (LEO).",
+        "India became the third country, after the US and China, to achieve private orbital launch capability. Background –",
+        "India's space programme began with the launch of the Satellite Launch Vehicle-3 (SLV-3) on 18 July 1980, making India the sixth member of the exclusive club of spacefaring nations.",
+        "The SLV-3 successfully placed the Rohini Satellite (RS-1) into orbit from the same Sriharikota launch pad.",
+        "The launch of Vikram-1 on 18 July 2026 comes exactly 46 years after India's first successful orbital launch.",
+        "The Indian National Space Promotion and Authorisation Centre (IN-SPACe) was established in June 2020 as the single- window agency to promote, permit, and oversee private-sector space activities.",
+        "IN-SPACe granted the launch authorisation for Vikram-1, clearing the decks for Skyroot's historic mission.",
+        "IN-SPACe plays a critical role in creating a level playing field for private companies and ensuring compliance with safety and regulatory standards.",
+        "Skyroot Aerospace is a Hyderabad-based aerospace startup founded in 2018 by former ISRO scientists Pawan Kumar Chandana and Naga Bharath Daka.",
+        "The company became India's first space unicorn after raising significant venture capital funding.",
+        "Skyroot had already made history in November 2022 with the successful suborbital flight of Vikram-S, India's first privately built rocket to reach space. PSLV –",
+        "The Polar Satellite Launch Vehicle (PSLV) is an expendable medium-lift launch vehicle designed and operated by ISRO to place satellites into polar Sun-Synchronous Orbits (SSO).",
+        "Development began in the early 1990s to launch India's Indian Remote Sensing (IRS) satellites, a service previously available only from Russia.",
+        "PSLV was India's first launch vehicle equipped with liquid stages and became the reliable workhorse of ISRO.",
+        "The first developmental flight (PSLV-D1) on 20 September 1993 failed due to a software implementation error, despite all systems functioning well.",
+        "The first successful launch (PSLV-D2) occurred on 15 October 1994, placing the IRS-P2 remote sensing satellite into a polar SSO of 820 km.",
+        "From then onwards, PSLV established a remarkable track record of consecutive successful flights, solidifying its reputation as a reliable launcher.",
+        "PSLV is a four-stage vehicle, standing 44 metres tall with a lift- off mass of 295 tonnes in its standard configuration.",
+        "The first and third stages use solid propellant, while the second and fourth stages use liquid propellants—a unique alternating propulsion configuration.",
+        "Six strap-on motors surround the first stage, and the vehicle has a 3.2-metre bulbous payload fairing.",
+        "Chandrayaan-1 (22 October 2008) – India's first lunar mission, launched by PSLV-C11.",
+        "Mars Orbiter Mission (Mangalyaan) – India's first interplanetary mission, launched by PSLV on 5 November 2013.",
+        "PSLV's payload capacity was successively enhanced from 850 kg to over 1,600 kg to SSO after its first successful flight. GSLV –",
+        "The Geosynchronous Satellite Launch Vehicle (GSLV) is a medium-lift expendable launch system developed by ISRO to place communication satellites into Geosynchronous Transfer Orbit (GTO).",
+        "Development began in the 1980s with the objective of placing 2.5- tonne payloads into GTO, using components proven in the PSLV program.",
+        "GSLV has been crucial for India's self-reliance in launching INSAT and GSAT communication satellites.",
+        "ISRO initially used a procured cryogenic stage from Russia for the upper stage due to technology denial regimes.",
+        "The first GSLV flight (GSLV-D1) took place on 18 April 2001, but the indigenously developed cryogenic stage (CUS) was a major technological challenge.",
+        "5 January 2014 marked a milestone – the fifth developmental flight (GSLV-D5) successfully placed GSAT-14 into GTO using the indigenously developed cryogenic upper stage.",
+        "GSLV is a three-stage vehicle, 49.13 metres tall with a lift-off mass of 414.75 tonnes.",
+        "The first stage consists of an S139 solid booster (138 tonnes) with four liquid strap-on L40 motors (40 tonnes each).",
+        "The cryogenic upper stage (CUS) carries 15 tonnes of cryogenic propellants (Liquid Hydrogen and Liquid Oxygen) – a technology India mastered after years of indigenous development.",
+        "GSLV Mk I (retired): First flight in 2001, last flight in 2010.",
+        "GSLV Mk II (active): Payload capacity of 2,500 kg to GTO and 6,000 kg to LEO.",
+        "The cost per launch is approximately US$47 million.",
+        "GSAT-14 – Successfully placed into GTO on 5 January 2014 using ISRO's indigenously developed cryogenic stage.",
+        "GSAT-19 and GSAT-29 – Launched in 2017 and 2018, demonstrating the operational capability of GSLV Mk II.",
+        "The success of GSLV has made India self-reliant in launching its heavy communication satellites, reducing dependence on foreign launch providers.",
+        "The GSLV Mk III (LVM3) project was approved in 2002 to launch 4-tonne satellites to GTO and support India's human spaceflight ambitions.",
+        "It stands 43.5 metres tall with a lift-off mass of 640 tonnes and features a 5-metre payload fairing.",
+        "The maiden operational flight successfully launched Chandrayaan-2 on 22 July 2019.",
+        "LVM3-X (18 December 2014) – Suborbital test flight carrying the Crew Module Atmospheric Re-entry Experiment (CARE).",
+        "GSLV Mk III D1 (5 June 2017) – First orbital flight, placing GSAT-19 into orbit.",
+        "Chandrayaan-2 (22 July 2019) – India's second lunar mission. Recent News –",
+        "Vikram-1 is a seven-storey-tall, multi-stage orbital launch vehicle with a height of approximately 22 metres (or 23-24 metres, depending on the source).",
+        "It has a diameter of 1.7 metres and is capable of carrying payloads weighing up to 350 kg to Low Earth Orbit (LEO).",
+        "The rocket is designed to place payloads into a 450-km orbit at a 60-degree inclination.",
+        "Vikram-1 is India's first all-carbon composite orbital rocket – a significant technological achievement that reduces weight and improves structural strength.",
+        "The use of carbon composite materials allows for rapid manufacturing and a higher launch cadence compared to traditional metallic rockets.",
+        "This makes Vikram-1 one of the lightest and most cost- effective rockets in its class globally.",
+        "Vikram-1 is powered by in-house developed propulsion systems, including 3D-printed engines and high-thrust solid rocket motors.",
+        "The rocket uses three solid-fuel stages for the initial ascent, followed by a liquid Orbital Adjustment Module (OAM) for the final orbital insertion.",
+        "The use of 3D printing significantly reduces manufacturing time and cost while improving engine performance and reliability.",
+        "Vikram-1 is a four-stage vehicle – three solid-propellant stages topped by a liquid Orbital Adjustment Module.",
+        "The solid stages provide the initial thrust to lift the rocket through the atmosphere, while the liquid stage performs the precise orbital insertion of payloads.",
+        "This configuration allows Vikram-1 to deploy multiple satellites into orbit with high precision.",
+        "The current payload capacity of Vikram-1 is 350 kg to Low Earth Orbit and 260 kg to Sun-synchronous orbit (SSO).",
+        "Skyroot has indicated that the final payload capacity could be increased to 500 kg in future iterations.",
+        "The rocket is designed for rapid and on-demand launch services, catering to the growing demand for small satellite deployments.",
+        "The launch took place from the First Launch Pad at the Satish Dhawan Space Centre (SDSC-SHAR) in Sriharikota, Andhra Pradesh.",
+        "The rocket lifted off at 12:05 PM IST after a 35-minute delay from the scheduled 11:30 AM launch time.",
+        "The delay was due to a planned hold caused by a minor technical glitch, which was quickly resolved.",
+        "The total flight duration from lift-off to orbit injection was approximately 15 minutes.",
+        "The rocket went through 14 distinct flight phases, with each stage performing nominally and separations being precise and clean.",
+        "The onboard camera captured a stunning image of a sunrise from space after the rocket crossed the 100-km altitude mark, entering space.",
+        "After the three solid stages completed their burns, the liquid Orbital Adjustment Module (OAM) took over for the final orbital insertion.",
+        "The OAM, powered by a 3D-printed engine, precisely injected the payloads into a 450-km orbit.",
+        "The successful performance of the OAM validated Skyroot's in-house liquid propulsion technology.",
+        "Vikram-1 carried a total payload of approximately 350 kg to a 450- km Low Earth Orbit at a 60-degree inclination.",
+        "The mission carried six payloads, including technology demonstration satellites and experimental payloads.",
+        "Unlike many first missions that carry dummy payloads, Vikram-1 carried actual technology demonstrator experiments.",
+        "The primary payloads included a satellite built by Skyroot's SCOPE and another by Grahaa Space, an Indian space startup.",
+        "Other technology demonstration payloads were contributed by Cosmoserve and DCubed (Germany).",
+        "These payloads demonstrated India's growing capability to develop and deploy complex satellite technologies indigenously.",
+        "A handwritten postcard from Prime Minister Narendra Modi, bearing the message \"Vande Mataram\" , was carried into space aboard Vikram-1.",
+        "Hundreds of other postcards from well-wishers across the world also travelled to space on this historic mission.",
+        "The payloads also included micro sculptures of India's legendary scientists carved inside a needle eye by artist Ajay Kumar Mattewada. Passage: A youth-led protest movement has intensified demonstrations across several Indian cities, demanding greater accountability in the conduct of national entrance examinations. The protesters have sought the resignation of Union Education Minister Dharmendra Pradhan, alleging that recurring examination irregularities, paper leaks and administrative failures have damaged students’ confidence in the country’s testing system. The movement, which initially developed through online satire, subsequently organised demonstrations and sit-ins. It received national attention after education reformer and environmental activist Sonam Wangchuk joined the campaign and began an indefinite hunger strike at Jantar Mantar. Wangchuk’s health deteriorated during the fast, following which the authorities moved him to a hospital against his wishes. His supporters described the action as detention or abduction, while the police maintained that intervention had become necessary on medical grounds and was consistent with judicial directions. Source: Indian Express"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "slug": "the_youth_led_movement_associated_with_the_protests_described_in_the",
+      "title": "The youth-led movement associated with the protests described in the",
+      "pages": [
+        29
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        30
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "the_name_adopted_by_the_movement_was_reportedly_a_satirical_response",
+      "title": "The name adopted by the movement was reportedly a satirical response",
+      "pages": [
+        31
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_c",
+      "title": "ANSWER - C",
+      "pages": [
+        32
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "sonam_wangchuk_received_which_major_international_honour_in_2018",
+      "title": "Sonam Wangchuk received which major international honour in 2018?",
+      "pages": [
+        33
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_a",
+      "title": "ANSWER - A",
+      "pages": [
+        34
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "sonam_wangchuk_is_particularly_associated_with_the_development_and",
+      "title": "Sonam Wangchuk is particularly associated with the development and",
+      "pages": [
+        35
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_c",
+      "title": "ANSWER - C",
+      "pages": [
+        36
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "sonam_wangchuk_s_earlier_preventive_detention_following_the_ladakh",
+      "title": "Sonam Wangchuk’s earlier preventive detention following the Ladakh",
+      "pages": [
+        37
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        38
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "the_national_eligibility_cum_entrance_test_for_undergraduate_medical",
+      "title": "The National Eligibility-cum-Entrance Test for undergraduate medical",
+      "pages": [
+        39
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_c",
+      "title": "ANSWER - C",
+      "pages": [
+        40
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "dharmendra_pradhan_whose_resignation_was_demanded_by_the",
+      "title": "Dharmendra Pradhan, whose resignation was demanded by the",
+      "pages": [
+        41
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        42
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "ladakh_became_a_separate_union_territory_through_the_implementation",
+      "title": "Ladakh became a separate Union Territory through the implementation",
+      "pages": [
+        43
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        44,
+        45
+      ],
+      "slideCount": 2,
+      "bullets": []
+    },
+    {
+      "slug": "on_which_date_did_the_coordinated_american_and_israeli_strikes_that",
+      "title": "On which date did the coordinated American and Israeli strikes that",
+      "pages": [
+        46
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        47
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "what_was_the_codename_of_the_initial_united_states_military_operation",
+      "title": "What was the codename of the initial United States military operation",
+      "pages": [
+        48
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_a",
+      "title": "ANSWER - A",
+      "pages": [
+        49
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "what_was_the_codename_used_by_israel_for_its_initial_military_operatio",
+      "title": "What was the codename used by Israel for its initial military operation",
+      "pages": [
+        50
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_c",
+      "title": "ANSWER - C",
+      "pages": [
+        51
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "the_strait_of_hormuz_directly_connects_the_persian_gulf_with_which_bod",
+      "title": "The Strait of Hormuz directly connects the Persian Gulf with which body",
+      "pages": [
+        52
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        53
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "which_strategically_important_iranian_island_responsible_for_handling",
+      "title": "Which strategically important Iranian island, responsible for handling",
+      "pages": [
+        54
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_d",
+      "title": "ANSWER - D",
+      "pages": [
+        55,
+        56
+      ],
+      "slideCount": 2,
+      "bullets": []
+    },
+    {
+      "slug": "answer_a",
+      "title": "ANSWER - A",
+      "pages": [
+        57
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "which_international_organisation_is_responsible_for_verifying_iran_s",
+      "title": "Which international organisation is responsible for verifying Iran’s",
+      "pages": [
+        58
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        59
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "the_bab_el_mandeb_strait_which_gained_further_importance_following",
+      "title": "The Bab-el-Mandeb Strait, which gained further importance following",
+      "pages": [
+        60
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_c",
+      "title": "ANSWER - C",
+      "pages": [
+        61,
+        62
+      ],
+      "slideCount": 2,
+      "bullets": []
+    },
+    {
+      "slug": "which_country_won_the_2026_fifa_world_cup",
+      "title": "Which country won the 2026 FIFA World Cup?",
+      "pages": [
+        63
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_c",
+      "title": "ANSWER - C",
+      "pages": [
+        64
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "which_team_did_the_2026_fifa_world_cup_champion_defeat_in_the_final",
+      "title": "Which team did the 2026 FIFA World Cup champion defeat in the final?",
+      "pages": [
+        65
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        66
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "who_scored_the_only_goal_in_the_2026_fifa_world_cup_final",
+      "title": "Who scored the only goal in the 2026 FIFA World Cup final?",
+      "pages": [
+        67
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_d",
+      "title": "ANSWER - D",
+      "pages": [
+        68
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "who_received_the_golden_ball_as_the_best_player_of_the_2026_fifa_world",
+      "title": "Who received the Golden Ball as the best player of the 2026 FIFA World",
+      "pages": [
+        69
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        70
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "who_won_the_golden_boot_as_the_leading_goalscorer_of_the_2026_fifa",
+      "title": "Who won the Golden Boot as the leading goalscorer of the 2026 FIFA",
+      "pages": [
+        71
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_a",
+      "title": "ANSWER - A",
+      "pages": [
+        72
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "under_the_expanded_format_the_48_participating_teams_were_initially",
+      "title": "Under the expanded format, the 48 participating teams were initially",
+      "pages": [
+        73
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        74
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "at_which_venue_was_the_2026_fifa_world_cup_final_played",
+      "title": "At which venue was the 2026 FIFA World Cup final played?",
+      "pages": [
+        75
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_d",
+      "title": "ANSWER - D",
+      "pages": [
+        76
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "which_host_country_became_the_first_nation_to_host_or_co_host_the_men",
+      "title": "Which host country became the first nation to host or co-host the men’s",
+      "pages": [
+        77
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_c",
+      "title": "ANSWER - C",
+      "pages": [
+        78,
+        79
+      ],
+      "slideCount": 2,
+      "bullets": []
+    },
+    {
+      "slug": "what_is_the_correct_composition_of_e20_petrol",
+      "title": "What is the correct composition of E20 petrol?",
+      "pages": [
+        80
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        81
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "india_s_original_target_year_for_achieving_20_ethanol_blending_in",
+      "title": "India’s original target year for achieving 20% ethanol blending in",
+      "pages": [
+        82
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_c",
+      "title": "ANSWER - C",
+      "pages": [
+        83
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "india_s_ethanol_blended_petrol_programme_is_principally_administered",
+      "title": "India’s Ethanol Blended Petrol Programme is principally administered",
+      "pages": [
+        84
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        85
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "which_feedstock_accounted_for_approximately_37_of_india_s_ethanol",
+      "title": "Which feedstock accounted for approximately 37% of India’s ethanol",
+      "pages": [
+        86
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        87
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "which_of_the_following_most_accurately_describes_e85_fuel",
+      "title": "Which of the following most accurately describes E85 fuel?",
+      "pages": [
+        88
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_a",
+      "title": "ANSWER - A",
+      "pages": [
+        89
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "what_type_of_vehicle_is_specifically_designed_to_operate_on_petrol",
+      "title": "What type of vehicle is specifically designed to operate on petrol",
+      "pages": [
+        90
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_c",
+      "title": "ANSWER - C",
+      "pages": [
+        91
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "what_minimum_research_octane_number_was_prescribed_for_e20_petrol",
+      "title": "What minimum Research Octane Number was prescribed for E20 petrol",
+      "pages": [
+        92
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_c",
+      "title": "ANSWER - C",
+      "pages": [
+        93
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "across_approximately_how_many_public_sector_oil_marketing_company",
+      "title": "Across approximately how many public-sector oil-marketing company",
+      "pages": [
+        94
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        95,
+        96
+      ],
+      "slideCount": 2,
+      "bullets": []
+    },
+    {
+      "slug": "which_trust_is_legally_responsible_for_managing_the_ram_mandir_in",
+      "title": "Which trust is legally responsible for managing the Ram Mandir in",
+      "pages": [
+        97
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        98
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "on_which_date_was_the_first_fir_in_the_2026_ram_mandir_donation_theft",
+      "title": "On which date was the first FIR in the 2026 Ram Mandir donation-theft",
+      "pages": [
+        99
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_c",
+      "title": "ANSWER - C",
+      "pages": [
+        100
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "how_many_accused_persons_were_initially_arrested_and_detained_in",
+      "title": "How many accused persons were initially arrested and detained in",
+      "pages": [
+        101
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        102
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "which_two_senior_functionaries_resigned_from_their_positions_in_the",
+      "title": "Which two senior functionaries resigned from their positions in the",
+      "pages": [
+        103
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_a",
+      "title": "ANSWER - A",
+      "pages": [
+        104
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "which_bank_was_assigned_to_supervise_the_revised_cash_counting",
+      "title": "Which bank was assigned to supervise the revised cash-counting",
+      "pages": [
+        105
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_d",
+      "title": "ANSWER - D",
+      "pages": [
+        106
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "in_its_2019_ayodhya_judgment_how_much_alternative_land_did_the",
+      "title": "In its 2019 Ayodhya judgment, how much alternative land did the",
+      "pages": [
+        107
+      ],
+      "slideCount": 1,
+      "bullets": []
+    },
+    {
+      "slug": "answer_b",
+      "title": "ANSWER - B",
+      "pages": [
+        108
+      ],
+      "slideCount": 1,
+      "bullets": []
+    }
+  ],
+  "dropped": []
+}

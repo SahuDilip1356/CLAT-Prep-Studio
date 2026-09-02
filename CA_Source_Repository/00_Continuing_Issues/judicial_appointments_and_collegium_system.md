@@ -1,6 +1,6 @@
 ---
 id: CONT-19
-version: 2
+version: 3
 priority: P1
 title: Judicial Appointments and Collegium System
 category: Law and justice
@@ -10,14 +10,16 @@ continuingIssue: true
 featuredMonths: Aug 2026
 featuredPriority: P1
 examYear: CLAT/AILET 2027
-whyThisMayBeAsked: The appointment of 30 High Court judges in one set of notifications connects Articles 214, 216, 217 and 224, the collegium system, judicial vacancies, independence of the judiciary, and the distinction between recommendation, appointment and assumption of office.
-lastVerifiedDate: 2026-08-09
+whyThisMayBeAsked: The 31 August 2026 recommendations for four High Court Chief Justices connect Articles 217 and 222, the collegium system, inter-court transfers, judicial independence, and the distinction between a collegium recommendation and a presidential appointment.
+lastVerifiedDate: 2026-09-01
 ---
 
 # Issue Dossier
 
 ## 1. What Happened
-On 8 August 2026, the Union Ministry of Law and Justice announced that the President had appointed 30 judges to four High Courts after consultation with the Chief Justice of India. Madras High Court received 15 appointees: five were appointed as permanent judges and ten as additional judges. Calcutta High Court received eight additional judges, Karnataka High Court six, and Madhya Pradesh High Court one. Across the four notifications, 23 appointees were advocates and seven were judicial officers. The appointments materially advance recommendations published by the Supreme Court Collegium in May and June 2026; they do not alter the collegium system itself.
+On 31 August 2026, the Supreme Court Collegium recommended three judges for appointment as Chief Justices of High Courts: Justice Sanjay K. Agrawal of the Chhattisgarh High Court for Rajasthan, Justice Alpesh Yeshvant Kogje of the Gujarat High Court for Madhya Pradesh, and Justice Dr Pushpendra Singh Bhati of the Rajasthan High Court for the High Court of Jammu & Kashmir and Ladakh. A separate statement recommended Justice Agrawal's transfer to Rajasthan. The Court also uploaded a statement dated 6 August recommending Justice Krushna Ram Mohapatra of the Orissa High Court as Chief Justice of Chhattisgarh.
+
+These are collegium recommendations, not completed presidential appointments. They follow the 8 August 2026 appointment of 30 judges to four High Courts already recorded in this dossier and illustrate two different stages of the constitutional process.
 
 ## 2. Background
 The Constitution gives the formal power to appoint a High Court judge to the President. Under Article 217(1), the President acts after consultation with the Chief Justice of India, the Governor of the State, and, for a judge other than the Chief Justice of the High Court, the Chief Justice of that High Court. The Constitution does not use the word “collegium”. The collegium system developed through Supreme Court decisions interpreting the appointments provisions, especially the Second Judges Case in 1993 and the Third Judges Case presidential reference in 1998. For ordinary High Court appointments, a proposal begins with the High Court collegium, is processed by constitutional authorities and the Union government, and is considered by the Supreme Court collegium before the formal presidential appointment. The Supreme Court struck down the constitutional and statutory framework for a National Judicial Appointments Commission in 2015, leaving the collegium framework in operation.
@@ -30,6 +32,8 @@ The Constitution gives the formal power to appoint a High Court judge to the Pre
 - **11–18 May 2026**: The Supreme Court Collegium published recommendations for advocates and judicial officers for appointment to the Calcutta and Madras High Courts.
 - **2 June 2026**: The Collegium published recommendations for appointments to the Karnataka and Madhya Pradesh High Courts.
 - **8 August 2026**: The Law Ministry announced presidential appointment of 30 judges across the four High Courts: 15 to Madras, eight to Calcutta, six to Karnataka and one to Madhya Pradesh.
+- **6 August 2026 statement, uploaded 31 August**: The Collegium recommended Justice Krushna Ram Mohapatra as Chief Justice of the Chhattisgarh High Court.
+- **31 August 2026**: The Collegium recommended Justices Sanjay K. Agrawal, Alpesh Yeshvant Kogje and Dr Pushpendra Singh Bhati as Chief Justices of the Rajasthan, Madhya Pradesh, and Jammu & Kashmir and Ladakh High Courts respectively, with a separate transfer recommendation for Justice Agrawal.
 
 ## 4. Key People & Organisations
 - **President of India**: Formally appoints High Court judges by warrant under Article 217 and may appoint additional judges under Article 224.
@@ -38,6 +42,10 @@ The Constitution gives the formal power to appoint a High Court judge to the Pre
 - **Governor and State executive**: The Governor is a constitutionally named consultee under Article 217; the proposal also passes through the State-level process.
 - **Department of Justice, Ministry of Law and Justice**: Processes appointments and issued the official 8 August announcement.
 - **Madras, Calcutta, Karnataka and Madhya Pradesh High Courts**: The four constitutional courts that received the 30 appointees.
+- **Justice Sanjay K. Agrawal**: Chhattisgarh High Court judge recommended as Chief Justice of Rajasthan and separately recommended for transfer there.
+- **Justice Alpesh Yeshvant Kogje**: Gujarat High Court judge recommended as Chief Justice of Madhya Pradesh.
+- **Justice Dr Pushpendra Singh Bhati**: Rajasthan High Court judge recommended as Chief Justice of the High Court of Jammu & Kashmir and Ladakh.
+- **Justice Krushna Ram Mohapatra**: Orissa High Court judge recommended as Chief Justice of Chhattisgarh in the statement dated 6 August and uploaded on 31 August.
 
 ## 5. Legal & Constitutional Significance
 The appointments show how constitutional text, judge-made doctrine and executive processing operate together.
@@ -49,8 +57,9 @@ The appointments show how constitutional text, judge-made doctrine and executive
 - **Article 224(1)**: Allows appointment of duly qualified persons as additional judges for a period not exceeding two years when business temporarily increases or arrears accumulate.
 - **Article 224A**: Separately permits a retired High Court judge to sit and act as a judge with consent. An additional judge under Article 224 is not an ad hoc retired judge under Article 224A.
 - **Article 50**: Directs the State to separate the judiciary from the executive in public services and supports the broader principle of judicial independence.
-- **Articles 124 and 222**: Article 124 governs Supreme Court appointments, while Article 222 concerns transfer of a High Court judge; neither is the direct appointment provision used for these 30 judges.
-- **Recommendation versus appointment**: A collegium recommendation is an important stage but is not the presidential appointment. Appointment is also distinct from the appointee taking the oath and assuming office.
+- **Article 222**: Permits the President, after consultation with the Chief Justice of India, to transfer a judge from one High Court to another. It is relevant where a proposed Chief Justice must move from the judge's present court.
+- **Articles 124 and 217**: Article 124 governs Supreme Court appointments; Article 217 is the direct appointment provision for a High Court Chief Justice or other High Court judge.
+- **Recommendation versus appointment**: A collegium statement recommends a candidate. Formal appointment remains with the President under Article 217, and a necessary inter-court transfer is separately effected under Article 222. Appointment is also distinct from taking the oath and assuming office.
 
 ## 6. Static GK Connection
 - **Retirement ages**: A High Court judge retires at 62; a Supreme Court judge retires at 65.
@@ -61,32 +70,32 @@ The appointments show how constitutional text, judge-made doctrine and executive
 - **Permanent and additional judges**: Both exercise judicial power as High Court judges; “additional” describes a time-bound appointment under Article 224, not an inferior judicial rank.
 
 ## 7. CLAT Passage
-The Union government announced the appointment of 30 judges to four High Courts on 8 August 2026. Of these, 15 were appointed to the Madras High Court, eight to the Calcutta High Court, six to the Karnataka High Court and one to the Madhya Pradesh High Court. Five of the Madras appointees were made permanent judges; the remaining 25 appointments across the four courts were as additional judges. In all, 23 appointees came from the Bar and seven from the judicial service.
+On 31 August 2026, the Supreme Court Collegium recommended three sitting High Court judges for appointment as Chief Justices of other High Courts. Justice Sanjay K. Agrawal of Chhattisgarh was recommended for Rajasthan; Justice Alpesh Yeshvant Kogje of Gujarat for Madhya Pradesh; and Justice Dr Pushpendra Singh Bhati of Rajasthan for the High Court of Jammu & Kashmir and Ladakh. A separate statement recommended Justice Agrawal's transfer. The Court also uploaded a statement dated 6 August recommending Justice Krushna Ram Mohapatra of Orissa as Chief Justice of Chhattisgarh.
 
-Article 217 places the formal power of appointment in the President, following consultation with the Chief Justice of India, the State Governor and, where a puisne judge is appointed, the Chief Justice of the relevant High Court. The collegium system is not named in the Constitution. It emerged from Supreme Court interpretations that gave the judiciary primacy in selecting judges. A High Court collegium initiates a proposal, and the Supreme Court collegium considers it before the Union executive completes the formal process. Article 224 permits additional judges to be appointed for a period not exceeding two years when there is a temporary increase in business or an accumulation of arrears. Such a judge is not lower in judicial authority than a permanent judge, although the appointment is time-bound. The 2026 notifications therefore fill posts within the existing constitutional and collegium framework; they do not create a new appointments body or revive the NJAC.
+The recommendations do not themselves appoint or transfer any judge. Article 217 places the formal appointment of a High Court judge, including a Chief Justice, in the President after the specified constitutional consultations. Article 222 separately permits the President, after consultation with the Chief Justice of India, to transfer a judge from one High Court to another. The collegium is not named in the Constitution; it evolved through Supreme Court precedent giving the judiciary primacy in selection. Accordingly, the 31 August statements are a decisive recommendation stage, while presidential warrants, oath and assumption of office remain distinct later stages.
 
 ### Questions
-1. **Which conclusion about the 8 August notifications is best supported by the passage?**:
-   - (A) They replaced the collegium with a new commission.
-   - (B) They completed an appointment stage within the existing constitutional and collegium framework.
-   - (C) They amended Article 217 to transfer appointment power to Parliament.
-   - (D) They appointed 30 judges only to the Madras High Court.
+1. **What is the legal effect of the 31 August collegium statements, according to the passage?**:
+   - (A) They are presidential warrants of appointment.
+   - (B) They are recommendations within the appointments process.
+   - (C) They amend Articles 217 and 222.
+   - (D) They constitute the judges' oaths of office.
    - *Correct Answer*: B
-   - *Explanation*: The passage expressly states that the notifications filled posts under the existing framework and did not create a new appointments body.
-2. **Why are some appointees described as additional judges?**:
-   - (A) They exercise appellate power but cannot hear constitutional cases.
-   - (B) Article 224 permits time-bound appointments when work temporarily increases or arrears accumulate.
-   - (C) They were appointed by State Governors without presidential involvement.
-   - (D) They are retired judges recalled under Article 224A.
-   - *Correct Answer*: B
-   - *Explanation*: The passage links additional judges to the temporary workload-and-arrears mechanism in Article 224.
-3. **Which statement accurately distinguishes the constitutional text from the appointments practice?**:
-   - (A) Article 217 expressly creates a collegium of five judges.
-   - (B) The Constitution names the NJAC as the permanent appointments body.
-   - (C) Article 217 specifies the presidential appointment and consultations, while the collegium arose through judicial interpretation.
-   - (D) Neither the Constitution nor judicial decisions govern High Court appointments.
+   - *Explanation*: The passage distinguishes the recommendation stage from formal appointment, transfer, oath and assumption of office.
+2. **Why may Article 222 be relevant when a judge is recommended as Chief Justice of another High Court?**:
+   - (A) It governs inter-court transfer of a High Court judge.
+   - (B) It fixes the retirement age of every judge.
+   - (C) It creates the collegium by name.
+   - (D) It authorises a State Governor to appoint the judge alone.
+   - *Correct Answer*: A
+   - *Explanation*: Article 222 is the constitutional transfer provision; appointment to the Chief Justice office is governed by Article 217.
+3. **Which statement accurately distinguishes constitutional text from appointments practice?**:
+   - (A) Article 217 expressly creates the collegium.
+   - (B) The Constitution names the NJAC as the current appointments body.
+   - (C) Article 217 specifies presidential appointment and consultations, while the collegium arose through judicial interpretation.
+   - (D) The President has no formal role in High Court appointments.
    - *Correct Answer*: C
-   - *Explanation*: The passage says the collegium is not named in the Constitution and arose from Supreme Court interpretations of the consultation provisions.
+   - *Explanation*: The constitutional provision and the judge-made selection mechanism operate together but are not identical.
 
 ## 8. AILET MCQs
 1. **Which Article directly governs the appointment and conditions of office of a High Court judge?**:
@@ -112,26 +121,27 @@ Article 217 places the formal power of appointment in the President, following c
    - *Explanation*: The Second Judges Case in 1993 established judicial primacy and the collegium framework; the 1998 reference clarified it.
 
 ## 9. Q-Cards
-- **Front**: What did the government announce on 8 August 2026?
-- **Back**: Presidential appointment of 30 High Court judges: 15 to Madras, eight to Calcutta, six to Karnataka and one to Madhya Pradesh.
-- **Front**: How many appointees came from the Bar and the judicial service?
-- **Back**: Twenty-three advocates and seven judicial officers.
+- **Front**: Which three Chief Justice recommendations were published on 31 August 2026?
+- **Back**: Sanjay K. Agrawal for Rajasthan, Alpesh Yeshvant Kogje for Madhya Pradesh, and Dr Pushpendra Singh Bhati for Jammu & Kashmir and Ladakh.
+- **Front**: Which fourth Chief Justice recommendation was uploaded on 31 August in a statement dated 6 August?
+- **Back**: Justice Krushna Ram Mohapatra of Orissa for the Chhattisgarh High Court.
 - **Front**: Which Article directly governs appointment of a High Court judge?
 - **Back**: Article 217 of the Constitution.
-- **Front**: What is an additional judge under Article 224?
-- **Back**: A duly qualified person appointed for up to two years because of a temporary increase in work or accumulated arrears.
+- **Front**: Which Article governs transfer of a High Court judge?
+- **Back**: Article 222.
 - **Front**: Is the collegium expressly created by the Constitution?
 - **Back**: No. It developed through Supreme Court interpretations, especially the Second and Third Judges Cases.
-- **Front**: What are the retirement ages for High Court and Supreme Court judges?
-- **Back**: 62 for a High Court judge and 65 for a Supreme Court judge.
+- **Front**: Does a collegium recommendation itself appoint a Chief Justice?
+- **Back**: No. Formal presidential appointment, oath and assumption of office remain separate stages.
 
 ## 10. One-Pager Revision
-- **Summary**: On 8 August 2026, the Law Ministry announced 30 High Court appointments—15 Madras, eight Calcutta, six Karnataka and one Madhya Pradesh—comprising 23 advocates and seven judicial officers. Five Madras appointees became permanent judges; 25 appointments were additional judges. The event advances prior collegium recommendations within the existing Articles 217 and 224 framework.
-- **Core provisions**: Article 214 (High Courts for States), Article 216 (composition), Article 217 (appointment, qualifications and office), Article 224 (additional judges), Article 224A (retired judges sitting by consent), Article 50 (separation of judiciary and executive).
+- **Summary**: On 31 August 2026, the Collegium recommended three sitting judges as Chief Justices of other High Courts and separately recommended Justice Agrawal's transfer. A statement dated 6 August recommending Justice Mohapatra for Chhattisgarh was uploaded the same day. These are recommendations, not completed appointments.
+- **Current names**: Agrawal—Rajasthan; Kogje—Madhya Pradesh; Bhati—Jammu & Kashmir and Ladakh; Mohapatra—Chhattisgarh.
+- **Core provisions**: Article 217 (High Court appointment, qualifications and office), Article 222 (transfer), Article 214 (High Courts), Article 216 (composition), and Article 50 (separation and independence).
 - **Case chain**: First Judges Case, 1981—executive primacy; Second Judges Case, 1993—judicial primacy and collegium; Third Judges Case, 1998—clarification; NJAC judgment, 2015—99th Amendment and NJAC Act invalidated.
-- **Numbers**: 30 total = 15 Madras + 8 Calcutta + 6 Karnataka + 1 Madhya Pradesh; 23 advocates + 7 judicial officers; 5 permanent + 25 additional.
-- **Traps**: A collegium recommendation is not the same as presidential appointment; appointment is not the same as taking the oath. An Article 224 additional judge is not an Article 224A retired judge. Article 217, not Article 124, directly governs a High Court appointment.
-- **Mnemonic**: “15–8–6–1 fills 30; 217 appoints, 224 adds.”
+- **Process**: Collegium recommendation → Union processing and constitutional consultation → presidential warrant → oath and assumption of office.
+- **Traps**: Recommendation ≠ appointment; Article 217 appointment ≠ Article 222 transfer; the Collegium is judge-made and not named in the Constitution.
+- **Mnemonic**: “217 appoints; 222 transfers.”
 
 ## 11. Geo Card
 - **Locations**: Chennai (Madras High Court), Kolkata (Calcutta High Court), Bengaluru (Karnataka High Court), and Jabalpur (principal seat of Madhya Pradesh High Court).
@@ -146,11 +156,16 @@ Article 217 places the formal power of appointment in the President, following c
 - **Appointment vs transfer**: Article 217 concerns appointment; Article 222 concerns transfer between High Courts.
 
 ## 13. Verified Sources
+- **PRIMARY — Supreme Court of India, 31 August 2026 statement recommending three High Court Chief Justices**: https://cdnbbsr.s3waas.gov.in/s3ec0490f1f4972d133619a60c30f3559e/uploads/2026/08/2026083130.pdf
+- **PRIMARY — Supreme Court of India, 31 August 2026 statement recommending transfer of Justice Sanjay K. Agrawal**: https://cdnbbsr.s3waas.gov.in/s3ec0490f1f4972d133619a60c30f3559e/uploads/2026/08/2026083180.pdf
+- **PRIMARY — Supreme Court of India, statement dated 6 August 2026 recommending Justice Krushna Ram Mohapatra, uploaded 31 August**: https://cdnbbsr.s3waas.gov.in/s3ec0490f1f4972d133619a60c30f3559e/uploads/2026/08/2026083184.pdf
 - **PRIMARY — Press Information Bureau, Ministry of Law and Justice, appointment of 30 judges, 8 August 2026**: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296475&lang=1&reg=3
 - **PRIMARY — Supreme Court of India, Collegium Resolutions, including the May and June 2026 High Court recommendations**: https://www.sci.gov.in/collegium-resolutions/
 - **PRIMARY — Legislative Department, Constitution of India, official constitutional text**: https://legislative.gov.in/constitution-of-india/
+- **SECONDARY — LiveLaw, independent report confirming the four Chief Justice recommendations, 31 August 2026**: https://www.livelaw.in/news-updates/supreme-court-collegium-recommends-appointment-of-chief-justices-to-3-high-courts-547999
 - **SECONDARY — The Times of India, independent report confirming the four-court distribution and professional background of the appointees, 9 August 2026**: https://timesofindia.indiatimes.com/india/government-appoints-30-judges-to-high-courts-of-calcutta-mp-karnataka-madras/articleshow/133059982.cms
 
 ## 14. Version History
 - **Version 1 — verified 22 July 2026**: Created the continuing-issue catalogue entry for judicial appointments and the collegium system.
 - **Version 2 — verified 9 August 2026**: Replaced the catalogue shell with a fully sourced dossier; added the appointment of 30 High Court judges, the Article 217 and Article 224 framework, collegium case history, three passage questions, three AILET MCQs, six Q-cards, and a complete One-Pager.
+- **Version 3 — verified 1 September 2026**: Added the four Chief Justice recommendations published or uploaded on 31 August, Justice Agrawal's separate transfer recommendation, the Article 217/222 distinction, a current-event passage, revised Q-cards and One-Pager, and the official collegium statements.

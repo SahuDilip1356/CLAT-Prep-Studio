@@ -1308,32 +1308,6 @@
     "memoryTip": "Key takeaway: India\u2013China Relations requires exact statutory authority and verified primary source backing."
   },
   {
-    "id": "qcard-ca-CONT-07",
-    "topic": "International relations",
-    "category": "border agreements & treaties",
-    "title": "India\u2013Nepal Relations",
-    "subtitle": "High-yield topic included in official CLAT & AILET 2027 Current Affairs Master Catalogue.",
-    "badge": "Feeder Dossier",
-    "color": "#FF6B5E",
-    "readTime": "3 min read",
-    "summary": "The official developments regarding India\u2013Nepal Relations represent a high-priority event for CLAT and AILET 2027 aspirants. Key institutional decisions, legal updates, and verified facts are codified hereunder.",
-    "keyMilestones": [
-      {
-        "date": "2024-2025",
-        "event": "Initiation of policy, judicial, or international frameworks relating to India\u2013Nepal Relations."
-      },
-      {
-        "date": "2026",
-        "event": "Official executive notifications, parliamentary proceedings, or judicial rulings on India\u2013Nepal Relations."
-      }
-    ],
-    "keyArticles": [],
-    "examTraps": [
-      "Avoid confusing India\u2013Nepal Relations with allied non-statutory policies."
-    ],
-    "memoryTip": "Key takeaway: India\u2013Nepal Relations requires exact statutory authority and verified primary source backing."
-  },
-  {
     "id": "qcard-ca-CONT-01",
     "topic": "International relations",
     "category": "bilateral relations & border conflict",
@@ -3286,28 +3260,87 @@
   {
     "id": "qcard-ca-FEB-04",
     "topic": "Law and justice",
-    "category": "judicial administration",
+    "category": "judicial administration, Lok Adalats and consensual dispute resolution",
     "title": "Supreme Court Pendency",
-    "subtitle": "High-yield topic included in official CLAT & AILET 2027 Current Affairs Master Catalogue.",
+    "subtitle": "The conclusion of the Supreme Court's Samadhan Samaroh Special Lok Adalat connects judicial pendency and access to justice with the Legal Services Authorities Act, consent-based settlement, the legal effect of Lok Adalat awards, and the distinction between regular and Permanent Lok Adalats.",
     "badge": "Feeder Dossier",
     "color": "#6C4CF1",
     "readTime": "3 min read",
-    "summary": "The official developments regarding Supreme Court Pendency represent a high-priority event for CLAT and AILET 2027 aspirants. Key institutional decisions, legal updates, and verified facts are codified hereunder.",
+    "summary": "The Supreme Court concluded **Samadhan Samaroh 2026** with a three-day Special Lok Adalat held on 21, 22 and 23 August 2026. The name expands to **Supreme Court Action for Mediated Adjudication and Disputes Harmonization Across Nation**. The initiative had begun on 21 April with pre-settlement work through legal-services institutions and mediation centres; its stated purpose was amicable resolution of suitable matters pending before the Supreme Court through consent-based processes.\n\nThe Supreme Court's consolidated statement, released on 24 August, reported **3,285 matters listed**, **1,664 matters settled or disposed of through Lok Adalat**, and **48 matters resolved through mediation**\u2014a total of **1,712 resolved matters**. It also reported disbursements of **\u20b92,40,94,37,087.38** (about \u20b9240.94 crore). The day-wise Lok Adalat figures were 402 disposals out of 588 listed on 21 August, 350 out of 1,159 on 22 August, and 912 out of 1,538 on 23 August. These consolidated figures supersede the interim counts reported while the exercise was still under way.",
     "keyMilestones": [
       {
-        "date": "2024-2025",
-        "event": "Initiation of policy, judicial, or international frameworks relating to Supreme Court Pendency."
+        "date": "1976",
+        "event": "The Forty-second Constitutional Amendment inserts Article 39A on equal justice and free legal aid."
       },
       {
-        "date": "2026",
-        "event": "Official executive notifications, parliamentary proceedings, or judicial rulings on Supreme Court Pendency."
+        "date": "1987",
+        "event": "Parliament enacts the Legal Services Authorities Act."
+      },
+      {
+        "date": "9 November 1995",
+        "event": "The Act comes into force; 9 November is observed as National Legal Services Day."
+      },
+      {
+        "date": "2002",
+        "event": "Chapter VI-A introduces Permanent Lok Adalats for specified public utility services."
+      },
+      {
+        "date": "29 July-3 August 2024",
+        "event": "The Supreme Court holds a Special Lok Adalat during its 75th anniversary year."
+      },
+      {
+        "date": "21 April 2026",
+        "event": "Samadhan Samaroh begins its pre-settlement phase."
+      },
+      {
+        "date": "21 August 2026",
+        "event": "Sixteen Supreme Court Special Lok Adalat benches list more than 600 matters on day one; more than 400 settlements are reported."
+      },
+      {
+        "date": "23 August 2026",
+        "event": "The three-day Special Lok Adalat and Samadhan Samaroh culmination phase conclude."
+      },
+      {
+        "date": "24 August 2026",
+        "event": "The Supreme Court releases consolidated results: 3,285 matters listed; 1,664 Lok Adalat disposals; 48 mediated resolutions; 1,712 total; and about \u20b9240.94 crore disbursed."
       }
     ],
-    "keyArticles": [],
-    "examTraps": [
-      "Avoid confusing Supreme Court Pendency with allied non-statutory policies."
+    "keyArticles": [
+      {
+        "article": "fact-1",
+        "desc": "Article 39A: Equal justice and free legal aid."
+      },
+      {
+        "article": "fact-2",
+        "desc": "Legal Services Authorities Act: Enacted in 1987 and brought into force on 9 November 1995."
+      },
+      {
+        "article": "fact-3",
+        "desc": "National Legal Services Day: Observed on 9 November."
+      },
+      {
+        "article": "fact-4",
+        "desc": "NALSA patron-in-chief: The Chief Justice of India; its executive chairman is a serving or retired Supreme Court judge nominated in accordance with the Act."
+      },
+      {
+        "article": "fact-5",
+        "desc": "Lok Adalat meaning: Commonly translated as \u201cPeople's Court.\u201d"
+      },
+      {
+        "article": "fact-6",
+        "desc": "Regular Lok Adalat award: Deemed civil-court decree/order, final and binding, with no ordinary appeal."
+      },
+      {
+        "article": "fact-7",
+        "desc": "Permanent Lok Adalat: A distinct statutory body for specified public utility services."
+      },
+      {
+        "article": "fact-8",
+        "desc": "Supreme Court seat: New Delhi under Article 130, subject to the constitutional mechanism for sitting elsewhere."
+      }
     ],
-    "memoryTip": "Key takeaway: Supreme Court Pendency requires exact statutory authority and verified primary source backing."
+    "examTraps": [],
+    "memoryTip": "**C-F-D** \u2014 Consent, Final award, Deemed decree."
   },
   {
     "id": "qcard-ca-FEB-01B",
@@ -4585,29 +4618,80 @@
   },
   {
     "id": "qcard-ca-APR-41",
-    "topic": "Environment and science",
-    "category": "CERT-In & cyber law",
+    "topic": "Law and justice",
+    "category": "cyber regulation, market infrastructure and operational resilience",
     "title": "Cybersecurity and Critical Infrastructure",
-    "subtitle": "High-yield topic included in official CLAT & AILET 2027 Current Affairs Master Catalogue.",
+    "subtitle": "SEBI's IT Resilience Index and FIRE-aligned incident reporting turn cyber resilience into a measurable regulatory obligation for core securities-market infrastructure, linking statutory regulation, operational continuity and internationally harmonised incident reporting.",
     "badge": "Feeder Dossier",
-    "color": "#FF6B5E",
+    "color": "#6C4CF1",
     "readTime": "3 min read",
-    "summary": "The official developments regarding Cybersecurity and Critical Infrastructure represent a high-priority event for CLAT and AILET 2027 aspirants. Key institutional decisions, legal updates, and verified facts are codified hereunder.",
+    "summary": "On **24 August 2026**, the Securities and Exchange Board of India (SEBI) issued two connected cyber-resilience circulars. The first creates a **100-point IT Resilience Index (ITRI)** for all stock exchanges, clearing corporations and depositories except AMC Repo Clearing Limited. The index is intended to provide an early-warning and supervisory measure of whether critical securities-market infrastructure can maintain continuous service.\n\nThe second aligns SEBI's Cyber Incident Reporting Portal with the Financial Stability Board's **Format for Incident Reporting Exchange (FIRE)**. SEBI-regulated entities retain the existing initial timelines\u2014email within six hours and portal reporting within 24 hours\u2014but will use common fields, definitions, classifications and staged lifecycle updates. SEBI also launched the **Cyber Suraksha Portal**, a separate knowledge hub for circulars, vulnerability warnings and incident insights; it is not the incident-reporting portal.",
     "keyMilestones": [
       {
-        "date": "2024-2025",
-        "event": "Initiation of policy, judicial, or international frameworks relating to Cybersecurity and Critical Infrastructure."
+        "date": "1992",
+        "event": "The SEBI Act gives SEBI statutory powers to protect investors and regulate the securities market."
       },
       {
-        "date": "2026",
-        "event": "Official executive notifications, parliamentary proceedings, or judicial rulings on Cybersecurity and Critical Infrastructure."
+        "date": "August 2024",
+        "event": "SEBI issues the Cybersecurity and Cyber Resilience Framework."
+      },
+      {
+        "date": "April 2025",
+        "event": "The Financial Stability Board finalises FIRE."
+      },
+      {
+        "date": "24 August 2026",
+        "event": "SEBI issues the ITRI and FIRE-alignment circulars and launches Cyber Suraksha."
+      },
+      {
+        "date": "30 November 2026",
+        "event": "The Industry Standards Forum is to finalise detailed ITRI scoring criteria."
+      },
+      {
+        "date": "31 January 2027",
+        "event": "MIIs are to finalise their ITRI standard operating procedure."
+      },
+      {
+        "date": "28 February 2027",
+        "event": "MIIs must operationalise the ITRI."
+      },
+      {
+        "date": "Half-year ending 31 March 2027",
+        "event": "First reporting period; the score is due within 60 days."
       }
     ],
-    "keyArticles": [],
-    "examTraps": [
-      "Avoid confusing Cybersecurity and Critical Infrastructure with allied non-statutory policies."
+    "keyArticles": [
+      {
+        "article": "fact-1",
+        "desc": "SEBI: Established as a non-statutory body in 1988 and made statutory by the SEBI Act, 1992."
+      },
+      {
+        "article": "fact-2",
+        "desc": "SEBI headquarters: Mumbai."
+      },
+      {
+        "article": "fact-3",
+        "desc": "MII functions: Exchanges facilitate trading; clearing corporations clear and settle; depositories hold dematerialised securities."
+      },
+      {
+        "article": "fact-4",
+        "desc": "FSB headquarters: Basel, Switzerland; the FSB succeeded the Financial Stability Forum in 2009."
+      },
+      {
+        "article": "fact-5",
+        "desc": "FIRE expansion: Format for Incident Reporting Exchange."
+      },
+      {
+        "article": "fact-6",
+        "desc": "CERT-In: National incident-response agency under Section 70B of the Information Technology Act, 2000."
+      },
+      {
+        "article": "fact-7",
+        "desc": "Operational resilience: Ability to prevent, respond to, recover from and learn from disruptions while continuing critical services."
+      }
     ],
-    "memoryTip": "Key takeaway: Cybersecurity and Critical Infrastructure requires exact statutory authority and verified primary source backing."
+    "examTraps": [],
+    "memoryTip": "**A-S-I-G-R-B-M-S-O** \u2014 Availability, Security, Integrity, Governance, Reliability, Business continuity, Modularity, Scalability, Others."
   },
   {
     "id": "qcard-ca-APR-22",
@@ -5548,28 +5632,62 @@
   {
     "id": "qcard-ca-MAY-17",
     "topic": "International relations",
-    "category": "BRICS expanded format",
+    "category": "expanded BRICS, tourism, science-technology and sports cooperation",
     "title": "BRICS Developments",
-    "subtitle": "High-yield topic included in official CLAT & AILET 2027 Current Affairs Master Catalogue.",
+    "subtitle": "The Jaipur, Chennai and Visakhapatnam sectoral declarations are consecutive outcomes of India's 2026 BRICS chairship, linking consensus diplomacy with tourism, frontier technology, sports governance and the distinction between political commitments and binding law.",
     "badge": "Feeder Dossier",
     "color": "#FF6B5E",
     "readTime": "3 min read",
-    "summary": "The official developments regarding BRICS Developments represent a high-priority event for CLAT and AILET 2027 aspirants. Key institutional decisions, legal updates, and verified facts are codified hereunder.",
+    "summary": "BRICS Tourism Ministers adopted the **Jaipur Declaration** by consensus at their ministerial meeting in Jaipur on 21 August 2026. The declaration identifies four priorities: use of artificial intelligence in tourism; sustainable and responsible tourism; skilling and capacity-building; and greater exchanges and seamless travel among BRICS countries.\n\nThe meeting used the theme **\u201cBuilding for Resilience, Innovation, Cooperation and Sustainability.\u201d** Ministers also identified cooperation in destination management, tourism data and statistics, investment and infrastructure, heritage, and people-to-people contact. Representatives of nine BRICS members participated.\n\nOn 22 August, the 14th BRICS Science, Technology and Innovation Ministerial Meeting in Chennai unanimously adopted the **Chennai Declaration**. It endorsed an effective, resilient and future-ready STI framework; the 2026-27 STI calendar; work on research infrastructure and mega-science; and further operationalisation of the **BRICS Global Research Advanced Infrastructure Network (BRICS GRAIN)**. Cooperation areas include AI, high-performance computing, quantum technologies, biotechnology, health, advanced materials and climate-related research.\n\nOn 23 August, BRICS Sports Ministers adopted the **BRICS Sports Joint Declaration** by consensus at Visakhapatnam. They advanced three practical initiatives: a BRICS Working Group on Sports Technology; a proposed BRICS Sports Manufacturing Conclave in Udaipur in November 2026; and proposed Traditional and Indigenous Sports Demonstration Games in Ahmedabad on 12-13 October 2026. The working group covers sports science, athlete performance, governance, artificial intelligence, digital transformation and innovation. The Jaipur, Chennai and Visakhapatnam texts are ministerial political commitments and cooperation frameworks; none was presented as a ratified treaty creating enforceable individual rights.",
     "keyMilestones": [
       {
-        "date": "2024-2025",
-        "event": "Initiation of policy, judicial, or international frameworks relating to BRICS Developments."
+        "date": "2001",
+        "event": "Economist Jim O'Neill popularises the acronym BRIC for four large emerging economies."
+      },
+      {
+        "date": "2006",
+        "event": "BRIC foreign ministers begin formal political meetings."
+      },
+      {
+        "date": "2009",
+        "event": "The first BRIC leaders' summit is held in Yekaterinburg, Russia."
+      },
+      {
+        "date": "2010",
+        "event": "South Africa joins; the grouping becomes BRICS."
+      },
+      {
+        "date": "2014",
+        "event": "BRICS members sign the treaty establishing the New Development Bank."
+      },
+      {
+        "date": "1 January 2024",
+        "event": "Egypt, Ethiopia, Iran and the United Arab Emirates enter the expanded grouping."
+      },
+      {
+        "date": "January 2025",
+        "event": "Indonesia is announced as a full BRICS member."
       },
       {
         "date": "2026",
-        "event": "Official executive notifications, parliamentary proceedings, or judicial rulings on BRICS Developments."
+        "event": "India holds the BRICS chairship."
+      },
+      {
+        "date": "21 August 2026",
+        "event": "Tourism Ministers adopt the Jaipur Declaration by consensus."
+      },
+      {
+        "date": "22 August 2026",
+        "event": "Science and Technology Ministers unanimously adopt the Chennai Declaration and endorse the 2026-27 STI calendar."
+      },
+      {
+        "date": "23 August 2026",
+        "event": "Sports Ministers adopt the BRICS Sports Joint Declaration by consensus in Visakhapatnam and advance three cooperation initiatives."
       }
     ],
     "keyArticles": [],
-    "examTraps": [
-      "Avoid confusing BRICS Developments with allied non-statutory policies."
-    ],
-    "memoryTip": "Key takeaway: BRICS Developments requires exact statutory authority and verified primary source backing."
+    "examTraps": [],
+    "memoryTip": "**J-Tour, C-Tech, V-Sport** \u2014 Jaipur for tourism; Chennai for science and technology; Visakhapatnam for sports."
   },
   {
     "id": "qcard-ca-MAY-40",
@@ -7468,32 +7586,6 @@
       "Avoid confusing SCO Membership and RATS with allied non-statutory policies."
     ],
     "memoryTip": "Key takeaway: SCO Membership and RATS requires exact statutory authority and verified primary source backing."
-  },
-  {
-    "id": "qcard-ca-JUN-10",
-    "topic": "International relations",
-    "category": "Eurasian security summit",
-    "title": "SCO Summit",
-    "subtitle": "High-yield topic included in official CLAT & AILET 2027 Current Affairs Master Catalogue.",
-    "badge": "Feeder Dossier",
-    "color": "#FF6B5E",
-    "readTime": "3 min read",
-    "summary": "The official developments regarding SCO Summit represent a high-priority event for CLAT and AILET 2027 aspirants. Key institutional decisions, legal updates, and verified facts are codified hereunder.",
-    "keyMilestones": [
-      {
-        "date": "2024-2025",
-        "event": "Initiation of policy, judicial, or international frameworks relating to SCO Summit."
-      },
-      {
-        "date": "2026",
-        "event": "Official executive notifications, parliamentary proceedings, or judicial rulings on SCO Summit."
-      }
-    ],
-    "keyArticles": [],
-    "examTraps": [
-      "Avoid confusing SCO Summit with allied non-statutory policies."
-    ],
-    "memoryTip": "Key takeaway: SCO Summit requires exact statutory authority and verified primary source backing."
   },
   {
     "id": "qcard-ca-JUN-04",
@@ -9419,5 +9511,1603 @@
       "Do not treat a framework convention and its protocols as identical instruments, or treaty negotiation and Indian domestic implementation as the same legal stage."
     ],
     "memoryTip": "\u201cFramework, services, disputes\u2014text in 26, target in 27.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-03",
+    "topic": "Environment and international affairs",
+    "category": "desertification, land degradation, drought, rangelands and pastoralism",
+    "title": "UNCCD COP17 and India\u2019s Open Natural Ecosystems Guide",
+    "subtitle": "COP17 connects a legally binding Rio Convention, treaty institutions, drought governance, SDG 15.3, land-degradation neutrality, the 2026 International Year of Rangelands and Pastoralists, and India\u2019s first guide to grasslands and other open natural ecosystems.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "The seventeenth session of the Conference of the Parties to the United Nations Convention to Combat Desertification (UNCCD COP17) opened in Ulaanbaatar, Mongolia, on 17 August 2026. The conference is scheduled to continue until 28 August under the theme \u201cRestoring Land. Restoring Hope.\u201d Its agenda covers land restoration, drought resilience, rangelands, pastoralists, food systems, finance and the implementation of the Convention.\n\nOn the opening day, India launched its first **Guide to Grasslands and Other Open Natural Ecosystems of India** at an official COP17 side event. The Guide covers grasslands, savannas, deserts, scrublands, rocky plateaus, ravines and related open landscapes, together with their biodiversity, ecological functions and connections to pastoral and other livelihoods. It is a scientific and policy resource, not a new statute or treaty amendment. COP17\u2019s final negotiated decisions were still pending at the verification cut-off; the completed developments recorded here are the opening of the conference and the publication of India\u2019s Guide.",
+    "keyMilestones": [
+      {
+        "date": "1977",
+        "event": "The United Nations Conference on Desertification was held in Nairobi and placed desertification on the international agenda."
+      },
+      {
+        "date": "1992",
+        "event": "The Rio Earth Summit recommended negotiation of a convention to combat desertification; the UNCCD became one of the three Rio Conventions alongside the UNFCCC and the Convention on Biological Diversity."
+      },
+      {
+        "date": "17 June 1994",
+        "event": "The UNCCD was adopted in Paris."
+      },
+      {
+        "date": "17 December 1996",
+        "event": "India deposited its instrument of ratification."
+      },
+      {
+        "date": "26 December 1996",
+        "event": "The Convention entered into force internationally."
+      },
+      {
+        "date": "17 March 1997",
+        "event": "The Convention entered into force for India."
+      },
+      {
+        "date": "2015",
+        "event": "The UN Sustainable Development Goals included Target 15.3, which calls for combating desertification, restoring degraded land and soil, and striving for a land-degradation-neutral world by 2030."
+      },
+      {
+        "date": "15 March 2022",
+        "event": "The UN General Assembly adopted Resolution 76/253 without a vote, declaring 2026 the International Year of Rangelands and Pastoralists."
+      },
+      {
+        "date": "2\u201313 December 2024",
+        "event": "UNCCD COP16 met in Riyadh; Parties adopted decisions on drought, land tenure, rangelands and pastoralists but left further work on a global drought instrument for the next cycle."
+      },
+      {
+        "date": "17 August 2026",
+        "event": "COP17 opened in Ulaanbaatar, and India launched its first Guide to Grasslands and Other Open Natural Ecosystems."
+      },
+      {
+        "date": "28 August 2026",
+        "event": "Scheduled closing date for COP17; final decisions must be verified separately after adoption."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Legally binding Convention",
+        "desc": "Legally binding Convention governs The UNCCD binds its Parties under international law. Article 2 focuses on combating desertification and mitigating drought through integrated, long-term strategies and international cooperation."
+      },
+      {
+        "article": "General obligations",
+        "desc": "General obligations governs Article 4 calls for integrated approaches, international cooperation and coordination of financial and institutional mechanisms. More detailed implementation also occurs through national programmes and COP decisions."
+      },
+      {
+        "article": "COP decisions versus treaty amendments",
+        "desc": "COP decisions versus treaty amendments governs A COP decision may guide implementation under the Convention, but it is not automatically a textual amendment to the treaty. Draft language, agenda items and side-event publications are not adopted COP outcomes."
+      },
+      {
+        "article": "Drought-instrument question",
+        "desc": "Drought-instrument question governs COP17 draft text contains bracketed alternatives concerning a possible global framework or protocol and whether a future instrument should be legally binding. No settled legal form existed at the cut-off."
+      },
+      {
+        "article": "Article 253 of the Constitution of India",
+        "desc": "Article 253 of the Constitution of India governs Parliament may make laws to implement treaties, international agreements and decisions made at international conferences. Treaty participation does not by itself answer which domestic measure is required in every case."
+      },
+      {
+        "article": "Article 48A",
+        "desc": "Article 48A governs This Directive Principle directs the State to protect and improve the environment and safeguard forests and wildlife."
+      },
+      {
+        "article": "Article 51A(g)",
+        "desc": "Article 51A(g) governs Citizens have a fundamental duty to protect and improve the natural environment and to have compassion for living creatures."
+      },
+      {
+        "article": "Status of India\u2019s Guide",
+        "desc": "Status of India\u2019s Guide governs The Guide is a scientific and policy resource. It does not itself amend the Environment (Protection) Act, change land title, create a protected area, or impose a directly enforceable prohibition."
+      },
+      {
+        "article": "fact-9",
+        "desc": "Three Rio Conventions: The UNCCD, the UN Framework Convention on Climate Change (UNFCCC), and the Convention on Biological Diversity (CBD) emerged from the 1992 Rio process."
+      },
+      {
+        "article": "fact-10",
+        "desc": "Parties: The UNCCD has 197 Parties\u2014196 country Parties plus the European Union."
+      },
+      {
+        "article": "fact-11",
+        "desc": "Headquarters: The UNCCD Secretariat is in Bonn, Germany."
+      },
+      {
+        "article": "fact-12",
+        "desc": "COP17 host and theme: Ulaanbaatar, Mongolia; \u201cRestoring Land. Restoring Hope.\u201d"
+      },
+      {
+        "article": "fact-13",
+        "desc": "Land-degradation neutrality: SDG Target 15.3 seeks a world in which the amount and quality of land resources needed to support ecosystems and food security remain stable or increase by 2030."
+      },
+      {
+        "article": "fact-14",
+        "desc": "Open Natural Ecosystems: Naturally open landscapes include grasslands, savannas, deserts, scrublands, rocky plateaus and ravines. Absence of dense tree cover does not by itself make them degraded land."
+      },
+      {
+        "article": "fact-15",
+        "desc": "Rangelands and pastoralism: Rangelands support grazing and mobile or semi-mobile livestock systems; pastoral communities may depend on seasonal access and ecological knowledge."
+      },
+      {
+        "article": "fact-16",
+        "desc": "International Year: UN General Assembly Resolution 76/253 declared 2026 the International Year of Rangelands and Pastoralists."
+      }
+    ],
+    "examTraps": [
+      "Do not call every open landscape degraded or equate the UNCCD with the UNFCCC.",
+      "Do not treat a draft as an adopted COP decision or describe India\u2019s Guide as a binding statute."
+    ],
+    "memoryTip": "\u201cLand, drought, livelihoods\u201417 in Ulaanbaatar; 15.3 for neutrality.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-07",
+    "topic": "International relations and defence",
+    "category": "Indo-Pacific, maritime security, defence technology and the Quad",
+    "title": "India\u2013Japan Maritime Security Cooperation",
+    "subtitle": "The new maritime cooperation arrangement connects India\u2013Japan relations, the Quad, freedom of navigation, joint naval capability, executive agreements and the rules-based Indo-Pacific.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 20 August 2026, Indian Defence Minister Rajnath Singh and Japanese Defence Minister Shinjiro Koizumi met in New Delhi and signed a **Memorandum of Arrangement on Maritime Security Cooperation**. Their joint statement called for deeper defence cooperation in support of a free and open Indo-Pacific.\n\nThe two sides identified naval visits and exercises, training and personnel exchanges, logistics, maritime-domain cooperation and defence equipment and technology as fields for implementation. They also agreed to explore cooperation in naval shipbuilding and design by combining Japanese technology with Indian production capability. The arrangement strengthens an existing partnership; it is not a mutual-defence treaty, a military alliance or a declaration of war against any third country.",
+    "keyMilestones": [
+      {
+        "date": "28 April 1952",
+        "event": "India and Japan established diplomatic relations through a bilateral peace treaty."
+      },
+      {
+        "date": "2000",
+        "event": "The relationship became a Global Partnership."
+      },
+      {
+        "date": "2006",
+        "event": "It was upgraded to a Strategic and Global Partnership."
+      },
+      {
+        "date": "2008",
+        "event": "The countries issued their Joint Declaration on Security Cooperation."
+      },
+      {
+        "date": "2012",
+        "event": "The first bilateral Japan\u2013India Maritime Exercise, JIMEX, was held."
+      },
+      {
+        "date": "2014",
+        "event": "The partnership was upgraded to a Special Strategic and Global Partnership."
+      },
+      {
+        "date": "2020\u20132021",
+        "event": "The countries signed and brought into force their Acquisition and Cross-Servicing Agreement for reciprocal logistics support."
+      },
+      {
+        "date": "29 August 2025",
+        "event": "India and Japan issued an updated Joint Declaration on Security Cooperation."
+      },
+      {
+        "date": "2 July 2026",
+        "event": "Their annual summit advanced defence technology, economic security and maritime cooperation."
+      },
+      {
+        "date": "20 August 2026",
+        "event": "The defence ministers signed the Memorandum of Arrangement on Maritime Security Cooperation in New Delhi."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Executive arrangement",
+        "desc": "Executive arrangement governs A Memorandum of Arrangement records agreed cooperation between governments. Its legal effect depends on its language and domestic law; it should not automatically be described as a ratified treaty or parliamentary statute."
+      },
+      {
+        "article": "Article 73",
+        "desc": "Article 73 governs The Union\u2019s executive power generally extends to matters on which Parliament can legislate, including defence and foreign affairs."
+      },
+      {
+        "article": "Article 253",
+        "desc": "Article 253 governs Parliament may legislate to implement treaties, international agreements and decisions made at international conferences."
+      },
+      {
+        "article": "Union List",
+        "desc": "Union List governs Defence, armed forces, foreign affairs and diplomatic relations fall within Union competence."
+      },
+      {
+        "article": "UNCLOS",
+        "desc": "UNCLOS governs Both countries support navigation and a rules-based maritime order, subject to rights and duties under the law of the sea."
+      },
+      {
+        "article": "No collective-defence clause established",
+        "desc": "No collective-defence clause established governs The arrangement does not create a NATO-style obligation that an attack on one is an attack on the other."
+      },
+      {
+        "article": "Quad status",
+        "desc": "Quad status governs The Quad is not founded on a collective-defence treaty and has no supranational legislature or permanent military command."
+      },
+      {
+        "article": "fact-8",
+        "desc": "Quad members: India, Japan, Australia and the United States."
+      },
+      {
+        "article": "fact-9",
+        "desc": "JIMEX: Bilateral maritime exercise between the Indian Navy and Japan Maritime Self-Defense Force."
+      },
+      {
+        "article": "fact-10",
+        "desc": "Malabar: Naval exercise involving the four Quad countries; it began as an India\u2013US exercise."
+      },
+      {
+        "article": "fact-11",
+        "desc": "Indian Ocean and Pacific Ocean: The term Indo-Pacific links two connected maritime theatres through crucial sea lanes."
+      },
+      {
+        "article": "fact-12",
+        "desc": "UNCLOS: Adopted in 1982 and in force from 1994; it sets rules for territorial seas, exclusive economic zones and the high seas."
+      },
+      {
+        "article": "fact-13",
+        "desc": "Territorial sea: Generally extends up to 12 nautical miles from the baseline."
+      },
+      {
+        "article": "fact-14",
+        "desc": "Exclusive Economic Zone: Generally extends up to 200 nautical miles, subject to UNCLOS rules."
+      }
+    ],
+    "examTraps": [
+      "A Memorandum of Arrangement is not automatically a parliamentary statute.",
+      "\u201cFree and open Indo-Pacific\u201d does not transfer national military command to the Quad."
+    ],
+    "memoryTip": "\u201cJIMEX joins Japan and India; Quad adds Australia and America.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-05",
+    "topic": "Supreme Court and social justice law",
+    "category": "sex selection, special statutory procedure, investigation and criminal cognisance",
+    "title": "PC-PNDT Act Investigation and Cognisance",
+    "subtitle": "The Supreme Court clarified the distinct roles of the Appropriate Authority, police and magistrate under a social-welfare penal statute, linking statutory interpretation, cognisance, investigation and protection against sex selection.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 20 August 2026, the Supreme Court delivered its judgment in **State of Uttar Pradesh v. Brij Pal Singh**, 2026 INSC 901. It held that police cannot register an FIR and independently investigate offences created only by the Pre-Conception and Pre-Natal Diagnostic Techniques (Prohibition of Sex Selection) Act, 1994 (PC-PNDT Act).\n\nThe Act assigns investigation to the statutory **Appropriate Authority**, and Section 28 permits a court to take cognisance only on a complaint by the Appropriate Authority, an authorised officer or an eligible person or organisation after statutory notice. A police chargesheet cannot become the foundation for cognisance of a PC-PNDT-only offence. Police may nevertheless investigate independent IPC or BNS offences and may provide supplementary operational assistance under the Appropriate Authority\u2019s supervision.",
+    "keyMilestones": [
+      {
+        "date": "1994",
+        "event": "Parliament enacted the Pre-Natal Diagnostic Techniques Act."
+      },
+      {
+        "date": "1 January 1996",
+        "event": "The central enactment came into force."
+      },
+      {
+        "date": "2002\u20132003",
+        "event": "Parliament amended the law to cover pre-conception sex selection; the amended title became the PC-PNDT Act."
+      },
+      {
+        "date": "2014",
+        "event": "Rule 18A was inserted to standardise monitoring and enforcement, including the instruction to avoid police involvement as far as possible for PC-PNDT enforcement."
+      },
+      {
+        "date": "2025",
+        "event": "The Supreme Court granted leave in the appeal arising from prosecution in Uttar Pradesh."
+      },
+      {
+        "date": "20 August 2026",
+        "event": "In 2026 INSC 901, the Supreme Court clarified the exclusive statutory route for investigating PC-PNDT offences and taking cognisance."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Special law controls its procedure",
+        "desc": "Special law controls its procedure governs When Parliament assigns investigation and prosecution to a designated authority, the general police process cannot override that special design."
+      },
+      {
+        "article": "Section 17(4)",
+        "desc": "Section 17(4) governs The Appropriate Authority investigates complaints, takes immediate action, searches and seizes records and pursues legal proceedings."
+      },
+      {
+        "article": "Rule 18A(3)(iv)",
+        "desc": "Rule 18A(3)(iv) governs Police involvement is to be avoided as far as possible for implementing the Act; police retain their ordinary role for independent offences under other laws."
+      },
+      {
+        "article": "Section 28 cognisance bar",
+        "desc": "Section 28 cognisance bar governs A court may take cognisance only on the specified statutory complaints. A police report is not one of them."
+      },
+      {
+        "article": "Two procedural tracks",
+        "desc": "Two procedural tracks governs The same facts may disclose both PC-PNDT offences and separate IPC/BNS offences. The Appropriate Authority handles the former; police may investigate the latter."
+      },
+      {
+        "article": "Supplementary assistance",
+        "desc": "Supplementary assistance governs Police can support the Appropriate Authority with security, tracing persons, digital or forensic help and preservation of evidence, without assuming statutory control."
+      },
+      {
+        "article": "Constitutional context",
+        "desc": "Constitutional context governs The Act advances equality and dignity by combating sex selection and the systemic devaluation of girls, while criminal procedure remains governed by enacted safeguards."
+      },
+      {
+        "article": "fact-8",
+        "desc": "Full form: PC-PNDT means Pre-Conception and Pre-Natal Diagnostic Techniques (Prohibition of Sex Selection)."
+      },
+      {
+        "article": "fact-9",
+        "desc": "Purpose: Regulation of prenatal diagnostic techniques and prohibition of their misuse for sex selection or disclosure of fetal sex."
+      },
+      {
+        "article": "fact-10",
+        "desc": "Article 14: Equality before law and equal protection of laws."
+      },
+      {
+        "article": "fact-11",
+        "desc": "Article 15(1): Prohibits State discrimination on specified grounds including sex; Article 15(3) permits special provisions for women and children."
+      },
+      {
+        "article": "fact-12",
+        "desc": "Article 21: Protects life and personal liberty, including dignity under constitutional jurisprudence."
+      },
+      {
+        "article": "fact-13",
+        "desc": "Cognisance: The judicial act of taking notice of an alleged offence for proceeding according to law; it is distinct from investigation."
+      },
+      {
+        "article": "fact-14",
+        "desc": "Special versus general law: A specific statutory procedure ordinarily prevails over a general procedure for the field it expressly occupies."
+      }
+    ],
+    "examTraps": [
+      "The judgment did not legalise sex determination or weaken registration and record duties.",
+      "It did not prohibit police from investigating every offence arising from the same incident."
+    ],
+    "memoryTip": "\u201c17 investigates; 28 opens the court gate.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-06",
+    "topic": "Supreme Court and social justice law",
+    "category": "atrocities law, statutory ingredients, cognisance and quashing",
+    "title": "SC/ST Act and the \u201cPublic View\u201d Requirement",
+    "subtitle": "The judgment offers a clean passage on statutory ingredients, \u201cpublic view,\u201d prima facie review at cognisance, anti-caste legislation and the difference between a public place and a place within public view.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 20 August 2026, the Supreme Court delivered **Ramkrishna Chauhan v. State of Uttar Pradesh**, 2026 INSC 895. It quashed proceedings against a school manager under Sections 3(1)(r) and 3(1)(s) of the Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act, 1989.\n\nThe alleged incident occurred inside an enclosed school room with no window or public access. The FIR and witness statements did not attribute a specific caste-based utterance to the appellant or establish that a member of the public witnessed or heard it. The Court held that the statutory ingredient \u201cin any place within public view\u201d was not prima facie satisfied. Proceedings for the remaining IPC offences were allowed to continue.",
+    "keyMilestones": [
+      {
+        "date": "1989",
+        "event": "Parliament enacted the SC/ST (Prevention of Atrocities) Act."
+      },
+      {
+        "date": "30 January 1990",
+        "event": "The Act came into force."
+      },
+      {
+        "date": "2015\u20132016",
+        "event": "Parliament\u2019s amendment expanded and reorganised the list of atrocities, including the present clauses (r) and (s)."
+      },
+      {
+        "date": "2020",
+        "event": "In Hitesh Verma, the Supreme Court explained the \u201cpublic view\u201d ingredient in the context of alleged insult inside a building."
+      },
+      {
+        "date": "25 January 2020",
+        "event": "The FIR underlying Ramkrishna Chauhan was registered after a school dispute."
+      },
+      {
+        "date": "10 April 2023",
+        "event": "The Allahabad High Court declined to interfere with the summoning order."
+      },
+      {
+        "date": "20 August 2026",
+        "event": "The Supreme Court quashed only the SC/ST Act proceedings against the appellant while preserving the IPC proceedings."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Essential ingredients",
+        "desc": "Essential ingredients governs Even at the prima facie stage, the FIR, chargesheet and supporting material must disclose the basic elements of the alleged statutory offence."
+      },
+      {
+        "article": "\u201cPublic view\u201d",
+        "desc": "\u201cPublic view\u201d governs Members of the public must be able to witness or hear the alleged utterance. A location does not qualify merely because it sits within a school or other premises generally associated with public activity."
+      },
+      {
+        "article": "Public place versus public view",
+        "desc": "Public place versus public view governs The statutory phrase focuses on visibility or audibility to the public, not simply ownership or classification of the location."
+      },
+      {
+        "article": "Specific allegation",
+        "desc": "Specific allegation governs The Court also noted the absence of any specific caste-based words attributed to the appellant in the FIR or the complainant\u2019s statement."
+      },
+      {
+        "article": "Limited quashing",
+        "desc": "Limited quashing governs The ruling removed the SC/ST Act counts because their ingredients were absent; it did not adjudicate guilt on the surviving IPC allegations."
+      },
+      {
+        "article": "Constitutional setting",
+        "desc": "Constitutional setting governs Articles 17, 46, 338 and 338A reflect the constitutional commitment against untouchability and caste oppression. That objective coexists with the criminal-law requirement that every statutory ingredient be disclosed."
+      },
+      {
+        "article": "fact-7",
+        "desc": "Article 17: Abolishes untouchability and forbids its practice in any form."
+      },
+      {
+        "article": "fact-8",
+        "desc": "Article 46: Directs the State to promote the educational and economic interests of weaker sections, especially SCs and STs, and protect them from social injustice and exploitation."
+      },
+      {
+        "article": "fact-9",
+        "desc": "Article 338: Provides for the National Commission for Scheduled Castes."
+      },
+      {
+        "article": "fact-10",
+        "desc": "Article 338A: Provides for the National Commission for Scheduled Tribes."
+      },
+      {
+        "article": "fact-11",
+        "desc": "Special Courts: The 1989 Act provides for Exclusive Special Courts or Special Courts for speedy trial."
+      },
+      {
+        "article": "fact-12",
+        "desc": "Scheduled Castes and Tribes: Constitutional specification operates principally through Articles 341 and 342."
+      }
+    ],
+    "examTraps": [
+      "A public institution is not automatically \u201cwithin public view\u201d in every interior room.",
+      "The judgment did not dilute the Act where all statutory ingredients are properly alleged."
+    ],
+    "memoryTip": "\u201cPublic view asks who could see or hear.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-04",
+    "topic": "Supreme Court and criminal law",
+    "category": "defined offences, penal statutes, Article 20(1) and gang-control legislation",
+    "title": "UP Gangsters Act and the Principle of Legality",
+    "subtitle": "The Supreme Court connected a state gang-control statute with Article 20(1), the maxim nullum crimen nulla poena sine lege, strict construction of penal laws and the distinction between defining a person and defining an offence.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 20 August 2026, the Supreme Court delivered its judgment in **Shiv Pratap Singh alias Chinu v. State of Uttar Pradesh**, 2026 INSC 894. It quashed proceedings initiated against the appellants under Sections 2 and 3 of the Uttar Pradesh Gangsters and Anti-Social Activities (Prevention) Act, 1986.\n\nThe Court held that the Act defines a \u201cgang\u201d and a \u201cgangster\u201d but does not create a distinct substantive offence whose commission attracts the punishment in Section 3. A gang chart or earlier criminal case could not fill that legislative gap. The Court described the proceedings as legally unsustainable because criminal punishment requires a pre-existing, clearly defined offence. It expressly left the constitutional validity of the Act open and clarified that proceedings under other penal laws were unaffected.",
+    "keyMilestones": [
+      {
+        "date": "1986",
+        "event": "Uttar Pradesh enacted the Gangsters and Anti-Social Activities (Prevention) Act."
+      },
+      {
+        "date": "2014\u20132018",
+        "event": "The underlying criminal cases and gang charts relied upon against the appellants arose during this period."
+      },
+      {
+        "date": "2024\u20132025",
+        "event": "The Allahabad High Court declined to interfere with the Gangsters Act proceedings challenged by the appellants."
+      },
+      {
+        "date": "20 August 2026",
+        "event": "The Supreme Court allowed the appeals and quashed the proceedings under Sections 2 and 3 of the Act."
+      },
+      {
+        "date": "After the judgment",
+        "event": "Independent proceedings for offences under other penal enactments remain governed by those enactments; the Court did not invalidate the 1986 Act as a whole."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Article 20(1)",
+        "desc": "Article 20(1) governs No person may be convicted except for violating a law in force at the time of the charged act, nor receive a greater penalty than the one then prescribed."
+      },
+      {
+        "article": "Principle of legality",
+        "desc": "Principle of legality governs *Nullum crimen sine lege* means no crime without law; *nulla poena sine lege* means no punishment without law. The prohibited conduct and sanction must have a legislative basis."
+      },
+      {
+        "article": "Strict construction",
+        "desc": "Strict construction governs Penal statutes are construed strictly. Courts cannot cure the absence of an offence by implication, analogy or administrative practice."
+      },
+      {
+        "article": "Definition versus offence",
+        "desc": "Definition versus offence governs Defining \u201cgang\u201d and \u201cgangster\u201d identifies categories, but a criminal statute must also make specified conduct an offence. A status label is not by itself a complete actus reus."
+      },
+      {
+        "article": "Gang charts",
+        "desc": "Gang charts governs A gang chart may organise allegations or prior cases; it cannot substitute for the legislature\u2019s duty to define criminal conduct."
+      },
+      {
+        "article": "Limited holding",
+        "desc": "Limited holding governs The Court quashed the proceedings before it. It did not rule on the Act\u2019s overall constitutional validity and did not erase prosecutions under the IPC or other valid laws."
+      },
+      {
+        "article": "fact-7",
+        "desc": "Article 20 protections: Article 20 contains protection against ex post facto criminal laws, double jeopardy and compelled self-incrimination."
+      },
+      {
+        "article": "fact-8",
+        "desc": "Seventh Schedule: \u201cPublic order\u201d and \u201cpolice\u201d are State List subjects, while criminal law and criminal procedure are principally in the Concurrent List, subject to constitutional distribution rules."
+      },
+      {
+        "article": "fact-9",
+        "desc": "Actus reus and mens rea: Criminal responsibility ordinarily requires a prohibited act and the legally required mental element, though statutes may vary."
+      },
+      {
+        "article": "fact-10",
+        "desc": "Rule of law: Citizens must be able to know in advance what conduct attracts criminal liability; executive discretion cannot replace enacted law."
+      },
+      {
+        "article": "fact-11",
+        "desc": "Judicial review: Article 136 enables the Supreme Court, in its discretion, to grant special leave to appeal from judgments and orders of courts and tribunals."
+      }
+    ],
+    "examTraps": [
+      "The Court did not hold that every gang-control law is unconstitutional.",
+      "Quashing Gangsters Act proceedings did not automatically quash valid charges under other laws."
+    ],
+    "memoryTip": "\u201cDefine the deed before punishing the person.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-09",
+    "topic": "Supreme Court and legal profession",
+    "category": "professional ethics, legal privilege, Advocates Act and Bharatiya Sakshya Adhiniyam",
+    "title": "Advocate-Client Confidentiality and Professional Misconduct",
+    "subtitle": "A Supreme Court ruling clarifies that an advocate's duty not to publicise confidential client information survives the end of the engagement and even an adversarial breakdown, while preserving the statutory crime-or-fraud exceptions.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 21 August 2026, the Supreme Court in **Rehana Khan v. Rizwan Siddiquee, 2026 INSC 907** upheld the Bar Council of India's order suspending an advocate from practice for two years. The Court held that professional confidence does not disappear merely because the lawyer-client relationship ends or the former client and advocate become adversaries.\n\nThe advocate had disclosed alleged client communications through media interactions after a dispute. The Court distinguished lawful self-defence from public disclosure: a lawyer who is falsely accused may approach investigating authorities, produce material in a proper legal proceeding and pursue remedies such as defamation, but cannot use television or other public platforms to reveal privileged or confidential communications. It dismissed cross-appeals by both sides and, because of their conduct in the litigation, directed each side to pay \u20b95 lakh to the Supreme Court Legal Services Committee.",
+    "keyMilestones": [
+      {
+        "date": "1961",
+        "event": "Parliament enacts the Advocates Act, creating the statutory disciplinary framework for advocates and Bar Councils."
+      },
+      {
+        "date": "1975",
+        "event": "The Bar Council of India Rules codify standards of professional conduct and etiquette, including duties owed to clients."
+      },
+      {
+        "date": "1 July 2024",
+        "event": "The Bharatiya Sakshya Adhiniyam, 2023 replaces the Indian Evidence Act; Section 132 carries forward the rule on professional communications."
+      },
+      {
+        "date": "Before August 2026",
+        "event": "The Bar Council of India finds professional misconduct and imposes a two-year suspension."
+      },
+      {
+        "date": "21 August 2026",
+        "event": "The Supreme Court dismisses both sides' appeals and affirms that confidentiality survives termination and hostility between lawyer and former client."
+      }
+    ],
+    "keyArticles": [],
+    "examTraps": [],
+    "memoryTip": "**132 stays after you** \u2014 Section 132 survives the end of the lawyer-client relationship."
+  },
+  {
+    "id": "qcard-ca-AUG-08",
+    "topic": "Supreme Court and judicial administration",
+    "category": "judicial service, entry-level recruitment, court training and Article 234",
+    "title": "Civil Judge Recruitment and the One-Year Practice Rule",
+    "subtitle": "The Supreme Court replaced the restored three-year practice condition for entry-level judicial service with a phased one-year rule and a compulsory training-plus-clerkship structure, linking a current judgment to Articles 233-237 and the history of judicial-service reform.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 21 August 2026, a three-judge Bench of the Supreme Court in **Bhumika Trust v. Union of India, 2026 INSC 904** modified the entry conditions for recruitment as Civil Judge (Junior Division). The majority, speaking through Chief Justice Surya Kant with Justice Augustine George Masih, reduced the minimum pre-recruitment practice requirement from three years to one year and created a transition regime. Justice K. Vinod Chandran dissented.\n\nFor recruitment processes notified between 20 May 2025 and 31 March 2027, eligible law graduates may apply without producing a practice certificate. A selected candidate is to be treated as a trainee judicial officer and must complete one year at the State Judicial Academy followed by a structured one-year clerkship: six months with the District/Higher Judiciary and six months with a sitting High Court judge. For recruitment notifications issued on or after 1 April 2027, a candidate must first complete one year of actual practice before undergoing the same training and clerkship. The Court directed State Governments and High Courts to amend their rules within three months and said the scheme may be reviewed after five years.",
+    "keyMilestones": [
+      {
+        "date": "1993",
+        "event": "The Supreme Court in the first All India Judges' Association decision supports three years' practice for entry-level judicial appointments."
+      },
+      {
+        "date": "2002",
+        "event": "The Court removes the practice requirement following the Shetty Commission process, allowing fresh law graduates to compete."
+      },
+      {
+        "date": "20 May 2025",
+        "event": "The Supreme Court prospectively restores a three-year minimum practice condition."
+      },
+      {
+        "date": "20 May 2025-31 March 2027",
+        "event": "The 2026 judgment treats this as the transition window; applicants need no practice certificate but selected candidates must complete the two-stage training structure."
+      },
+      {
+        "date": "21 August 2026",
+        "event": "Bhumika Trust v. Union of India reduces the future pre-entry requirement to one year by a 2:1 majority."
+      },
+      {
+        "date": "From 1 April 2027",
+        "event": "New recruitment notifications must require one year of actual practice, followed by one year at a Judicial Academy and one year of structured clerkship."
+      },
+      {
+        "date": "By 21 November 2026",
+        "event": "State Governments and High Courts are expected to align their recruitment rules within the Court's three-month period."
+      }
+    ],
+    "keyArticles": [],
+    "examTraps": [],
+    "memoryTip": "**1-1-1 after 2027** \u2014 one practice year, one academy year, one clerkship year."
+  },
+  {
+    "id": "qcard-ca-AUG-10",
+    "topic": "Economy and industrial policy",
+    "category": "electronics manufacturing, production incentives, domestic value addition and supply chains",
+    "title": "Mobile Phone Manufacturing Scheme",
+    "subtitle": "The notified \u20b962,500 crore scheme succeeds the large-scale electronics PLI and connects industrial policy, domestic brands, value addition, fiscal incentives and global supply-chain strategy.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 21 August 2026, the Union Government notified the **Mobile Phone Manufacturing Scheme (MPMS)**, following Cabinet approval on 15 July 2026. The five-year scheme runs from FY 2026-27 to FY 2030-31 with a total outlay of **\u20b962,500 crore**. It succeeds the Production Linked Incentive Scheme for Large Scale Electronics Manufacturing, whose scheduled period ended on 31 March 2026.\n\nMPMS offers incentives linked to incremental eligible sales. The approved structure provides a base incentive ranging from **2.25% to 5%**, an additional incentive of up to **1.5%** for domestic sourcing of specified components, and an additional **3%** for eligible Indian-brand expenditure on design and research and development. The Government projects production of about **\u20b939 lakh crore** over five years and around **60,000 direct jobs**. These are policy targets, not guaranteed outcomes.",
+    "keyMilestones": [
+      {
+        "date": "April 2020",
+        "event": "The Union Government notifies the PLI Scheme for Large Scale Electronics Manufacturing."
+      },
+      {
+        "date": "2020-2026",
+        "event": "The PLI period supports expansion in mobile-phone production and exports."
+      },
+      {
+        "date": "31 March 2026",
+        "event": "The scheduled large-scale electronics PLI period ends."
+      },
+      {
+        "date": "15 July 2026",
+        "event": "The Union Cabinet approves MPMS with a \u20b962,500 crore outlay."
+      },
+      {
+        "date": "21 August 2026",
+        "event": "The Government notifies the scheme for operation from FY 2026-27."
+      },
+      {
+        "date": "FY 2030-31",
+        "event": "Final financial year of the five-year MPMS period."
+      }
+    ],
+    "keyArticles": [],
+    "examTraps": [],
+    "memoryTip": "**Phone 5-39-60** \u2014 five years, \u20b939 lakh crore projected production, 60,000 projected direct jobs."
+  },
+  {
+    "id": "qcard-ca-AUG-11",
+    "topic": "Environment and ecology",
+    "category": "Biological Diversity Act, genetic resources, local benefit claimers and Nagoya Protocol",
+    "title": "Biodiversity Access and Benefit-Sharing",
+    "subtitle": "The National Biodiversity Authority's in-window disbursal gives a concrete application of Section 21 of the Biological Diversity Act and connects genetic resources, federal institutions, community rights, the CBD, Nagoya Protocol and global biodiversity targets.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 22 August 2026, the National Biodiversity Authority announced the disbursal of **\u20b92.82 crore** under India's access and benefit-sharing (ABS) mechanism. Of this, **\u20b92.80 crore** was released to 27 State Biodiversity Boards and three Union Territory Biodiversity Councils. The underlying payment came from Advanta Enterprises Limited, formerly UPL Limited, for use of genetic resources associated with 24 hybrids: eight cauliflower, five hot-pepper, five okra and six tomato hybrids.\n\nBecause the specific places from which the biological resources were accessed and the individual benefit claimers could not be identified, the amount was distributed among the State and Union Territory institutions on the basis described by the Authority. A further **\u20b92.01 lakh** was released to ICAR-Indian Institute of Horticultural Research, Karnataka, in relation to two microbial strains used by Sumitomo Chemical India Limited. The release said total ABS disbursals had crossed **\u20b9185 crore**.",
+    "keyMilestones": [
+      {
+        "date": "1992",
+        "event": "The Convention on Biological Diversity is opened for signature at the Rio Earth Summit."
+      },
+      {
+        "date": "2002",
+        "event": "Parliament enacts the Biological Diversity Act."
+      },
+      {
+        "date": "2003",
+        "event": "The National Biodiversity Authority is established in Chennai."
+      },
+      {
+        "date": "29 October 2010",
+        "event": "The Nagoya Protocol on ABS is adopted in Nagoya, Japan."
+      },
+      {
+        "date": "12 October 2014",
+        "event": "The Nagoya Protocol enters into force internationally."
+      },
+      {
+        "date": "2014",
+        "event": "India issues national ABS guidelines under the Biological Diversity Act."
+      },
+      {
+        "date": "1 April 2024",
+        "event": "The Biological Diversity (Amendment) Act, 2023 comes into force."
+      },
+      {
+        "date": "2025",
+        "event": "Updated Biological Diversity Rules and ABS Regulations take effect."
+      },
+      {
+        "date": "22 August 2026",
+        "event": "NBA announces the \u20b92.82 crore disbursal and reports cumulative releases above \u20b9185 crore."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Section 21, Biological Diversity Act",
+        "desc": "Section 21, Biological Diversity Act governs Requires the NBA, while granting relevant approval, to secure fair and equitable sharing of benefits on mutually agreed terms between the applicant and the BMC represented by the NBA."
+      },
+      {
+        "article": "Federal and local design",
+        "desc": "Federal and local design governs NBA, SBBs and BMCs distribute authority across national, State and local institutions. A People\u2019s Biodiversity Register records local biological resources and knowledge but does not itself transfer ownership of every recorded item."
+      }
+    ],
+    "examTraps": [],
+    "memoryTip": "**Access, Agree, Allocate** \u2014 lawful access, mutually agreed terms, fair allocation."
+  },
+  {
+    "id": "qcard-ca-CONT-07",
+    "topic": "International affairs",
+    "category": "Disaster cooperation, shared rivers and neighbourhood diplomacy",
+    "title": "India\u2013Nepal Relations",
+    "subtitle": "The August 2026 flash-flood response connects India\u2013Nepal relations with shared Himalayan river systems, disaster management, federal coordination, consular protection and humanitarian assistance.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 26 August 2026, a destructive flash flood in northern Nepal prompted a coordinated Indian response. The Union Home Ministry said the Centre was monitoring the situation with the Ministries of External Affairs, Jal Shakti and Defence; the Home Minister spoke with the Chief Ministers of Bihar and Uttar Pradesh; administrations and rescue teams, including the NDRF, were placed on alert in potentially affected Indian border areas; and the Embassy of India in Kathmandu issued emergency contacts for Indian nationals. Independent reporting confirmed downstream alerts in Bihar and Uttar Pradesh and India's readiness to assist Nepal. The cause and casualty totals were still evolving at the verification cutoff, so this dossier records the settled governmental response rather than provisional figures.",
+    "keyMilestones": [
+      {
+        "date": "1950",
+        "event": "India and Nepal signed the Treaty of Peace and Friendship, a foundational instrument in their modern bilateral relationship."
+      },
+      {
+        "date": "2005",
+        "event": "Parliament enacted the Disaster Management Act, providing India's institutional framework for disaster management."
+      },
+      {
+        "date": "2008",
+        "event": "India and Nepal established a three-tier bilateral mechanism for water resources and flood-management issues."
+      },
+      {
+        "date": "2023",
+        "event": "India's MEA annual report recorded the Joint Committee on Inundation and Flood Management as a forum for bilateral flood and inundation discussions."
+      },
+      {
+        "date": "26 August 2026",
+        "event": "The Nepal flash flood triggered downstream alerts and inter-ministerial monitoring in India."
+      },
+      {
+        "date": "26 August 2026",
+        "event": "Bihar and Uttar Pradesh were advised to remain alert; rescue teams and the NDRF were placed on standby in vulnerable border areas."
+      },
+      {
+        "date": "26 August 2026",
+        "event": "The Embassy of India in Kathmandu activated emergency contacts for affected Indian nationals, while India indicated readiness to assist Nepal."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Article 51(c) of the Constitution",
+        "desc": "Article 51(c) of the Constitution governs Directs the State to foster respect for international law and treaty obligations."
+      },
+      {
+        "article": "Article 253 of the Constitution",
+        "desc": "Article 253 of the Constitution governs Empowers Parliament to legislate for implementing treaties, agreements and international decisions."
+      },
+      {
+        "article": "Union List Entry 10",
+        "desc": "Union List Entry 10 governs Places foreign affairs and relations with foreign countries within Parliament's domain."
+      },
+      {
+        "article": "Union List Entry 14",
+        "desc": "Union List Entry 14 governs Covers entering into treaties and agreements and implementing them."
+      },
+      {
+        "article": "State List Entries 17 and 18",
+        "desc": "State List Entries 17 and 18 governs Cover water, irrigation, canals and land, subject to constitutional limits including Union power over inter-State rivers."
+      },
+      {
+        "article": "Article 262 and Union List Entry 56",
+        "desc": "Article 262 and Union List Entry 56 governs Concern adjudication and regulation of inter-State rivers within India; they are not, by themselves, a treaty framework for a river shared with Nepal."
+      },
+      {
+        "article": "Disaster Management Act, 2005",
+        "desc": "Disaster Management Act, 2005 governs Establishes national, state and district disaster-management authorities and provides for coordinated response measures."
+      },
+      {
+        "article": "Consular protection",
+        "desc": "Consular protection governs The Embassy's assistance facilitates communication and evacuation but does not displace Nepal's territorial jurisdiction."
+      },
+      {
+        "article": "fact-9",
+        "desc": "Nepal: A landlocked Himalayan country; its capital is Kathmandu."
+      },
+      {
+        "article": "fact-10",
+        "desc": "Open border: Indian and Nepali citizens have a distinctive mobility relationship shaped by bilateral practice and the 1950 treaty."
+      },
+      {
+        "article": "fact-11",
+        "desc": "Gandak system: The Gandak, known upstream as the Narayani, carries Himalayan waters from Nepal into Uttar Pradesh and Bihar."
+      },
+      {
+        "article": "fact-12",
+        "desc": "Kosi system: Another major transboundary river system linking Nepal's catchments with Bihar."
+      },
+      {
+        "article": "fact-13",
+        "desc": "NDRF: A specialised force constituted under the Disaster Management Act, 2005."
+      },
+      {
+        "article": "fact-14",
+        "desc": "Central Water Commission: A technical organisation under the Union Ministry of Jal Shakti dealing with water resources, including flood forecasting."
+      },
+      {
+        "article": "fact-15",
+        "desc": "Non-refoulement is unrelated here: Consular evacuation after a disaster must not be confused with refugee-law protection against forced return."
+      }
+    ],
+    "examTraps": [
+      "Do not use provisional casualty totals or present an unsettled cause as established.",
+      "Do not confuse assistance to Nepal with a unilateral right to operate inside Nepal.",
+      "Do not treat Article 262 as the constitutional basis for every international river arrangement."
+    ],
+    "memoryTip": "\u201cRiver, Response, Relations: CWC, NDRF, Embassy.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-12",
+    "topic": "International affairs",
+    "category": "Human-rights treaties, equality and treaty-body monitoring",
+    "title": "India\u2019s ICERD Review and CERD Concluding Observations",
+    "subtitle": "India's first CERD dialogue since 2007 connects a UN human-rights treaty with Articles 14-17, caste and descent, citizenship, refugee protection, electoral rolls, treaty monitoring and the legal status of non-binding recommendations.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 25 August 2026, the UN Committee on the Elimination of Racial Discrimination closed its 118th session after adopting concluding observations on India under the International Convention on the Elimination of All Forms of Racial Discrimination (ICERD). The review covered India's combined twentieth and twenty-first periodic reports and followed a public dialogue on 11-12 August\u2014India's first such dialogue since 2007. The Committee recorded concerns and recommendations concerning discrimination, alleged law-enforcement abuses, hate speech, treatment of Rohingya and Bengali-speaking Muslims, the Assam National Register of Citizens and reported effects of electoral-roll revision. On 26 August, India rejected what it described as politically motivated and malicious references, disputed sweeping generalisations and an expanded reading of the Convention's mandate, reaffirmed its constitutional safeguards and said it would respond through the established procedure. The Committee's observations are authoritative treaty-monitoring recommendations, not a judgment of an international court.",
+    "keyMilestones": [
+      {
+        "date": "21 December 1965",
+        "event": "The UN General Assembly adopted ICERD through Resolution 2106 (XX)."
+      },
+      {
+        "date": "2 March 1967",
+        "event": "India signed ICERD."
+      },
+      {
+        "date": "3 December 1968",
+        "event": "India ratified ICERD."
+      },
+      {
+        "date": "4 January 1969",
+        "event": "ICERD entered into force internationally."
+      },
+      {
+        "date": "2002",
+        "event": "CERD adopted General Recommendation No. 29 on descent-based discrimination."
+      },
+      {
+        "date": "2007",
+        "event": "CERD completed its previous periodic review of India."
+      },
+      {
+        "date": "2023",
+        "event": "India submitted its combined twentieth and twenty-first periodic reports."
+      },
+      {
+        "date": "11-12 August 2026",
+        "event": "CERD held its public dialogue with India's inter-ministerial delegation."
+      },
+      {
+        "date": "25 August 2026",
+        "event": "CERD adopted and published concluding observations on India at the close of its 118th session."
+      },
+      {
+        "date": "26 August 2026",
+        "event": "India publicly rejected contested references while stating that it would use the established response procedure."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Article 1 of ICERD",
+        "desc": "Article 1 of ICERD governs Defines racial discrimination in terms of race, colour, descent, or national or ethnic origin."
+      },
+      {
+        "article": "Article 2 of ICERD",
+        "desc": "Article 2 of ICERD governs Requires States parties to pursue a policy of eliminating racial discrimination."
+      },
+      {
+        "article": "Article 4 of ICERD",
+        "desc": "Article 4 of ICERD governs Addresses propaganda and organisations based on ideas of racial superiority or hatred, subject to the Convention's terms."
+      },
+      {
+        "article": "Article 5 of ICERD",
+        "desc": "Article 5 of ICERD governs Requires equality before the law in the enjoyment of specified civil, political, economic, social and cultural rights."
+      },
+      {
+        "article": "Article 9 of ICERD",
+        "desc": "Article 9 of ICERD governs Establishes periodic State reporting and Committee review."
+      },
+      {
+        "article": "Articles 14 and 15 of the Constitution",
+        "desc": "Articles 14 and 15 of the Constitution governs Guarantee equality before law and prohibit specified forms of discrimination, while permitting constitutionally authorised affirmative action."
+      },
+      {
+        "article": "Articles 16 and 17 of the Constitution",
+        "desc": "Articles 16 and 17 of the Constitution governs Concern equality of public opportunity and abolish untouchability."
+      },
+      {
+        "article": "Article 21 of the Constitution",
+        "desc": "Article 21 of the Constitution governs Protects life and personal liberty through procedure established by law."
+      },
+      {
+        "article": "Article 46 of the Constitution",
+        "desc": "Article 46 of the Constitution governs Directs the State to promote the educational and economic interests of Scheduled Castes, Scheduled Tribes and weaker sections and protect them from social injustice and exploitation."
+      },
+      {
+        "article": "Article 324 and the Representation of the People Act, 1950",
+        "desc": "Article 324 and the Representation of the People Act, 1950 governs Govern Election Commission supervision and electoral-roll preparation; a treaty-body recommendation does not itself amend an electoral roll."
+      },
+      {
+        "article": "Article 253 of the Constitution",
+        "desc": "Article 253 of the Constitution governs Empowers Parliament to legislate for treaty implementation; ICERD recommendations do not automatically create a new Indian offence or invalidate a statute."
+      },
+      {
+        "article": "Non-refoulement",
+        "desc": "Non-refoulement governs A principle against returning a person to a place of serious danger; India is not party to the 1951 Refugee Convention, but other international and domestic legal arguments may still be raised."
+      },
+      {
+        "article": "fact-13",
+        "desc": "ICERD: One of the core UN human-rights treaties, adopted in 1965."
+      },
+      {
+        "article": "fact-14",
+        "desc": "CERD: The treaty body, not the treaty itself and not a court; it comprises 18 independent experts."
+      },
+      {
+        "article": "fact-15",
+        "desc": "Concluding observations: Findings and recommendations issued after a periodic review; they guide compliance but are not court decrees."
+      },
+      {
+        "article": "fact-16",
+        "desc": "State report: A government's account of measures taken to implement a treaty."
+      },
+      {
+        "article": "fact-17",
+        "desc": "General recommendation: A treaty body's interpretation of Convention provisions; it is not a treaty amendment."
+      },
+      {
+        "article": "fact-18",
+        "desc": "NRC: A citizenship register distinct from an electoral roll."
+      },
+      {
+        "article": "fact-19",
+        "desc": "Electoral roll: A list of eligible voters prepared under election law; inclusion does not by itself conclusively determine citizenship for every legal purpose."
+      },
+      {
+        "article": "fact-20",
+        "desc": "Geneva: The Swiss city hosting the UN human-rights treaty-body system; Switzerland's capital is Bern."
+      }
+    ],
+    "examTraps": [
+      "Do not call CERD an international court or its observations a binding judgment.",
+      "Do not say India's objection withdrew it from ICERD.",
+      "Do not confuse the NRC, citizenship determination and electoral rolls."
+    ],
+    "memoryTip": "\u201cTreaty binds; Committee finds; domestic law decides effect.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-14",
+    "topic": "National affairs",
+    "category": "Export controls, defence manufacturing and strategic trade",
+    "title": "Defence Export OGEL and SCOMET Reforms",
+    "subtitle": "The 2026 defence-export reforms link the Foreign Trade framework, SCOMET controls, UN arms embargoes, end-use safeguards, India\u2019s Wassenaar Arrangement membership and the balance between ease of business and national-security regulation.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 28 August 2026, the Department of Defence Production announced a revised Defence Export Standard Operating Procedure and a unified Open General Export Licence (OGEL) framework. Three existing OGEL procedures\u2014for major platforms and equipment, parts and components, and intra-company transfer of technology\u2014were consolidated. Standard validity increased from two to three years, and geographic coverage expanded from 41 countries to all destinations except negative or sensitive countries and those subject to United Nations Security Council sanctions or arms embargoes. The reforms also removed routine stakeholder consultation for most non-lethal exports and for items sent to international tenders or exhibitions, created a route linked to long-term contracts with foreign original equipment manufacturers and broadened eligible items. The change reduces repeat paperwork; it does not authorise unrestricted export of every weapon, technology or destination.",
+    "keyMilestones": [
+      {
+        "date": "1992",
+        "event": "Parliament enacted the Foreign Trade (Development and Regulation) Act."
+      },
+      {
+        "date": "1996",
+        "event": "The Wassenaar Arrangement began operation."
+      },
+      {
+        "date": "2017",
+        "event": "India became a participating State in the Wassenaar Arrangement."
+      },
+      {
+        "date": "2019",
+        "event": "India introduced defence OGELs for specified items and destinations."
+      },
+      {
+        "date": "2022-2024",
+        "event": "The Department of Defence Production expanded and streamlined OGEL and defence-export procedures; coverage reached 41 Wassenaar participating countries."
+      },
+      {
+        "date": "FY 2025-26",
+        "event": "India reported defence production of \u20b91.78 lakh crore and defence exports of \u20b938,424 crore."
+      },
+      {
+        "date": "27-28 August 2026",
+        "event": "The Department issued and publicly announced the unified OGEL and revised Defence Export SOP."
+      },
+      {
+        "date": "After reform",
+        "event": "Eligible exporters may use the broader framework only after satisfying the applicable licence, documentation, end-use, inspection and reporting conditions."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Foreign Trade (Development and Regulation) Act, 1992",
+        "desc": "Foreign Trade (Development and Regulation) Act, 1992 governs Provides the domestic legal foundation for regulating exports and authorisations."
+      },
+      {
+        "article": "Foreign Trade Policy and SCOMET list",
+        "desc": "Foreign Trade Policy and SCOMET list governs Identify controlled goods, software and technology; defence and munitions items are principally addressed in Category 6."
+      },
+      {
+        "article": "Customs Act, 1962",
+        "desc": "Customs Act, 1962 governs Supports border enforcement and penalties for prohibited or improperly declared exports."
+      },
+      {
+        "article": "Weapons of Mass Destruction and their Delivery Systems (Prohibition of Unlawful Activities) Act, 2005",
+        "desc": "Weapons of Mass Destruction and their Delivery Systems (Prohibition of Unlawful Activities) Act, 2005 governs Regulates prohibited WMD-related activity and strengthens strategic-trade controls."
+      },
+      {
+        "article": "Article 51(c) of the Constitution",
+        "desc": "Article 51(c) of the Constitution governs Directs the State to foster respect for international law and treaty obligations."
+      },
+      {
+        "article": "Article 253",
+        "desc": "Article 253 governs Empowers Parliament to legislate for implementing treaties and international decisions."
+      },
+      {
+        "article": "Article 246 read with Union List Entries 1 and 41",
+        "desc": "Article 246 read with Union List Entries 1 and 41 governs Defence and trade with foreign countries fall within the Union legislative field."
+      },
+      {
+        "article": "UN Security Council decisions",
+        "desc": "UN Security Council decisions governs Under Article 25 of the UN Charter, UN members agree to carry out Security Council decisions; sanctioned or embargoed destinations remain excluded."
+      },
+      {
+        "article": "End-use controls",
+        "desc": "End-use controls governs Licences may require verified end users, non-diversion undertakings, records, inspection and retransfer restrictions."
+      },
+      {
+        "article": "Administrative simplification",
+        "desc": "Administrative simplification governs Dispensing with stakeholder consultation in defined cases shortens procedure but does not legalise a transaction barred by statute, sanctions or licence conditions."
+      },
+      {
+        "article": "fact-11",
+        "desc": "SCOMET: India's list of controlled dual-use and military goods, software and technologies."
+      },
+      {
+        "article": "fact-12",
+        "desc": "Category 6: The SCOMET munitions list."
+      },
+      {
+        "article": "fact-13",
+        "desc": "OGEL: A one-time standing authorisation for multiple eligible consignments; not a universal exemption."
+      },
+      {
+        "article": "fact-14",
+        "desc": "EUC: End-User Certificate, used to establish the intended recipient and purpose and reduce diversion risk."
+      },
+      {
+        "article": "fact-15",
+        "desc": "IEC: Importer Exporter Code required for participation in India's trade system."
+      },
+      {
+        "article": "fact-16",
+        "desc": "Wassenaar Arrangement: Established in 1996; Secretariat in Vienna; India joined in 2017."
+      },
+      {
+        "article": "fact-17",
+        "desc": "UN arms embargo: A Security Council restriction on transfers of arms to specified targets or destinations."
+      },
+      {
+        "article": "fact-18",
+        "desc": "FOEM: Foreign Original Equipment Manufacturer."
+      }
+    ],
+    "examTraps": [],
+    "memoryTip": "\u201cOne licence, many shipments, continuing controls.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-13",
+    "topic": "International affairs",
+    "category": "India\u2013US defence cooperation, arms transfers and military modernisation",
+    "title": "India\u2013US Javelin Missile Acquisition and Foreign Military Sales",
+    "subtitle": "The signed Javelin Letter of Offer and Acceptance connects India\u2013US strategic relations with the government-to-government Foreign Military Sales process, legislative oversight of public expenditure, arms-transfer controls, indigenous defence production and the distinction between a notified ceiling and final contract terms.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 28 August 2026, the Indian Army signed a Letter of Offer and Acceptance (LOA) to acquire the Javelin anti-tank guided missile system through the United States Foreign Military Sales (FMS) process. The U.S. Mission in India described the LOA as a government-to-government agreement and said that it could lead to future industrial collaboration. The current official announcement did not disclose the final price, quantity or delivery schedule. A November 2025 U.S. congressional notification had described a *possible* package of 100 Javelin rounds, one fly-to-buy missile, 25 command launch units and support at a maximum estimated value of US$45.7 million. That earlier ceiling is useful background but is not proof of the final 2026 contract terms. Co-production also remains a possibility for future discussion, not a term established by the public announcement.",
+    "keyMilestones": [
+      {
+        "date": "2009",
+        "event": "Indian soldiers used Javelin during Exercise Yudh Abhyas; acquisition discussions followed."
+      },
+      {
+        "date": "2016",
+        "event": "The United States recognised India as a Major Defense Partner."
+      },
+      {
+        "date": "February 2025",
+        "event": "India and the United States publicly signalled plans to pursue Javelin procurement and co-production discussions."
+      },
+      {
+        "date": "19 November 2025",
+        "event": "The U.S. Defense Security Cooperation Agency notified Congress of a possible Javelin sale to India, with a maximum estimated value of US$45.7 million."
+      },
+      {
+        "date": "October 2025",
+        "event": "India and the United States signed a ten-year framework for their major defence partnership."
+      },
+      {
+        "date": "28 August 2026",
+        "event": "The Indian Army signed the Javelin LOA through the FMS route; the U.S. Mission announced the milestone."
+      },
+      {
+        "date": "After acceptance",
+        "event": "Case implementation, contracting, financial milestones, logistics and delivery remain separate stages."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Articles 53 and 73 of the Constitution of India",
+        "desc": "Articles 53 and 73 of the Constitution of India governs Union executive power is exercised in the President's name and extends to matters on which Parliament may legislate, including defence."
+      },
+      {
+        "article": "Article 246 read with Union List Entry 1",
+        "desc": "Article 246 read with Union List Entry 1 governs Defence of India and the armed forces fall within Parliament's exclusive legislative field."
+      },
+      {
+        "article": "Articles 112-114",
+        "desc": "Articles 112-114 governs Defence expenditure remains subject to the annual financial statement, parliamentary grants and appropriation from the Consolidated Fund of India."
+      },
+      {
+        "article": "Article 149",
+        "desc": "Article 149 governs The Comptroller and Auditor General's duties support audit accountability for public expenditure."
+      },
+      {
+        "article": "Arms Export Control Act, United States",
+        "desc": "Arms Export Control Act, United States governs Authorises and regulates FMS; DSCA identifies the LOA as the legal instrument for the government-to-government transfer."
+      },
+      {
+        "article": "Congressional notification",
+        "desc": "Congressional notification governs A proposed maximum quantity and value notified before a sale is not the same thing as the final accepted quantity and price."
+      },
+      {
+        "article": "End-use and retransfer controls",
+        "desc": "End-use and retransfer controls governs FMS articles remain subject to agreed use, security and transfer conditions."
+      },
+      {
+        "article": "Co-production",
+        "desc": "Co-production governs A diplomatic statement that a purchase \u201copens the door\u201d to co-production does not itself create a manufacturing licence, transfer technology or place production in India."
+      },
+      {
+        "article": "fact-9",
+        "desc": "FMS versus Direct Commercial Sales: FMS is government-to-government; a direct commercial sale is negotiated with a company but requires relevant export authorisation."
+      },
+      {
+        "article": "fact-10",
+        "desc": "LOA: Letter of Offer and Acceptance\u2014the government-to-government agreement used in an FMS case."
+      },
+      {
+        "article": "fact-11",
+        "desc": "LOR: Letter of Request\u2014the foreign partner's request that begins the formal FMS process."
+      },
+      {
+        "article": "fact-12",
+        "desc": "DSCA: A U.S. Department of Defense agency that administers security-cooperation programmes."
+      },
+      {
+        "article": "fact-13",
+        "desc": "Javelin: A fire-and-forget anti-tank guided missile with reusable command launch equipment and disposable missile rounds."
+      },
+      {
+        "article": "fact-14",
+        "desc": "Top attack: A flight profile intended to strike the relatively less protected upper surface of an armoured vehicle."
+      },
+      {
+        "article": "fact-15",
+        "desc": "Major Defense Partner: A U.S. designation granted to India in 2016; it is not a mutual-defence treaty."
+      },
+      {
+        "article": "fact-16",
+        "desc": "Induction: Entry into operational service; signing an LOA precedes delivery and induction."
+      }
+    ],
+    "examTraps": [],
+    "memoryTip": "\u201cRequest, Review, Offer, Accept, Implement.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-15",
+    "topic": "Legal and constitutional affairs",
+    "category": "federal jurisdiction",
+    "title": "Article 12 \u201cState\u201d and Article 131 Original Jurisdiction",
+    "subtitle": "The Supreme Court drew an exam-ready distinction between the enlarged definition of \u201cState\u201d in Article 12 and the constituent States that alone can invoke Article 131.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "In Lucknow Development Authority v. Union of India, 2026 INSC 923, the Supreme Court held that a statutory authority cannot invoke the Court's original jurisdiction under Article 131. The Allahabad High Court had dismissed a long-pending writ petition by the Lucknow Development Authority (LDA), reasoning that the land dispute involved the Union and a State and should be taken directly to the Supreme Court. The Supreme Court set that order aside and remitted the writ petition to the High Court for an expeditious merits decision.\n\nThe Court stressed that LDA may fall within the broad expression \u201cthe State\u201d in Article 12 for fundamental-rights scrutiny, but it is not a constituent \u201cState\u201d named in the First Schedule. Article 131 uses the latter, narrower meaning. The judgment was delivered on 21 August 2026 and published on the Supreme Court's latest-judgments page on 29 August 2026.",
+    "keyMilestones": [
+      {
+        "date": "1973",
+        "event": "Uttar Pradesh enacted the law under which LDA was constituted."
+      },
+      {
+        "date": "Around 2000\u20132001",
+        "event": "LDA instituted the writ proceedings that later remained pending for roughly twenty-five years."
+      },
+      {
+        "date": "25 March 2026",
+        "event": "The Allahabad High Court dismissed the petition with liberty to invoke Article 131."
+      },
+      {
+        "date": "21 August 2026",
+        "event": "The Supreme Court allowed LDA's appeal and restored the writ petition."
+      },
+      {
+        "date": "29 August 2026",
+        "event": "Reportable judgment 2026 INSC 923 appeared on the Supreme Court's latest-judgments page."
+      }
+    ],
+    "keyArticles": [],
+    "examTraps": [
+      "Do not say the Court resolved title or that all Article 12 bodies can sue under Article 131."
+    ],
+    "memoryTip": "\u201c12 tests authorities; 131 settles federation parties.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-16",
+    "topic": "Legal and constitutional affairs",
+    "category": "property and administrative law",
+    "title": "Bona Fide Land-Title Disputes and Limits on Summary Eviction",
+    "subtitle": "The Supreme Court reaffirmed that the executive cannot decide a genuine, long-standing title dispute through summary eviction proceedings and must seek adjudication by a competent court.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "In M/s Circar Paper Mills Ltd. v. District Collector, Nellore District, 2026 INSC 924, the Supreme Court held that the State could not use summary proceedings to evict occupants where ownership was genuinely disputed. The State claimed land associated with a paper mill was government-assigned land; the competing private claim relied on a decades-long chain of registered transactions, revenue entries, industrial possession, liquidation proceedings, and a court-supervised auction.\n\nThe Court restored the Company Judge's auction order and the purchaser's possession, while reviving connected writ proceedings so rival claims could be adjudicated in the proper forum. It applied Government of Andhra Pradesh v. Thummala Krishna Rao, which says summary eviction is unsuitable for bona fide title disputes. The judgment was delivered on 25 August and published on 29 August 2026.",
+    "keyMilestones": [
+      {
+        "date": "1920s onward",
+        "event": "Documents relied on by private parties began the asserted title and possession chain."
+      },
+      {
+        "date": "1980",
+        "event": "Circar Paper Mills purchased land and operated an industrial unit."
+      },
+      {
+        "date": "2001",
+        "event": "The Official Liquidator took possession during winding-up proceedings."
+      },
+      {
+        "date": "2004\u20132005",
+        "event": "The Company Court approved the auction and sale."
+      },
+      {
+        "date": "2010",
+        "event": "Proceedings that ultimately reached the Supreme Court were instituted."
+      },
+      {
+        "date": "25 August 2026",
+        "event": "The Supreme Court delivered 2026 INSC 924."
+      },
+      {
+        "date": "29 August 2026",
+        "event": "The judgment appeared on the latest-judgments page."
+      }
+    ],
+    "keyArticles": [],
+    "examTraps": [
+      "Neither long possession nor a judicial auction was declared an automatic source of indefeasible title."
+    ],
+    "memoryTip": "\u201cReal title fight? Summary route is not right.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-17",
+    "topic": "International relations",
+    "category": "Central Asia, strategic partnerships, trade, connectivity and executive agreements",
+    "title": "India\u2013Uzbekistan Comprehensive Strategic Partnership",
+    "subtitle": "The 2026 partnership upgrade links India's Central Asia policy, executive agreements, trade and connectivity, critical minerals, digital payments, multilateral institutions and the constitutional distribution of foreign-affairs powers.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 30 August 2026, Prime Minister Narendra Modi and Uzbek President Shavkat Mirziyoyev elevated India\u2013Uzbekistan relations from a **Strategic Partnership** to a **Comprehensive Strategic Partnership** during talks in Tashkent. The two sides set a target of raising bilateral trade to **US$5 billion by 2030**, agreed to create a Foreign Ministers-led implementation mechanism and decided to upgrade their Intergovernmental Commission to the ministerial level.\n\nThe official outcomes list records **11 MoUs, agreements and cooperation programmes**. They cover culture, conservation of the Buddhist sites of Fayaz Tepa and Kara Tepa, archives, Ayurveda and traditional medicine, geology and mineral resources, tourism, diplomatic training, economic and financial dialogue, environmental protection, higher education and scientific research, and a Gujarat\u2013Samarkand regional partnership.\n\nFive further announcements included a **US$1 million grant** for ecological rehabilitation in the Aral Sea region, 100 Lal Bahadur Shastri Hindi scholarships, an ICCR Sanskrit Chair in Tashkent and a commercial arrangement enabling Indian UPI apps to scan Uzbekistan's UZQR merchant-payment codes. The package is a completed diplomatic outcome, but it is not a military alliance, a concluded preferential trade agreement or a transfer of legislative power to either government.",
+    "keyMilestones": [
+      {
+        "date": "18 March 1992",
+        "event": "India and Uzbekistan established diplomatic relations."
+      },
+      {
+        "date": "2011",
+        "event": "The two countries declared a Strategic Partnership."
+      },
+      {
+        "date": "2012",
+        "event": "India announced its Connect Central Asia policy."
+      },
+      {
+        "date": "July 2015",
+        "event": "Narendra Modi made a bilateral visit to Uzbekistan during a tour of all five Central Asian republics."
+      },
+      {
+        "date": "27 January 2022",
+        "event": "India hosted the first India\u2013Central Asia Summit in virtual format."
+      },
+      {
+        "date": "April 2026",
+        "event": "The latest edition of the bilateral military exercise Dustlik was held in Uzbekistan's Namangan Region."
+      },
+      {
+        "date": "29\u201330 August 2026",
+        "event": "Modi paid a State Visit to Uzbekistan."
+      },
+      {
+        "date": "30 August 2026",
+        "event": "The leaders elevated ties to a Comprehensive Strategic Partnership, issued a joint statement and announced the cooperation package."
+      },
+      {
+        "date": "By 2030",
+        "event": "The two governments aim to raise bilateral trade to US$5 billion; this is a target, not a guaranteed result."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Article 73 of the Constitution",
+        "desc": "Article 73 of the Constitution governs The Union executive power extends to matters on which Parliament may legislate and to rights exercisable by the Government of India under a treaty or agreement, subject to constitutional limits."
+      },
+      {
+        "article": "Article 253",
+        "desc": "Article 253 governs Parliament may enact laws to implement treaties, agreements, conventions and international decisions, including beyond the ordinary federal distribution of subjects."
+      },
+      {
+        "article": "Union List",
+        "desc": "Union List governs Foreign affairs, diplomatic representation, treaties and agreements, defence and participation in international organisations fall within Union competence."
+      },
+      {
+        "article": "Article 51(c)",
+        "desc": "Article 51(c) governs A Directive Principle asks the State to foster respect for international law and treaty obligations."
+      },
+      {
+        "article": "Political label versus enforceable rule",
+        "desc": "Political label versus enforceable rule governs \u201cComprehensive Strategic Partnership\u201d describes the level and breadth of bilateral cooperation. The label does not itself create a domestic statute, a supranational authority or private legal rights."
+      },
+      {
+        "article": "MoUs and agreements",
+        "desc": "MoUs and agreements governs Their precise legal effect depends on their text, intent and any domestic implementation required. The outcomes list alone does not prove that every instrument is a treaty requiring the same form of implementation."
+      },
+      {
+        "article": "No concluded trade pact",
+        "desc": "No concluded trade pact governs The leaders directed ministries to explore next steps after a joint feasibility study on a preferential trade agreement. That direction is not itself a PTA or tariff concession."
+      },
+      {
+        "article": "No collective-defence clause",
+        "desc": "No collective-defence clause governs Security cooperation, intelligence sharing and Exercise Dustlik do not create a NATO-style obligation to enter a war for the other party."
+      },
+      {
+        "article": "fact-9",
+        "desc": "Central Asian republics: Kazakhstan, the Kyrgyz Republic, Tajikistan, Turkmenistan and Uzbekistan."
+      },
+      {
+        "article": "fact-10",
+        "desc": "Capital of Uzbekistan: Tashkent."
+      },
+      {
+        "article": "fact-11",
+        "desc": "Uzbekistan's neighbours: Kazakhstan, the Kyrgyz Republic, Tajikistan, Afghanistan and Turkmenistan."
+      },
+      {
+        "article": "fact-12",
+        "desc": "SCO: Founded in 2001; its permanent Secretariat is in Beijing and its Regional Anti-Terrorist Structure is in Tashkent."
+      },
+      {
+        "article": "fact-13",
+        "desc": "Dustlik: India\u2013Uzbekistan joint military exercise; \u201cDustlik\u201d means friendship."
+      },
+      {
+        "article": "fact-14",
+        "desc": "Tashkent Declaration: Signed in January 1966 after the 1965 India\u2013Pakistan War; Prime Minister Lal Bahadur Shastri died in Tashkent shortly afterwards."
+      },
+      {
+        "article": "fact-15",
+        "desc": "Aral Sea: An endorheic lake between Kazakhstan and Uzbekistan whose severe shrinkage is a major environmental issue."
+      },
+      {
+        "article": "fact-16",
+        "desc": "UPI: India's instant retail-payment system operated by the National Payments Corporation of India; the announced arrangement concerns merchant QR interoperability in Uzbekistan."
+      }
+    ],
+    "examTraps": [],
+    "memoryTip": "\u201cTashkent ties: trade, time-bound talks, technology and terrain.\u201d"
+  },
+  {
+    "id": "qcard-ca-AUG-18",
+    "topic": "Polity and environment",
+    "category": "cooperative federalism, inter-State rivers, Bihar Reorganisation Act and water governance",
+    "title": "Bihar\u2013Jharkhand Sone River Water Agreement",
+    "subtitle": "The 31 August 2026 agreement ended a 25-year allocation dispute and links Article 262, Parliament's river-dispute law, the Bihar Reorganisation Act, zonal councils, basin geography and cooperative federalism.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 31 August 2026, Bihar and Jharkhand signed a memorandum of understanding in New Delhi to settle their long-running dispute over the share of Sone River water inherited from undivided Bihar. The agreement was signed in the presence of Union Home Minister Amit Shah, Bihar Chief Minister Samrat Choudhary, Jharkhand Chief Minister Hemant Soren and Union Jal Shakti Minister C. R. Patil. The Union government described it as ending a 25-year dispute and enabling irrigation, drinking-water and regional development benefits.\n\nIndependent reports state that undivided Bihar's 7.75 million acre-feet allocation under the 1973 Bansagar Agreement is now divided as 5.75 MAF for Bihar and 2.00 MAF for Jharkhand. The official press release confirms the settlement and signing but does not reproduce the full MoU text or those detailed allocation clauses; the figures should therefore be attributed to the corroborating reports unless the MoU is later published.",
+    "keyMilestones": [
+      {
+        "date": "16 September 1973",
+        "event": "Madhya Pradesh, Uttar Pradesh and undivided Bihar concluded the Bansagar Agreement for sharing Sone waters."
+      },
+      {
+        "date": "15 November 2000",
+        "event": "Jharkhand was created under the Bihar Reorganisation Act, 2000, creating the need to divide undivided Bihar's water share and project interests."
+      },
+      {
+        "date": "December 2018",
+        "event": "Bihar submitted a preliminary project report for the Indrapuri reservoir project to the Central Water Commission."
+      },
+      {
+        "date": "March 2022",
+        "event": "The Central Water Commission returned the report pending resolution of the allocation and co-basin State no-objection issues."
+      },
+      {
+        "date": "10 July 2024",
+        "event": "The dispute was discussed at the Standing Committee of the Eastern Zonal Council."
+      },
+      {
+        "date": "31 August 2026",
+        "event": "Bihar and Jharkhand signed the MoU in New Delhi; the Union government announced that the 25-year dispute had been settled."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Article 262",
+        "desc": "Article 262 governs Parliament may provide for adjudication of disputes over an inter-State river or river valley and may exclude court jurisdiction in such disputes."
+      },
+      {
+        "article": "Inter-State River Water Disputes Act, 1956",
+        "desc": "Inter-State River Water Disputes Act, 1956 governs Provides the statutory tribunal route when negotiation fails and the statutory conditions are met. This MoU is a negotiated settlement, not a tribunal award."
+      },
+      {
+        "article": "Bihar Reorganisation Act, 2000",
+        "desc": "Bihar Reorganisation Act, 2000 governs Sections 78\u201382 address rights, liabilities and arrangements concerning water-resource projects after reorganisation, including Union directions and possible management structures."
+      },
+      {
+        "article": "Entry 17, State List",
+        "desc": "Entry 17, State List governs Water, irrigation and canals are ordinarily State subjects, subject to Entry 56 of the Union List."
+      },
+      {
+        "article": "Entry 56, Union List",
+        "desc": "Entry 56, Union List governs Parliament may regulate and develop inter-State rivers and river valleys to the extent declared expedient in the public interest."
+      },
+      {
+        "article": "Cooperative federalism",
+        "desc": "Cooperative federalism governs The settlement illustrates executive negotiation among States with Union facilitation. It does not amend Article 262 or replace the statutory tribunal system for other disputes."
+      },
+      {
+        "article": "Agreement versus adjudication",
+        "desc": "Agreement versus adjudication governs A consensual MoU draws authority from agreement and applicable statutes; it is legally distinct from a judicial judgment or an inter-State river tribunal award."
+      },
+      {
+        "article": "fact-8",
+        "desc": "Sone River: Rises near the Amarkantak plateau and flows north-east through central and eastern India before joining the Ganga near Patna."
+      },
+      {
+        "article": "fact-9",
+        "desc": "River classification: The Sone is a right-bank tributary of the Ganga."
+      },
+      {
+        "article": "fact-10",
+        "desc": "Bansagar Dam: Built on the Sone in Madhya Pradesh and named after the Sanskrit scholar Bana Bhatt."
+      },
+      {
+        "article": "fact-11",
+        "desc": "Successor States: Jharkhand became India's 28th State on 15 November 2000."
+      },
+      {
+        "article": "fact-12",
+        "desc": "Zonal Councils: Statutory bodies established under the States Reorganisation Act, 1956; the Union Home Minister is their common Chairperson."
+      },
+      {
+        "article": "fact-13",
+        "desc": "MAF: One million acre-feet is a volume measure equal to about 1.233 billion cubic metres."
+      }
+    ],
+    "examTraps": [],
+    "memoryTip": "\u201c7.75 becomes 5.75 + 2; 262 keeps the legal route.\u201d"
+  },
+  {
+    "id": "qcard-ca-SEP-01",
+    "topic": "Supreme Court and civil procedure",
+    "category": "CPC Sections 13 and 44A, execution, corporate veil and contempt",
+    "title": "Foreign Decrees, Asset Security and Contempt Undertakings",
+    "subtitle": "The Supreme Court linked foreign-decree execution under Section 44A CPC with comity, asset-preservation orders, corporate separateness and the strict test for treating a statement as a contempt undertaking.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 1 September 2026, the Supreme Court decided **Ras Al Khaimah Investment Authority v. Matrix Pharmacorp Private Limited**, 2026 INSC 932. The litigation arose from efforts by Ras Al Khaimah Investment Authority (RAKIA) to execute in India a decree obtained in the United Arab Emirates.\n\nThe Court upheld the finding that a statement in a counter-affidavit\u2014recording that a company had then decided not to make an acquisition\u2014was not an unconditional undertaking whose breach would support contempt. At the same time, it directed the respondents jointly and severally to provide an additional **\u20b9200 crore security** within two weeks. It left the issues of a unified family-controlled structure and lifting the corporate veil to the executing Commercial Courts at Hyderabad and Ranga Reddy, which were directed to decide the execution proceedings within four months.",
+    "keyMilestones": [],
+    "keyArticles": [],
+    "examTraps": [],
+    "memoryTip": "Focus recall on key legal terms."
+  },
+  {
+    "id": "qcard-ca-SEP-02",
+    "topic": "Supreme Court and tax law",
+    "category": "Finance Act 1979, delayed remittance, administrative discretion and fair appellate procedure",
+    "title": "Foreign Travel Tax Penalty and No Reformatio in Peius",
+    "subtitle": "The Supreme Court distinguished failure to pay tax from delayed remittance, rejected automatic penalty and applied no reformatio in peius as a principle of fair procedure and natural justice.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "On 1 September 2026, the Supreme Court decided **M/s Saudi Arabian Airlines v. Union of India**, 2026 INSC 933. The airline had collected the now-discontinued Foreign Travel Tax (FTT) but deposited it late on six occasions. Authorities treated the delay as failure to pay under Section 38(3) of the Finance Act, 1979 and ultimately increased an original \u20b912,000 penalty to \u20b971,29,140 after remand.\n\nThe Court held that delayed deposit fell under **Section 38(4)** read with Rules 4 and 9 of the Foreign Travel Tax Rules, 1979, not Section 38(3). Penalty was discretionary rather than automatic, and the authorities had overlooked explanations that could support condonation. It set aside the penalty, ordered refund of any amount paid with **9% annual interest within three months**, and discharged the bank guarantee.",
+    "keyMilestones": [],
+    "keyArticles": [],
+    "examTraps": [],
+    "memoryTip": "Focus recall on key legal terms."
+  },
+  {
+    "id": "qcard-ca-JUN-10",
+    "topic": "International relations",
+    "category": "Eurasian security, regional institutions and the Bishkek Declaration",
+    "title": "SCO Summit",
+    "subtitle": "The 26th SCO summit combined terrorism, regional connectivity, Afghanistan, institutional reform and India-led initiatives in a high-yield international-organisation setting.",
+    "badge": "Feeder Dossier",
+    "color": "#FF6B5E",
+    "readTime": "3 min read",
+    "summary": "The **26th Shanghai Cooperation Organisation Council of Heads of State** met in Bishkek, Kyrgyz Republic, from 31 August to 1 September 2026, during the SCO's twenty-fifth anniversary year. Leaders adopted the **Bishkek Declaration**, four memoranda of understanding and more than twenty decisions and statements.\n\nIndia identified thirteen principal outcomes, including an SCO Universal Centre for Countering Security Threats, anti-narcotics cooperation to 2030, and cooperation on energy, disaster management, artificial intelligence, climate, nuclear safety and information. Prime Minister Narendra Modi framed India's approach through **Security, Connectivity and Opportunity**, opposed double standards on terrorism, and said connectivity must respect sovereignty and territorial integrity. India also proposed English as an official language under the SCO Charter and advanced forums for civilisational dialogue, young scientists and young authors.",
+    "keyMilestones": [
+      {
+        "date": "1996",
+        "event": "China, Kazakhstan, Kyrgyzstan, Russia and Tajikistan formed the Shanghai Five."
+      },
+      {
+        "date": "15 June 2001",
+        "event": "The SCO was established in Shanghai with Uzbekistan as the sixth founding member."
+      },
+      {
+        "date": "2002\u20132004",
+        "event": "The Charter was signed, entered into force, and the Secretariat and RATS became operational."
+      },
+      {
+        "date": "2017",
+        "event": "India and Pakistan joined as full members."
+      },
+      {
+        "date": "2023\u20132024",
+        "event": "Iran and then Belarus became full members."
+      },
+      {
+        "date": "31 August\u20131 September 2026",
+        "event": "The 26th Council of Heads of State adopted the Bishkek Declaration and an institutional package."
+      }
+    ],
+    "keyArticles": [
+      {
+        "article": "Treaty practice",
+        "desc": "Treaty practice governs Summit declarations and MoUs ordinarily express political commitments; domestic legal effect depends on their text and implementation through national law."
+      },
+      {
+        "article": "Article 51",
+        "desc": "Article 51 governs Directs the State to promote international peace, maintain just relations and foster respect for international law and treaty obligations."
+      },
+      {
+        "article": "Article 253",
+        "desc": "Article 253 governs Empowers Parliament to legislate for implementing treaties, agreements, conventions and decisions made at international conferences."
+      },
+      {
+        "article": "Domestic safeguards",
+        "desc": "Domestic safeguards governs SCO security cooperation does not displace the Constitution or Indian rules governing arrest, surveillance and prosecution."
+      },
+      {
+        "article": "Sovereignty and connectivity",
+        "desc": "Sovereignty and connectivity governs India's position links cross-border projects with respect for sovereignty and territorial integrity."
+      },
+      {
+        "article": "fact-6",
+        "desc": "Founded: 15 June 2001 at Shanghai; predecessor\u2014Shanghai Five (1996)."
+      },
+      {
+        "article": "fact-7",
+        "desc": "Highest body: Council of Heads of State."
+      },
+      {
+        "article": "fact-8",
+        "desc": "Permanent bodies: Secretariat\u2014Beijing; RATS\u2014Tashkent."
+      },
+      {
+        "article": "fact-9",
+        "desc": "Languages: Chinese and Russian; India proposed adding English under the Charter framework."
+      },
+      {
+        "article": "fact-10",
+        "desc": "India's membership: Full member since 2017."
+      },
+      {
+        "article": "fact-11",
+        "desc": "Host geography: Bishkek is the capital of landlocked Kyrgyzstan."
+      },
+      {
+        "article": "fact-12",
+        "desc": "Not NATO: The SCO has no NATO-style collective-defence guarantee."
+      }
+    ],
+    "examTraps": [],
+    "memoryTip": "\u201cBishkek builds SCO: Security, Connectivity, Opportunity.\u201d"
   }
 ]

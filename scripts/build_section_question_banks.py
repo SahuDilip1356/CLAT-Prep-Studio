@@ -192,14 +192,47 @@ def collect_legacy() -> list[dict]:
     return records
 
 
-def collect_current_affairs() -> list[dict]:
+CA_OPTION_COUNT = 4
+CA_ANSWER_LETTERS = tuple("ABCD")
+
+
+def ca_question_fault(question: dict) -> str | None:
+    """Why this dossier question cannot be trusted, or None if it can.
+
+    A CLAT current-affairs question is always four options and one of A-D.
+    Anything else means the markdown parse ran past the end of one question
+    and into the next, which also carries the wrong answer key across.
+    """
+    options = question.get("options") or []
+    if len(options) != CA_OPTION_COUNT:
+        return f"expected {CA_OPTION_COUNT} options, found {len(options)}"
+    if any(not str(option).strip() for option in options):
+        return "blank option text"
+    answer = (question.get("correctOption") or "").strip().upper()
+    if answer not in CA_ANSWER_LETTERS:
+        return f"correctOption {answer!r} is not one of {'/'.join(CA_ANSWER_LETTERS)}"
+    if not (question.get("questionText") or "").strip():
+        return "empty questionText"
+    return None
+
+
+def collect_current_affairs() -> tuple[list[dict], list[dict]]:
     """Questions the daily CA orchestrator has appended to a live module bank.
 
     build_ca_knowledge_graph.py adds verified dossier questions every morning.
     They exist only in the learner-facing bank, so a rebuild that read just the
     legacy snapshot and the mock library would silently delete a day's work.
+
+    Reading our own output back is what preserves those questions, and it is
+    also how a malformed one becomes permanent: nothing upstream is consulted
+    again, so a bad record is carried forward by every later rebuild. One did.
+    A dossier question arrived holding its neighbour's four options as well as
+    its own, along with that neighbour's answer key and explanation, and no
+    rebuild could shake it loose. Malformed records are dropped here and named
+    in the build report, so the loop cannot launder them.
     """
     records: list[dict] = []
+    rejected: list[dict] = []
     for module, filename in TARGETS.items():
         path = DATA_DIR / filename
         if not path.is_file():
@@ -210,6 +243,15 @@ def collect_current_affairs() -> list[dict]:
         passages = payload.get("passages", {})
         for question in payload.get("questions", []):
             if question.get("explanationProvenance") != "VERIFIED_CA_DOSSIER":
+                continue
+            fault = ca_question_fault(question)
+            if fault:
+                rejected.append({
+                    "module": module,
+                    "id": question.get("id"),
+                    "questionText": (question.get("questionText") or "")[:120],
+                    "fault": fault,
+                })
                 continue
             passage_id = question.get("passageId")
             question = {**question, "passageText": passages.get(passage_id, "") if passage_id else ""}
@@ -227,7 +269,7 @@ def collect_current_affairs() -> list[dict]:
                 "answerSource": "Verified Current Affairs dossier",
                 "legacy": question,
             })
-    return records
+    return records, rejected
 
 
 def collect() -> list[dict]:
@@ -307,7 +349,8 @@ def collect() -> list[dict]:
 
 
 def build() -> dict:
-    pool = collect_legacy() + collect_current_affairs() + collect()
+    current_affairs, rejected_ca = collect_current_affairs()
+    pool = collect_legacy() + current_affairs + collect()
     records = [r for r in pool if r["module"] in MODULES and r["questionText"]]
 
     # Difficulty is a percentile rank inside each module pool, matching the
@@ -422,12 +465,13 @@ def build() -> dict:
                 for level in (1, 2, 3)
             },
         }
-    return {"banks": banks, "summary": summary}
+    return {"banks": banks, "summary": summary, "rejectedCurrentAffairs": rejected_ca}
 
 
 def main() -> None:
     result = build()
     banks, summary = result["banks"], result["summary"]
+    rejected_ca = result["rejectedCurrentAffairs"]
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     written = {}
@@ -451,7 +495,13 @@ def main() -> None:
         "poolPolicy": "One pool per module: curated bank plus mock library, ranked together.",
         "summary": summary,
         "filesWritten": written,
+        "rejectedCurrentAffairs": rejected_ca,
     }
+    for entry in rejected_ca:
+        print(
+            f"dropped {entry['module']} CA question {entry['id']}: {entry['fault']}",
+            file=sys.stderr,
+        )
     (REVIEW_DIR / "section_bank_build_report.json").write_text(
         json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8",
     )

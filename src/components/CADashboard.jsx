@@ -8,6 +8,7 @@ import CAKnowledgeGraph from './CAKnowledgeGraph';
 import StudioShell from './StudioShell';
 import GKDailyOnePagers from './GKDailyOnePagers';
 import GKQCardStudio from './GKQCardStudio';
+import CAPublishingHistory from './CAPublishingHistory';
 import { useCAContent } from '../caContent';
 import {
   getDossierMonths, getDossierPriorityForMonth, isDossierInMonth
@@ -471,6 +472,8 @@ export default function CADashboard({
             </div>
 
           </div>
+
+          <CAPublishingHistory />
 
         </div>
       )}
