@@ -20,6 +20,25 @@ const getFirebaseRuntime = async () => {
 const IST_TIME_ZONE = 'Asia/Kolkata';
 const PUBLISH_THRESHOLD = 65;
 const MAX_DAILY_DOSSIERS = 5;
+// A run used to look back a fixed 30 hours, which meant a day the cron missed
+// was never scanned by anything. Eleven days were lost that way between July
+// and September 2026. The window now reaches back to the last completed run,
+// so a miss is swept up the next morning instead of falling through.
+const BASE_WINDOW_HOURS = 30;
+// Enough overlap that a late-breaking item near the previous run's cutoff is
+// not sliced in half by the boundary. Duplicates are cheap: the catalogue
+// check already folds a repeat into the existing dossier.
+const WINDOW_OVERLAP_HOURS = 6;
+// A gap longer than this is a backfill decision, not something a daily run
+// should sweep up unannounced. Beyond it the run covers what it can and says
+// so in the audit.
+const MAX_WINDOW_HOURS = 24 * 7;
+// The daily cap scales with the window so a catch-up run is not throttled to
+// one day's worth, but stays bounded so a long gap cannot flood the day.
+const MAX_CATCH_UP_DOSSIERS = 15;
+// How many recent run documents to scan for the last completed one. Covers a
+// stretch of failed runs without needing a composite index.
+const LAST_RUN_SCAN_LIMIT = 20;
 const PRIMARY_DOMAINS = [
   'gov.in', 'nic.in',
   'sci.gov.in', 'main.sci.gov.in', 'indiacode.nic.in', 'egazette.nic.in',
@@ -53,6 +72,8 @@ const caSchema = {
     searchWindow: { type: 'string' },
     candidates: {
       type: 'array',
+      // Replaced per run by schemaForWindow: a catch-up run covering several
+      // missed days must be allowed to return more than one day's worth.
       maxItems: MAX_DAILY_DOSSIERS,
       items: {
         type: 'object',
@@ -368,14 +389,85 @@ const loadExistingCatalogue = async () => {
   };
 };
 
-const researchCandidates = async ({ runDate, existingTitles }) => {
+/** The response schema with its candidate cap raised to match the window. */
+const schemaForWindow = (maxDossiers) => ({
+  ...caSchema,
+  properties: {
+    ...caSchema.properties,
+    candidates: { ...caSchema.properties.candidates, maxItems: maxDossiers },
+  },
+});
+
+const HOUR_MS = 60 * 60 * 1000;
+
+/** How far back this run must look, and how much it may publish.
+ *
+ * Reaches to the last completed run rather than a fixed 30 hours, so a day the
+ * scheduler missed is covered by the next run instead of being lost. Falls
+ * back to the base window when no prior run is on record, which is also what a
+ * first run sees.
+ */
+export const resolveSearchWindow = async ({ db, now, runDate }) => {
+  let previous = null;
+  try {
+    // Deliberately one field. Combining an equality on status with the
+    // inequality on runDate would need a composite index, and this repository
+    // tracks no index configuration — the query would throw in production,
+    // the catch below would swallow it, and the window would silently stay at
+    // 30 hours while looking fixed. Filtering status here costs a few extra
+    // documents and needs only the single-field index Firestore creates itself.
+    const snapshot = await db.collection('caOrchestrationRuns')
+      .where('runDate', '<', runDate)
+      .orderBy('runDate', 'desc')
+      .limit(LAST_RUN_SCAN_LIMIT)
+      .get();
+    previous = snapshot.docs
+      .map((doc) => doc.data())
+      .find((run) => run?.status === 'COMPLETED') || null;
+  } catch (error) {
+    // A window is a scheduling optimisation, never a reason to skip a run.
+    console.warn('Could not read the last completed run; using the base window.', error);
+  }
+
+  if (!previous?.runDate) {
+    return {
+      hours: BASE_WINDOW_HOURS,
+      maxDossiers: MAX_DAILY_DOSSIERS,
+      previousRunDate: null,
+      daysCovered: 1,
+      truncated: false,
+    };
+  }
+
+  // Runs fire early morning IST; measuring from the previous run's date at
+  // midnight IST keeps the window generous rather than clipping it short.
+  const previousStart = new Date(`${previous.runDate}T00:00:00+05:30`).getTime();
+  const elapsedHours = Math.max(0, (now.getTime() - previousStart) / HOUR_MS);
+  const wanted = Math.max(BASE_WINDOW_HOURS, elapsedHours + WINDOW_OVERLAP_HOURS);
+  const hours = Math.min(wanted, MAX_WINDOW_HOURS);
+  const daysCovered = Math.max(1, Math.ceil(hours / 24));
+
+  return {
+    hours: Math.round(hours),
+    maxDossiers: Math.min(MAX_DAILY_DOSSIERS * daysCovered, MAX_CATCH_UP_DOSSIERS),
+    previousRunDate: previous.runDate,
+    daysCovered,
+    truncated: wanted > MAX_WINDOW_HOURS,
+  };
+};
+
+const researchCandidates = async ({ runDate, existingTitles, window }) => {
   if (!process.env.OPENAI_API_KEY) throw new Error('OPENAI_API_KEY is not configured.');
   const model = process.env.CA_OPENAI_MODEL || 'gpt-5.6-terra';
   const prompt = `You are the senior current-affairs editor for CLAT and AILET 2027.
 
 Today in India is ${runDate}. Search reliable web sources for substantive developments published
-in the previous 30 hours. Find at most ${MAX_DAILY_DOSSIERS} issues that genuinely deserve a CLAT
-Issue Dossier. Prefer Indian constitutional law, Supreme Court and High Court developments,
+in the previous ${window.hours} hours. Find at most ${window.maxDossiers} issues that genuinely
+deserve a CLAT Issue Dossier.${window.daysCovered > 1 ? `
+
+This window is longer than one day because the last completed run was ${window.previousRunDate}.
+Cover the whole span, not only the most recent day, and prefer the most significant developments
+across it rather than several from any single date.` : ''} Prefer Indian constitutional law, Supreme Court and High Court developments,
 Parliament, governance, rights, international relations, treaties, economics, environment,
 science policy, major awards and institutions. Reject routine party politics, statements without
 a substantive event, celebrity news, ordinary crime, market noise and sports results without a
@@ -414,7 +506,7 @@ answerable from its passage. Return only the required structured result.`;
           type: 'json_schema',
           name: 'clat_ca_daily_research',
           strict: true,
-          schema: caSchema
+          schema: schemaForWindow(window.maxDossiers)
         }
       }
     })
@@ -522,7 +614,10 @@ export async function runDailyCAOrchestration({ force = false, now = new Date() 
   try {
     const catalogue = await loadExistingCatalogue();
     const existingKeys = new Set(catalogue.titles.map(normalizeIssueKey));
-    const research = await researchCandidates({ runDate, existingTitles: catalogue.titles });
+    const window = await resolveSearchWindow({ db, now, runDate });
+    const research = await researchCandidates({
+      runDate, existingTitles: catalogue.titles, window
+    });
     const candidates = Array.isArray(research.output?.candidates) ? research.output.candidates : [];
     const reviewed = candidates.map((candidate) => ({
       candidate,
@@ -566,12 +661,21 @@ export async function runDailyCAOrchestration({ force = false, now = new Date() 
     const status = 'COMPLETED';
     const result = {
       runId, runDate, status,
-      searchWindow: research.output?.searchWindow || 'Previous 30 hours in Asia/Kolkata',
+      searchWindow: research.output?.searchWindow
+        || `Previous ${window.hours} hours in Asia/Kolkata`,
+      window: {
+        hours: window.hours,
+        daysCovered: window.daysCovered,
+        previousRunDate: window.previousRunDate,
+        // True when the gap since the last run exceeded MAX_WINDOW_HOURS, so
+        // this run covered what it could and the remainder needs a backfill.
+        truncated: window.truncated
+      },
       validationPolicy: {
         publishThreshold: PUBLISH_THRESHOLD,
         minimumTrustedSources: 2,
         minimumPrimarySources: 1,
-        maximumDailyDossiers: MAX_DAILY_DOSSIERS,
+        maximumDailyDossiers: window.maxDossiers,
         failClosed: true
       },
       candidatesFound: candidates.length,
