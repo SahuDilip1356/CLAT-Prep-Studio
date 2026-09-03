@@ -263,7 +263,27 @@ const domainMatches = (hostname, domains) => domains.some(
 
 const cleanText = (value) => String(value || '').replace(/\s+/g, ' ').trim();
 
-export const validateCandidate = (candidate, existingKeys = new Set()) => {
+const isISODate = (value) => /^\d{4}-\d{2}-\d{2}$/.test(String(value || ''));
+
+/** Whether a date string falls inside an inclusive ISO date range. */
+const withinRange = (value, { from, to }) => {
+  const day = String(value || '').slice(0, 10);
+  return isISODate(day) && day >= from && day <= to;
+};
+
+/**
+ * @param dateWindow When given ({ from, to } as ISO dates), the candidate must
+ *   be *of* that period: its eventDate inside the range, and at least one
+ *   trusted source published inside it too. Only backfill runs pass this. A
+ *   daily run leaves it null, because the search window already bounds it and
+ *   a same-day event occasionally carries the previous day's dateline.
+ *
+ *   This exists because a backfill asks a live web search for news from weeks
+ *   ago. The model will return something whether or not it is from the right
+ *   period, and an undated dossier filed under the wrong month is worse than a
+ *   gap: a student revising July would be reading September.
+ */
+export const validateCandidate = (candidate, existingKeys = new Set(), dateWindow = null) => {
   const errors = [];
   const score = calculateScore(candidate?.score);
   const title = cleanText(candidate?.canonicalTitle);
@@ -297,6 +317,14 @@ export const validateCandidate = (candidate, existingKeys = new Set()) => {
   if (!Array.isArray(candidate?.qcards) || candidate.qcards.length < 3) errors.push('insufficient-qcards');
   if (existingKeys.has(normalizeIssueKey(title)) && !cleanText(candidate.existingDossierTitle)) {
     errors.push('duplicate-existing-issue');
+  }
+  if (dateWindow) {
+    if (!withinRange(candidate?.eventDate, dateWindow)) {
+      errors.push('event-date-outside-window');
+    }
+    if (!validSources.some((source) => withinRange(source.publishedAt, dateWindow))) {
+      errors.push('no-source-published-in-window');
+    }
   }
 
   return { valid: errors.length === 0, errors, score, validSources };
@@ -467,7 +495,16 @@ deserve a CLAT Issue Dossier.${window.daysCovered > 1 ? `
 
 This window is longer than one day because the last completed run was ${window.previousRunDate}.
 Cover the whole span, not only the most recent day, and prefer the most significant developments
-across it rather than several from any single date.` : ''} Prefer Indian constitutional law, Supreme Court and High Court developments,
+across it rather than several from any single date.` : ''}${window.dateWindow ? `
+
+This is a BACKFILL for a day the scheduler missed, so the date bound is strict rather than
+advisory. Return only developments that actually occurred between ${window.dateWindow.from} and
+${window.dateWindow.to} inclusive, and set eventDate to the real date of the event, never to
+today. Every source must carry its true publishedAt date. The server independently rejects any
+candidate whose eventDate falls outside this range or which has no trusted source published
+inside it, so a candidate from outside the period is wasted work rather than a near miss. If the
+period genuinely produced nothing of CLAT weight, return an empty candidate list; that is a
+correct answer, not a failure.` : ''} Prefer Indian constitutional law, Supreme Court and High Court developments,
 Parliament, governance, rights, international relations, treaties, economics, environment,
 science policy, major awards and institutions. Reject routine party politics, statements without
 a substantive event, celebrity news, ordinary crime, market noise and sports results without a
@@ -596,7 +633,16 @@ const sendAdminEmail = async ({ runDate, status, published, ignored, error }) =>
   return { sent: response.ok, reason: response.ok ? null : `provider-${response.status}` };
 };
 
-export async function runDailyCAOrchestration({ force = false, now = new Date() } = {}) {
+/**
+ * @param backfill Recover a day the scheduler missed. The run is dated to that
+ *   day, the search is bounded to it, and every candidate must prove it belongs
+ *   to it — see the dateWindow note on validateCandidate. Rejected candidates
+ *   are recorded with their reason rather than dropped silently, so a backfill
+ *   that finds nothing genuine is visibly different from one that never ran.
+ */
+export async function runDailyCAOrchestration({
+  force = false, now = new Date(), backfill = false
+} = {}) {
   const { db, FieldValue } = await getFirebaseRuntime();
   const runDate = formatISTDate(now);
   const runId = `ca-daily-${runDate}`;
@@ -608,20 +654,36 @@ export async function runDailyCAOrchestration({ force = false, now = new Date() 
 
   await runRef.set({
     runId, runDate, status: 'RUNNING', startedAt: FieldValue.serverTimestamp(),
-    publishThreshold: PUBLISH_THRESHOLD, trigger: force ? 'MANUAL_FORCE' : 'SCHEDULED'
+    publishThreshold: PUBLISH_THRESHOLD,
+    trigger: backfill ? 'BACKFILL' : force ? 'MANUAL_FORCE' : 'SCHEDULED'
   }, { merge: true });
 
   try {
     const catalogue = await loadExistingCatalogue();
     const existingKeys = new Set(catalogue.titles.map(normalizeIssueKey));
-    const window = await resolveSearchWindow({ db, now, runDate });
+    const window = backfill
+      ? {
+        // The missed day itself plus the 30 hours before it, matching what a
+        // daily run for that morning would have covered.
+        hours: BASE_WINDOW_HOURS,
+        maxDossiers: MAX_DAILY_DOSSIERS,
+        previousRunDate: null,
+        daysCovered: 1,
+        truncated: false,
+        backfill: true,
+        dateWindow: {
+          from: formatISTDate(new Date(new Date(`${runDate}T00:00:00+05:30`).getTime() - HOUR_MS * BASE_WINDOW_HOURS)),
+          to: runDate
+        }
+      }
+      : await resolveSearchWindow({ db, now, runDate });
     const research = await researchCandidates({
       runDate, existingTitles: catalogue.titles, window
     });
     const candidates = Array.isArray(research.output?.candidates) ? research.output.candidates : [];
     const reviewed = candidates.map((candidate) => ({
       candidate,
-      validation: validateCandidate(candidate, existingKeys)
+      validation: validateCandidate(candidate, existingKeys, window.dateWindow || null)
     }));
     const publishable = reviewed.filter((item) => item.validation.valid);
     const ignored = reviewed.filter((item) => !item.validation.valid);
@@ -664,6 +726,8 @@ export async function runDailyCAOrchestration({ force = false, now = new Date() 
       searchWindow: research.output?.searchWindow
         || `Previous ${window.hours} hours in Asia/Kolkata`,
       window: {
+        backfill: Boolean(window.backfill),
+        dateWindow: window.dateWindow || null,
         hours: window.hours,
         daysCovered: window.daysCovered,
         previousRunDate: window.previousRunDate,
