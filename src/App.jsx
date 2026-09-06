@@ -4,6 +4,7 @@ import {
   gkQuestionBank as gkQuestionsData,
 } from './data/moduleBanks';
 import graphData from './data/ca_knowledge_graph.json';
+import { buildRepairPlan } from './repairPlan';
 import { qcards } from './qcards';
 import Dashboard from './components/Dashboard';
 import GKDashboard from './components/GKDashboard';
@@ -68,9 +69,24 @@ const legacyTutorQuestionBank = [
 const CLATSectionDashboard = lazy(() => import('./components/CLATSectionDashboard'));
 const MockPaperDashboard = lazy(() => import('./components/MockPaperDashboard'));
 
+/**
+ * Phase 0 features that are built but not yet shown to a learner.
+ *
+ * A plan is generated and stored while this is false, so that by the time the
+ * UI is switched on a returning student already has real plans behind them
+ * rather than an empty panel until their next attempt.
+ */
+export const FEATURES = {
+  repairPlan: false,
+};
+
+/** Plans kept per learner. Older ones are history, not working material. */
+const MAX_STORED_REPAIR_PLANS = 20;
+
 const defaultProgress = {
   studentProfile: null,
   attemptHistory: [],
+  repairPlans: [],
   completedDays: {},
   dayScores: {},
   topicAttempted: {},
@@ -729,9 +745,28 @@ function StudentApp() {
 
       const nextHistory = [attemptRecord, ...(base.attemptHistory || [])];
 
+      // Generated whatever the flag says. Storing it now means a learner who
+      // sees the panel for the first time has their existing attempts already
+      // diagnosed, instead of an empty panel until they sit another paper.
+      // A plan with no items is not stored: nothing to repair is not a record.
+      const repairPlan = buildRepairPlan({
+        responses: resultData.responses,
+        resultId: `${attemptRecord.timestamp}:${paperId || completionKey || activeModule}`,
+        paperId,
+        userId: base.studentProfile?.uid || null,
+        mode: sessionMode,
+        pool: sessionPool,
+        module: activeModule,
+        generatedAt: attemptRecord.timestamp,
+      });
+      const nextRepairPlans = repairPlan.items.length
+        ? [repairPlan, ...(base.repairPlans || [])].slice(0, MAX_STORED_REPAIR_PLANS)
+        : (base.repairPlans || []);
+
       return {
         ...base,
         attemptHistory: nextHistory,
+        repairPlans: nextRepairPlans,
         [keyCompletedDays]: newCompletedDays,
         [keyDayScores]: newDayScores,
         [keyTopicAttempted]: newTopicAttempted,
@@ -1144,6 +1179,8 @@ function StudentApp() {
             onRetakeDrill={() => setViewState('MOCK_TEST')}
             onToggleBookmark={handleToggleBookmark}
             bookmarkedIds={safeProgress.bookmarkedIds}
+            showRepairPlan={FEATURES.repairPlan}
+            repairPlan={(safeProgress.repairPlans || [])[0] || null}
           />
         )}
 

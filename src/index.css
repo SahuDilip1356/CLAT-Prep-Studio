@@ -903,3 +903,72 @@ body {
 .marketing-ticker-clock span {
   font-family: var(--font-mono);
 }
+
+/* Scorecard tabs
+   The review list was one long scroll below the score, so anything past the
+   first few questions went unread. Panels stay mounted and hide with [hidden],
+   which is what lets the print rule below reveal all of them. */
+.results-tablist {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-subtle, rgba(0, 0, 0, 0.08));
+}
+
+.results-tab {
+  appearance: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 14px;
+  font: inherit;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.results-tab:hover {
+  color: var(--text-primary);
+}
+
+.results-tab.is-active {
+  color: var(--accent-primary);
+  border-bottom-color: var(--accent-primary);
+}
+
+/* Keyboard focus must stay visible: the tablist is arrow-key driven, so the
+   ring is the only thing telling a keyboard user where they are. */
+.results-tab:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+.results-review-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.results-review-head p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media print {
+  /* A printed scorecard must carry the whole report, not whichever tab
+     happened to be open when the button was pressed. */
+  .test-results-view [role="tabpanel"][hidden] {
+    display: block !important;
+  }
+
+  .results-tablist {
+    display: none;
+  }
+}
